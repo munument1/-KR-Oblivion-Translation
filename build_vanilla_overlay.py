@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build a Korean Oblivion mod overlay from the user's original game files.
 
-The patcher only edits existing string subrecords after an exact FormID, record
-type, field, and English byte comparison. It never creates gameplay records.
+The patcher edits existing string subrecords after exact source checks and adds
+verified executable string settings. It never creates gameplay records.
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ MASTER = "Oblivion.esm"
 # The executable supplies these default GMSTs, but the original ESM has no
 # records for them. The question's Hangul bytes come from verified CSV strings;
 # "취소" uses the existing translated menus/strings.xml entry.
-MENU_GMSTS = (
+BASE_MENU_GMSTS = (
     (0x00F00001, b"sExitGameAffirm\0", b"Exit Game\0",
      bytes.fromhex("b08bd7a90520c8a408c38500")),
     (0x00F00002, b"sExitGameQuestion\0", b"Exit the game?\0",
@@ -33,7 +33,8 @@ MENU_GMSTS = (
     (0x00F00003, b"sCancel\0", b"Cancel\0",
      bytes.fromhex("d997c68400")),
 )
-MENU_FORMIDS = frozenset(item[0] for item in MENU_GMSTS)
+EXE_GMST_PATTERN = re.compile(rb"(?<![A-Za-z0-9_])(s[A-Z][A-Za-z0-9_]{2,60})\x00{1,4}([\x20-\x7e]{1,180})\x00")
+PRINTF_PATTERN = re.compile(r"%(?:[-+0#]*\d*(?:\.\d+)?[a-zA-Z%])")
 OFFICIAL = (
     MASTER, "Knights.esp", "DLCBattlehornCastle.esp", "DLCFrostcrag.esp",
     "DLCThievesDen.esp", "DLCSpellTomes.esp", "DLCMehrunesRazor.esp",
@@ -68,6 +69,11 @@ def load_translations(path: Path):
             source = row["effective_source"]
             target = source if source in OFFICIAL else PATCH_TO_OFFICIAL.get(source)
             if target is None:
+                continue
+            # Oblivion uses the current cell/world name in menu save filenames.
+            # Legacy Korean byte strings can contain control bytes and make a
+            # menu save silently fail, even while autosaves and console saves work.
+            if row["record_type"] in ("CELL", "WRLD") and row["field"] == "FULL":
                 continue
             formid = int(row["raw_formid"], 16)
             # The original audit used 01 as the isolated official DLC's slot.
@@ -111,6 +117,87 @@ def parse_subrecords(data: bytes):
             raise ValueError("subrecord extends past record")
         yield kind, data[pos:pos + size], data[start:pos + size]
         pos += size
+
+
+def existing_gmst_keys(path: Path) -> set[bytes]:
+    keys = set()
+    with path.open("rb") as stream:
+        def walk(end):
+            while stream.tell() < end:
+                start = stream.tell()
+                header = stream.read(20)
+                if len(header) != 20:
+                    raise ValueError(f"{path.name}: truncated record at {start}")
+                kind, size = struct.unpack_from("<4sI", header)
+                if kind == b"GRUP":
+                    if size < 20 or start + size > end:
+                        raise ValueError(f"{path.name}: invalid group at {start}")
+                    walk(start + size)
+                elif kind == b"GMST":
+                    body = stream.read(size)
+                    for field, value, _ in parse_subrecords(body):
+                        if field == b"EDID":
+                            keys.add(value.rstrip(b"\0"))
+                            break
+                else:
+                    stream.seek(size, 1)
+            if stream.tell() != end:
+                raise ValueError(f"{path.name}: group boundary mismatch")
+        walk(path.stat().st_size)
+    return keys
+
+
+def load_exe_menu_gmsts(csv_path: Path, exe_path: Path, esm_path: Path):
+    if not exe_path.is_file():
+        raise ValueError(f"Oblivion.exe is required beside the Data folder: {exe_path}")
+    defaults = {(match[1], match[2]) for match in EXE_GMST_PATTERN.finditer(exe_path.read_bytes())}
+    existing = existing_gmst_keys(esm_path)
+    result = list(BASE_MENU_GMSTS)
+    seen = {row[1].rstrip(b"\0") for row in result}
+    with csv_path.open(encoding="utf-8-sig", newline="") as stream:
+        for line, row in enumerate(csv.DictReader(stream), 2):
+            key = row["gmst"].encode("ascii")
+            english = row["exe_english"].encode("ascii")
+            korean = bytes.fromhex(row["encoded_hex"])
+            if (key, english) not in defaults:
+                raise ValueError(f"EXE default differs from translation CSV line {line}: {row['gmst']}")
+            if key in seen or not re.fullmatch(rb"s[A-Z][A-Za-z0-9_]*", key):
+                raise ValueError(f"duplicate or invalid GMST key at CSV line {line}")
+            if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
+                raise ValueError(f"invalid GMST translation bytes at CSV line {line}")
+            if PRINTF_PATTERN.findall(row["exe_english"]) != PRINTF_PATTERN.findall(row["korean"]):
+                raise ValueError(f"GMST placeholder mismatch at CSV line {line}")
+            if key not in existing:
+                formid = 0x00F00001 + len(result)
+                result.append((formid, key + b"\0", english + b"\0", korean))
+            seen.add(key)
+    return tuple(result)
+
+
+def load_quest_loading_translations(path: Path):
+    quest = {}
+    loading = {}
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        for line, row in enumerate(csv.DictReader(stream), 2):
+            kind = row["record_type"]
+            formid = int(row["formid"], 16)
+            editor_id = row["editor_id"].encode("ascii")
+            source = bytes.fromhex(row["source_hex"])
+            target = bytes.fromhex(row["encoded_hex"])
+            if not source.endswith(b"\0") or not target.endswith(b"\0") or b"\0" in target[:-1]:
+                raise ValueError(f"invalid journal/loading text at CSV line {line}")
+            if kind == "QUST":
+                key = (formid, int(row["stage"]), int(row["occurrence"]))
+                dest = quest
+            elif kind == "LSCR":
+                key = formid
+                dest = loading
+            else:
+                raise ValueError(f"invalid journal/loading record type at CSV line {line}")
+            if key in dest:
+                raise ValueError(f"duplicate journal/loading key at CSV line {line}")
+            dest[key] = (editor_id, source, target, line)
+    return quest, loading
 
 
 def encode_subrecord(kind: bytes, value: bytes) -> bytes:
@@ -163,6 +250,14 @@ def structure_signature(path: Path, skip_formids=frozenset()):
                             block = stream.read(min(remaining, 1 << 20))
                             scripts.update(block)
                             remaining -= len(block)
+                    elif kind in (b"QUST", b"INFO"):
+                        body = stream.read(size)
+                        if struct.unpack_from("<I", header, 8)[0] & 0x00040000:
+                            body = zlib.decompress(body[4:])
+                        scripts.update(header[:4] + header[8:])
+                        for field, _, original in parse_subrecords(body):
+                            if field in (b"SCHR", b"SCDA", b"SCTX", b"SCRO"):
+                                scripts.update(original)
                     else:
                         stream.seek(size, 1)
             if stream.tell() != end:
@@ -174,11 +269,38 @@ def structure_signature(path: Path, skip_formids=frozenset()):
 
 
 def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
-                 translations, counts: Counter, audit: list[dict]) -> bytes:
+                 translations, counts: Counter, audit: list[dict],
+                 quest_texts=None, loading_texts=None) -> bytes:
     parts = list(parse_subrecords(data))
+    editor_id = next((value.rstrip(b"\0") for field, value, _ in parts if field == b"EDID"), b"")
     changed = False
     output = []
+    stage = None
+    stage_occurrences = Counter()
     for field, value, original in parts:
+        if record_type == b"QUST" and field == b"INDX":
+            stage = int.from_bytes(value, "little")
+        special = None
+        if record_type == b"QUST" and field == b"CNAM" and stage is not None and quest_texts:
+            occurrence = stage_occurrences[stage]
+            stage_occurrences[stage] += 1
+            special = quest_texts.get((formid, stage, occurrence))
+        elif record_type == b"LSCR" and field == b"DESC" and loading_texts:
+            special = loading_texts.get(formid)
+        if special is not None:
+            expected_editor, expected_source, replacement, line = special
+            if editor_id != expected_editor or value != expected_source:
+                raise ValueError(f"journal/loading source mismatch: {filename} {formid:08X} CSV line {line}")
+            output.append(encode_subrecord(field, replacement))
+            changed = True
+            counts["journal_loading"] += 1
+            counts["applied"] += 1
+            audit.append({"file": filename, "type": record_type.decode("ascii"),
+                          "formid": f"{formid:08X}", "field": field.decode("ascii"),
+                          "source_sha256": hashlib.sha256(value).hexdigest(),
+                          "source": decode_english(value),
+                          "translation_sources": ["legacy original Korean patch journal/loading"]})
+            continue
         candidates = translations.get((filename, record_type, formid & 0xFFFFFF, field), ())
         if not candidates:
             output.append(original)
@@ -210,8 +332,10 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
 
 
 def patch_plugin(source: Path, destination: Path, filename: str, translations,
-                 counts: Counter, audit: list[dict]):
+                 counts: Counter, audit: list[dict], menu_gmsts=(),
+                 quest_texts=None, loading_texts=None):
     destination.parent.mkdir(parents=True, exist_ok=True)
+    menu_formids = frozenset(item[0] for item in menu_gmsts)
     with source.open("rb") as src, destination.open("w+b") as dst:
         limit = source.stat().st_size
 
@@ -229,7 +353,7 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                     dst.write(header)
                     walk(start + size)
                     if filename == MASTER and header[8:12] == b"GMST" and header[12:16] == b"\0\0\0\0":
-                        for menu_formid, editor_id, english, korean in MENU_GMSTS:
+                        for menu_formid, editor_id, english, korean in menu_gmsts:
                             menu_body = (encode_subrecord(b"EDID", editor_id) +
                                          encode_subrecord(b"DATA", korean))
                             dst.write(struct.pack("<4sIIII", b"GMST", len(menu_body), 0,
@@ -249,18 +373,21 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                 if start + 20 + size > end:
                     raise ValueError(f"{filename}: invalid record at {start}")
                 flags, formid = struct.unpack_from("<II", header, 8)
-                if filename == MASTER and formid in MENU_FORMIDS:
+                if filename == MASTER and formid in menu_formids:
                     raise ValueError("menu GMST FormID collides with source record")
                 if filename == MASTER and kind == b"TES4":
                     body = bytearray(src.read(size))
                     if body[:6] != b"HEDR\x0c\x00":
                         raise ValueError("unexpected TES4 HEDR layout")
                     old_count = struct.unpack_from("<I", body, 10)[0]
-                    struct.pack_into("<I", body, 10, old_count + len(MENU_GMSTS))
+                    struct.pack_into("<I", body, 10, old_count + len(menu_gmsts))
                     dst.write(header)
                     dst.write(body)
                     continue
-                if not translations.get((filename, kind, formid & 0xFFFFFF, b"FULL")) and not any(
+                has_special = (filename == MASTER and
+                               ((kind == b"QUST" and quest_texts and formid in quest_texts["formids"]) or
+                                (kind == b"LSCR" and loading_texts and formid in loading_texts)))
+                if not has_special and not translations.get((filename, kind, formid & 0xFFFFFF, b"FULL")) and not any(
                         translations.get((filename, kind, formid & 0xFFFFFF, field))
                         for field in (b"DESC", b"NAM1", b"DATA")):
                     dst.write(header)
@@ -283,7 +410,9 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                         raise ValueError(f"{filename}: bad compressed record")
                 else:
                     plain = body
-                updated = patch_record(plain, filename, kind, formid, translations, counts, audit)
+                updated = patch_record(plain, filename, kind, formid, translations, counts, audit,
+                                       quest_texts["entries"] if has_special and kind == b"QUST" else None,
+                                       loading_texts if has_special and kind == b"LSCR" else None)
                 if updated != plain:
                     body = struct.pack("<I", len(updated)) + zlib.compress(updated) if compressed else updated
                     header = header[:4] + struct.pack("<I", len(body)) + header[8:]
@@ -310,6 +439,13 @@ def main() -> int:
     table = load_translations(args.csv)
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
+    menu_gmsts = load_exe_menu_gmsts(HERE / "exe_gmst_translations.csv",
+                                      source_dir.parent / "Oblivion.exe", source_dir / MASTER)
+    menu_formids = frozenset(item[0] for item in menu_gmsts)
+    quest_entries, loading_entries = load_quest_loading_translations(
+        HERE / "quest_loading_translations.csv")
+    quest_texts = {"entries": quest_entries,
+                   "formids": frozenset(key[0] for key in quest_entries)}
     output_dir.mkdir(parents=True, exist_ok=True)
     audit = []
     report = {}
@@ -322,16 +458,21 @@ def main() -> int:
         target = output_dir / name
         temporary = output_dir / (name + ".building")
         try:
-            patch_plugin(src, temporary, name, table, counts, audit)
+            patch_plugin(src, temporary, name, table, counts, audit,
+                         menu_gmsts if name == MASTER else (),
+                         quest_texts if name == MASTER else None,
+                         loading_entries if name == MASTER else None)
             if name == MASTER and counts["applied"] < 9000:
                 raise ValueError("Oblivion.esm does not match the expected original English source")
             original_structure = structure_signature(src)
             output_structure = structure_signature(
-                temporary, MENU_FORMIDS if name == MASTER else frozenset())
+                temporary, menu_formids if name == MASTER else frozenset())
             if original_structure != output_structure:
                 raise ValueError(f"{name}: record structure or compiled script changed")
-            if name == MASTER and counts["new_menu_gmst"] != len(MENU_GMSTS):
+            if name == MASTER and counts["new_menu_gmst"] != len(menu_gmsts):
                 raise ValueError("unexpected menu GMST count")
+            if name == MASTER and counts["journal_loading"] != len(quest_entries) + len(loading_entries):
+                raise ValueError("journal/loading translation coverage mismatch")
             if counts["applied"]:
                 temporary.replace(target)
             else:
@@ -345,6 +486,7 @@ def main() -> int:
                         "changed_records": counts["changed_records"],
                         "ambiguous": counts["ambiguous"],
                         "new_menu_gmst": counts["new_menu_gmst"],
+                        "journal_loading": counts["journal_loading"],
                         "structure": original_structure,
                         "output_sha256": sha256_file(target) if target.exists() else None}
         print(f"{name}: {counts['applied']} strings in {counts['changed_records']} records")

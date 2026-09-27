@@ -55,5 +55,7 @@ if errorlevel 1 exit /b 1
 echo.
 echo Overlay ready: "%OUT_DIR%"
 if not exist "%INI_PATH%" echo Oblivion.ini was not found. Apply FONT_SETTINGS.txt to the active INI.
+echo Save-safe mode: CELL and WRLD location names stay in English so menu saves can create files.
+echo Disable separate Korean UOP/USIP/UODP translation mods when testing menu saves; later ESP overrides can restore unsafe location bytes.
 echo Install the output folder as an MO2 mod, or copy its contents into a separate mod overlay.
 exit /b 0
