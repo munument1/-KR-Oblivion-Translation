@@ -10,7 +10,7 @@ sMenuDisplayShortXBoxSaveMessage,Saving...,저장 중...,b882d8a00820c8a6082e2e2
 sMenuDisplayUnknownLocationString,Unknown Location,알 수 없는 장소,d7a00420c68620d7a21fc1a80220d8a008c68400,manual_exe_gmst_review
 sMenuDisplayXBoxSaveMessage,Saving content. Please don't turn off your console.,저장 중입니다. 전원을 종료하지 마세요.,b882d8a00820c8a608d7a906b189b2802e20d8a202e79b02c7a80420c8a408c385bd80b88920b480b68bc7852e00,manual_exe_gmst_review
 sMiscPlayerDeadLoadOption,Reload,다시 불러오기,b280b68920c5a604b382c784b08900,manual_exe_gmst_review
-sMiscPlayerDeadMenuOption,Main Menu,시작 화면,b689d8a00120dd90d4a30200,manual_exe_gmst_review
+sMiscPlayerDeadMenuOption,Main Menu,메인 메뉴,b48bd7a90220b48bc18700,manual_menu_audit
 sNoCharge,The enchanted item does not have enough charge.,마법이 부여된 장비의 충전량이 없습니다.,b480d5a206b78920c586b783e29a0220d8a008b589d79820c9a608d8a202d3a108b78920d7a21fc6a806b189b2802e00,manual_exe_gmst_review
 sSaveGameDeviceError,There was an error accessing the device.  Please try again.,저장 장치를 사용할 수 없습니다. 다시 시도하세요.,b882d8a00820d8a008b989c3a80420b680c7a508dda00420c68620d7a21fc6a806b189b2802e20b280b68920b689c284bd80b68bc7852e00,manual_exe_gmst_review
 sSetMarkerQuestion,Do you want to set your marker?,표식을 설정하시겠습니까?,cc85d6a901c7a80420d6a204d8a208bd80b689d0ab14c6a806b189be803f00,manual_exe_gmst_review

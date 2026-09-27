@@ -24,9 +24,10 @@ from build_video_subtitles import build_videos
 
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 MASTER = "Oblivion.esm"
-# The executable supplies these default GMSTs, but the original ESM has no
-# records for them. The question's Hangul bytes come from verified CSV strings;
-# "취소" uses the existing translated menus/strings.xml entry.
+# The executable supplies these menu strings, but the original ESM has no
+# records for them. Some are "bare" EXE setting keys, so the generic EXE
+# scanner cannot pair them with their visible English value. Inject explicit
+# GMST overrides so character creation and confirmation menus can localize them.
 BASE_MENU_GMSTS = (
     (0x00F00001, b"sExitGameAffirm\0", b"Exit Game\0",
      bytes.fromhex("b08bd7a90520c8a408c38500")),
@@ -34,6 +35,26 @@ BASE_MENU_GMSTS = (
      bytes.fromhex("b08bd7a905c7a80420c8a408c385bd80b689d0ab14c6a806b189be803f00")),
     (0x00F00003, b"sCancel\0", b"Cancel\0",
      bytes.fromhex("d997c68400")),
+    (0x00F00004, b"sMain\0", b"Main Menu\0",
+     bytes.fromhex("b48bd7a90220b48bc18700")),
+    (0x00F00005, b"sFace\0", b"Face\0",
+     bytes.fromhex("d7a204c0a60400")),
+    (0x00F00006, b"sHair\0", b"Hair\0",
+     bytes.fromhex("b482b38900")),
+    (0x00F00007, b"sEyes\0", b"Eyes\0",
+     bytes.fromhex("c1a60200")),
+    (0x00F00008, b"sYesText\0", b"Yes\0",
+     bytes.fromhex("b78d00")),
+    (0x00F00009, b"sYes\0", b"Yes\0",
+     bytes.fromhex("b78d00")),
+    (0x00F0000A, b"sNo\0", b"No\0",
+     bytes.fromhex("b780b189c78500")),
+    (0x00F0000B, b"sOnButtonText\0", b"On\0",
+     bytes.fromhex("ba83b08900")),
+    (0x00F0000C, b"sOffButtonText\0", b"Off\0",
+     bytes.fromhex("ce88b08900")),
+    (0x00F0000D, b"sOff\0", b"Off\0",
+     bytes.fromhex("ce88b08900")),
 )
 EXE_GMST_PATTERN = re.compile(rb"(?<![A-Za-z0-9_])(s[A-Z][A-Za-z0-9_]{2,60})\x00{1,4}([\x20-\x7e]{1,180})\x00")
 PRINTF_PATTERN = re.compile(r"%(?:[-+0#]*\d*(?:\.\d+)?[a-zA-Z%])")

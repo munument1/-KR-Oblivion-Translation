@@ -109,7 +109,7 @@
 	<_verticalsensitivity> Vertical Sensitivity: </_verticalsensitivity>
 	<_horizontalsensitivity> Horizontal Sensitivity: </_horizontalsensitivity>
 	<_inverty> Ö ½€ Õ Ø¢: </_inverty>
-	<_onoff> On/Off </_onoff>
+	<_onoff> ºƒ°‰/Îˆ°‰ </_onoff>
 	<_swapstickcontrols> ÆˆÛ© Ö¢Ø¢ </_swapstickcontrols>
 	<_leftstick> çšõ¤ ÆˆÛ©: </_leftstick>
 	<_rightstick> Ç„Ã¨õ¤ ÆˆÛ©: </_rightstick>
@@ -158,24 +158,24 @@
 	<_specialization> Ø¢Ä¦ Å¦· </_specialization>
 	<_combat> Ø¢Ë† </_combat>
 	<_favored> Ö¢Í„ </_favored>
-	<_name> Name: </_name>
+	<_name> ·‰Ã¨: </_name>
 	<_attributes> Æ¤Ö¢ </_attributes>
 	<_majorskills> È† ÆˆÚ© </_majorskills>
 	<_selectclass> ·€³Š×˜ Ø©×¢È¦ Ö¢Ûª½€°‚±€ ç›½€Á¨ Ø©×¢Ç¨ ÖªÖ¢½€¶‹Ç…. </_selectclass>
-	<_hair> Hair: </_hair>
-	<_bald> Bald: </_bald>
-	<_eyes> Eyes: </_eyes>
-	<_age> Age: </_age>
-	<_complexion> Complexion: </_complexion>
-	<_gender> Gender: </_gender>
-	<_style> Style: </_style>
-	<_red> Red: </_red>
-	<_green> Green: </_green>
-	<_blue> Blue: </_blue>
-	<_length> Length: </_length>
-	<_random> Random </_random>
-	<_undo> Undo </_undo>
-	<_reset> Reset </_reset>
+	<_hair> ´‚³‰: </_hair>
+	<_bald> ²Š´‚³‰: </_bald>
+	<_eyes> Á¦: </_eyes>
+	<_age> ±€·‰: </_age>
+	<_complexion> ¼‰Å†Ë¤: </_complexion>
+	<_gender> Ö¢Õ£: </_gender>
+	<_style> Æˆ»€×©: </_style>
+	<_red> ö Ğ : </_red>
+	<_green> É„Ã¤: </_green>
+	<_blue> ¼€Ó : </_blue>
+	<_length> Ğ©·‰: </_length>
+	<_random> Ä†Ø ×— </_random>
+	<_undo> Ò•Â¤³‰°‰ </_undo>
+	<_reset> É„°‰İ </_reset>
 	<_armorer> Armorer </_armorer>
 	<_magic> ´€Õ¢ </_magic>
 	<_stealth> Â„Ø¢ </_stealth>
@@ -203,7 +203,7 @@
 	<_anyfurther> any further. </_anyfurther>
 	<_nameenchantment> Name Enchanted Item </_nameenchantment>
 	<_attribute> Attribute: </_attribute>
-	<_skill> Skill: </_skill>
+	<_skill> ÆˆÚ©: </_skill>
 	<_move> Move </_move>
 	<_look> Look </_look>
 	<_equip> Equip </_equip>				<!-- Inventory Menu Xbox Hint Text -->
@@ -264,7 +264,7 @@
 	<_water_reflections> Ä¦ Õ ¶€: </_water_reflections>
 	<_water_displacement> Ø Ä¦Ğ£ Ì…¶‰: </_water_displacement>
 	<_window_reflections> °‚Ç¦ Õ ¶€: </_window_reflections>
-	<_hair_detail> Hair Detail: </_hair_detail>
+	<_hair_detail> ´‚³‰ ¶‹Å† Ö¢Ø¢: </_hair_detail>
 	<_blood> ¼‰ ÀˆÓ©: </_blood>
 	<_antialiasing> × »‰ ·‹×©³‰·‚Ö©: </_antialiasing>
 	<_bloom> Bloom Í…Ğ: </_bloom>
