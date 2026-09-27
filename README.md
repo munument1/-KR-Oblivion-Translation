@@ -50,4 +50,4 @@ python build_vanilla_overlay.py --data-dir "C:\Games\Steam\steamapps\common\Obli
 
 빌더는 출력 위치가 원본 `Data` 폴더 안팎으로 겹치면 중단합니다.
 
-실행 파일에만 존재하는 다른 문자열 게임 설정 후보는 `audit_menu_gmst.py`로 조사할 수 있습니다. 출력은 검토용 후보 목록이며, 실제 게임 화면에서 확인하기 전에는 번역 설정으로 자동 추가하지 않습니다.
+실행 파일에 들어 있는 다른 문자열 게임 설정 후보는 `audit_menu_gmst.py`로 조사할 수 있습니다. 이 도구는 EXE만 읽으며, 출력은 미번역 목록이 아닙니다. 실제 게임 화면에서 확인하기 전에는 번역 설정으로 자동 추가하지 않습니다.
