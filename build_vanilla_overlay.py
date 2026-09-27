@@ -464,6 +464,7 @@ def main() -> int:
                                          HERE / "patch_translation_memory.csv",
                                          HERE / "legacy_carrier_completion.csv",
                                          HERE / "legacy_full_recovery.csv",
+                                         HERE / "remaster_exact_memory.csv",
                                          HERE / "exe_gmst_existing.csv",
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
