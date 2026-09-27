@@ -4,7 +4,7 @@
 
 ## 이번 작업의 산출물
 
-- GitHub 저장소: <https://github.com/munument1/-KR-Oblivion-Translation>. 본편 설치기 v0.1.5는 원본 게임의 `Oblivion.esm` 및 공식 DLC ESP에서 검증된 문자열만 바꾸어 MO2 모드 폴더를 만드는 `install.bat` + `OblivionKRBuilder.exe` 패키지다. 본편 원본이나 번역 적용 ESM/ESP는 GitHub 압축파일에 넣지 않는다.
+- GitHub 저장소: <https://github.com/munument1/-KR-Oblivion-Translation>. 본편 설치기 v0.1.5 릴리스: <https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v0.1.5>. 원본 게임의 `Oblivion.esm` 및 공식 DLC ESP에서 검증된 문자열만 바꾸어 MO2 모드 폴더를 만드는 `install.bat` + `OblivionKRBuilder.exe` 패키지다. 본편 원본이나 번역 적용 ESM/ESP는 GitHub 압축파일에 넣지 않는다.
 - 별도 넥서스 업로드용 ZIP: `dist\Unofficial_Oblivion_Patches_KR_3.5.9a_1.6.2_v27.zip`. 사용자가 넥서스에는 **이 언오피셜 패치 한국어 ESP만** 올린다. ZIP에는 기본 ESP 11개, 선택 ESP 2개, 한국어 README, 검증 JSON만 들어 있다. 최신 영문 원본 패치 3종 자체나 본편 번역 ESM은 포함되지 않는다. 제작자 허락은 사용자가 받았다고 명시했다.
 - 인트로와 아웃트로만 자막 대상: `OblivionIntro.bik`, `OblivionOutro.bik`. 설치기가 FFmpeg 및 RAD Video Tools를 찾으면 원본 영상 해시를 확인하고 한국어 자막 BIK1을 출력 모드에 생성한다. 다른 영상은 처리하지 않는다.
 
