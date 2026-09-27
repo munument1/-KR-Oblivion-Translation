@@ -63,6 +63,7 @@ class Translation:
     korean: bytes
     line: int
     editor_id: bytes | None = None
+    occurrence: int | None = None
 
 
 def load_translations(path: Path, extra_paths=()):
