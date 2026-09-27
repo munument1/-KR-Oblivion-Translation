@@ -23,13 +23,13 @@ from pathlib import Path
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 MASTER = "Oblivion.esm"
 # The executable supplies these default GMSTs, but the original ESM has no
-# records for them. "게임" and "종료" use bytes from verified CSV strings;
+# records for them. The question's Hangul bytes come from verified CSV strings;
 # "취소" uses the existing translated menus/strings.xml entry.
 MENU_GMSTS = (
     (0x00F00001, b"sExitGameAffirm\0", b"Exit Game\0",
      bytes.fromhex("b08bd7a90520c8a408c38500")),
     (0x00F00002, b"sExitGameQuestion\0", b"Exit the game?\0",
-     bytes.fromhex("b08bd7a90520c8a408c3853f00")),
+     bytes.fromhex("b08bd7a905c7a80420c8a408c385bd80b689d0ab14c6a806b189be803f00")),
     (0x00F00003, b"sCancel\0", b"Cancel\0",
      bytes.fromhex("d997c68400")),
 )
