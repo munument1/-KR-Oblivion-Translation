@@ -11,7 +11,15 @@ if not exist "%DATA_DIR%\Oblivion.esm" (
   exit /b 1
 )
 set "OUT_DIR=%~dp0output\Oblivion_KR_Mod"
-set "INI_PATH=%USERPROFILE%\Documents\My Games\Oblivion\Oblivion.ini"
+set "INI_PATH=%~2"
+if not defined INI_PATH (
+  for /f "delims=" %%I in ('powershell -NoProfile -Command "[Environment]::GetFolderPath('MyDocuments')"') do set "INI_PATH=%%I\My Games\Oblivion\Oblivion.ini"
+)
+echo Active INI: "%INI_PATH%"
+if defined INI_PATH if not exist "%INI_PATH%" if exist "%DATA_DIR%\..\Oblivion_default.ini" (
+  for %%I in ("%INI_PATH%") do if not exist "%%~dpI" mkdir "%%~dpI"
+  copy /Y "%DATA_DIR%\..\Oblivion_default.ini" "%INI_PATH%" >nul
+)
 if exist "%~dp0OblivionKRBuilder.exe" (
   set "RUNNER=%~dp0OblivionKRBuilder.exe"
   goto run_exe
@@ -46,6 +54,6 @@ if exist "%INI_PATH%" (
 if errorlevel 1 exit /b 1
 echo.
 echo Overlay ready: "%OUT_DIR%"
-if not exist "%INI_PATH%" echo Oblivion.ini was not found. Apply FONT_SETTINGS.txt after the game creates it.
+if not exist "%INI_PATH%" echo Oblivion.ini was not found. Apply FONT_SETTINGS.txt to the active INI.
 echo Install the output folder as an MO2 mod, or copy its contents into a separate mod overlay.
 exit /b 0

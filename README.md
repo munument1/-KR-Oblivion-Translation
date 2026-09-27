@@ -7,8 +7,9 @@
 1. [Releases](https://github.com/munument1/-KR-Oblivion-Translation/releases)에서 설치기 압축파일을 받아 압축을 풉니다.
 2. `install.bat`을 실행하고 원본 게임의 `Data` 폴더 경로를 입력합니다. 명령줄에서 `install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"`처럼 지정해도 됩니다.
 3. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 추가합니다. 원본 게임 파일은 건드리지 않습니다.
-4. 설치기가 `Documents\My Games\Oblivion\Oblivion.ini`를 찾으면 한글 폰트 1–3 설정을 백업 후 수정합니다. MO2의 프로필별 INI를 사용하거나 아직 INI가 없다면 `output\Oblivion_KR_Mod\FONT_SETTINGS.txt` 내용을 실제 사용하는 INI의 `[Fonts]` 섹션에 적용합니다.
-5. 공식 DLC가 활성화되어 있다면 MO2에서 기존 플러그인 로드 순서를 유지합니다. 출력 폴더에는 바뀐 플러그인만 들어갑니다.
+4. 설치기는 Windows가 지정한 실제 **문서** 폴더(OneDrive로 이동된 경우 포함)의 `My Games\Oblivion\Oblivion.ini`에 한글 폰트 1–3을 설정합니다. 파일이 없으면 게임의 `Oblivion_default.ini`에서 생성합니다. 기존 INI는 수정 전에 백업합니다.
+5. MO2에서 **프로필별 게임 INI**를 사용하는 경우에는 두 번째 인수에 해당 프로필 INI를 지정합니다. 예: `install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data" "D:\Oblivion MO2\profiles\Default\oblivion.ini"`. MO2 설치 폴더 바로 아래의 `oblivion.ini`에 설정을 추가하는 것만으로는 활성 게임 INI가 바뀌지 않을 수 있습니다.
+6. 공식 DLC가 활성화되어 있다면 MO2에서 기존 플러그인 로드 순서를 유지합니다. 출력 폴더에는 바뀐 플러그인만 들어갑니다.
 
 Python 3.10 이상이 있으면 저장소의 `install.bat`을 그대로 실행할 수 있습니다. 릴리스에는 Python 없이 실행하는 `OblivionKRBuilder.exe`도 포함됩니다.
 
