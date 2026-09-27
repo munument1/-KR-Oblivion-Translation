@@ -452,6 +452,7 @@ def main() -> int:
         parser.error("output must be separate from the source Data directory")
     table = load_translations(args.csv, (HERE / "vanilla_completion.csv",
                                          HERE / "patch_translation_memory.csv",
+                                         HERE / "legacy_carrier_completion.csv",
                                          HERE / "exe_gmst_existing.csv"))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")

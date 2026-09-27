@@ -200,7 +200,9 @@ def main():
         root = Path(__file__).resolve().parent
         vanilla_table = load_translations(root / "applied_translations_v2.csv",
                                           (root / "vanilla_completion.csv",
-                                           root / "patch_translation_memory.csv"))
+                                           root / "patch_translation_memory.csv",
+                                           root / "legacy_carrier_completion.csv",
+                                           root / "exe_gmst_existing.csv"))
         quest_entries, loading_entries = load_quest_loading_translations(root / "quest_loading_translations.csv")
     else:
         vanilla_audit = vanilla_table = quest_entries = loading_entries = None

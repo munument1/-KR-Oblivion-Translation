@@ -23,6 +23,7 @@ Python 3.10 이상이 있으면 저장소의 `install.bat`을 그대로 실행�
 - **일반 저장 보호:** `CELL/FULL`과 `WRLD/FULL` 장소명은 원본 영어를 유지합니다. 기존 한글패치의 특수 한글 바이트가 현재 장소명에 들어가면 일반 저장은 성공 메시지가 나와도 파일이 생기지 않을 수 있습니다. 자동 저장과 콘솔 저장은 별도로 동작합니다. 출력 ESM의 장소명 1,825건이 원본과 동일한지 검사했습니다. 참고: [Bethesda 저장 문제 안내](https://help.bethesda.net/app/answers/detail/a_id/17980/~/what-can-i-do-if-i-cannot-get-oblivion-to-save), [obCJK 제작자의 현상 설명](https://www.nexusmods.com/oblivion/mods/56434).
 - 동일한 영어 명칭과 레코드 종류에 검증된 한글 번역이 하나만 있는 경우를 조사해 `vanilla_completion.csv`로 보강했습니다. 특히 `Tan Jug` 6건을 포함하며, 내부용 `Script Effect`와 `GREETING` 같은 식별 표기는 건드리지 않습니다.
 - 최신 패치의 이전 한글 ESP에서 번역 **문자열만** `patch_translation_memory.csv`로 추출해 본편에 재사용합니다. 같은 FormID·레코드·필드·원문 영어가 바닐라에도 있을 때만 적용하며 패치 기능 레코드는 복사하지 않습니다. 이 과정에서 `INFO` 일반 대사와 `DIAL` 선택지 누락이 크게 줄었습니다.
+- 이전 통합판의 본편 번역용 추가 레코드에서 문자열 118건을 `legacy_carrier_completion.csv`로 회수했습니다. 최신 영문 UOP에 없는 레코드 중 바닐라 ESM에 FormID와 EditorID가 일치하는 문자열만 사용합니다. 해당 구버전 레코드는 출력에 복사하지 않습니다.
 - BAT는 FFmpeg와 RAD Video Tools가 설치된 경우 원본 `OblivionIntro.bik`, `OblivionOutro.bik`에 `video_subtitles`의 한글 자막을 입혀 출력 모드의 `Video` 폴더에 생성합니다. 두 원본 영상의 SHA-256이 검증된 Steam판과 달라 자막 시간이 어긋날 수 있으면 중단합니다. 도구가 없으면 영상 단계를 건너뛰고 메시지를 표시합니다. [RAD 공식 도구](https://www.radgametools.com/bnkdown.htm), [RAD 배치 명령 안내](https://www.radgametools.com/binkfaq.htm).
 - 출력 검사는 기존 레코드·그룹 식별자와 SCPT, QUST, INFO 내부 스크립트 바이트의 원본 일치 여부, 새 문자열 설정 396건의 추가를 확인합니다. `translation_audit.json`에는 파일별 SHA-256과 각 문자열의 원문 SHA-256을 기록합니다.
 - `DLCShiveringIsles.esp`가 85바이트인 설치본에서는 그 ESP에 적용할 문자열이 없습니다. 해당 콘텐츠에서 본편 ESM에 들어 있는 번역 대상은 ESM에서 처리합니다.
@@ -33,13 +34,15 @@ Python 3.10 이상이 있으면 저장소의 `install.bat`을 그대로 실행�
 
 | 대상 | 적용 문자열 |
 | --- | ---: |
-| Oblivion.esm | 16,797 |
+| Oblivion.esm | 16,915 |
 | Knights.esp | 199 |
 | DLCSpellTomes.esp | 635 |
 | 그 외 공식 DLC | 142 |
-| 합계 | **17,773** |
+| 합계 | **17,891** |
 
 매칭되지 않은 CSV 행은 적용하지 않습니다. 이번 빌드에서 레코드·그룹 식별자와 SCPT, QUST, INFO 스크립트 바이트 비교는 모두 통과했습니다. 이전 저장 안전판은 MO2에서 일반 저장 파일 생성·불러오기, 튜토리얼 저널, 로딩 화면과 일부 메뉴의 한글 표시를 확인했습니다. 이번에 추가한 일반 대사·선택지와 영상 자막은 파일·프레임 검사를 마쳤으며 게임 화면에서는 추가 확인이 필요합니다. 다른 모드가 나중에 같은 레코드를 덮으면 해당 문자열은 바뀔 수 있습니다.
+
+이 버전은 번역 보강판이며 전체 대화 완역은 아닙니다. 원본 ESM의 `INFO/NAM1` 대사 23,877건 중 2,046건, `DIAL/FULL` 선택지 3,813건 중 1,333건이 번역됐습니다. 로딩 문구 `LSCR/DESC` 337건은 모두 번역됐습니다. 대사·선택지의 나머지는 영어로 보일 수 있습니다.
 
 기존 UOP 한글 ESP는 장소명을 다시 한글로 덮어 일반 저장을 막을 수 있습니다. 최신 원본을 기준으로 장소명만 영어로 유지한 별도 [UOP 한국어 ESP 오버레이](README_UOP_KR.md)를 사용하세요. 이 본편 설치기는 UOP/USIP/UODP를 설치하거나 수정하지 않습니다.
 
