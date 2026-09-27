@@ -200,3 +200,457 @@ Knights.esp,QUST,01002D3F,CNAM,11,I've completed Sir Juncan's quest by recoverin
 Knights.esp,QUST,01002D3F,CNAM,13,I've completed Sir Ralvas's quest by recovering the Mace of the Crusader. I should return to the Priory and find out if there is any news of the remaining two Relics.,성전사의 철퇴를 되찾아 랄바스 경의 임무를 완수했다. 수도원으로 돌아가 남은 두 성물에 대한 소식이 있는지 알아봐야 한다.,,d6a208d8a202b680d79820d9a204db95c3a80420d295d9a00cb78020d3a004b580c68820d0a308d79820d7a905c486c3a80420e79902c686ddaa14b2802e20c686c284e79b02c788c38420c2a404b780b08020d1a005c7a80220c28620d6a208c4a604b78b20b28adda00220c684d6a901b78920d7a914c1a802b88920d7a004b780d590b78120dda002b2802e00,ND02,manual_context_translation
 Knights.esp,QUST,01002D3F,CNAM,16,I've completed Sir Henrik's quest by recovering the Shield of the Crusader. I should return to the Priory and find out if there is any news of the remaining two Relics.,성전사의 방패를 되찾아 헨릭 경의 임무를 완수했다. 수도원으로 돌아가 남은 두 성물에 대한 소식이 있는지 알아봐야 한다.,,d6a208d8a202b680d79820d5a008bc8ac3a80420d295d9a00cb78020ddab02d3a90120d0a308d79820d7a905c486c3a80420e79902c686ddaa14b2802e20c686c284e79b02c788c38420c2a404b780b08020d1a005c7a80220c28620d6a208c4a604b78b20b28adda00220c684d6a901b78920d7a914c1a802b88920d7a004b780d590b78120dda002b2802e00,ND02,manual_context_translation
 Knights.esp,QUST,01002D3F,CNAM,19,I've completed Sir Casimir's quest by recovering the Gauntlets of the Crusader. I should return to the Priory and find out if there is any news of the remaining two Relics.,성전사의 건틀릿을 되찾아 카시미르 경의 임무를 완수했다. 수도원으로 돌아가 남은 두 성물에 대한 소식이 있는지 알아봐야 한다.,,d6a208d8a202b680d79820d0a202cba804d3a907c7a80420d295d9a00cb78020ba80b689b489c38820d0a308d79820d7a905c486c3a80420e79902c686ddaa14b2802e20c686c284e79b02c788c38420c2a404b780b08020d1a005c7a80220c28620d6a208c4a604b78b20b28adda00220c684d6a901b78920d7a914c1a802b88920d7a004b780d590b78120dda002b2802e00,ND02,manual_context_translation
+Oblivion.esm,BOOK,0002453F,DESC,0,"<font face=1><br>
+Rain's Hand<br>
+Book Four of 2920, <br>
+The Last Year of the First Era<br>
+by Carlovac Townway<br>
+<br>
+3 Rain's Hand, 2920<br>
+Coldharbour, Oblivion<br>
+<br>
+<IMG src=""Book/fancy_font/s_61x62.dds"" width=61 height=62>otha Sil proceeded as quickly as he could through the blackened halls of the palace, half-submerged in brackish water.  All around him, nasty gelatinous creatures scurried into the reeds, bursts of white fire lit up the upper arches of the hall before disappearing, and smells assaulted him, rancid death one moment, sweet flowered perfume the next.  Several times he had visited the Daedra princes in their Oblivion, but every time, something different awaited him.<br>
+<br>
+He knew his purpose, and refused to be distracted.<br>
+<br>
+Eight of the more prominent Daedra princes were awaiting him in the half-melted, domed room.  Azura, Prince of Dusk and Dawn; Boethiah, Prince of Plots; Herma-Mora, Daedra of Knowledge; Hircine, the Hunter; Malacath, God of Curses; Mehrunes Dagon, Prince of Disaster; Molag Bal, Prince of Rage; Sheogorath, the Mad One.<br>
+<br>
+Above them, the sky cast tormented shadows upon the meeting.<br>
+<br>
+<br>
+5 Rain's Hand, 2920<br>
+The Isle of Artaeum, Summurset<br>
+<br>
+Sotha Sil's voice cried out, echoing from the cave, ""Move the rock!""<br>
+<br>
+Immediately, the initiates obeyed, rolling aside the great boulder that blocked the entrance to the Dreaming Cavern.  Sotha Sil emerged, his face smeared with ash, weary.  He felt he had been away for months, years, but only a few days had transpired.  Lilatha took his arm to help him walk, but he refused her help with a kind smile and a shake of his head.<br>
+<br>
+""Were you ... successful?"" she asked.<br>
+<br>
+""The Daedra princes I spoke with have agreed to our terms,"" he said flatly. ""Disasters such as befell Gilverdale should be averted.  Only through certain intermediaries such as witches or sorcerers will they answer the call of man and mer.""<br>
+<br>
+""And what did you promise them in return?"" asked the Nord boy Welleg.<br>
+<br>
+""The deals we make with Daedra,"" said Sotha Sil, continuing on to Iachesis's palace to meet with the Master of the Psijic Order. ""Should not be discussed with the innocent.""<br>
+<br>
+<br>
+8 Rain's Hand, 2920<br>
+The Imperial City, Cyrodiil<br>
+<br>
+A storm billeted the windows of the Prince's bedchamber, bringing a smell of moist air to mix with the censors filled with burning incense and herbs.<br>
+<br>
+""A letter has arrived from the Empress, your mother,"" said the courier. ""Anxiously inquiring after your health.""<br>
+<br>
+""What frightened parents I have!"" laughed Prince Juilek from his bed.<br>
+<br>
+""It is only natural for a mother to worry,"" said Savirien-Chorak, the Potentate's son.<br>
+<br>
+ ""There is everything unnatural about my family, Akavir.  My exiled mother fears that my father will imagine me of being a traitor, covetous of the crown, and is having me poisoned,"" the Prince sank back into his pillow, annoyed. ""The Emperor has insisted on me having a taster for all my meals as he does.""<br>
+<br>
+""There are many plots,"" agreed the Akavir. ""You have been abed for nearly three weeks with every healer in the empire shuffling through like a slow ballroom dance.  At least, all can see that you're getting stronger.""<br>
+<br>
+""Strong enough to lead the vanguard against Morrowind soon, I hope,"" said Juilek.<br>
+<br>
+<br>
+11 Rain's Hand, 2920<br>
+The Isle of Artaeum, Summurset<br>
+<br>
+The initiates stood quietly in a row along the arbor loggia, watching the long, deep, marble-lined trench ahead of them flash with fire.  The air above it vibrated with the waves of heat.  Though each student kept his or her face sturdy and emotionless, as a true Psijic should, their terror was nearly as palpable as the heat.  Sotha Sil closed his eyes and uttered the charm of fire resistance.  Slowly, he walked across the basin of leaping flames, climbing to the other side, unscathed.  Not even his white robe had been burned.<br>
+<br>
+""The charm is intensified by the energy you bring to it, by your own skills, just as all spells are,"" he said. ""Your imagination and your willpower are the keys.  There is no need for a spell to give you a resistance to air, or a resistance to flowers, and after you cast the charm, you must forget there is even a need for a spell to give you resistance to fire.  Do not confuse what I am saying: resistance is not about ignoring the fire's reality.  You will feel the substance of flame, the texture of it, its hunger, and even the heat of it, but you will know that it will not hurt or injure you.""<br>
+<br>
+The students nodded and one by one, they cast the spell and made the walk through the fire.  Some even went so far as to bend over and scoop up a handful of fire and feed it air, so it expanded like a bubble and melted through their fingers.  Sotha Sil smiled.  They were fighting their fear admirably.<br>
+<br>
+The Chief Proctor Thargallith came running from the arbor arches, ""Sotha Sil!  Almalexia has arrived on Artaeum.  Iachesis told me to fetch you.""<br>
+<br>
+Sotha Sil turned to Thargallith for only a moment, but he knew instantly from the screams what had transpired.  The Nord lad Wellig had not cast the spell properly and was burning.  The smell of scorched hair and flesh panicked the other students who were struggling to get out of the basin, pulling him with them, but the incline was too steep away from the entry points.  With a wave of his hand, Sotha Sil extinguished the flame.<br>
+<br>
+Wellig and several other students were burned, but not badly.  The sorcerer cast a healing spell on them, before turning back to Thargallith.<br>
+<br>
+""I'll be with you in a moment, and give Almalexia the time to shake the road dust from her train,"" Sotha Sil turned back to the students, his voice flat. ""Fear does not break spells, but doubt and incompetence are the great enemies of any spellcaster.  Master Welleg, you will pack your bags.  I'll arrange for a boat to bring you to the mainland tomorrow morning.""<br>
+<br>
+The sorcerer found Almalexia and Iachesis in the study, drinking hot tea, and laughing.  She was more beautiful than he had remembered, though he had never before seen her so disheveled, wrapped in a blanket, dangling her damp long black tresses before the fire to dry.  At Sotha Sil's approach, she leapt to her feet and embraced him.<br>
+<br>
+""Did you swim all the way from Morrowind?"" he smiled.<br>
+<br>
+""It's pouring rain from Skywatch down to the coast,"" she explained, returning his smile.<br>
+<br>
+""Only a half a league away, and it never rains here,"" said Iachesis proudly. ""Of course, I sometimes miss the excitement of Summurset, and sometimes even the mainland itself.  Still, I'm always very impressed by anyone out there who gets anything accomplished.  It is a world of distractions.  Speaking of distractions, what's all this I hear about a war?""<br>
+<br>
+""You mean the one that's been bloodying the continent for the last eighty years, Master?"" asked Sotha Sil, amused.<br>
+<br>
+""I suppose that's the one I mean,"" said Iachesis with a shrug of his shoulders. ""How is that war going?""<br>
+<br>
+""We will lose it, unless I can convince Sotha Sil to leave Artaeum,"" said Almalexia, losing her smile.  She had meant to wait and talk to her friend in private, but the old Altmer gave her courage to press on. ""I have had visions; I know it to be true.""<br>
+<br>
+Sotha Sil was silent for a moment, and then looked at Iachesis, ""I must return to Morrowind.""<br>
+<br>
+""Knowing you, if you must do something, you will,"" sighed the old Master. ""The Psijics' way is not to be distracted.  Wars are fought, Empires rise and fall.  You must go, and so must we.""<br>
+<br>
+""What do you mean, Iachesis?  You're leaving the island?""<br>
+<br>
+""No, the island will be leaving the sea,"" said Iachesis, his voice taking on a dreamy quality. ""In a few years, the mists will move over Artaeum and we will be gone.  We are counselors by nature, and there are too many counselors in Tamriel as it is.  No, we will go, and return when the land needs us again, perhaps in another age.""<br>
+<br>
+The old Altmer struggles to his feet, and drained the last sip of his drink before leaving Sotha Sil and Almalexia alone: ""Don't miss the last boat.""<br>
+<br>
+The Year Continues in Second Seed.<br>
+<br>","<font face=1><br><br>
+2920년, 첫 번째 시대의 마지막 해<br>
+제4권: 봄비의 4월<br>
+<br>
+칼로박 타운웨이 지음<br>
+<br>
+<HR><br>
+<br>
+2920년, 봄비의 4월 3일<br>
+오블리비언, 콜드하버에서<br>
+<IMG src=""Book/fancy_font/s_61x62.dds"" width=61 height=62><br>
+소사 실은 소금기 있는 물에 반쯤 잠긴 궁전에서, 갈수록 어두워지는 회랑을 그가 낼 수 있는 최대한의 속도로 지나고 있었다. 그의 주변에서는 역겹게 질척대는 생물체가 갈대밭에서 허우적댔고, 꺼지기 직전의 하얀 불빛이 아치 위를 밝히고 있었으며, 한순간은 시체 썩는 내를 풍기더라도 곧 향긋한 꽃내음으로 변화하는 향취가 그의 코를 엄습했다. 그는 몇 번 정도 데이드라들의 군주들을 만나러 각각의 오블리비언에 방문했었지만, 그럴 때마다 그가 마주하는 광경은 항상 달랐다.<br>
+<br>
+그는 자신의 목적을 아주 잘 알고 있었고, 다른 곳에 한눈을 팔지 않았다.<br>
+<br>
+데이드라 군주 중에서도 저명한 여덟이 반쯤 녹아내린 돔 형태의 방에서 그를 기다리고 있었다. 땅거미와 새벽의 프린스 아주라, 계략의 프린스 보에디아, 지식의 데이드라인 헤르마-모라, 사냥꾼 허씬, 저주의 신인 말라카스, 재앙의 프린스인 메이룬스 데이건, 강간의 왕 몰라그 발, 그리고 미치광이 셰오고라스였다.<br>
+<br>
+하늘이 그들의 머리 위에서 만남의 장에 뒤틀린 그림자를 드리우고 있었다.<br>
+<br>
+2920년, 봄비의 4월 5일 -<br>
+서머셋의 아테이움 섬에서<br>
+<br>
+소사 실의 목소리가 동굴 안에 쩌렁쩌렁하게 울려퍼졌다. ""바위를 치워라!""<br>
+<br>
+수련생들은 즉각 복종했고 꿈꾸는 동굴 입구를 막고 있던 거대한 돌을 옆으로 굴려 치웠다. 그러자 먼지로 뒤덮이고 핼쑥해진 소사 실의 얼굴이 나타났다. 고작 며칠밖에 지나지 않았음에도 불구하고, 그는 마치 몇 달이고 몇 해를 넘긴 것 같은 기분이었다. 리라사는 그가 걸음을 옮기는 것을 돕고자 부축하려 했지만, 그는 부드러운 미소와 함께 고개를 저어 그녀의 도움을 거절했다.<br>
+<br>
+""그... 성공하셨습니까?"" 그녀가 물었다.<br>
+<br>
+""내가 만난 데이드라 군주들은 우리 제안에 동의했다."" 그는 건조하게 대답했다. ""길버데일에 닥쳤던 재앙과 같은 일은 더 이상 일어나지 않을 것이다. 이제 그들은 마녀나 마법사 같은 중재자를 거쳐서만 인간과 엘프의 부름에 답할 것이다.""<br>
+<br>
+""그렇다면 그 대가로 무엇을 약속하셨습니까?"" 노드 애송이 윌레그가 물었다.<br>
+<br>
+""데이드라와의 거래는,"" 소사 실은 시직 마법회의 마스터를 만나기 위해 이아케시스의 궁전을 향하며 말했다. ""순진한 자와 이야기해서는 아니 되는 것이다.""<br>
+<br>
+2920년, 봄비의 4월 20일<br>
+시로딜의 임페리얼 시티에서<br>
+<br>
+폭풍우가 황자의 침실 창문을 두드리며, 타들어가는 향료와 허브 연기로 가득한 공기 중의 장벽에 축축한 습기를 뒤섞었다.<br>
+<br>
+""어머님 되시는 황후 폐하께서 보내신 편지가 도착했습니다."" 전령이 말했다. ""황자 전하의 건강을 걱정하고 계십니다.""<br>
+<br>
+""참 걱정도 많은 부모님이시라니까!"" 쥘렉 황자는 침대에서 웃었다.<br>
+<br>
+""어머니가 아들의 걱정을 하는 건 자연스러운 것이지요."" 수석 고문의 아들인 사비리엔-초락이 말했다.<br>
+<br>
+""우리 집안에서는 모든 것이 부자연스럽다네, 아카비르. 유폐되신 어머님께서는, 아버님께서 날 황위를 노리는 반역자로 몰아 독살하시지는 않을까 걱정하시지."" 왕자는 신경질적으로 베개에 몸을 던졌다. ""황제 폐하께서는 본인께서 하시는 것마냥 나더러 검식자를 두고 음식을 죄다 기미하라시더군.""<br>
+<br>
+""많은 음모가 도사리고 있으니까요."" 아카비르는 수긍했다. ""전하께서는 거의 3주를 침대에 누워 제국에 있는 모든 치료사들과 무도회장에서의 느릿한 춤을 추시는 것처럼 보내셨잖습니까. 적어도 모두가 전하께서 회복하시는 중이라는 건 알았지만요.""<br>
+<br>
+""그저 빨리 모로윈드에게 맞설 선봉대를 이끌 수 있을 정도로 회복하길 바랄 뿐이네."" 쥘렉은 대답했다.<br>
+<br>
+2920년, 봄비의 4월 11일<br>
+서머셋의 아테이움 섬에서<br>
+<br>
+견습생들은 한쪽 면이 트여 있는 목조 복도에 늘어서 그들 앞에서 화염을 날름대는 길고도 깊은 대리석 해자를 바라보았다. 타오르는 열기로 공기가 떨릴 지경이었다. 각각의 학생들은 진정한 시직의 일원으로서 감정 없는 굳은 표정을 짓고 있었지만, 그들의 공포를 앞에서 타오르는 화염의 열기만큼이나 분명히 느낄 수 있었다. 소사 실은 눈을 감고 화염 저항 마법을 읊조렸다. 천천히, 그는 화염이 넘실대는 해자를 지나 아무런 탈도 없이 반대편으로 올라갔다. 그의 하얀 로브에서는 한 점의 그을음조차 찾아볼 수 없었다.<br>
+<br>
+""이 마법 또한 다른 모든 마법이 그러하듯이, 너희의 능력에 따라 더욱 강한 효력을 발휘한다."" 그가 말했다. ""너희의 상상력과 의지가 핵심이다. 공기나 꽃에 대한 저항 마법이 필요 없듯이, 너희가 주문을 시전한 후에는 화염에 대한 저항 마법이 필요했는지조차 잊어버려야 한다. 단, 내 말을 착각해서는 아니 된다. 저항 마법은 화염의 존재 그 자체를 무시하는 것은 아니다. 너희는 여전히 화염의 존재와 질감, 그리고 그 갈망과 열기까지 느끼겠지만, 그것이 너희를 다치거나 해치지 못할 것임을 알게 될 것이다.""<br>
+<br>
+학생들은 고개를 끄덕이고 한 사람씩 차례로 주문을 시전하고는 불길 속을 지나갔다. 심지어 몇몇은 한술 더 떠 몸을 숙여 한 줌의 불꽃을 쥐어다가 공기 중으로 흩뿌리고는, 그것이 거품처럼 팽창했다가 이내 손가락 사이에서 사그라들게 하였다. 소사 실은 미소지었다. 그들은 훌륭하게 자신의 두려움과 맞서고 있었다.<br>
+<br>
+그때 수석 감독관 타르갈리스가 복도 저편에서 달려왔다. ""소사 실이시여! 알말렉시아께서 아테이움에 도착하셨습니다. 아이키시스가 제게 성하를 모셔오라고 했습니다.""<br>
+<br>
+소사 실이 타르갈리스를 향해 몸을 돌린 순간, 갑작스레 비명이 들려왔고 그는 즉시 무슨 일이 일어났는지 알았다. 주문을 정확히 시전하지 못한 노드 애송이 윌레그가 불타고 있었다. 머리카락과 살점이 그슬리는 냄새가 해자를 지나던 다른 학생들까지 공포에 빠뜨렸고, 그들은 윌레그를 끌어내 함께 빠져나오려 했지만 경사가 너무 가팔랐다. 소사 실은 손을 휘저어 불을 껐다.<br>
+<br>
+윌레그와 몇몇 학생들은 화상을 입었지만, 그렇게 심각하지는 않았다. 마법사는 타르갈리스를 향해 다시 돌아서기 전, 학생들에게 치료 마법을 시전했다.<br>
+<br>
+""이들과 조금 더 시간을 보내도록 하지. 알말렉시아도 옷자락에서 길바닥의 흙먼지를 털어낼 시간이 필요하지 않겠나."" 소사 실은 다시 학생들을 향해 돌아섰다. 그의 목소리는 건조했다. ""공포는 주문을 깨뜨릴 수 없는 법이지. 하지만 의심과 무능이야말로 주문을 사용하는 모든 이들의 가장 큰 적이다. 마스터 윌레그, 돌아가서 짐을 싸도록. 내일 아침 널 본토로 데려갈 배편을 준비해두겠다.""<br>
+<br>
+마법사는 서재에서 차를 마시며 웃고 있는 알말렉시아와 아이키시스를 찾아냈다. 그는 그녀가 그렇게 흐트러진 모습으로 담요에 몸을 감싼 채, 흑단 같은 긴 머리에서 습기를 말리기 위해 불 앞에 자리한 모습은 여태껏 한 번도 본 적이 없었지만, 그녀는 그가 기억하고 있는 것보다 훨씬 아름다웠다. 소사 실이 다가가자, 그녀는 뛰어올라 그를 끌어안았다.<br>
+<br>
+""모로윈드에서 여기까지 헤엄쳐 오기라도 했나?"" 그가 미소지었다.<br>
+<br>
+""스카이워치에서 해안으로 내려가는 데 비가 쏟아졌지."" 그녀는 그의 미소에 화답했다.<br>
+<br>
+""반 리그 밖에 안 되는 거리지만, 이곳에는 한 번도 비가 온 적이 없지요."" 아이키시스가 자랑스레 말을 꺼냈다. ""물론, 저도 가끔은 서머셋에서의 즐거운 시간이나, 더러는 본토까지도 그립긴 합니다. 아직도 바깥 세상에서 어떤 의미에서든 이름 높은 이들과 만나면 항상 깊은 인상을 받지요. 지금은 난세니까요. 난세라는 말이 나왔으니, 제가 들었던 전쟁 이야기는 다 뭡니까?""<br>
+<br>
+""지난 80년 동안 대륙을 피로 물들이고 있는 바로 그것 말인가, 마스터?"" 소사 실이 즐겁게 물었다.<br>
+<br>
+""제 말이 그 말인 것 같군요."" 아이키시스는 어깨를 으쓱였다. ""그 전쟁은 어떻게 흘러가고 있습니까?""<br>
+<br>
+""우리가 질거야. 소사 실께서 아테이움을 떠나시도록 내가 설득할 수 없다면 말이지."" 알말렉시아의 표정이 굳었다. 그녀는 잠시 뜸을 들였다가 그녀의 친구에게 개인적으로 이야기할 생각이었지만, 늙은 알트머는 그녀가 계속 이야기하기를 재촉했다. ""예지를 봤어. 그렇게 될 게 확실해.""<br>
+<br>
+소사 실은 잠시 동안 침묵하고는 아이키시스를 쳐다보았다. ""아무래도 모로윈드로 돌아가야만 하겠네.""<br>
+<br>
+""당신께서 한다면 하는 분이신 걸 잘 알고 있습니다."" 늙은 마스터는 한숨을 내쉬었다. ""시직의 길은 산만해서는 안 됩니다. 전쟁은 터지기 마련이고, 제국은 번영하고 또 몰락하는 법이지요. 당신께서는 떠나서야만 하고, 우리 또한 그럴 것입니다.""<br>
+<br>
+""그게 무슨 뜻인가, 아이키시스? 그대도 섬을 떠날 작정인가?""<br>
+<br>
+""아니오, 이 섬이 바다를 떠나게 될 것입니다."" 답하는 아이키시스의 목소리는 마치 꿈을 꾸는 것 같았다. ""몇 년 안에 안개가 아테이움을 덮을 것이고 우린 사라질 겁니다. 우리는 천성이 조언자입니다만, 지금 탐리엘에는 조언자들이 너무 많지요... 아니, 우린 떠날 겁니다. 그리고 이 땅이 우리를 다시 필요로 할 때 돌아올 것입니다. 아마도 다른 시대의 일이 될지도 모르겠군요.""<br>
+<br>
+늙은 알트머는 힘겹게 일어나, 마지막으로 따라낸 차 한 모금만을 소사 실과 알말렉시아 앞에 남겨두었다. ""마지막 배를 놓치지 마십시오.""<br>
+<br>
+둘째 파종의 5월에서 계속.",LOC_BK_SKLxRestoration4,3c666f6e7420666163653d313e3c62723e0d3c62723e0d0a32393230d1a3022c20d9a20720d5a202f28a20b689b28ad79820b480b889d4a00120bd8a3c62723e0d0ab88b34e09b023a20c5a405b589d7982034e79b043c62723e0d0a3c62723e0d0adaa004c384d5a00120bb80c7a602d78fb78920b889c7a8053c62723e0d0a3c62723e0d0a3c48523e0d3c62723e0d0a3c62723e0d0a32393230d1a3022c20c5a405b589d7982034e79b042033d7a9043c62723e0d0ac784c5a804b389b589d7a2022c20caa404c288bd80b582b78bb6823c62723e0d0a3c494d47207372633d22426f6f6b2f66616e63795f666f6e742f735f36317836322e646473222077696474683d3631206865696768743d36323e3c62723e0d0ac684b68020d6a904c7a80220c684c0a805b08920d7a914c1a80220c4a604b78b20d5a002f5a80520d8a005d0a90220c0a608d8a202b78bb6822c20d0a004c686c3a40120b782c286d796b889c1a80220dd95d3a008c7a80420c088b08020d1aa0420c68620d7a914c1a80220d995b28adda002d79820c6a401c284c38420b889b180c08420d7a914d7a214b2802e20c088d79820c886d5a302b78bb682c1a80220d7a301d0a306b08b20d8a904d9a201b28ac1a80220d6aa08c4a604b98bb08020d0a004b28ad5a010b78bb68220bd82c786d8a201d2aa14c0842c20be82b889b08920d8a901d8a202d79820bd80d7a10220c5a604d5a90eb78920b780b98920d797c3a80420d5a018bd89c08420d7a914d7a214c788b4832c20dda002c6a602d0a002c7a80220b689b98b20f7a201c1a80220b18ac3a80420cca608b089b282b380c28420c0a40320dda108c0a807dda00220cea40eb18ac7a805c788c38420d5a302dd90bd80c1a80220dda108d997b08020c088d79820ca84c3a80420d7a205c6a806ddaa14b2802e20c088c1a80220d4a30e20d5a20220d8a208c28420b28bb789c288b380c2a804d79820c0a602c886c2a804c7a80420d4a002b180b38220d0a001d0a001d79820c784c5a804b389b589d7a202b78b20d5a008c4a602ddaa14d7a214b889d4a0022c20c088d3a20420bf8ab480b28020c088b08020b480c886bd80c1a80220e09908d0a308c7a80220dda008d6a00820d2a004d3a014b2802e3c62723e0d0a3c62723e0d0ac088c1a80220b880d6a902d79820c4a401d8a201c7a80420b780c88620d8a00420d7a004c08420d7a914d7a214c0842c20b280c3a80220c0a407b78b20dda002c1a602c7a80420dca004b88920d7a017d7a014b2802e3c62723e0d0a3c62723e0d0ab28bb789c288b38020c0a602c88620c8a608b78bb682c28420b882d4a308dda00220b783d2a21ab78920d5a002f5a80520c1a401b780b18ad3a90220c2a40520dda308bb8ad79820d5a008b78bb68220c088c3a80420b089b280b389c08420d7a914d7a214b2802e20dfa008b082b489d79020b68ad5a301d79820cc88d3a902c68820b780c886b3802c20b08dd3a101d79820cc88d3a902c68820c584b78bb289b7802c20b889d6a901d79820b28bb789c288b380d7a90220bd8bc388b4802dc484b3802c20b680d1a108cea60220bd82f7a9022c20b882c886d79820d6a902d7a90220d4a004b380ba80c6882c20b88ad7a008d79820cc88d3a902c688d7a90220b48bb789c3a602c68820b28bb789d0a2022c20d0a008d0a002d79820e7990820c4a404b380c08820d5a0042c20c088b389c08420b489b989e09908b78920b68dc784c084b380c688d7a314b2802e3c62723e0d0a3c62723e0d0abd80c1a804b78920c088c2a804d79820b482b38920d797b78bb68220d4a002d1a005d79820d8a008b78b20d297cba804d3a90220c088d3a905b880c3a80420c288b389c786c08420d7a914d7a214b2802e3c62723e0d0a3c62723e0d0a32393230d1a3022c20c5a405b589d7982034e79b042035d7a904202d3c62723e0d0ab682b482d6ab07d79820b780bb8bb789c7a60520d6a205b78bb6823c62723e0d0a3c62723e0d0ac684b68020d6a904d79820c4a401c684b389b08020c2a408c0a60420d7a002b78b20f282d3a208f282d3a208bd80b08b20c7a604b383bc82d8a314b2802e2022b580d797c3a80420b989d796b38021223c62723e0d0a3c62723e0d0ac686d3a302d6aa08c2a804c7a80220c8a801d0a00120c5a401c8a408ddaa14c08420cea605ce86c1a80220c2a408c0a60420d7a906c086c3a80420d4a001c08420d7a914d2a20220b082b28adda00220c2a404c7a80420d7a311c788c38420c0a604b38320b989e79b14b2802e20c088b382b88020d4a202b889c38420d297d2a211b789c08420ddaa04f4a601bd8ad8a90220c684b68020d6a904d79820d7a204c0a604b78920b180bb80d1a014b2802e20c084d8a00120b483d9a904d5a013b78b20b889b180b88920d7a017d7a014c7a805b78bc28420c5a604c086bd80c0842c20c088c1a80220b480b98920d4a30e20d2a004b789c08420d4a30e20bd8ac3a80420d1a205d0a90220d0a20720d0a010c7a80220b089c5a602b789d7a214b2802e20b389b380b680c1a80220c088b08020d0a204c7a805c7a80420c7a419b089c1a80220d0a207c7a80420c2a406c084b88020c586c9a601bd80b38320ddaa14b889d4a0022c20c088c1a80220c586c288b382c7a60220b489c684d79020dda005be8b20c084b08ac3a80420b882b78220c088b183d79820c284c7a605c7a80420b082d8a204ddaa14b2802e3c62723e0d0a3c62723e0d0a22c0882e2e2e20d6a208c0a408bd80d6a314c6a806b189be803f2220c088b183b08020c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22b18ab08020d4a002d1a00220b28bb789c288b38020c0a602c886c2a804c7a80220c786b38920b88bd7a002b78b20c2a408d798ddaa14b2802e2220c088c1a80220d0a202c884bd80b08b20b28ad2a006ddaa14b2802e2022d0a904b582b28bd7a904b78b20d2a001d9a314d2a20220b88ad7a008d09020d0a010c7a80220d7a904c7a80220b28220b789d6a00820d7a904b782b180b88920d7a017c7a80420d0a207b789b2802e20b789b88b20c088c2a804c7a80220b480b183b18020b480d5a206b68020d0a010c7a80220c8a608b88ab880c3a80420b082b983b682d4a00220d7a902d0a002d09020d7ab04cc88d79820c586c3a805b78b20d2a006dda00420d0a207b789b2802e223c62723e0d0a3c62723e0d0a22c088d3a212b280d4a30220c08820b28ab080c38420c486d7a207c7a80420d7a101c6a401bd80d6a314c6a806b189be803f2220c184c28820b78ac6a408b78920e79c04b38bc088b08020c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22b28bb789c288b380d790d79820b082b38ac1a8022c2220c684b68020d6a904c7a80220b689d8a90120b480d5a206dd95d79820b480c688bb82c3a80420d4a002b180b08920d797bd8a20b789b780ba8bb689c688d79820c0a608d8a202c7a80420dda108bd80b48320d4a004ddaa14b2802e2022c6a602d8a902dda00220b880d79020b789b781b089bd8ab682c1a80220b780b18920d295c1a80220d0a207b789b2802e223c62723e0d0a3c62723e0d0a32393230d1a3022c20c5a405b589d7982034e79b04203230d7a9043c62723e0d0ab689c384d2a904d79820d7a905bc8bb389d7a20420b689bb89b78bb6823c62723e0d0a3c62723e0d0acca401cca608c786b08020ed9908b880d79820d9a905d6a90420d9a008c4a602c7a80420c286c288b389b4832c20bb80c2a804b782b080c1a80220dda108c385d79020bd82c58820d7a302b089c38420b080c2a801dda00220c0a408b08920c8a608d79820d8a008d5a301b78b20c9a601c9a601dda00220c6a806b089c3a80420d297d6a213d7a214b2802e3c62723e0d0a3c62723e0d0a22b782b482d1a90520d295b689c1a80220ed9908cd8620bc8dbd80be8bb68220c584b18ad6a90220dca302b889b08020c284d9a001ddaa14c6a806b189b2802e2220d8a202d3a308b78920d4a004ddaa14b2802e2022ed9908b88020d8a202bd80d79820d0a202d0a008c7a80420d0a201d8a208bd80c08420b08dd6a906b189b2802e223c62723e0d0a3c62723e0d0a22d9a00520d0a201d8a208c28420d4a017c7a80220c586c484d1a905b789b689b380b189be80212220e89c04d3ab0120ed9908b880c1a80220d9a905b28ab78bb68220c7a607d7a214b2802e3c62723e0d0a3c62723e0d0a22b782b482b189b08020b780c2a804d79820d0a201d8a208c7a80420bd80c1a80220d0a20220b880d7a302c688b382c7a60220d0a207b789b889c7852e2220c686d6a20120c084c4a602d79820b780c2a804d7a90220b680b589b389d7ab022dc984d3a001b78920d4a004ddaa14b2802e3c62723e0d0a3c62723e0d0a22c786b38920d8a906d7a002b78bb682c1a80220c484c2a80220d0a207b78920c586b880d7a302c688d3a206b280b18b2c20b780ba80b589c3882e20c787bc8dd295d6a90220b782b482d1a905be8bb682c1a8022c20b780b582d1a905be8bb68220d1a00420ed9908d797c3a80420c184b389c1a80220d5a002d7a301b880c38420c4a404b78020c2a401d6a004bd80b689b889c1a80220d7a017c7a804be8020d0a201d8a208bd80b689b8892e2220e79908b880c1a80220d6a902d0a308d8a904d8a201c788c38420b58bb08ab78b20c4a405c7a80420d2a202d8a314b2802e2022ed9908b88b20bc8dbd80be8bb682c1a80220c5a402d7a902be8bb68220bd80b689c1a80220d0a207b480d1a10820b180b282b38220d0a205d6a901b880c3a80420c286c08420c7a805d6a901c7a80420d895b28020b089b489bd80b380b689b282c0a6022e223c62723e0d0a3c62723e0d0a22d4a017c7a80220c7a805c484b08020c284b680b389c08420d7a914c788b189be80c7852e2220b780ba80b589c388c1a80220c686c0a808ddaa14b2802e2022d8a202bd80be8bb682c1a80220b082d7982033c886c3a80420d9a905b28ab78b20c186d79620b88bc0a601b78b20d7a914c1a80220c484c2a80220b989c385b680c2a804d09020c486c284dd95d8a008b78bb682d79820c188d3a907dda00220c9a605c7a80420c986b689c1a80220d0a207b982d3a20520c584b18ad6a314d8a017c6a806b189be802e20d8a201b782c28420c484c286b08020d8a202bd80be8bb68220dd95c5a401bd80b689c1a80220c8a608b789b380c1a80220d0a20220d7a004d7a014b889d4a002c7852e223c62723e0d0a3c62723e0d0a22c088b88220f6a004b38920c484c384e79c02c288b78bb08b20d4a00cd6a20420d6a202c5a408b28ac3a80420b789cea80420c68620d7a914c7a80420d8a208c284c38420dd95c5a401bd80d0a90420b580d3a00420f3a602b789b18b2e2220e89c04d3ab01c7a80220b28ad2a006ddaa14b2802e3c62723e0d0a3c62723e0d0a32393230d1a3022c20c5a405b589d7982034e79b04203131d7a9043c62723e0d0ab682b482d6ab07d79820b780bb8bb789c7a60520d6a205b78bb6823c62723e0d0a3c62723e0d0ad0a302c6a806d6aa08c2a804c7a80220dda002f5a40120d4a302b78920cb88b78320d7a914c1a80220c4a401c88420c5a401c284b78b20c1a804b782b68220c088c2a80420d7a011b78bb68220dd90d7a305c7a80420d1a004c3a805b28ac1a80220d0a904c084c28420d0a911c7a80220b28ab389d6a20120bd8ab880c3a80420b580b380c584d7a014b2802e20bb80c784c388c1a80220d7a304b089c38420c0a408b089b08020dfa204d3a90420b889d0a308b789d7a214b2802e20d0a001d0a001d79820dda001d6aa08c2a804c7a80220d8a902d8a208dda00220b689d8a901d79820d7a904e79b02c788c384b68220d0a005d8a20820d7a21fc1a80220c0a603c7a80220cc85d8a208c7a80420d8a907c08420d7a914d7a214b889d4a0022c20c088c2a804d79820c0a408cc84c3a80420d7a011b78bb68220bb80c784c388c1a80220dd90d7a305d79820d7a304b089d4a002caa805b789b18020c5a602d4a308bd8920c188dea90420c68620d7a914d7a214b2802e20c684b68020d6a904c7a80220c1a602c7a80420d0a005c08420dd90d7a30520b882dda00820b480d5a206c7a80420c7a81dc884d3a314b2802e20d9a202d9a202bd892c20c088c1a80220dd90d7a305b78920d1a205d6a904b28ac1a80220bd8ab880c3a80420b889b18020b780c486d3a20220dba004c28420d7a21fb78920d5a002b28adca302c788c38420c7a404b380d0a014b2802e20c088d79820bd80d7a10220c384c588b78bb682c1a80220dda00220d8a205d79820c088c7a804c7a805c884b98020d9a00cb780c5a40420c68620d7a21fd7a214b2802e3c62723e0d0a3c62723e0d0a22b78920b480d5a20620cf84dda00220b280c3a80220c484c2a80220b480d5a206b78920c088b382bd80c2a807b7892c20b182dd98d79820c1a808d3a301b78b20bf80b38020b282c7a60120d0a008dda00220cd85d3a301c7a80420d5a004dd97dda002b2802e2220c088b08020d4a004ddaa14b2802e2022b182dd98d79820d6a008d6a008d3a301d09020d798b889b08020ddaa01d6a905b789b2802e20c0a408b089b18020cea40eb78b20b28adda00220b882dda00820b480d5a206b78920dca904c78520d7a21fc2a807b7892c20b182dd98b08020c886c4a602c7a80420b689d8a202dda00220cd86b78bc1a80220dd90d7a305b78b20b28adda00220b882dda00820b480d5a206b78920dca904c785ddaa14c1a802b889c884b98020d7a90cb782b582b383b78120dda002b2802e20d2a0022c20b18a20d4a004c7a80420d9a001d0a001bd8ab682c1a80220b780b18920e29a02b2802e20b882dda00820b480d5a206c7a80220dd90d7a305d79820c8a402b88a20c08820b880b98bc3a80420c486b689bd80c1a80220d0a207c7a80220b780b189b2802e20b182dd98c1a80220b783d8a202bd8920dd90d7a305d79820c8a402b88ad79020d8a904d0a0052c20c088b389c08420c08820d0a004d4a008d09020d7a304b089be80b88920c188be89d0ab14b889d4a0022c20c088d0a207b78920b182dd98c3a80420b280b989b082b18020bd8ab989b88920c4a407dda00420d0a207d7a905c7a80420d7a004b08b20e29a0420d0a207b789b2802e223c62723e0d0a3c62723e0d0adda001d6aa08c2a804c7a80220c084b08ac3a80420ce88d2a201b789c08420dda00220b680d3a005f7a90120b980b38dc38420c886c4a602c7a80420b689d8a202bd80c084c1a80220c5a604d0a90420c6a401c7a80420b889b180d0a014b2802e20d6a905b889b78220d4a30ed4a30ec7a80220dda002c6a60420b28220bf8220c4a405c7a80420c6a601b78320dda00220c8a605d79820c5a604cea40ec7a80420d897b782b280b08020c0a408b08920c8a608c788c38420cda810f386b389c084c1a8022c20c088d0a207b78920b082cca605b982d3a20520dcaa08d9a008ddaa14b280b08020b789b18a20c6a402b080d3a00120b680b789b78bb68220b680c088b380c2a804b08b20bd80d7a314b2802e20c684b68020d6a904c7a80220b489c684b889d7a214b2802e20c088c2a804c7a80220cda604c3a708bd80b08b20b880d6a902d79820c286b383c7a605d09020d4a00cb682c08420d7a914d7a214b2802e3c62723e0d0a3c62723e0d0ac088bf8a20c686d6a20120d0a005c2a401e0990220bb80c388d0a004b389c688b08020c5a401c28420b882dca302b78bb68220d2a004b383e79914b2802e2022c684b68020d6a904b789b689b7832120d7a004d4a004d3ab01b689b780be8bb68220b780bb8bb789c7a605b78b20c284d9a001bd80d6a314c6a806b189b2802e20b780b789ba89b689c688b08020b88bb08b20d6a208bd80c3a80420c484b683c784b380c08420ddaa14c6a806b189b2802e223c62723e0d0a3c62723e0d0ac684b68020d6a904b78920bb80c388d0a004b389c688c3a80420dda108bd8a20c4a405c7a80420c2a404d3a90220c6a602d0a0022c20d0a006d8a001c688b38b20b589d4a308b78920c2a804b383e79914c08420c088c1a80220c8a801b68920c486c6a80220d7a904b78920d7a904b782d1a014c1a802b88920d7a004d7a014b2802e20c886c4a602c7a80420d8a208ed9901bd8920b689d8a202bd80b88920c4a407dda00220c184c28820b78ac6a408b78920e79c04b38bc088b08020c5a604bb80c08420d7a914d7a214b2802e20b482b389ba80d3a001d09020d6a004d8a205b78920c088c6a804b389c1a80220d1aa05b68ab08020bd8ab880c3a80420b889b180d2a20220b280c3a80220dda001d6aa08c2a804be80b88920c0a408cc84b78b20f080cf88d3a314c0842c20c088c2a804c7a80220e79c04b38bc088c3a80420cea804b782b18a20dda005be8b20f080b883b180c784b38320ddaa14b889d4a00220d0a308b680b08020b182c48620b080dca004d3a014b2802e20c684b68020d6a904c7a80220c6a402c7a80420dd97b882b78220c5a604c7a80420dea214b2802e3c62723e0d0a3c62723e0d0ae79c04b38bc088d79020d4a30ed4a30e20dda001d6aa08c2a804c7a80220dd90d6a008c7a80420d7a906d7a214b889d4a0022c20c088d3a212b08b20d6a905d0a001bd80b889c1a80220d7a017d7a014b2802e20b480d5a206b680c1a80220bb80c388d0a004b389c688c3a80420dda108bd8a20b280b68920c2a404b780b682b08920d8a2022c20dda001d6aa08c2a804b78bb08b20b989c38520b480d5a206c7a80420b689d8a202ddaa14b2802e3c62723e0d0a3c62723e0d0a22b789c2a804d09020c884c0a80520b28220b689d0a002c7a80420c584b18ac284c3a40120bd80b8892e20d7a004d4a004d3ab01b689b780c28420c7a407b880d3a001b78bb68220d0a904b580d2a001d79820cda818d4a202b889c3a80420dba204b782d1aa0420b689d0a002b78920dca904c785bd80b88920d7a017d0ab14b1802e2220c684b68020d6a904c7a80220b280b68920dda001d6aa08c2a804c7a80420dda108bd8a20c2a404b780d6a214b2802e20c088d79820c4a401c684b389c1a80220d0a202c884ddaa14b2802e2022c0a408cc84c1a80220c886c4a602c7a80420be8acf88d3a90420c68620d7a21fc1a80220d5a206b789b8892e20bd80b889d4a00220d798d6a905d09020c486c1a808b789b781d4a004c38420c886c4a602c7a80420b680c7a508bd80c1a80220c484c2a80220b789c2a804d79820b080d8a00820caa80220d8a201b789b2802e20b480c688bb8220e79c04b38bc0882c20c2a404b780b080b68220d8a905c7a80420f180c284c3a4012e20b18ad7a90420b780d9a90520d1a20420c5a402cb84c38420b28bb383d0a00420b58adca302c7a80420c8a602b589bd8ac286d0ab14b2802e223c62723e0d0a3c62723e0d0ab480d5a206b680c1a80220b682b88ab78bb68220b980c3a80420b480b689b48320c7a607c08420d7a914c1a80220d7a004d4a004d3ab01b689b780d79020b780b789ba89b689c688c3a80420d9a00cb780d1aa14b2802e20c088c1a80220c088b183b08020c088d3a212b08b20cd88cb88b382d8a90220c484c6a806c788c38420d2a005c785b78b20c4a405c7a80420d0a005f7a00220b98a2c20cda801d2a00220d0a010c7a80220d0a90220b482b389b78bb68220c6a806b089c3a80420d4a004b389b08920d797bd8a20c5a60420d7a011b78b20b880b389dda00220c484c6a806c7a80220b783bb8adea20720dda00220d5a202c28420c5a40220d8a201b78920d7a21fd7a214b889d4a0022c20c088b183c1a80220c088b08020b089d7a201bd80c08420d7a914c1a80220d0a207c584b28020ed9b04f7a90220b780c3a805b280e79b14b2802e20c684b68020d6a904b78920b280b080b080b8802c20c088b183c1a80220df97b782c7a404b38020c088c3a80420cea804b782d7a002d7a014b2802e3c62723e0d0a3c62723e0d0a22c484c384e79c02c288b78bb68220b783b089be80b88920bd8bd7a205b98320c784b089b380c28420ddaa14b1803f2220c088b08020b489c684b889d7a214b2802e3c62723e0d0a3c62723e0d0a22c688ba80b789d796b989b78bb68220bd8ad7a002c788c38420b18ab383b080c1a80220b28b20b589b08020f4a403b780d8a314b8892e2220c088b183c1a80220c088d79820b489c684b78b20dd90d2a006ddaa14b2802e3c62723e0d0a3c62723e0d0a22d5a00220b389c08820d5a013b78b20d7a00220d295c1a80220b082b389b889d4a0022c20b789c0a407b78bc1a80220dda00220d5a202c28420b589b08020c7a40220d8a201b78920d7a21fb889c7852e2220b780b789ba89b689c688b08020b880d3a008c688b38b20d4a004c7a80420be82d1aa14b2802e2022c4a604c3a4022c20b882c28420b080cea805c7a80220b682b482d6ab07b78bb682d79820c8a804b082c7a60220b689d0a002b789b1802c20b282b382c1a80220c5a402cb84be80b889c28420c088d3a906d0a90220dda006b189b2802e20b780d8a901c28420b580dea01020b68bd6a008b78bb68220b782dfa20220d798b489b78bb682c2a80220b789c3a80520c1a411c7a80220b789c2a804d09020d4a002b180d4a30220dda008d6a00820d0a911c7a80220d7a902d6a008c7a80420d5a003b889c7852e20b889c0a805c7a80220d1a002b68bb189be80c7852e20d1a002b68bb380c1a80220d4a004b78920b180e79914c788b1892c20b88bb08020c2a804d7a214d2a20220d8a202d8aa0820b789b781b089c1a80220b28020e49b06b189be803f223c62723e0d0a3c62723e0d0a22b889d1a002203830d1a30220c2a408d7a00220b28ac3a701c7a80420bc89c38420c4a604c2a804b789c08420d7a914c1a80220b580c38420c088d0a20720d4a004d7a902b0802c20b480c688bb823f2220c684b68020d6a904b78920c8a804d0a206b08b20c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22b88b20d4a004b78920c08820d4a004d7a90220d0a20720d0a010c0a602c7852e2220b780b789ba89b689c688c1a80220b782be8ac3a80420c788f4a801d7a314b2802e2022c08820d8a202d8aa08c7a80220b782dfa212b08b20cda804b382b080c08420d7a914c6a806b189be803f223c62723e0d0a3c62723e0d0a22c786b389b08020d8a904b082b7812e20c684b68020d6a904be8bb68220b780bb8bb789c7a605c7a80420bf82b180b689c284c3a40120b18ab08020d6a204c2a801dda00420c68620d7a21fb280d4a30220d4a004b789b8892e2220d7a004d4a004d3ab01b689b780d79820cc85d8a208b78920c0a603d7a214b2802e20c088b183c1a80220d8a005b68920cfa805c7a80420c2a804d7a314b280b08020c088b183d79820d9a902c086b78bb08b20b08ad7a902d8a201c788c38420b789b781b089dda00420d6aa08d0a001b789d7a214b889d4a0022c20c1a818c7a80220d7a004cb88b482c1a80220c088b183b08020b08dc6a40120b789b781b089bd80b089c3a80420b88ac9a401ddaa14b2802e2022b78db889c3a80420e59914b7822e20c088d3a212b08b20e29a0420b08b20ed9901d6a904bd8a2e223c62723e0d0a3c62723e0d0ac684b68020d6a904c7a80220d8a005b68920c2a408d7a00220d9a905c4a601bd80c084c1a80220b780b789ba89b689c688c3a80420b983b280c584d7a014b2802e2022b780c486b38ac28420c484c384e79c02c288c38420c2a404b780b080b781d4a00220bd80d0ab14b18b2e223c62723e0d0a3c62723e0d0a22d2a008d6a902be8bb68220dda002b280d4a30220bd80c1a80220c5a602b789d6a90220d0a20420d8a00420d7a004c08420d7a914c6a806b189b2802e2220c1a818c7a80220b480c688bb82c1a80220dda002c6a605c7a80420b18ad697d7a214b2802e2022b689d8a901d79820d0a904c7a80220d6a002d4a002bd8ab682c1a80220d7a00220e29a06b189b2802e20d8a202d8aa08c7a80220bb82b889b08920b480d3a302b789c0842c20b88bc0a601c7a80220d5a202d7a308bd80c08420cf8420c4a404d3a001bd80c1a80220d5a206b789b889c7852e20d2a008d6a902be8bb682c1a80220bf82b180b682b781d4a00220bd80c0842c20c786b38920cf84dda00220c088d3a20420d0a207d7a906b189b2802e223c62723e0d0a3c62723e0d0a22c088b08b20c486c6a80220cfa807d7a902b0802c20b780b789ba89b689c6883f20c088b28ac28420d6a205c7a80420bf82d1a00420d8a001d8a208d7a902b0803f223c62723e0d0a3c62723e0d0a22b780b189c7842c20b78920d6a205b78920b580b280c3a80420bf82b180b08b20e29a0420d0a207d7a906b189b2802e2220d2a006bd80c1a80220b780b789ba89b689c688d79820c4a401c684b389c1a80220b480b98920cea605c7a80420ce86c1a80220d0a20720d0a010d7a014b2802e2022d4a30e20d1a30220d7a002b78b20d7a002b08ab08020b780bb8bb789c7a605c7a80420d2a211c7a80420d0a207b789c08420c786d3a90220b680b380d8a90420d0a206b189b2802e20c786b389c1a80220d9a202d6a208b78920c884d7a202b880d7a906b189b280d4a0022c20b889c0a80520dba005b389d7ab04b78bc1a80220c884d7a202b880c2a804b78920b182c48620d4a017b889c7852e2e2e20b780b1892c20c786d3a90220bf82d1a00420d0a206b189b2802e20c088b389c08420b78920dfa008b78920c786b389c3a80420b280b68920dca904c785c38420dda00420bf8a20c2a404b780c7a40420d0a207d7a906b189b2802e20b780b480c28420b280c3a80220b689b28ad79820d7a904b78920e29a04b889c28420c484c388d0ab14c0a602c7852e223c62723e0d0a3c62723e0d0ac1a818c7a80220d7a004cb88b482c1a80220dda905d0a306b08b20d7a904b782b1802c20b480b889d4a001c788c38420bf80b380d1aa0220b98020dda00220c484c0a805d4a002c7a80420c684b68020d6a904d09020d7a004d4a004d3ab01b689b78020d7a011b78b20d1a005b083c286d7a214b2802e2022b480b889d4a00120b58ac3a80420c1a412b989b88920b480d6a906b689c7842e223c62723e0d0a3c62723e0d0ac2a604f28a20bc80c8a408d7982035e79b04b78bb68220b08dc6a4012e00,SKLxRestoration4,remaster_book_original_markup_transplant
+Oblivion.esm,BOOK,000243DB,DESC,0,"<font face=1><br>
+Evening Star<br>
+Book Twelve of 2920, <br>
+The Last Year of the First Era<br>
+by Carlovac Townway<br>
+<br>
+1 Sun's Dusk, 2920<br>
+Balmora, Morrowind<br>
+<br>
+<IMG src=""Book/fancy_font/t_52x61.dds"" width=52 height=61>he winter morning sun glinted through the cobweb of frost on the window, and Almalexia opened her eyes.  An ancient healer mopped a wet cloth across her head, smiling with relief.  Asleep in the chair next to her bed was Vivec.  The healer rushed to a side cabinet and returned with a flagon of water.<br>
+<br>
+""How are you feeling, goddess?"" asked the healer.<br>
+<br>
+""Like I've been asleep for a very long time,"" said Almalexia.<br>
+<br>
+""So you have.  Fifteen days,"" said the healer, and touched Vivec's arm. ""Master, wake up.  She speaks.""<br>
+<br>
+Vivec rose with a start, and seeing Almalexia alive and awake, his face broke into a wide grin.  He kissed her forehead, and took her hand.  At last, there was warmth again in her flesh.<br>
+<br>
+Almalexia's peaceful repose suddenly snapped: ""Sotha Sil --""<br>
+<br>
+""He's alive and well,"" replied Vivec. ""Working on one of his machines again somewhere.  He would have stayed here too, but he realized he could do you more good working that peculiar sorcery of his.""<br>
+<br>
+The castellan appeared in the doorway. ""Sorry to interrupt you, master, but I wanted to tell you that your fastest messenger left late last night for the Imperial City.""<br>
+<br>
+""Messenger?"" asked Almalexia. ""Vivec, what has happened?""<br>
+<br>
+""I was to go and sign a truce with the Emperor on the sixth, so I sent him word that it had to be postponed.""<br>
+<br>
+""You can't do me any good here,"" said Almalexia, pulling herself up with effort. ""But if you don't sign that truce, you'll put Morrowind back to war, maybe for another eighty years.  If you leave today with an escort and hurry, perhaps you can get to the Imperial City only a day or two late.""<br>
+<br>
+""Are you certain you don't need me here?"" asked Vivec.<br>
+<br>
+""I know that Morrowind needs you more.""<br>
+<br>
+<br>
+6 Sun's Dusk, 2920<br>
+The Imperial City, Cyrodiil<br>
+<br>
+The Emperor Reman III sat on his throne, surveying the audience chamber.  It was a spectacular sight: silver ribbons dangled from the rafters, burning cauldrons of sweet herbs simmered in every corner, Pyandonean swallowtails sweeping through the air, singing their songs.  When the torches were lit and servants began fanning, the room would be transfigured into a shimmering fantasy land.  He could smell the kitchen already, spices and roasts.<br>
+<br>
+The Potentate Versidue-Shaie and his son Savirien-Chorak slithered into the room, both bedecked in the headdress and jewelry of the Tsaesci.  There was no smile on their golden face, but there seldom was one.  The Emperor still greeted his trusted advisor with enthusiasm.<br>
+<br>
+""This ought to impress those savage Dark Elves,"" he laughed. ""When are they supposed to arrive?""<br>
+<br>
+""A messenger's just arrived from Vivec,"" said the Potentate solemnly. ""I think it would be best if your Imperial Majesty met him alone.""<br>
+<br>
+The Emperor lost his laughter, but nodded to his servants to withdraw.  The door then opened and the Lady Corda walked into the room, with a parchment in her hand.  She shut the door behind her, but did not look up to meet the Emperor's face.<br>
+<br>
+""The messenger gave his letter to my mistress?"" said Reman, incredulous, rising to take the note. ""That's a highly unorthodox way of delivering a message.""<br>
+<br>
+""But the message itself is very orthodox,"" said Corda, looking up into his one good eye.  With a single blinding motion, she brought the letter up under the Emperor's chin.  His eyes widened and blood poured down the blank parchment.  Blank that is, except for a small black mark, the sign of the Morag Tong.  It fell to the floor, revealing the small dagger hidden behind it, which she now twisted, severing his throat to the bone.  The Emperor collapsed to the floor, gasping soundlessly.<br>
+<br>
+""How long do you need?"" asked Savirien-Chorak.<br>
+<br>
+""Five minutes,"" said Corda, wiping the blood from her hands. ""If you can give me ten, though, I'll be doubly grateful.""<br>
+<br>
+""Very well,"" said the Potentate to Corda's back as she raced from the audience chamber.  ""She ought to have been an Akaviri, the way the girl handles a blade is truly remarkable.""<br>
+<br>
+""I must go and establish our alibi,"" said Savirien-Chorak, disappearing behind one of the secret passages that only the Emperor's most trusted knew about.<br>
+<br>
+""Do you remember, close to a year ago, your Imperial Majesty,"" the Potentate smiled, looking down at the dying man. ""When you told me to remember 'You Akaviri have a lot of showy moves, but if just one of our strikes comes through, it's all over for you.'  I remembered that, you see.""<br>
+<br>
+The Emperor spat up blood and somehow said the word: ""Snake.""<br>
+<br>
+""I am a snake, your Imperial Majesty, inside and out.  But I didn't lie.  There was a messenger from Vivec.  It seems he'll be a little late in arriving,"" the Potentate shrugged before disappearing behind the secret passage. ""Don't worry yourself.  I'm sure the food won't go bad.""<br>
+<br>
+The Emperor of Tamriel died in a pool of his own blood in his empty audience chamber decorated for a grand ball.  He was found by his bodyguard fifteen minutes later.  Corda was nowhere to be found.<br>
+<br>
+<br>
+8 Sun's Dusk, 2920<br>
+Caer Suvio, Cyrodiil<br>
+<br>
+Lord Glavius, apologizing profusely for the quality of the road through the forest, was the first emissary to greet Vivec and his escort as they arrived.  A string of burning globes decorated the leafless trees surrounding the villa, bobbing in the gentle but frigid night breeze.  From within, Vivec could smell the simple feast and a high sad melody.  It was a traditional Akaviri wintertide carol.<br>
+<br>
+Versidue-Shaie greeted Vivec at the front door.<br>
+<br>
+""I'm glad you received the message before you got all the way to the City,"" said the Potentate, guiding his guest into the large, warm drawing room. ""We are in a difficult transition time, and for the moment, it is best not to conduct our business at the capitol.""<br>
+<br>
+""There is no heir?"" asked Vivec.<br>
+<br>
+""No official one, though there are distant cousins vying for the throne.  While we sort the matter out, at least temporarily the nobles have decided that I may act in the office of my late master,"" Versidue-Shaie signaled for the servants to draw two comfortable chairs in front of the fireplace. ""Would you feel most comfortable if we signed the treaty officially right now, or would you like to eat something first?""<br>
+<br>
+""You intend to honor the Emperor's treaty?""<br>
+<br>
+""I intend to do everything as the Emperor,"" said the Potentate.  <br>
+<br>
+<br>
+14 Sun's Dusk, 2920<br>
+Tel Aruhn, Morrowind<br>
+<br>
+Corda, dusty from the road, flew into the Night Mother's arms.  For a moment, they stayed locked together, the Night Mother stroking her daughter's hair, kissing her forehead.  Finally, she reached into her sleeve and handed Corda a letter.<br>
+<br>
+""What is it?"" asked Corda.<br>
+<br>
+""A letter from the Potentate, expressing his delight at your expertise,"" replied the Night Mother. ""He's promised to send us payment, but I've already sent him back a reply.  The late Empress paid us enough for her husband's death.  Mephala would not have us be greedy beyond our needs.  You should not be paid twice for the same murder, so it is written.""<br>
+<br>
+""He killed Rijja, my sister,"" said Corda quietly.<br>
+<br>
+""And so it should be that you struck the blow.""<br>
+<br>
+""Where will I go now?""<br>
+<br>
+""Whenever any of our holy workers becomes too famous to continue the crusade, we send them to an island called Vounoura.  It's not more than a month's voyage by boat, and I've arranged for a delightful estate for your sanctuary,"" the Night Mother kissed the girl's tears. ""You meet many friends there, and I know you will find peace and happiness at last, my child.""<br>
+<br>
+<br>
+19 Sun's Dusk, 2920<br>
+Mournhold, Morrowind<br>
+<br>
+Almalexia surveyed the rebuilding of the town.  The spirit of the citizens was truly inspirational, she thought, as she walked among the skeletons of new buildings standing in the blackened, shattered remains of the old.  Even the plantlife showed a remarkable resilience.  There was life yet in the blasted remains of the comberry and roobrush shrubs that once lined the main avenue.  She could feel the pulse.  Come springtide, green would bolt through the black.<br>
+<br>
+The Duke's heir, a lad of considerable intelligence and sturdy Dunmer courage, was coming down from the north to take his father's place.  The land would do more than survive: it would strengthen and expand.  She felt the future much more strongly than she saw the present.<br>
+<br>
+Of all the things she was most certain of, she knew that Mournhold was forever home to at least one goddess.<br>
+<br>
+<br>
+22 Sun's Dusk, 2920<br>
+The Imperial City, Cyrodiil<br>
+<br>
+""The Cyrodiil line is dead,"" announced the Potentate to the crowd gathered beneath the Speaker's Balcony of the Imperial Palace.  ""But the Empire lives.  The distant relatives of our beloved Emperor have been judged unworthy of the throne by the trusted nobility who advised his Imperial Majesty throughout his long and illustrious reign.  It has been decided that as an impartial and faithful friend of Reman III, I will have the responsibility of continuing on in his name.""<br>
+<br>
+The Akaviri paused, allowing his words to echo and translate into the ears of the populace.  They merely stared up at him in silence.  The rain had washed through the streets of the city, but the sun, for a brief time, appeared to be offering a respite from the winter storms.<br>
+<br>
+""I want to make it clear that I am not taking the title Emperor,"" he continued. ""I have been and will continue to be Potentate Versidue-Shaie, an alien welcomed kindly to your shores.  It will be my duty to protect my adopted homeland, and I pledge to work tirelessly at this task until someone more worthy takes the burden from me.  As my first act, I declare that in commemoration of this historical moment, beginning on the first of Morning Star, we will enter year one of the Second Era as time will be reckoned.  Thus, we mourn the loss of our Imperial family, and look forward to the future.""<br>
+<br>
+Only one man clapped at these words.  King Dro'Zel of Senchal truly believed that this would be the finest thing to happen to Tamriel in history.  Of course, he was quite mad.    <br>
+<br>
+<br>
+31 Sun's Dusk, 2920<br>
+Ebonheart, Morrowind<br>
+<br>
+In the smoky catacombs beneath the city where Sotha Sil forged the future with his arcane clockwork apparatus, something unforeseen happened.  An oily bubble seeped from a long trusted gear and popped.  Immediately, the wizard's attention was drawn to it and to the chain that tiny action triggered.  A pipe shifted half an inch to the left.  A tread skipped.  A coil rewound itself and began spinning in a counter direction.  A piston that had been thrusting left-right, left-right, for millennia suddenly began shifting right-left.  Nothing broke, but everything changed.<br>
+<br>
+""It cannot be fixed now,"" said the sorcerer quietly.<br>
+<br>
+He looked up through a crick in the ceiling into the night sky.  It was midnight.  The second era, the age of chaos, had begun.<br>","<font face=1><br><br>
+2920년, 첫 번째 시대의 마지막 해<br>
+제12권: 저녁별의 12월<br>
+<br>
+칼로박 타운웨이 지음<br>
+<br>
+<HR><br>
+<br>
+2920년, 저녁별의 12월 1일<br>
+모로윈드의 발모라에서<br>
+<IMG src=""Book/fancy_font/t_52x61.dds"" width=52 height=61><br>
+겨울 아침의 태양이 거미줄 같은 얼음이 낀 창문 너머에서 반짝였고, 알말렉시아는 눈을 떴다. 가장 나이 든 치료사가 그녀의 머리에서 젖은 수건을 훔쳤고, 안도의 미소를 지었다. 그녀의 침대 옆에서는 비벡이 잠들어 있었다. 치료사가 옆에 있던 찬장으로 서둘러 달려가 물병을 들고 돌아왔다.<br>
+<br>
+""여신이시여, 기분은 어떠신지요?"" 치료사가 물었다.<br>
+<br>
+""아주 오랜 시간을 잠들어 있던 것 같구나."" 알말렉시아가 답했다.<br>
+<br>
+""그러셨습니다. 15일이 지났지요."" 치료사는 비벡의 팔을 흔들었다. ""성하, 일어나시지요. 여신님께서 말문을 트셨습니다.""<br>
+<br>
+흠칫 놀라 깨어난 비벡은 알말렉시아가 살아서 깨어난 것을 보고는 활짝 웃었다. 그는 그녀의 이마에 입을 맞추고는 손을 잡았다. 마침내 그녀의 살결에 온기가 다시 돌아와 있었다.<br>
+<br>
+알말렉시아는 평화롭게 숨을 내쉬는 듯 하다가 별안간 손을 잡아챘다. ""소사 실은-""<br>
+<br>
+""그는 멀쩡히 잘 살아 있어."" 비벡이 대답했다. ""어딘가에서 또다시 그 친구의 기계장치 중 하나에 매달려 있겠지. 그도 여기 머무를 생각이었지만, 그의 신비한 마법으로 당신을 위해 그것 이상의 일을 할 수 있다는 걸 깨달았어.""<br>
+<br>
+그때 성주가 문가에 모습을 나타냈다. ""성하, 말씀 중에 죄송합니다마는 어젯밤 늦게 가장 빠른 전령이 임페리얼 시티로 떠났음을 말씀드리고자 합니다.""<br>
+<br>
+""전령?"" 알말렉시아가 물었다. ""비벡, 무슨 일이 있었지?""<br>
+<br>
+""내가 그곳으로 가서 6일에 황제와 함께 조약에 서명을 할 계획이었지만, 그걸 연기하자는 소식을 전했어.""<br>
+<br>
+""당신이 여기서 날 위해 할 수 있는 더 좋은 일은 없어."" 알말렉시아는 온전히 자기 힘으로 몸을 끌어당겼다. ""하지만 당신이 그 조약에 서명하지 않는다면, 모로윈드는 다시 전쟁에 휘말리게 될 거야. 어쩌면 80년을 더 끌게 될지도 모르지. 오늘 당장 호위를 거느리고 서두른다면, 아마 하루나 이틀이면 임페리얼 시티에 도착할 수 있어.""<br>
+<br>
+""내가 정말 여기에 없어도 괜찮겠어?"" 비벡이 물었다.<br>
+<br>
+""모로윈드가 당신을 더 필요로 하고 있으니까.""<br>
+<br>
+2920년, 저녁별의 12월 6일<br>
+시로딜의 임페리얼 시티에서<br>
+<br>
+황제 레만 3세는 옥좌에 앉아 알현실을 살펴보고 있었다. 그야말로 장관이었다. 은으로 된 리본이 서까래 사이로 매달려 있었고, 각 모퉁이마다 달콤한 허브들이 끓어오르는 향로가 타올랐으며, 공중에서는 피안도네아 호랑나비가 저들끼리 노래하며 춤추고 있었다. 횃불에 불이 붙고 하인들이 부채질을 시작하자, 방 전체가 일렁이는 환상의 세계로 변한 것 같았다. 그는 벌써부터 주방에서 풍겨오는 향신료와 구이 향기를 맡을 수 있었다.<br>
+<br>
+머리장식과 세이치의 보석으로 몸단장한 수석 고문 버시듀-샤이와 그의 아들인 사비리엔-초락이 방 안으로 미끄러지듯 들어왔다. 그들의 금빛 얼굴에서 웃음기라고는 찾아볼 수 없었는데 이는 정말 보기 드문 일이었다. 그럼에도 황제는 그의 믿음직한 조언가를 열의에 찬 모습으로 환대했다.<br>
+<br>
+""이거면 저 미개한 다크 엘프들도 깊은 인상을 받겠지."" 그가 웃었다. ""저들이 언제쯤 도착할 것 같나?""<br>
+<br>
+""지금 막 비벡으로부터 전령이 도착했습니다."" 수석 고문이 사뭇 엄숙히 대답했다. ""제 생각에는 황제 폐하께서 혼자 만나보심이 적절할 듯 합니다.""<br>
+<br>
+황제는 웃음을 멈췄지만 그의 시종들을 향해 고갯짓하여 물러가도록 했다. 그때 문이 열렸고 다름아닌 코르다 부인이 손에 양피지를 쥐고 방 안으로 걸어 들어왔다. 그녀는 뒤편의 문을 닫았으나, 고개를 들어 황제의 얼굴을 쳐다보지는 않았다.<br>
+<br>
+""전령이 짐의 후궁에게 서신을 맡겼다고?"" 편지를 받기 위해 자리에서 일어난 레만이 못 믿겠다는 투로 말했다. ""서신을 상신하는 방식 치고는 상당히 정통에 어긋나는 일이 아닌가.""<br>
+<br>
+""하지만 서신 자체는 상당히 정통에 따른 것이었는걸요."" 코르다는 황제의 멀쩡한 한쪽 눈을 올려다보았다. 눈으로 따라갈 수 없을 정도의 짤막한 동작으로, 그녀는 편지를 황제의 턱 바로 아래로 가져갔다. 그의 눈은 휘둥그레졌고 피가 텅 빈 양피지 아래로 뿜어져 나왔다. 작은 검은 표식만이, 모락 통의 표식만이 남아 있는 백지가 완전히 바닥으로 떨어지자 그 뒤에 감춰져 있었던 단검이 드러났다. 그녀는 단검을 비틀어 황제의 목을 뼛속 깊이 도려냈다. 그는 소리 없는 헐떡임과 함께 바닥으로 무너져내렸다.<br>
+<br>
+""얼마나 필요하지?"" 사비리엔-초락이 물었다.<br>
+<br>
+""5분."" 코르다는 그녀의 손에 묻은 피를 닦아냈다. ""만약 10분을 벌어줄 수 있다면 두 배로 고맙겠어.""<br>
+<br>
+""아주 좋아."" 알현실에서 달려나가는 코르다의 뒤를 향해 수석 고문이 말했다. ""아카비르였다면 참 좋았을 것을. 여자애 치고는 칼 다루는 솜씨가 참으로 인상적이야.""<br>
+<br>
+""저는 알리바이를 만들기 위해 자리를 옮기겠습니다."" 사비리엔-초락이 오직 황제가 가장 신뢰하는 이들만이 알 수 있는 비밀 통로로 모습을 감추며 말했다.<br>
+<br>
+""친애하는 황제 폐하, 한 1년 전을 기억하시는지요."" 수석 고문은 죽어가는 사람을 향해 미소를 보냈다. ""언젠가 제게 '그대들 아카비르인들이 현란한 기술을 많이 가지고 있지만, 우리가 단 한 번 공격에 성공한다면, 그대들도 그걸로 끝'임을 기억하라고 하셨지요. 보시다시피, 저는 아주 잘 기억하고 있었습니다.""<br>
+<br>
+황제는 피를 토하며 어떻게든 한 마디를 내뱉었다. ""뱀...""<br>
+<br>
+""황제 폐하, 저는 뱀입니다. 안에서든 밖에서든 말이지요. 하지만 저는 거짓말은 하지 않았답니다. 비벡이 전령을 보냈다는 건 정말이었으니까요. 그가 도착하는 게 조금 늦을 것 같다고 하더이다."" 수석 고문은 비밀 통로 뒤로 사라지기 전 어깨를 한 번 으쓱였다. ""너무 걱정하실 필요는 없습니다. 음식은 절대로 상하지 않도록 하겠습니다.""<br>
+<br>
+탐리엘의 황제는 장엄한 무도회를 위해 장식된 그의 텅 빈 알현실에서, 그 스스로의 피가 고여 만들어진 웅덩이 속에서 죽음을 맞이했다. 그는 15분 뒤 그의 호위병들에게 발견되었다. 코르다의 모습은 어디에서도 찾을 수 없었다.<br>
+<br>
+2920년, 저녁별의 12월 8일<br>
+시로딜의 케어 수비오에서<br>
+<br>
+비벡과 그의 수행원들을 첫 번째로 맞이한 이는, 숲을 지나는 도로 사정에 대해 아낌없는 사과를 건네는 글라비우스 경이었다. 빌라를 둘러싼 잎이 다 떨어진 나무들은 불타오르는 방울 장식이 매달린 끈으로 치장되었고, 부드럽지만 차가운 밤바람에 일렁였다. 비벡은 안에서 흘러나오는 간단한 만찬과 구슬픈 곡조를 느낄 수 있었다. 전통적인 아카비르식 겨울 축가였다.<br>
+<br>
+버시듀-샤이가 정문에서 비벡을 맞이했다.<br>
+<br>
+""그대가 임페리얼 시티로 들어서기 전 소식을 전할 수 있어 다행이군요."" 수석 고문이 그의 손님을 넓고 따뜻한 응접실로 안내하며 말했다. ""상황이 어렵게 바뀌었는지라, 의회에서 우리 일을 마무리짓기에는 적절치 못하게 되었습니다.""<br>
+<br>
+""계승자는 아무도 없단 말이오?"" 비벡이 물었다.<br>
+<br>
+""황위를 놓고 다투는 먼 사촌들을 제외하면, 공식적으로는 없습니다. 우리가 이 일을 처리하는 동안에는, 일시적으로나마 귀족들이 내가 선왕의 지위를 대신할 것을 결정했지요."" 버시듀-샤이는 시종들에게 편안한 의자 두 개를 난로 앞으로 가져올 것을 지시했다. ""지금 당장 조약에 서명하고 공표하는 것이 좋겠습니까? 아니면 먼저 요기를 하는 게 좋겠습니까?""<br>
+<br>
+""그대가 황제의 조약을 추진하겠다고?""<br>
+<br>
+""난 황제로서 할 수 있는 모든 걸 추진할 생각입니다."" 수석 고문이 대답했다.<br>
+<br>
+2920년 저녁별 14일<br>
+모로윈드의 텔 아룬에서<br>
+<br>
+길에서 잔뜩 먼지를 뒤집어쓴 코르다가 나이트 마더의 팔로 날아들었다. 잠시 동안 그들은 서로를 쳐다보았고, 나이트 마더는 딸의 머리를 쓰다듬고는 이마에 입맞춤했다. 마지막으로, 그녀는 소맷자락에서 편지를 꺼내 코르다에게 주었다.<br>
+<br>
+""이게 뭔가요?"" 코르다가 물었다.<br>
+<br>
+""네 전문성에 수석 고문이 기쁨을 표하는 편지란다."" 나이트 마더가 대답했다. ""그는 반드시 우리에게 대가를 치르겠다고 약속했지만, 이미 답신을 돌려 보냈단다. 황후가 남편의 죽음에 대해 충분히 대금을 치렀다고 했지. 메팔라께서는 우리가 필요 이상의 욕심을 품는 걸 바라지 않으신단다. 같은 살인에 두 번의 대가를 받을 수 없는 법이라고, 그렇게 써서 보냈지.""<br>
+<br>
+""그가 리자를 죽였어요. 내 자매를."" 코르다가 조용히 말했다.<br>
+<br>
+""그래서 마지막으로 칼을 꽂는 건 네가 되어야 했지.""<br>
+<br>
+""이제 저는 어디로 가게 되나요?""<br>
+<br>
+""우리의 거룩한 일꾼들이 성전을 계속하기에는 너무 눈에 띄게 되었다면 언제든, 우리는 그들을 보우노라라는 섬으로 보낸단다. 배를 타고 채 한 달이 안 되는 거리고, 기쁜 마음으로 네게 꼭 알맞는 성역을 예비해 두었단다."" 나이트 마더는 그녀의 눈물에 입을 맞췄다. ""나의 아이야, 그곳에서 많은 친구들을 만날 수 있을 거란다. 그리고 네가 최후의 순간에 평안과 행복을 찾을 수 있을 것임을 안단다.""<br>
+<br>
+2920년, 저녁별의 12월 19일<br>
+모로윈드의 모운홀드에서<br>
+<br>
+알마렉시아는 마을의 재건을 감독하고 있었다. 검게 물든 옛 건물들의 흩어진 잔해에 새로이 자리잡은 건물들의 골조 사이를 걸으며, 그녀는 주민들의 정신이 참으로 고무적이라는 생각이 들었다. 심지어 식물조차도 놀라운 회복력을 보이고 있었다. 한때 중심가에 줄지어 있던 컴베리와 루브러시 관목들의 잔해들 사이에서는 벌써부터 생명이 움트고 있었다. 그녀는 그 고동을 느낄 수 있었다. 봄날이 오면 암흑을 뚫고 녹음이 피어날 것이다.<br>
+<br>
+북쪽에서 내려와 아버지의 자리를 대신한 공작의 후계자는 괄목할 지성과 던머 특유의 불굴의 용기를 가진 젊은이였다. 이 땅은 그저 살아남는 것 이상으로, 더욱 강해지고 더욱 넓어질 것이다. 그녀는 눈앞에 펼쳐진 현실보다 다가올 미래가 훨씬 굳셀 것임을 느꼈다.<br>
+<br>
+그중에서도 그녀가 가장 확신하는 것은, 모운홀드는 한 여신에게 있어서 영원한 고향이라는 것이었다.<br>
+<br>
+2920년, 저녁별의 12월 22일<br>
+시로딜의 임페리얼 시티에서<br>
+<br>
+""시로딜의 혈통은 끊기고 말았다."" 황궁 발코니의 연단에서 수석 고문은 모여든 관중들을 향해 공표했다. ""하지만 제국은 살아있다. 친애하는 황제 폐하께서 폐하의 길고도 빛나는 치세 동안 가장 믿고 의지하셨던 귀족들은, 황제 폐하의 먼 친척들이 제위에 오르기에는 자질이 부족하다고 판단했다. 그러므로 레만 3세의 공정하고도 믿음직한 동지로서, 내가 황제 폐하의 성명을 이어갈 책임을 지게 되었음이 결정되었다.""<br>
+<br>
+아카비르인은 잠시 말을 멈추고, 자신의 말이 대중들의 귓가에 확실히 울려퍼지게끔 하였다. 그들은 그저 침묵을 유지한 채로 그를 올려다볼 뿐이었다. 빗물이 도로를 따라 흘러내렸고, 태양은 겨울의 폭풍 사이로 아주 잠깐 고개를 내미는 데 그쳤다.<br>
+<br>
+""내가 '황제'의 지위에 오를 생각이 없음을 확실히 밝혀두겠다."" 그가 말을 이어나갔다. ""나는 여태까지 그대들의 해안에서 친절한 환영을 받았던 수석 고문 버시듀-샤이였고, 또한 앞으로도 그렇게 남을 것이다. 나를 받아준 고향을 지키는 것이 나의 의무가 될 것이며, 나 이상으로 이 의무를 짊어지기에 충분한 자격이 있는 누군가가 나타나기 전까지, 이 일에 몸과 마음을 다할 것임을 맹세하겠다. 나의 첫 번째 행보는, 이 역사적인 순간을 기념하여 다음 새벽별의 1월 1일을 기점으로 우리가 '제2시대' 원년에 진입하였음을 선언하는 바이다. 이것으로 우리는 우리에게서 황가가 떠나갔음을 애도하고, 앞으로의 나날을 생각할 것이다.""<br>
+<br>
+단 한 사람만이 이 모든 말에 박수를 치고 있었다. 센첼의 드로'젤 왕은 이 모든 일들이 탐리엘에서 역사상 가장 좋은 일이라고 진심으로 믿고 있었다. 의심할 여지가 없이, 그는 단단히 미친 작자였다.<br>
+<br>
+2920년 저녁별 31일<br>
+모로윈드의 에본하트에서<br>
+<br>
+도시 아래에서 소사 실이 그의 비전 시계 장치와 함께 미래를 단조하고 있는 매캐한 지하 묘지에서는 뜻밖의 사태가 벌어졌다. 오랜 시간 믿음직스럽던 기어에서 기름 방울이 새어나오더니 곧 튀어올랐다. 곧바로 마법사의 주의가 그것과 어떤 동작을 일으킨 체인을 향해 쏠렸다. 파이프가 왼쪽으로 0.5인치 움직였다. 접지면이 튀어올랐다. 코일이 제 스스로 감기더니 반대 방향으로 돌기 시작했다. 천 년 동안을 좌-우로 째깍이던 피스톤은 급작스레 우-좌로 반전되었다. 부서진 건 아무것도 없었지만, 모든 게 바뀌었다.<br>
+<br>
+""지금 당장 고치긴 힘들겠군."" 마술사가 조용히 읊조렸다.<br>
+<br>
+그는 천정의 균열을 통해 밤하늘을 올려다보았다. 한밤중이었다. 제2시대가, 혼돈의 시대가 시작되었다.",LOC_BK_Book3Valuable2920v12a,3c666f6e7420666163653d313e3c62723e0d3c62723e0d0a32393230d1a3022c20d9a20720d5a202f28a20b689b28ad79820b480b889d4a00120bd8a3c62723e0d0ab88b3132e09b023a20b882d1a301d5a304d798203132e79b043c62723e0d0a3c62723e0d0adaa004c384d5a00120bb80c7a602d78fb78920b889c7a8053c62723e0d0a3c62723e0d0a3c48523e0d3c62723e0d0a3c62723e0d0a32393230d1a3022c20b882d1a301d5a304d798203132e79b042031d7a9043c62723e0d0ac484c384e79c02c288d79820d5a004c484b380b78bb6823c62723e0d0a3c494d47207372633d22426f6f6b2f66616e63795f666f6e742f745f35327836312e646473222077696474683d3532206865696768743d36313e3c62723e0d0ab083c7a60420b780d9a905d79820bb8ad7a108b78920b082b489c8a60420d0a010c7a80220d7a204c7a805b78920dea90220d9a008c4a60220b182b482b78bb68220d5a002f8a001d7a314c0842c20d7a004d4a004d3ab01b689b780c1a80220c1a602c7a80420dfa214b2802e20b080d8a00820b180b78920c2a80220b989c385b680b08020c088b183d79820b482b389b78bb68220d8a20cc7a80220c686d0a202c7a80420cda605d9a314c0842c20d7a002c284d79820b489c684c3a80420b889d7a214b2802e20c088b183d79820d9a905b28a20d7a311b78bb682c1a80220b589d5ab01b78920d8a005c2a804b78220d7a914d7a214b2802e20b989c385b680b08020d7a311b78b20d7a914d2a20220d9a002d8a008c788c38420b682c2a604b38220d2a004b383b08020c4a604d5a308c7a80420c2a804c08420c2a404b780e79914b2802e3c62723e0d0a3c62723e0d0a22b783d6a902b789b689b7832c20b089c5a602c7a80220b782bf82d6a902b889c7853f2220b989c385b680b08020c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22b780c88620c784d3aa0220b689d0a002c7a80420d8a005c2a804b78220d7a914d2a20220d0a20720d0a010c086b1802e2220d7a004d4a004d3ab01b689b780b08020d2a006ddaa14b2802e3c62723e0d0a3c62723e0d0a22c088b382d6a314c6a806b189b2802e203135d7a904b78920b889d1a014b889c7852e2220b989c385b680c1a80220b589d5ab01d79820dca004c7a80420cda802c2a804d7a214b2802e2022d6a208bd802c20d7a904b782b180b689b889c7852e20b783d6a902d1a905be8bb68220d4a004c4a602c7a80420cb88d6a314c6a806b189b2802e223c62723e0d0a3c62723e0d0acda805d9a90720c1a404b38020be8ab782d1a00220b589d5ab01c7a80220d7a004d4a004d3ab01b689b780b08020d6a004b780b68220be8ab782d1a00220d0a207c7a80420c584c084c1a80220ed9904f8a00120c7a607d7a214b2802e20c088c1a80220c088b183d79820b789b480b78b20d7a906c7a80420d4a00cc986c084c1a80220c6a402c7a80420d8a006d7a014b2802e20b480d9a905b18a20c088b183d79820d6a004d0a304b78b20c7a402b089b08020b280b68920c2a404b780d79020d7a914d7a214b2802e3c62723e0d0a3c62723e0d0ad7a004d4a004d3ab01b689b780c1a80220dca308dd90c3a406b08b20c6a605c7a80420b18ad697c1a80220c2a80720bd80b280b08020d5a304d7a002d0a00220c6a402c7a80420d8a006b780d9aa14b2802e2022c684b68020d6a904c7a8022d223c62723e0d0a3c62723e0d0a22c088c1a80220d4a204f8a208bd8920d8a00420d6a004b78020d7a914b7822e2220b589d5ab01b78920b28ad2a006ddaa14b2802e2022b782d2a902b080b78bb68220cf84b280b68920c08820d9a902c086d79820b089b08dd8a008b98920c8a60820bd80b180b78b20b48ad2a004b38320d7a914d0ab14b8892e20c088c28420b783b08920b482c486c3a80420d6aa08d0a001b789d7a214b889d4a0022c20c088d79820d6a902b589dda00220b480d5a206c788c38420d2a008d6a902c7a80420d797bd8a20c088d0a20720b789d6a008d79820d7a904c7a80420dda00420c68620d7a914b280c1a80220d0a20420be8ad2a004d7a014b7822e223c62723e0d0a3c62723e0d0ac088bf8a20d6a208c886b08020c4a602b080b78b20c484c6a806c7a80420b180bb80d1aa14b2802e2022d6a208bd802c20d4a004f4a80520c8a608b78b20d895c6a408dda006b189b280b480c1a80220b782d8ab07d5a00520c1a80cb08b20b080d8a00820f080c3a80220d8a202d3a308b78920d7a905bc8bb389d7a20420b689bb89c38420bf82d1a014c7a805c7a80420d4a004f4a805c288b389c084b88020dda006b189b2802e223c62723e0d0a3c62723e0d0a22d8a202d3a3083f2220d7a004d4a004d3ab01b689b780b08020c4a604d7a214b2802e2022b589d5ab012c20c486c6a80220d7a904b78920d7a914d7a214b8893f223c62723e0d0a3c62723e0d0a22b18ab08020c088c0a407c788c38420b080b6822036d7a904b78b20ed9908b88bd79020dda005be8b20c884d7a101b78b20b682d4a308c7a80420dda00420b08ded9a01b789d7a214b889d4a0022c20c088d0a20420d7a302b089bd80b880c1a80220c684d6a901c7a80420d8a202ddaa14b7822e223c62723e0d0a3c62723e0d0a22d2a008d6a902b78920b783b089b68220d1a00420d797bd8a20dda00420c68620d7a914c1a80220b28220c8a412c7a80220d7a904c7a80220d7a21fb7822e2220d7a004d4a004d3ab01b689b780c1a80220c7a402d8a202bd8920b880b08920dda905c788c38420c4a405c7a80420cea804b782d2a008d0a314b2802e2022bd80b889d4a00220d2a008d6a902b78920c08820c884d7a101b78b20b682d4a308bd80b88920d7a017c1a802b280d4a3022c20c484c384e79c02c288c1a80220b280b68920d8a202d8aa08b78b20dd97d4a004b389b08b20e29a0420b082b7812e20b782f282d4a302203830d1a302c7a80420b28220cea804b08b20e29a04b889c28420c484c388b8892e20c784c1a80420d2a008d8a00820cd84d797c3a80420b082c188b389c08420b682c286c3a802b280d4a3022c20b780b48020bd80c386b18020b789cba804b789d4a30220d7a905bc8bb389d7a20420b689bb89b78b20c284d9a001dda00420c68620d7a914b7822e223c62723e0d0a3c62723e0d0a22b18ab08020d8a208d4a00420b783b089b78b20d7a21fb782c28420e0ae02d9a017d0ab14b7823f2220b589d5ab01b78920c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22c484c384e79c02c288b08020d2a008d6a902c7a80420b28220dca904c785c38420bd80c08420d7a914c788b189be802e223c62723e0d0a3c62723e0d0a32393230d1a3022c20b882d1a301d5a304d798203132e79b042036d7a9043c62723e0d0ab689c384d2a904d79820d7a905bc8bb389d7a20420b689bb89b78bb6823c62723e0d0a3c62723e0d0aed9908b88b20b38bd4a0022033b68bc1a80220c7a401d890b78b20d7a016b78020d7a004dda302d6a904c7a80420d6a004bc83c584c08420d7a914d7a214b2802e20c088b781d4a004c38420d8a008e09902b789d7a214b2802e20c7a802c788c38420e29a0220b389c5a402b78920b682be80b38a20b680b789c38420b48ad2a004b38320d7a914d7a214c0842c20d0a00120c484cba608b789b480b28020d2a004caa405dda00220bd82c588c2a804b78920cea81eb782c784c388c1a80220dda108c384b08020bb80c7a404d3a014c788b4832c20c0a408c8a608b78bb682c1a80220bc89d7a002c284b18bb78020cd84d3a008b180b589b08020b882c2a804be89b38920c184b38abd80b48320c9a605c986c08420d7a914d7a214b2802e20edae07c5a604b78b20c5a604b78920c5a610c08420bd80d7a902c2a804b78920c586b98ad8a904c7a80420b689d8a001bd80b8802c20d5a00820d8a202b98bb08020d7a904d3a208b789c1a80220ed9902d6a008d79820b68bb08dc38420d5a302dda00220d0a20720d0a010d7a014b2802e20c088c1a80220d5a204f182c586bb8220c886d5a008b78bb68220cca608b083c784c1a80220dda108d6a902c385d79020c086b78920dda108b089c3a80420d4a010c7a80420c68620d7a914d7a214b2802e3c62723e0d0a3c62723e0d0ab482b389d8a008d6a901d09020b68bb789b989d79820c584d6a201c788c38420c4a405d2a002d8a008dda00220c686d6a20120c084c4a60220b582b689c2872db681b789d79020c088d79820b780c2a804d7a90220b680b589b389d7ab022dc984d3a001b78920d5a00820d7a002c788c38420b489ce88b382b889c2a80720c2a804b782e79914b2802e20c088c2a804d79820c0a805d5a90e20d7a204c0a604b78bb68220c7a607c7a805b089b380c084c1a80220d9a00cb780c5a40420c68620d7a21fd7a214c1a802b28b20b789c1a80220d8a208d4a00420c584b08920c288c4a60220d7a904b789d7a214b2802e20c088d3a205b78bc28420ed9908b88bc1a80220c088d79820d4a903c7a805d8a901dda00220c884d7a202b080c3a80420d7a304d798b78b20d9a00220c484c6a806c788c38420ed9902b28addaa14b2802e3c62723e0d0a3c62723e0d0a22b789b082d4a30220b88220b489b08adda00220b280ca8820d7ab04cc88c2a804c28420d0a911c7a80220d7a902d6a008c7a80420d5a003d0ab14b8892e2220c088b08020c7a607d7a214b2802e2022b882c2a804b78920d7a202b88bf5a80520c284d9a001dda00420d0a20720d0a010b1803f223c62723e0d0a3c62723e0d0a22b889c0a80520d4a00120b589d5ab01c788c384c586bb8220d8a202d3a308b78920c284d9a001ddaa14c6a806b189b2802e2220c686d6a20120c084c4a602b78920b680c4a60720d7a205c6a601bd8920b28ad2a006ddaa14b2802e2022b88b20d6aa08d0a001b78bc1a80220ed9908b88b20bc8dbd80be8bb68220cda402b88020d4a002b180c584d6a905b78920d8a201d8a204dda00420c2a80720dda006b189b2802e223c62723e0d0a3c62723e0d0aed9908b88bc1a80220c7a607c7a805c7a80420d4a205e99b14b889d4a00220c088d79820b689c8a408c2a804c7a80420dda108bd8a20c084d0aa07d8a907bd80b78320c4a604b382b080c284c3a40120ddaa14b2802e20c088bf8a20c4a602b78920d7a304d3a314c08420b280c3a805b780d1a90220ca84c388b28020c586d7a902b78920c6a402b78b20d7a108bc89b889c3a80420d897c08420d5a00820d7a002c788c38420d0a204b78220c2a804b782e79914b2802e20c088b183c1a80220d297dca302d79820c4a602c7a80420d2a003d7a014c788b1802c20c084b08ac3a80420c2a804b78220ed9908b88bd79820d7a204c0a604c7a80420b983b280c584b889c1a80220d7a017d7a014b2802e3c62723e0d0a3c62723e0d0a22d8a202d3a308b78920d8a905d79820cd86c0a608b78bb08b20b682d6a902c7a80420d4a010d0a314b280c0843f2220dca302b889c3a80420d5a003b08920d797bd8a20b880b389b78bb68220d7a904b782d1a00220b38bd4a002b78920c4a40720d4a903d0ab14b280c1a80220cb86c38420d4a004ddaa14b2802e2022b682d6a902c7a80420d6a008d6a902bd80c1a80220d5a008d6a90120b989c084c1a80220d6a008d2a008bd8920d8a208cba408b78b20b782c0a807b180c1a80220d7a904b78920b780d1a902b0802e223c62723e0d0a3c62723e0d0a22bd80b889d4a00220b682d6a90220b880b98bc1a80220d6a008d2a008bd8920d8a208cba408b78b20bf80c3a80220d0a207b789d7a214c1a802d0a204c7852e2220ca84c388b280c1a80220ed9908b88bd79820d4a204f8a208dda00220dda002f5a40120c1a602c7a80420c7a404b383b280c584d7a014b2802e20c1a602c788c38420bf80b380d0a00420c68620d7a21fc7a80420d8a208c284d79820f8a004d4a001dda00220c2a408d8a001c788c3842c20c088b183c1a80220dca302b889c3a80420ed9908b88bd79820dba20120b580c38420b780b38ac38420b080b883d0a014b2802e20c088d79820c1a602c7a80220dd97c2a608c088b38bd8a314c08420bc89b08020dba20820d5a90220d7a108bc89b88920b780b38ac38420f3a605b782b88320b180e79914b2802e20d8a001c7a80220d0a205c7a80220cc85d6a901d4a002b7892c20c484d3a00120cba408d79820cc85d6a901d4a002b78920d1a005b78020d7a914c1a80220d5aa01b889b08020e79902d8a202bd8920b580d2a001c788c38420dfa204b782b889b88020c08820d297b78b20d0a005d996b88320d7a914d7a214d2a20220d2a002d0a205b78920c288b382d1a014b2802e20c088b183c1a80220d2a002d0a205c7a80420b589cba804b78220ed9908b88bd79820c4a401c7a80420f6a307c6a40120d0a911b78920c284b383d1aa14b2802e20c088c1a80220c684b38920d7a21fc1a80220dda204dfa201d7a905d09020dda005be8b20b580d2a001c788c38420c486b182b883b18ad3a314b2802e3c62723e0d0a3c62723e0d0a22d7a204b480b18020dca904c785bd80b8893f2220b680b589b389d7ab022dc984d3a001b78920c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a2235c5a6022e2220ca84c388b280c1a80220c088b183d79820c6a402b78b20c4a603c7a80220bc89c3a80420d2a013b780d1aa14b2802e2022d4a002d7a101203130c5a602c7a80420d5a204b782c8a60420c68620d7a914b280d4a30220c28620b58ac38420c084d4a006d0ab14b7822e223c62723e0d0a3c62723e0d0a22b780c88620c8a412b7802e2220d7a004dda302d6a904b78bb68220d2a004b383b180b080c1a80220ca84c388b280d79820d297c3a80420dda108bd8a20c686d6a20120c084c4a602b78920d4a004ddaa14b2802e2022b780ba80b589c388d7a314b280d4a30220d9a00520c8a412d7a014c7a80420d0a207c7a8042e20b783b880b78a20b989c084c1a80220daa00420b280c386c1a80220c6a405f189b08020d9a005c788c38420d7a902d6a008d8a201b789b7812e223c62723e0d0a3c62723e0d0a22b882c1a80220d7a004b389b580b789c3a80420d4a002c2a804b08920d797bd8a20b880b389c3a80420c7a419b089d0ab14c6a806b189b2802e2220b680b589b389d7ab022dc984d3a001b78920c784d8a90120ed9908b88bb08020b080d8a00820d6a902d395bd80c1a80220b789c2a804d4a002b78920d7a00420c68620d7a914c1a80220b589d4a90420cba408c384c38420c484c6a806c7a80420d0a005c986b48320d4a004ddaa14b2802e3c62723e0d0a3c62723e0d0a22d9a902b78abd80c1a80220ed9908b88b20bc8dbd802c20dda0022031d1a30220d8a202c7a80420b089d7a201bd80b689c1a802b889c7852e2220c686d6a20120c084c4a602c7a80220c8a601b782b080c1a80220b680d3a005c7a80420dda108bd8a20b489c684c3a80420c584d1aa14b2802e2022d7a202d8ab02b08020b88bb08b2027c088b28ac2a80420b780ba80b589c388d7a902c2a804b78920dda302d3a002dda00220b089c6a604c7a80420d4a017b78920b080b889c08420d7a914b889d4a0022c20c786b389b08020d2a00220dda00220d5a20220c0a408d0a301b78b20d6a208c0a408dda002b280d4a3022c20c088b28ac2a804c28420c088d0a204c38420cea81027d7a905c7a80420b089d7a201bd80b380c08420bd80d6a314b889c7852e20c584b689b280b689bc892c20b882c1a80220b780c88620d8a00420b089d7a201bd80c08420d7a914d7a214c6a806b189b2802e223c62723e0d0a3c62723e0d0aed9908b88bc1a80220bc89c3a80420cb84bd80b48320b782dfa212b08bc2a80220dda00220b480b289c3a80420b18ad5aa10d7a214b2802e2022d5aa052e2e2e223c62723e0d0a3c62723e0d0a22ed9908b88b20bc8dbd802c20b882c1a80220d5aa05d7a906b189b2802e20d7a002b78bb682c2a80220d5a013b78bb682c2a80220d4a004b789b889c7852e20bd80b889d4a00220b882c1a80220b082d8a907d4a004c7a80220bd80b88920d7a017d7a014d2a006b189b2802e20b589d5ab01b78920d8a202d3a308c7a80420c584d1aa14b280c1a80220d0a20220d8a208d4a004b789d7a214c788b189be80c7852e20c088b08020c284d9a001bd80c1a80220b08b20c884c0a80520c1a80cc7a80420d0a20720d0a010b280c08420bd80b282b789b2802e2220c686d6a20120c084c4a602c7a80220b589d4a90420cba408c38420d297c38420b680b380b889b08920d8a20220b782be8ac3a80420dda00220d5a20220c788f4a801d7a314b2802e2022b182c48620d0a201d8a208bd80d6a90420dca904c785c1a80220d7a21fc6a806b189b2802e20c7a805d6a901c7a80220d8a204b28ac38420d6a008bd80b88920d7a017c284c3a40120bd80d0ab14c6a806b189b2802e223c62723e0d0a3c62723e0d0adba005b389d7ab04d79820ed9908b88bc1a80220d8a008d7a205dda00220c486c284dd95c3a80420d797bd8a20d8a008d6a901e29a0220c088d79820dba20820d5a90220d7a004dda302d6a904b78bb6822c20c08820c688c688c384d79820bc89b08020c084b78320d4a002c2a804b782d8a90220c7a608d2a208b78920c6a401b78bb68220c8a601c7a805c7a80420d4a00cb789ddaa14b2802e20c088c1a802203135c5a60220d29720c088d79820cd84d797d5a308c2a804b78bb08b20d5a004d0a302d295d7a214b2802e20ca84c388b280d79820c484c6a806c7a80220b782b289b78bb682c28420d9a00cc7a80420c68620d7a21fd7a214b2802e3c62723e0d0a3c62723e0d0a32393230d1a3022c20b882d1a301d5a304d798203132e79b042038d7a9043c62723e0d0ab689c384d2a904d79820ba8bb78220c686b589c784b78bb6823c62723e0d0a3c62723e0d0ab589d5ab01d09020c088d79820c686ddaa08e79b02c2a804c7a80420d9a20720d5a202f28ac38420d4a00cb789dda00220b789c1a8022c20c6a611c7a80420b889b180c1a80220c284c38420b680d8a208b78b20b28abd8a20b780dea905d7a21fc1a80220b680d090c3a80420d0a202b18bc1a80220c0a804b380b589c786c68820d0a308b789d7a214b2802e20d5a904b380c3a80420c2a604b382f7a00220d7a911b78920b28020dfa204b782d8a90220b180c486c2a804c7a80220c5a604bb80c784c388c1a80220d5a008c7a60420d8a008d6a901b78920b48ad2a004d3a90220cea802c788c38420b989d8a008d295d7a214c0842c20c586c288d3a206b889d4a00220b980b080c7a60220d5a005b580d3a005b78b20d7a904d3a208d7a314b2802e20b589d5ab01c7a80220d7a002b78bb68220cda804b382b180c784c1a80220d0a002d2a002dda00220d4a002d9a002d09020c086c6a804cca80220c0a401c884c3a80420c188dea90420c68620d7a914d7a214b2802e20d8a202cba408d8a201d7a90220b780ba80b589c388d6a90120b083c7a60420c9a601b080d7a314b2802e3c62723e0d0a3c62723e0d0ab582b689c2872db681b789b08020d8a208c4a602b78bb68220b589d5ab01c7a80420d4a00cb789ddaa14b2802e3c62723e0d0a3c62723e0d0a22c088b28ab08020d7a905bc8bb389d7a20420b689bb89c38420c2a804b782b682b08920d8a20220c684d6a901c7a80420d8a202dda00420c68620d7a914b78220b280ddaa08b789c0a602c7852e2220c686d6a20120c084c4a602b78920c088d79820c6a402d1a905c7a80420d1a21ac08420bf80cfa807dda00220c7a808d8a206d6a904c38420d7a002b18abd80b48320d4a004ddaa14b2802e2022d6a008ed9908b78920b782d3a306b08b20b580de97d7a214c1a802b889b3802c20d798dd95b78bb68220c786b38920d7a904c7a80420b480c486b389d8a907b089b78bc1a80220d8a201d8a204b98920c4a407bd80b08b20d295d7a214c6a806b189b2802e223c62723e0d0a3c62723e0d0a22b08dc6a808b880c1a80220b780c486c28420d7a21fd2a00220d4a004b789c7843f2220b589d5ab01b78920c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22ed9908d797c3a80420c1a412c08420b280cb86c1a80220d4a20220b680c9a402c2a804c7a80420b88bd795bd80d4a3022c20c0a408d6a901d8a201c788c384c1a80220d7a21fc6a806b189b2802e20c786b389b08020b78920d7a904c7a80420b982b389bd80c1a80220c2a408d7a002b78bc1a8022c20d7a904b689d8a201c788c384b180b48020d097c8a401c2a804b78920b18ab08020d6a202e79908d79820b889d797c3a80420b28ad6a902dda00420d0a207c7a80420d0a304d8a208ddaa14b889c7852e2220b582b689c2872db681b789c1a80220b689c8a408c2a804b78bb08b20dca302d7a002dda00220d798b88020c28620b08ac3a80420d1a002c38420d7a011c788c38420b080b883c7a40420d0a207c7a80420b889b689ddaa14b2802e2022b889c0a80520d2a008d8a00820c884d7a101b78b20b682d4a308bd80c08420c0a408cc85bd80c1a80220d0a207b78920c8a412d0ab14c6a806b189be803f20b780b189d4a30220d4a202b88220c785b089c3a80420bd80c1a80220b08b20c8a412d0ab14c6a806b189be803f223c62723e0d0a3c62723e0d0a22c088b28ab08020ed9908b88bd79820c884d7a101c7a80420c986d8a902bd80d0ab14b280c0843f223c62723e0d0a3c62723e0d0a22d1a00220ed9908b88bc384b68220dda00420c68620d7a914c1a80220c484c2a80220d0a20420c986d8a902dda00420d6aa08d0a001d7a906b189b2802e2220c686d6a20120c084c4a602b78920b28ad2a006ddaa14b2802e3c62723e0d0a3c62723e0d0a32393230d1a30220b882d1a301d5a304203134d7a9043c62723e0d0ac484c384e79c02c288d79820dbab0420b780c3a602b78bb6823c62723e0d0a3c62723e0d0ad0a904b78bb68220d8a002cfa80120d4a202b889c3a80420d297d8a906b782f4a80220ca84c388b280b08020b180b789cb8820b480b282d79820dca004c38420d1a004b780c2a804d7a214b2802e20d8a005b68920c2a408d7a00220c088c2a804c7a80220b682c384c3a80420b983b280c584d7a014c0842c20b180b789cb8820b480b282c1a80220dfa004d79820b482b389c3a80420f488b280c2a805c084c1a80220b789b480b78b20d7a906d4a00cc9a605ddaa14b2802e20b480b889d4a001c788c3842c20c088b183c1a80220c684d4aa07b880d3a001b78bb68220dca302b889c3a80420be82b18a20ca84c388b280b78bb08b20c886d7a214b2802e3c62723e0d0a3c62723e0d0a22b789b08b20e49b02b080c7853f2220ca84c388b280b08020c4a604d7a214b2802e3c62723e0d0a3c62723e0d0a22b18b20d8a202c4a602d6a208b78b20c686d6a20120c084c4a602b78920b089f3a805c7a80420cc85bd80c1a80220dca302b889d3a002b2802e2220b180b789cb8820b480b282b08020b28ad2a006ddaa14b2802e2022c088c1a80220d5a002c288b68920c786b389b78bb08b20b28ab080c3a80420b989c388d0ab14b280c08420d7a101c6a401ddaa14b889d4a0022c20b789b48920d2a006d6a902c7a80420c2a404b38320c584d1aa14d2a002b2802e20ed9908cd86b08020d1a005dca302d79820c8a601c7a805b78b20b28abd8a20c9a608c5a602bd8920b28ac0a805c7a80420b989d3a214b280c08420ddaa14b8892e20b48bdca004b380be8bb682c1a80220c786b389b08020dca904c78520b789d6a008d79820c7a501d6a905c7a80420cca605c1a80220d0a20420b580b380b88920d7a017c788d6a902d2a002b2802e20d0a010c7a80220d6a004d7a902b78b20c28620d5a202d79820b28ab080c3a80420d5a003c7a80420c68620d7a21fc1a80220d5a206b789b380c0842c20c088d3a212b08b20f182b68220c584d1aa14b8892e223c62723e0d0a3c62723e0d0a22c088b08020b389b880c3a80420c8a601d7a314b782c7852e20b18a20b880b48ac3a8042e2220ca84c388b280b08020c884c7a508bd8920d4a004ddaa14b2802e3c62723e0d0a3c62723e0d0a22c088b38ab68220b480b889d4a001c788c38420daa004c7a80420cea40cc1a80220d0a20220b18bb08020d295b782b78120ddaa14b8892e223c62723e0d0a3c62723e0d0a22b789b88b20b882c1a80220b782b289c38420b080b08b20d295b180c7853f223c62723e0d0a3c62723e0d0a22c786b389d79820b082c3a601dda00220d7a904cea602c2a804b78920d6a208d8a202c7a80420b08dc6a401bd80b089b78bc1a80220b182c48620c1a602b78b20df98b08b20d295d7a214b280d4a30220d7a202b88bc2a8022c20c786b389c1a80220c088c2a804c7a80420c584c786c184b380b380c1a80220d6a205c788c38420c584d1aa02d2a002b2802e20b58ac3a80420bb80c08420b98a20dda00220d2a004b78920d7a00220d295c1a80220b082b389c0842c20b089f3a80220b480c7a805c788c38420b18bb08b20cea40120d7a004d4a00cc1a80220d6a208d7a301c7a80420b78db589bd8a20c286d7a214d2a002b2802e2220b180b789cb8820b480b282c1a80220c088b183d79820c1a602c4a604b78b20d7a906c7a80420d4a00ce99b14b2802e2022b180d79820b780b789b7812c20c088c0a407b78bb68220d4a017c7a80220d9a902c086c2a804c7a80420d4a002d1a00420c68620d7a914c7a80420b082d3a002b2802e20c088b389c08420b18bb08020d995cd86d79820c6a602d0a002b78b20dca308d7a002d09020ddaa08c5a401c7a80420d9a00cc7a80420c68620d7a914c7a80420d0a207d7a905c7a80420d7a002d2a002b2802e223c62723e0d0a3c62723e0d0a32393230d1a3022c20b882d1a301d5a304d798203132e79b04203139d7a9043c62723e0d0ac484c384e79c02c288d79820c484c7a602cda404c288b78bb6823c62723e0d0a3c62723e0d0ad7a004b480d3ab01b689b780c1a80220b480c7a804d79820b88ad0a202c7a80420d0a005c2a401bd80c08420d7a914d7a214b2802e20d0a205b08b20c4a604c2a80220d7ad0720d0a202c4a604c2a804d79820cda810b782d8a90220d8a002bd8ab78b20b68ac384b78920b880b389d8a006c7a80220d0a202c4a604c2a804d79820c0a404c88420b680b789c3a80420d0a204c788b4832c20c088b183c1a80220c886d4a902c2a804d79820d8a208d6a902b78920d9a005c788c38420c084c486d8a201b789b380c1a80220d6aa08d0a001b78920c2a804d7a214b2802e20d6a905b889b78220d6a901c4a604c884b980c28420c1a404b380c7a60220dd95c5a401d3a301c7a80420c584b789c08420d7a914d7a214b2802e20dda002bf8a20c8a608d6a905b080b78b20c8a604b889b78220d7a914d2a20220daa205b58bb389d79020c386c588b382b68920e09902c4a401c2a804d79820d8a002bd8ac2a80420b680b789b78bb682c1a80220d5a204f182c586bb8220d6aa08d4a308b78920c7a605cb88c08420d7a914d7a214b2802e20c088b183c1a80220c08820c084c2a408c7a80420c188dea90420c68620d7a914d7a214b2802e20c5a405d1a004b78920c784d4a30220d7a005cda801c7a80420cfa61ec08420c1a401c7a805b78920bc89b782d1a00420d0a207b789b2802e3c62723e0d0a3c62723e0d0ac5a601f5a401b78bb68220b18ab383d79020b780b582b889d79820b880b389c3a80420b28ad6a902dda00220c0a408d8a001d79820cd86b08db880c1a80220e09904c4a401dda00420b889d6a208d09020d2a202b48220cba801c787d79820c5a604c0a604d79820c7a508b089c3a80420b080d8a90220d8a219c7a802b789d7a314b2802e20b78920dfa008c7a80220c088b88220d6a004b780d1a005c1a80220d0a20720b789d6a008c788c3842c20b282c7a60120d0a008bd8ab889c08420b282c7a60120d1a21ab782d8a90420d0a207b789b2802e20c088b183c1a80220c1a602d7a011b78b20dca304b983d8a90220dda302d6a904c584b28020b280b080c7a40420b489b38ab08020ed9b04f7a90220c0a603d6ab0420d0a207d7a905c7a80420c188dea314b2802e3c62723e0d0a3c62723e0d0ac088c8a608b78bb682c28420c088b183b08020b080d8a00820ed9901d6a902bd80c1a80220d0a207c7a8022c20c484c7a602cda404c288c1a80220dda00220b783d6a902b78bb08b20d7a914b782b68220d7a308e79b02dda00220c084dda108b789b380c1a80220d0a207b789d7a214b2802e3c62723e0d0a3c62723e0d0a32393230d1a3022c20b882d1a301d5a304d798203132e79b04203232d7a9043c62723e0d0ab689c384d2a904d79820d7a905bc8bb389d7a20420b689bb89b78bb6823c62723e0d0a3c62723e0d0a22b689c384d2a904d79820dda304cba408c7a80220cea817b089c08420d4a004d7a014b2802e2220ed9908c0a60820d5a004ca84b189d79820d7a302d2a002b78bb68220c686d6a20120c084c4a602c7a80220c484b783c2a80220e09902c8a608c2a804c7a80420dda108bd8a20c0a408cc85ddaa14b2802e2022bd80b889d4a00220b88bc0a601c7a80220d6a004b780d7a914b2802e20d9a902b78abd80c1a80220ed9908b88b20bc8dbd80be8bb68220bc8dbd80d79820d0a904c084c28420d5a90eb180c1a80220b989b68b20c2a408d7a00220b080d8a00820d4a903c08420d798b889bd80d6a314d2a20220d097c8a401c2a804c7a8022c20ed9908b88b20bc8dbd80d79820d4a20220d9a902d9a201c2a804b78920b88bd797b78b20c784c388b089b78bc1a80220b880d8a904b78920c586c8a401bd80b280c08420dca002d2a002ddaa14b2802e20c088b382c488c38420b38bd4a0022033b68bd79820c0a408d8a208bd80c084c28420d4a903c7a805d8a901dda00220c2a408b889c384b6822c20b18ab08020ed9908b88b20bc8dbd80d79820d6a208d4a308c7a80420b789b782d0a00420d9aa01d7a905c7a80420b889b08b20d295d7a214c7a805b78920d0a304d8a208d295d7a214b2802e223c62723e0d0a3c62723e0d0ab780ba80b589c388d7a902c7a80220d8a005b68920d4a004c7a80420d4a205c986c0842c20b880d6a902d79820d4a004b78920b28ac8a608c2a804d79820e09c07b080b78b20ed9901d6a904bd8920c7a604b383bc82b889b08bcea80520bd80d7a314b2802e20c088c2a804c7a80220c088b88220d9a905c4a601c7a80420c787b889dda00220b98ac38420c088c3a80420c7a404b383b280c5a40420f3a602b789d7a214b2802e20d5a907c4a604b78920c284c384c3a80420bf80b38020cda804b382b18ad3a314c0842c20bb8ad7a108c7a80220b083c7a604d79820cca401cca60820b680b789c38420b780c88620d8a005dea00220c084b08ac3a80420b18ab489c1a80220b28b20c088d9a314b2802e3c62723e0d0a3c62723e0d0a22b18ab0802027ed9908b88b27d79820b889d797b78b20c784c3a80420d6aa08d0a001b78920d7a21fc7a805c7a80420ed9901d6a904bd8920d5a018bd83c286d0ab14b2802e2220c088b08020d4a004c7a80420b789b782b180d0a014b2802e2022b180c1a80220b783bb8abe80b88920c088b28ac2a804d79820bd8ad7a002b78bb68220d9a902d8a204dda00220ed9902d7a308c7a80420d5a003d7a014d2a20220c686d6a20120c084c4a60220b582b689c2872db681b789d7a314c0842c20cf84dda00220d7a011c788c384c28420c088d3a212b08b20d1a005c7a80420d0a207b789b2802e20b180c3a80420d5a003b780c8a60220c084dda108c7a80420b889ba89c1a80220d0a207b78920b180d79820d798c486b08020e29a0420d0a207b789b4832c20b18020b789d6a008c788c38420b78920d798c486c3a80420d8a919b782b889b089b78b20c9a608c5a602dda00220b880d0a301b78920d7a914c1a80220c186c0a602b080b08020b180bb80b180b08920d8a202be80b8892c20b78920d7a904b78b20c4a405d09020b480c7a805c7a80420b280dda00420d0a207d7a905c7a80420d4aa08b68bbd80d0ab14b2802e20b180d79820d9a20720d5a202f28a20ddaa08c584c1a8022c20b78920d7a301b680d8a201d7a90220c6a602d0a002c7a80420b089d1a305bd80b78320b280c7a80520b68ad5a301d5a304d7982031e79b042031d7a904c7a80420b089d8a205c788c38420c786b389b0802027b88b32b689b28a2720e79b02d1a302b78b20d8a902d7a906bd80d7a314c7a805c7a80420d6a202d7a202bd80c1a80220b580b789b2802e20b789d0a207c788c38420c786b389c1a80220c786b389b78bb08bb68220ed9908b080b08020bf82b180d0a014c7a805c7a80420b78ac284bd80c0842c20d7a011c788c384d79820b180d1a004c7a80420d6aa08d0a001dda00420d0a207b789b2802e223c62723e0d0a3c62723e0d0ad2a00220dda00220b680d3a005d4a002b78920b78920c484c2a80220d4a004b78b20d5a001c686c3a80420b989c08420d7a914d7a214b2802e20d6ab02d9ab04d79820c288c38427d8ab0420e79908c7a80220b78920c484c2a80220d7a904c2a804b78920dba005b389d7ab04b78bb68220d7a301b680d6a00820b080d8a00820c8a412c7a80220d7a904b789b380c08420d8a902d6a905c788c38420d4a903c08420d7a914d7a214b2802e20d798d6a905dda00420b783b889b08020d7a21fb7892c20c088c1a80220d2a002d2a002bd8920b489d9a90220d8a001b880d7a314b2802e3c62723e0d0a3c62723e0d0a32393230d1a30220b882d1a301d5a304203331d7a9043c62723e0d0ac484c384e79c02c288d79820b78bc5a402bd80cb88b78bb6823c62723e0d0a3c62723e0d0ac284b68920b780b38ab78bb68220c684b68020d6a904b78920c088d79820b589d8a20220b689b08d20d8a008b989d79020dda005be8b20b489b38ac3a80420d2a002c884bd80c08420d7a914c1a80220b48aba8adda00220b889bd8020c485b889b78bb682c1a80220cfa807d5a013d79820b680bb8ab08020d5a204b782d8a314b2802e20c784d3aa0220b689d0a00220d4a903c7a805d8a901c688d3a206d2a20220b089b782b78bb68220b089c3a80520d5a008c7a604b78920b68ab782b180c784b282b18920c0a40320db97b782c7a404d3a014b2802e20c0a403b580c38420b480d5a206b680d79820c886d798b08020c088d0a207d09020b782dfa20220c2a408d8a001c7a80420d7a904c788daa90220b98bd7a902c7a80420dda108bd8a20f4a404d3a314b2802e20bc80b789cc88b08020e79a02f5a401c788c38420302e35d7a902b98920c7a605d8a901d7a314b2802e20d8a206b889d4a302b78920db97b782c7a404d3a014b2802e20ca84d7a904b78920b88b20c688c688c38420d0a005b089b282b18920d5a002b28a20d5a008dda108c788c38420c2a404b08920b689d8a001ddaa14b2802e20d9a20220d1a30220c2a408d7a002c7a80420d8902dc786c38420f28adea001b789d2a20220bc89c688cba402c7a80220c0a806d8a001c688b38b20c7862dd890c38420d5a002d8a202d295d7a214b2802e20c586b682d8a90220d0a20220b780c486d0a207c28420d7a21fd7a214b889d4a0022c20c484c2a80220b08b20b580de97d7a214b2802e3c62723e0d0a3c62723e0d0a22b889c0a80520d2a008d8a00820c084b989d0a90220dda905c2a804d0ab14c0a6022e2220b480c6a604b680b08020c884c7a508bd8920c7a81dc884d3a314b2802e3c62723e0d0a3c62723e0d0ac088c1a80220d9a202d8a208d79820c0a702d7a304c7a80420cba408bd8a20d5a005bd80c1a804c7a80420c7a404b383b280c584d7a014b2802e20dda002d5a005c8a608b789d7a214b2802e20b88b32b689b28ab0802c20cda402c2a402d79820b689b28ab08020b689d8a001d295d7a214b2802e00,Book3Valuable2920v12a,remaster_book_original_markup_transplant
