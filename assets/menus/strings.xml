@@ -1,0 +1,273 @@
+<!-- strings.xml -->
+<rect name="Strings">
+	<_exit> È¤Ã… </_exit>
+	<_remove> ¸‹°‚ </_remove>
+	<_done> í™×© </_done>
+	<_continue> °Æ¤ </_continue>
+	<_new> ¶ŠÃ„½€°‰ </_new>
+	<_load> Å¦³‚Ç„°‰ </_load>
+	<_options> í™Ğ£Ö¢Ø¢ </_options>
+	<_credits> ¸‹Ø Ø© </_credits>
+	<_destruction> Destruction </_destruction>
+	<_prev> ·‰Ø¢ </_prev>
+	<_take> °€¸‰°‰ </_take>
+	<_next> ²€Ç¨ </_next>
+	<_breath> Breath </_breath>
+	<_weapons> Ä†°‰ </_weapons>
+	<_apparel> Ø µ‰ </_apparel>
+	<_alchemy> È„¸‹ </_alchemy>
+	<_misc> °‰»€ </_misc>
+	<_strength> İ© </_strength>
+	<_intelligence> ¸‰Á¨ </_intelligence>
+	<_willpower> ×˜¸‰ </_willpower>
+	<_agility> Æ¦Õ Ó£ </_agility>
+	<_speed> Æ¤Â„ </_speed>
+	<_endurance> ¸‰À†Ó£ </_endurance>
+	<_personality> Ù©İÓ£ </_personality>
+	<_luck> İªÇ¦ </_luck>
+	<_loading> Å¦³‚Ç„Á¨È¦... </_loading>
+	<_done> È¤Ã… </_done>
+	<_close> Ò °‰ </_close>
+	<_locklevel> Ñ ·‰Â„: </_locklevel>
+	<_picksleft> Å„Ç‡ Ó Ü©: </_picksleft>
+	<_playerskill> Ò Ö©×˜ Æ†È¦: </_playerskill>
+	<_timestrained> İ£ ³‹Õ«×˜ Í¦Ó£ íšÆ†: </_timestrained>
+	<_text> Text </_text>
+	<_haggle> Í¨Ø¢ </_haggle>
+	<_disposition> Í„Ğ Â„: </_disposition>
+	<_mercantile> Ö Æ¦ ÆˆÚ©: </_mercantile>
+	<_easy> Ö—Ç¦ </_easy>
+	<_hard> ·‚³ƒÇ¦ </_hard>
+	<_buyingitemsat> Buying Items at </_buyingitemsat>
+	<_sellingitemsat> Selling Items at </_sellingitemsat>
+	<_ok> í™×© </_ok>
+	<_cancel> Ù—Æ„ </_cancel>
+	<_acrobatic> Acrobatic </_acrobatic>
+	<_howmany> Æ†Ó¡Ç¨ Ö¢Ûª½€¶‹Ç…. </_howmany>
+	<_hammers> Hammers </_hammers>
+	<_hour> hour </_hour>
+	<_s> s </_s>
+	<_rest> Í‡Ö© </_rest>
+	<_dayoftheweek> DayOfTheWeek (XX:XX PM) </_dayoftheweek>
+	<_monthdayyear> Month Day, Year </_monthdayyear>
+	<_trainerskill> À…à™×˜ Æ†È¦: </_trainerskill>
+	<_skilllevel> Skill Level: </_skilllevel>
+	<_cost> Í¦Ó£ µ‰Ç¥: </_cost>
+	<_create> ¸‹Ø  </_create>
+	<_warning> Warning </_warning>
+	<_topic> Topic </_topic>
+	<_train> Train </_train>
+	<_ingredientone> IngredientOne </_ingredientone>
+	<_ingredienttwo> IngredientTwo </_ingredienttwo>
+	<_ingredientthree> IngredientThree </_ingredientthree>
+	<_ingredientfour> IngredientFour </_ingredientfour>
+	<_havenogreeting> I HAVE NO GREETING </_havenogreeting>
+	<_applicableeffects> Applicable Effects </_applicableeffects>
+	<_addedeffects> Added Effects </_addedeffects>
+	<_effectname> Effect Name </_effectname>
+	
+	<_magnitude> Magnitude: </_magnitude>
+	<_area> Area: </_area>
+	<_duration> Duration: </_duration>
+	<_range> Range: </_range>
+	<_delete> Delete </_delete>
+	<_maxpersuasion> Potential Increase: </_maxpersuasion> 
+	<_demand> Demand </_demand>
+	<_bribe> Ñ•Ä¦ </_bribe>
+	<_rotate> İ•Ø¢ </_rotate>
+	<_knowneffects> Known Effects </_knowneffects>
+	<_spellnameenter> Name Spell </_spellnameenter>
+	<_dummynotice> Dummy notice </_dummynotice>
+	<_greaterpower> Ğ İ  ¼€×– </_greaterpower>
+	<_lesserpower> ×¡İ  ¼€×– </_lesserpower>
+	<_spells> È†Ä¦ </_spells>
+	<_scrolls> È†Ä¦¶‚ </_scrolls>
+	<_back> Ò—Ã„ </_back>
+	<_activeeffects> Ø¢Ç¥È¦×© Í…Ğ </_activeeffects>
+	<_nomap> NO MAP SET IN THIS WORLDSPACE </_nomap>
+	<_quickkey> Hotkey X </_quickkey> 
+	<_testing> Testing </_testing>
+	<_race> È¤È¤ </_race>
+	<_birthsign> Û ÖªØ </_birthsign>
+	<_class> Ø©×¢ </_class>
+	<_level> ³‹Õ« </_level>
+	<_health> ÖªÔ£Ó£ </_health>
+	<_magicka> ´Š¸‰º€ </_magicka>
+	<_fatigue> ¼‰Ã„Â„ </_fatigue>
+	<_minorskills> Å„È„ ÆˆÚ© </_minorskills>
+	<_levelprogress> ³‹Õ« Ø©İªÖ í™ </_levelprogress>
+	<_nextrank> Next Rank: </_nextrank>
+	<_button> Button </_button>
+	<_mastervolume> Ø¢¹‹ Ç¨Ó¡: </_mastervolume>
+	<_voicevolume> Ä¤Æ„³‰: </_voicevolume>
+	<_effectvolume> Í…ĞÇ¨: </_effectvolume>
+	<_footstepvolume> Õ ¸€À¦ Æ„³‰: </_footstepvolume>
+	<_musicvolume> Ç¨× : </_musicvolume>
+	<_device> Device </_device>
+	<_mousesensitivity> *---* ´€Ç†Æˆ Ğ Â„ *---* </_mousesensitivity>
+	<_joysticksensitivity> Joystick Sensitivity: </_joysticksensitivity>
+	<_verticalsensitivity> Vertical Sensitivity: </_verticalsensitivity>
+	<_horizontalsensitivity> Horizontal Sensitivity: </_horizontalsensitivity>
+	<_inverty> Ö ½€ Õ Ø¢: </_inverty>
+	<_onoff> On/Off </_onoff>
+	<_swapstickcontrols> ÆˆÛ© Ö¢Ø¢ </_swapstickcontrols>
+	<_leftstick> çšõ¤ ÆˆÛ©: </_leftstick>
+	<_rightstick> Ç„Ã¨õ¤ ÆˆÛ©: </_rightstick>
+	<_difficulty> Ñ ·‰Â„: </_difficulty>
+	<_generalsubtitles> °‰Å¤ ¸€Ô : </_generalsubtitles>
+	<_dialoguesubtitles> ²Šİ ¸€Ô : </_dialoguesubtitles>
+	<_crosshair> °€Á¨¸€: </_crosshair>
+	<_saveonrest> Í‡Ö©İ ¿Š ¸‚Ø ½€°‰: </_saveonrest>
+	<_saveonwait> ²Š°‰İ ¿Š ¸‚Ø ½€°‰: </_saveonwait>
+	<_saveontravel> ·ƒİªİ ¿Š ¸‚Ø ½€°‰: </_saveontravel>
+	<_return> Â¤·€°€°‰ </_return>
+	<_save> ¸‚Ø ½€°‰ </_save>
+	<_load> Å¦³‚Ç„°‰ </_load>
+	<_gameplay> °‹×© Ö¢Ø¢ </_gameplay>
+	<_video> İÔ£ Ö¢Ø¢ </_video>
+	<_audio> Ç¨İ¡ Ö¢Ø¢ </_audio>
+	<_controls> È„Ø  Ö¢Ø¢ </_controls>
+	<_quit> ±€°€°‰ </_quit>
+	<_resolutionlist> Resolution List </_resolutionlist>
+	<_resolution> ½ŠÖ Â„: </_resolution>
+	<_change> Change </_change>
+	<_distantlod> ç›°‚³‰ ¸‰Ô£: </_distantlod>
+	<_self_shadows> ¸€¹‹ ÀˆÓ©¸€: </_self_shadows>
+	<_grass_shadows> Ø ²‰ ÀˆÓ©¸€: </_grass_shadows>
+	<_canopyshadows> ±€Ä† ¹€×¡ ÀˆÓ©¸€: </_canopyshadows>
+	<_texturesize> Û«Æˆ¹ƒ Êˆ°‰: </_texturesize>
+	<_treelod> ±€Ä† °€¶‰°‚³‰: </_treelod>
+	<_actorlod> ×©Ä¦ °€¶‰°‚³‰: </_actorlod>
+	<_itemlod> ·€·‰Û« °€¶‰°‚³‰: </_itemlod>
+	<_objectlod> ¶€Ä¦ °€¶‰°‚³‰: </_objectlod>
+	<_attributedescription> Attribute Description </_attributedescription>
+	<_theapprentice> É„Å„ ¸€³‰ </_theapprentice>
+	<_theatronach> ·€ËˆÃ„±€¹‰ ¸€³‰ </_theatronach>
+	<_thelady> Æ¦±ƒ ¸€³‰ </_thelady>
+	<_thelord> À¦È† ¸€³‰ </_thelord>
+	<_thelover> ×£×© ¸€³‰ </_thelover>
+	<_themage> ´€Õ¢¶€ ¸€³‰ </_themage>
+	<_theritual> ×˜Ö©×˜ ¸€³‰ </_theritual>
+	<_theserpent> Õª×˜ ¸€³‰ </_theserpent>
+	<_theshadow> ÖÂ„Ç† ¸€³‰ </_theshadow>
+	<_thesteed> À¦´€ ¸€³‰ </_thesteed>
+	<_thethief> Â„Â¦ ¸€³‰ </_thethief>
+	<_thetower> »€×– ¸€³‰ </_thetower>
+	<_thewarrior> Ø¢¶€ ¸€³‰ </_thewarrior>
+	<_birthsigndescription> BirthSign Description </_birthsigndescription>
+	<_specialization> Ø¢Ä¦ Å¦· </_specialization>
+	<_combat> Ø¢Ë† </_combat>
+	<_favored> Ö¢Í„ </_favored>
+	<_name> Name: </_name>
+	<_attributes> Æ¤Ö¢ </_attributes>
+	<_majorskills> È† ÆˆÚ© </_majorskills>
+	<_selectclass> ·€³Š×˜ Ø©×¢È¦ Ö¢Ûª½€°‚±€ ç›½€Á¨ Ø©×¢Ç¨ ÖªÖ¢½€¶‹Ç…. </_selectclass>
+	<_hair> Hair: </_hair>
+	<_bald> Bald: </_bald>
+	<_eyes> Eyes: </_eyes>
+	<_age> Age: </_age>
+	<_complexion> Complexion: </_complexion>
+	<_gender> Gender: </_gender>
+	<_style> Style: </_style>
+	<_red> Red: </_red>
+	<_green> Green: </_green>
+	<_blue> Blue: </_blue>
+	<_length> Length: </_length>
+	<_random> Random </_random>
+	<_undo> Undo </_undo>
+	<_reset> Reset </_reset>
+	<_armorer> Armorer </_armorer>
+	<_magic> ´€Õ¢ </_magic>
+	<_stealth> Â„Ø¢ </_stealth>
+	<_specializationdescription> Specialization Description </_specializationdescription>
+	<_threeattributes> Ğ İİ  Æ¤Ö¢ 3°€¸‰Ã¨ Ö¢Ûª½€¶‹Ç…. </_threeattributes>
+	<_map> ¸‰Â„ </_map>
+	<_questadded> "Quest Added" </_questadded>
+	<_questtitlename> Quest Title/Name </_questtitlename>
+	<_questdate> Quest Date </_questdate>
+	<_questtextparagraph> Quest Text Paragraph </_questtextparagraph>
+	<_start> ¶‰Ø  </_start>
+	<_missing> Missing Text </_missing>
+	<_ingredients> ¸ŠÃ… </_ingredients>
+	<_effects> Í…Ğ </_effects>
+	<_septimsfor>À¤Âˆ ¶€Ç¥¶‰ Í„Ğ Â„</_septimsfor>
+	<_dispositionbonus>Ø¢ Ö Æ¨. </_dispositionbonus>
+	<_spellname> Spell Name (Click to Change) </_spellname>
+	<_enchanteditem> Enchanted item (Click to change) </_enchanteditem>
+	<_additem> Add Item </_additem>
+	<_addsoulgem> Add Soul Gem </_addsoulgem>
+	<_sigilstoneeffects> Sigil stone effects: </_sigilstoneeffects>
+	<_effectsapplied> Effects to be applied: </_effectsapplied>
+	<_charge> Ç¥Ó¡: </_charge>
+	<_cannotpersuade> Í„Ğ Â„°€ Ù•²Š¹‰·‹ Ò İªÆ¨±‰²€. </_cannotpersuade>
+	<_anyfurther> any further. </_anyfurther>
+	<_nameenchantment> Name Enchanted Item </_nameenchantment>
+	<_attribute> Attribute: </_attribute>
+	<_skill> Skill: </_skill>
+	<_move> Move </_move>
+	<_look> Look </_look>
+	<_equip> Equip </_equip>				<!-- Inventory Menu Xbox Hint Text -->
+	<_unequip> Unequip </_unequip>			<!-- Inventory Menu Xbox Hint Text -->
+	<_drop> Drop </_drop>					<!-- Inventory Menu Xbox Hint Text -->
+	<_quickkey> Hotkey </_quickkey>		<!-- Inventory Menu Xbox Hint Text -->
+	<_defaults> É„°‰İ </_defaults>
+	<_none> None </_none>
+	<_actionmapping> Action Mapping: </_actionmapping>
+	<_grab> Grab </_grab>
+	<_takeall> Ä„Â† °€¸‰°‰ </_takeall>
+	<_history> History </_history>
+	<_activate> Activate </_activate>
+	<_setmarker> Set Marker </_setmarker>
+	<_travel> Travel </_travel>
+	<_customclass> Ø©×¢ ÖªÖ¢ </_customclass>
+	<_savemenuinstructions> '¶ŠÃ„Ç¦ ¸‚Ø ±ŠÇ¥' Ö¢Ûª Ï„Á¨ ·‰´‰ È¤¸Š½€Á¨ °‹×©Ç¨ Ò¢·‚÷˜Ç¦±‰²€. Shift+´€Ç†Æˆ Ç†Ê¨Ó©ÇˆÃ„ Ö ¸‹İ  Æ† ×©Æ¨±‰²€. </_savemenuinstructions>
+	<_loadmenuinstructions> Ö¢Ûªİ  ¸‚Ø °‹×©Ç¨ Å¦³‚Ç¤±‰²€. Shift+´€Ç†Æˆ Ç†Ê¨Ó©ÇˆÃ„ Ö ¸‹İ  Æ† ×©Æ¨±‰²€. </_loadmenuinstructions>
+	<_continue> °Æ¤½€°‰ </_continue>
+	<_addingredient> ¸ŠÃ…É†°€ </_addingredient>
+	<_pressstart> Press Start </_pressstart>
+	<_soul> Soul: </_soul>
+	<_apparatuses> °‰À† </_apparatuses>
+	<_potions> Ì„Ö£ </_potions>
+	<_books> Ùª/ÆˆÊˆÃ¤ </_books>
+	<_keys> ×£Ö• </_keys>
+	<_stones> ÆˆË¤ </_stones>
+	<_paused> Paused </_paused>
+	<_repairall> Ä„Â† Æ†³‰ </_repairall>
+	<_rumble> Vibration: </_rumble>
+	<_restquestion> ×¢´€Â¤×  Í‡Ö©½€¶‰Ğ«Æ¨±‰¾€? </_restquestion>
+	<_waitquestion> ×¢´€Â¤×  ²Š°‰½€¶‰Ğ«Æ¨±‰¾€? </_waitquestion>
+	<_downloaded_content> Downloaded Content: </_downloaded_content>
+	<_view> View </_view>
+	<_repair> Repair </_repair>
+	<_skills> ÆˆÚ© </_skills>
+	<_factions> Ä¦¼€ </_factions>
+	<_move_tab> Move/Tab </_move_tab>
+	<_scroll_map> Scroll Map </_scroll_map>
+	<_gamma> İÔ£Õ °‰: </_gamma>
+	<_persuade> Persuade </_persuade>
+	<_barter> Barter </_barter>
+	<_buy_spell> Buy Spell </_buy_spell>
+	<_repair> Æ†³‰ </_repair>
+	<_train> Í¦Ó£ </_train>
+	<_recharge> Recharge </_recharge>
+	<_grass> Ø ²‰ °€¶‰°‚³‰: </_grass>
+	<_widescreen> (*) Indicates widescreen </_widescreen>
+	<_constant_effect> Constant Effect </_constant_effect>
+	<_viewdist> Ù•²Š ¶‰·: </_viewdist>
+	<_distbuild> ç›°‚³‰ Ğ¢Ä¦: </_distbuild>¶€
+	<_disttrees> ç›°‚³‰ ±€Ä†: </_disttrees>
+	<_intshad> Ö©±Š ÀˆÓ©¸€: </_intshad>
+	<_extshad> Ö©×• ÀˆÓ©¸€: </_extshad>
+	<_speclight> Õ ¶€ °‚³‰: </_speclight>
+	<_hdr> HDR Í…Ğ: </_hdr>
+	<_water_detail> Ä¦ ¶‹Å†Ä…¶€: </_water_detail>
+	<_water_reflections> Ä¦ Õ ¶€: </_water_reflections>
+	<_water_displacement> Ø Ä¦Ğ£ Ì…¶‰: </_water_displacement>
+	<_window_reflections> °‚Ç¦ Õ ¶€: </_window_reflections>
+	<_hair_detail> Hair Detail: </_hair_detail>
+	<_blood> ¼‰ ÀˆÓ©: </_blood>
+	<_antialiasing> × »‰ ·‹×©³‰·‚Ö©: </_antialiasing>
+	<_bloom> Bloom Í…Ğ: </_bloom>
+	<_shadowfiltering> ÀˆÓ©¸€ Å„Ø¢: </_shadowfiltering>
+</rect>
+	

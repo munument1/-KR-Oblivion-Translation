@@ -1,0 +1,12 @@
+_build/
+output/
+build/
+dist/
+__pycache__/
+*.spec
+*.building
+*.esm
+*.esp
+*.7z
+*.zip
+translation_audit.json

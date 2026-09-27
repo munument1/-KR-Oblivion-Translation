@@ -1,0 +1,7 @@
+*.csv -text
+assets/menus/strings.xml -text
+*.fnt -text
+*.tex -text
+*.bat text eol=crlf
+*.py text eol=lf
+*.md text eol=lf
