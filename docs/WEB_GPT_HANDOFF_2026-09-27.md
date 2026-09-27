@@ -25,6 +25,20 @@
 - 인트로/아웃트로 자막 BIK는 각각 1280×720, 약 115.48초/58.02초이며 음성 트랙 유지와 자막 프레임 시각 검사를 통과했다. 새 일반 대사, 선택지, 새 UOP ESP 조합의 게임 안 작동은 아직 사용자 플레이 검사 전이다.
 - 일반 저장 실패 재현 때문에 장소명은 영어로 유지한다. 이전 저장 안전판은 MO2에서 일반 저장 생성과 불러오기가 확인됐다. 자동 저장이나 콘솔 `save TestSave` 성공만으로 일반 저장 성공을 판단하지 말 것.
 
+## 2026-09-27 번역 대기 목록 (Google Drive)
+
+최신 빌드의 원본·출력 플러그인 문자열 바이트를 직접 비교해 `90_중간_분석자료` 폴더에 편집 가능한 Google Sheets 세 개를 올렸다. 각 행은 필드 발생 1건이며 FormID, EditorID, 필드, 발생 순서, 퀘스트 단계, 부모 대화 FormID, 영문 원문 SHA-256을 포함한다. 한글 입력은 `korean_translation` 열에 한다. 내부 편집용 명칭이 섞일 수 있으므로 `TODO`는 실제 화면 노출 확인 전의 번역 **후보**다.
+
+| 범위 | 영어 번역 후보 | 의도적으로 영어 유지한 장소명 | 작업 시트 |
+| --- | ---: | ---: | --- |
+| 본편 `Oblivion.esm` + 공식 DLC | 30,569 | 1,953 | [본편·DLC 번역 대기](https://docs.google.com/spreadsheets/d/1DqO4VqQkVb1k2OmujiokNaTvxVakfT0V3m0CyuojCYQ/edit) |
+| 넥서스용 언오피셜 패치 ESP | 1,559 | 1,493 | [UOP/USIP/UODP 번역 대기](https://docs.google.com/spreadsheets/d/1X_mumR3oT-5FWEw9LI097x3ivvGzs1v0U2tZPbHhVVQ/edit) |
+| EXE 기본 GMST | 445 화면 노출 검토 후보 | 해당 없음 | [EXE 문구 검토](https://docs.google.com/spreadsheets/d/1cynf82agteoWZoaeabWxybKHSeS7C6buZ5OGgOi_OsI/edit) |
+
+본편 후보 중 `INFO/NAM1` 대사 23,053건과 `DIAL/FULL` 선택지 2,755건이 가장 크다. 이는 공식 DLC까지 합친 수라 위의 **Oblivion.esm 단독** 21,831/2,480건과 분모가 다르다. 언오피셜 후보에는 `INFO/NAM1` 761건, `QUST/CNAM` 196건, `DIAL/FULL` 67건이 있다. 본편과 언오피셜 시트에는 동일한 논리 필드가 1,138건 겹치므로 두 총계를 독립된 게임 문장 수로 단순 합산하지 말 것. EXE 445건은 정규식으로 찾은 기본값 가운데 현재 ESM GMST가 덮지 않는 후보이며, 실제 UI 노출 여부 검토 전까지 확정 미번역 문구로 부르지 말 것.
+
+재생성 스크립트: `export_translation_backlog.py`. 로컬 원본 CSV 및 집계 JSON은 `_build\translation_backlog_20260927`에 있다. 시트의 한글을 플러그인에 재삽입하려면 기존 커스텀 한글 바이트 인코딩으로 변환하고 원문 해시·FormID·필드·발생 순서를 다시 검증해야 한다. 시트의 문자열 순서로 곧바로 이식하지 말 것.
+
 ## 재현과 이어서 할 일
 
 1. 본편 빌드: `python build_vanilla_overlay.py --data-dir "C:\Games\Steam\steamapps\common\Oblivion\data" --output ".\output\Oblivion_KR_Mod"`. 자막까지 강제 검사할 때 `--video-subtitles required`를 붙인다. 기본 BAT는 `auto`로 도구가 없으면 영상만 건너뛴다.

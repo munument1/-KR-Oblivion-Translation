@@ -63,7 +63,7 @@ def read_records(path: Path):
 
 
 def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_table=None,
-                    quest_entries=None, loading_entries=None, completions=None):
+                    quest_entries=None, loading_entries=None, completions=None, nexus_completions=None):
     old_records = read_records(original)
     kr_records = read_records(prior)
     if old_records.keys() != kr_records.keys():
@@ -86,7 +86,10 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
             raise ValueError(f"{original.name}: EditorID differs at {key}")
         stage = None
         stage_occurrences = Counter()
+        field_occurrences = Counter()
         for index, ((field, old), (_, new)) in enumerate(zip(old_fields, kr_fields)):
+            field_occurrence = field_occurrences[field]
+            field_occurrences[field] += 1
             if key[0] == b"QUST" and field == b"INDX":
                 stage = int.from_bytes(old, "little")
             occurrence = None
@@ -119,6 +122,14 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
                             raise ValueError(f"{original.name}: completion source mismatch at {key}")
                         replacement = completion[1]
                         counts["manual_completion"] += 1
+                    nx_occurrence = occurrence if (key[0] == b"QUST" and field == b"CNAM" and occurrence is not None) else field_occurrence
+                    nx_stage = stage if (key[0] == b"QUST" and field == b"CNAM") else None
+                    nx = (nexus_completions or {}).get((original.name, key[0], key[1], field, nx_occurrence, nx_stage))
+                    if nx:
+                        if old != nx[0]:
+                            raise ValueError(f"{original.name}: nexus completion source mismatch at {key} {field!r} occ {nx_occurrence}")
+                        replacement = nx[1]
+                        counts["nexus_completion"] += 1
                     if replacement is not None and replacement != old:
                         changes.setdefault(key, {})[index] = (field, old, replacement)
                         counts["restored_base_translation"] += 1
@@ -202,6 +213,17 @@ def main():
                                           (root / "vanilla_completion.csv",
                                            root / "patch_translation_memory.csv",
                                            root / "legacy_carrier_completion.csv",
+                                           root / "legacy_full_recovery.csv",
+                                           root / "remaster_exact_memory.csv",
+                                           root / "remaster_info_memory.csv",
+                                           root / "remaster_info_dlc_memory.csv",
+                                           root / "remaster_questlog_memory.csv",
+                                           root / "remaster_desc_memory.csv",
+                                           root / "remaster_book_safe_memory.csv",
+                                           root / "remaster_extended_memory.csv",
+                                           root / "source_memory_recovery.csv",
+                                           root / "quest_unique_stage_memory.csv",
+                                           root / "manual_visible_memory.csv",
                                            root / "exe_gmst_existing.csv"))
         quest_entries, loading_entries = load_quest_loading_translations(root / "quest_loading_translations.csv")
     else:
@@ -214,6 +236,17 @@ def main():
             if key in completions:
                 raise ValueError(f"duplicate patch completion {key}")
             completions[key] = (bytes.fromhex(row["source_hex"]), bytes.fromhex(row["target_hex"]))
+    nexus_completions = {}
+    nexus_path = Path(__file__).resolve().parent / "_build" / "nexus_patch_completion.csv"
+    if nexus_path.is_file():
+        with nexus_path.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                key = (row["file"], row["record_type"].encode("ascii"), int(row["formid"], 16),
+                       row["field"].encode("ascii"), int(row["occurrence"]),
+                       int(row["quest_stage"]) if row["quest_stage"] else None)
+                if key in nexus_completions:
+                    raise ValueError(f"duplicate nexus completion {key}")
+                nexus_completions[key] = (bytes.fromhex(row["source_hex"]), bytes.fromhex(row["target_hex"]))
     report = {}
     for source_folder, kr_folder in PAIRS:
         originals = sorted((args.source / source_folder).glob("*.esp"))
@@ -224,7 +257,7 @@ def main():
             if not prior.is_file():
                 raise FileNotFoundError(prior)
             changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table,
-                                              quest_entries, loading_entries, completions)
+                                              quest_entries, loading_entries, completions, nexus_completions)
             destination = args.output / kr_folder / original.name
             applied = rewrite(original, destination, changes)
             if applied != counts["translated_fields"]:
@@ -239,6 +272,7 @@ def main():
                 "translated_fields": applied,
                 "restored_base_translation": counts["restored_base_translation"],
                 "manual_completion": counts["manual_completion"],
+                "nexus_completion": counts["nexus_completion"],
                 "location_fields_preserved_english": counts["save_unsafe_location_skipped"],
                 "structure": before,
             }
