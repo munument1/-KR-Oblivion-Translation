@@ -22,6 +22,18 @@ from pathlib import Path
 
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 MASTER = "Oblivion.esm"
+# The executable supplies these default GMSTs, but the original ESM has no
+# records for them. "게임" and "종료" use bytes from verified CSV strings;
+# "취소" uses the existing translated menus/strings.xml entry.
+MENU_GMSTS = (
+    (0x00F00001, b"sExitGameAffirm\0", b"Exit Game\0",
+     bytes.fromhex("b08bd7a90520c8a408c38500")),
+    (0x00F00002, b"sExitGameQuestion\0", b"Exit the game?\0",
+     bytes.fromhex("b08bd7a90520c8a408c3853f00")),
+    (0x00F00003, b"sCancel\0", b"Cancel\0",
+     bytes.fromhex("d997c68400")),
+)
+MENU_FORMIDS = frozenset(item[0] for item in MENU_GMSTS)
 OFFICIAL = (
     MASTER, "Knights.esp", "DLCBattlehornCastle.esp", "DLCFrostcrag.esp",
     "DLCThievesDen.esp", "DLCSpellTomes.esp", "DLCMehrunesRazor.esp",
@@ -115,7 +127,7 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
-def structure_signature(path: Path):
+def structure_signature(path: Path, skip_formids=frozenset()):
     """Check container bounds and preserve record identity and compiled scripts."""
     digest = hashlib.sha256()
     scripts = hashlib.sha256()
@@ -138,6 +150,10 @@ def structure_signature(path: Path):
                 else:
                     if start + 20 + size > end:
                         raise ValueError(f"{path.name}: bad record at {start}")
+                    formid = struct.unpack_from("<I", header, 12)[0]
+                    if formid in skip_formids:
+                        stream.seek(size, 1)
+                        continue
                     records += 1
                     digest.update(header[:4] + header[8:])
                     if kind == b"SCPT":
@@ -212,6 +228,19 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                     out_start = dst.tell()
                     dst.write(header)
                     walk(start + size)
+                    if filename == MASTER and header[8:12] == b"GMST" and header[12:16] == b"\0\0\0\0":
+                        for menu_formid, editor_id, english, korean in MENU_GMSTS:
+                            menu_body = (encode_subrecord(b"EDID", editor_id) +
+                                         encode_subrecord(b"DATA", korean))
+                            dst.write(struct.pack("<4sIIII", b"GMST", len(menu_body), 0,
+                                                  menu_formid, 0))
+                            dst.write(menu_body)
+                            counts["new_menu_gmst"] += 1
+                            audit.append({"file": filename, "type": "GMST",
+                                          "formid": f"{menu_formid:08X}", "field": "DATA",
+                                          "source_sha256": hashlib.sha256(english).hexdigest(),
+                                          "source": english[:-1].decode("ascii"),
+                                          "translation_sources": ["menu GMST"]})
                     out_end = dst.tell()
                     dst.seek(out_start + 4)
                     dst.write(struct.pack("<I", out_end - out_start))
@@ -220,6 +249,17 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                 if start + 20 + size > end:
                     raise ValueError(f"{filename}: invalid record at {start}")
                 flags, formid = struct.unpack_from("<II", header, 8)
+                if filename == MASTER and formid in MENU_FORMIDS:
+                    raise ValueError("menu GMST FormID collides with source record")
+                if filename == MASTER and kind == b"TES4":
+                    body = bytearray(src.read(size))
+                    if body[:6] != b"HEDR\x0c\x00":
+                        raise ValueError("unexpected TES4 HEDR layout")
+                    old_count = struct.unpack_from("<I", body, 10)[0]
+                    struct.pack_into("<I", body, 10, old_count + len(MENU_GMSTS))
+                    dst.write(header)
+                    dst.write(body)
+                    continue
                 if not translations.get((filename, kind, formid & 0xFFFFFF, b"FULL")) and not any(
                         translations.get((filename, kind, formid & 0xFFFFFF, field))
                         for field in (b"DESC", b"NAM1", b"DATA")):
@@ -286,9 +326,12 @@ def main() -> int:
             if name == MASTER and counts["applied"] < 9000:
                 raise ValueError("Oblivion.esm does not match the expected original English source")
             original_structure = structure_signature(src)
-            output_structure = structure_signature(temporary)
+            output_structure = structure_signature(
+                temporary, MENU_FORMIDS if name == MASTER else frozenset())
             if original_structure != output_structure:
                 raise ValueError(f"{name}: record structure or compiled script changed")
+            if name == MASTER and counts["new_menu_gmst"] != len(MENU_GMSTS):
+                raise ValueError("unexpected menu GMST count")
             if counts["applied"]:
                 temporary.replace(target)
             else:
@@ -301,6 +344,7 @@ def main() -> int:
                         "applied_strings": counts["applied"],
                         "changed_records": counts["changed_records"],
                         "ambiguous": counts["ambiguous"],
+                        "new_menu_gmst": counts["new_menu_gmst"],
                         "structure": original_structure,
                         "output_sha256": sha256_file(target) if target.exists() else None}
         print(f"{name}: {counts['applied']} strings in {counts['changed_records']} records")
