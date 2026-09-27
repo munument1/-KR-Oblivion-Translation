@@ -1,0 +1,356 @@
+﻿effective_source,record_type,raw_formid,field,old_english,new_korean,locres_key,new_bytes_hex,editor_id
+Oblivion.esm,MISC,0001F1DF,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan01
+Oblivion.esm,MISC,0001F1E0,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan02
+Oblivion.esm,MISC,0001F1E1,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan03
+Oblivion.esm,MISC,0001F1E2,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan04
+Oblivion.esm,MISC,0001F1E3,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan05
+Oblivion.esm,MISC,0001F1E4,FULL,Tan Jug,황갈색 주전자,manual_same_item_family,ed9908d0a004d6aa0120c886d8a202b88000,LowerJugTan06
+Oblivion.esm,FACT,000223BC,FULL,Nine Divines,,exact_duplicate_name_reuse,b180d7a90220b289b580d7a90220b089b680d2a00200,NineDivines
+Oblivion.esm,ACTI,00132ABD,FULL,Altar,,exact_duplicate_name_reuse,b88bd2a00200,WayshrineAltar01
+Oblivion.esm,ACTI,0001E7A5,FULL,Iron Gate,,exact_duplicate_name_reuse,d7a302d9a20420c4a60200,ARGate01
+Oblivion.esm,ARMO,0002319B,FULL,Leather Boots,,exact_duplicate_name_reuse,b080c8a60120d8a008dd9000,LeatherBoots
+Oblivion.esm,BOOK,000C654D,FULL,Letter,,exact_duplicate_name_reuse,dca302b88900,ClutterLoveLetter04a
+Oblivion.esm,BOOK,0006DDA1,FULL,Manual of Spellcraft,,exact_duplicate_name_reuse,c886c4a602b88bd8a00120d7a002b18ab68200,MG06ManualSpellcraft
+Oblivion.esm,BOOK,0006B5C3,FULL,Letter,,exact_duplicate_name_reuse,dca302b88900,ClutterLoveLetter04
+Oblivion.esm,BOOK,0006B5C2,FULL,Letter,,exact_duplicate_name_reuse,dca302b88900,ClutterLoveLetter03
+Oblivion.esm,BOOK,0006B5C1,FULL,Letter,,exact_duplicate_name_reuse,dca302b88900,ClutterLoveLetter02
+Oblivion.esm,BOOK,000624D1,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,LostBoyCavern001
+Oblivion.esm,BOOK,0018BC65,FULL,Handwritten Note,,exact_duplicate_name_reuse,c6a402c788c38420f4a80220f5a401b88900,TSecSkrivvaNote
+Oblivion.esm,BOOK,0008DC4C,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,DAVaerminaArkvedNote03
+Oblivion.esm,BOOK,0008DC4A,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,DAVaerminaArkvedNote02
+Oblivion.esm,BOOK,0008DC48,FULL,Handwritten Note,,exact_duplicate_name_reuse,c6a402c788c38420f4a80220f5a401b88900,DAVaerminaArkvedNote01
+Oblivion.esm,BOOK,000AA083,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,MQ02CrumpledPinerLetter03
+Oblivion.esm,BOOK,000AA082,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,MQ02CrumpledPinerLetter02
+Oblivion.esm,BOOK,000AA081,FULL,Crumpled Piece of Paper,,exact_duplicate_name_reuse,c086b083d8a90220c8a408b78920c884d0a00100,MQ02CrumpledPinerLetter01
+Oblivion.esm,BOOK,000908C7,FULL,Handwritten Note,,exact_duplicate_name_reuse,c6a402c788c38420f4a80220f5a401b88900,MS92Note
+Oblivion.esm,BOOK,00022DB0,FULL,Elder Scroll,,exact_duplicate_name_reuse,d7ab04b28220c688ca88c3a40400,TG11ElderScroll
+Oblivion.esm,BOOK,0002457D,FULL,The Madness of Pelagius,,exact_duplicate_name_reuse,dcab04b380b089c786c688d79820e09908b08900,Book3ValuableMadnessofPelagius
+Oblivion.esm,CONT,0000AA0D,FULL,Counter,,exact_duplicate_name_reuse,ba80c7a602bb8200,CounterMiddle02ClutterMagesGuild
+Oblivion.esm,DOOR,000278C5,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,CathedralCryptDoor01
+Oblivion.esm,DOOR,000282AF,FULL,Wooden Gate,,exact_duplicate_name_reuse,b180c48620c4a60200,RF1xDoorLeft
+Oblivion.esm,MISC,00000191,FULL,Welkynd Stone,,exact_duplicate_name_reuse,e7af04daa902c28820c688cba40200,WelkyndStone
+Oblivion.esm,MISC,00035F86,FULL,Crystal Ball,,exact_duplicate_name_reuse,c686d8a208c08600,MG10CrystalBall
+Oblivion.esm,MISC,000250FF,FULL,Broom,,exact_duplicate_name_reuse,d5a907b880c38600,BroomFarm01
+Oblivion.esm,MISC,00024D92,FULL,Basket,,exact_duplicate_name_reuse,b580c086b18900,LowerThatchbasket02New
+Oblivion.esm,MISC,00024D91,FULL,Basket,,exact_duplicate_name_reuse,b580c086b18900,LowerThatchbasket01New
+Oblivion.esm,MISC,00023882,FULL,Bones,,exact_duplicate_name_reuse,f08300,skelRibcage01
+Oblivion.esm,MISC,000008E6,FULL,Cloth,,exact_duplicate_name_reuse,d9a20200,ClothBolt05
+Oblivion.esm,MISC,000008D8,FULL,Cloth,,exact_duplicate_name_reuse,d9a20200,ClothBolt04
+Oblivion.esm,MISC,0000089F,FULL,Cloth,,exact_duplicate_name_reuse,d9a20200,ClothBolt03
+Oblivion.esm,MISC,0000088D,FULL,Cloth,,exact_duplicate_name_reuse,d9a20200,ClothBolt02
+Oblivion.esm,MISC,0000087A,FULL,Cloth,,exact_duplicate_name_reuse,d9a20200,ClothBolt01
+Oblivion.esm,MISC,00023D63,FULL,Quill,,exact_duplicate_name_reuse,d0a907dcab0200,Quill01
+Oblivion.esm,MISC,00023D61,FULL,Inkwell,,exact_duplicate_name_reuse,d7a908ca8820d5a30800,Inkwell01
+Oblivion.esm,MISC,0001F1E7,FULL,Tan Plate,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120d8a206b68900,LowerPlateTan01
+Oblivion.esm,MISC,0001F1E6,FULL,Tan Pitcher,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120c4a604d5a30800,LowerPitcherTan01
+Oblivion.esm,MISC,0001F1DE,FULL,Tan Cup,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120daa20600,LowerCupTan03
+Oblivion.esm,MISC,0001F1DD,FULL,Tan Cup,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120daa20600,LowerCupTan02
+Oblivion.esm,MISC,0001F1DC,FULL,Tan Cup,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120daa20600,LowerCupTan01
+Oblivion.esm,MISC,0001F1DB,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerBowlTan03
+Oblivion.esm,MISC,0001F1DA,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerBowlTan02
+Oblivion.esm,MISC,0001F1D9,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerBowlTan01
+Oblivion.esm,MISC,0001C666,FULL,Hourglass,,exact_duplicate_name_reuse,c484b38ab689b08d00,Hourglass01
+Oblivion.esm,MISC,0001C60D,FULL,Crystal Ball,,exact_duplicate_name_reuse,c686d8a208c08600,CrystalBall02
+Oblivion.esm,MISC,0001048C,FULL,Crystal Ball,,exact_duplicate_name_reuse,c686d8a208c08600,CrystalBall01
+Oblivion.esm,MISC,000105D9,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerClassBowl03
+Oblivion.esm,MISC,000105D7,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerClassBowl02
+Oblivion.esm,MISC,000105D5,FULL,Bowl,,exact_duplicate_name_reuse,c088c3a80700,LowerClassBowl01
+Oblivion.esm,MISC,000104CB,FULL,Stone Mug,,exact_duplicate_name_reuse,d8a904c088c3a80720b482c088d8a00200,LowerClassMug01
+Oblivion.esm,MISC,000104C9,FULL,Stone Cup,,exact_duplicate_name_reuse,c2a40420daa20600,LowerClassCup03
+Oblivion.esm,MISC,000104C7,FULL,Stone Cup,,exact_duplicate_name_reuse,c2a40420daa20600,LowerClassCup02
+Oblivion.esm,MISC,00019116,FULL,Fork,,exact_duplicate_name_reuse,cc84ca8800,LowerClassFork01
+Oblivion.esm,MISC,00019115,FULL,Stone Cup,,exact_duplicate_name_reuse,c2a40420daa20600,LowerClassCup01
+Oblivion.esm,MISC,00019113,FULL,Broom,,exact_duplicate_name_reuse,d5a907b880c38600,BroomLower01
+Oblivion.esm,MISC,0002253A,FULL,Tan Cup,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120daa20600,MiddleCupTan01
+Oblivion.esm,MISC,0002253B,FULL,Tan Cup,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120daa20600,MiddleCupTan02
+Oblivion.esm,MISC,00022546,FULL,Tan Pitcher,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120c4a604d5a30800,MiddlePitcherTan01
+Oblivion.esm,MISC,00022547,FULL,Tan Pitcher,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120c4a604d5a30800,MiddlePitcherTan02
+Oblivion.esm,MISC,00022548,FULL,Tan Pitcher,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120c4a604d5a30800,MiddlePitcherTan03
+Oblivion.esm,MISC,0002254E,FULL,Tan Plate,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120d8a206b68900,MiddlePlateTan01
+Oblivion.esm,MISC,0002254F,FULL,Tan Plate,,exact_duplicate_name_reuse,ed9908d0a004d6aa0120d8a206b68900,MiddlePlateTan02
+Oblivion.esm,WEAP,00094140,FULL,Bound Dagger,,exact_duplicate_name_reuse,d8a008b589c684ed99022c20d2a002d0a20500,SEPriestBoundDagger
+Oblivion.esm,WEAP,00045E9F,FULL,Mace of Storms,,exact_duplicate_name_reuse,cca401cca608d79820b28bb789c288b380b88b20d9a204db9500,SEEnchDaedricMaceStorm
+Oblivion.esm,WEAP,00035E74,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,WeapDaedricWarAxe
+Oblivion.esm,NPC_,000C5229,FULL,Highwayman,,exact_duplicate_name_reuse,c184d6a00820d0a008c28400,BanditHighwayman03
+Oblivion.esm,NPC_,00094BE8,FULL,Captain Baszone Patneim,,exact_duplicate_name_reuse,b580c688c8a40220bc80cb88b180d7a90520d6a202d8a00800,CaptainBaszonePatneim
+Oblivion.esm,NPC_,000908B2,FULL,Black Bow Bandit,,exact_duplicate_name_reuse,d0a205c7a80220ed990420c284d8a201d2a00200,BanditBlackBowMale1
+Oblivion.esm,NPC_,00015D7F,FULL,Penniless Olvus,,exact_duplicate_name_reuse,d5a902dba204bb82b38920c7a404c586c68800,BeggarAnvilPennilessOlvus
+Oblivion.esm,NPC_,0000BFFC,FULL,Anvil Guard,,exact_duplicate_name_reuse,d7aa02d5a90420d0a308b589d5a30800,AnvilGuardCityPostNight02
+Oblivion.esm,NPC_,0000BFFB,FULL,Anvil Guard,,exact_duplicate_name_reuse,d7aa02d5a90420d0a308b589d5a30800,AnvilGuardCityPostDay02
+Oblivion.esm,NPC_,0000A281,FULL,Didier Aumilie,,exact_duplicate_name_reuse,b289b289b78220c784d4a904b38900,DidierAumilie
+Oblivion.esm,NPC_,0000A27B,FULL,Ulfgar Fog-Eye,,exact_duplicate_name_reuse,c7a604cc88b080c38820cc84c0882db780b78900,UlfgarFogEye
+Oblivion.esm,NPC_,00034E6B,FULL,Silana Blandia,,exact_duplicate_name_reuse,d6a904b380b18020c5a804d3a002b289b78000,SilanaBlandia
+Oblivion.esm,NPC_,00034E6A,FULL,Avrus Adas,,exact_duplicate_name_reuse,b780c588c386c68820b780b280c68800,AvrusAdas
+Oblivion.esm,NPC_,00025237,FULL,Bruce,,exact_duplicate_name_reuse,c588c386c68800,TestBruce
+Oblivion.esm,NPC_,000234AE,FULL,Orag gra-Bargol,,exact_duplicate_name_reuse,c784b380c08820c088b3802db580c388c0a40400,OraggraBargol
+Oblivion.esm,CREA,000C8BCC,FULL,Black Bear,,exact_duplicate_name_reuse,cda801c0a40500,SummonBearBlack
+Oblivion.esm,CREA,0006E912,FULL,Wolf,,exact_duplicate_name_reuse,c1a801b28a00,CreatureWolf
+Oblivion.esm,CREA,00097A17,FULL,Boar,,exact_duplicate_name_reuse,d4ab07d28eb88900,CreatureBoar
+Oblivion.esm,CREA,00097A16,FULL,Brown Bear,,exact_duplicate_name_reuse,c5a604c0a40500,CreatureBearBrown
+Oblivion.esm,CREA,00097A15,FULL,Black Bear,,exact_duplicate_name_reuse,cda801c0a40500,CreatureBearBlack
+Oblivion.esm,CREA,0001E798,FULL,Skeleton,,exact_duplicate_name_reuse,bd8ac0a40400,DeadSkeleton
+Oblivion.esm,CREA,0001E64E,FULL,Mehrunes Dagon,,exact_duplicate_name_reuse,b48bb789c3a602c68820b28bb789d0a20200,CreatureMehrunesDagon
+Oblivion.esm,CREA,0001E64B,FULL,Spriggan,,exact_duplicate_name_reuse,c688cc88b389d0a20200,CreatureSpriggan
+Oblivion.esm,CREA,0001E5FA,FULL,Mountain Lion,,exact_duplicate_name_reuse,cc87b48000,CreatureMountainLion
+Oblivion.esm,CREA,0001E5F6,FULL,Timber Wolf,,exact_duplicate_name_reuse,d6a005d3a90520c1a801b28a00,CreatureWolfTimber
+Oblivion.esm,KEYM,000A943C,FULL,Smuggler's Key,,exact_duplicate_name_reuse,d4a904c686cea602d79820d7a304d69500,AnvilSmugglersKey
+Oblivion.esm,DIAL,00002D9D,FULL,<Say nothing.>,,exact_duplicate_name_reuse,5bb780c48620d4a004c28420d7a017c1a802b2802e5d00,Dark11Choice4C
+Oblivion.esm,DIAL,00002DA0,FULL,<Say nothing.>,,exact_duplicate_name_reuse,5bb780c48620d4a004c28420d7a017c1a802b2802e5d00,Dark11Choice3C
+Oblivion.esm,DIAL,00002DA3,FULL,<Say nothing.>,,exact_duplicate_name_reuse,5bb780c48620d4a004c28420d7a017c1a802b2802e5d00,Dark11Choice2C
+Oblivion.esm,DIAL,00002DA6,FULL,<Say nothing.>,,exact_duplicate_name_reuse,5bb780c48620d4a004c28420d7a017c1a802b2802e5d00,Dark11Choice1C
+Oblivion.esm,DIAL,00003994,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MG13Choice1B
+Oblivion.esm,DIAL,00003995,FULL,I'm ready.,,exact_duplicate_name_reuse,c8a602b589d295d7a214c6a806b189b2802e00,MG13Choice1A
+Oblivion.esm,DIAL,00003A54,FULL,Not right now.,,exact_duplicate_name_reuse,b889c0a805c7a80220d7a00220d28e2e00,MS02ManorBuyChoice2
+Oblivion.esm,DIAL,00003A73,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG13Choice3B
+Oblivion.esm,DIAL,00003A76,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG13Choice2B
+Oblivion.esm,DIAL,00009268,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MS02VelwynEscortChoice2
+Oblivion.esm,DIAL,0000A0F3,FULL,I need more time.,,exact_duplicate_name_reuse,b28220d4a017c7a80220b689d0a002b78920dca904c785dda006b189b2802e00,MG14Choice1B
+Oblivion.esm,DIAL,0000BEDF,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MG12Choice1B
+Oblivion.esm,DIAL,0000BEE0,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MG12Choice1A
+Oblivion.esm,DIAL,00014820,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,TG09reject
+Oblivion.esm,DIAL,000151EB,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,MG17ChoiceNM
+Oblivion.esm,DIAL,00015DF7,FULL,"Have a coin, beggar.",,exact_duplicate_name_reuse,dda002cca60220d5a003c788b689c8852c20b082b8892e00,BeggarGiveGold
+Oblivion.esm,DIAL,00016479,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MG18Choice1B
+Oblivion.esm,DIAL,0001647A,FULL,I'm ready.,,exact_duplicate_name_reuse,c8a602b589d295d7a214c6a806b189b2802e00,MG18Choice1A
+Oblivion.esm,DIAL,0001821C,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MS12RecoverNo
+Oblivion.esm,DIAL,0001821D,FULL,"Yes, I have.",,exact_duplicate_name_reuse,b18b2c20d7a914c6a806b189b2802e00,MS12RecoverYes
+Oblivion.esm,DIAL,0001821F,FULL,Perhaps later.,,exact_duplicate_name_reuse,b180c8a608b78b20c584b8802e00,MS12DeclineMission
+Oblivion.esm,DIAL,00018220,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MS12AcceptMission
+Oblivion.esm,DIAL,00018222,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MS12PaleNo
+Oblivion.esm,DIAL,00018223,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MS12PaleYes
+Oblivion.esm,DIAL,0001C482,FULL,Lead on.,,exact_duplicate_name_reuse,d7a011d8a008b682b68bc7852e00,MS12TolganGoYes
+Oblivion.esm,DIAL,0001DA4A,FULL,Not right now.,,exact_duplicate_name_reuse,b889c0a805c7a80220d7a00220d28e2e00,MS23SeridurWalkInt
+Oblivion.esm,DIAL,0001E799,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MS29StopNo
+Oblivion.esm,DIAL,0001F414,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MS08KurdanBoatNo
+Oblivion.esm,DIAL,00022474,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MS48Choice2D
+Oblivion.esm,DIAL,00022476,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MS48Choice2B
+Oblivion.esm,DIAL,00022CC8,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MQ05PlanC
+Oblivion.esm,DIAL,00022E4E,FULL,Perhaps later.,,exact_duplicate_name_reuse,b180c8a608b78b20c584b8802e00,MS37SdrassaNoHelp
+Oblivion.esm,DIAL,0002410A,FULL,Duties,,exact_duplicate_name_reuse,d7a905c48600,duties
+Oblivion.esm,DIAL,000272B1,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MQ13BattleNotYet
+Oblivion.esm,DIAL,000272B6,FULL,Battle plans,,exact_duplicate_name_reuse,d8a202cb8620b08ded9a0100,MQ13BattlePlans
+Oblivion.esm,DIAL,00027A1F,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MQ15RitualNotReady
+Oblivion.esm,DIAL,00027F2B,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MS05NotReady
+Oblivion.esm,DIAL,00027F2C,FULL,Lead on.,,exact_duplicate_name_reuse,d7a011d8a008b682b68bc7852e00,MS05Ready
+Oblivion.esm,DIAL,0002809A,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MS45DarMaDontUntie
+Oblivion.esm,DIAL,00028AB8,FULL,I've heard enough.,,exact_duplicate_name_reuse,c9a608c5a602bd8920c2a804d7a214c6a806b189b2802e00,MS16Choice6B
+Oblivion.esm,DIAL,00028ABA,FULL,What do you want me to do?,,exact_duplicate_name_reuse,b180dda002bb8b20e49b0420bd80b380c0843f00,MS16Choice6A
+Oblivion.esm,DIAL,00029F86,FULL,Yield,,exact_duplicate_name_reuse,dda008c5a40100,YieldTopic
+Oblivion.esm,DIAL,0002A1C5,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MQ01YesBook
+Oblivion.esm,DIAL,0002A1C6,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,MQ01NotYet
+Oblivion.esm,DIAL,0002A1C7,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MQ01YesWords
+Oblivion.esm,DIAL,0002AD0D,FULL,What should I do?,,exact_duplicate_name_reuse,e49b0420bd8ab78120bd80c8853f00,CGEmperor04
+Oblivion.esm,DIAL,0002AD73,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MS49Choice1B
+Oblivion.esm,DIAL,0002B43A,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MS21StatueNo
+Oblivion.esm,DIAL,0002C0C8,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG03Choice2B
+Oblivion.esm,DIAL,0002C572,FULL,What do we do now?,,exact_duplicate_name_reuse,b789b88b20b782dfa212b08b20bd80c8853f00,FGD05Choice9
+Oblivion.esm,DIAL,0002D0F6,FULL,"Yes, I have.",,exact_duplicate_name_reuse,b18b2c20d7a914c6a806b189b2802e00,MS13GateHeard
+Oblivion.esm,DIAL,0002DCEA,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,GreetingMQ06No
+Oblivion.esm,DIAL,0002E5A1,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MG02Choice1B
+Oblivion.esm,DIAL,0002EDD2,FULL,"No, not yet.",,exact_duplicate_name_reuse,b780b189c7852c20b780d8a901c7a80220d7a00220e29a06b189b2802e00,MG04Choice1B
+Oblivion.esm,DIAL,0002F171,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MG03Choice1B
+Oblivion.esm,DIAL,0002F172,FULL,I'm ready.,,exact_duplicate_name_reuse,c8a602b589d295d7a214c6a806b189b2802e00,MG03Choice1A
+Oblivion.esm,DIAL,0002F498,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,JauffreNo
+Oblivion.esm,DIAL,0002F499,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,JauffreYes
+Oblivion.esm,DIAL,0002FBAA,FULL,Skooma,,exact_duplicate_name_reuse,c688ca86b48000,GiftScript
+Oblivion.esm,DIAL,00030115,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,conspiracyNo
+Oblivion.esm,DIAL,00030117,FULL,Conspiracy,,exact_duplicate_name_reuse,c7a805c48400,conspiracy
+Oblivion.esm,DIAL,000302D0,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG06Choice1B
+Oblivion.esm,DIAL,000314EB,FULL,I'm not ready yet.,,exact_duplicate_name_reuse,b780d8a90120c8a602b589b08020d7a00220e2ae14c6a806b189b2802e00,MS51AccuseChoice3
+Oblivion.esm,DIAL,00031CDC,FULL,What do we do now?,,exact_duplicate_name_reuse,b789b88b20b782dfa212b08b20bd80c8853f00,MS49Whatnow
+Oblivion.esm,DIAL,00034461,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,MG13Nevermind
+Oblivion.esm,DIAL,00034866,FULL,Not right now.,,exact_duplicate_name_reuse,b889c0a805c7a80220d7a00220d28e2e00,TG02reject
+Oblivion.esm,DIAL,00034986,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,TG02KeepItem
+Oblivion.esm,DIAL,0003561D,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG08Choice1B
+Oblivion.esm,DIAL,0003561E,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MG08Choice1A
+Oblivion.esm,DIAL,00035DEB,FULL,<Say nothing.>,,exact_duplicate_name_reuse,5bb780c48620d4a004c28420d7a017c1a802b2802e5d00,Dark09Choice1C
+Oblivion.esm,DIAL,00035F2A,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MG10Choice2B
+Oblivion.esm,DIAL,00035F2B,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MG10Choice2A
+Oblivion.esm,DIAL,00035F2C,FULL,I need more time.,,exact_duplicate_name_reuse,b28220d4a017c7a80220b689d0a002b78920dca904c785dda006b189b2802e00,MG10Choice1B
+Oblivion.esm,DIAL,00035F2D,FULL,I'm ready.,,exact_duplicate_name_reuse,c8a602b589d295d7a214c6a806b189b2802e00,MG10Choice1A
+Oblivion.esm,DIAL,0003C159,FULL,Training,,exact_duplicate_name_reuse,cda602d3a30200,TrainingQuestTopic
+Oblivion.esm,DIAL,0003D300,FULL,"Yes, I'll help you.",,exact_duplicate_name_reuse,b18b2c20c284d790c288b389d0ab14c6a806b189b2802e00,MS04HelpYes
+Oblivion.esm,DIAL,0003ED29,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,MS40Nevermind
+Oblivion.esm,DIAL,0003FBD4,FULL,Why do you care?,,exact_duplicate_name_reuse,d78e20d6a902d0a30820f488b68bc7853f00,MQ15EldamilB2
+Oblivion.esm,DIAL,0003FD35,FULL,I'm listening.,,exact_duplicate_name_reuse,c2a803c08420d7a914c6a806b189b2802e00,TG09HelpGF
+Oblivion.esm,DIAL,00047596,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,LeyawiinTopicDarJee14
+Oblivion.esm,DIAL,0004759C,FULL,"No, thanks.",,exact_duplicate_name_reuse,e0ae02d9a017c6a806b189b2802e00,LeyawiinTopicDarJee10
+Oblivion.esm,DIAL,000475A5,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,LeyawiinTopicDarJee01
+Oblivion.esm,DIAL,000475A8,FULL,Go on...,,exact_duplicate_name_reuse,b08dc6a401bd8a2e2e2e00,LeyawiinTopicTunZeeus04
+Oblivion.esm,DIAL,000475AA,FULL,Go on...,,exact_duplicate_name_reuse,b08dc6a401bd8a2e2e2e00,LeyawiinTopicTunZeeus02
+Oblivion.esm,DIAL,00066F23,FULL,How can I help?,,exact_duplicate_name_reuse,b782dfa212b08b20c284d790c288d3a904be80c7853f00,SQ09Ask
+Oblivion.esm,DIAL,0006BD8D,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,MageConvNM
+Oblivion.esm,DIAL,00086031,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,FishermansRockTopicYes
+Oblivion.esm,DIAL,00086032,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,FishermansRockTopicNo
+Oblivion.esm,DIAL,00086034,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,MazogaTopicNo
+Oblivion.esm,DIAL,00086035,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,MazogaTopicYes
+Oblivion.esm,DIAL,00086036,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,WeebamNaNo
+Oblivion.esm,DIAL,00086037,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,WeebamNaYes
+Oblivion.esm,DIAL,0008604B,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,ServicetoLeyawiinTopic04
+Oblivion.esm,DIAL,00090B57,FULL,Not yet.,,exact_duplicate_name_reuse,b780d8a901c7a80220b780d1a906b189b2802e00,BlackBrugo04
+Oblivion.esm,DIAL,00092262,FULL,You'll just have to trust me.,,exact_duplicate_name_reuse,b882c3a80420d4a903c788b68bc7852e00,MQ03MartinD1
+Oblivion.esm,DIAL,00093817,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,GreetingMazoga03
+Oblivion.esm,DIAL,00093818,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,GreetingMazoga02
+Oblivion.esm,DIAL,00093819,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,GreetingMazoga01
+Oblivion.esm,DIAL,00095A35,FULL,"Sorry, I can't help you right now.",,exact_duplicate_name_reuse,d895c6a408dda006b189b2802c20b889c0a80520c284d790c288d3a90420c68620d7a21fc6a806b189b2802e00,MS93Choice01A
+Oblivion.esm,DIAL,00098116,FULL,What happened here?,,exact_duplicate_name_reuse,b783b089b68220c486c6a80220d7a904b78920d7a914d7a214d2a20220b082b7813f00,MS48SalvianWhatHappened
+Oblivion.esm,DIAL,000A344F,FULL,What happened here?,,exact_duplicate_name_reuse,b783b089b68220c486c6a80220d7a904b78920d7a914d7a214d2a20220b082b7813f00,FGD08Choice6
+Oblivion.esm,DIAL,000A78C9,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,MG19Nevermind
+Oblivion.esm,DIAL,000B1663,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,FGD02Choice7
+Oblivion.esm,DIAL,000B1664,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,FGD02Choice6
+Oblivion.esm,DIAL,000B1665,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,FGD02Choice5
+Oblivion.esm,DIAL,000B1666,FULL,Yes.,,exact_duplicate_name_reuse,b18b2e00,FGD02Choice4
+Oblivion.esm,DIAL,0018D144,FULL,No.,,exact_duplicate_name_reuse,b780b189c7852e00,TrainingAlterationNo
+Knights.esp,FACT,000223BC,FULL,Nine Divines,,exact_duplicate_name_reuse,b180d7a90220b289b580d7a90220b089b680d2a00200,NineDivines
+Knights.esp,ACTI,01000E2E,FULL,Iron Gate,,exact_duplicate_name_reuse,d7a302d9a20420c4a60200,ND01ARGateNORESET
+Knights.esp,ACTI,01000E33,FULL,Turn Handle,,exact_duplicate_name_reuse,c6a402d8a006b78920c2a404b389b08900,NDBulwark02SwitchThedretCell
+Knights.esp,ACTI,01000E40,FULL,Iron Gate,,exact_duplicate_name_reuse,d7a302d9a20420c4a60200,ND10ARGate01
+Knights.esp,ACTI,01000E47,FULL,Push Block,,exact_duplicate_name_reuse,c5a804c3a40120d4a904b08900,ND10BattleTrigger02
+Knights.esp,ACTI,01000E4A,FULL,Push Block,,exact_duplicate_name_reuse,c5a804c3a40120d4a904b08900,ND10BattleTrigger01
+Knights.esp,ACTI,01000E74,FULL,Gate,,exact_duplicate_name_reuse,e09902c4a60200,NDBulwark02Portcullis01
+Knights.esp,ACTI,01000E75,FULL,Drawbridge,,exact_duplicate_name_reuse,c284b78220c588b389b88900,NDBulwark02DrawBridgeRAISED01
+Knights.esp,ACTI,01000E76,FULL,Turn Handle,,exact_duplicate_name_reuse,c6a402d8a006b78920c2a404b389b08900,NDBulwark02Switch01
+Knights.esp,ACTI,0001E7A5,FULL,Iron Gate,,exact_duplicate_name_reuse,d7a302d9a20420c4a60200,ARGate01
+Knights.esp,ARMO,01000E91,FULL,Imperial Watch Shield,,exact_duplicate_name_reuse,b88bc0a60120d0a308b589d5a30820d5a008bc8a00,NDTitanShield
+Knights.esp,ARMO,01000E93,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorLightHelmet5
+Knights.esp,ARMO,01000E94,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorLightGreaves5
+Knights.esp,ARMO,01000E96,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorLightCuirass5
+Knights.esp,ARMO,01000E99,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorLightHelmet4
+Knights.esp,ARMO,01000E9C,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorLightCuirass4
+Knights.esp,ARMO,01000E9F,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorLightHelmet3
+Knights.esp,ARMO,01000EA0,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorLightGreaves3
+Knights.esp,ARMO,01000EA2,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorLightCuirass3
+Knights.esp,ARMO,01000EA5,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorLightHelmet2
+Knights.esp,ARMO,01000EA6,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorLightGreaves2
+Knights.esp,ARMO,01000EA8,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorLightCuirass2
+Knights.esp,ARMO,01000EAC,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorLightGreaves1
+Knights.esp,ARMO,01000EB1,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorHeavyHelmet5
+Knights.esp,ARMO,01000EB2,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorHeavyGreaves5
+Knights.esp,ARMO,01000EB4,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorHeavyCuirass5
+Knights.esp,ARMO,01000EB7,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorHeavyHelmet4
+Knights.esp,ARMO,01000EB8,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorHeavyGreaves4
+Knights.esp,ARMO,01000EBA,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorHeavyCuirass4
+Knights.esp,ARMO,01000EBD,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorHeavyHelmet3
+Knights.esp,ARMO,01000EBE,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorHeavyGreaves3
+Knights.esp,ARMO,01000EC0,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorHeavyCuirass3
+Knights.esp,ARMO,01000EC3,FULL,Helm of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cb86c08600,NDArmorHeavyHelmet2
+Knights.esp,ARMO,01000EC4,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorHeavyGreaves2
+Knights.esp,ARMO,01000EC6,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorHeavyCuirass2
+Knights.esp,ARMO,01000ECC,FULL,Greaves of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820d8a208d0a008b789d5a003b78900,NDArmorHeavyGreaves1
+Knights.esp,ARMO,01000ECE,FULL,Cuirass of the Crusader,,exact_duplicate_name_reuse,d6a208d8a202b680d79820cda708d0a00600,NDArmorHeavyCuirass1
+Knights.esp,CONT,01000EE5,FULL,Armory,,exact_duplicate_name_reuse,c486b089c08400,NDPrioryArmoryChest
+Knights.esp,DOOR,01000EF1,FULL,Wooden Gate,,exact_duplicate_name_reuse,b180c48620c4a60200,NDRF1xDoorRight
+Knights.esp,DOOR,01000EF2,FULL,Wooden Gate,,exact_duplicate_name_reuse,b180c48620c4a60200,NDRF1xDoorLeft
+Knights.esp,DOOR,01000EF3,FULL,Stone Door,,exact_duplicate_name_reuse,c2a40420c4a60200,ND10Door
+Knights.esp,DOOR,01000EF4,FULL,Ancient Portcullis,,exact_duplicate_name_reuse,c084b28a20b18ab389d2a003b789c4a60200,NDPrioryUndercroftGate01
+Knights.esp,DOOR,01000EF7,FULL,Stone Door,,exact_duplicate_name_reuse,c2a40420c4a60200,ND03StoneDoor
+Knights.esp,DOOR,000282AF,FULL,Wooden Gate,,exact_duplicate_name_reuse,b180c48620c4a60200,RF1xDoorLeft
+Knights.esp,NPC_,01000F68,FULL,Ohtesse,,exact_duplicate_name_reuse,c784bb8bc88800,ND08OhtesseDead
+Knights.esp,NPC_,01000F69,FULL,Errandil,,exact_duplicate_name_reuse,b78bd3a002d2a90400,ND08ErrandilDead
+Knights.esp,NPC_,01000F78,FULL,Conjurer,,exact_duplicate_name_reuse,c684ed9902c6a604b68000,ND05ConjurerExterior
+Knights.esp,NPC_,000C5229,FULL,Highwayman,,exact_duplicate_name_reuse,c184d6a00820d0a008c28400,BanditHighwayman03
+Knights.esp,NPC_,00015D7F,FULL,Penniless Olvus,,exact_duplicate_name_reuse,d5a902dba204bb82b38920c7a404c586c68800,BeggarAnvilPennilessOlvus
+Knights.esp,NPC_,0000BFFC,FULL,Anvil Guard,,exact_duplicate_name_reuse,d7aa02d5a90420d0a308b589d5a30800,AnvilGuardCityPostNight02
+Knights.esp,NPC_,0000BFFB,FULL,Anvil Guard,,exact_duplicate_name_reuse,d7aa02d5a90420d0a308b589d5a30800,AnvilGuardCityPostDay02
+Knights.esp,NPC_,0000A281,FULL,Didier Aumilie,,exact_duplicate_name_reuse,b289b289b78220c784d4a904b38900,DidierAumilie
+Knights.esp,NPC_,0000A27B,FULL,Ulfgar Fog-Eye,,exact_duplicate_name_reuse,c7a604cc88b080c38820cc84c0882db780b78900,UlfgarFogEye
+Knights.esp,NPC_,00034E6B,FULL,Silana Blandia,,exact_duplicate_name_reuse,d6a904b380b18020c5a804d3a002b289b78000,SilanaBlandia
+Knights.esp,NPC_,00034E6A,FULL,Avrus Adas,,exact_duplicate_name_reuse,b780c588c386c68820b780b280c68800,AvrusAdas
+Knights.esp,NPC_,00025237,FULL,Bruce,,exact_duplicate_name_reuse,c588c386c68800,TestBruce
+Knights.esp,NPC_,000234AE,FULL,Orag gra-Bargol,,exact_duplicate_name_reuse,c784b380c08820c088b3802db580c388c0a40400,OraggraBargol
+Knights.esp,CREA,01000FAD,FULL,Spriggan,,exact_duplicate_name_reuse,c688cc88b389d0a20200,NDKynarethSpriggan
+Knights.esp,CREA,0006E912,FULL,Wolf,,exact_duplicate_name_reuse,c1a801b28a00,CreatureWolf
+Knights.esp,CREA,00097A17,FULL,Boar,,exact_duplicate_name_reuse,d4ab07d28eb88900,CreatureBoar
+Knights.esp,CREA,00097A16,FULL,Brown Bear,,exact_duplicate_name_reuse,c5a604c0a40500,CreatureBearBrown
+Knights.esp,CREA,00097A15,FULL,Black Bear,,exact_duplicate_name_reuse,cda801c0a40500,CreatureBearBlack
+Knights.esp,CREA,0001E798,FULL,Skeleton,,exact_duplicate_name_reuse,bd8ac0a40400,DeadSkeleton
+Knights.esp,CREA,0001E5FA,FULL,Mountain Lion,,exact_duplicate_name_reuse,cc87b48000,CreatureMountainLion
+Knights.esp,CREA,0001E5F6,FULL,Timber Wolf,,exact_duplicate_name_reuse,d6a005d3a90520c1a801b28a00,CreatureWolfTimber
+Knights.esp,DIAL,01002AD6,FULL,What must I do?,,exact_duplicate_name_reuse,b782dfa212b08b20bd8ab78120dda006b189be803f00,ND04SirRalvasGreeting02
+Knights.esp,DIAL,01002AFD,FULL,What are you talking about?,,exact_duplicate_name_reuse,c486c6a80220d4a004b789b7813f00,ND06WhatTalking
+Knights.esp,DIAL,01002C8E,FULL,Not now.,,exact_duplicate_name_reuse,b889c0a805c7a80220d7a00220d28e2e00,ND05NotNow
+Knights.esp,DIAL,01002C92,FULL,Not now.,,exact_duplicate_name_reuse,b889c0a805c7a80220d7a00220d28e2e00,ND03NotNow
+DLCBattlehornCastle.esp,ACTI,01010B3C,FULL,Gate,,exact_duplicate_name_reuse,e09902c4a60200,BattlehornCastlePortcullis01
+DLCBattlehornCastle.esp,ACTI,010038B9,FULL,Movable Pillar,,exact_duplicate_name_reuse,b789c2a40820b080c1a808dda00220b089c2a60800,BattlehornSecretLever01
+DLCBattlehornCastle.esp,ACTI,01004DE4,FULL,Movable Pillar,,exact_duplicate_name_reuse,b789c2a40820b080c1a808dda00220b089c2a60800,BattlehornSecretLever02
+DLCBattlehornCastle.esp,ACTI,01006279,FULL,Movable Pillar,,exact_duplicate_name_reuse,b789c2a40820b080c1a808dda00220b089c2a60800,BattlehornSecretLever03
+DLCBattlehornCastle.esp,CONT,01007771,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,BattlehornCrateClutterMiddle01
+DLCBattlehornCastle.esp,CONT,01007773,FULL,Jewelry Box,,exact_duplicate_name_reuse,c584d6a20120d6a008b88000,BattlehornChestJewelryMiddle01
+DLCBattlehornCastle.esp,CONT,01007774,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,BattlehornCrateClutterMiddle03
+DLCBattlehornCastle.esp,CONT,0100776B,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,BattlehornCupboardClothingUpper
+DLCBattlehornCastle.esp,CONT,0100776D,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,BattlehornCupboardFoodUpper
+DLCBattlehornCastle.esp,CONT,0100776F,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,BattlehornCrateClutterMiddle02
+DLCBattlehornCastle.esp,CONT,01007770,FULL,Barrel,,exact_duplicate_name_reuse,cba40800,BattlehornBarrelClutterMiddle01
+DLCBattlehornCastle.esp,DOOR,01004334,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleFortAgedNDoor01WineCeller
+DLCBattlehornCastle.esp,DOOR,0100432B,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01Tax
+DLCBattlehornCastle.esp,DOOR,01005A96,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01Vintner
+DLCBattlehornCastle.esp,DOOR,0100432D,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01MenAtArms
+DLCBattlehornCastle.esp,DOOR,0100432E,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01Storage
+DLCBattlehornCastle.esp,DOOR,0100432F,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01SleepingQuarters
+DLCBattlehornCastle.esp,DOOR,0101743D,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoorMinimalUse
+DLCBattlehornCastle.esp,DOOR,01004330,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01Kitchen
+DLCBattlehornCastle.esp,DOOR,01004331,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,BattlehornCastleDoor01TrainingRoom
+DLCBattlehornCastle.esp,NPC_,01013427,FULL,Marauder Warlord,,exact_duplicate_name_reuse,d7a101dba004b88020c0a602d8a00800,DLCBattlehornMarauderBoss
+DLCBattlehornCastle.esp,NPC_,01013428,FULL,Marauder,,exact_duplicate_name_reuse,d7a101dba004b88000,DLCBattlehornMarauderMelee
+DLCBattlehornCastle.esp,NPC_,01013429,FULL,Marauder Battlemage,,exact_duplicate_name_reuse,d7a101dba004b88020b58acba804b48bb789b88900,DLCBattlehornMarauderMage
+DLCBattlehornCastle.esp,NPC_,0101342A,FULL,Marauder Archer,,exact_duplicate_name_reuse,d7a101dba004b88020c0a608c68600,DLCBattlehornMarauderMissile
+DLCBattlehornCastle.esp,NPC_,0100B09B,FULL,Talan ,,exact_duplicate_name_reuse,dba004d3a00200,DLCBattlehornVintner
+DLCBattlehornCastle.esp,CREA,0100C513,FULL,Hjalti,,exact_duplicate_name_reuse,dda004bb8900,DogBattlehorn
+DLCFrostcrag.esp,ACTI,01000D1F,FULL,Altar of Spellmaking,,exact_duplicate_name_reuse,c886c4a60220b88bd8a00120b88bd2a00200,FrostcragSpellmakingingStationBefore
+DLCFrostcrag.esp,ACTI,01000D1A,FULL,Altar of Spellmaking,,exact_duplicate_name_reuse,c886c4a60220b88bd8a00120b88bd2a00200,FrostcragSpellmakingingStation
+DLCFrostcrag.esp,ACTI,01000D1B,FULL,Altar of Enchanting,,exact_duplicate_name_reuse,b480d5a206c586b783d79820b88bd2a00200,FrostcragEnchantingStation
+DLCFrostcrag.esp,ACTI,01000D1E,FULL,Altar of Enchanting,,exact_duplicate_name_reuse,b480d5a206c586b783d79820b88bd2a00200,FrostcragEnchantingStationBefore
+DLCFrostcrag.esp,CONT,01005D6F,FULL,Counter,,exact_duplicate_name_reuse,ba80c7a602bb8200,CounterMiddle02ClutterMagesGuildFrostCrag
+DLCFrostcrag.esp,CONT,0100353B,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,CrateClutterMiddle03FC
+DLCFrostcrag.esp,CONT,0100353C,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,CrateClutterMiddle05FC
+DLCFrostcrag.esp,CONT,01005E34,FULL,Jewelry Box,,exact_duplicate_name_reuse,c584d6a20120d6a008b88000,DLCFrostcragChestJewelryUpper01
+DLCFrostcrag.esp,CONT,0000AA0D,FULL,Counter,,exact_duplicate_name_reuse,ba80c7a602bb8200,CounterMiddle02ClutterMagesGuild
+DLCFrostcrag.esp,DOOR,0100AE35,FULL,Portal,,exact_duplicate_name_reuse,cc84dba20400,FrostcragSpireTelepadTower
+DLCFrostcrag.esp,DOOR,01003F05,FULL,Display Case,,exact_duplicate_name_reuse,d8a902d7a304d8a00800,FrostCragDisplayCase01
+DLCFrostcrag.esp,DOOR,01003EF2,FULL,Metal Door,,exact_duplicate_name_reuse,c0a805c6a40120c4a60200,FrostCragSpireDoor01
+DLCFrostcrag.esp,CREA,0100214A,FULL,Clannfear Runt,,exact_duplicate_name_reuse,d8a001c7a80220caa804d3aa02bc89b78200,CreatureClannfearRuntFC
+DLCThievesDen.esp,ARMO,0002319B,FULL,Leather Boots,,exact_duplicate_name_reuse,b080c8a60120d8a008dd9000,LeatherBoots
+DLCThievesDen.esp,CONT,000664E5,FULL,Test DLC,,exact_duplicate_name_reuse,b689dda20520444c4300,TestErik
+DLCThievesDen.esp,CONT,0101A4F0,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,DLCCupboardFoodUpperDrinks
+DLCThievesDen.esp,MISC,00002340,FULL,Ring,,exact_duplicate_name_reuse,d5a002b88900,PonderItem
+DLCThievesDen.esp,WEAP,000055AB,FULL,Fine Steel Cutlass,,exact_duplicate_name_reuse,d0a008d9a20420ba82cba804b380c68800,WeapSteelCutlassSharp
+DLCThievesDen.esp,WEAP,010083A9,FULL,Iron Warhammer,,exact_duplicate_name_reuse,d7a302d9a20420d8a202cb8620d4a008b98900,DLC06WeapTest
+DLCThievesDen.esp,NPC_,00094BE8,FULL,Captain Baszone Patneim,,exact_duplicate_name_reuse,b580c688c8a40220bc80cb88b180d7a90520d6a202d8a00800,CaptainBaszonePatneim
+DLCThievesDen.esp,KEYM,000A943C,FULL,Smuggler's Key,,exact_duplicate_name_reuse,d4a904c686cea602d79820d7a304d69500,AnvilSmugglersKey
+DLCThievesDen.esp,DIAL,010178B9,FULL,Nevermind.,,exact_duplicate_name_reuse,d0a201d8a20820b480b68bc7852e00,DLC06DahliaTopicNo
+DLCSpellTomes.esp,SPEL,0100122D,FULL,Fenrik's Welcome,,exact_duplicate_name_reuse,28ba80d4ab04b38bc7a40220d6a008c0a8062920dcab02d3a901d79820ed9902d7a30800,DLCTomeSpellFenriksEscape3Journeyman
+DLCSpellTomes.esp,BOOK,01001281,FULL,Fenrik's Welcome Tome,,exact_duplicate_name_reuse,c886c4a602b6823a3a28ba80d4ab04b38bc7a40220d6a008c0a8062920dcab02d3a901d79820ed9902d7a30800,DLCTomeFenriksEscape3Journeyman
+DLCSpellTomes.esp,CREA,000C8BCC,FULL,Black Bear,,exact_duplicate_name_reuse,cda801c0a40500,SummonBearBlack
+DLCMehrunesRazor.esp,ACTI,01001B1C,FULL,Iron Gate,,exact_duplicate_name_reuse,d7a302d9a20420c4a60200,DL9RazorGate
+DLCMehrunesRazor.esp,DOOR,0100353F,FULL,Wood Door,,exact_duplicate_name_reuse,b180c48620c4a60200,DL9HiddenDoor
+DLCMehrunesRazor.esp,DOOR,0100158A,FULL,Old Wooden Door,,exact_duplicate_name_reuse,c784b38ae29a0220b180c48620c4a60200,DL9StewardDoor
+DLCMehrunesRazor.esp,WEAP,00035E74,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,WeapDaedricWarAxe
+DLCMehrunesRazor.esp,WEAP,0100272B,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe02
+DLCMehrunesRazor.esp,WEAP,0100272F,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe03
+DLCMehrunesRazor.esp,WEAP,01002730,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe04
+DLCMehrunesRazor.esp,WEAP,01002731,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe05
+DLCMehrunesRazor.esp,WEAP,01002732,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe06
+DLCMehrunesRazor.esp,WEAP,01002734,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe07
+DLCMehrunesRazor.esp,WEAP,01002735,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe08
+DLCMehrunesRazor.esp,WEAP,0100B555,FULL,Daedric War Axe,,exact_duplicate_name_reuse,b28bb789c288b380b88b20c6a402c284be8900,DL9ChampAxe01
+DLCMehrunesRazor.esp,NPC_,01004AE3,FULL,Vampire Crusader,,exact_duplicate_name_reuse,d5aa05bc80b789b78220d6a208d8a202b68000,DL9DeadVampire01
+DLCMehrunesRazor.esp,NPC_,01004AE4,FULL,Vampire Bard,,exact_duplicate_name_reuse,d5aa05bc80b789b78220c7a805c787b689d7a90200,DL9DeadVampire02
+DLCMehrunesRazor.esp,NPC_,01004AE5,FULL,Vampire Archer,,exact_duplicate_name_reuse,d5aa05bc80b789b78220c0a608c68600,DL9DeadVampire03
+DLCMehrunesRazor.esp,NPC_,000908B2,FULL,Black Bow Bandit,,exact_duplicate_name_reuse,d0a205c7a80220ed990420c284d8a201d2a00200,BanditBlackBowMale1
+DLCMehrunesRazor.esp,NPC_,01002D16,FULL,Vampire Sorcerer,,exact_duplicate_name_reuse,d5aa05bc80b789b78220c684b682b38200,DL9Actor02
+DLCMehrunesRazor.esp,NPC_,01002D17,FULL,Vampire Barbarian,,exact_duplicate_name_reuse,d5aa05bc80b789b78220b580b580b389d7a00200,DL9Actor03
+DLCMehrunesRazor.esp,CREA,0001E64E,FULL,Mehrunes Dagon,,exact_duplicate_name_reuse,b48bb789c3a602c68820b28bb789d0a20200,CreatureMehrunesDagon
+DLCVileLair.esp,CONT,01003197,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,LairVileCrateRectangle
+DLCVileLair.esp,CONT,01003198,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,LairVileCrateOther
+DLCVileLair.esp,CONT,01003199,FULL,Barrel,,exact_duplicate_name_reuse,cba40800,LairVileBarrellfood
+DLCVileLair.esp,CONT,0100319E,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,LairVileCupboardFood
+DLCVileLair.esp,CONT,0100319F,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,LairVileCupboardFoodUpper
+DLCVileLair.esp,CONT,010031A0,FULL,Cupboard,,exact_duplicate_name_reuse,d9a002d8a00800,LairVileCupboardFoodUpperDrinks
+DLCVileLair.esp,CONT,01003196,FULL,Crate,,exact_duplicate_name_reuse,d6a008b88000,LairVileCrateSquare
+DLCVileLair.esp,DOOR,000278C5,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,CathedralCryptDoor01
+DLCOrrery.esp,BOOK,0111C3D2,FULL,Undelivered Letter,,exact_duplicate_name_reuse,b58ad2a004d295b88920d7a017c7a80220dca302b88900,DLCOrreryBanditNote
+DLCHorseArmor.esp,DOOR,01006AB7,FULL,Wooden Door,,exact_duplicate_name_reuse,b180c48620c4a60200,DLCHorseArmorStableDoor
+Oblivion.esm,INGR,0003366B,FULL,Corn,,reviewed_visible_same_name,c7a401c686c68600,Corn
+Oblivion.esm,INGR,0003365D,FULL,Apple,,reviewed_visible_same_name,b680d09000,Apple
+Oblivion.esm,NPC_,0000A29C,FULL,Hasathil,,reviewed_visible_same_name,bd80b680dba90400,Hasathil
+Oblivion.esm,DIAL,000314F0,FULL,Investigation,,reviewed_visible_same_name,c884b68000,Investigation

@@ -20,6 +20,8 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
+from build_video_subtitles import build_videos
+
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
 MASTER = "Oblivion.esm"
 # The executable supplies these default GMSTs, but the original ESM has no
@@ -60,32 +62,34 @@ class Translation:
     english: str
     korean: bytes
     line: int
+    editor_id: bytes | None = None
 
 
-def load_translations(path: Path):
+def load_translations(path: Path, extra_paths=()):
     table = defaultdict(list)
-    with path.open(encoding="utf-8-sig", newline="") as stream:
-        for line, row in enumerate(csv.DictReader(stream), 2):
-            source = row["effective_source"]
-            target = source if source in OFFICIAL else PATCH_TO_OFFICIAL.get(source)
-            if target is None:
-                continue
-            # Oblivion uses the current cell/world name in menu save filenames.
-            # Legacy Korean byte strings can contain control bytes and make a
-            # menu save silently fail, even while autosaves and console saves work.
-            if row["record_type"] in ("CELL", "WRLD") and row["field"] == "FULL":
-                continue
-            formid = int(row["raw_formid"], 16)
-            # The original audit used 01 as the isolated official DLC's slot.
-            if (formid >> 24) != (0 if target == MASTER else 1):
-                continue
-            korean = bytes.fromhex(row["new_bytes_hex"])
-            if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
-                raise ValueError(f"CSV line {line}: invalid encoded string")
-            item = Translation(source, row["record_type"].encode("ascii"),
-                               formid, row["field"].encode("ascii"),
-                               row["old_english"], korean, line)
-            table[(target, item.record_type, formid & 0xFFFFFF, item.field)].append(item)
+    for source_path in (path, *extra_paths):
+        with source_path.open(encoding="utf-8-sig", newline="") as stream:
+            for line, row in enumerate(csv.DictReader(stream), 2):
+                source = row["effective_source"]
+                target = source if source in OFFICIAL else PATCH_TO_OFFICIAL.get(source)
+                if target is None:
+                    continue
+                # The game's menu save filename includes the current location.
+                if row["record_type"] in ("CELL", "WRLD") and row["field"] == "FULL":
+                    continue
+                formid = int(row["raw_formid"], 16)
+                # Official DLC records may also override base-game FormIDs.
+                if (formid >> 24) not in ((0,) if target == MASTER else (0, 1)):
+                    continue
+                korean = bytes.fromhex(row["new_bytes_hex"])
+                if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
+                    raise ValueError(f"{source_path.name} line {line}: invalid encoded string")
+                editor_id = row.get("editor_id")
+                item = Translation(source, row["record_type"].encode("ascii"),
+                                   formid, row["field"].encode("ascii"),
+                                   row["old_english"], korean, line,
+                                   editor_id.encode("ascii") if editor_id else None)
+                table[(target, item.record_type, formid, item.field)].append(item)
     return table
 
 
@@ -147,14 +151,15 @@ def existing_gmst_keys(path: Path) -> set[bytes]:
     return keys
 
 
-def load_exe_menu_gmsts(csv_path: Path, exe_path: Path, esm_path: Path):
+def load_exe_menu_gmsts(csv_paths, exe_path: Path, esm_path: Path):
     if not exe_path.is_file():
         raise ValueError(f"Oblivion.exe is required beside the Data folder: {exe_path}")
     defaults = {(match[1], match[2]) for match in EXE_GMST_PATTERN.finditer(exe_path.read_bytes())}
     existing = existing_gmst_keys(esm_path)
     result = list(BASE_MENU_GMSTS)
     seen = {row[1].rstrip(b"\0") for row in result}
-    with csv_path.open(encoding="utf-8-sig", newline="") as stream:
+    for csv_path in csv_paths:
+      with csv_path.open(encoding="utf-8-sig", newline="") as stream:
         for line, row in enumerate(csv.DictReader(stream), 2):
             key = row["gmst"].encode("ascii")
             english = row["exe_english"].encode("ascii")
@@ -301,12 +306,13 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
                           "source": decode_english(value),
                           "translation_sources": ["legacy original Korean patch journal/loading"]})
             continue
-        candidates = translations.get((filename, record_type, formid & 0xFFFFFF, field), ())
+        candidates = translations.get((filename, record_type, formid, field), ())
         if not candidates:
             output.append(original)
             continue
         english = decode_english(value)
-        matches = [x for x in candidates if x.english == english]
+        matches = [x for x in candidates if x.english == english and
+                   (x.editor_id is None or x.editor_id == editor_id)]
         if not matches:
             output.append(original)
             continue
@@ -314,9 +320,15 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
         # if all matching rows agree on the encoded replacement.
         replacements = {x.korean for x in matches}
         if len(replacements) != 1:
-            counts["ambiguous"] += 1
-            output.append(original)
-            continue
+            direct = [x for x in matches if x.source == filename]
+            direct_replacements = {x.korean for x in direct}
+            if len(direct_replacements) == 1:
+                matches = direct
+                replacements = direct_replacements
+            else:
+                counts["ambiguous"] += 1
+                output.append(original)
+                continue
         replacement = replacements.pop()
         if replacement == value:
             output.append(original)
@@ -387,8 +399,8 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                 has_special = (filename == MASTER and
                                ((kind == b"QUST" and quest_texts and formid in quest_texts["formids"]) or
                                 (kind == b"LSCR" and loading_texts and formid in loading_texts)))
-                if not has_special and not translations.get((filename, kind, formid & 0xFFFFFF, b"FULL")) and not any(
-                        translations.get((filename, kind, formid & 0xFFFFFF, field))
+                if not has_special and not translations.get((filename, kind, formid, b"FULL")) and not any(
+                        translations.get((filename, kind, formid, field))
                         for field in (b"DESC", b"NAM1", b"DATA")):
                     dst.write(header)
                     remaining = size
@@ -431,15 +443,19 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True, help="Destination MO2 mod or staging folder")
     parser.add_argument("--csv", type=Path, default=HERE / "applied_translations_v2.csv")
     parser.add_argument("--ini", type=Path, help="Optional active Oblivion.ini to update with a backup")
+    parser.add_argument("--video-subtitles", choices=("off", "auto", "required"), default="off",
+                        help="Burn Korean subtitles into original intro/outro videos using FFmpeg and RAD Video Tools")
     args = parser.parse_args()
     source_dir = args.data_dir.resolve()
     output_dir = args.output.resolve()
     if source_dir == output_dir or source_dir in output_dir.parents or output_dir in source_dir.parents:
         parser.error("output must be separate from the source Data directory")
-    table = load_translations(args.csv)
+    table = load_translations(args.csv, (HERE / "vanilla_completion.csv",
+                                         HERE / "patch_translation_memory.csv",
+                                         HERE / "exe_gmst_existing.csv"))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
-    menu_gmsts = load_exe_menu_gmsts(HERE / "exe_gmst_translations.csv",
+    menu_gmsts = load_exe_menu_gmsts((HERE / "exe_gmst_translations.csv", HERE / "exe_gmst_extra.csv"),
                                       source_dir.parent / "Oblivion.exe", source_dir / MASTER)
     menu_formids = frozenset(item[0] for item in menu_gmsts)
     quest_entries, loading_entries = load_quest_loading_translations(
@@ -536,8 +552,12 @@ def main() -> int:
                 shutil.copy2(ini, backup)
             ini.write_bytes(updated)
             print(f"Font INI updated (backup: {backup})")
+    videos = {}
+    if args.video_subtitles != "off":
+        videos = build_videos(source_dir, output_dir, HERE / "video_subtitles",
+                              required=args.video_subtitles == "required")
     (output_dir / "translation_audit.json").write_text(
-        json.dumps({"files": report, "applied": audit}, ensure_ascii=False, indent=2), encoding="utf-8")
+        json.dumps({"files": report, "applied": audit, "videos": videos}, ensure_ascii=False, indent=2), encoding="utf-8")
     return 0
 
 

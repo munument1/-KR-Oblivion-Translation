@@ -32,23 +32,23 @@ echo Python 3 or OblivionKRBuilder.exe is required.
 exit /b 1
 :run_exe
 if exist "%INI_PATH%" (
-  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%"
+  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
 ) else (
-  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
+  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
 )
 goto finish
 :run_py
 if exist "%INI_PATH%" (
-  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%"
+  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
 ) else (
-  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
+  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
 )
 goto finish
 :run_python
 if exist "%INI_PATH%" (
-  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%"
+  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
 ) else (
-  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
+  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
 )
 :finish
 if errorlevel 1 exit /b 1
@@ -56,6 +56,6 @@ echo.
 echo Overlay ready: "%OUT_DIR%"
 if not exist "%INI_PATH%" echo Oblivion.ini was not found. Apply FONT_SETTINGS.txt to the active INI.
 echo Save-safe mode: CELL and WRLD location names stay in English so menu saves can create files.
-echo Disable separate Korean UOP/USIP/UODP translation mods when testing menu saves; later ESP overrides can restore unsafe location bytes.
+echo If you use UOP/USIP/UODP, use the updated Korean ESP overlay that keeps location names in English.
 echo Install the output folder as an MO2 mod, or copy its contents into a separate mod overlay.
 exit /b 0
