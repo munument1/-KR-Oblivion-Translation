@@ -450,6 +450,8 @@ def main() -> int:
     parser.add_argument("--data-dir", type=Path, required=True, help="Original game Data directory (read only)")
     parser.add_argument("--output", type=Path, required=True, help="Destination MO2 mod or staging folder")
     parser.add_argument("--csv", type=Path, default=HERE / "applied_translations_v2.csv")
+    parser.add_argument("--extra-csv", type=Path, action="append", default=[],
+                        help="Additional verified translation-memory CSV (repeatable)")
     parser.add_argument("--ini", type=Path, help="Optional active Oblivion.ini to update with a backup")
     parser.add_argument("--video-subtitles", choices=("off", "auto", "required"), default="off",
                         help="Burn Korean subtitles into original intro/outro videos using FFmpeg and RAD Video Tools")
@@ -461,7 +463,8 @@ def main() -> int:
     table = load_translations(args.csv, (HERE / "vanilla_completion.csv",
                                          HERE / "patch_translation_memory.csv",
                                          HERE / "legacy_carrier_completion.csv",
-                                         HERE / "exe_gmst_existing.csv"))
+                                         HERE / "exe_gmst_existing.csv",
+                                         *args.extra_csv))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
     menu_gmsts = load_exe_menu_gmsts((HERE / "exe_gmst_translations.csv", HERE / "exe_gmst_extra.csv"),
