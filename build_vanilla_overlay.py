@@ -105,6 +105,12 @@ def decode_english(data: bytes) -> str:
         return raw.decode("latin1")
 
 
+def normalize_source_text(text: str) -> str:
+    # csv text mode normalizes CRLF in multiline fields to LF, while TES4
+    # subrecords retain CRLF. Compare logical text, not newline byte style.
+    return text.replace("\r\n", "\n").replace("\r", "\n")
+
+
 def parse_subrecords(data: bytes):
     pos = 0
     while pos < len(data):
@@ -318,7 +324,7 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
             output.append(original)
             continue
         english = decode_english(value)
-        matches = [x for x in candidates if x.english == english and
+        matches = [x for x in candidates if normalize_source_text(x.english) == normalize_source_text(english) and
                    (x.editor_id is None or x.editor_id == editor_id) and
                    (x.occurrence is None or x.occurrence == field_occurrence)]
         if not matches:
@@ -328,11 +334,15 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
         # if all matching rows agree on the encoded replacement.
         replacements = {x.korean for x in matches}
         if len(replacements) != 1:
+            # Translation tables are ordered from legacy/broad memories to
+            # newer, more exact Remaster recoveries. When the same exact
+            # source field is intentionally refined, the latest direct row
+            # wins. This avoids treating a verified refinement as ambiguity.
             direct = [x for x in matches if x.source == filename]
-            direct_replacements = {x.korean for x in direct}
-            if len(direct_replacements) == 1:
-                matches = direct
-                replacements = direct_replacements
+            if direct:
+                latest = direct[-1]
+                matches = [latest]
+                replacements = {latest.korean}
             else:
                 counts["ambiguous"] += 1
                 output.append(original)
@@ -471,6 +481,8 @@ def main() -> int:
                                          HERE / "remaster_desc_memory.csv",
                                          HERE / "remaster_book_safe_memory.csv",
                                          HERE / "remaster_extended_memory.csv",
+                                         HERE / "source_memory_recovery.csv",
+                                         HERE / "quest_unique_stage_memory.csv",
                                          HERE / "exe_gmst_existing.csv",
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
