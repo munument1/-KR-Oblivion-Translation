@@ -483,6 +483,7 @@ def main() -> int:
                                          HERE / "remaster_extended_memory.csv",
                                          HERE / "source_memory_recovery.csv",
                                          HERE / "quest_unique_stage_memory.csv",
+                                         HERE / "manual_visible_memory.csv",
                                          HERE / "exe_gmst_existing.csv",
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
