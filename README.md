@@ -4,7 +4,7 @@
 
 이 저장소의 GitHub Release는 본편 + 공식 DLC 전용입니다. Unofficial Oblivion Patch / Unofficial Shivering Isles Patch / Unofficial Oblivion DLC Patches용 한국어 ESP는 이 저장소의 릴리즈에 포함하지 않습니다.
 
-## v1.0.0 지원 범위
+## v1.0.1 지원 범위
 
 - Oblivion.esm
 - Knights of the Nine
@@ -19,7 +19,7 @@
 
 ## 설치
 
-1. Releases에서 Oblivion_Original_KR_Installer_v1.0.0.zip을 내려받아 압축을 풉니다.
+1. Releases에서 Oblivion_Original_KR_Installer_v1.0.1.zip을 내려받아 압축을 풉니다.
 2. install.bat을 실행합니다.
 3. 설치된 오리지널 Oblivion의 Data 폴더를 지정합니다.
 4. 생성된 output\Oblivion_KR_Mod를 MO2에 별도 모드로 등록합니다.
@@ -41,13 +41,17 @@ Oblivion.exe도 직접 수정하지 않습니다. 실행 파일의 일부 사용
 
 ## 빌더 검증
 
-v1.0.0 릴리즈용 OblivionKRBuilder.exe를 Steam 오리지널 Data에 직접 실행하여 Oblivion.esm, Knights.esp 및 모든 공식 DLC 출력이 정상 생성되는 것을 검증했습니다.
+v1.0.1 릴리즈용 OblivionKRBuilder.exe를 Steam 오리지널 Data에 직접 실행하여 Oblivion.esm, Knights.esp 및 모든 공식 DLC 출력이 정상 생성되는 것을 검증했습니다.
 
 빌더는 번역 대상의 원문과 레코드 구조를 검증한 뒤 문자열 필드만 교체합니다.
 
 ## 번역 자료
 
 기존 오리지널 한국어 패치 자료와 공식 한국어판에서 대응 가능한 번역을 회수하고, 레코드/EditorID/원문/퀘스트 stage/대사 문맥을 검증해 보강하는 방식으로 제작했습니다. 위치명처럼 저장 안정성에 영향을 줄 수 있는 필드는 자동 적용 대상에서 제외했습니다.
+
+## v1.0.1
+
+메뉴 번역 보완 릴리즈. 캐릭터 생성창의 Face/Hair/Eyes, Yes/No, On/Off, Main Menu 및 관련 메뉴 라벨을 보완하고, 스킬 창의 21개 개별 스킬명을 모두 한국어화했습니다.
 
 ## v1.0.0
 
