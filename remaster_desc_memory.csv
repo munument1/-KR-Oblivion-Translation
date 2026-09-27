@@ -1,0 +1,723 @@
+﻿effective_source,record_type,raw_formid,field,occurrence,old_english,new_korean,locres_key,new_bytes_hex,editor_id,match_method
+Oblivion.esm,BSGN,0001FD96,DESC,0,"Being born under the Lord gives you the Blood of the North lesser power to regenerate up to 90 points of Health. However, you also gain the Trollkin curse, a permanent 25% Weakness to Fire.
+","군주의 별자리. 방어도가 15만큼, 마법 저항이 15퍼센트만큼 증가합니다.",LOC_DE_BirthSignLord,c0a602c886d79820d5a304b880b3892e20d5a008b782c284b080203135d4a002caa8052c20b480d5a20620b882dda008b789203135bc82d6ab02cb88d4a002caa80520c8a808b080dda006b189b2802e00,BirthSignLord,remaster_editorid_namespace_exact
+Oblivion.esm,BSGN,0001FD95,DESC,0,"With the Atronach ability you don't regain Magicka over time. Instead you have a 50% Spell Absorption to recharge your Magicka. Your base Magicka is also increased by 150 points.
+",아트로나크의 별자리. 시간이 흘러도 매지카가 회복되지 않습니다. 대신 50% 확률로 당신에게 시전된 주문을 매지카로 전환할 수 있는  '주문 흡수' 능력을 얻습니다. 또한 매지카가 150만큼 증가합니다.,LOC_DE_BirthSignAtronach,b780cb88c384b180ca88d79820d5a304b880b3892e20b689d0a002b78920cda804b382c28420b48ab889ba80b08020dd95c5a401d295b88920d7a017c6a806b189b2802e20b28ad6a9022035302520ed9901c3a704c38420d2a008d6a902b78bb08b20b689d8a202e29a0220c886c4a602c7a80420b48ab889ba80c38420d8a202ed9902dda00420c68620d7a914c1a802202027c886c4a60220cda806c6862720c1a808d3a301c7a80420d7a203c6a806b189b2802e20cf84dda00220b48ab889ba80b08020313530d4a002caa80520c8a808b080dda006b189b2802e00,BirthSignAtronach,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,00071D50,DESC,0,"For public notice:
+
+This property has been seized by the Imperial Legion, and its owner imprisoned.
+
+Rituals to the Night Mother, or any other attempt to contact the Dark Brotherhood, will not be tolerated!
+
+-- Adamus Phillida, Imperial Legion Commander
+","공고:
+
+
+
+이 재산은 제국 군단에 의해 몰수되었고, 소유자는 투옥되었습니다.
+
+나이트 마더나 다크 브라더후드에게 연락하려는 어떤 시도도 용납되지 않습니다!
+
+
+
+ -- 아다무스 필리다, 제국 군단 사령관",LOC_BK_DarkClaudiusHouseNote,c0a408c0843a0a0a0a0ab78920b88ad6a002c7a80220b88bc0a60120c0a602d2a002b78b20d798bd8a20c4a404c686d295d7a214c0842c20c684c787b880c1a80220cb86c7a401d295d7a214c6a806b189b2802e0a0ab180b789cb8820b480b282b18020b280ca8820c588b380b282cd86c288b78bb08b20d7a302d3a001bd80b383c1a80220b782dfa20220b689c284c28420c7a508d1a006d295b88920d7a017c6a806b189b280210a0a0a0a202d2d20b780b280c486c68820dca904b389b2802c20b88bc0a60120c0a602d2a00220b680d3a308e0990200,DarkClaudiusHouseNote,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162F,DESC,0,"This entitles the bearer to various wall hangings that will be promptly delivered to your home in Skingrad. This includes:
+
+6 Tapestries
+5 Paintings
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 각종 벽걸이가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+태피스트리 6점
+
+그림 5점
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradWallHangL2Receipt,b78920c4a602b682c1a80220d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0abb8abc89c688cb88b3892036d8a2050a0ac088d3a9052035d8a2050a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradWallHangL2Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162E,DESC,0,"This entitles the bearer to various wall hangings that will be promptly delivered to your home in Skingrad. This includes:
+
+10 Paintings
+5 Tapestries
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 각종 벽걸이가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+그림 10점
+
+태피스트리 5점
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradWallHangL1Receipt,b78920c4a602b682c1a80220d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac088d3a905203130d8a2050a0abb8abc89c688cb88b3892035d8a2050a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradWallHangL1Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162D,DESC,0,"This entitles the bearer to servants quarters on the basement level that will be promptly delivered to your home in Skingrad. Said area contains:
+
+2 Stools
+1 Privacy Screen
+1 Bed
+1 Clothing Cupboard
+1 Table
+1 Chest
+Assorted Candles
+Assorted Pottery
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 하인 숙소용 일반 세트가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+통의자 2개
+
+칸막이 1개
+
+침대 1개
+
+옷장 1개
+
+테이블 1개
+
+궤짝 1개
+
+각종 양초
+
+각종 생활용품
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradServantsQuartersReceipt,b78920c4a602b682c1a80220bd80d7a90220c6a601c684c7a50820d7a904d5a00220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0acba408d798b8802032b08a0a0adaa002d4a001b7892031b08a0a0ad9a905b28a2031b08a0a0ac7a407d8a0082031b08a0a0abb8bb789c5a8042031b08a0a0ad08ff8a0012031b08a0a0ad0a001c8a40820d7a108c9840a0ad0a001c8a40820d6aa08ed9904c7a508cca6050a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradServantsQuartersReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162C,DESC,0,"This entitles the bearer to one storage area on the basement level that will be promptly delivered to your home in Skingrad. Said area contains:
+
+4 Crates
+4 Barrels
+3 Chests
+2 Wine Racks
+1 Set of Shelves
+Assorted Candle Holders
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 일반 창고 세트가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+나무상자 4개
+
+나무통 4개
+
+궤짝 3개
+
+와인 선반 2개
+
+선반 세트 1개
+
+각종 촛대
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradStorageAreaReceipt,b78920c4a602b682c1a80220d7a904d5a00220d9a008c08420b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ab180c486d6a008b8802034b08a0a0ab180c486cba4082034b08a0a0ad08ff8a0012033b08a0a0ad790d7a90220d6a202d5a0022032b08a0a0ad6a202d5a00220b68bcb882031b08a0a0ad0a001c8a40820c9a407b28a0a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradStorageAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162B,DESC,0,"This entitles the bearer to several glass display cases in various parts of the house that will be promptly delivered to your home in Skingrad. This includes:
+
+3 Large Display Cases
+4 Small Display Cases
+Assorted Candles
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 유리 진열장이 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+큰 진열장 3개
+
+작은 진열장 4개
+
+각종 양초
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradDisplayCaseUpgradeReceipt,b78920c4a602b682c1a80220c787b38920d8a902d7a304d8a008b78920c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0acaa80220d8a902d7a304d8a0082033b08a0a0ad8a001c7a80220d8a902d7a304d8a0082034b08a0a0ad0a001c8a40820d7a108c9840a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradDisplayCaseUpgradeReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B162A,DESC,0,"This entitles the bearer to one study area on the upper level that will be promptly delivered to your home in Skingrad. Said area contains:
+
+2 Bookshelves
+1 Executive Desk
+1 Chair
+1 Chest
+Decorative Mini-Tapestries
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 3급 서재 주변 세트가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+책장 2개
+
+고급 책상 1개
+
+의자 1개
+
+궤짝 1개
+
+장식용 소형 태피스트리
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradStudyAreaReceipt,b78920c4a602b682c1a8022033c0a80620b682b88a20c886d5a30220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad9aa01d8a0082032b08a0a0ac084c0a80620d9aa01d6a0082031b08a0a0ad798b8802031b08a0a0ad08ff8a0012031b08a0a0ad8a008d6a901c7a50820c684dda30820bb8abc89c688cb88b3890a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradStudyAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1627,DESC,0,"This entitles the bearer to one upgrade to the balcony area overlooking the lower level that will be promptly delivered to your home in Skingrad. This includes:
+
+2 Large Shelves
+Assorted Candles
+Assorted Pottery
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 발코니 주변 업그레이드 물품이 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+큰 선반 2개
+
+각종 양초
+
+각종 생활용품
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradBalconyUpgradeReceipt,b78920c4a602b682c1a80220d5a004ca84b18920c886d5a30220d7a206c088b38bb789c28820c4a604cca605b78920c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0acaa80220d6a202d5a0022032b08a0a0ad0a001c8a40820d7a108c9840a0ad0a001c8a40820d6aa08ed9904c7a508cca6050a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradBalconyUpgradeReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1622,DESC,0,"This entitles the bearer to one kitchen area on the lower level that will be promptly delivered to your home in Skingrad. Said area contains:
+
+2 Cupboards (1 Food, 1 Drink)
+1 Table
+1 Barrel
+1 Set of Scales
+Assorted Pottery
+
+We use only the finest wood and craftsmanship in all our products.
+Please, come back soon!
+
+Gunder
+Colovian Traders","이 문서는 1급 주방 주변 세트가 문서의 소유자가 있는 스킨그라드의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+찬장 2개 (식료품용 1개, 음료용 1개)
+
+테이블 1개
+
+나무통 1개
+
+선반 세트 1개
+
+각종 생활용품
+
+
+
+저희 가게의 모든 제품은 엄선된 최상의 재료로 최고의 장인이 만듭니다.
+
+언제라도 다시 들려주세요!
+
+
+
+건더
+
+콜로비아 상회",LOC_BK_HouseSkingradKitchenAreaReceipt,b78920c4a602b682c1a8022031c0a80620c886d5a00820c886d5a30220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c688daa902c088b380c288d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad9a002d8a0082032b08a2028d6a901c385cca605c7a5082031b08a2c20c7a805c385c7a5082031b08a290a0abb8bb789c5a8042031b08a0a0ab180c486cba4082031b08a0a0ad6a202d5a00220b68bcb882031b08a0a0ad0a001c8a40820d6aa08ed9904c7a508cca6050a0a0a0ab882dd9820b080b08bd79820c484c2a80220b88bcca605c7a80220d7a205d6a202e29a0220d995d6a008d79820b88ac385c38420d995c084d79820d8a008d7a902b78920d4a002c2a806b189b2802e0a0ad7a202b88bb380c28420b280b68920c2a804b383c886b68bc785210a0a0a0ad0a202b2820a0acaa404c384b589b78020d6a008dd9500,HouseSkingradKitchenAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B15B6,DESC,0,"This entitles the bearer to various wall hangings on the upper level that will be promptly delivered to your home in Cheydinhal. This includes:
+
+3 Tapestries
+3 Paintings
+
+Borba's motto: ""Nobody outsells me... nobody!""
+
+Borba gra-Uzgash
+Borba's Goods and Stores","이 문서는 2급 각종 벽걸이 세트가 문서의 소유자가 있는 셰이딘홀의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+태피스트리 3점
+
+그림 3점
+
+
+
+보르바의 좌우명: 어느 누구도 나보다 물건을 많이 팔 수는 없습니다... 그 누구라도!
+
+
+
+보르바 그라-우즈가쉬
+
+보르바의 상품점",LOC_BK_HouseCheydinhalWallHangL2Receipt,b78920c4a602b682c1a8022032c0a80620d0a001c8a40820d5a301d0a204b78920b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b68db789d2a902cda404d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0abb8abc89c688cb88b3892033d8a2050a0ac088d3a9052033d8a2050a0a0a0ac584c388b580d79820d890c786d4a3083a20b782c18820c186c086c28420b180c584b28020c4a604d0a202c7a80420d4a017b78920dca00420c686c1a80220d7a21fc6a806b189b2802e2e2e20c08820c186c086b380c284210a0a0a0ac584c388b58020c088b3802dc786c888b080d6970a0ac584c388b580d79820d6a008cca605d8a20500,HouseCheydinhalWallHangL2Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B15B5,DESC,0,"This entitles the bearer to various wall hangings on the lower level that will be promptly delivered to your home in Cheydinhal. This includes:
+
+5 Paintings
+2 Tapestries
+
+Borba's motto: ""Nobody outsells me... nobody!""
+
+Borba gra-Uzgash
+Borba's Goods and Stores","이 문서는 1급 각종 벽걸이 세트가 문서의 소유자가 있는 셰이딘홀의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+그림 5점
+
+태피스트리 2점
+
+
+
+보르바의 좌우명: 어느 누구도 나보다 물건을 많이 팔 수는 없어... 그 누구라도!
+
+
+
+보르바 그라-우즈가쉬
+
+보르바의 상품점",LOC_BK_HouseCheydinhalWallHangL1Receipt,b78920c4a602b682c1a8022031c0a80620d0a001c8a40820d5a301d0a204b78920b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b68db789d2a902cda404d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac088d3a9052035d8a2050a0abb8abc89c688cb88b3892032d8a2050a0a0a0ac584c388b580d79820d890c786d4a3083a20b782c18820c186c086c28420b180c584b28020c4a604d0a202c7a80420d4a017b78920dca00420c686c1a80220d7a21fb7822e2e2e20c08820c186c086b380c284210a0a0a0ac584c388b58020c088b3802dc786c888b080d6970a0ac584c388b580d79820d6a008cca605d8a20500,HouseCheydinhalWallHangL1Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B15B0,DESC,0,"This entitles the bearer to one storage area on the upper level that will be promptly delivered to your home in Cheydinhal. Said area contains:
+
+3 Barrels
+2 Wood Crates
+2 Chests
+Assorted Candles
+
+Borba's motto: ""Nobody outsells me... nobody!""
+
+Borba gra-Uzgash
+Borba's Goods and Stores","이 문서는 2급 창고 세트가 문서의 소유자가 있는 셰이딘홀의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+나무통 3개
+
+나무 상자 2개
+
+궤짝 2개
+
+각종 양초
+
+
+
+보르바의 좌우명: 어느 누구도 나보다 물건을 많이 팔 수는 없습니다... 그 누구라도!
+
+
+
+보르바 그라-우즈가쉬
+
+보르바의 상품점",LOC_BK_HouseCheydinhalStorageAreaReceipt,b78920c4a602b682c1a8022032c0a80620d9a008c08420b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b68db789d2a902cda404d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ab180c486cba4082033b08a0a0ab180c48620d6a008b8802032b08a0a0ad08ff8a0012032b08a0a0ad0a001c8a40820d7a108c9840a0a0a0ac584c388b580d79820d890c786d4a3083a20b782c18820c186c086c28420b180c584b28020c4a604d0a202c7a80420d4a017b78920dca00420c686c1a80220d7a21fc6a806b189b2802e2e2e20c08820c186c086b380c284210a0a0a0ac584c388b58020c088b3802dc786c888b080d6970a0ac584c388b580d79820d6a008cca605d8a20500,HouseCheydinhalStorageAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B15AF,DESC,0,"This entitles the bearer to one upper hall area that will be promptly delivered to your home in Cheydinhal. Said area contains:
+
+2 Wall-Mounted Candle Sconces
+2 Sets of Shelves
+2 Candle Holders
+1 Bench
+Assorted Pottery
+
+Borba's motto: ""Nobody outsells me... nobody!""
+
+Borba gra-Uzgash
+Borba's Goods and Stores","이 문서는 2급 거실 주변 세트가 문서의 소유자가 있는 셰이딘홀의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+벽걸이용 촛대 2개
+
+선반 세트 2개
+
+촛대 2개
+
+벤치 1개
+
+각종 생활용품
+
+
+
+보르바의 좌우명: 어느 누구도 나보다 물건을 많이 팔 수는 없습니다... 그 누구라도!
+
+
+
+보르바 그라-우즈가쉬
+
+보르바의 상품점",LOC_BK_HouseCheydinhalUpperHallAreaReceipt,b78920c4a602b682c1a8022032c0a80620b082d6a90420c886d5a30220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b68db789d2a902cda404d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad5a301d0a204b789c7a50820c9a407b28a2032b08a0a0ad6a202d5a00220b68bcb882032b08a0a0ac9a407b28a2032b08a0a0ad5ab02b9892031b08a0a0ad0a001c8a40820d6aa08ed9904c7a508cca6050a0a0a0ac584c388b580d79820d890c786d4a3083a20b782c18820c186c086c28420b180c584b28020c4a604d0a202c7a80420d4a017b78920dca00420c686c1a80220d7a21fc6a806b189b2802e2e2e20c08820c186c086b380c284210a0a0a0ac584c388b58020c088b3802dc786c888b080d6970a0ac584c388b580d79820d6a008cca605d8a20500,HouseCheydinhalUpperHallAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1595,DESC,0,"This entitles the bearer to various wall hangings on the lower level that will be promptly delivered to your home in Bruma. This includes:
+
+3 Paintings
+3 Tapestries
+4 Wall-Mounted Candle Sconces
+
+Shop Novaroma where if we don't have it, it's not worth having!
+
+Suurootan
+Novaroma of Bruma","이 문서는 일반 각종 벽걸이가 문서의 소유자가 있는 브루마의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+그림 3점
+
+태피스트리 3점
+
+벽걸이용 촛대 4개
+
+
+
+최고가 아니면 취급하지 않는 가게!
+
+노바로마 수우루탄
+
+브루마의 노바로마",LOC_BK_HouseBrumaWallHangL1Receipt,b78920c4a602b682c1a80220d7a904d5a00220d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c588c386b480d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac088d3a9052033d8a2050a0abb8abc89c688cb88b3892033d8a2050a0ad5a301d0a204b789c7a50820c9a407b28a2034b08a0a0a0a0ad995c084b08020b780b189d4a30220d997c0a806bd80b88920d7a017c1a80220b080b08b210a0ac184b580c384b48020c686c786c386dba0020a0ac588c386b480d79820c184b580c384b48000,HouseBrumaWallHangL1Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1592,DESC,0,"This entitles the bearer to one study area on the lower level that will be promptly delivered to your home in Bruma. Said area contains:
+
+2 Bookshelves
+1 Desk
+1 Chair
+1 Candelabra
+Assorted Candles
+
+Shop Novaroma where if we don't have it, it's not worth having!
+
+Suurootan
+Novaroma of Bruma","이 문서는 일반 서재 세트가 문서의 소유자가 있는 브루마의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+책장 2개
+
+책상 1개
+
+의자 1개
+
+나뭇가지 모양 촛대
+
+각종 양초 포함
+
+
+
+최고가 아니면 취급하지 않는 가게!
+
+노바로마 수우루탄
+
+브루마의 노바로마1",LOC_BK_HouseBrumaStudyAreaReceipt,b78920c4a602b682c1a80220d7a904d5a00220b682b88a20b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c588c386b480d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad9aa01d8a0082032b08a0a0ad9aa01d6a0082031b08a0a0ad798b8802031b08a0a0ab180c4a607b080b88920c484d7a10820c9a407b28a0a0ad0a001c8a40820d7a108c98420cc84dda0050a0a0a0ad995c084b08020b780b189d4a30220d997c0a806bd80b88920d7a017c1a80220b080b08b210a0ac184b580c384b48020c686c786c386dba0020a0ac588c386b480d79820c184b580c384b4803100,HouseBrumaStudyAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1591,DESC,0,"This entitles the bearer to various wall hangings on the upper level that will be promptly delivered to your home in Bruma. This includes:
+
+5 Paintings
+1 Tapestry
+2 Candle Holders
+
+Shop Novaroma where if we don't have it, it's not worth having!
+
+Suurootan
+Novaroma of Bruma","이 문서는 최상급 각종 벽걸이가 문서의 소유자가 있는 브루마의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+그림 5점
+
+태피스트리 1점
+
+촛대 2개
+
+
+
+최고가 아니면 취급하지 않는 가게!
+
+노바로마 수우루탄
+
+브루마의 노바로마",LOC_BK_HouseBrumaWallHangL2Receipt,b78920c4a602b682c1a80220d995d6a008c0a80620d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c588c386b480d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac088d3a9052035d8a2050a0abb8abc89c688cb88b3892031d8a2050a0ac9a407b28a2032b08a0a0a0a0ad995c084b08020b780b189d4a30220d997c0a806bd80b88920d7a017c1a80220b080b08b210a0ac184b580c384b48020c686c786c386dba0020a0ac588c386b480d79820c184b580c384b48000,HouseBrumaWallHangL2Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B158F,DESC,0,"This entitles the bearer to one storage area on the upper level that will be promptly delivered to your home in Bruma. Said area contains:
+
+2 Chests
+1 Set of Shelves
+1 Small Table
+1 Candelabra
+Assorted Pottery
+
+Shop Novaroma where if we don't have it, it's not worth having!
+
+Suurootan
+Novaroma of Bruma","이 문서는 고급 창고 세트가 문서의 소유자가 있는 브루마의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+궤짝 2개
+
+작은 테이블 1개
+
+나뭇가지 모양 촛대 1개
+
+각종 생활용품
+
+
+
+최고가 아니면 취급하지 않는 가게!
+
+노바로마 수우루탄
+
+브루마의 노바로마",LOC_BK_HouseBrumaStorageAreaL2Receipt,b78920c4a602b682c1a80220c084c0a80620d9a008c08420b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c588c386b480d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad08ff8a0012032b08a0a0ad8a001c7a80220bb8bb789c5a8042031b08a0a0ab180c4a607b080b88920c484d7a10820c9a407b28a2031b08a0a0ad0a001c8a40820d6aa08ed9904c7a508cca6050a0a0a0ad995c084b08020b780b189d4a30220d997c0a806bd80b88920d7a017c1a80220b080b08b210a0ac184b580c384b48020c686c786c386dba0020a0ac588c386b480d79820c184b580c384b48000,HouseBrumaStorageAreaL2Receipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1585,DESC,0,"This entitles the bearer various wall hangings that will be promptly delivered to your home in Leyawiin. This includes:
+
+5 Paintings
+2 Tapestries
+
+Come back and see us and again for the best goods and guarantees!
+
+Gundalas
+Best Goods and Guarantees","이 문서는 각종 벽걸이가 문서의 소유자가 있는 레이야윈의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+그림 5점
+
+태피스트리 2점
+
+
+
+다음에도 저희 최고의 상품과 보증을 이용해 주세요!
+
+
+
+건달라스
+
+최고의 상품과 보증",LOC_BK_HouseLeyawiinWallHangReceipt,b78920c4a602b682c1a80220d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b38bb789b781e79c02d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac088d3a9052035d8a2050a0abb8abc89c688cb88b3892032d8a2050a0a0a0ab280c7a805b78bc28420b882dd9820d995c084d79820d6a008cca605d09020c584c8a808c7a80420b789c7a508bd8a20c886b68bc785210a0a0a0ad0a202d2a004b380c6880a0ad995c084d79820d6a008cca605d09020c584c8a80800,HouseLeyawiinWallHangReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1583,DESC,0,"This entitles the bearer to one kitchen area that will be promptly delivered to your home in Leyawiin. Said area contains:
+
+1 Cupboard
+1 Large Table
+Assorted Baskets
+
+Come back and see us and again for the best goods and guarantees!
+
+Gundalas
+Best Goods and Guarantees","이 문서는 주방 주변 세트가 문서의 소유자가 있는 레이야윈의 집까지 신속하게 도착할 것을 보장합니다. 내역은아래와 같습니다
+
+
+
+찬장 1개
+
+큰 테이블 1개
+
+각종 바구니
+
+
+
+다음에도 저희 최고의 상품과 보증을 이용해 주세요!
+
+
+
+건달라스
+
+최고의 상품과 보증",LOC_BK_HouseLeyawiinKitchenAreaReceipt,b78920c4a602b682c1a80220c886d5a00820c886d5a30220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b38bb789b781e79c02d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a802b780b38ad79020d0a010c6a806b189b2800a0a0a0ad9a002d8a0082031b08a0a0acaa80220bb8bb789c5a8042031b08a0a0ad0a001c8a40820b580c086b1890a0a0a0ab280c7a805b78bc28420b882dd9820d995c084d79820d6a008cca605d09020c584c8a808c7a80420b789c7a508bd8a20c886b68bc785210a0a0a0ad0a202d2a004b380c6880a0ad995c084d79820d6a008cca605d09020c584c8a80800,HouseLeyawiinKitchenAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,000B1582,DESC,0,"This entitles the bearer to one study area on the lower level that will be promptly delivered to your home in Leyawiin. Said area contains:
+
+1 Desk
+1 Chair
+1 Bookshelf
+1 Candelabra
+
+Come back and see us and again for the best goods and guarantees!
+
+Gundalas
+Best Goods and Guarantees","이 문서는 서재 세트가 문서의 소유자가 있는 레이야윈의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+책상 1개
+
+의자 1개
+
+책장 1개
+
+나뭇가지 모양 촛대
+
+
+
+다음에도 저희 최고의 상품과 보증을 이용해 주세요!
+
+
+
+건달라스
+
+최고의 상품과 보증",LOC_BK_HouseLeyawiinStudyAreaReceipt,b78920c4a602b682c1a80220b682b88a20b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220b38bb789b781e79c02d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad9aa01d6a0082031b08a0a0ad798b8802031b08a0a0ad9aa01d8a0082031b08a0a0ab180c4a607b080b88920c484d7a10820c9a407b28a0a0a0a0ab280c7a805b78bc28420b882dd9820d995c084d79820d6a008cca605d09020c584c8a808c7a80420b789c7a508bd8a20c886b68bc785210a0a0a0ad0a202d2a004b380c6880a0ad995c084d79820d6a008cca605d09020c584c8a80800,HouseLeyawiinStudyAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,0009202E,DESC,0,"This entitles the bearer to one fireplace area that will be promptly delivered to your home in the Imperial City. Said area contains:
+
+2 Chairs
+1 Small Table
+
+We hope you'll enjoy your home's new look!
+
+Sergius Verus
+Three Brothers Trade Goods, Imperial City","이 문서는 난로 주변 세트가 문서의 소유자가 있는 임페리얼 시티의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+의자 2개
+
+작은 테이블 1개
+
+
+
+저희는 언제나 당신이 새롭게 변화된 집의 모습에 만족하기를 바라고 있습니다!
+
+
+
+세르기우스_베루스
+
+삼형제 교역소, 임페리얼 시티",LOC_BK_HouseICFireplaceAreaReceipt,b78920c4a602b682c1a80220d1a002c38420c886d5a30220b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220d7a905bc8bb389d7a20420b689bb89d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ad798b8802032b08a0a0ad8a001c7a80220bb8bb789c5a8042031b08a0a0a0a0ab882dd98c1a80220d7a202b88bb18020d2a008d6a902b78920b68ac3a406b08b20d5a302dd90e29a0220d8a906d79820c484c6a806b78b20d4a002c8a401bd80b089c3a80420b580b380c08420d7a914c6a806b189b280210a0a0a0ab68bc388b089c786c6885fb58bc386c6880a0ad6a005dda308b88b20c085d7a301c6842c20d7a905bc8bb389d7a20420b689bb8900,HouseICFireplaceAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,00092027,DESC,0,"This entitles the bearer to various wall hangings that will be promptly delivered to your home in the Imperial City. This set includes:
+
+3 Tapestries
+1 Painting
+
+We hope you'll enjoy your home's new look!
+
+Sergius Verus
+Three Brothers Trade Goods, Imperial City","이 문서는 각종 벽걸이가 문서의 소유자가 있는 임페리얼 시티의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+태피스트리 3점
+
+그림 1점
+
+
+
+저희는 언제나 당신이 새롭게 변화된 집의 모습에 만족하기를 바라고 있습니다!
+
+
+
+세르기우스_베루스
+
+삼형제 교역소, 임페리얼 시티",LOC_BK_HouseICPaintingsReceipt,b78920c4a602b682c1a80220d0a001c8a40820d5a301d0a204b789b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220d7a905bc8bb389d7a20420b689bb89d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0abb8abc89c688cb88b3892033d8a2050a0ac088d3a9052031d8a2050a0a0a0ab882dd98c1a80220d7a202b88bb18020d2a008d6a902b78920b68ac3a406b08b20d5a302dd90e29a0220d8a906d79820c484c6a806b78b20d4a002c8a401bd80b089c3a80420b580b380c08420d7a914c6a806b189b280210a0a0a0ab68bc388b089c786c6885fb58bc386c6880a0ad6a005dda308b88b20c085d7a301c6842c20d7a905bc8bb389d7a20420b689bb8900,HouseICPaintingsReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,00092023,DESC,0,"This entitles the bearer to one storage area that will be promptly delivered to your home in the Imperial City. Said area contains:
+
+2 Dressers
+1 Chest
+Assorted Candles
+
+We hope you'll enjoy your home's new look!
+
+Sergius Verus
+Three Brothers Trade Goods, Imperial City","이 문서는 창고 세트가 문서의 소유자가 있는 임페리얼 시티의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다.
+
+
+
+옷장 2개
+
+궤짝 1개
+
+각종 양초
+
+
+
+저희는 언제나 당신이 새롭게 변화된 집의 모습에 만족하기를 바라고 있습니다!
+
+
+
+세르기우스_베루스
+
+삼형제 교역소, 임페리얼 시티",LOC_BK_HouseICStorageAreaReceipt,b78920c4a602b682c1a80220d9a008c08420b68bcb88b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220d7a905bc8bb389d7a20420b689bb89d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e0a0a0a0ac7a407d8a0082032b08a0a0ad08ff8a0012031b08a0a0ad0a001c8a40820d7a108c9840a0a0a0ab882dd98c1a80220d7a202b88bb18020d2a008d6a902b78920b68ac3a406b08b20d5a302dd90e29a0220d8a906d79820c484c6a806b78b20d4a002c8a401bd80b089c3a80420b580b380c08420d7a914c6a806b189b280210a0a0a0ab68bc388b089c786c6885fb58bc386c6880a0ad6a005dda308b88b20c085d7a301c6842c20d7a905bc8bb389d7a20420b689bb8900,HouseICStorageAreaReceipt,remaster_editorid_namespace_exact
+Oblivion.esm,BOOK,00090EB5,DESC,0,"This entitles the bearer to various racks that will be promptly delivered to your home in Bravil. This set includes:
+
+2 Wine Racks
+2 Wall Mount Weapon Racks
+1 Free-Standing Weapon Rack
+
+Thanks for shopping with us!
+
+Nilawen
+The Fair Deal, Bravil","이 문서는 각종 선반류가 문서의 소유자가 있는 브라빌의 집까지 신속하게 도착할 것을 보장합니다. 내역은 아래와 같습니다. 
+
+
+
+와인 선반 2개
+
+벽걸이 무기 선반 2개
+
+독립 무기 선반 1개
+
+                  
+
+구입해주셔서 감사합니다!
+
+           
+
+나일라웬           
+
+공정한 거래, 브라빌",LOC_BK_HouseBravilRacksReceipt,b78920c4a602b682c1a80220d0a001c8a40820d6a202d5a002c387b08020c4a602b682d79820c684c787b880b08020d7a914c1a80220c588b380d5a904d79820d8a906be80b88920d6a902c6a401bd80b08b20c284d9a001dda00420d0a207c7a80420c584d8a008dda006b189b2802e20b18ad7a301c7a80220b780b38ad79020d0a010c6a806b189b2802e200a0a0a0ad790d7a90220d6a202d5a0022032b08a0a0ad5a301d0a204b78920c486b08920d6a202d5a0022032b08a0a0ac2a401d3a90620c486b08920d6a202d5a0022031b08a0a0a2020202020202020202020202020202020200a0ac086d7a906bd8ac886b683b68220d0a005b680dda006b189b280210a0a20202020202020202020200a0ab180d7a904b380e7af0220202020202020202020200a0ac0a408d8a208dda00220b082b38a2c20c588b380d5a90400,HouseBravilRacksReceipt,remaster_editorid_namespace_exact
+DLCMehrunesRazor.esp,LSCR,01001B8D,DESC,0,"The Drothmeri Army is founded and funded by Frathen Drothan, a rogue arch-mage of the Great House Telvanni.",드로스메리 군대는 텔바니 대가문의 악당 대마법사 프라덴 드로단에 의해 설립되었고 자금을 지원받고 있습니다. ,LOC_DE_DL9VillageLoadDoor,c288c384c688b48bb38920c0a602b28ac1a80220dbab04b580b18920b28ab080c4a602d79820d7a001d2a00820b28ab480d5a206b68020cc88b380d2ab0220c288c384d2a002b78b20d798bd8a20d6a204d3a906d295d7a214c08420b880c0a805c7a80420b889e79b02d5a003c08420d7a914c6a806b189b2802e2000,DL9VillageLoadDoor,remaster_editorid_namespace_exact
+DLCMehrunesRazor.esp,LSCR,01001567,DESC,0,"Sundercliff Watch was once a waystation during the Reman Dynasty, but has long since faded into disrepair and been all but forgotten.","선더클리프 감시대는 레만 왕조 시대에는 중간 기착지였지만, 오랫동안 방치되고 황폐화되어 거의 잊힌 곳입니다.",LOC_DE_DL9extLoadDoor,d6a202b282caa804b389cc8820d0a005b689b28ac1a80220b38bd4a00220e79908c88420b689b28ab78bc1a80220c8a608d0a00220b089d9a001b889d7a314b889d4a0022c20c784d3aa07c2a408d7a00220d5a008b989d295c08420ed9908bc8ddd90d295b78220b082d79820d7a90cdda90220c0a407d7a906b189b2802e00,DL9extLoadDoor,remaster_editorid_namespace_exact
+DLCMehrunesRazor.esp,LSCR,01001B87,DESC,0,The mines at Sundercliff boast the highest concentration of iron ore in the Valus Mountains.,선더클리프의 광산은 발루스 산맥에서 철광석이 가장 많이 나는 곳으로 유명합니다.,LOC_DE_DL9MinesLoadDoor,d6a202b282caa804b389cc88d79820e09908d6a002c7a80220d5a004c386c68820d6a002d4aa01b78bb68220d9a204e09908d6a201b78920b080d8a00820d4a017b78920b180c1a80220c0a407c788c38420c787d4a308dda006b189b2802e00,DL9MinesLoadDoor,remaster_editorid_namespace_exact
