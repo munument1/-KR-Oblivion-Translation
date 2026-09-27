@@ -86,10 +86,13 @@ def load_translations(path: Path, extra_paths=()):
                 if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
                     raise ValueError(f"{source_path.name} line {line}: invalid encoded string")
                 editor_id = row.get("editor_id")
+                occurrence_text = row.get("occurrence", "")
+                occurrence = int(occurrence_text) if occurrence_text not in (None, "") else None
                 item = Translation(source, row["record_type"].encode("ascii"),
                                    formid, row["field"].encode("ascii"),
                                    row["old_english"], korean, line,
-                                   editor_id.encode("ascii") if editor_id else None)
+                                   editor_id.encode("ascii") if editor_id else None,
+                                   occurrence)
                 table[(target, item.record_type, formid, item.field)].append(item)
     return table
 
@@ -283,7 +286,10 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
     output = []
     stage = None
     stage_occurrences = Counter()
+    field_occurrences = Counter()
     for field, value, original in parts:
+        field_occurrence = field_occurrences[field]
+        field_occurrences[field] += 1
         if record_type == b"QUST" and field == b"INDX":
             stage = int.from_bytes(value, "little")
         special = None
@@ -313,7 +319,8 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
             continue
         english = decode_english(value)
         matches = [x for x in candidates if x.english == english and
-                   (x.editor_id is None or x.editor_id == editor_id)]
+                   (x.editor_id is None or x.editor_id == editor_id) and
+                   (x.occurrence is None or x.occurrence == field_occurrence)]
         if not matches:
             output.append(original)
             continue
