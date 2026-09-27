@@ -463,6 +463,7 @@ def main() -> int:
     table = load_translations(args.csv, (HERE / "vanilla_completion.csv",
                                          HERE / "patch_translation_memory.csv",
                                          HERE / "legacy_carrier_completion.csv",
+                                         HERE / "legacy_full_recovery.csv",
                                          HERE / "exe_gmst_existing.csv",
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
