@@ -1,12 +1,7 @@
 ﻿gmst,exe_english,korean,encoded_hex,source
-sAnimationCanNotEquipWeapon,You cannot change weapons while attacking.,공격 중에는 무기를 변경할 수 없습니다.,c0a408d0a30120c8a608b78bc1a80220c486b089c3a80420d5a302d0a308dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
 sAutoSaveDisabledDueToLackOfSpace,Save location full. Disabling Autosave.,저장 공간이 없어 자동 저장을 중지합니다.,b882d8a00820c0a408d0a002b78920d7a21fb78220b880c2a40820b882d8a008c7a80420c8a608b889dda006b189b2802e00,manual_exe_gmst_review
 sButtonLocked,That button cannot be remapped,이 버튼은 다시 설정할 수 없습니다.,b78920b582cba802c7a80220b280b68920d6a204d8a208dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sCanNotEquipAlchemy,You cannot create potions during combat!,전투 중에는 물약을 만들 수 없습니다!,d8a202cb8620c8a608b78bc1a80220c4a604d7a101c7a80420d4a002c2a80420c68620d7a21fc6a806b189b2802100,manual_exe_gmst_review
-sCanNotEquipRepairHammer,You cannot repair items during combat!,전투 중에는 장비를 수리할 수 없습니다!,d8a202cb8620c8a608b78bc1a80220d8a008b589c3a80420c686b389dda00420c68620d7a21fc6a806b189b2802100,manual_exe_gmst_review
-sCanNotEquipSoulGem,You cannot recharge enchanted items during combat!,전투 중에는 마법 장비를 충전할 수 없습니다!,d8a202cb8620c8a608b78bc1a80220b480d5a20620d8a008b589c3a80420c9a608d8a202dda00420c68620d7a21fc6a806b189b2802100,manual_exe_gmst_review
 sCanNotEquipWornEnchantment,You cannot equip this enchanted item right now.,지금은 이 마법 장비를 착용할 수 없습니다.,b889c0a805c7a80220b78920b480d5a20620d8a008b589c3a80420d9a001c7a508dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sImpossibleLock,This lock cannot be picked. It requires a key to open.,이 자물쇠는 열 수 없습니다. 열쇠가 필요합니다.,b78920b880c4a604d695c1a80220d7a30420c68620d7a21fc6a806b189b2802e20d7a304d695b08020dca904c785dda006b189b2802e00,manual_exe_gmst_review
 sJournalTitleCompletedDetails,Completed Quest Detail,완료한 퀘스트의 내용,e79902c385dda00220da8fc688cb88d79820b18ac7a50800,manual_exe_gmst_review
 sLoadingArea,Loading area...,지역 불러오는 중...,b889d7a30120c5a604b382c784c1a80220c8a6082e2e2e00,manual_exe_gmst_review
 sLoadingContentMessage,Loading extra content. Please wait.,추가 자료를 불러오는 중입니다. 잠시 기다려 주세요.,c986b08020b880c385c3a80420c5a604b382c784c1a80220c8a608d7a906b189b2802e20d8a005b68920b089b280b38320c886b68bc7852e00,manual_exe_gmst_review
@@ -17,12 +12,164 @@ sMenuDisplayXBoxSaveMessage,Saving content. Please don't turn off your console.,
 sMiscPlayerDeadLoadOption,Reload,다시 불러오기,b280b68920c5a604b382c784b08900,manual_exe_gmst_review
 sMiscPlayerDeadMenuOption,Main Menu,시작 화면,b689d8a00120dd90d4a30200,manual_exe_gmst_review
 sNoCharge,The enchanted item does not have enough charge.,마법이 부여된 장비의 충전량이 없습니다.,b480d5a206b78920c586b783e29a0220d8a008b589d79820c9a608d8a202d3a108b78920d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoFastTravelCombat,You cannot fast travel during combat!,전투 중에는 빠른 이동을 할 수 없습니다!,d8a202cb8620c8a608b78bc1a80220f080c3a80220b789c2a408c7a80420dda00420c68620d7a21fc6a806b189b2802100,manual_exe_gmst_review
-sNoHammer,You have run out of hammers.,수리 망치가 없습니다.,c686b38920d4a008b989b08020d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoSleepCombat,You cannot sleep while in combat.,전투 중에는 잠을 잘 수 없습니다.,d8a202cb8620c8a608b78bc1a80220d8a005c7a80420d8a00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoSleepHostilActorsNear,You cannot sleep when enemies are near by.,주변에 적이 있어 잠을 잘 수 없습니다.,c886d5a302b78b20d8a201b78920d7a914b78220d8a005c7a80420d8a00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoWaitHostilActorsNear,You cannot wait when enemies are near by.,주변에 적이 있어 대기할 수 없습니다.,c886d5a302b78b20d8a201b78920d7a914b78220b28ab089dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoWaitInCombat,You cannot wait while in combat.,전투 중에는 대기할 수 없습니다.,d8a202cb8620c8a608b78bc1a80220b28ab089dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
-sNoWaitUnderWater,You cannot wait while under water.,물속에서는 대기할 수 없습니다.,c4a604c6a401b78bb682c1a80220b28ab089dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_gmst_review
 sSaveGameDeviceError,There was an error accessing the device.  Please try again.,저장 장치를 사용할 수 없습니다. 다시 시도하세요.,b882d8a00820d8a008b989c3a80420b680c7a508dda00420c68620d7a21fc6a806b189b2802e20b280b68920b689c284bd80b68bc7852e00,manual_exe_gmst_review
 sSetMarkerQuestion,Do you want to set your marker?,표식을 설정하시겠습니까?,cc85d6a901c7a80420d6a204d8a208bd80b689d0ab14c6a806b189be803f00,manual_exe_gmst_review
+sAbortText,Abort,중단,c8a608d2a00200,manual_exe_ui_audit
+sActivateCreatureCalmed,The creature is calmed and cannot respond.,진정된 생물은 반응하지 않습니다.,d8a902d8a208e29a0220d6aa08c4a604c7a80220d5a002c7a808bd80b88920d7a017c6a806b189b2802e00,manual_exe_ui_audit
+sActivateNPCCalmed,is calmed and cannot respond.,은(는) 진정되어 반응하지 않습니다.,c7a80228c1a8022920d8a902d8a208d295b78220d5a002c7a808bd80b88920d7a017c6a806b189b2802e00,manual_exe_ui_audit
+sAddAnEffect,You must add at least one effect in order to create a spell.,주문을 만들려면 효과를 하나 이상 추가해야 합니다.,c886c4a602c7a80420d4a002c2a804b383d4a30220cd85d090c3a80420bd80b18020b789d6a00820c986b080bd8ab78120dda006b189b2802e00,manual_exe_ui_audit
+sAddItemtoInventory,added to the player's inventory,인벤토리에 추가되었습니다,d7a902d5ab02cb84b389b78b20c986b080d295d7a214c6a806b189b28000,manual_exe_ui_audit
+sAddItemtoInventoryText,removed from the player's inventory,인벤토리에서 제거되었습니다,d7a902d5ab02cb84b389b78bb68220b88bb082d295d7a214c6a806b189b28000,manual_exe_ui_audit
+sAddItemtoSpellList,added to the player's spell list,주문 목록에 추가되었습니다,c886c4a60220c4a401c3a401b78b20c986b080d295d7a214c6a806b189b28000,manual_exe_ui_audit
+sAddedEffects,Added Effects,추가된 효과,c986b080e29a0220cd85d09000,manual_exe_ui_audit
+sAll,All,전체,d8a202b98b00,manual_exe_ui_audit
+sAntiAliasing,Anti-aliasing,안티앨리어싱,d7a002bb89d7aa04b389b782d6a90800,manual_exe_ui_audit
+sAreaText,Area,범위,d5a205d79700,manual_exe_ui_audit
+sAttributeText,Attribute,능력치,c1a808d3a301b98900,manual_exe_ui_audit
+sBald,Bald,대머리,b28ab482b38900,manual_exe_ui_audit
+sBloom,Bloom,블룸,c5a804c3a60500,manual_exe_ui_audit
+sCanNotEquipQuestArrows,You can not fire this quest arrows.,이 퀘스트 화살은 발사할 수 없습니다.,b78920da8fc688cb8820dd90d6a004c7a80220d5a004b680dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sCantRaiseAnyAttributes,Perfection cannot be improved upon. Your attributes are as high as they can go.,더 이상 향상시킬 수 없습니다. 모든 능력치가 최고치입니다.,b28220b789d6a00820dda108d6a008b689daa90420c68620d7a21fc6a806b189b2802e20c484c2a80220c1a808d3a301b989b08020d995c084b989d7a906b189b2802e00,manual_exe_ui_audit
+sChoose,Choose,선택,d6a202dbaa0100,manual_exe_ui_audit
+sControlsMenuConfirmReset1,Reset all,모든,c484c2a80200,manual_exe_ui_audit
+sControlsMenuConfirmReset2,mappings to their default values,키 설정을 기본값으로 초기화합니다,ba8920d6a204d8a208c7a80420b089c5a402d0a01fc788c38420c984b089dd90dda006b189b28000,manual_exe_ui_audit
+sControlsMenuInstructions1,Press the,이 동작에 지정할,b78920c2a408d8a001b78b20b889d8a208dda00400,manual_exe_ui_audit
+sControlsMenuInstructions2,button you want mapped to this action.,버튼을 누르십시오.,b582cba802c7a80420c186c388d6a906b689c7842e00,manual_exe_ui_audit
+sCreaturesDontYield,Creatures never accept a yield!,생물은 항복을 받아들이지 않습니다!,d6aa08c4a604c7a80220dda008c5a401c7a80420d5a003b780c2a804b789b88920d7a017c6a806b189b2802100,manual_exe_ui_audit
+sCustomClassDefaultName,Adventurer,모험가,c484dda205b08000,manual_exe_ui_audit
+sDiscoveredText,You have discovered,발견:,d5a004d0a3023a00,manual_exe_ui_audit
+sDownloads,Downloads,다운로드,b280c7a602c384c28800,manual_exe_ui_audit
+sDownloadsAvailable,New Content Available,새 콘텐츠 사용 가능,b68a20caa402dbab02c98820b680c7a50820b080c1a80800,manual_exe_ui_audit
+sDownloadsNotAvail,No New Content Available,새 콘텐츠 없음,b68a20caa402dbab02c98820d7a21fc7a80500,manual_exe_ui_audit
+sDurationText,Duration,지속 시간,b889c6a40120b689d0a00200,manual_exe_ui_audit
+sEnchantedItem,enchanted item,마법부여 아이템,b480d5a206c586b78320b780b789dbab0500,manual_exe_ui_audit
+sEnchantmentSuccess,Congratulations!  You have created a new enchanted item.,축하합니다! 새로운 마법부여 아이템을 만들었습니다.,c9a601bd80dda006b189b2802120b68ac384c7a60220b480d5a206c586b78320b780b789dbab05c7a80420d4a002c2a804d7a214c6a806b189b2802e00,manual_exe_ui_audit
+sEntryInstructions1,Enter a name for the,만들려는,d4a002c2a804b383c1a80200,manual_exe_ui_audit
+sEntryInstructions2,you are trying to create.,의 이름을 입력하십시오.,d79820b789c3a805c7a80420d7a906d3a301bd80d6a906b689c7842e00,manual_exe_ui_audit
+sEyesTex,Eye shades,눈 음영,c1a60220c7a805d7a30800,manual_exe_ui_audit
+sFileNotFound,File does not exist,파일이 없습니다,bc80d7a904b78920d7a21fc6a806b189b28000,manual_exe_ui_audit
+sFindingContentMessage,Looking for content.  Please wait.,콘텐츠를 찾는 중입니다. 잠시 기다려 주십시오.,caa402dbab02c988c3a80420d9a00cc1a80220c8a608d7a906b189b2802e20d8a005b68920b089b280b38320c886d6a906b689c7842e00,manual_exe_ui_audit
+sGender,Gender,성별,d6a208d5a30400,manual_exe_ui_audit
+sGeneralFace,General(Face),전체(얼굴),d8a202b98b28d7a204c0a6042900,manual_exe_ui_audit
+sGeneralSkin,General(Skin),전체(피부),d8a202b98b28bc89c5862900,manual_exe_ui_audit
+sGiveAway,Give away,주기,c886b08900,manual_exe_ui_audit
+sGotAwayWithStealing,got away with stealing,도둑질에 성공했습니다,c284c2a601d8a904b78b20d6a208c0a408ddaa14c6a806b189b28000,manual_exe_ui_audit
+sHDR,HDR,HDR,48445200,manual_exe_ui_audit
+sHeavyArmorNoJump,Your heavy armor prevents you from jumping.,중갑 때문에 점프할 수 없습니다.,c8a608d0a00620bf8ac4a602b78b20d8a205cc88dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sHeavyArmorSink,Your heavy armor is causing you to sink.,중갑의 무게 때문에 가라앉고 있습니다.,c8a608d0a006d79820c486b08b20bf8ac4a602b78b20b080b380d7a016c08420d7a914c6a806b189b2802e00,manual_exe_ui_audit
+sHigh,High,높음,c1a411c7a80500,manual_exe_ui_audit
+sIgnoreText,Ignore,무시,c486b68900,manual_exe_ui_audit
+sIngredientFail, Ingredient had no effect., 재료에서 아무 효과도 얻지 못했습니다.,20b88ac385b78bb68220b780c48620cd85d090c28420d7a203b88920c4a407ddaa14c6a806b189b2802e00,manual_exe_ui_audit
+sInvalidPickpocket,You cannot place items in a container while pickpocketing.,소매치기 중에는 상대 인벤토리에 아이템을 넣을 수 없습니다.,c684b48ab989b08920c8a608b78bc1a80220d6a008b28a20d7a902d5ab02cb84b389b78b20b780b789dbab05c7a80420d1a212c7a80420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sJoyUpLeft,Up-Left,왼쪽 위,e79a02f5a40120d79700,manual_exe_ui_audit
+sKeyLocked,That key cannot be remapped,이 키는 다시 지정할 수 없습니다,b78920ba89c1a80220b280b68920b889d8a208dda00420c68620d7a21fc6a806b189b28000,manual_exe_ui_audit
+sKnownEffects,Known Effects,알려진 효과,d7a004b383d8a90220cd85d09000,manual_exe_ui_audit
+sLarge,Large,큼,caa80500,manual_exe_ui_audit
+sLeaveMarker,Leave It,그대로 두기,c088b28ac38420c286b08900,manual_exe_ui_audit
+sLevelUp17,"Life isn't over. You can still get smarter, or cleverer, or more experienced, or meaner -- but your body and soul just aren't going to get any younger.","삶은 아직 끝나지 않았다. 더 똑똑해지고, 영리해지고, 경험을 쌓고, 더 냉혹해질 수도 있다. 하지만 몸과 영혼은 더 젊어지지 않는다.",d6a019c7a80220b780d8a90120cea810b180b88920d7a017d7a014b2802e20b28220cfa401cfa401bd8ab889c0842c20d7a308b389bd8ab889c0842c20d0a308dda205c7a80420f7a012c0842c20b28220d1aa08cda401bd8ad8a90420c686c28420d7a914b2802e20bd80b889d4a00220c4a405d09020d7a308cda402c7a80220b28220d8a219b782b889b88920d7a017c1a802b2802e00,manual_exe_ui_audit
+sLevelUp6,"You sense yourself more aware, more open to new ideas. You've learned a lot about Cyrodiil. It's hard to believe how ignorant you were -- but now you have so much more to learn.","새로운 생각에 더 열린 자신을 느낀다. 시로딜에 대해 많은 것을 배웠다. 예전의 무지가 믿기지 않지만, 아직 배울 것은 훨씬 많다.",b68ac384c7a60220d6aa08d0a001b78b20b28220d7a304d3a90220b880d6a902c7a80420c188dea902b2802e20b689c384d2a904b78b20b28abd8a20d4a017c7a80220d0a207c7a80420b58ae79b14b2802e20b78dd8a202d79820c486b889b08020d4a903b089b88920d7a017b889d4a0022c20b780d8a90120b58ac7a60420d0a207c7a80220ed9b04f7a90220d4a017b2802e00,manual_exe_ui_audit
+sLockLevelText,Lock Level,자물쇠 난이도,b880c4a604d69520d1a002b789c28400,manual_exe_ui_audit
+sMagicAlreadyFull,"Because your Magicka is at maximum, the Welkynd Stone remains charged.",매지카가 최대치라 웰킨드 스톤의 힘이 소모되지 않았습니다.,b48ab889ba80b08020d995b28ab989b38020e7af04daa902c28820c688cba402d79820dda905b78920c684c484d295b88920d7a017d7a014c6a806b189b2802e00,manual_exe_ui_audit
+sMagicCastConstant,Apparel,의복,d798c5a40100,manual_exe_ui_audit
+sMagicCastOnce,Scroll,두루마리,c286c386b480b38900,manual_exe_ui_audit
+sMagicCastWhenStrikes,Weapon,무기,c486b08900,manual_exe_ui_audit
+sMagicCastWhenUsed,Staff,지팡이,b889dca008b78900,manual_exe_ui_audit
+sMagicEffectItemCreateLock,Create,제작,b88bd8a00100,manual_exe_ui_audit
+sMagicEffectItemFor,for,대상,b28ad6a00800,manual_exe_ui_audit
+sMagicEffectItemIn,in,동안,c2a408d7a00200,manual_exe_ui_audit
+sMagicEffectItemOn,on,에,b78b00,manual_exe_ui_audit
+sMagicProjectileTypeBall,Ball,구체,c086b98b00,manual_exe_ui_audit
+sMagicProjectileTypeBolt,Bolt,화살,dd90d6a00400,manual_exe_ui_audit
+sMagicProjectileTypeFog,Fog,안개,d7a002b08a00,manual_exe_ui_audit
+sMagicProjectileTypeSpray,Spray,분사,c5a602b68000,manual_exe_ui_audit
+sMagicRangeStrike,Strike,타격,bb80d0a30100,manual_exe_ui_audit
+sMagicRangeTarget,Target,대상,b28ad6a00800,manual_exe_ui_audit
+sMagicTypeEnchantment,Enchantment,마법부여,b480d5a206c586b78300,manual_exe_ui_audit
+sMagicTypeLesserPower,Lesser Power,하급 능력,bd80c0a80620c1a808d3a30100,manual_exe_ui_audit
+sMagicTypePoison,Poison,독,c2a40100,manual_exe_ui_audit
+sMagicTypePotion,Potion,물약,c4a604d7a10100,manual_exe_ui_audit
+sMagicTypePower,Power,능력,c1a808d3a30100,manual_exe_ui_audit
+sMagicTypeSpell,Spell,주문,c886c4a60200,manual_exe_ui_audit
+sMagicTypeWortcraft,Wortcraft,약초술,d7a101c984c6a60400,manual_exe_ui_audit
+sMagnitudeIsLevelText,Target Level,대상 레벨,b28ad6a00820b38bd5ab0400,manual_exe_ui_audit
+sMagnitudeText,Magnitude,강도,d0a008c28400,manual_exe_ui_audit
+sMakeDefaults,Make these your default settings?,이 설정을 기본값으로 지정하시겠습니까?,b78920d6a204d8a208c7a80420b089c5a402d0a01fc788c38420b889d8a208bd80b689d0ab14c6a806b189be803f00,manual_exe_ui_audit
+sMedium,Medium,중간,c8a608d0a00200,manual_exe_ui_audit
+sMiscArtifactsFound,Artifacts Found: ,발견한 유물: ,d5a004d0a302dda00220c787c4a6043a2000,manual_exe_ui_audit
+sMiscJokesTold,Jokes Told: ,한 농담: ,dda00220c1a408d2a0053a2000,manual_exe_ui_audit
+sMiscPeopleFedOn,Necks Bitten: ,흡혈한 사람: ,cda806dda304dda00220b680d3a0053a2000,manual_exe_ui_audit
+sMiscSoulsTrapped,Souls Trapped: ,포획한 영혼: ,cc84ed9a01dda00220d7a308cda4023a2000,manual_exe_ui_audit
+sMiscTimesCured,Times Cured: ,치료 횟수: ,b989c38520ed9a07c6863a2000,manual_exe_ui_audit
+sMiscUses,Uses,사용 횟수,b680c7a50820ed9a07c68600,manual_exe_ui_audit
+sMissingName,<Missing Name>,<이름 없음>,3cb789c3a80520d7a21fc7a8053e00,manual_exe_ui_audit
+sMouthLips,Mouth(Lips),입(입술),d7a90628d7a906c6a6042900,manual_exe_ui_audit
+sMoveMarker,Move It,옮기기,c7a419b089b08900,manual_exe_ui_audit
+sNoDevice,No active devices were detected,활성화된 장치를 찾지 못했습니다,ed9904d6a208dd90e29a0220d8a008b989c3a80420d9a00cb88920c4a407ddaa14c6a806b189b28000,manual_exe_ui_audit
+sNoFX,You need to add at least one effect in order to create an enchantment.,마법부여를 만들려면 효과를 하나 이상 추가해야 합니다.,b480d5a206c586b783c3a80420d4a002c2a804b383d4a30220cd85d090c3a80420bd80b18020b789d6a00820c986b080bd8ab78120dda006b189b2802e00,manual_exe_ui_audit
+sNoFastTravelScriptBlock,Fast travel is currently unavaliable from this location.,현재 위치에서는 빠른 이동을 할 수 없습니다.,dda302b88a20d797b989b78bb682c1a80220f080c3a80220b789c2a408c7a80420dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sNoItem,You must first select an item to enchant.,먼저 마법부여할 아이템을 선택해야 합니다.,d4a202b88220b480d5a206c586b783dda00420b780b789dbab05c7a80420d6a202dbaa01bd8ab78120dda006b189b2802e00,manual_exe_ui_audit
+sNoLockPick,Door is locked and you don't have a lockpick,문이 잠겨 있으며 락픽이 없습니다,c4a602b78920d8a005b08320d7a914c788b48320d3a001dca901b78920d7a21fc6a806b189b28000,manual_exe_ui_audit
+sNoLockPickKey,Door is locked you don't have the key or a lockpick.,문이 잠겨 있으며 열쇠나 락픽이 없습니다.,c4a602b78920d8a005b08320d7a914c788b48320d7a304d695b18020d3a001dca901b78920d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sNoMoreFollowers,You have too many followers.,동료가 너무 많습니다.,c2a408c385b08020b182c48620d4a017c6a806b189b2802e00,manual_exe_ui_audit
+sNoMortor,You need a mortor and pestal to make potions.,물약을 만들려면 막자사발이 필요합니다.,c4a604d7a101c7a80420d4a002c2a804b383d4a30220d4a001b880b680d5a004b78920dca904c785dda006b189b2802e00,manual_exe_ui_audit
+sNoRace,NO RACE,종족 없음,c8a408c8a40120d7a21fc7a80500,manual_exe_ui_audit
+sNoRestart,"No, keep playing.","아니요, 계속 플레이합니다.",b780b189c7852c20b08dc6a40120cca804b38bb789dda006b189b2802e00,manual_exe_ui_audit
+sNoSoul,You need to select a Soul Gem filled with a soul in order to enchant an object.,마법부여하려면 영혼이 담긴 소울 젬을 선택해야 합니다.,b480d5a206c586b783bd80b383d4a30220d7a308cda402b78920d2a005d0a90220c684c7a60420d8ab05c7a80420d6a202dbaa01bd8ab78120dda006b189b2802e00,manual_exe_ui_audit
+sNoSoulGem,You need a soul gem to recharge.,재충전하려면 소울 젬이 필요합니다.,b88ac9a608d8a202bd80b383d4a30220c684c7a60420d8ab05b78920dca904c785dda006b189b2802e00,manual_exe_ui_audit
+sNoText,No,아니요,b780b189c78500,manual_exe_ui_audit
+sNoseTex,Nose shades,코 음영,ca8420c7a805d7a30800,manual_exe_ui_audit
+sNotEnoughRoomWarning,You do not have enough room to drop this object.,이 물건을 떨어뜨릴 공간이 부족합니다.,b78920c4a604d0a202c7a80420dfa204b782cf88d3a90420c0a408d0a002b78920c586c8a401dda006b189b2802e00,manual_exe_ui_audit
+sOKText,OK,확인,ed9901d7a90200,manual_exe_ui_audit
+sOldDownloadsAvailable,View Available Content,사용 가능한 콘텐츠 보기,b680c7a50820b080c1a808dda00220caa402dbab02c98820c584b08900,manual_exe_ui_audit
+sOpenedContainer,Opened the container with a key.,열쇠로 보관함을 열었습니다.,d7a304d695c38420c584e09902dda005c7a80420d7a304d7a214c6a806b189b2802e00,manual_exe_ui_audit
+sPCControlsTextNone,assign a button in the Controls menu,조작 설정에서 버튼을 지정하십시오,c884d8a00120d6a204d8a208b78bb68220b582cba802c7a80420b889d8a208bd80d6a906b689c78400,manual_exe_ui_audit
+sPlayer,player,플레이어,cca804b38bb789b78200,manual_exe_ui_audit
+sPoisonStaffsNotAllowedMessage,Staffs cannot be poisoned.,지팡이에는 독을 바를 수 없습니다.,b889dca008b789b78bc1a80220c2a401c7a80420b580c3a80420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sPotion,potion,물약,c4a604d7a10100,manual_exe_ui_audit
+sPotionFailed,Your potion failed and your ingredients were lost,물약 제조에 실패하여 재료를 잃었습니다,c4a604d7a10120b88bc884b78b20d6a904bc8abd80b78320b88ac385c3a80420d7a91ed7a214c6a806b189b28000,manual_exe_ui_audit
+sQuickKeyCantEquipBound,Cannot quick key bound item.,소환된 아이템은 단축키에 지정할 수 없습니다.,c684ed9902e29a0220b780b789dbab05c7a80220d2a002c9a601ba89b78b20b889d8a208dda00420c68620d7a21fc6a806b189b2802e00,manual_exe_ui_audit
+sQuickKeyConsumed,consumed.,사용되었습니다.,b680c7a508d295d7a214c6a806b189b2802e00,manual_exe_ui_audit
+sQuickKeyString,Hotkey,단축키,d2a002c9a601ba8900,manual_exe_ui_audit
+sRaceDescription,Race Description,종족 설명,c8a408c8a40120d6a204d4a30800,manual_exe_ui_audit
+sRandomDoorTeleportFailureMessage,This door leads nowhere.,이 문은 어디로도 이어지지 않습니다.,b78920c4a602c7a80220b782b289c384c28420b789b782b889b88920d7a017c6a806b189b2802e00,manual_exe_ui_audit
+sRangeText,Range,사거리,b680b082b38900,manual_exe_ui_audit
+sRemoveMarker,Remove It,제거,b88bb08200,manual_exe_ui_audit
+sRepairAll,Repair all,모두 수리,c484c28620c686b38900,manual_exe_ui_audit
+sRetryText,Retry,재시도,b88ab689c28400,manual_exe_ui_audit
+sSeasonFall,Fall,가을,b080c7a80400,manual_exe_ui_audit
+sSeasonSpring,Spring,봄,c5a40500,manual_exe_ui_audit
+sSeasonSummer,Summer,여름,b783c3a80500,manual_exe_ui_audit
+sSeasonWinter,Winter,겨울,b083c7a60400,manual_exe_ui_audit
+sSigilStoneConstantEffect,Constant effect.,상시 효과.,d6a008b68920cd85d0902e00,manual_exe_ui_audit
+sSmall,Small,작음,d8a001c7a80500,manual_exe_ui_audit
+sSpell,spell,주문,c886c4a60200,manual_exe_ui_audit
+sSpellmakingRequire2,skill of,필요 기술,dca904c78520b089c6a60400,manual_exe_ui_audit
+sSummonedCreatureFit,The Summoned Creature is not able to fit in summoned area.,소환할 공간이 부족합니다.,c684ed9902dda00420c0a408d0a002b78920c586c8a401dda006b189b2802e00,manual_exe_ui_audit
+sTargetTypeBrew,Brew,제조,b88bc88400,manual_exe_ui_audit
+sTargetTypeDrink,Drink,마시기,b480b689b08900,manual_exe_ui_audit
+sTargetTypeRead,Read,읽기,d7a918b08900,manual_exe_ui_audit
+sTargetTypeSit,Sit,앉기,d7a016b08900,manual_exe_ui_audit
+sTravelQuestion,Do you want to travel to,이동하시겠습니까:,b789c2a408bd80b689d0ab14c6a806b189be803a00,manual_exe_ui_audit
+sTurnedOn,is turned on,켜졌습니다,ba83d8a314c6a806b189b28000,manual_exe_ui_audit
+sUActnSldleft,Slide Left,왼쪽으로 이동,e79a02f5a401c788c38420b789c2a40800,manual_exe_ui_audit
+sUActnSldright,Slide Right,오른쪽으로 이동,c784c3a802f5a401c788c38420b789c2a40800,manual_exe_ui_audit
+sUActnTogglepov,Change View,시점 변경,b689d8a20520d5a302d0a30800,manual_exe_ui_audit
+sVarlaStoneMessage,"You have used a Varla Stone's power to restore your enchanted items charge, and now it is gone.",발라 스톤의 힘으로 마법 아이템의 충전량을 회복했습니다. 발라 스톤은 소멸했습니다.,d5a004b38020c688cba402d79820dda905c788c38420b480d5a20620b780b789dbab05d79820c9a608d8a202d3a108c7a80420dd95c5a401ddaa14c6a806b189b2802e20d5a004b38020c688cba402c7a80220c684d4a304ddaa14c6a806b189b2802e00,manual_exe_ui_audit
+sVideo,Video,비디오,b589b289c78400,manual_exe_ui_audit
+sYesRestart,"Yes, restart the game.","예, 게임을 다시 시작합니다.",b78d2c20b08bd7a905c7a80420b280b68920b689d8a001dda006b189b2802e00,manual_exe_ui_audit
+sYesToAllText,Yes to all,모두 예,c484c28620b78d00,manual_exe_ui_audit
+sHolidayEmperorsBirthday,Emperor's Birthday,황제의 생일,ed9908b88bd79820d6aa08d7a90400,manual_exe_ui_audit
+sHolidayFirstPlanting,First Planting,첫 파종일,d9a20720bc80c8a408d7a90400,manual_exe_ui_audit
+sHolidayHarvestsEnd,Harvest's End,수확의 끝,c686ed9901d79820cea81000,manual_exe_ui_audit
+sHolidayJestersDay,Jester's Day,광대의 날,e09908b28ad79820d1a00400,manual_exe_ui_audit
+sHolidayMerchantsFestival,Merchant's Festival,상인의 축제,d6a008d7a902d79820c9a601b88b00,manual_exe_ui_audit
+sHolidayMidYearCelebration,Mid Year Celebration,한여름 축제,dda002b783c3a80520c9a601b88b00,manual_exe_ui_audit
+sHolidayNewLifeFestival,New Life Festival,새 생명 축제,b68a20d6aa08d4a30820c9a601b88b00,manual_exe_ui_audit
+sHolidayNorthWindsPrayer,North Wind's Prayer,북풍의 기도,c5a601cca608d79820b089c28400,manual_exe_ui_audit
+sHolidayOldLifeFestival,Old Life Festival,옛 생명 축제,d7ad0720d6aa08d4a30820c9a601b88b00,manual_exe_ui_audit
+sHolidaySecondPlanting,Second Planting,두 번째 파종일,c28620d5a202f28a20bc80c8a408d7a90400,manual_exe_ui_audit
+sHolidaySouthWindsPrayer,South Wind's Prayer,남풍의 기도,d1a005cca608d79820b089c28400,manual_exe_ui_audit
+sHolidaySunsRest,Sun's Rest,태양의 휴식,bb8ad7a108d79820cd87d6a90100,manual_exe_ui_audit
+sHolidayTalesAndTallows,Tales and Tallows,이야기와 양초의 날,b789b781b089d79020d7a108c984d79820d1a00400,manual_exe_ui_audit
+sHolidayWarriorsFestival,Warrior's Festival,전사의 축제,d8a202b680d79820c9a601b88b00,manual_exe_ui_audit
+sHolidayWitchesFestival,Witches' Festival,마녀의 축제,b480b183d79820c9a601b88b00,manual_exe_ui_audit
