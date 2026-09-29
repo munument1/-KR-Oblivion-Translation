@@ -8,7 +8,7 @@
 	<_load> Å¦³‚Ç„°‰ </_load>
 	<_options> í™Ğ£Ö¢Ø¢ </_options>
 	<_credits> ¸‹Ø Ø© </_credits>
-	<_destruction> Destruction </_destruction>
+	<_destruction> ¼€Ğ• ´€Õ¢ </_destruction>
 	<_prev> ·‰Ø¢ </_prev>
 	<_take> °€¸‰°‰ </_take>
 	<_next> ²€Ç¨ </_next>
@@ -42,7 +42,7 @@
 	<_sellingitemsat> Selling Items at </_sellingitemsat>
 	<_ok> í™×© </_ok>
 	<_cancel> Ù—Æ„ </_cancel>
-	<_acrobatic> Acrobatic </_acrobatic>
+	<_acrobatic> À¤· </_acrobatic>
 	<_howmany> Æ†Ó¡Ç¨ Ö¢Ûª½€¶‹Ç…. </_howmany>
 	<_hammers> Hammers </_hammers>
 	<_hour> hour </_hour>
@@ -51,7 +51,7 @@
 	<_dayoftheweek> DayOfTheWeek (XX:XX PM) </_dayoftheweek>
 	<_monthdayyear> Month Day, Year </_monthdayyear>
 	<_trainerskill> À…à™×˜ Æ†È¦: </_trainerskill>
-	<_skilllevel> Skill Level: </_skilllevel>
+	<_skilllevel> Æ¦Ó£Â„: </_skilllevel>
 	<_cost> Í¦Ó£ µ‰Ç¥: </_cost>
 	<_create> ¸‹Ø  </_create>
 	<_warning> Warning </_warning>
@@ -96,7 +96,7 @@
 	<_fatigue> ¼‰Ã„Â„ </_fatigue>
 	<_minorskills> Å„È„ ÆˆÚ© </_minorskills>
 	<_levelprogress> ³‹Õ« Ø©İªÖ í™ </_levelprogress>
-	<_nextrank> Next Rank: </_nextrank>
+	<_nextrank> ²€Ç¨ Â¨À¨: </_nextrank>
 	<_button> Button </_button>
 	<_mastervolume> Ø¢¹‹ Ç¨Ó¡: </_mastervolume>
 	<_voicevolume> Ä¤Æ„³‰: </_voicevolume>
@@ -140,7 +140,7 @@
 	<_actorlod> ×©Ä¦ °€¶‰°‚³‰: </_actorlod>
 	<_itemlod> ·€·‰Û« °€¶‰°‚³‰: </_itemlod>
 	<_objectlod> ¶€Ä¦ °€¶‰°‚³‰: </_objectlod>
-	<_attributedescription> Attribute Description </_attributedescription>
+	<_attributedescription> Á¨Ó£¹‰ Ö¢Ô£ </_attributedescription>
 	<_theapprentice> É„Å„ ¸€³‰ </_theapprentice>
 	<_theatronach> ·€ËˆÃ„±€¹‰ ¸€³‰ </_theatronach>
 	<_thelady> Æ¦±ƒ ¸€³‰ </_thelady>
@@ -154,7 +154,7 @@
 	<_thethief> Â„Â¦ ¸€³‰ </_thethief>
 	<_thetower> »€×– ¸€³‰ </_thetower>
 	<_thewarrior> Ø¢¶€ ¸€³‰ </_thewarrior>
-	<_birthsigndescription> BirthSign Description </_birthsigndescription>
+	<_birthsigndescription> Õ£¸€³‰ Ö¢Ô£ </_birthsigndescription>
 	<_specialization> Ø¢Ä¦ Å¦· </_specialization>
 	<_combat> Ø¢Ë† </_combat>
 	<_favored> Ö¢Í„ </_favored>
@@ -176,10 +176,10 @@
 	<_random> Ä†Ø ×— </_random>
 	<_undo> Ò•Â¤³‰°‰ </_undo>
 	<_reset> É„°‰İ </_reset>
-	<_armorer> Armorer </_armorer>
+	<_armorer> Õ ·‚À† Æ†³‰ </_armorer>
 	<_magic> ´€Õ¢ </_magic>
 	<_stealth> Â„Ø¢ </_stealth>
-	<_specializationdescription> Specialization Description </_specializationdescription>
+	<_specializationdescription> Ø¢Ä¦ Å¦· Ö¢Ô£ </_specializationdescription>
 	<_threeattributes> Ğ İİ  Æ¤Ö¢ 3°€¸‰Ã¨ Ö¢Ûª½€¶‹Ç…. </_threeattributes>
 	<_map> ¸‰Â„ </_map>
 	<_questadded> "Quest Added" </_questadded>

@@ -113,6 +113,9 @@ BASE_MENU_GMSTS = (
      bytes.fromhex("b480d5a20600")),
     (0x00F0002A, b"sSpecNameStealth\0", b"Stealth\0",
      bytes.fromhex("c7a802d6a90200")),
+    (0x00F0002B, b"sLevelPopUpText\0",
+     b"To increase your level, make progress learning your class's major skills.\0",
+     bytes.fromhex("b38bd5ab04c7a80420c7a404b389b383d4a30220d8a901d7a206d79820c886c78520b089c6a604c7a80420d7a901bd8320d8a902ddaa08c284c3a80420c1a411b789b68bc7852e00")),
 )
 EXE_GMST_PATTERN = re.compile(rb"(?<![A-Za-z0-9_])(s[A-Z][A-Za-z0-9_]{2,60})\x00{1,4}([\x20-\x7e]{1,180})\x00")
 PRINTF_PATTERN = re.compile(r"%(?:[-+0#]*\d*(?:\.\d+)?[a-zA-Z%])")
@@ -240,33 +243,22 @@ def existing_gmst_keys(path: Path) -> set[bytes]:
     return keys
 
 
-def load_exe_menu_gmsts(csv_paths, exe_path: Path, esm_path: Path):
-    if not exe_path.is_file():
-        raise ValueError(f"Oblivion.exe is required beside the Data folder: {exe_path}")
-    defaults = {(match[1], match[2]) for match in EXE_GMST_PATTERN.finditer(exe_path.read_bytes())}
-    existing = existing_gmst_keys(esm_path)
-    result = list(BASE_MENU_GMSTS)
-    seen = {row[1].rstrip(b"\0") for row in result}
-    for csv_path in csv_paths:
-      with csv_path.open(encoding="utf-8-sig", newline="") as stream:
+def load_menu_gmsts(existing_csv: Path, new_csv: Path, translations):
+    with existing_csv.open(encoding="utf-8-sig", newline="") as stream:
         for line, row in enumerate(csv.DictReader(stream), 2):
-            key = row["gmst"].encode("ascii")
-            english = row["exe_english"].encode("ascii")
-            korean = bytes.fromhex(row["encoded_hex"])
-            if (key, english) not in defaults:
-                raise ValueError(f"EXE default differs from translation CSV line {line}: {row['gmst']}")
-            if key in seen or not re.fullmatch(rb"s[A-Z][A-Za-z0-9_]*", key):
-                raise ValueError(f"duplicate or invalid GMST key at CSV line {line}")
-            if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
-                raise ValueError(f"invalid GMST translation bytes at CSV line {line}")
-            if PRINTF_PATTERN.findall(row["exe_english"]) != PRINTF_PATTERN.findall(row["korean"]):
-                raise ValueError(f"GMST placeholder mismatch at CSV line {line}")
-            if key not in existing:
-                formid = 0x00F00001 + len(result)
-                result.append((formid, key + b"\0", english + b"\0", korean))
-            seen.add(key)
+            fid = int(row["raw_formid"], 16); key = row["editor_id"].encode("ascii")
+            korean = bytes.fromhex(row["new_bytes_hex"])
+            item = Translation("menu_gmst_master", b"GMST", fid, b"DATA", row["old_english"], korean, line, key, 0)
+            translations[(MASTER, b"GMST", fid, b"DATA")] = [item]
+    result=[]; seen=set()
+    with new_csv.open(encoding="utf-8-sig", newline="") as stream:
+        for line, row in enumerate(csv.DictReader(stream), 2):
+            fid=int(row["formid"],16); key=row["edid"].encode("ascii"); english=row["english"].encode("cp1252"); korean=bytes.fromhex(row["encoded_hex"])
+            if fid in seen or not re.fullmatch(rb"s[A-Z][A-Za-z0-9_]*", key): raise ValueError(f"duplicate or invalid menu GMST at line {line}")
+            if not korean.endswith(b"\0") or b"\0" in korean[:-1]: raise ValueError(f"invalid menu GMST bytes at line {line}")
+            if PRINTF_PATTERN.findall(row["english"]) != PRINTF_PATTERN.findall(row["korean"]): raise ValueError(f"menu GMST placeholder mismatch at line {line}")
+            result.append((fid,key+b"\0",english+b"\0",korean)); seen.add(fid)
     return tuple(result)
-
 
 def load_quest_loading_translations(path: Path):
     quest = {}
@@ -568,8 +560,7 @@ def main() -> int:
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
-    menu_gmsts = load_exe_menu_gmsts((HERE / "exe_gmst_translations.csv", HERE / "exe_gmst_extra.csv"),
-                                      source_dir.parent / "Oblivion.exe", source_dir / MASTER)
+    menu_gmsts = load_menu_gmsts(HERE / "menu_gmst_existing_105.csv", HERE / "menu_gmst_new_821.csv", table)
     # Final-review overrides for injected/menu GMST records (00Fxxxxx) do not
     # exist in the original ESM, so normal record matching cannot reach them.
     final_menu_overrides = {}
