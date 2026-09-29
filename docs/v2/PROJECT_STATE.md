@@ -8,120 +8,236 @@
 - 기준 커밋: `97e4679330fda6bf277780e3cb05fa866c5f1cb6`
 - 릴리즈 ZIP: `Oblivion_Original_KR_Installer_v1.0.2.zip`
 - SHA-256: `823128bdc19af509bde91d7ba8f84a3c44887bbdc4fe8e12f85b74e95ea96ab4`
-- v1.0.2는 수정하지 않는다. v2의 번역 원본으로 사용하지 않고 비교/폴백/QA 참고용으로만 사용한다.
+- v1.0.2는 수정하지 않는다.
+- v1 번역은 v2의 신규 번역 원본으로 사용하지 않고 비교/폴백/QA 참고용으로만 사용한다.
+- 예외: 메뉴 GMST 926개는 실제 게임에서 검증된 v1.0.2 번역을 그대로 재사용한다.
 
-## 2. v1.0.2 검증 핵심
+## 2. 현재 작업 환경
 
-- Python 빌드와 최종 PyInstaller EXE 출력: 21개 파일 / diff 0.
-- RACE/FULL 변경 0건. VoiceFix 호환 유지.
-- 메뉴 GMST 참고 ESP 926레코드 / 924 고유 EDID 전수 대조.
-- 기존 Oblivion.esm GMST 105개는 DATA 교체.
-- EXE 전용 GMST 821개는 참고 ESP FormID로 Oblivion.esm에 신규 통합.
-- 별도 메뉴 ESP는 배포하지 않는다.
-- `sLevelPopUpText`는 실제 FormID `00099F12`로 통합.
+현재 v2 주 작업 머신: Windows 설치 Steam Deck
+로컬 저장소/작업 루트: `C:\오블리비언`
 
-## 3. v2 로컬 작업 구조
+작업 디렉터리:
+- `v2_work\00_incoming_sst` — 최신 Skyrim SST 입력
+- `v2_work\01_glossary` — Oblivion 전용 용어집/증거표
+- `v2_work\02_source_extract` — 정품 영문 원본 신규 추출
+- `v2_work\03_translation_json` — Gemini 입력 배치
+- `v2_work\04_gemini_raw` — Gemini 확정 원시 결과
+- `v2_work\05_sol_review` — GPT-5.6 Sol 검수/확정
+- `v2_work\06_build_inputs` — 빌더 입력
+- `v2_work\07_test_build` — 테스트 빌드
+- `v2_work\logs` — 배치/API/검수 로그 및 폐기/파일럿 보관
+- `v2_tools` — 재현 가능한 v2 파이프라인 스크립트
 
-로컬 루트: `D:\Codex_Trans\오블리비언\v2_work`
+`v2_work`와 API 키 파일은 Git 추적 대상이 아니다.
 
-- `00_incoming_sst` — 최신 Skyrim SST 입력
-- `01_glossary` — 새 Oblivion 전용 용어집
-- `02_source_extract` — 정품 영문 원본 신규 추출
-- `03_translation_json` — 문맥 포함 Gemini 입력
-- `04_gemini_raw` — Gemini 원시 결과
-- `05_sol_review` — GPT-5.6 Sol 검수/확정
-- `06_build_inputs` — 실제 빌더 입력
-- `07_test_build` — 테스트 빌드
-- `logs` — 배치/API/검수 로그
+## 3. SST 파싱 현황
 
-`v2_work`는 Git 추적 대상이 아니다.
+입력:
+- SST 파일 79개
+- 포맷: SSU8
+- 총 행: 98,568
+- SST 고유 원문(초기 정규화): 77,675
+- SST 충돌 원문: 945
+- 정확 고유 원문-번역 쌍: 78,861
+- 실패 파일: 0
 
-## 4. 원문 소스
+Oblivion과 교차 후:
+- 번역 가능한 SST 원문: 73,267
+- Oblivion 고유 원문: 42,254
+- 정확히 겹치는 원문: 1,451
+- 겹치는 Oblivion 발생 건수: 4,585
+- 관련 SST 충돌: 157
+- 무충돌 exact 후보: 1,294
+- 초기 term-like seed: 1,071
 
-영문 원문은 기존 한국어 패치가 아니라 설치된 정품 파일에서 새로 추출한다.
+## 4. Oblivion 영문 원문 신규 추출
 
-- 게임 Data: `C:\Games\Steam\steamapps\common\Oblivion\Data`
-- 실행 파일: `C:\Games\Steam\steamapps\common\Oblivion\Oblivion.exe`
-- 대상: `Oblivion.esm` + 모든 공식 DLC/확장 ESP + EXE 메뉴/GMST
+정품 영문 게임에서 새로 추출한다. v1 한국어 패치에서 역추출하지 않는다.
 
-## 5. SST 기준
+공식 플러그인 11개:
+- Oblivion.esm
+- Knights.esp
+- DLCBattlehornCastle.esp
+- DLCFrostcrag.esp
+- DLCThievesDen.esp
+- DLCSpellTomes.esp
+- DLCMehrunesRazor.esp
+- DLCVileLair.esp
+- DLCOrrery.esp
+- DLCHorseArmor.esp
+- DLCShiveringIsles.esp (stub)
 
-- v2 용어 기준은 사용자가 확보한 **최신 Skyrim SST**를 최우선으로 한다.
-- Elder7 SST는 v1 참고자료일 뿐 v2 기준으로 고정하지 않는다.
-- SST 전체를 파싱한 뒤 Oblivion에 실제 등장하는 항목만 추려 전용 용어집을 만든다.
-- 동일 영어 원문에 여러 번역이 있으면 자동 확정하지 않는다.
-- 충돌 목록을 만들고 Sol이 문맥/빈도/시리즈 용례를 보고 확정한다.
-- 프로젝트 고유 예외는 별도 override 테이블로 관리한다.
+추출 결과:
+- 공식 플러그인 문자열: 50,414
+- 메뉴 GMST 마스터: 926
+- Oblivion.exe UI 후보: 923
+- 전체 추출 행: 52,263
 
-## 6. 기술적 번역 금지 / 안전 규칙
+안전 분류:
+- TRANSLATE: 44,216
+- TOPIC_STRUCTURE_CHECK: 4,122
+- REVIEW_LOCATION_UNSAFE: 1,953
+- KEEP_ENGLISH_RACE_FULL: 14
+- REVIEW_INTERNAL: 1
+- MENU_GMST: 1,034
+- EXE_UI_CANDIDATE: 923
+
+## 5. 용어집 정책 및 현재 상태
+
+우선순위:
+1. 사용자/프로젝트 확정 용어
+2. 최신 Skyrim SST exact
+3. 최신 Skyrim BOOK/DESC 본문 및 반복 문맥
+4. 현재 한국어 TES 커뮤니티/나무위키 표기 교차검증
+5. Oblivion Remastered 반복 메모리
+6. v1 번역은 마지막 QA/비교용
+
+현재 파일:
+- `01_glossary\OBLIVION_CORE_TERMINOLOGY_V2.csv`
+- `01_glossary\OBLIVION_TERMINOLOGY_CONFLICTS_V2.csv`
+- `01_glossary\OBLIVION_GLOSSARY_V2_ACTIVE.csv`
+- `01_glossary\TERMINOLOGY_EVIDENCE_ALL.csv`
+- `01_glossary\TERMINOLOGY_EVIDENCE_CORE.csv`
+
+현재 수치:
+- 핵심 고유명사/시리즈 용어 확정: 181
+- 문서화된 충돌: 16
+- 활성 용어집: 1,226
+- EXACT_ONLY: 1,045
+- PHRASE_CONTEXT: 181
+
+적용 규칙:
+- SST 일반 용어는 영어 원문 전체가 정확히 일치할 때만 강제.
+- 사람이/근거로 확정한 핵심 고유명사만 문장 내부에서도 강제.
+- PHRASE_CONTEXT는 대소문자를 구분하여 `Anvil`, `Bliss`, `Split` 같은 일반 영어 단어 오적용을 막는다.
+- `Order` 같은 일반어는 단독 강제하지 않고 `Knights of Order`, `Priests of Order` 같은 완전 고유 구문만 사용한다.
+
+주요 확정 예:
+- Vitharn → 비탄 (프로젝트 결정)
+- Jyggalag → 지갈렉
+- Sheogorath → 쉐오고라스
+- Golden Saint → 골든 세인트
+- Dark Seducer → 다크 세듀서
+- Shivering Isles → 쉬버링 아일즈
+- Mankar Camoran → 맨카 캐모런
+- Raven Camoran → 레이븐 캐모런
+- Ruma Camoran → 루마 캐모런
+- Blackwood Company → 블랙우드 컴퍼니
+- Order of the Virtuous Blood → 고귀한 피의 결사
+- Raminus Polus → 라미누스 폴루스
+- Tar-Meena → 타르-미나
+- Nord Winds → 노드의 바람
+
+## 6. 메뉴 GMST 정책
+
+메뉴 GMST는 Gemini에 보내지 않는다.
+v1.0.2에서 게임 검증이 끝난 926개 번역을 v2에서도 그대로 재사용한다.
+
+생성 파일:
+- `06_build_inputs\GMST_REUSE_V1_926.csv`
+- `06_build_inputs\GMST_REUSE_V1_926_REPORT.json`
+
+검증:
+- 926행
+- 924 고유 EDID
+- 한국어 빈 값 1건: `sPlural` / 원문 `(s)`
+- `sPlural`의 빈 한국어는 한국어 복수 접미사가 필요 없으므로 의도적으로 보존한다.
+
+최종 배포 방식은 별도 메뉴 ESP가 아니라 Oblivion.esm 직접 통합을 유지한다.
+
+## 7. 기술적 번역 금지 / 안전 규칙
 
 - RACE/FULL은 영어 원문 유지.
 - 일반 대사/설명 속 종족명은 한국어 번역 가능.
-- CELL/FULL, WRLD/FULL 등 저장 안정성에 영향 가능한 위치명은 v1 안전 규칙을 검토한 뒤 처리.
+- CELL/FULL, WRLD/FULL 등 저장 안정성 영향 가능 위치명은 번역 배치에서 제외/보류.
 - EDID, 스크립트, 파일 경로, 내부 식별자, 바이너리/포맷 제어값은 번역하지 않는다.
-- `%s`, `%d` 등 placeholder, 줄바꿈, 마크업/태그는 반드시 보존.
-- 메뉴 GMST 926개는 플레이어 노출 마스터 목록으로 취급하며 임의 제외하지 않는다.
+- `%s`, `%d` 등 placeholder, 줄바꿈, 마크업/태그를 반드시 보존.
+- DIAL/FULL은 토픽 구조 검증 대상.
+- 내부용 FULL처럼 보이는 문자열은 unchanged가 정상일 수 있다.
 
-## 7. 번역 파이프라인
+## 8. Gemini 번역 프로토콜
 
-1. 최신 SST 전수 파싱 및 정규화
-2. Oblivion 정품 원문 전수 추출
-3. SST와 Oblivion 원문 교차 → 전용 용어집 생성
-4. 기술적 번역 금지 규칙 적용
-5. 문맥 포함 JSON 생성
-6. Gemini Flash Lite 번역
-7. Sol이 영어 원문과 직접 대조 검수
-8. 전역 QA
-9. 빌드 입력 확정
-10. 테스트 빌드 및 diff 검증
+기본 모델: `gemini-3.5-flash-lite`
+대체 가능 계열: `gemini-3.1-flash-lite`
 
-## 8. Gemini 운영
-
-사용 가능한 모델 계열:
-- Gemini 3.5 Flash Lite
-- Gemini 3.1 Flash Lite
-
-실제 API 모델 ID는 작업 시점에 공식 모델 목록으로 확인한다.
-
-제한 기준:
+사용자 제공 제한 기준:
 - RPM 15
 - TPM 250,000
 - RPD 500
 
-API 키는 로컬 비밀 파일에서만 읽고 Git/채팅/로그에 값 자체를 출력하지 않는다.
-4개 키가 동일 프로젝트 쿼터를 공유할 가능성을 고려하며 4배 쿼터로 가정하지 않는다.
-`429 / RESOURCE_EXHAUSTED`는 기록하고 백오프/재시도/키 전환 로직을 사용한다.
+현재 로컬 키 파일에서 실제 API 조회에 성공하는 유효 키 슬롯은 2개였다.
+키 값 자체는 Git/채팅/로그에 절대 기록하지 않는다.
 
-## 9. 번역 JSON 핵심 필드
+구조 안전:
+- 모델에게 FormID/복합 ID 문자열을 재출력시키지 않는다.
+- 각 요청 항목에 단순 정수 `n=1..N`을 부여.
+- 모델은 `{translations:[{n,korean},...]}`만 반환.
+- 로컬에서 n의 누락/중복/재정렬을 검증하고 원래 ID와 결합.
+- 검증 실패 결과는 확정 파일로 저장하지 않는다.
 
-`source_file`, `record_type`, `formid`, `editor_id`, `field`, `occurrence`,
-`quest_stage`, `speaker`, `quest/topic context`, `source_english`,
-`glossary_hits`, `constraints`
+배치 크기:
+- 약 210,000 chars/request
+- 대략 300여 항목/request
+- 기본 호출 간격 18초
 
-- INFO: 화자/퀘스트/앞뒤 대화 문맥 포함
-- BOOK/NOTE: 줄 단위가 아니라 문서 전체 단위
-- QUST/LSCR: stage/연속 문맥 유지
-- DIAL/FULL: 토픽 구조 별도 검증
-- v1 번역을 Gemini의 정답 예시로 넣지 않는다.
+## 9. 최신 번역 배치
+
+핵심 용어 181개/활성 1,226개 기준으로 생성:
+- 번역 작업: 48,338건
+- 배치: 233개
+- 최대 배치 크기: 약 211K chars
+- 메뉴 GMST 항목: 0
+- INFO 대사: 25,119
+- DIAL 토픽: 4,122
+- QUST/CNAM: 2,475
+- BOOK/DESC: 941
+
+오래된 manifest에서 남은 stale `batch_*.json` 991개는 로그 보관 폴더로 이동했고,
+현재 `03_translation_json`에는 manifest에 등록된 233개만 남아 있다.
+
+최종 181개 용어집 직전 파일럿:
+- 5배치 / 1,550건
+- placeholder 손실 0
+- 태그 손실 0
+- 줄바꿈 손실 0
+- 구조/순번 오류 0
+- glossary miss 1: `Nord Winds in Bruma`
+- 원인: 종족명 Nord와 상점명 Nord Winds의 중첩
+- 조치: `Nord Winds → 노드의 바람`을 core term으로 추가
+- 해당 파일럿 결과는 로그로 보관하고 본 번역 결과에서 제외
+
+현재 최종 manifest는 용어 181개 기준으로 다시 생성된 상태다.
 
 ## 10. Sol 검수 기준
 
 Gemini 결과는 자동 확정하지 않는다.
 
 우선순위:
-1. 새 Gemini 번역 채택
-2. v1이 더 좋으면 참고하여 채택
-3. 둘 다 부족하면 Sol이 새로 번역
+1. 영어 원문 기준으로 Gemini 번역이 좋으면 채택
+2. v1이 더 좋으면 비교 참고
+3. 둘 다 부족하면 Sol이 직접 새 번역 작성
 
-전역 검사:
+전역 QA:
 - 동일 원문 상이 번역
 - 용어 불일치
 - 불필요한 영어 잔존
 - `???`
 - placeholder 손실
 - 줄바꿈/태그/마크업 파손
+- 문맥상 잘못된 고유명사 해석
+- 내부 식별자 오번역
 
 ## 11. 현재 단계
 
-v1.0.2 릴리즈는 완료 및 동결.
-다음 단계는 **최신 Skyrim SST를 입력받아 v2 용어집과 신규 원문 추출 파이프라인을 시작하는 것**이다.
+용어집 1차 구축 및 Gemini 프로토콜 검증 완료.
+GMST 926개는 v1 재사용으로 분리 완료.
+최종 용어집 기준 신규 manifest 233개 생성 완료.
+
+다음 단계:
+1. 최종 manifest로 Gemini 번역 진행
+2. 각 배치 구조/포맷 자동 QA
+3. Gemini 전체 결과를 Sol 검수 큐로 병합
+4. Sol 영어 원문 대조 검수
+5. 전역 일관성 QA
+6. 빌드 입력 생성 및 테스트 빌드
