@@ -3,7 +3,7 @@ import csv, hashlib, json, re, struct, sys, zlib
 from collections import Counter
 from pathlib import Path
 
-REPO = Path(r"D:\Codex_Trans\오블리비언")
+REPO = Path(__file__).resolve().parents[1]
 ROOT = REPO / "v2_work"
 OUT_DIR = ROOT / "02_source_extract"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
