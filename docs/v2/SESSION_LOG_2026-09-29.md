@@ -140,3 +140,27 @@ core 181 / active 1,226 기준:
 - 주기적 range QA.
 - 전체 Gemini 완료 후 Sol 영어 원문 대조 검수.
 - 전역 QA 후 빌드 입력/테스트 빌드.
+
+
+## core 181 최종 파일럿 / 본 번역 시작
+
+최종 core 181 / active 1,226 기준 manifest로 batch 0001~0005를 다시 생성/번역했다.
+
+결과:
+- 5배치
+- 1,550건
+- 모든 배치 1차 시도 성공
+- n/개수 구조 오류 0
+- placeholder mismatch 0
+- tag mismatch 0
+- newline mismatch 0
+- glossary miss 0
+- unchanged 4건: 내부 Faction 식별자형 문자열
+
+대표 적용:
+- Vitharn Smith → 비탄 대장장이
+- Order of the Virtuous Blood → 고귀한 피의 결사
+- Blackwood Company → 블랙우드 컴퍼니
+- Jyggalag 계열 → 지갈렉 일관 적용
+
+다음 시작점: batch 0006.
