@@ -3,7 +3,8 @@ import csv, json, re, struct, sys, unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path(r"D:\Codex_Trans\오블리비언\v2_work")
+REPO = Path(__file__).resolve().parents[1]
+ROOT = REPO / "v2_work"
 IN_DIR = ROOT / "00_incoming_sst"
 OUT_DIR = ROOT / "01_glossary"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
