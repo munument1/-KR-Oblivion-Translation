@@ -15,13 +15,14 @@ Steam Deck Windows 작업 루트:
 - Gemini 번역 대상: 48,338건
 - manifest: 233배치
 - `03_translation_json`에는 현재 manifest 233개만 존재
-- 최종 181개 용어집 기준 `04_gemini_raw`은 새로 채우면 됨
+- 최종 181개 용어집 기준 batch 0001~0005 완료 (1,550건)
+- 다음 시작 배치: 0006
 
 ## 바로 할 일
 
 1. `v2_work\01_glossary\OBLIVION_CORE_TERMINOLOGY_V2.csv`와
    `OBLIVION_GLOSSARY_V2_ACTIVE.csv`를 기준 용어집으로 고정한다.
-2. `v2_work\03_translation_json\manifest.json` 기준으로 Gemini 번역을 진행한다.
+2. `v2_work\03_translation_json\manifest.json` 기준으로 batch 0006부터 Gemini 번역을 진행한다.
 3. 기본 runner:
    `v2_tools\run_gemini_translation.py`
 4. 기본 모델:
