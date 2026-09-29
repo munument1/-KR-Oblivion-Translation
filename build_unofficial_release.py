@@ -62,7 +62,7 @@ def read_records(path: Path):
     return result
 
 
-def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_table=None,
+def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None):
     old_records = read_records(original)
     kr_records = read_records(prior)
@@ -96,56 +96,81 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
             if key[0] == b"QUST" and field == b"CNAM" and stage is not None:
                 occurrence = stage_occurrences[stage]
                 stage_occurrences[stage] += 1
-            if old == new:
-                if field in TEXT_FIELDS and not (key[0] in (b"CELL", b"WRLD") and field == b"FULL"):
-                    replacement = None
-                    if vanilla_audit is not None:
-                        audit_key = (official, key[0].decode("ascii"), f"{key[1]:08X}",
-                                     field.decode("ascii"), hashlib.sha256(old).hexdigest())
-                        if audit_key in vanilla_audit:
-                            candidates = vanilla_table.get((official, key[0], key[1], field), ())
-                            targets = {x.korean for x in candidates if x.english == decode_english(old) and
-                                       (x.editor_id is None or x.editor_id == old_editor.rstrip(b"\0"))}
-                            if len(targets) == 1:
-                                replacement = targets.pop()
-                    if official == "Oblivion.esm" and quest_entries is not None:
-                        special = None
-                        if key[0] == b"QUST" and field == b"CNAM" and occurrence is not None:
-                            special = quest_entries.get((key[1], stage, occurrence))
-                        elif key[0] == b"LSCR" and field == b"DESC":
-                            special = loading_entries.get(key[1])
-                        if special and special[0] == old_editor.rstrip(b"\0") and special[1] == old:
-                            replacement = special[2]
-                    completion = (completions or {}).get((original.name, key[0], key[1], field))
-                    if completion:
-                        if old != completion[0]:
-                            raise ValueError(f"{original.name}: completion source mismatch at {key}")
-                        replacement = completion[1]
-                        counts["manual_completion"] += 1
-                    nx_occurrence = occurrence if (key[0] == b"QUST" and field == b"CNAM" and occurrence is not None) else field_occurrence
-                    nx_stage = stage if (key[0] == b"QUST" and field == b"CNAM") else None
-                    nx = (nexus_completions or {}).get((original.name, key[0], key[1], field, nx_occurrence, nx_stage))
-                    if nx:
-                        if old != nx[0]:
-                            raise ValueError(f"{original.name}: nexus completion source mismatch at {key} {field!r} occ {nx_occurrence}")
-                        replacement = nx[1]
-                        counts["nexus_completion"] += 1
-                    if replacement is not None and replacement != old:
-                        changes.setdefault(key, {})[index] = (field, old, replacement)
-                        counts["restored_base_translation"] += 1
-                        counts["translated_fields"] += 1
+            if field not in TEXT_FIELDS:
+                if old != new:
+                    raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
                 continue
-            if field not in TEXT_FIELDS or not old.endswith(b"\0") or not new.endswith(b"\0"):
-                raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
-            if b"\0" in old[:-1] or b"\0" in new[:-1]:
-                raise ValueError(f"{original.name}: embedded NUL at {key} field {field!r}")
             if key[0] in (b"CELL", b"WRLD") and field == b"FULL":
-                counts["save_unsafe_location_skipped"] += 1
+                if old != new:
+                    counts["save_unsafe_location_skipped"] += 1
                 continue
-            changes.setdefault(key, {})[index] = (field, old, new)
-            counts["translated_fields"] += 1
-    return changes, counts
+            if not old.endswith(b"\0"):
+                if old != new:
+                    raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
+                continue
+            if old != new and not new.endswith(b"\0"):
+                raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
+            if b"\0" in old[:-1]:
+                if old != new:
+                    raise ValueError(f"{original.name}: embedded NUL at {key} field {field!r}")
+                continue
+            if old != new and b"\0" in new[:-1]:
+                raise ValueError(f"{original.name}: embedded NUL at {key} field {field!r}")
 
+            # Existing KR is the fallback for patch-specific text.
+            replacement = new if old != new else None
+            reviewed = None
+            if vanilla_audit is not None:
+                audit_key = (official, key[0].decode("ascii"), f"{key[1]:08X}",
+                             field.decode("ascii"), hashlib.sha256(old).hexdigest())
+                if audit_key in vanilla_audit:
+                    candidates = vanilla_table.get((official, key[0], key[1], field), ())
+                    targets = {x.korean for x in candidates if x.english == decode_english(old) and
+                               (x.editor_id is None or x.editor_id == old_editor.rstrip(b"\0"))}
+                    if len(targets) == 1:
+                        reviewed = targets.pop()
+                        replacement = reviewed
+            # Final reviewed override has priority over all legacy translation memories.
+            if final_table is not None:
+                candidates = final_table.get((official, key[0], key[1], field), ())
+                targets = {x.korean for x in candidates if x.english == decode_english(old) and
+                           (x.editor_id is None or x.editor_id == old_editor.rstrip(b"\0"))}
+                if len(targets) == 1:
+                    reviewed = targets.pop()
+                    replacement = reviewed
+            if official == "Oblivion.esm" and quest_entries is not None:
+                special = None
+                if key[0] == b"QUST" and field == b"CNAM" and occurrence is not None:
+                    special = quest_entries.get((key[1], stage, occurrence))
+                elif key[0] == b"LSCR" and field == b"DESC":
+                    special = loading_entries.get(key[1])
+                if special and special[0] == old_editor.rstrip(b"\0") and special[1] == old:
+                    reviewed = special[2]
+                    replacement = reviewed
+            completion = (completions or {}).get((original.name, key[0], key[1], field))
+            if completion:
+                if old != completion[0]:
+                    raise ValueError(f"{original.name}: completion source mismatch at {key}")
+                replacement = completion[1]
+                counts["manual_completion"] += 1
+            nx_occurrence = occurrence if (key[0] == b"QUST" and field == b"CNAM" and occurrence is not None) else field_occurrence
+            nx_stage = stage if (key[0] == b"QUST" and field == b"CNAM") else None
+            nx = (nexus_completions or {}).get((original.name, key[0], key[1], field, nx_occurrence, nx_stage))
+            if nx:
+                if old != nx[0]:
+                    raise ValueError(f"{original.name}: nexus completion source mismatch at {key} {field!r} occ {nx_occurrence}")
+                replacement = nx[1]
+                counts["nexus_completion"] += 1
+            if replacement is not None and replacement != old:
+                changes.setdefault(key, {})[index] = (field, old, replacement)
+                counts["translated_fields"] += 1
+                if reviewed is not None:
+                    counts["reviewed_base_translation"] += 1
+                    if old != new and replacement != new:
+                        counts["reviewed_base_overrode_prior_kr"] += 1
+                elif old == new:
+                    counts["restored_base_translation"] += 1
+    return changes, counts
 
 def rewrite(original: Path, destination: Path, changes):
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -225,9 +250,10 @@ def main():
                                            root / "quest_unique_stage_memory.csv",
                                            root / "manual_visible_memory.csv",
                                            root / "exe_gmst_existing.csv"))
+        final_table = load_translations(root / "final_review_override.csv")
         quest_entries, loading_entries = load_quest_loading_translations(root / "quest_loading_translations.csv")
     else:
-        vanilla_audit = vanilla_table = quest_entries = loading_entries = None
+        vanilla_audit = vanilla_table = final_table = quest_entries = loading_entries = None
     completions = {}
     with (Path(__file__).resolve().parent / "patch_completion.csv").open(encoding="utf-8-sig", newline="") as stream:
         for row in csv.DictReader(stream):
@@ -256,7 +282,7 @@ def main():
             prior = args.prior_kr / kr_folder / original.name
             if not prior.is_file():
                 raise FileNotFoundError(prior)
-            changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table,
+            changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table, final_table,
                                               quest_entries, loading_entries, completions, nexus_completions)
             destination = args.output / kr_folder / original.name
             applied = rewrite(original, destination, changes)
@@ -271,12 +297,14 @@ def main():
                 "output_sha256": sha256_file(destination),
                 "translated_fields": applied,
                 "restored_base_translation": counts["restored_base_translation"],
+                "reviewed_base_translation": counts["reviewed_base_translation"],
+                "reviewed_base_overrode_prior_kr": counts["reviewed_base_overrode_prior_kr"],
                 "manual_completion": counts["manual_completion"],
                 "nexus_completion": counts["nexus_completion"],
                 "location_fields_preserved_english": counts["save_unsafe_location_skipped"],
                 "structure": before,
             }
-            print(f"{original.name}: {applied} Korean fields ({counts['restored_base_translation']} base translations restored), {counts['save_unsafe_location_skipped']} location names kept English")
+            print(f"{original.name}: {applied} Korean fields; reviewed-base {counts['reviewed_base_translation']} (overrode prior KR {counts['reviewed_base_overrode_prior_kr']}), restored legacy-base {counts['restored_base_translation']}; {counts['save_unsafe_location_skipped']} location names kept English")
     (args.output / "release_audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

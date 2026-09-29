@@ -122,3 +122,15 @@ Source of Truth의 translation_korean 필드만 대상으로 다음 오표기를
 - 새 PyInstaller EXE를 로컬 재빌드했으며 Python 빌더와 EXE의 출력 21개 SHA-256 차이 0.
 - commit / push / tag / GitHub Release / Release ZIP 업로드는 하지 않았다.
 
+
+## 12. 언오피셜 패치 3종 재동기화
+- 대상: Unofficial Oblivion Patch, Unofficial Shivering Isles Patch, Unofficial Oblivion DLC Patches의 기존 KR 오버레이.
+- 기존 KR은 과거 번역을 기준으로 만들어져 있어 최종 검수본이 동일 본편/DLC 레코드에 반영되지 않는 문제가 있었다.
+- build_unofficial_release.py 우선순위를 `최종 검수 final_review_override / QUST·LSCR 특수값 > 기존 KR > 미번역`으로 변경했다.
+- 패치 전용 문장은 기존 KR을 fallback으로 유지하며, 원본 FormID/필드/영문 원문이 최종 검수본과 정확히 일치할 때만 최종 검수 번역을 덮어쓴다.
+- CELL/WRLD 저장 안전 정책과 패치별 수동/nexus completion 우선순위는 유지한다.
+- 최신 원본 14개 ESP를 기준으로 재빌드했고 모든 출력은 원본과 structure_signature가 동일해 레코드 구조/스크립트 변경이 없다.
+- 전체 번역 필드 8,821건 중 최종 검수본과 직접 매칭된 필드는 3,295건이며, 기존 KR 문구를 실제로 교체한 필드는 84건이다.
+- 기존 KR 대비 총 바이트 변경 텍스트 필드는 86건이다. 추가 2건은 내부용 `NQD Cheydinhal` QUST와 `SE 09 Battling Creature Faction` FACT가 최종 정책에 따라 원문으로 복귀한 경우다.
+- UOP Vampire Aging & Face Fix.esp는 한국어 번역 필드가 0건이며 테스트 편의를 위해 MO2형 테스트 묶음에는 원본 동일 파일을 포함할 수 있으나 정식 별도 배포 패키지에서는 제외한다.
+- 기존 MO2의 KR 3개 폴더는 테스트 빌드 과정에서 수정하지 않았다.
