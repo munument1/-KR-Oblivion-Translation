@@ -1,82 +1,151 @@
 # Next Session
 
-최종 갱신: 2026-09-29
+최종 갱신: 2026-09-30
 
-## 현재 시작점
+## 시작 즉시 확인
 
-Steam Deck Windows 작업 루트:
-`C:\오블리비언`
+작업 머신:
+- Deck_Seung
+- `C:\오블리비언`
+
+최신 인수인계:
+- `docs/v2/SESSION_LOG_2026-09-30.md`
 
 현재 기준:
-- core terminology: 181
-- active glossary: 1,226
-- terminology conflicts documented: 16
-- GMST: 926개 v1.0.2 재사용
-- Gemini 번역 대상: 48,338건
-- manifest: 233배치
-- `03_translation_json`에는 현재 manifest 233개만 존재
-- 최종 181개 용어집 기준 batch 0001~0005 완료 (1,550건)
-- 다음 시작 배치: 0006
+- 일반 Gemini raw: **218/218 완료**
+- BOOK: **156/156 완료**
+- INFO/NAM1 pre-143 dialogue backfill: **49/144 완료** (문서 작성 시점)
+- QUST/CNAM journal backfill: 2,475개 / 25배치, 대기
+- 문장형 DIAL/FULL backfill: 2,184개 / 22배치, 대기
 
-## 바로 할 일
+새 채팅에서는 숫자를 믿고 추정하지 말고
+먼저 실제 프로세스와 출력 파일 수/mtime을 확인한다.
 
-1. `v2_work\01_glossary\OBLIVION_CORE_TERMINOLOGY_V2.csv`와
-   `OBLIVION_GLOSSARY_V2_ACTIVE.csv`를 기준 용어집으로 고정한다.
-2. `v2_work\03_translation_json\manifest.json` 기준으로 batch 0006부터 Gemini 번역을 진행한다.
-3. 기본 runner:
-   `v2_tools\run_gemini_translation.py`
-4. 기본 모델:
-   `gemini-3.5-flash-lite`
-5. 기본 호출 간격:
-   18초
-6. 배치 결과 저장 전 n 순번/개수 검증이 반드시 통과해야 한다.
-7. 번역 중 429/5xx가 나면 runner의 백오프/키 전환을 사용한다.
-8. 일정 구간마다 `qa_gemini_range.py`로 자동 QA한다.
-9. glossary miss가 나오면 무조건 Gemini를 탓하지 말고
-   일반어/고유명사 중첩 여부를 먼저 확인한다.
-10. 전체 Gemini 완료 후 `05_sol_review`용 병합 큐를 만든다.
+## 1순위 — INFO dialogue backfill 계속
 
-## 품질 게이트
+runner:
+`v2_tools\run_dialogue_backfill.py`
 
-Gemini 배치마다:
-- n 순번 일치
-- 결과 개수 일치
-- placeholder 보존
-- 태그 보존
-- 줄바꿈 보존
-- glossary target 적용 여부
-- 내부 식별자 unchanged 허용 여부
+입력:
+`v2_work\03_translation_json_dialogue_backfill`
 
-전체 번역 후:
-- 동일 원문 상이 번역
-- 핵심 고유명사 181개 일관성
-- BOOK 전체 문서 문체/연결성
-- INFO 대사 문맥
-- DIAL 토픽 구조
-- 불필요한 영어 괄호
-- ??? / 빈 번역
-- RACE/FULL 변경 0
-- CELL/WRLD 안전 제외 유지
+출력:
+`v2_work\04_gemini_raw_dialogue_backfill`
 
-## GMST
+모델:
+- 3.5 Flash-Lite 우선
+- 3.1 Flash-Lite 자동 폴백
 
-`v2_work\06_build_inputs\GMST_REUSE_V1_926.csv` 사용.
-Gemini 입력에 GMST를 다시 넣지 않는다.
-`sPlural=(s)`의 한국어 빈 값은 의도된 값이다.
+프로젝트:
+- 2, 3
 
-## 참고: 최근 파일럿에서 잡힌 시행착오
+쿼터는 project × model 별도 계산.
+전역 합산 450으로 되돌리지 않는다.
 
-- 600여 항목 장배치에서 모델이 일부 항목을 누락한 사례가 있었음.
-- 단순 배열 위치 결합은 개수가 같아도 중간 밀림을 잡지 못했음.
-- 해결: 약 300개/배치 + 정수 n 검증.
-- 일반 SST 부분일치 강제는 `Anvil→모루` 같은 사고를 일으킴.
-- 해결: 일반 SST exact-only, core proper noun만 case-sensitive phrase-context.
-- 구 manifest의 stale batch JSON 991개는 로그로 이동 완료.
+## 2순위 — QUST journal backfill
 
-## 세션 종료 시
+INFO backfill 완료 후:
 
-- PROJECT_STATE 갱신
-- 새 장기 결정은 DECISIONS에 추가
-- NEXT_SESSION은 다음 실제 실행 단계만 남김
-- 중요한 숫자/시행착오는 SESSION_LOG에 기록
-- API 키 값은 절대 기록 금지
+- 2,475개
+- 25배치
+- `03_translation_json_quest_backfill`
+
+QUST/CNAM은 플레이어 일지/독백:
+- `-했다`
+- `-해야 한다`
+- `-인 것 같다`
+
+이유 없는 존댓말 금지.
+
+## 3순위 — DIAL/FULL player-choice backfill
+
+- 문장형 2,184개
+- 22배치
+- `03_translation_json_dial_backfill`
+
+DIAL/FULL 문장형은 NPC 대사가 아니라
+플레이어 선택문/토픽일 수 있다.
+
+중립적 자연 구어체.
+근거 없는 `-묻는가/-하는가/-하오/-하네` 등을 만들지 않는다.
+
+## BOOK
+
+BOOK 번역 자체는 **156/156 완료**.
+
+116번에서 수정한 핵심:
+- book-wide unique PN token namespace
+- 책 안에서 확인된 exact term을 동일 영어 occurrence에 전파
+- 검증은 실제 segment mapping이 있는 용어만 확인
+
+다시 BOOK을 처음부터 돌리지 않는다.
+최종 QA와 Sol review에서 검수한다.
+
+## 조사/잠금 주의
+
+`locked_terms.py`에서 이미 보강됨:
+
+- `(이)가`, `이(가)`
+- `(을)를`, `을(를)`
+- `(은)는`, `은(는)`
+- `(과)와`
+- `으(로)`, `로(으)`
+- `의(의)`, `에(에)`
+- PN 숫자 누출
+
+기존 일반 raw에서 이미:
+- 272문장 / 288 artifact 수정
+- 추가 17문장 / PN 숫자 22건 수정
+
+backfill 이후 반드시 동일 감사를 다시 한다.
+
+## 불필요한 '의'
+
+영어 possessive/of/noun-chain을
+기계적으로 `의`로 만들지 않는다.
+
+`{GEN}`도 한국어에서 실제로 필요할 때만 선택.
+
+`audit_genitive_calques.py` 후보는
+자동 삭제 대상이 아니라 Sol 검수 우선순위다.
+
+## 최종 QA 순서
+
+모든 backfill 완료 후:
+
+1. `audit_translation_coverage.py`
+2. `audit_book_coverage.py`
+3. `audit_locked_artifacts.py`
+4. `audit_genitive_calques.py`
+5. `audit_quest_journal_style.py`
+6. `audit_dialogue_tone.py`
+7. `summarize_speaker_tone.py`
+8. WORDPLAY_REVIEW
+9. CHARACTER_VOICE_REVIEW
+
+확인 항목:
+- 미번역
+- 영어 잔존
+- 원문 그대로
+- ??? / placeholder
+- PN 숫자
+- 조사 선택형
+- 불필요한 의
+- BOOK 누락
+- QUST 존댓말
+- DIAL player-choice 어투
+- 의미 축약
+- 캐릭터 말투
+
+## v1 비교
+
+최종 backfill/QA 뒤
+v1.0.2와 v2를 영어 원문 기준으로 전수 비교.
+
+v1은 정답/덮어쓰기 원본이 아니다.
+회귀 탐지와 좋은 표현 참고용이다.
+
+## 비밀값
+
+API 키는 절대 Git/채팅/로그에 기록하지 않는다.
+키 슬롯/프로젝트 번호/모델/호출량만 기록한다.
