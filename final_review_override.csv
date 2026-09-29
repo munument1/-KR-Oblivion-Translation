@@ -118,7 +118,7 @@ Oblivion.esm,HAIR,0006420F,FULL,Topknot,상투,final_review_override,d6a008cb860
 Oblivion.esm,HAIR,0001DA83,FULL,Wind Braids,바람 땋은 머리,final_review_override,b580d3a00520dfa012c7a80220b482b38900,ElfBraid,0
 Oblivion.esm,EYES,0005FA43,FULL,Order,질서,final_review_override,d8a904b68200,eyeOrdered,0
 Oblivion.esm,EYES,0000001A,FULL,Reanimate Eyes,되살아난 눈,final_review_override,d295d6a004b780d1a00220c1a60200,eyeReanimate,0
-Oblivion.esm,RACE,0005308E,FULL,Sheogorath,쉐오고라스,final_review_override,d68fc784c084b380c68800,Sheogorath,0
+Oblivion.esm,RACE,0005308E,FULL,Sheogorath,Sheogorath,final_review_override,5368656f676f7261746800,Sheogorath,0
 Oblivion.esm,RACE,00023FE9,DESC,"This reptilian race, well-suited for the treacherous swamps of their homeland, has developed natural immunities to diseases and poisons. They can breathe water and are good at picking locks.
 ",위험한 늪지대인 고향에 잘 적응한 이 파충류 종족은 <RT_BlueMed>질병과 독에 대한 천연 면역력</>을 지니고 있습니다. 또한 <RT_BlueMed>물속에서 숨을 쉬 수 있고 자물쇠 따기에 능합니다</>.,final_review_override,d797dda205dda00220c1a811b889b28ad7a90220c084dda108b78b20d8a00420d8a201c7a808dda00220b78920bc80c9a608c38720c8a408c8a401c7a802203c52545f426c75654d65643ed8a904d5a308d09020c2a401b78b20b28adda00220d9a202d7a30220d4a302d7a301d3a3013c2f3ec7a80420b889b189c08420d7a914c6a806b189b2802e20cf84dda002203c52545f426c75654d65643ec4a604c6a401b78bb68220c6a605c7a80420d69720c68620d7a914c08420b880c4a604d69520bf80b089b78b20c1a808dda006b189b2803c2f3e2e00,Argonian,0
 Oblivion.esm,RACE,000224FD,DESC,"Citizens of Skyrim, they are a tall and fair-haired people.  Strong and hardy, Nords are famous for their resistance to cold. They are highly talented warriors.","노드.
@@ -61243,3 +61243,16 @@ DLCHorseArmor.esp,BOOK,010016C6,DESC,I'm a  set of plans. Go to the Chestnut Han
 DLCHorseArmor.esp,DIAL,01000CEF,FULL,I'm here about the horse armor.,말갑옷 때문에 왔습니다.,final_review_override,d4a004d0a006c7a40720bf8ac4a602b78b20e79914c6a806b189b2802e00,DLCHorseArmorTopic,0
 DLCHorseArmor.esp,INFO,01006AB4,NAM1,You drive a hard bargain.,흥정을 꽤 세게 하시네요.,final_review_override,cda808d8a208c7a80420de8e20b68bb08b20bd80b689b18bc7852e00,,0
 DLCHorseArmor.esp,QUST,01000CEC,CNAM,I've discovered a notice from Snak gra-Bura of the Chestnut Handy stables. She is offering to outfit a horse with armor at no charge to anyone who presents her with a note like the one that I've found. I should bring my horse to her and take advantage of this offer.,체스트넛 핸디 마구간의 스낙 그라-부라가 쓴 공지를 발견했다. 이 공지와 같은 쪽지를 제시하는 사람은 누구든 말 한 마리에 무료로 갑옷을 장착해 준다고 한다. 말을 데리고 가서 이 제안을 이용해 봐야겠다.,final_review_override,b98bc688cb88d1a20720ddaa02b28920b480c086d0a002d79820c688d1a00120c088b3802dc586b380b08020f4a80220c0a408b889c3a80420d5a004d0a302ddaa14b2802e20b78920c0a408b889d79020d0a010c7a80220f5a401b889c3a80420b88bb689bd80c1a80220b680d3a005c7a80220c186c086c2a80220d4a00420dda00220b480b389b78b20c486c385c38420d0a006c7a407c7a80420d8a008d9a001bd8a20c8a602b280c08420dda002b2802e20d4a004c7a80420b28bb389c08420b080b68220b78920b88bd7a002c7a80420b789c7a508bd8a20d590b781d0ab14b2802e00,DLCHorseArmor,0
+Oblivion.esm,RACE,0001208F,FULL,Golden Saint,Golden Saint,final_review_override,476f6c64656e205361696e7400,GoldenSaint,0
+Oblivion.esm,RACE,0001208E,FULL,Dark Seducer,Dark Seducer,final_review_override,4461726b205365647563657200,DarkSeducer,0
+Oblivion.esm,RACE,00038010,FULL,Dremora,Dremora,final_review_override,4472656d6f726100,Dremora,0
+Oblivion.esm,RACE,00023FE9,FULL,Argonian,Argonian,final_review_override,4172676f6e69616e00,Argonian,0
+Oblivion.esm,RACE,000224FD,FULL,Nord,Nord,final_review_override,4e6f726400,Nord,0
+Oblivion.esm,RACE,000224FC,FULL,Breton,Breton,final_review_override,427265746f6e00,Breton,0
+Oblivion.esm,RACE,000223C8,FULL,Wood Elf,Wood Elf,final_review_override,576f6f6420456c6600,WoodElf,0
+Oblivion.esm,RACE,000223C7,FULL,Khajiit,Khajiit,final_review_override,4b68616a69697400,Khajiit,0
+Oblivion.esm,RACE,000191C1,FULL,Dark Elf,Dark Elf,final_review_override,4461726b20456c6600,DarkElf,0
+Oblivion.esm,RACE,000191C0,FULL,Orc,Orc,final_review_override,4f726300,Orc,0
+Oblivion.esm,RACE,00019204,FULL,High Elf,High Elf,final_review_override,4869676820456c6600,HighElf,0
+Oblivion.esm,RACE,00000D43,FULL,Redguard,Redguard,final_review_override,526564677561726400,Redguard,0
+Oblivion.esm,RACE,00000907,FULL,Imperial,Imperial,final_review_override,496d70657269616c00,Imperial,0

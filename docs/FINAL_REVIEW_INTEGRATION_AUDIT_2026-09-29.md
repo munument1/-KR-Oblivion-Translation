@@ -134,3 +134,12 @@ Source of Truth의 translation_korean 필드만 대상으로 다음 오표기를
 - 기존 KR 대비 총 바이트 변경 텍스트 필드는 86건이다. 추가 2건은 내부용 `NQD Cheydinhal` QUST와 `SE 09 Battling Creature Faction` FACT가 최종 정책에 따라 원문으로 복귀한 경우다.
 - UOP Vampire Aging & Face Fix.esp는 한국어 번역 필드가 0건이며 테스트 편의를 위해 MO2형 테스트 묶음에는 원본 동일 파일을 포함할 수 있으나 정식 별도 배포 패키지에서는 제외한다.
 - 기존 MO2의 KR 3개 폴더는 테스트 빌드 과정에서 수정하지 않았다.
+
+## 13. 음성 출력 호환성 수정
+- 실게임 테스트에서 번역은 정상이나 NPC 음성이 출력되지 않고 일부 자막이 너무 빨리 사라지는 문제가 확인되었다.
+- 원인은 RACE/FULL 표시 이름을 한국어로 번역하면 Oblivion의 `Sound\\Voice\\<plugin>\\<Race Name>\\...` 음성 폴더 탐색과 충돌하는 것이었다.
+- 본편 최종 Source of Truth에서 RACE/FULL 14건(Sheogorath, Golden Saint, Dark Seducer, Dremora, Argonian, Nord, Breton, Wood Elf, Khajiit, Dark Elf, Orc, High Elf, Redguard, Imperial)을 영어 원문 유지로 변경했다.
+- 일반 대사/설명 속 종족명 번역은 그대로 유지하며, `Argonian -> 아르고니안` 사용자 예외도 RACE/FULL 외 텍스트에는 그대로 적용된다.
+- 언오피셜 재빌더에도 RACE/FULL을 항상 원문 유지하는 voice-safe 규칙을 추가했다.
+- 새 본편 빌드에서 RACE/FULL 변경 0건을 확인했고, 새 PyInstaller EXE와 Python 빌드 출력 21개 SHA 비교 결과 차이 0이었다.
+- 사용자 실게임 재검증 결과 NPC 음성과 자막 표시 시간이 정상으로 복구되었다.

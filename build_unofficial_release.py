@@ -104,6 +104,12 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
                 if old != new:
                     counts["save_unsafe_location_skipped"] += 1
                 continue
+            # Oblivion resolves voice folders from the visible RACE name.
+            # Keep race FULL names in English so Sound\\Voice\\...\\Imperial, Argonian, etc. still resolve.
+            if key[0] == b"RACE" and field == b"FULL":
+                if old != new:
+                    counts["voice_safe_race_names_preserved"] += 1
+                continue
             if not old.endswith(b"\0"):
                 if old != new:
                     raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
