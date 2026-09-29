@@ -564,11 +564,27 @@ def main() -> int:
                                          HERE / "quest_unique_stage_memory.csv",
                                          HERE / "manual_visible_memory.csv",
                                          HERE / "exe_gmst_existing.csv",
+                                         HERE / "final_review_override.csv",
                                          *args.extra_csv))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
     menu_gmsts = load_exe_menu_gmsts((HERE / "exe_gmst_translations.csv", HERE / "exe_gmst_extra.csv"),
                                       source_dir.parent / "Oblivion.exe", source_dir / MASTER)
+    # Final-review overrides for injected/menu GMST records (00Fxxxxx) do not
+    # exist in the original ESM, so normal record matching cannot reach them.
+    final_menu_overrides = {}
+    final_override_path = HERE / "final_review_override.csv"
+    if final_override_path.is_file():
+        with final_override_path.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                if (row.get("effective_source") == MASTER and row.get("record_type") == "GMST"
+                        and row.get("field") == "DATA"):
+                    fid = int(row["raw_formid"], 16)
+                    if (fid >> 16) == 0xF0:
+                        final_menu_overrides[fid] = bytes.fromhex(row["new_bytes_hex"])
+    if final_menu_overrides:
+        menu_gmsts = tuple((fid, key, eng, final_menu_overrides.get(fid, ko))
+                           for fid, key, eng, ko in menu_gmsts)
     menu_formids = frozenset(item[0] for item in menu_gmsts)
     quest_entries, loading_entries = load_quest_loading_translations(
         HERE / "quest_loading_translations.csv")
