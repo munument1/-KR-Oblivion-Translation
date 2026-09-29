@@ -3,7 +3,8 @@ import csv, json, re, unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT=Path(r"D:\Codex_Trans\오블리비언\v2_work")
+REPO=Path(__file__).resolve().parents[1]
+ROOT=REPO/"v2_work"
 G=ROOT/"01_glossary"
 S=ROOT/"02_source_extract"
 _ws=re.compile(r"\s+")
