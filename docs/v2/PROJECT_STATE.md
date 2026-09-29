@@ -1,6 +1,17 @@
 # v2 Project State
 
-최종 갱신: 2026-09-29
+최종 갱신: 2026-09-30
+
+> **2026-09-30 최신 스냅샷**
+>
+> - 일반 Gemini raw: **218/218 완료**
+> - BOOK: **156/156 완료**
+> - INFO/NAM1 pre-143 dialogue backfill: **49/144 완료** (인수인계 작성 시점)
+> - QUST/CNAM journal backfill: 2,475개 / 25배치 준비
+> - 문장형 DIAL/FULL player-choice backfill: 2,184개 / 22배치 준비
+> - 최신 상세 인수인계: `docs/v2/SESSION_LOG_2026-09-30.md`
+> - 이전의 “233 manifest / batch 0006부터” 상태는 역사 기록이며 현재 실행 시작점이 아니다.
+
 
 ## 1. 동결 기준본
 
