@@ -56,6 +56,14 @@ def call_gemini(key,model,batch,timeout=180):
     text="".join(p.get("text","") for p in parts)
     if not text: raise RuntimeError("Empty Gemini text response")
     return json.loads(text), raw.get("usageMetadata",{})
+def preserve_boundary_newlines(source,korean):
+    lead=re.match(r"^[\r\n]+",source)
+    tail=re.search(r"[\r\n]+$",source)
+    if not lead and not tail:
+        return korean
+    core=korean.strip("\r\n")
+    return (lead.group(0) if lead else "") + core + (tail.group(0) if tail else "")
+
 def validate(batch,result):
     arr=result.get("translations") if isinstance(result,dict) else None
     if not isinstance(arr,list):
@@ -70,8 +78,23 @@ def validate(batch,result):
         korean=obj.get("korean")
         if not isinstance(korean,str) or not korean.strip():
             raise ValueError(f"empty translation at n={n}")
+        korean=preserve_boundary_newlines(item["source_english"],korean)
         paired.append({"id":item["id"],"korean":korean})
     return paired
+
+def validate_saved(batch,result):
+    arr=result.get("translations") if isinstance(result,dict) else None
+    if not isinstance(arr,list) or len(arr)!=len(batch["items"]):
+        raise ValueError("saved translation count mismatch")
+    for item,obj in zip(batch["items"],arr):
+        if not isinstance(obj,dict) or obj.get("id")!=item["id"]:
+            raise ValueError("saved ID/order mismatch")
+        korean=obj.get("korean")
+        if not isinstance(korean,str) or not korean.strip():
+            raise ValueError("saved translation is empty")
+        if korean!=preserve_boundary_newlines(item["source_english"],korean):
+            raise ValueError("saved boundary newline mismatch")
+    return arr
 
 def main():
     ap=argparse.ArgumentParser()
@@ -92,7 +115,7 @@ def main():
         if outfile.exists():
             try:
                 old=json.loads(outfile.read_text(encoding="utf-8"))
-                validate(json.loads(infile.read_text(encoding="utf-8")),old)
+                validate_saved(json.loads(infile.read_text(encoding="utf-8")),old)
                 print(json.dumps({"batch":m["batch_id"],"status":"SKIP_VALID"},ensure_ascii=True),flush=True)
                 continue
             except Exception: pass
