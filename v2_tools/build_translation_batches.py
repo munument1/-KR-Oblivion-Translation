@@ -48,8 +48,11 @@ def glossary_hits(text,exact,index):
         hits.append({"source":en,"target":ko,"basis":"SST_EXACT"})
         seen.add(en)
     words=set(re.findall(r"[A-Za-z0-9]+",text.casefold()))
+    phrase_exclusions={("Serpiginous Dementia","Dementia")}
     for word in words:
         for en,ko,pat in index.get(word,()):
+            if (text,en) in phrase_exclusions:
+                continue
             if en in seen:
                 continue
             seen.add(en)
