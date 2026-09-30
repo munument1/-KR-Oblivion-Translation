@@ -1,0 +1,11 @@
+{
+  "version": "v1.0.3",
+  "commit": "d603503928fa0bfc8c1885014fcee891ee5def51",
+  "python_exe_diff_count": 0,
+  "validated_output_files": 21,
+  "zip_path": "D:\\Codex_Trans\\오블리비언\\v2_work\\10_release_v1.0.3_main\\Oblivion_Original_KR_Installer_v1.0.3.zip",
+  "zip_sha256": "93f9046ae1ed5f932ed735048d8267a9142a5d44fe0d9593c03f1858390cf437",
+  "zip_size": 22955389,
+  "exe_sha256": "9b9a43f2b62b8dd0fc564cf6c7d00bbe864d6efb3ed8ebe1da0ca483ab780e00",
+  "source_data": "C:\\Games\\Steam\\steamapps\\common\\Oblivion\\Data"
+}

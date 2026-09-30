@@ -6,8 +6,16 @@
   "review_commit": "df1cdd6",
   "review_status": {
     "complete": true,
-    "master": {"total": 8553, "reviewed": 8553, "pending": 0},
-    "book": {"total": 496, "reviewed": 496, "pending": 0}
+    "master": {
+      "total": 8553,
+      "reviewed": 8553,
+      "pending": 0
+    },
+    "book": {
+      "total": 496,
+      "reviewed": 496,
+      "pending": 0
+    }
   },
   "validation": {
     "master_issue_rows": 0,
@@ -32,6 +40,15 @@
     "docs/v2_review/BOOK_FINAL_VALIDATION_REPORT_V2.json",
     "docs/v2_review/NAME_PUNCTUATION_POLICY.md"
   ],
-  "secrets": {"api_keys_committed": false, "v2_work_committed_wholesale": false},
-  "next_step": "Apply sol_final results to the actual v2 build data, generate a test build, then perform in-game QA."
+  "secrets": {
+    "api_keys_committed": false,
+    "v2_work_committed_wholesale": false
+  },
+  "next_step": "Released as v1.0.3 after build validation; only post-release issue fixes remain.",
+  "release_status": {
+    "version": "v1.0.3",
+    "build_validation": "passed",
+    "python_exe_diff_count": 0,
+    "validated_output_files": 21
+  }
 }
