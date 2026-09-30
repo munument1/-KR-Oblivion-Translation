@@ -1,0 +1,37 @@
+{
+  "project": "The Elder Scrolls IV: Oblivion Original Korean Translation v2",
+  "repository": "munument1/-KR-Oblivion-Translation",
+  "branch": "main",
+  "base_release": "v1.0.2",
+  "review_commit": "df1cdd6",
+  "review_status": {
+    "complete": true,
+    "master": {"total": 8553, "reviewed": 8553, "pending": 0},
+    "book": {"total": 496, "reviewed": 496, "pending": 0}
+  },
+  "validation": {
+    "master_issue_rows": 0,
+    "book_issue_rows": 0,
+    "empty_final": 0,
+    "replacement_character": 0,
+    "triple_question_mark": 0,
+    "active_glossary_conflicts": 0,
+    "proper_name_punctuation_errors": 0,
+    "dial_info_leak_errors": 0
+  },
+  "name_policy": {
+    "preserve_internal_apostrophes_and_hyphens": true,
+    "example": "M'key -> 므'케이",
+    "explicit_exception": "M'aiq -> 마'이크"
+  },
+  "tracked_outputs": [
+    "docs/v2_review/MASTER_COMPARE_QUEUE_FINAL.csv",
+    "docs/v2_review/BOOK_COMPARE_QUEUE_FINAL.csv",
+    "docs/v2_review/OBLIVION_GLOSSARY_V2_ACTIVE.csv",
+    "docs/v2_review/MASTER_FINAL_VALIDATION_REPORT_V2.json",
+    "docs/v2_review/BOOK_FINAL_VALIDATION_REPORT_V2.json",
+    "docs/v2_review/NAME_PUNCTUATION_POLICY.md"
+  ],
+  "secrets": {"api_keys_committed": false, "v2_work_committed_wholesale": false},
+  "next_step": "Apply sol_final results to the actual v2 build data, generate a test build, then perform in-game QA."
+}
