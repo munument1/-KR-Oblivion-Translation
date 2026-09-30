@@ -1,0 +1,1284 @@
+﻿source_english,korean,application,source_basis,status,notes
+"16 Accords of Madness, v. IX","광기의 16협약, 제 9권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"16 Accords of Madness, v. VI","광기의 16협약, 제 6권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"16 Accords of Madness, v. XII","광기의 16협약, 제 12권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+A Children's Anuad,아이들을 위한 아누아드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v1","불의 춤, 제 1권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v2","불의 춤, 제 2권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v3","불의 춤, 제 3권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v4","불의 춤, 제 4권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v5","불의 춤, 제 5권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"A Dance in Fire, v6","불의 춤, 제 6권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+A Game at Dinner,만찬의 유희,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+A Hypothetical Treachery,가설 배반,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Abandoned House,버려진 집,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Abandoned Shack,버려진 판잣집,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ability,능력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Abort,중단,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Absorb,흡수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Absorb Health,체력 흡수,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell
+Absorb Magicka,매지카 흡수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Activate,작동,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Adamantine Tower,아다만틴 탑,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact/context term
+Added Effects,추가된 효과,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Addiction,중독,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Adrenaline Rush,아드레날린 분출,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Adventurer,모험가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Aedra,에이드라,PHRASE_CONTEXT,PROJECT_TERM_DECISION,CONFIRMED,Base lore term for Aedric
+Aedric,에이드릭,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion book terminology
+Aevar Stone-Singer,에바 스톤-싱어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Age,나이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Agnar the Unwavering,흔들리지 않는 아그나르,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion NPC name
+Ahzirr Traajijazeri,아지르 트라지자자에리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Akatosh,아카토쉬,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Alchemist,연금술사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Alchemy,연금술,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ale,술 - 맥주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+All Books,모든 서적,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+All Keys,모든 열쇠,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+All Misc Items,모든 기타물품,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+All Potions,모든 물약,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+All Spell Tomes,모든 마법책,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Alocasia Fruit,알로카시아 열매,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Altar,제단,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Altar of Dibella,디벨라의 제단,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Alteration,변화마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Altmer,알트머,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim dialogue/loading usage
+Amber,호박석,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Shivering Isles crafting material; latest SST Saints & Seducers context
+Amber Arrow,화살 - 호박,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Boots,호박 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Bow,호박 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Gauntlets,호박 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Helmet,호박 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Mace,호박 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Shield,호박 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amber Sword,호박 검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ambrosia,돼지풀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Amulet of Kings,왕의 아뮬렛,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim BOOK title/term
+Anvil,앤빌,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Cyrodiil city sense; distinguish from tool anvil=모루
+Any advice?,무슨 조언이라도?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Anya,앤야,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Short form of Anya Herrick; existing Oblivion NPC name
+Anya Herrick,앤야 헤릭,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion NPC name
+Apparel,장비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Apprentice,수습생,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Apprentice Stone,수습생의 선돌,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Arcana Restored,아르카나 복원,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Arcane University,아케인 대학,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated location page
+Arch-Mage's Quarters,대마법사의 거처,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Arcturus,악투러스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Arden-Sul,아덴-술,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest SST Saints & Seducers book reference
+Are you sure you want to delete this save game?,정말 이 저장된 게임을 삭제하시겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Are you sure you want to load this game?,이 게임을 불러오시겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Are you sure you want to overwrite this save game?,이 저장된 게임에 덮어쓰기를 원하십니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Argonian,아르고니안,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim/CC race usage
+Argonian Bloodwine,술 - 아르고니안 적포도주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Arkay,아케이,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Armand Christophe,아르망 크리스토프,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Oblivion Thieves Guild member list
+Arquen,아퀜,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Dark Brotherhood member list
+Assassin,암살자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Assault,습격,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Aster Bloom Core,불가사리 꽃 응어리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ataxia,근육통,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Atronach,아트로나크,PHRASE_CONTEXT,SERIES_STANDARD,CONFIRMED,Stable Korean TES creature term
+Attack,공격,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Attenuator of Judgment,심판의 조율기,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing applied Oblivion term
+Aureal,오리얼,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Golden Saint self-name
+Autoloading...,자동저장을 불러오고 있습니다...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Autosave,자동저장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Autosaving...,자동저장 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ayleid,에일리드,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Repeated BOOK usage
+Ayleid Cask,에일리드 술통,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ayleid Reliquary,에일리드 성유물함,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ayleids,에일리드,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Repeated BOOK usage
+Azura,아주라,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Azura and the Box,아주라와 상자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Azura's Star,아주라의 별,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Back,뒤로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Baliwog,발리오그,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Grummite lifecycle page usage
+Bandit,산적,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bandit Archer,산적 궁수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Barbarian,야만전사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bard,바드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Barrel,통,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Barter,흥정,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+BarterExit,흥정 종료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Basket,바구니,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Battle of Sancre Tor,생크 토르 전투,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Baurus,보러스,PHRASE_CONTEXT,LATEST_SST_BOOK_NAMU,CONFIRMED,Oblivion Crisis BOOK context + current community page
+Bear,곰,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bear Pelt,모피 - 곰,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Beast Tongue,짐승의 소리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bed,침대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Before the Ages of Man,인류 이전의 시대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Beggar,거지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Beggar Prince,거지 왕자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bench,긴 의자,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Furniture name
+Berserk,광폭화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Biography of the Wolf Queen,늑대 여왕 전기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Black Marsh,블랙 마쉬,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Skyrim context and current community title
+Black Soul Gem,소울젬 - 검은 소울젬,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blacksmith's Apron,대장장이의 앞치마,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blackwater Blade,블랙워터의 검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blackwood Company,블랙우드 컴퍼니,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion faction page
+Blade of Woe,비통의 단검,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim/Creation entry
+Blades,블레이드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Faction usage; exact Skyrim/CC entry
+Blades Boots,블레이드 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blades Gauntlets,블레이드 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blades Helmet,블레이드 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blades Shield,블레이드 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blessing of Dibella,디벨라의 축복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blessing of Talos,탈로스의 축복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blind Watcher's Eye,감긴 주시자의 눈,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blindfold,안대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bliss,블리스,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Blister Pod Cap,수포 꼬투리 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blizzard,눈보라,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Block,방어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Blood Grass,핏빛 풀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bloodgrass,핏빛 풀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bloodworm Helm,블러드웜 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Boar,멧돼지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Boar Meat,멧돼지 고기,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Correct Korean spelling; reject 맷돼지
+Boethia,보에시아,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Oblivion spelling; SST Boethiah variants are inconsistent
+Boethiah,보에디아,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Repeated Skyrim context + current community title
+Bog Beacon,습지 봉화 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bone Arrow,화살 - 뼈 화살,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bone Break Fever,골절열,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Disease name
+Boots of the Crusader,성기사의 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bosmer,보스머,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim dialogue/loading usage
+Bound Axe,마법 전투 도끼 소환,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bound Bow,마법 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bound Dagger,마법 단검,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell/weapon
+Bound Sword,마법 검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bounty,현상수배,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bowl,그릇,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bravil,브라빌,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,BOOK/guide usage
+Brazier,난로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bread,빵,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Brellach,브릴라크,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Breton,브레튼,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+Broken items cannot be equipped until they have been repaired.,부서진 물품들은 수리하기 전에는 장비할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Broom,빗자루,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Brow,눈썹,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Brown Rot,갈색 부패병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Bruma,브루마,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim/Creation Club usage
+Burden,짐,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Button,버튼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Calcinator,가열기,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion project terminology
+Calm,진정,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cancel,취소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Candlelight,마법의 촛불,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Captain's Chest,선장의 상자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Carrot,당근,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cell Door,창살 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chair,의자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Charcoal,목탄,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Charm,매료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chest,상자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cheydinhal,체이딘할,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim SST letter dialogue
+Children of the Sky,하늘의 자손들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chillrend,칠렌드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chim-el Adabal,침-엘 아다발,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Chimarvamidium,카이마바미디움,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chokeberry,초크베리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Choking Grasp,숨막히는 손아귀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Choose,선택,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Chorrol,코롤,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,BOOK usage
+Ciirta's Eye,시르타의 눈,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Clannfear,클랜피어,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated creature page
+Clavicus Vile,클라비쿠스 바일,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Cleansing of the Fane,신전의 정화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Close,닫기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Coffin,관,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Combat,전투,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Come with me.,나와 같이 갑시다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Comfortable,편안함,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Commentaries on the Mysterium Xarxes,작시스의 신비 해설집,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact entry
+Common Soul Gem,소울젬 - 중급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Commoner,일반인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Complexion,얼굴 피부 종류,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Confidence,자신감,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Congealed Putrescence,굳힌 부패물,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Conjuration,소환마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Conjurer,소환마법사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Conjurer Adept,숙련된 소환마법사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Constant Effect,지속 효과,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Continue,계속,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Continue from your last saved game?,마지막으로 저장한 곳에서부터 계속하겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Continue Running Executable?,실행을 계속 하겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Contract,계약서,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cooking Pot,요리 냄비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Corpse,시체,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Courier,배달부,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Crab Meat,게살,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Crate,의자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Create,만들기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Crucible,크루시블,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Cuhlecain,쿠훌케인,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Cuirass of the Crusader,성기사의 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cupboard,선반,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cure Disease,질병 치료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Cure Poison,독 치료,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell name
+Cylarne,사이란,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles main quest/community usage
+Cyrodiil,시로딜,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Repeated BOOK usage
+Cyrodilic Brandy,술 - 시로딜 브랜디,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedra,데이드라,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Repeated BOOK/UI usage
+Daedra Heart,데이드라 심장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedra Silk,데이드라 실크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedra Venin,데이드라 베닌,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Arrow,화살 - 데이드라제,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Boots,데이드라제 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Bow,데이드라제 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Cuirass,데이드라제 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Dagger,데이드라제 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Gauntlets,데이드라제 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Helmet,데이드라제 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Mace,데이드라제 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Prince,데이드릭 프린스,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim usage
+Daedric Shield,데이드라제 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric War Axe,데이드라제 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedric Warhammer,데이드라제 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daedroth,데이드로쓰,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Korean TES creature usage
+Daedroth Teeth,데이드로쓰의 이빨,PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Core creature spelling overrides inconsistent SST compound
+Damage,공격력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Damage Health,체력 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Damage Magicka,매지카 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Arrow,화살 - 다크 세듀서,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Bow,다크 세듀서 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Brotherhood,다크 브라더후드,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim faction usage
+Dark Brotherhood Sanctuary,다크 브라더후드 성역,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Elf,다크 엘프,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+Dark Mace,다크 세듀서 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducer,다크 세듀서,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Saints & Seducers Creation Club usage
+Dark Seducer Archer,다크 세듀서 궁수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducer Armor,다크 세듀서 갑옷,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducer Helmet,다크 세듀서 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducer Shield,다크 세듀서 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducer Warrior,다크 세듀서 전사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dark Seducers,다크 세듀서,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Saints & Seducers Creation Club usage
+Darkest Darkness,가장 어두운 암흑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Daughter of the Niben,브라빌-니벤의 딸,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dawnfang,던팽,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact latest SST Creation Club term; enforce inside phrases
+Day,일,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+De Rerum Dirennis,드 리룸 디레니스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dead Scholar,죽은 학자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Death Blow of Abernanit,아버나니트 필살의 일격,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Deer,사슴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dementia,디멘시아,PHRASE_CONTEXT,LATEST_SST_CC_CONTEXT,CONFIRMED,Saints & Seducers region usage
+Dervenin,더베닌,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Desk,책상,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Destruction,파괴마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Detect Life,생명 탐지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Diamond,다이아몬드,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Remove Skyrim category prefix
+Dibella,디벨라,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+"Die, traitor!","죽어라, 배신자!",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Disease,질병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Display Case,진열함,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Do you just want to serve your time?,감옥에서 형기를 보낼까요?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Do you want to move your marker or remove it?,표시를 옮기거나 삭제할까요?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Do you want to poison the,독을 바르겠습니까? -,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Do you want to poison your next shot with the,다음에 발사할 화살에 독을 바르겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Do you want to steal this horse?,이 말을 훔치겠습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dog,개,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Done,완료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Door,문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dorian,도리안,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Down,아래로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dragon's Tongue,드래곤 텅,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Drain,빼내기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Drain Health,체력 감소,EXACT_ONLY,PROJECT_QA,CONFIRMED,Drain temporarily lowers value; distinguish Absorb effect
+Drain Magicka,매지카 감소,EXACT_ONLY,PROJECT_QA,CONFIRMED,Drain temporarily lowers value; distinguish Absorb effect
+Drawers,서랍,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dread Zombie,공포의 좀비,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_OVERRIDE,Creature name; reject unrelated necromancy tier
+Dreamworld,드림월드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora,드레모라,PHRASE_CONTEXT,SERIES_STANDARD,CONFIRMED,Stable Korean TES creature term
+Dremora Caitiff,드레모라 카이티프,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Churl,드레모라 커르,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Kynreeve,드레모라 킨리브,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Kynval,드레모라 킨발,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Lord,드레모라 군주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Markynaz,드레모라 마키나스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dremora Valkynaz,드레모라 발키나스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dreugh Wax,드레그 왁스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Droops,근약화증,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dunmer,던머,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim dialogue/loading usage
+Duration,지속 시간,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Duskfang,더스크팽,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact latest SST Creation Club term; enforce inside phrases
+Dwarven Arrow,화살 - 드워프제,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Boots,드워프제 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Bow,드워프제 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Dagger,드워프제 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Gauntlets,드워프제 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Helmet,드워프제 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Mace,드워프제 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Shield,드워프제 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven War Axe,드워프제 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwarven Warhammer,드워프제 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Dwemer History and Culture,드웨머의 역사와 문화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Arrow,화살 - 에보니,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Blade,에보니 블레이드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Ebony Boots,에보니 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Bow,에보니 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Dagger,에보니 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Gauntlets,에보니 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Helmet,에보니 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Mace,에보니 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Shield,에보니 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony War Axe,에보니 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ebony Warhammer,에보니 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ectoplasm,심령체,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Effect has already been added. Edit the effect instead.,효과가 이미 적용되어있습니다. 대신 효과를 수정하세요.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ehlnofey,엘노페이,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Latest Skyrim SST book usage
+El-Estia,엘 에스티아,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Elder Scroll,엘더스크롤,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elemental Blast,원소 폭발,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elemental Bolt,원소 화살,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elemental Burst,원소 파열,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elemental Flare,원소 불꽃,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elsweyr,엘스웨어,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim usage
+Elven Arrow,화살 - 엘프제,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Boots,엘프제 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Bow,엘프제 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Dagger,엘프제 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Gauntlets,엘프제 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Helmet,엘프제 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Mace,엘프제 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Shield,엘프제 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven War Axe,엘프제 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elven Warhammer,엘프제 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Elytra,엘리트라,PHRASE_CONTEXT,V1_BOOK_REFERENCE,CONFIRMED,Stable creature/ingredient rendering in prior BOOK translation
+Elytra Ichor,엘리트라 영액,PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Core creature spelling overrides generic SST rendering
+Embrace of Shadows,그림자 동조,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Emerald,에메랄드,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Remove Skyrim category prefix
+Emperor's Birthday,황제 탄신일,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Enchanter,마법부여가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Enchantment,마법부여 효과,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Enter character name.,캐릭터의 이름을 입력하세요,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Entrance,입구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+equipped.,장비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Esbern,에스번,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Escaped Prisoner,탈출한 죄수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Evening Star,12월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Everscamp,에버스캠프,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Oblivion proper noun
+Exit,나가기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Exit Game,게임 종료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Expert,전문가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Eyes,눈,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Face,얼굴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Falkreath,팔크리스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Fall,가을,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fall of the Snow Prince,눈의 왕자의 몰락,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Farmer,농부,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fast travel is currently unavailable from this location.,현재 위치에서는 빠른 이동을 사용할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Father Of The Niben,니벤의 아버지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fatigue,피로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fear,공포,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Feed,흡혈,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONTEXT_CONFIRMED,Oblivion editor ID sVampireFeed
+Fenrik's Welcome,펜릭의 환영인사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Feyfolken I,"페이폴켄, 제 1권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Feyfolken II,"페이폴켄, 제 2권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Feyfolken III,"페이폴켄, 제 3권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fighters Guild,파이터 길드,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Oblivion faction/quest-line usage
+File does not exist,파일이 존재하지 않습니다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fine. Let's go.,"좋아, 가자구.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fire and Darkness,화염과 어둠,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fire Ball,화염구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fire Damage,화염 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fire Salts,화염 소금,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fire Storm,화염 폭풍,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fireball,화염구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+First Seed,3월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Five Songs of King Wulfharth,울프하스 왕의 다섯 노래,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flame Atronach,화염 아트로나크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flame Stalk,불꽃 줄기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flawless Diamond,보석 - 완벽한 다이아몬드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flawless Emerald,보석 - 완벽한 에메랄드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flawless Ruby,보석 - 완벽한 루비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flawless Sapphire,보석 - 완벽한 사파이어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Flee,도망,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fleshy Pod,살점 주머니,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fly Amanita,광대 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Focus Crystal,초점 수정,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing applied Oblivion term
+Fork,포크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fork of Horripilation,소름끼치는 포크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fortify,마법강화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fortify Health,체력 강화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fortify Magicka,매지카 강화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Forward,앞으로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fragment: On Artaeum,단편 - 아테이움에서,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fredas,금요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Frenzy,광분,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell name
+Fringe,프린지,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional/main quest usage
+"Frontier, Conquest","개척자, 정복",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Frost Atronach,서리 아트로나크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Frost Damage,냉기 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Frost Salts,냉기 소금,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Frostbite,동상,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Frostfall,10월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+ft,걸음,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fungus Stalk,줄기 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fur Boots,털가죽 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fur Gauntlets,털가죽 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Fur Helmet,털가죽 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Galerion The Mystic,마술사 갈레리온,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Garlic,마늘,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gate,관문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gatekeeper,게이트키퍼,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Dedicated current community page
+Gates of Madness,광기의 관문,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional/main quest usage
+Gauntlets of the Crusader,성기사의 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Geimund,가이문드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Get lost.,꺼져.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Get to the point.,본론을 말하시오.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ghost,유령,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ghost Axe,도끼 유령,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Arrow,화살 - 글래스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Boots,글래스 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Bow,글래스 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Dagger,글래스 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Gauntlets,글래스 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Helmet,글래스 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Mace,글래스 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Shield,글래스 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass War Axe,글래스 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glass Warhammer,글래스 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glories and Laments,영광과 탄식,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Glow Dust,빛나는 가루,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gnarl,그나르,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Oblivion Shivering Isles creature; distinguish from Skyrim Gnarl Bark wording
+Gnarl Bark,그나르 나무 껍질,PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Core creature spelling overrides inconsistent SST compound
+Go on.,계속하시오.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Go on...,계속 하시오...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Goblin,고블린,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Goblin Totem Staff,고블린 토템 지팡이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gods and Worship,신들과 신앙,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+gold,골드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gold Diamond Ring,금 반지 - 다이아몬드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gold Emerald Ring,금 반지 - 에메랄드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gold Necklace,금 목걸이,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Item name
+Gold Ring,금 반지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gold Sapphire Ring,금 반지 - 사파이어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Goldbrand,골드브랜드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Creation/SST usage
+Golden Arrow,화살 - 골든 세인트,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Bow,골든 세인트 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Mace,골든 세인트 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saint,골든 세인트,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Saints & Seducers Creation Club usage
+Golden Saint Archer,골든 세인트 궁수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saint Armor,골든 세인트 갑옷,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saint Helmet,골든 세인트 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saint Shield,골든 세인트 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saint Warrior,골든 세인트 전사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Golden Saints,골든 세인트,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Saints & Seducers Creation Club usage
+Grab,잡기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Grand,특급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Grand Soul Gem,소울젬 - 특급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Grate,강판,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gray Cowl of Nocturnal,녹터널의 회색 가면,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Exact Gray Cowl Creation entry
+Gray Fox,그레이 폭스,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Gray Cowl Creation usage
+Great Welkynd Stone,그레이트 웰킨드 스톤,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Greater,상급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Greater Soul Gem,소울젬 - 상급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Greenspore,녹색포자병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Greymarch,회색 행군,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current page title; 그레이마치 redirects here
+Grummite,그루마이트,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Oblivion Shivering Isles creature
+Guard,경비병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Guard House,경비막사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Gwendolyn,그웬돌린,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hair,머리카락,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hair Color,머리카락 색상,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hallgerd's Tale,할거드의 이야기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hammerfell,해머펠,PHRASE_CONTEXT,NAMUWIKI_CURRENT_SST_CONFLICT,CONFIRMED,Current community title; SST context varies between 해머폴/해머펠
+Hanging Gardens,공중정원,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hangman's Noose,집행자의 올가미,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hannibal Traven,한니발 트레이븐,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Skyrim BOOK The Black Arts On Trial; current community title uses 트래븐
+Harrada,하라다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Harrada Root,하라다 뿌리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+has already caught you.,: 당신을 지켜보고 있습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+has been damaged,손상되었습니다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Haskill,하스킬,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Sheogorath dialogue
+Heal,치유,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Health,체력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Heart of Order,질서의 기사단 심장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Heartfire,9월,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hearthfire,9월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Heavy,중갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Heavy Armor,중갑 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Helm of Oreyn Bearclaw,곰주먹 오레인의 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Helm of the Crusader,성기사의 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Help,도움,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Here you are.,여기 있네.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Heretical Thoughts,이단의 생각,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hermaeus Mora,헤르메우스 모라,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Hero of Kvatch,크바치의 영웅,PHRASE_CONTEXT,LATEST_SST_BOOK_NAMU,CONFIRMED,Oblivion Crisis BOOK + current community title
+Hieronymus Lex,히에로니무스 렉스,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion community page
+High Elf,하이 엘프,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+High Rock,하이 락,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim usage
+Highcross,하이크로스,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Hill of Suicides,자살자의 언덕,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Hircine,허씬,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Hit,명중,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hollowed Stump,빈 그루터기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hollowed-Out Rock,움푹 파인 바위,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hollowed-Out Tree Stump,움푹 파인 그루터기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Holy Aura,신성한 기운,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Horse,말,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Horse Whisperer,호스 위스퍼러,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+How did you end up here?,어쩌다가 여기에서 죽게 된 거지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+How did you escape?,어떻게 탈출했지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+How did you know?,어떻게 알았소?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+How do you know this?,어떻게 이 사실을 알게 되었나?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Human Heart,인간의 심장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hunger,헝거,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Shivering Isles creature name; distinguish generic hunger=허기
+Hunger Tongue,헝거의 혀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hunter,사냥꾼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Hydnum Azure Giant Spore,하늘색 턱수염버섯 거대 포자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I disagree.,난 싫어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't have time right now.,지금은 여유가 없군.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't know!,모릅니다!,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't need anything else.,이제 됐다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't need your help.,난 당신 도움 필요없어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't understand.,이해가 안되는군요.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I don't want your help.,안 도와 줘도 돼.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I have more questions.,더 물어볼 게 있는데.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I was told to find you.,당신을 찾으라는 말만 들었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I would be honored to help.,도움을 드리게 되어 영광입니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'd like a drink.,한잔 하고 싶은데.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'd rather not say.,말하지 않는 게 좋겠군.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'll be going now.,이만 가보겠어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'll help you.,당신을 도와주지.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'll think about it.,그건 생각해 보죠.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm afraid not.,"아니, 안 팔아.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm here to help.,도와주러 왔어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm in.,그 일을 맡지.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm listening...,듣고 있소...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm not interested.,흥미없소.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm not ready yet.,아직 준비가 되지 않았습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm ready when you are.,난 이미 준비 됐어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+I'm sorry...,미안하오...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ice and Chitin,얼음과 키틴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ice Storm,얼음 폭풍,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Spell name
+Ignore,무시,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Illusion,환영마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Immortal Blood,불사의 피,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imp Gall,임프 담즙,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial,임페리얼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial City,임페리얼 시티,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim/Dawnguard SST usage
+Imperial Dragon Armor,임페리얼 드래곤 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial Dragon Boots,임페리얼 드래곤 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial Dragon Cuirass,임페리얼 드래곤 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial Dragon Gauntlets,임페리얼 드래곤 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial Dragon Helmet,임페리얼 드래곤 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Imperial Legion,제국군,PHRASE_CONTEXT,SOL_CONTEXT_CONFIRMED,CONFIRMED,Prior conflict review; faction sense
+Imperial Watch,제국군 경비병,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Imperial Legion article explicitly maps Imperial Watch
+Infiltration,잠입,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ingredient had no effect.,해당 재료는 아무 효과가 없었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Inkwell,잉크병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Inventory,소지품,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Invisibility,투명화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Arrow,화살 - 철,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Boots,철 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Dagger,철 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Gauntlets,철 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Helmet,철 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Key,열쇠 - 철제 열쇠,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Mace,철 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Ore,광석 - 철,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Shield,철 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron War Axe,철 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Iron Warhammer,철 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+is being drained,: 피해를 받고 있습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+is calmed and cannot respond.,- 진정되었고 반응하지 않습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+is fleeing for their life.,- 도망치고 있습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Is something wrong?,무슨 문제라도?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Is there anything I can do to help?,제가 뭐라도 도와드릴 일이 있습니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+is unconscious.,- 의식을 잃었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+It shall be done.,바로 하겠습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+It's a deal.,그렇게 하지.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Jail,감옥,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Jauffre,죠프리,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,The Oblivion Crisis BOOK renders Jauffre as 죠프리
+Jesper,제스퍼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Jeweled Amulet,목걸이 - 보석 아뮬렛,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Journal,일기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Judgment Nexus,심판의 연결고리,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing applied Oblivion term
+Julianos,줄리아노스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Jyggalag,지갈렉,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Sword of Jyggalag -> 지갈렉의 검
+Keep your distance.,가까이 오지마라.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Khajiit,카짓,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim/CC race usage
+King,왕,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+King of Worms,벌레의 왕,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Mannimarco epithet
+Knife,나이프,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Knight of Order,질서의 기사,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Greymarch/main quest usage
+Knights of Order,질서의 기사,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Greymarch/main quest usage
+Knights of the Nine,나인의 기사단,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated faction page
+Knights of the Thorn,가시의 기사단,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Oblivion housing/faction usage
+Known Effects,습득한 효과,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Kvatch,크바치,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Dawnguard SST usage
+Kynareth,키나레스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Ladder,사다리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Large,대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Last Scabbard of Akrash,아크라쉬의 마지막 칼집,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Last Seed,8월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Lavender,라벤더,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Leather Boots,가죽 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Leather Helmet,가죽 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Leave It,그대로 두기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Leek,파,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Left,왼쪽,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Legend of Krately House,크레틀리 저택 전설,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lesser,하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lesser Power,하급 특수능력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lesser Soul Gem,소울젬 - 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Let me think about it.,조금 생각을 해 봐야 겠군.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Let's go.,가자.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Letter,편지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Level,레벨,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lever,레버,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Leyawiin,레이야윈,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,BOOK usage
+Lichor,리코르,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Light Armor,경갑 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lighthouse Lamp,등대 램프,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lightning,라이트닝,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lightning Bolt,번개 화살,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lightning Storm,번개 폭풍,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Liminal Bridges,경계의 다리,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Loading area...,지역을 불러오는 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Loading distant LOD...,원거리 LOD 불러오는 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Loading extra content. Please wait.,확장 컨텐츠를 불러오는 중입니다. 기다려주세요.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lock,자물쇠,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lockpick,락픽,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Looking for content. Please wait.,컨텐츠를 찾고 있습니다. 잠깐 기다려주세요.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Loose Grate,떨어진 창살문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Loredas,토요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Low,낮음,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Lucien Lachance,루시엔 러찬스,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Direct Skyrim dialogue
+M'aiq the Liar,거짓말쟁이 마'이크,PHRASE_CONTEXT,PROJECT_OVERRIDE,CONFIRMED,User exception: M'aiq keeps 마'이크.
+Mace Etiquette,철퇴 사용법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mace of Molag Bal,몰락 발의 철퇴,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Mace of the Crusader,성기사의 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Arrow,화살 - 광기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Boots,광기의 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Bow,광기의 활,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Gauntlets,광기의 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Helmet,광기의 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Madness Ore,광기의 광석,PHRASE_CONTEXT,PROJECT_TERM_DECISION,CONFIRMED,Oblivion v2 terminology; Madness standardized as 광기
+Madness Shield,광기의 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mage,마법사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mages Guild,메이지 길드,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Oblivion faction/quest-line usage
+Magic from the Sky,하늘에서 내려온 마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Magic Resistance,마법 저항력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Magicka,매지카,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Magnitude,세기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Main Menu,메인 메뉴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Make these your default settings?,이것을 기본설정으로 합니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Malacath,말라카스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Mania,매니아,PHRASE_CONTEXT,LATEST_SST_CC_CONTEXT,CONFIRMED,Saints & Seducers region usage
+Mankar Camoran,맨카 캐모런,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Commentaries BOOK author line repeatedly uses 맨카 캐모런
+Mannimarco,매니마코,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated character page
+"Mannimarco, King of Worms","매니마코, 벌레의 왕",PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Normalize both established core terms in full epithet
+Mara,마라,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Mara's Wrath,마라의 분노,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Marauder,습격자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Martin Septim,마틴 셉팀,PHRASE_CONTEXT,LATEST_SST_BOOK_NAMU,CONFIRMED,Oblivion Crisis BOOK + current community usage
+Masque of Clavicus Vile,클라비쿠스 바일의 가면,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Master,달인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mathieu Bellamont,매튜 벨라몬트,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Skyrim dialogue and current Dark Brotherhood community page
+Maybe later.,다음 기회에.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Maybe some other time.,아마 다음 기회에.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mazken,마즈켄,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Dark Seducer self-name
+Mead,벌꿀 술,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Medium,중간,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mehrunes Dagon,메이룬스 데이건,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Oblivion Crisis Skyrim usage
+Mehrunes Razor,메이룬스의 면도칼,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Korean TES artifact title; Skyrim metadata is untranslated
+Mephala,메팔라,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Mercenary,용병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Merchant,상인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Meridia,메리디아,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Methredhel,메스레델,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Oblivion Thieves Guild member list
+Mid Year,6월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Middas,수요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Miner,광부,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Minotaur Horn,미노타우로스 뿔,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Misdirection,눈속임,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mixed Unit Tactics,병과 혼합 전술,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Modryn Oreyn,모드윈 오레인,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion community page
+Molag Bal,몰락 발,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact SST entry
+Morag Tong Assassin,모락 통 암살자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Morag Tong Boots,모락 통 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Morndas,월요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Morning Star,1월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Morrowind,모로윈드,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim/Dragonborn usage
+Mort Flesh,썩은 살점,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mournhold,모운홀드,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion project usage
+Mouth,입,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Move It,이동,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mundus,문두스,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim lore dialogue usage
+Murder,살인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Muurine,뮤린,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion NPC name
+Mysterious Akavir,신비한 아카비르,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mysterious Note,비밀 노트,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mysterium Xarxes,작시스의 신비,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact entry; community currently uses 미스테리움 자서스
+"Mystery of Talara, v 1","탈라라의 미스터리, 제 1권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Mystery of Talara, v 2","탈라라의 미스터리, 제 2권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mystic Venom,신비로운 독,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mythic Dawn,미식 던,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact SST entry
+Mythic Dawn Commentaries 1,"작시스의 신비 해설, 제 1권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mythic Dawn Commentaries 2,"작시스의 신비 해설, 제 2권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mythic Dawn Commentaries 3,"작시스의 신비 해설, 제 3권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mythic Dawn Commentaries 4,"작시스의 신비 해설, 제 4권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Mythic Dawn Guard,미식 던 경비병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Myths of Sheogorath,쉐오고라스 신화들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+N'Gasta! Kvata! Kvakis!,가스타! 크바타! 크바키스!,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Namira,나미라,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim item/quest usage
+Necromancer,강령술사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Necromancer Adept,숙련된 강령술사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Nelrene,넬렌,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion NPC name
+Nerevar Moon and Star,네레바 달과 별,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Nerveshatter,신경파쇄기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Neutral,중립,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+New Content Available,새로운 DLC가 있습니다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+New Save,새로 저장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+New Sheoth,뉴 쉐오스,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Oblivion Shivering Isles place
+Next,다음,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Niels,니엘스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Night Falls on Sentinel,센티넬의 밤,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Night Mother,나이트 마더,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim Dark Brotherhood usage
+Nightshade,나이트쉐이드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Nine Divines,나인 디바인,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Majority direct phrase usage in Skyrim SST
+Nirn,넌,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST term
+Nirnroot,넌루트,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+No,아니오,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+No New Content Available,새로운 DLC가 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+No saved games.,저장된 게임이 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+No Stone Unturned,최선을 다하기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"No, I don't think so.",그건 곤란한데.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"No, I haven't.","아니, 없소.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"No, keep playing.","아니오, 계속합니다.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"No, not right now.","아니, 지금은 곤란하군.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Noble,귀족,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Nocturnal,녹터널,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim NPC and repeated dialogue usage
+None,없음,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Nord,노드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+Nord Winds,노드의 바람,PHRASE_CONTEXT,OBLIVION_PROJECT_QA,CONFIRMED,Oblivion-specific Bruma shop name; prior reviewed translation is consistent
+Not a chance.,절대 안돼.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Not just yet.,아직 아니오.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Not yet.,아직 아니오.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Note,노트,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Novice,초보자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Oblivion,오블리비언,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Series/plane name in Skyrim usage
+Oblivion Crisis,오블리비언 대위기,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,The Oblivion Crisis BOOK title
+Oblivion Gate,오블리비언 게이트,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact/BOOK usage
+Ocato,오카토,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated TES community page
+Ocheeva,오치바,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion community page
+Offering Box,공물 상자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Oghma Infinium,오그마 인피니움,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Ogre's Teeth,오거의 이빨,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+OK,확인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Okay, follow me.","좋아, 따라오시오.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Old Wooden Door,오래된 나무 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+On Oblivion,오블리비언에 대해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Open,열기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Opened the container with a key.,상자를 열쇠로 열었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Orc,오크,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim/CC race usage
+Orcish Boots,오크제 전투화,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Orcish Gauntlets,오크제 장갑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Orcish Helmet,오크제 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Orcish Shield,오크제 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Order of the Virtuous Blood,고귀한 피의 결사,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion faction page
+Orders,지시,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Orsimer,오시머,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim dialogue usage
+Orum's Aquatic Escape,오럼의 수생 탈출,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pale Pass,페일 고개,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+"Palla, volume 1","팔라, 제 1권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Palla, volume 2","팔라, 제 2권",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Paralyze,마비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Passwall,패스월,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Sheogorath dialogue
+Pause,일시정지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pearl,진주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pelinal,펠리날,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Song of Pelinal titles/body
+Pelinal Whitestrake,펠리날 화이트스트레이크,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,BOOK context; SST Pelinal spelling preferred over community 펠리널
+Pension of the Ancestor Moth,나방 선조의 집,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Perhaps another time.,다음기회에.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Peryite,페리아이트,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Repeated Skyrim context + current community title
+Petty,최하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Petty Soul Gem,소울젬 - 최하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pickaxe,곡괭이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pickpocket,소매치기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pilgrimage,순례,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pillar,조각 기둥,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pinnacle Rock,피나클 락,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Pirate,해적,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pitchfork,쇠스랑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Planter,화분,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,EditorIDs are Upper/MiddleClassPlanter objects
+Plate,접시,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Play Time,플레이 시간,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Poison,독,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,sMagicTypePoison UI
+Portal,차원문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potato,감자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potato Bread,감자 빵,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potato Plant,감자 줄기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion,물약,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Cure Disease,물약 - 질병 치료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Destruction,물약 - 파괴마법 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Healing,물약 - 체력 회복 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Health,물약 - 체력 증가 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Magicka,물약 - 매지카 회복 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Potion of Strength,물약 - 운반 증가 하급,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Power,특수능력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+PowerAttack,강한 공격,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pride of Hirstaang,허스탕의 자부심,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Priest of Order,질서의 사제,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Greymarch/main quest usage
+Priests of Order,질서의 사제,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Greymarch/main quest usage
+Priory of the Nine,나인의 수도회,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current Knights of the Nine faction page
+Prison Cell Key,열쇠 - 감옥 감방,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Prisoner,죄수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Proper Lock Design,올바른 자물쇠 설계,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Prophet,예언자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Public Notice,공지사항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Pumpkin,펌킨,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Purloined Shadows,도난당한 그림자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+push,밀기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quest added,퀘스트 추가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quest completed,퀘스트 완료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quest updated,퀘스트 갱신,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quickloading...,빠른 저장 불러오는 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quicksave,빠른 저장,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quicksaving...,빠른 저장 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Quill,깃털펜,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ra'kheran,라'케란,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Race,종족,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rage,격노,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rain's Hand,4월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Rally,광역 고무,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Raminus Polus,라미누스 폴루스,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Mages Guild quest-line article
+Range,작동범위,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rattles,경련,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Raven Camoran,레이븐 캐모런,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current Oblivion main-quest article
+Read,읽기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Reality & Other Falsehoods,현실 그리고 또다른 허상,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Reanimate,시체 부활,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell; reject Skyrim tier label
+Recharge,충전,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+RechargeExit,충전 종료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Red Kelp Gas Bladder,붉은 켈프 가스 주머니,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Redguard,레드가드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+Redwort Flower,레드워트 꽃,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Refugee,피난민,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Regeneration,재생,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Relmyna Verenim,렐미나 베레님,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated page
+Reload,재장전하기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Reman,레만,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Remanada,레마나다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Remove It,삭제,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Repair,수리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+RepairExit,수리 종료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Report: Disaster at Ionith,보고서 : 이오니스의 참극,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Requires,필요,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Research Notes,조사 메모들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Disease,질병 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Fire,화염 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Frost,냉기 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Magic,마법 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Poison,독 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resist Shock,번개 저항,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Resonator of Judgment,심판의 공명기,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing applied Oblivion term
+Respite,한숨 돌리기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Response to Bero's Speech,베로의 주장에 대한 답변,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Restoration,회복마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Restore,회복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Restore Health,체력 회복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Restore Magicka,매지카 회복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Retry,재시도,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ride,탑승,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rielle,리엘,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Right,오른쪽,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rigmor,리그모어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Alteration,반지 - 하급 변화마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Conjuration,반지 - 하급 소환마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Destruction,반지 - 하급 파괴마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Disrobing,탈의 반지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Health,반지 - 하급 체력 증가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Khajiit,카짓의 반지,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact SST usage
+Ring of Magicka,반지 - 하급 매지카 증가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Namira,나미라의 반지,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Ring of Restoration,반지 - 하급 회복마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ring of Stamina,반지 - 하급 지구력 증가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rislav The Righteous,의로운 리슬라브,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rockjoint,관절염,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Rot Scale,부패한 비늘,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ruby,루비,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Remove Skyrim category prefix
+Ruin's Edge,파멸의 끝,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ruins of Kemel-Ze,카멜-제 유적,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ruma Camoran,루마 캐모런,PHRASE_CONTEXT,PROJECT_FAMILY_STANDARD,CONFIRMED,Normalize Camoran family surname to 캐모런; current pages vary 캐모란/캐모런
+Saarthal,사아쌀,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Sack,자루,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sacred Witness,거룩한 목격자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Saints and Seducers,세인트와 세듀서,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sam,샘,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sancre Tor,생크 토르,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,The Legendary Sancre Tor / Battle of Sancre Tor
+Sanctuary,성역,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sanguine,생귀,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Skyrim exact/context usage; community often uses 생귄
+Sanguine Rose,생귀의 장미,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Sapphire,사파이어,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Remove Skyrim category prefix
+Save failed.,저장 실패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Save game deleted.,저장된 게임이 삭제되었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Save location full. Disabling Autosave.,저장 공간이 가득 찼습니다. 자동 저장 불가로 전환합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Save successful.,저장 성공,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Saving content. Please don't turn off your console.,저장 중. 콘솔을 끄지 마세요.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Saving...,저장하는 중...,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Savirien-Chorak,사비리엔-초락,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Scalon,스캐론,PHRASE_CONTEXT,V1_BOOK_REFERENCE,CONFIRMED,Stable creature/ingredient rendering in prior BOOK translation
+Scalon Fin,스캐론 지느러미,PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Core creature spelling overrides inconsistent SST compound
+Scamp,스캠프,PHRASE_CONTEXT,SERIES_STANDARD,CONFIRMED,Stable Korean TES creature term
+Screaming Maw,비명지르는 열매,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Scroll,마법 주문서,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Search,살펴보기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+sec,초,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Second Seed,5월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Secret Door,비밀 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+secs,초,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sed-Yenna,세드 옌나,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Select,선택,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Self,자신,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sergius Turrianus,서지우스 투리아누스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shadow,그림자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shadow hide you.,그림자가 숨겨주길.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shadowmere,섀도미어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shadowrend,그림자조각,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sheogorath,쉐오고라스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact SST entry
+Shezarr and the Divines,쉐자르와 디바인들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shield of the Crusader,성기사의 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shivering Isles,쉬버링 아일즈,PHRASE_CONTEXT,LATEST_SST_CC,CONFIRMED,Repeated Creation Club/Skyrim usage
+Shock Damage,전격 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shoes,신발,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shopping List,구매 목록,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shovel,삽,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Azura,아주라의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Malacath,말라카스의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Mephala,메팔라의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Nocturnal,녹터널의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Peryite,페리아이트의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrine of Vaermina,베르미나의 성소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrouded Armor,암살자의 방어구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Shrouded Hood,암살자의 두건,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sigil Stone,시질 스톤,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Sigrid,시그리드,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Silence,은밀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Silver Goblet,은제 잔,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Silver Necklace,은 목걸이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Silver Ring,은 반지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Silver Ruby Ring,은 반지 - 루비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sinderion,신데리온,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sit,앉기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sithis,시디스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skeleton,해골,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skeleton Champion,해골 투사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skeleton Key,해골 열쇠,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim item and repeated quest usage
+Skingrad,스킨그라드,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim SST usage
+Skooma,스쿠마,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skull,해골,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skull of Corruption,타락의 두개골,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skullcrusher,두개골 파괴자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Skyrim,스카이림,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Slaughterfish,식인물고기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sleep,잠자기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Small,소,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sneak,은신,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sneak attack for,은신 공격 -,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+So what happens now?,이제 무슨 일이 일어나는 거지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Soldier,병사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Song Of Hrormir,흐로미어의 노래,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Song of the Alchemists,연금술사의 노래,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Sorry, I can't help right now.","미안하군, 지금은 도와줄 수 없소.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Sorry, I can't help you.","미안하지만, 도와줄 수는 없군.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sorry.,미안합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Soul Gems,소울젬,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Soul Tomato,영혼 토마토,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Same English name for both Oblivion records
+"Souls, Black and White","영혼, 흑과 백",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sovngarde,소븐가드,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Spell,마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spell Absorption,마법 흡수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spellbreaker,스펠브레이커,PHRASE_CONTEXT,LATEST_SST_MAJORITY,CONFIRMED,SST exact variants favor 스펠브레이커 4:1 over 마법 차단
+Spellsword,마검사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spiddal Stick,스피달 스틱,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spirit of the Daedra,데이드라의 정신,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Split,스플릿,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+Spoon,드웨머 - 숟가락,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spriggan,스프리건,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Spring,봄,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staada,스타아다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staff,지팡이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staff of Calm,지팡이 - 진정,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staff of Flames,지팡이 - 불길,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staff of Sheogorath,쉐오고라스의 지팡이,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Saints & Seducers/Skyrim usage
+Staff of Thunderbolts,지팡이 - 낙뢰,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Staff of Worms,벌레 왕의 지팡이,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steal,도둑질,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Stealth,잠행,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel Arrow,강철 화살,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_OVERRIDE,Remove Skyrim inventory category prefix
+Steel Dagger,강철 단검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel Helmet,강철 투구,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel Mace,강철 철퇴,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel Shield,강철 방패,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel War Axe,강철 도끼,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel Warhammer,강철 전투 망치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Steel-Blue Entoloma,강청색 외대버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Stendarr,스텐다르,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Steward's Note,행정관의 쪽지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Stone Bench,석제 긴 의자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Stone Door,돌문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Storm Atronach,폭풍 아트로나크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Strangulation,교살,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Strike,공격,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Summer,여름,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Summerset Isle,서머셋 아일즈,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Skyrim context and current community regional name
+Summerset Isles,서머셋 아일즈,PHRASE_CONTEXT,LATEST_SST_CONTEXT_NAMU,CONFIRMED,Skyrim context and current community title
+Summon Dremora,드레모라 소환,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Summon Ghost,유령 소환,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Summon Zombie,좀비 소환,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sun Damage,태양 피해,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sun's Dawn,2월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Sun's Dusk,11월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Sun's Height,7월,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST calendar usage; enforce inside phrases
+Sundas,일요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+"Sure, whatever.","물론, 그렇겠지.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Surfeit of Thieves,도둑들의 과욕,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Surilie Brothers Wine,술 - 서릴리 포도주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Switch,단추,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sword of Jyggalag,지갈렉의 검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Sword of the Crusader,성기사의 검,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Syl,실,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated page
+Take,가지기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Talk,대화하기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Talos,탈로스,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Tamriel,탐리엘,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Taproot,곧은 뿌리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Tar-Meena,타르-미나,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion character page
+Target,목표,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Target Level,목표 레벨,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Telekinesis,염동력,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Temple of the One,템플 오브 더 원,PHRASE_CONTEXT,PROJECT_CURRENT_COMMUNITY,CONFIRMED,"Current Korean TES community usage; avoids literal/mixed variants such as 일의 사원, 신의 사원, 지고신의 신전"
+Thadon,테이돈,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current New Sheoth page usage
+Thanks for your help.,도움에 감사드립니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+That button cannot be remapped,재설정할 수 없는 버튼입니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+That key cannot be remapped,그 키는 재설정할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Adabal-a,아다발-아,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Amulet of Kings,왕의 아뮬렛,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Armorer's Challenge,대장장이의 도전,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Art of War Magic,전투마법의 기술,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Black Arts On Trial,흑마술에 대한 논의,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Blessings of Sheogorath,쉐오고라스의 축복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Book of Daedra,데이드라에 대하여,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Buying Game,구매 게임,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The creature is calmed and cannot respond.,이 생물은 진정되었고 반응하지 않습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The current weapon is already poisoned.,현재 무기에는 벌써 독을 발라두었습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Doors of Oblivion,오블리비언 관문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Dragon Break,드래곤 브레이크,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Exodus,대탈출,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Firmament,창공,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Firsthold Revolt,퍼스트홀드 반란,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Forgemaster,대장간 관리자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Fringe,프린지,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional list
+The Gold Ribbon of Merit,공훈의 황금 리본,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Importance of Where,어디가 중요한가,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Knights of the Nine,나인의 기사단,PHRASE_CONTEXT,PROJECT_COMPOUND_OVERRIDE,CONFIRMED,Normalize article-bearing full faction title
+The Last King of the Ayleids,에일리드의 마지막 왕,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Legendary Sancre Tor,전설의 생크 토르,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Legendary Scourge,전설적인 재앙,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Locked Room,밀실,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Lunar Lorkhan,로칸의 달,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Madness of Pelagius,펠라지우스의 광기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Mirror,거울,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Old Ways,고전 풍습,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Pale Lady,창백한 여인,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Pig Children,돼지의 아이들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Posting of the Hunt,사냥의 시작,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Punished,처벌받은 자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Ransom of Zarek,자렉의 몸값,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Rear Guard,후위병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Red Book of Riddles,수수께끼의 붉은 책,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Red Kitchen Reader,붉은 주방 독본,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Refugees,피난민,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The save game is corrupt and cannot be loaded.,저장된 게임이 손상되어 불러올 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The save game is corrupt. Returning to game.,저장된 파일에 오류가 있습니다. 이전으로 돌아갑니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The save game is no longer available. Returning to game.,이 저장된 파일은 더 이상 사용할 수 없습니다. 이전으로 돌아갑니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Seed,씨앗,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Steed,말,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Third Door,세 번째 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The True Nature of Orcs,오크의 기원,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Warrior's Charge,전사의 돌진,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Waters of Oblivion,오블리비언의 물,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+The Wild Elves,와일드 엘프들,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Thief of Virtue,정조 도둑,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Thieves Guild,도둑 길드,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim/Dragonborn faction usage
+Thirsk,터스크,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Dragonborn SST exact term
+This door leads nowhere.,이 문으로는 갈 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+This NPC cannot help you train any higher.,이 NPC는 지금단계 이상으로는 훈련을 도와줄 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Thorn Hook,가시 갈고리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Throne,왕좌,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Tiber Septim,타이버 셉팀,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim SST usage
+Tirdas,화요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Tomato,토마토,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Tongs,집게,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Torch,횃불,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Torment,고통,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Touch,만지기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Touch of Death,죽음의 손길,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Training,훈련,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+TrainingExit,훈련 종료,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Trap Door,작은 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Travel,이동,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Travel to,이동하기,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Oblivion sTravelQuestion UI
+Treatise on Ayleidic Cities,에일리드 도시에 관한 논문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Trespass,무단침입,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Trials of St. Alessia,성 알레시아의 시련,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Tripwire,줄 덫,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Troll,트롤,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Troll Fat,트롤 지방,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Turdas,목요일,PHRASE_CONTEXT,LATEST_SST_CALENDAR,CONFIRMED,Latest SST weekday usage; enforce inside phrases
+Turn Undead,언데드 퇴치,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_CONFIRMED,Magic effect/spell name
+Uderfrykte,우더프라이크테,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Derived from existing Oblivion Uderfrykte Matron name
+Uderfrykte Matron,우더프라이크테 마트론,PHRASE_CONTEXT,PROJECT_EXISTING_APPLIED,CONFIRMED,Existing Oblivion creature name
+Umaril,우마릴,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Song of Pelinal BOOK usage
+Umbra,움브라,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Unable to remove the worn item.,장비하고 있는 물품을 벗을 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Unicorn,유니콘,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Unknown Location,알 수 없는 위치,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Up,위로,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+up to level,다음 레벨까지:,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Uriel Septim,유리엘 셉팀,PHRASE_CONTEXT,LATEST_SST_BOOK,CONFIRMED,Repeated Skyrim BOOK usage
+Uriel Septim VII,유리엘 셉팀 7세,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Direct Skyrim/Dawnguard usage
+Urn,항아리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vaermina,베르미나,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Valenwood,발렌우드,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Repeated Skyrim usage
+Vampire,흡혈귀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampire Assassin,흡혈귀 암살자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampire Dust,흡혈귀 가루,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampire Mage,흡혈귀 마법사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampire Scout,흡혈귀 정찰병,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampire's Seduction,흡혈귀의 유혹,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vampirism,흡혈귀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Varieties of Daedra,데이드라의 종류,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Venison,사슴 고기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vernaccus and Bourlor,베르나쿠스와 볼로어,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Versidue-Shaie,베르시듀-세이,PHRASE_CONTEXT,LATEST_SST_CONTEXT,CONFIRMED,Skyrim Remanada book usage
+Vicente Valtieri,비센테 발티에리,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion community page
+View Available Content,사용가능한 컨텐츠 보기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vigdis,비그디스,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Vilena Donton,빌레나 던튼,PHRASE_CONTEXT,NAMUWIKI_CURRENT,CONFIRMED,Current dedicated Oblivion community page
+Vitharn,비탄,PHRASE_CONTEXT,PROJECT_DECISION,CONFIRMED,Project terminology decision. Use 비탄 consistently for the Oblivion/Shivering Isles proper noun Vitharn.
+Voice,음성,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Voice of the Emperor,황제의 목소리,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Void Essence,공허의 정수,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Void Salts,공허 소금,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST exact term
+Volendrung,볼렌드렁,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Wabbajack,와바잭,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim usage
+Warehouse,창고,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Warrior,전사,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Watcher's Eye,주시자의 눈,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Water Breathing,수중호흡,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Waterlogged Chest,물에 잠긴 상자,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Disease,질병 취약,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Fire,약점 - 화염,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Frost,약점 - 냉기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Magic,약점 - 마법,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Poison,약점 - 독,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weakness to Shock,약점 - 번개,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weapon,무기,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wedding Ring,결혼 반지,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weight,저울추,EXACT_ONLY,SST_CONFLICT_SOL_REVIEW,SOL_OVERRIDE,"EditorID UpperScaleWeight01; object, not body weight"
+Welkynd Stone,웰킨드 스톤,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Weynon Priory,웨이넌 수도원,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated location page
+What about me?,내가 뭘?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What can I do?,뭘 하면 되겠소?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What do I have to do?,내가 뭘 하면 되지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What do you need me to do?,내가 뭘 하면 됩니까?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What do you want me to do?,내가 뭘 하면 되겠소?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What happened here?,무슨 일이 있었던거지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What happens now?,이제 어떻게 되지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+What is this?,이게 뭐야?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wheat,밀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Where are we going?,우리는 어디로 가는거지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+White Gold Tower,백금 탑,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Dawnguard/Skyrim SST term
+White-Gold Tower,백금 탑,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Dawnguard/Skyrim SST term
+Who is Nocturnal?,녹터널이 누구지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Why are you here?,당신은 왜 여기에 있는 거지?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Why do you care?,그건 알아서 뭐하게?,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wine,술 - 포도주,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Winter,겨울,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wisp Core,위스프 핵,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wisp Stalk Caps,위스프 줄기 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Witbane,두통,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Witch,마녀,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Witches' Festival,Witches'Festival,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Withering Moon,위더링 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Withershins,위더신즈,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wolf,늑대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wolf Pelt,모피 - 늑대,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wood Elf,우드 엘프,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Repeated exact Skyrim race usage
+Wooden Door,나무 문,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Words and Philosophy,단어와 철학,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Worm Cult,벌레 교단,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Established community name
+Worm's Head Cap,벌레의 모자 버섯,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Wraith,망령,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+X damage!,배의 피해!,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Xedilian,제딜리안,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Shivering Isles regional/main quest usage
+Xivilai,지빌라이,PHRASE_CONTEXT,NAMUWIKI_COMMUNITY,CONFIRMED,Current dedicated Oblivion creature page
+Yes,네,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Yes to all,모두 예,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Yes, I have.",이미 알고있소.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Yes, I understand.",알아 들었어.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Yes, I'm ready.","그래, 준비 됐어.",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+"Yes, restart the game.","네, 게임을 다시 시작합니다",EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Yield,항복,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You can not drop objects while in the air.,공중에 떠 있을 때에는 물품을 버릴 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You can not eat quest items.,퀘스트에 관련된 물품은 먹을 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You can't pick a lock while being pursued by guards.,경비병들이 추적하고 있을 때에는 자물쇠를 열 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You can't Quickload while the game is paused.,게임이 일시정지 중일 때는 빠른 저장을 불러올 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You can't Quicksave while the game is paused.,게임이 일시정지 중일 때는 빠른 저장을 할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot cast ranged spells underwater,물 속에서는 원거리 마법을 사용할 수 없습니다,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot change armor while attacking.,공격 중에는 방어구를 바꿀 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot change weapons while attacking.,공격 중에는 무기를 바꿀 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot equip this item.,이 물품은 장비할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot fast travel during combat!,전투 중에는 빠른 이동을 사용할 수 없습니다!,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot fast travel from this location.,이 장소에서는 빠른 이동을 사용할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot fast travel while guards are pursuing you.,경비병들이 당신을 추적 중이면 빠른 이동을 사용할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot place items in a container while pickpocketing.,소매치기 도중에는 상자에 물건을 넣을 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot repair items when enemies are nearby.,적이 근처에 있을 때에는 수리할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot save right now.,지금은 저장할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot sit on owned furniture.,다른사람이 차지하고 있는 가구에는 앉을 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot sleep in an owned bed.,다른사람의 침대에서는 잘 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot sleep while trespassing.,무단침입 도중에는 잘 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot unequip this item.,이 물품을 벗을 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot wait in this location.,이 장소에서는 대기할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot wait when enemies are nearby.,적이 근처에 있을 때에는 대기할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You cannot wait while trespassing.,무단침입하고 있을 때에는 대기할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You do not have enough gold.,돈이 부족합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You do not have enough room to drop this object.,물건을 내려놓을 공간이 부족합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You don't have enough Magicka,매지카가 부족합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You have contracted,감염되었습니다 :,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You have too many followers.,현재 동료가 너무 많습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You must close your current game to change resolutions.,해상도를 변경하기 위해서는 현재 게임을 종료해야 합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+You must first equip a weapon to poison it.,당신은 먼저 독을 바를 무기를 장비해야합니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Your,당신의,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Your attack has no effect.,공격이 아무런 효과가 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Your heavy armor is causing you to sink.,무거운 갑옷 때문에 가라앉고 있습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Your heavy armor prevents you from jumping.,무거운 갑옷 때문에 점프할 수 없습니다.,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Ysgramor,이스그라모어,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Latest Skyrim SST term
+Zenithar,제니타르,PHRASE_CONTEXT,LATEST_SST_EXACT,CONFIRMED,Exact Skyrim usage
+Zombie,좀비,EXACT_ONLY,SST_UNAMBIGUOUS,SEED,
+Drain Fatigue,피로 감소,EXACT_ONLY,PROJECT_QA,CONFIRMED,Drain temporarily lowers Fatigue; distinguish Absorb
+M'key,므'케이,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+M'aiq,마'이크,PHRASE_CONTEXT,PROJECT_OVERRIDE,CONFIRMED,User exception: M'aiq keeps 마'이크 despite general M'... punctuation/transliteration policy.
+M'desi,므'데시,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+M'dasha,므'다샤,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+M'dirr,므'디르,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+M'raaj-Dar,므'라즈-다르,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+Stros M'Kai,스트로스 므'카이,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name internal apostrophe/hyphen is orthographic and must be preserved.
+S'rathad,스'라타드,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+S'jirra,스'지라,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+Ra'jhera,라'즈헤라,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+gro-Shurgak,그로-슈르가크,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+gra-Shurgak,그라-슈르가크,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+Er-Teeus,에르-티우스,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Proper-name punctuation QA; preserve internal apostrophe/hyphen.
+Flesh Atronach,살점 아트로나크,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Direct Sol QA; terminology fixed from in-game context and related confirmed records.
+Great Sigil Stone,대형 시질 스톤,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Direct Sol QA; terminology fixed from in-game context and related confirmed records.
+Weatherward Circlet,기후 방호 반지,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Direct Sol QA; terminology fixed from in-game context and related confirmed records.
+Debaser,디베이저,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Direct Sol QA; terminology fixed from in-game context and related confirmed records.
+Mute Screaming Maw,소리 없는 비명지르는 열매,PHRASE_CONTEXT,PROJECT_QA,CONFIRMED,Direct Sol QA; terminology fixed from in-game context and related confirmed records.

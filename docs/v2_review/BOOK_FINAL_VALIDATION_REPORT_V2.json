@@ -1,0 +1,14 @@
+{
+  "total": 496,
+  "reviewed": 496,
+  "nonempty": 496,
+  "decision_counts": {
+    "REWRITE_NEW": 387,
+    "KEEP_OLD": 25,
+    "REWRITE_OLD": 18,
+    "USE_PRIOR_SOL": 52,
+    "REWRITE_PRIOR_SOL": 14
+  },
+  "issue_counts": {},
+  "issue_rows": 0
+}

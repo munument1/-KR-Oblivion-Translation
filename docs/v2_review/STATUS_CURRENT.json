@@ -1,0 +1,11 @@
+{
+  "review_complete": true,
+  "master_total": 8553,
+  "master_reviewed": 8553,
+  "master_pending": 0,
+  "book_total": 496,
+  "book_reviewed": 496,
+  "master_validation_issue_rows": 0,
+  "book_validation_issue_rows": 0,
+  "proper_name_policy": "C:\\오블리비언\\v2_work\\NAME_PUNCTUATION_POLICY.md"
+}
