@@ -1,0 +1,13 @@
+{
+  "queue_rows": 9049,
+  "master_rows": 8553,
+  "book_rows": 496,
+  "existing_override_rows": 19871,
+  "existing_rows_replaced": 9049,
+  "preserved_existing_rows": 10822,
+  "v2_rows_written": 9049,
+  "final_override_rows": 19871,
+  "all_reviewed": true,
+  "all_nonempty": true,
+  "source_key_matches_exact": true
+}

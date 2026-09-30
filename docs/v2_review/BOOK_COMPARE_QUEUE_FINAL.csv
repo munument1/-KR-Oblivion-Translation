@@ -18309,7 +18309,7 @@ The amount of Madness Ore required to make items is listed below:
 <font face=1><div align=""center"">광기의 갑옷<br>
 <br>
 
-<p>나, 뉴 쉐오스의 마스터 대장장이 커터는 전통과 고(故) 스승과의 신성한 맹세에 따라, 광기의 광석을 가져오는 모든 영웅을 위해 무기와 갑옷을 제련해야 한다. 영웅이 필요한 광석과 알맞은 주형을 가져온다면, 나는 이 무기와 갑옷의 마법 버전을 제작할 것이다. 그 주형은 내 스승이 대지 곳곳에 숨겨 두어 쉬버링 아일즈의 신비로운 정수, 그 피를 머금게 한 것이다.
+<p>나, 뉴 쉐오스의 마스터 대장장이 커터는 전통과 고인이 된 스승과의 신성한 맹세에 따라, 광기의 광석을 가져오는 모든 영웅을 위해 무기와 갑옷을 제련해야 한다. 영웅이 필요한 광석과 알맞은 주형을 가져온다면, 나는 이 무기와 갑옷의 마법 버전을 제작할 것이다. 그 주형은 내 스승이 대지 곳곳에 숨겨 두어 쉬버링 아일즈의 신비로운 정수, 그 피를 머금게 한 것이다.
 
  아이템 제작에 필요한 광기의 광석 양은 다음과 같다:</p>
 <p>1개 ---- 화살 (25발)</p>
@@ -18324,7 +18324,7 @@ The amount of Madness Ore required to make items is listed below:
 <p>3개 ---- 그리브</p>
 <p>2개 ---- 헬멧</p>
 <p>2개 ---- 방패</p> 
-",Prior Sol fixes Madness Ore to locked term; equipment labels can be normalized in later term audit.
+",Prior Sol fixes Madness Ore to locked term; equipment labels can be normalized in later term audit. Codec QA: removed unsupported CJK gloss while preserving Korean meaning.
 Oblivion.esm|BOOK|0001FB52|DESC||0,HidingWithTheShadow,"There are few professions that require the practitioner to be more self-reliant than that of thief. A thief is by nature a loner. He trusts no one and is trusted by few. He cannot go to a master and become an apprentice. He has no guild to collect and codify how to ply his craft. He does his crimes alone, and in the dark of night. He must hide by day to avoid capture by the authorities.
 
 The only known deity recognized by thieves is Nocturnal. Not truly a goddess, this Daedric lord is none-the-less a potent figure. She is the Mistress of Shadows, holding sway over secrets and stealth. She does not ask for worshippers, nor does she necessarily give blessings to those that do recognize her. In fact there are no known temples to her in Cyrodiil, although there are rumors of a forgotten shrine. In other words, she is perfectly suited to the criminal mind of the thief.
@@ -22426,7 +22426,7 @@ AE HERMA MORA ALTADOON PADHOME LKHAN AE AI.<br>
  <br>
 <DIV align=""center"">시디스<br>
 <br>
-<DIV align=""left"">시디스는 가문의 시작이다. 그 이전에는 아무것도 없었으나, 어리석은 알트머들은 이 '무(無)'에 이름을 붙이고 숭배한다. 그들이 게으른 노예이기 때문이다. 과연, 설교록에 이르기를 '정체는 그저 스스로를 요구할 뿐이며, 그것은 곧 아무것도 아님이다'라고 하였다.<br>
+<DIV align=""left"">시디스는 가문의 시작이다. 그 이전에는 아무것도 없었으나, 어리석은 알트머들은 이 '무'에 이름을 붙이고 숭배한다. 그들이 게으른 노예이기 때문이다. 과연, 설교록에 이르기를 '정체는 그저 스스로를 요구할 뿐이며, 그것은 곧 아무것도 아님이다'라고 하였다.<br>
 <br>
 시디스는 그 '무'를 갈라놓고 그 조각들을 변이시켜, 그로부터 무수한 가능성을 만들어냈다. 이 생각들은 밀려왔다 밀려가며 사라졌고, 원래 그래야만 했다. <br>
 <br>
@@ -22440,7 +22440,7 @@ AE HERMA MORA ALTADOON PADHOME LKHAN AE AI.<br>
 <br>
 AE HERMA MORA ALTADOON PADHOME LKHAN AE AI.<br>
 <br>
-<br>",Direct Sol comparison: Gemini is more faithful overall; targeted terminology/name/grammar corrections applied. ACTIVE_TERM_QA: Aedric: 에이드라의->에이드릭
+<br>",Direct Sol comparison: Gemini is more faithful overall; targeted terminology/name/grammar corrections applied. ACTIVE_TERM_QA: Aedric: 에이드라의->에이드릭 Codec QA: removed unsupported CJK gloss while preserving Korean meaning.
 Oblivion.esm|BOOK|000243D7|DESC||0,Book3Valuable2920v3a,"First Seed
 
 Book Three of
@@ -39114,7 +39114,7 @@ Lukar remembered her eyes. She was sick, but not afraid. Who was this ""He"" who
 ""아이 이름을 말해주더군요."" 로자이나가 대답했다. ""만카라고요.""",,"[{""source"":""Hammerfell"",""target"":""해머펠"",""basis"":""PROJECT_OVERRIDE""},{""source"":""High Rock"",""target"":""하이 락"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Valenwood"",""target"":""발렌우드"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Redguard"",""target"":""레드가드"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Dibella"",""target"":""디벨라"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Bosmer"",""target"":""보스머"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Breton"",""target"":""브레튼"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Kvatch"",""target"":""크바치"",""basis"":""PROJECT_OVERRIDE""},{""source"":""Mara"",""target"":""마라"",""basis"":""PROJECT_OVERRIDE""}]",NEW_GLOSSARY_MATCH,REVIEWED,REWRITE_NEW,"<font face=1><DIV align=""center"">피난민<br>
 게로스 알브레이 지음<br>
 <br>
-<DIV align=""left""><IMG src=""Book/fancy_font/t_52x61.dds"" width=52 height=61>만(灣)의 냄새가 지하실의 돌 틈으로 스며들었다. 소금과 짠내 나는 부패의 냄새였다. 지하실 자체는 식초로 변한 오래된 와인, 곰팡이, 그리고 부상자를 돌보기 위해 치유사들이 가져온 더 이국적인 허브 향이 섞여 있었다. 한때 위층 사창가의 잊힌 창고였던 이 큰 흙방에는 50명이 넘는 사람들이 빽빽하게 들어차 있었다. 신음과 훌쩍임은 이제 멈췄고, 마치 병원이 집단 무덤으로 변한 것처럼 모든 것이 고요했다.<br>
+<DIV align=""left""><IMG src=""Book/fancy_font/t_52x61.dds"" width=52 height=61>만의 냄새가 지하실의 돌 틈으로 스며들었다. 소금과 짠내 나는 부패의 냄새였다. 지하실 자체는 식초로 변한 오래된 와인, 곰팡이, 그리고 부상자를 돌보기 위해 치유사들이 가져온 더 이국적인 허브 향이 섞여 있었다. 한때 위층 사창가의 잊힌 창고였던 이 큰 흙방에는 50명이 넘는 사람들이 빽빽하게 들어차 있었다. 신음과 훌쩍임은 이제 멈췄고, 마치 병원이 집단 무덤으로 변한 것처럼 모든 것이 고요했다.<br>
 <br>
 ""어머니,"" 레드가드 소년이 속삭였다. ""방금 그게 뭐였어요?""<br>
 <br>
@@ -39242,7 +39242,7 @@ Lukar remembered her eyes. She was sick, but not afraid. Who was this ""He"" who
 <br>
 ""다른 말은 없었나요?"" 오르벤이 물었다.<br>
 <br>
-""아이 이름을 말해주더군요."" 로자이나가 대답했다. ""만카라고요.""",Direct Sol comparison: Gemini is more faithful overall for this training/history text; targeted name normalization applied.
+""아이 이름을 말해주더군요."" 로자이나가 대답했다. ""만카라고요.""",Direct Sol comparison: Gemini is more faithful overall for this training/history text; targeted name normalization applied. Codec QA: removed unsupported CJK gloss while preserving Korean meaning.
 Oblivion.esm|BOOK|00024410|DESC||0,SKLxMarksman1,"The Gold Ribbon of Merit
 
 by Ampyrian Brum
@@ -45278,7 +45278,7 @@ The Year Continues in Second Seed.","<font face=1>
 2920년 4월 3일<br>
 콜드하버, 오블리비언<br>
 <br>
-<IMG src=""Book/fancy_font/s_61x62.dds"" width=61 height=62>소타 실은 기수(汽水)에 반쯤 잠긴 궁전의 검게 그을린 복도를 최대한 빨리 지나갔다. 사방에서 징그러운 젤라틴 생물들이 갈대 속으로 달아났고, 흰 불꽃이 복도 위쪽 아치를 비추다 사라졌으며, 썩은 죽음의 냄새와 달콤한 꽃 향기가 번갈아 가며 그를 덮쳤다. 그는 여러 번 오블리비언의 데이드라 군주들을 그들의 오블리비언에서 만났지만, 매번 다른 무언이 그를 기다리고 있었다.<br>
+<IMG src=""Book/fancy_font/s_61x62.dds"" width=61 height=62>소타 실은 기수에 반쯤 잠긴 궁전의 검게 그을린 복도를 최대한 빨리 지나갔다. 사방에서 징그러운 젤라틴 생물들이 갈대 속으로 달아났고, 흰 불꽃이 복도 위쪽 아치를 비추다 사라졌으며, 썩은 죽음의 냄새와 달콤한 꽃 향기가 번갈아 가며 그를 덮쳤다. 그는 여러 번 오블리비언의 데이드라 군주들을 그들의 오블리비언에서 만났지만, 매번 다른 무언이 그를 기다리고 있었다.<br>
 <br>
 그는 자신의 목적을 알고 있었고, 방해받기를 거부했다.<br>
 <br>
@@ -45363,7 +45363,7 @@ The Year Continues in Second Seed.","<font face=1>
 나이 든 알트머가 힘겹게 일어서서 소타 실과 알말렉시아를 남겨두고 떠나기 전 마지막 차를 마셨다. ""마지막 배를 놓치지 말게.""<br>
 <br>
 해는 5월까지 계속된다.<br>
-<br>",Direct Sol comparison: Gemini is more faithful overall; targeted semantic/name/prose corrections applied. ACTIVE_TERM_QA: Second Seed: 세컨드 시드->5월
+<br>",Direct Sol comparison: Gemini is more faithful overall; targeted semantic/name/prose corrections applied. ACTIVE_TERM_QA: Second Seed: 세컨드 시드->5월 Codec QA: removed unsupported CJK gloss while preserving Korean meaning.
 Oblivion.esm|BOOK|00024540|DESC||0,SKLxRestoration5,"The Mystery of
 
 Princess Talara, Part II
