@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from build_video_subtitles import build_videos
+from build_video_subtitles import build_videos, find_tools
 
 
 class VideoSubtitleTests(unittest.TestCase):
@@ -21,6 +21,22 @@ class VideoSubtitleTests(unittest.TestCase):
             with self.assertRaisesRegex(FileNotFoundError, 'FFmpeg'):
                 build_videos(root / 'Data', output, root / 'subtitles', required=True)
             self.assertFalse(output.exists())
+
+    def test_find_tools_auto_prepares_missing_dependencies(self):
+        with patch('build_video_subtitles.shutil.which', side_effect=lambda name: None), \
+             patch('build_video_subtitles._prepare_ffmpeg', return_value=('cached-ffmpeg', 'cached-ffprobe')) as ffmpeg, \
+             patch('build_video_subtitles._prepare_rad', return_value='cached-rad') as rad:
+            self.assertEqual(find_tools(), ('cached-ffmpeg', 'cached-ffprobe', 'cached-rad'))
+            ffmpeg.assert_called_once()
+            rad.assert_called_once()
+
+    def test_find_tools_can_skip_auto_prepare(self):
+        with patch('build_video_subtitles.shutil.which', return_value=None), \
+             patch('build_video_subtitles._prepare_ffmpeg') as ffmpeg, \
+             patch('build_video_subtitles._prepare_rad') as rad:
+            self.assertEqual(find_tools(auto_prepare=False), (None, None, None))
+            ffmpeg.assert_not_called()
+            rad.assert_not_called()
 
     def test_changed_original_refused_before_encoding_and_preserved(self):
         with tempfile.TemporaryDirectory() as tmp:
