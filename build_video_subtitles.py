@@ -21,7 +21,7 @@ RAD_CANDIDATES = (
     Path(r"C:\Program Files (x86)\RADVideo\radvideo64.exe"),
     Path(r"C:\Program Files\RADVideo\radvideo64.exe"),
 )
-FFMPEG_URL = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip"
+FFMPEG_URL = "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip"
 FFMPEG_SHA256 = "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba"
 RAD_URL = "https://www.radgametools.com/down/Bink/RADTools.7z"
 RAD_SHA1 = "76e7b8e41c36edf9aba68ebc6d872871f5a1c5c5"
