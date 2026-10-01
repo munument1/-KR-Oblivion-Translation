@@ -42,7 +42,7 @@ jobs:
           Compress-Archive -Path "$package\*" -DestinationPath "Oblivion_Original_KR_Installer_v1.0.4.zip" -Force
           $hash = (Get-FileHash "Oblivion_Original_KR_Installer_v1.0.4.zip" -Algorithm SHA256).Hash.ToLowerInvariant()
           Add-Content "release_notes_v1.0.4.md" ""
-          Add-Content "release_notes_v1.0.4.md" "SHA-256: `$hash`"
+          Add-Content "release_notes_v1.0.4.md" ("SHA-256: " + $hash)
           Write-Host "Release SHA-256: $hash"
 
       - name: Create GitHub Release
