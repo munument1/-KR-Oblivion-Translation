@@ -121,7 +121,7 @@ def main():
         if videos:
             print('인트로·엔딩 한국어 자막 영상 2개 생성 완료: Video 폴더')
         elif args.video_subtitles != 'off':
-            print('주의: 동영상 자막은 생성되지 않았습니다. FFmpeg·ffprobe와 RAD Video Tools를 설치한 뒤 새 출력 폴더로 다시 실행하세요.')
+            print('주의: 동영상 자막은 생성되지 않았습니다. 영상 도구 자동 준비에 실패했습니다. 인터넷 연결을 확인한 뒤 새 출력 폴더로 다시 실행하세요.')
         if not ini.is_file():
             print('기존 Oblivion.ini가 없어 INI 설정을 건너뛰었습니다. README의 글꼴 설정을 확인하세요.')
     print('글꼴 설치 완료. 생성된 모드 폴더를 MO2에 넣고 활성화하세요.')
