@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import ctypes
 import json
+import subprocess
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -69,6 +70,8 @@ def main():
     parser.add_argument('--output', type=Path, help='MO2에 넣을 번역 모드 출력 폴더')
     parser.add_argument('--ini', type=Path, help='기존 Oblivion.ini; 생략하면 문서 폴더에서 자동 검색')
     parser.add_argument('--fonts-only', action='store_true', help='번역 데이터 생성 없이 글꼴만 설치')
+    parser.add_argument('--video-subtitles', choices=('auto', 'required', 'off'), default='auto',
+                        help='인트로·엔딩 자막 영상: 기본 자동 생성, required는 도구 누락 시 실패')
     args = parser.parse_args()
     bundle_manifest()
     if args.fonts_only:
@@ -94,11 +97,18 @@ def main():
             raise ValueError('포함된 obCJK 글꼴 설정이 검증본과 다릅니다.')
         build(SimpleNamespace(data_dir=args.data_dir, output=output, ini=None, obcjk_ini=preset,
                               csv=ROOT / 'applied_translations_v2.csv', extra_csv=[],
-                              video_subtitles='off', korean_locations=True))
+                              video_subtitles=args.video_subtitles, korean_locations=True))
         reports = {}
         for name in ('translation_audit.json', 'obcjk_validation.json', 'location_validation.json'):
             path = output / name
             reports[name] = json.loads(path.read_text(encoding='utf-8'))
+        videos = reports['translation_audit.json'].get('videos', {})
+        if videos:
+            from build_video_subtitles import EXPECTED_SHA256
+            if set(videos) != set(EXPECTED_SHA256) or any(not (output / 'Video' / name).is_file() for name in videos):
+                raise ValueError('인트로·엔딩 자막 영상 중 일부가 누락되었습니다.')
+        reports['video_subtitles'] = {'mode': args.video_subtitles,
+                                      'status': 'generated' if videos else 'disabled' if args.video_subtitles == 'off' else 'skipped'}
         reports['fonts'] = install_fonts()
         reports['ini_backup'] = update_existing_ini(ini, ORIGINAL_FONT_SETTINGS) if ini.is_file() else None
         reports['font_settings'] = ORIGINAL_FONT_SETTINGS
@@ -108,6 +118,10 @@ def main():
         for name in ('translation_audit.json', 'obcjk_validation.json', 'location_validation.json', 'FONT_SETTINGS.txt'):
             (output / name).unlink()
         print(f'번역 모드 생성 완료: {output}')
+        if videos:
+            print('인트로·엔딩 한국어 자막 영상 2개 생성 완료: Video 폴더')
+        elif args.video_subtitles != 'off':
+            print('주의: 동영상 자막은 생성되지 않았습니다. FFmpeg·ffprobe와 RAD Video Tools를 설치한 뒤 새 출력 폴더로 다시 실행하세요.')
         if not ini.is_file():
             print('기존 Oblivion.ini가 없어 INI 설정을 건너뛰었습니다. README의 글꼴 설정을 확인하세요.')
     print('글꼴 설치 완료. 생성된 모드 폴더를 MO2에 넣고 활성화하세요.')
@@ -117,6 +131,6 @@ def main():
 if __name__ == '__main__':
     try:
         raise SystemExit(main())
-    except (OSError, ValueError) as error:
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
         print(f'설치 실패: {error}', file=sys.stderr)
         raise SystemExit(1)

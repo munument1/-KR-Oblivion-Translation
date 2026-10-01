@@ -46,10 +46,10 @@ def build_videos(data_dir: Path, output_dir: Path, subtitle_dir: Path, *, requir
     ffmpeg, ffprobe, rad = find_tools()
     if not all((ffmpeg, ffprobe, rad)):
         missing = [name for name, value in (("FFmpeg", ffmpeg), ("ffprobe", ffprobe), ("RAD Video Tools", rad)) if not value]
-        message = "Video subtitle tools missing: " + ", ".join(missing)
+        message = "동영상 자막 생성 도구가 없습니다: " + ", ".join(missing)
         if required:
             raise FileNotFoundError(message)
-        print("SKIP " + message)
+        print("주의: " + message + ". 인트로·엔딩 자막 영상 생성을 건너뜁니다.")
         return {}
     video_dir = data_dir / "Video"
     targets = output_dir / "Video"
@@ -64,6 +64,7 @@ def build_videos(data_dir: Path, output_dir: Path, subtitle_dir: Path, *, requir
         if source_hash != expected_hash:
             raise ValueError(f"{name}: original video hash differs; subtitle timing needs review")
         original_info = _probe(ffprobe, source)
+        print(f"한국어 자막 영상 생성 중: {name} (시간이 걸릴 수 있습니다.)", flush=True)
         with tempfile.TemporaryDirectory(prefix="oblivion_video_kr_", dir=output_dir) as tmp:
             tmp_path = Path(tmp)
             avi = tmp_path / (Path(name).stem + ".avi")
@@ -97,5 +98,5 @@ def build_videos(data_dir: Path, output_dir: Path, subtitle_dir: Path, *, requir
             report[name] = {"source_sha256": source_hash, "output_sha256": _sha256(target),
                             "duration_seconds": float(output_info["format"]["duration"]),
                             "output_bytes": target.stat().st_size}
-            print(f"Video subtitles: {name} ({target.stat().st_size:,} bytes)")
+            print(f"한국어 자막 영상 생성 완료: {name} ({target.stat().st_size:,} bytes)")
     return report

@@ -81,6 +81,7 @@ class InstallerTests(unittest.TestCase):
                 output = root / 'output/Oblivion_KR_Mod'
 
                 def fake_build(args):
+                    self.assertEqual(args.video_subtitles, 'auto')
                     args.output.mkdir(parents=True)
                     (args.output / 'Oblivion.esm').write_bytes(b'validated test fixture')
                     for name in ('translation_audit.json', 'obcjk_validation.json', 'location_validation.json'):

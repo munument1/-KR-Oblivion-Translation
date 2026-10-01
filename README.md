@@ -11,7 +11,7 @@
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
 6. MO2 실행 대상에서 **Oblivion**을 선택합니다. 필요한 경우 [MO2의 xOBSE 강제 로드 안내](https://github.com/ModOrganizer2/modorganizer/wiki/Running-Oblivion-OBSE-with-MO2)를 확인합니다.
 
-설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
+설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 아래 영상 도구가 있으면 한국어 자막을 입힌 인트로·엔딩 BIK도 `Video` 폴더에 생성합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 
@@ -33,6 +33,14 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 ```
 
 출력 폴더가 이미 사용 중이면 덮어쓰지 않습니다. 업데이트할 때는 새 폴더에 설치기 ZIP을 풀어 실행하세요.
+
+## 인트로·엔딩 동영상 자막
+
+기존 설치기처럼 원본 `OblivionIntro.bik`와 `OblivionOutro.bik`를 읽어 한국어 자막을 입힌 Bink 1 영상을 생성합니다. 원본 영상은 수정하지 않습니다. 자막 소스와 생성 기능은 EXE에 포함되어 있습니다.
+
+영상 생성에는 **FFmpeg·ffprobe와 RAD Video Tools**가 필요합니다. [FFmpeg Windows 빌드](https://www.gyan.dev/ffmpeg/builds/)의 `bin` 폴더를 PATH에 추가하고, [RAD Video Tools](https://www.radgametools.com/bnkdown.htm)를 기본 위치에 설치한 뒤 `install.bat`을 실행하세요. 설치기는 PATH의 FFmpeg·ffprobe와 `C:\Program Files (x86)\RADVideo` 또는 `C:\Program Files\RADVideo`의 `radvideo64.exe`를 자동으로 찾습니다.
+
+도구가 없으면 번역 모드만 생성하고 **동영상 자막이 생성되지 않았다는 경고**를 표시합니다. 도구를 설치한 후 설치기 ZIP을 새 폴더에 풀어 다시 실행하면 됩니다. 완료 로그에 `인트로·엔딩 한국어 자막 영상 2개 생성 완료`가 나오고 출력의 `Video` 폴더에 두 BIK가 있는지 확인하세요. 게임 영상과 외부 변환 도구는 설치기 ZIP에 포함하지 않습니다.
 
 ## 글꼴
 
