@@ -2,6 +2,8 @@
 
 사용자 요청에 따라 **기본 번역 표시 → 본문 번역 → 한글 위치명 저장** 순서로 진행한다. Steam Deck은 제외한다. 아래 결과는 메뉴 XML 범위의 성공이며 전체 ESP/ESM 전환 완료를 뜻하지 않는다.
 
+후속 상태: 사용자가 기존 빌더 사용 예외를 허용했다. 6개 텍스트 예외를 해시와 위치로 제한하여 처리하고 별도 플러그인 시험판을 만들었다. [최신 파일·실행 결과](utf8_plugin_test_results.md)를 따른다. 아래 도구 제한과 6행 미해결 기록은 이 메뉴 조사 당시의 상태다.
+
 ## 실제 실행
 
 본PC Windows, Oblivion Original Steam 1.2.0.416, xOBSE 22.13, 설치된 obCJK 20260807을 사용했다. `Default`를 세이브 없이 복제한 `obcjk-save-test`에서만 실행했다. LocalSettings/LocalSaves를 켜고 기존 Documents INI를 테스트 프로필로 복사했다.

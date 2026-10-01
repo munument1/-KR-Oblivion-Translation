@@ -2,7 +2,9 @@
 
 대상은 Oblivion Original의 본PC Windows 환경이다. Steam Deck 작업과 검증은 제외한다.
 
-후속 진행: [UTF-8 기본 메뉴 실행 결과](utf8_ui_test_results.md). 별도 프로필에서 한글 메뉴 표시를 검증했으며, 본문 ESP 변환과 한글 위치명 저장은 아직 남아 있다. 아래 조사 기록은 최초 조사 시점의 상태다.
+후속 진행: [UTF-8 기본 메뉴 실행 결과](utf8_ui_test_results.md), [UTF-8 플러그인 시험판](utf8_plugin_test_results.md). 본편·공식 DLC와 비공식 패치의 별도 UTF-8 변환 및 파일 검증까지 진행했다. 실제 플레이 중 표시와 한글 위치명 저장은 남아 있다. 아래 조사 기록은 최초 조사 시점의 상태다.
+
+최신 적용: [비공식 패치와 한글 위치명 시험판](unofficial_locations_test_results.md). 비공식 패치 3종과 한글 위치명을 테스트 프로필에 함께 켜서 메인 메뉴 진입을 확인했다. 실제 저장/재로드는 아직 미확인이다.
 
 폰트 후보: [설치 폰트 지원 범위와 SLOT별 추천안](font_recommendations.md). 게임 본문 및 추천 조합의 런타임 검증은 아직 남아 있다.
 

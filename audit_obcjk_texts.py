@@ -6,12 +6,14 @@ import argparse
 import csv
 import hashlib
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
 from oblivion_korean_codec import decode_legacy, encode_legacy
+from obcjk_text_backend import load_exceptions, recover_legacy
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
 
 # The legacy CSVs normalized these punctuation characters for their font.
 # Require an exact byte match after this documented normalization; retain the
@@ -26,6 +28,7 @@ def audit(inventory: Path, output: Path) -> dict:
     if output.resolve() == ROOT.resolve():
         raise ValueError("Output must be separate from the source CSV directory")
     output.mkdir(parents=True, exist_ok=True)
+    exceptions = load_exceptions(ROOT / 'docs/obcjk/legacy_text_exceptions.json')
     results = []
     for spec in json.loads(inventory.read_text(encoding="utf-8")):
         source = ROOT / spec["file"]
@@ -45,7 +48,9 @@ def audit(inventory: Path, output: Path) -> dict:
                     legacy = bytes.fromhex(value)
                     if not legacy.endswith(b"\0") or b"\0" in legacy[:-1]:
                         raise ValueError("Expected exactly one terminal NUL")
-                    text = decode_legacy(legacy[:-1])
+                    text = recover_legacy(legacy[:-1], exceptions)
+                    if hashlib.sha256(legacy[:-1]).hexdigest() in exceptions:
+                        counts['verified_pinned_recovery'] += 1
                     original_text = row.get(spec.get("text_column") or "", "")
                     if original_text:
                         try:

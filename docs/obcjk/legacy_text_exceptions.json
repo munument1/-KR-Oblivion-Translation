@@ -1,0 +1,100 @@
+[
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 558,
+    "record_type": "BOOK",
+    "formid": "000C810E",
+    "field": "DESC",
+    "legacy_text_sha256": "d8fe0af002827f8e502a29e34192b086b5ed30ecf0abd19186cc74ffbcce1dbf",
+    "mode": "cp1252",
+    "note": "Western alphabet/font test; no Korean syllables in this field. Exact cp1252 roundtrip required."
+  },
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 987,
+    "record_type": "BOOK",
+    "formid": "00088935",
+    "field": "DESC",
+    "legacy_text_sha256": "c0218e7fc85d2c96bbe4ad8853184f394bd582245a0859bee389474f58350d9e",
+    "mode": "cp1252",
+    "note": "Western alphabet/font test; no Korean syllables in this field. Exact cp1252 roundtrip required."
+  },
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 1261,
+    "record_type": "BOOK",
+    "formid": "0000A2B3",
+    "field": "DESC",
+    "legacy_text_sha256": "e2d2583839a8130975847f682b0cf7cb2c14da50717d656c125d582e6d01ea5a",
+    "mode": "mixed_cp949",
+    "tokens": [
+      {
+        "offset": 2645,
+        "hex": "8fb3",
+        "unicode": "뤂"
+      }
+    ],
+    "note": "Pinned legacy text with isolated CP949 tokens; all other spans must roundtrip through the custom codec. Existing fragment decodes to U+B902; likely old typo is preserved, not silently corrected."
+  },
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 2715,
+    "record_type": "INFO",
+    "formid": "000807A1",
+    "field": "NAM1",
+    "legacy_text_sha256": "a86982fa7e0423a39b4f69415566d2239cf25128bcdd702a1152e7717a07c2f3",
+    "mode": "mixed_cp949",
+    "tokens": [
+      {
+        "offset": 55,
+        "hex": "a1aa",
+        "unicode": "―"
+      },
+      {
+        "offset": 57,
+        "hex": "a3bf",
+        "unicode": "？"
+      }
+    ],
+    "note": "Pinned legacy text with isolated CP949 tokens; all other spans must roundtrip through the custom codec."
+  },
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 10664,
+    "record_type": "INFO",
+    "formid": "000441D6",
+    "field": "NAM1",
+    "legacy_text_sha256": "60ba2958a46820959ec75f08c64e40e34a869be714f5498cdbff0d1b4381bbd4",
+    "mode": "mixed_cp949",
+    "tokens": [
+      {
+        "offset": 31,
+        "hex": "a1c9",
+        "unicode": "℃"
+      }
+    ],
+    "note": "Pinned legacy text with isolated CP949 tokens; all other spans must roundtrip through the custom codec."
+  },
+  {
+    "source_csv": "legacy_full_recovery.csv",
+    "row": 26082,
+    "record_type": "INFO",
+    "formid": "0007866F",
+    "field": "NAM1",
+    "legacy_text_sha256": "5d782bf77666e93a42768b04dabb61cd86183fde877fca4b79d6f0bce84f22d1",
+    "mode": "mixed_cp949",
+    "tokens": [
+      {
+        "offset": 80,
+        "hex": "a1b0",
+        "unicode": "“"
+      },
+      {
+        "offset": 88,
+        "hex": "a1b1",
+        "unicode": "”"
+      }
+    ],
+    "note": "Pinned legacy text with isolated CP949 tokens; all other spans must roundtrip through the custom codec."
+  }
+]

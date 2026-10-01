@@ -534,9 +534,16 @@ def main() -> int:
     parser.add_argument("--extra-csv", type=Path, action="append", default=[],
                         help="Additional verified translation-memory CSV (repeatable)")
     parser.add_argument("--ini", type=Path, help="Optional active Oblivion.ini to update with a backup")
+    parser.add_argument("--text-backend", choices=("legacy", "obcjk"), default="legacy",
+                        help="Preserve legacy font encoding or build a separate obCJK UTF-8 overlay")
+    parser.add_argument("--obcjk-ini", type=Path,
+                        help="Optional UTF-8 obCJK INI for the obcjk backend; DLL is never bundled")
     parser.add_argument("--video-subtitles", choices=("off", "auto", "required"), default="off",
                         help="Burn Korean subtitles into original intro/outro videos using FFmpeg and RAD Video Tools")
     args = parser.parse_args()
+    if args.text_backend == "obcjk":
+        from build_obcjk_release import build
+        return build(args)
     source_dir = args.data_dir.resolve()
     output_dir = args.output.resolve()
     if source_dir == output_dir or source_dir in output_dir.parents or output_dir in source_dir.parents:

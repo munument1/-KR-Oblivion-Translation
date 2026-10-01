@@ -51,7 +51,7 @@
 - 원본→각 backend: 현재 의도된 번역 문자열 변경 및 **821개 메뉴 GMST 추가**를 명시적으로 허용한다. TES4 record count/GRUP size 등 필수 container 갱신은 허용 목록에 기록한다.
 - legacy v1.0.4 결과→obCJK 결과: 같은 record/FormID/EditorID 집합을 사용하고 target text bytes만 바뀌어야 한다. record count 동일성을 여기서 요구한다.
 
-검사는 xEdit MCP의 readback/검증 기능을 우선 사용하고, 필요한 기능이 없는 경우 제약을 보고한다. 기존 Python parser를 실행하거나 신규 자체 ESP parser로 우회하지 않는다. raw byte 동일성까지 MCP로 검사 가능한지 capability를 확인한 뒤 도구 설계를 확정한다.
+검사는 xEdit MCP를 우선 확인했지만 현재 Oblivion은 지원하지 않는다. 이후 사용자가 이번 전환에서 기존 프로젝트 빌더 사용 예외를 허용했다. 해당 경로의 별도 UTF-8 출력과 엄격한 bytes 비교를 사용하며, xEdit 검증과 구분한다. 최신 구현·검증 범위는 [플러그인 시험판 결과](utf8_plugin_test_results.md)에 기록한다.
 
 필수 acceptance 항목:
 
