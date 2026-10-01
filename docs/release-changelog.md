@@ -22,7 +22,7 @@ Player-facing release notes. Newest releases are listed first.
 
 ### Fixed
 
-- 새 설치기에서 누락된 인트로·엔딩 한국어 자막 영상 자동 생성을 복구했습니다. FFmpeg·ffprobe 및 RAD Video Tools가 없으면 한국어로 누락을 안내합니다.
+- 새 설치기에서 누락된 인트로·엔딩 한국어 자막 영상 자동 생성을 복구했습니다. FFmpeg·ffprobe 및 RAD Video Tools가 없으면 공식 배포본을 사용자 로컬 캐시에 자동 준비하며, 준비 실패 시에만 한국어로 누락을 안내합니다.
 - 종족 설명의 줄바꿈과 이름 입력 커서 네모 표시를 피하도록 영문·숫자·제어문자에 원래 게임 렌더링을 사용합니다.
 
 ### Compatibility
