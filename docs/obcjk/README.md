@@ -6,6 +6,8 @@
 
 최신 적용: [비공식 패치와 한글 위치명 시험판](unofficial_locations_test_results.md). 비공식 패치 3종과 한글 위치명을 테스트 프로필에 함께 켜서 메인 메뉴 진입을 확인했다. 실제 저장/재로드는 아직 미확인이다.
 
+실행 주의: 이 설치에서는 MO2의 **Oblivion** 항목을 사용한다. `obse_loader` 항목은 obCJK가 로드되지 않아 메뉴 깨짐이 재현됐다. [재현 및 복구 기록](garbled_menu_diagnosis.md).
+
 폰트 후보: [설치 폰트 지원 범위와 SLOT별 추천안](font_recommendations.md). 게임 본문 및 추천 조합의 런타임 검증은 아직 남아 있다.
 
 ## 결론
