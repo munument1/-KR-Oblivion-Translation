@@ -1,5 +1,7 @@
 # obCJK 폰트 후보와 검증 범위 — 2026-10-01
 
+직접 고를 때는 [슬롯별 사용 위치와 교체 방법](font_slots_guide.md)을 따른다. 사용자의 자막 스타일 요청으로 시험판 **슬롯 2만 Noto Serif KR, 굵기 500**으로 바꿨다. 아래 고딕 자막 추천은 기존 가독성 우선 비교안이며, 현재 적용값과는 구분한다. 새 명조 자막의 GDI 한글 지원은 확인했고 실제 대사 화면 비교는 남아 있다.
+
 Unicode 메뉴는 현재도 정상 표시된다. 본문·비공식 패치 UTF-8와 한글 위치명의 파일 검사 및 메인 메뉴 진입은 [후속 시험](unofficial_locations_test_results.md)에서 확인했다. 실제 본문 화면은 남아 있으므로 아래는 **폰트 비교에 근거한 추천안**이다. 런타임으로 확인한 폰트 범위는 현재 Malgun Gothic의 기본 메뉴뿐이다.
 
 ## 실제 비교 결과
@@ -49,4 +51,4 @@ manifest는 label/path/face/weight 및 필요하면 variation을 지정한다. G
 - 위 기준 실행 통과 후 추천 폰트 조합으로 실제 화면 재검증.
 - 한글 위치명 저장/목록/재로드는 별도 검증.
 
-현재 xEdit MCP 및 확인한 공식 main의 client는 Oblivion 모드를 지원하지 않는다. [공식 client 소스](https://github.com/BB-84C/bgs-modding-superpowers/blob/main/tools/mo2-vfs-launcher/lib/xedit-client.common.ps1)의 지원 map도 Fallout4/Skyrim/SkyrimSE/Starfield만 포함한다. 단순 업데이트로 해결됐다는 근거는 없다. 기존 빌더 사용의 스킬 예외는 사용자 답변을 기다리고 있으며, 본문 plugin을 우회해서 읽거나 쓰지 않았다.
+현재 xEdit MCP 및 확인한 공식 main의 client는 Oblivion 모드를 지원하지 않는다. [공식 client 소스](https://github.com/BB-84C/bgs-modding-superpowers/blob/main/tools/mo2-vfs-launcher/lib/xedit-client.common.ps1)의 지원 map도 Fallout4/Skyrim/SkyrimSE/Starfield만 포함한다. 이후 사용자가 기존 프로젝트 빌더의 사용 예외를 허용하여 UTF-8 본문 시험판을 만들었다. 이 폰트 변경은 ESP/ESM을 수정하지 않는다.

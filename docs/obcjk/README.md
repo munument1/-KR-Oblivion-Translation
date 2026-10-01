@@ -10,6 +10,8 @@
 
 폰트 후보: [설치 폰트 지원 범위와 SLOT별 추천안](font_recommendations.md). 게임 본문 및 추천 조합의 런타임 검증은 아직 남아 있다.
 
+직접 글꼴 선택: [폰트 슬롯별 사용 위치와 교체 방법](font_slots_guide.md). 현재 시험판의 대사/HUD 슬롯 2는 Noto Serif KR 500으로 변경했다.
+
 ## 결론
 
 - **obCJK backend의 우선 인코딩은 UTF-8**으로 권고한다. 실제 바이트 처리와 전역 설정은 [소스 분석](obcjk_source_analysis.md)에 근거한다.
