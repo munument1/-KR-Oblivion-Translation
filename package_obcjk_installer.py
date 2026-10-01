@@ -14,9 +14,9 @@ def package(exe, output):
     exe, output = Path(exe), Path(output)
     if not exe.is_file() or exe.read_bytes()[:2] != b'MZ':
         raise ValueError('Built Windows installer EXE required')
-    files = [(exe, 'OblivionKRObCJKInstaller.exe'),
-             (ROOT / 'install_obcjk.bat', 'install.bat'),
-             (ROOT / 'README_obCJK.md', 'README.md'),
+    files = [(exe, 'OblivionKRBuilder.exe'),
+             (ROOT / 'install.bat', 'install.bat'),
+             (ROOT / 'README.md', 'README.md'),
              (ROOT / 'release_notes_v1.0.5.md', 'CHANGELOG.md'),
              (BUNDLE / 'manifest.json', 'font_sources.json')]
     files += [(p, 'licenses/' + p.name) for p in sorted((BUNDLE / 'licenses').iterdir()) if p.is_file()]

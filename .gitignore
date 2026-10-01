@@ -1,11 +1,12 @@
 _build/
+v2_work/
+release/
 output/
 build/
 dist/
 __pycache__/
 *.spec
 !OblivionKRBuilder.spec
-!OblivionKRObCJKInstaller.spec
 *.building
 *.esm
 *.esp

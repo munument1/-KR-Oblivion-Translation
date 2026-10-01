@@ -14,6 +14,12 @@ from build_obcjk_overlay import build_directory
 from build_obcjk_ui import build as build_ui
 from build_vanilla_overlay import HERE, sha256_file
 
+ORIGINAL_FONT_SETTINGS = ('[Fonts]\nSFontFile_1=Data\\Fonts\\Kingthings_Regular.fnt\n'
+                          'SFontFile_2=Data\\Fonts\\Kingthings_Shadowed.fnt\n'
+                          'SFontFile_3=Data\\Fonts\\Tahoma_Bold_Small.fnt\n'
+                          'SFontFile_4=Data\\Fonts\\Daedric_Font.fnt\n'
+                          'SFontFile_5=Data\\Fonts\\Handwritten.fnt\n')
+
 
 def default_ini():
     lines = ['[obCJK]', 'ActiveCodePage = UTF8', 'UILang = ko',
@@ -86,12 +92,7 @@ def build(args):
         for folder in ('Video',):
             if (legacy / folder).is_dir():
                 shutil.copytree(legacy / folder, output / folder)
-        font_settings = ('[Fonts]\nSFontFile_1=Data\\Fonts\\Kingthings_Regular.fnt\n'
-                         'SFontFile_2=Data\\Fonts\\Kingthings_Shadowed.fnt\n'
-                         'SFontFile_3=Data\\Fonts\\Tahoma_Bold_Small.fnt\n'
-                         'SFontFile_4=Data\\Fonts\\Daedric_Font.fnt\n'
-                         'SFontFile_5=Data\\Fonts\\Handwritten.fnt\n')
-        (output / 'FONT_SETTINGS.txt').write_text(font_settings, encoding='utf-8')
+        (output / 'FONT_SETTINGS.txt').write_text(ORIGINAL_FONT_SETTINGS, encoding='utf-8')
         ini_path = output / 'OBSE/plugins/obCJK/obCJK.ini'
         ini_path.parent.mkdir(parents=True, exist_ok=True)
         ini_path.write_bytes(ini_bytes)

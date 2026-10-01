@@ -1,76 +1,64 @@
-# The Elder Scrolls IV: Oblivion Original 한국어 번역
+# Oblivion Original 한국어 번역 v1.0.5
 
-## v1.0.5 — obCJK UTF-8
-
-새 설치기는 본명조·이롭게바탕체 자동 설치와 한글 위치명을 지원합니다. MO2, xOBSE와 obCJK는 사용자가 별도로 설치합니다. [v1.0.5 설치 안내](README_obCJK.md)를 따라 설치하세요. 언오피셜 패치 UTF-8 번역은 별도 Nexus 배포용이며 GitHub 설치기에는 포함하지 않습니다.
-
-아래는 보존된 v1.0.4 이전 방식 안내입니다. v1.0.5 설치에는 위 새 안내를 사용하세요.
-
-오리지널 The Elder Scrolls IV: Oblivion (2006) 본편과 공식 확장팩/DLC를 대상으로 하는 한국어 번역 빌더입니다.
-
-이 저장소의 GitHub Release는 본편 + 공식 DLC 전용입니다. Unofficial Oblivion Patch / Unofficial Shivering Isles Patch / Unofficial Oblivion DLC Patches용 한국어 ESP는 이 저장소의 릴리즈에 포함하지 않습니다.
-
-## v1.0.4 지원 범위
-
-- Oblivion.esm
-- Knights of the Nine
-- Shivering Isles
-- DLCBattlehornCastle / DLCFrostcrag / DLCHorseArmor / DLCMehrunesRazor
-- DLCOrrery / DLCSpellTomes / DLCThievesDen / DLCVileLair
-- 한국어 폰트 및 메뉴 문자열
-- 일부 Oblivion.exe 기본 UI 문자열의 GMST 오버레이
-- 인트로/아웃트로 자막 소스
-
-플레이어용 일반 대사, 퀘스트 저널, 실제 책 본문을 우선하여 번역했습니다. TEST, DEBUG, TEMP, Script Effect 같은 개발/엔진 내부 문자열은 의도적으로 영어로 남을 수 있습니다.
+오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
 ## 설치
 
-1. Releases에서 Oblivion_Original_KR_Installer_v1.0.4.zip을 내려받아 압축을 풉니다.
-2. install.bat을 실행합니다.
-3. 설치된 오리지널 Oblivion의 Data 폴더를 지정합니다.
-4. 생성된 output\Oblivion_KR_Mod를 MO2에 별도 모드로 등록합니다.
-5. MO2 프로필별 INI를 사용하는 경우 두 번째 인수로 해당 oblivion.ini를 지정할 수 있습니다.
+1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434)를 별도로 설치합니다.
+2. [v1.0.5 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.5)을 내려받아 전체 압축을 풉니다.
+3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
+4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
+5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
+6. MO2 실행 대상에서 **Oblivion**을 선택합니다. 필요한 경우 [MO2의 xOBSE 강제 로드 안내](https://github.com/ModOrganizer2/modorganizer/wiki/Running-Oblivion-OBSE-with-MO2)를 확인합니다.
 
-예: install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
+설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
-MO2 프로필 INI 예: install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data" "D:\Oblivion MO2\profiles\Default\oblivion.ini"
+기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 
-릴리즈에는 Python 없이 실행할 수 있는 OblivionKRBuilder.exe가 포함되어 있습니다.
+MO2에서 프로필별 INI를 사용하는 경우, 해당 기존 INI의 `[Fonts]`가 아래 원본 경로인지 확인하세요. 이전 한글 패치 설정이 남아 있으면 다음 값으로 복원합니다.
 
-## 저장 안정성
+```ini
+[Fonts]
+SFontFile_1=Data\Fonts\Kingthings_Regular.fnt
+SFontFile_2=Data\Fonts\Kingthings_Shadowed.fnt
+SFontFile_3=Data\Fonts\Tahoma_Bold_Small.fnt
+SFontFile_4=Data\Fonts\Daedric_Font.fnt
+SFontFile_5=Data\Fonts\Handwritten.fnt
+```
 
-원본 게임 파일을 직접 덮어쓰지 않고 별도의 한국어 오버레이를 생성합니다.
+기존과 같은 명령 실행도 지원합니다. 두 번째 인수는 기존 INI를 직접 지정할 때만 사용합니다.
 
-특히 저장 파일 생성/불러오기 문제를 피하기 위해 CELL/FULL, WRLD/FULL 및 저장 안정성에 영향을 줄 수 있는 위치/참조 이름은 의도적으로 영어로 유지합니다. FormID, 레코드 구조, 컴파일된 스크립트는 변경하지 않습니다.
+```bat
+install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
+```
 
-Oblivion.exe도 직접 수정하지 않습니다. 실행 파일의 일부 사용자 인터페이스 기본 문자열은 ESM의 GMST 오버레이 방식으로 번역합니다.
+출력 폴더가 이미 사용 중이면 덮어쓰지 않습니다. 업데이트할 때는 새 폴더에 설치기 ZIP을 풀어 실행하세요.
 
-## 빌더 검증
+## 글꼴
 
-v1.0.3 릴리즈용 OblivionKRBuilder.exe는 Steam 오리지널 Data에 직접 실행하여 Oblivion.esm, Knights.esp 및 모든 공식 DLC 출력이 정상 생성되는 것을 검증했습니다. v1.0.4는 동일한 빌더 코드에서 GMST 번역 데이터만 보정한 패치 릴리즈이며, 릴리즈 설치기는 현재 main 소스에서 새로 빌드합니다.
+- 메뉴·일반 책·대사/HUD·지도/팝업: **본명조 KR Medium**.
+- 편지·손글씨 책: **이롭게바탕체 Medium**.
+- MenuQue 7/8, NorthernUI 33–37: 본명조 KR Regular.
+- 영문·숫자·제어문자는 원래 게임 렌더링을 사용합니다.
 
-빌더는 번역 대상의 원문과 레코드 구조를 검증한 뒤 문자열 필드만 교체합니다.
+본명조 Regular/Medium과 이롭게바탕체를 현재 Windows 사용자에게 등록합니다. 관리자 권한은 필요하지 않습니다. OFL 원문은 설치기 ZIP의 `licenses`, 출처와 해시는 `font_sources.json`에 있습니다. [슬롯별 글꼴 안내](https://github.com/munument1/-KR-Oblivion-Translation/blob/main/docs/obcjk/font_slots_guide.md)를 참고하세요.
 
-## 번역 자료
+## 언오피셜 패치
 
-기존 오리지널 한국어 패치 자료와 공식 한국어판에서 대응 가능한 번역을 회수하고, 레코드/EditorID/원문/퀘스트 stage/대사 문맥을 검증해 보강하는 방식으로 제작했습니다. 위치명처럼 저장 안정성에 영향을 줄 수 있는 필드는 자동 적용 대상에서 제외했습니다.
+GitHub 설치기는 본편·공식 DLC용입니다. Nexus용 언오피셜 번역은 세 ZIP으로 따로 제공합니다.
 
-## v1.0.4
+| 번역 | 대상 원본 | 안내 |
+|---|---|---|
+| UOP | 3.5.9a | [UOP](docs/unofficial/UOP.md) |
+| USIP | 1.6.2 | [USIP](docs/unofficial/USIP.md) |
+| UODP | v27 | [UODP](docs/unofficial/UODP.md) |
 
-문/출입구의 목적지 표시와 주문·아이템 효과 설명에 남아 있던 영어식 조합 문구를 교정한 패치 릴리즈입니다. `sTo`의 `~에게`를 `->`로 바꾸고, 마법 효과 조합용 GMST를 `범위:`, `지속:`, `적용:` 중심의 정보형 표기로 정리했습니다. Damage는 `피해`, Self는 `자신`, Touch는 `접촉`, Strike는 `공격 적중`, up to level은 `최대 레벨`로 교정했습니다.
+각 번역은 해당 영문 패치 위에 적용하는 ESP 오버레이입니다. 원본 패치의 메시·텍스처·음성은 별도로 설치합니다.
 
-## v1.0.3
+## 검증과 개발
 
-v2 전면 검수 결과를 실제 빌드 데이터에 반영한 릴리즈입니다. MASTER 8,553건과 BOOK 본문 496건을 영어 원문과 대조해 GPT-5.6 Sol이 최종 확정했으며, ACTIVE 용어집과 고유명사 아포스트로피/하이픈 정책을 적용했습니다. Madness→광기, Vitharn→비탄, Grummite→그루마이트, Drain/Absorb 구분 등 확정 용어를 전역 반영하고 BOOK 마크업 및 커스텀 한글 폰트 인코딩 호환성도 최종 점검했습니다.
+원본 게임 파일, FormID, 레코드 구조와 컴파일된 스크립트를 보존합니다. 종족 이름은 음성 경로를 위해 영어로 유지합니다. 검증 보고서는 모드 폴더 옆 `Oblivion_KR_Mod.validation.json`에 저장합니다.
 
-## v1.0.2
+MO2에서 한국어 메뉴 표시, 한글 위치명이 들어간 세이브 생성, 본명조 및 줄바꿈·입력 커서 표시를 확인했습니다. 모든 기존 세이브 재로딩과 장시간 플레이의 전수 검증을 완료한 것은 아닙니다.
 
-최종 검수 통합 릴리즈. 본편/DLC 번역 검수본과 최신 용어 기준을 반영하고, RACE 이름은 음성 경로 호환성을 위해 영어 원문으로 유지합니다. 메뉴 GMST 추출 자료 926개를 기준으로 플레이어 노출 메뉴 문자열을 Oblivion.esm에 직접 통합했으며, 별도 메뉴 ESP 없이 캐릭터 생성, 스킬/레벨, 저장/불러오기, 옵션/컨트롤 등 UI 번역을 보강했습니다.
-
-## v1.0.1
-
-메뉴 번역 보완 릴리즈. 캐릭터 생성창의 Face/Hair/Eyes, Yes/No, On/Off, Main Menu 및 관련 메뉴 라벨을 보완하고, 스킬 창의 21개 개별 스킬명과 관련 능력치(힘/지능/의지력/민첩성/속도/지구력/매력/행운), 전문분야(전투/마법/은신)를 모두 한국어화했습니다.
-
-## v1.0.0
-
-첫 정식 릴리즈. 오리지널 Oblivion 본편과 공식 확장팩/DLC의 한국어 번역, 폰트, 메뉴 및 안전한 UI 오버레이를 제공합니다.
+[빌드와 저장소 구성](docs/development.md), [v1.0.5 검증 기록](docs/obcjk/release_validation_v1.0.5.md), [변경 내역](docs/release-changelog.md)을 참고하세요. [v1.0.4](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.4)와 이전 버전은 기존 릴리스에서 받을 수 있습니다.

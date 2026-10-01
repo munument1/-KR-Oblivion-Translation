@@ -2,6 +2,19 @@
 
 2026-10-02, Windows / Steam Oblivion / MO2 시험 구성 기준.
 
+## 설치기 단순화 및 ZIP 분리 검증
+
+- 기존 `install.bat` / `OblivionKRBuilder.exe` 이름과 `output/Oblivion_KR_Mod` 경로를 복원하고 BAT 안내를 한국어로 바꿨다. 별도 프로필 주소 입력은 없으며 기존 문서 폴더의 Oblivion.ini를 자동 검색한다.
+- 검사 15개 통과. 자동 검색되는 기존 INI만 변경하고, INI가 없으면 파일이나 프로필을 만들지 않는 경로를 검증했다. UTF-8 BOM/CRLF, 비 UTF-8 바이트, 대소문자가 다른 Fonts 키, 최초 백업을 보존한다.
+- 새 EXE가 들어간 ZIP을 풀어 한국어 BAT로 원본 게임 Data에 직접 실행했다. 기존 INI 적용 검증에는 작업 폴더의 단독 INI 파일을 사용했으며 MO2 프로필을 생성하지 않았다.
+- 생성된 MO2 모드 파일은 플러그인 10개, menus/strings.xml, OBSE/plugins/obCJK/obCJK.ini의 12개뿐이다. 플러그인과 메뉴는 기존 시험판/배포 검증본과 SHA-256이 같고 설정은 확인된 글꼴 프리셋과 같다.
+- 글꼴 3종의 GDI 선택·한글 누락 0을 확인했다. 글꼴 사본과 검증 보고서는 모드 폴더에 넣지 않는다. 보고서는 모드 폴더 옆 `Oblivion_KR_Mod.validation.json`으로 저장한다.
+- 게임·MO2·세이브·기존 설치기·사용자 미추적 스크립트 등 파일 118개의 변화 0. MO2 프로필 디렉터리 목록도 변하지 않았다. ZIP과 EXE 내 자료에서 프로필 및 .ess/.obse 세이브 파일 부재를 검사했다.
+- UOP ZIP: 기본 ESP 1개와 Citadel Door Fix 선택 ESP 1개, USIP ZIP: 기본 ESP 1개, UODP ZIP: 기본 ESP 9개와 SSSB 선택 ESP 1개. 합계 13개가 기존 검증된 ESP와 바이트 단위로 동일하며 각 ZIP의 목록·SHA-256·CRC를 확인했다.
+- 기존 릴리스와 태그는 보존하며 1.0.5 설치기 자산과 main 소스를 정정한다. 상세 결과는 `_build/obcjk/release-v1.0.5/corrected/validation.json`과 `split_package_validation.json`에 있다.
+
+## 최초 배포 구성 검증 (정정 전)
+
 - `test_obcjk_overlay`, `test_obcjk_locations`, `test_obcjk_installer`, `test_legacy_text_codec`: 총 13개 검사 통과.
 - PyInstaller로 만든 Windows EXE를 원본 게임 Data에 직접 실행해 종료 코드 0을 확인했다. 설치기를 MO2 안에서 실행한 것이 아니다.
 - EXE는 기존 번역을 엄격하게 복구·UTF-8 변환하고 한글 위치명을 적용한다. C드라이브의 임시 작업 폴더와 D드라이브 출력 폴더를 사용하는 환경에서 전체 빌드를 검증했다.

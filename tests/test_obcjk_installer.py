@@ -1,10 +1,14 @@
 import configparser
+from contextlib import redirect_stdout
+import io
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
-from install_obcjk import update_profile_fonts
+from install_obcjk import main, update_existing_ini
+from build_obcjk_release import ORIGINAL_FONT_SETTINGS
 from obcjk_fonts import BUNDLE, bundle_manifest, preset_ini
 
 
@@ -24,34 +28,78 @@ class InstallerTests(unittest.TestCase):
                 self.assertEqual((fields[0], fields[6]), ('Source Han Serif KR Medium', '500'))
         self.assertEqual((BUNDLE / 'obCJK.ini').read_bytes(), preset_ini())
 
-    def test_profile_only_fonts_with_bom_and_crlf_and_original_backup(self):
+    def test_existing_ini_only_fonts_with_bom_and_crlf_and_original_backup(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / 'Oblivion.ini'
             raw = ('\ufeff[General]\r\nSName=제국 감옥\r\n[Fonts]\r\n' +
                    ''.join(f'SFontFile_{i}=Old{i}\r\n' for i in range(1, 6)) +
                    '[Display]\r\niSize W=1920\r\n').encode('utf-8')
             path.write_bytes(raw)
-            self.assertTrue(update_profile_fonts(path, SETTINGS, dry_run=True))
+            self.assertTrue(update_existing_ini(path, SETTINGS, dry_run=True))
             self.assertEqual(path.read_bytes(), raw)
             self.assertEqual(len(list(Path(tmp).iterdir())), 1)
-            backup = Path(update_profile_fonts(path, SETTINGS))
+            backup = Path(update_existing_ini(path, SETTINGS))
             self.assertEqual(backup.read_bytes(), raw)
             result = path.read_bytes()
             self.assertTrue(result.startswith(b'\xef\xbb\xbf'))
             self.assertIn('SName=제국 감옥\r\n'.encode('utf-8'), result)
             self.assertIn(b'[Display]\r\niSize W=1920\r\n', result)
-            self.assertEqual(update_profile_fonts(path, SETTINGS), None)
+            self.assertEqual(update_existing_ini(path, SETTINGS), None)
             self.assertEqual(backup.read_bytes(), raw)
 
-    def test_incomplete_profile_refused_before_mutation(self):
+    def test_incomplete_ini_refused_before_mutation(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / 'Oblivion.ini'
             raw = b'[Fonts]\nSFontFile_1=old\n'
             path.write_bytes(raw)
             with self.assertRaisesRegex(ValueError, 'missing'):
-                update_profile_fonts(path, SETTINGS, dry_run=True)
+                update_existing_ini(path, SETTINGS, dry_run=True)
             self.assertEqual(path.read_bytes(), raw)
             self.assertEqual(len(list(Path(tmp).iterdir())), 1)
+
+    def test_non_utf8_bytes_and_case_insensitive_font_keys(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'Oblivion.ini'
+            raw = (b'\xef\xbb\xbf[Fonts]\r\n' +
+                   b''.join(f'sfontfile_{i}=Old{i}\r\n'.encode('ascii') for i in range(1, 6)) +
+                   b'[General]\r\nSText=\x81\x90\xfd\r\n')
+            path.write_bytes(raw)
+            backup = Path(update_existing_ini(path, SETTINGS))
+            self.assertEqual(backup.read_bytes(), raw)
+            self.assertTrue(path.read_bytes().startswith(b'\xef\xbb\xbf[Fonts]\r\n'))
+            self.assertTrue(path.read_bytes().endswith(b'[General]\r\nSText=\x81\x90\xfd\r\n'))
+            self.assertIn(b'SFontFile_5=Data\\Fonts\\Original5.fnt\r\n', path.read_bytes())
+
+    def test_automatic_ini_and_no_profile_or_missing_ini_creation(self):
+        for exists in (True, False):
+            with self.subTest(existing_ini=exists), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                ini = root / 'Documents/My Games/Oblivion/Oblivion.ini'
+                if exists:
+                    ini.parent.mkdir(parents=True)
+                    ini.write_text(SETTINGS, encoding='ascii')
+                output = root / 'output/Oblivion_KR_Mod'
+
+                def fake_build(args):
+                    args.output.mkdir(parents=True)
+                    (args.output / 'Oblivion.esm').write_bytes(b'validated test fixture')
+                    for name in ('translation_audit.json', 'obcjk_validation.json', 'location_validation.json'):
+                        (args.output / name).write_text('{}', encoding='ascii')
+                    (args.output / 'FONT_SETTINGS.txt').write_text(ORIGINAL_FONT_SETTINGS, encoding='ascii')
+
+                with patch('install_obcjk.documents_ini', return_value=ini), \
+                     patch('install_obcjk.install_fonts', return_value={'fonts': []}), \
+                     patch('build_obcjk_release.build', side_effect=fake_build), \
+                     patch('sys.argv', ['installer', '--data-dir', str(root / 'Data'), '--output', str(output)]), \
+                     redirect_stdout(io.StringIO()):
+                    self.assertEqual(main(), 0)
+                self.assertEqual(ini.exists(), exists)
+                self.assertEqual({p.name for p in output.iterdir()}, {'Oblivion.esm'})
+                self.assertFalse((root / 'profiles').exists())
+                self.assertFalse((root / 'Documents').exists() and not exists)
+                self.assertTrue(output.with_name(output.name + '.validation.json').is_file())
+                if exists:
+                    self.assertEqual(ini.read_text(encoding='ascii').splitlines(), ORIGINAL_FONT_SETTINGS.splitlines())
 
 
 if __name__ == '__main__':

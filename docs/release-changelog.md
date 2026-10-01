@@ -15,6 +15,10 @@ Player-facing release notes. Newest releases are listed first.
 
 - 메뉴·일반 책·대사·지도 한글을 본명조 Medium으로, 편지·손글씨 책 한글을 이롭게바탕체로 표시합니다.
 - 본편·공식 DLC 설치기와 Nexus 업로드용 언오피셜 패치 번역 ZIP을 분리합니다.
+- UOP / USIP / UODP 번역을 각 원본 모드에 대응하는 세 ZIP으로 배포합니다.
+- 설치기 인터페이스를 기존 `install.bat` / `OblivionKRBuilder.exe`로 통일하고 BAT 안내를 한국어로 표시합니다.
+- 문서 폴더의 기존 Oblivion.ini를 자동 검색합니다. 별도 프로필 주소를 묻거나 새 프로필·INI·세이브를 만들지 않습니다.
+- MO2에 넣는 모드 폴더에는 게임용 번역 데이터와 obCJK.ini만 두고 검증 보고서는 폴더 옆에 저장합니다.
 
 ### Fixed
 

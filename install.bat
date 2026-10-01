@@ -3,11 +3,14 @@ setlocal EnableExtensions DisableDelayedExpansion
 chcp 65001 >nul
 set "DATA_DIR=%~1"
 if not defined DATA_DIR (
-  echo Enter the original Oblivion Data folder path.
-  set /p "DATA_DIR=Data folder: "
+  echo 오리지널 오블리비언의 Data 폴더 경로를 입력하세요.
+  echo 예: C:\Games\Steam\steamapps\common\Oblivion\Data
+  set /p "DATA_DIR=Data 폴더: "
 )
 if not exist "%DATA_DIR%\Oblivion.esm" (
-  echo Oblivion.esm was not found in: "%DATA_DIR%"
+  echo 지정한 폴더에서 Oblivion.esm을 찾을 수 없습니다.
+  echo 아무 키나 누르면 종료합니다.
+  pause >nul
   exit /b 1
 )
 set "OUT_DIR=%~dp0output\Oblivion_KR_Mod"
@@ -15,47 +18,32 @@ set "INI_PATH=%~2"
 if not defined INI_PATH (
   for /f "delims=" %%I in ('powershell -NoProfile -Command "[Environment]::GetFolderPath('MyDocuments')"') do set "INI_PATH=%%I\My Games\Oblivion\Oblivion.ini"
 )
-echo Active INI: "%INI_PATH%"
-if defined INI_PATH if not exist "%INI_PATH%" if exist "%DATA_DIR%\..\Oblivion_default.ini" (
-  for %%I in ("%INI_PATH%") do if not exist "%%~dpI" mkdir "%%~dpI"
-  copy /Y "%DATA_DIR%\..\Oblivion_default.ini" "%INI_PATH%" >nul
+if not exist "%~dp0OblivionKRBuilder.exe" (
+  echo OblivionKRBuilder.exe가 없습니다. 설치기 ZIP을 모두 압축 해제하세요.
+  echo 아무 키나 누르면 종료합니다.
+  pause >nul
+  exit /b 1
 )
-if exist "%~dp0OblivionKRBuilder.exe" (
-  set "RUNNER=%~dp0OblivionKRBuilder.exe"
-  goto run_exe
-)
-where py >nul 2>nul
-if not errorlevel 1 goto run_py
-where python >nul 2>nul
-if not errorlevel 1 goto run_python
-echo Python 3 or OblivionKRBuilder.exe is required.
-exit /b 1
-:run_exe
 if exist "%INI_PATH%" (
-  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
+  echo 기존 Oblivion.ini를 찾았습니다: "%INI_PATH%"
+  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%"
 ) else (
-  "%RUNNER%" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
+  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
 )
-goto finish
-:run_py
-if exist "%INI_PATH%" (
-  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
-) else (
-  py -3 "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
+if errorlevel 1 (
+  echo 생성에 실패했습니다. 위 오류 내용을 확인하세요.
+  echo 아무 키나 누르면 종료합니다.
+  pause >nul
+  exit /b 1
 )
-goto finish
-:run_python
-if exist "%INI_PATH%" (
-  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles auto
-) else (
-  python "%~dp0build_vanilla_overlay.py" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles auto
-)
-:finish
-if errorlevel 1 exit /b 1
 echo.
-echo Overlay ready: "%OUT_DIR%"
-if not exist "%INI_PATH%" echo Oblivion.ini was not found. Apply FONT_SETTINGS.txt to the active INI.
-echo Save-safe mode: CELL and WRLD location names stay in English so menu saves can create files.
-echo If you use UOP/USIP/UODP, use the updated Korean ESP overlay that keeps location names in English.
-echo Install the output folder as an MO2 mod, or copy its contents into a separate mod overlay.
+echo 번역 데이터와 obCJK.ini 생성, 글꼴 설치가 완료되었습니다.
+echo 생성된 폴더: "%OUT_DIR%"
+echo 이 폴더를 MO2에 모드로 넣고 활성화하세요.
+echo MO2 왼쪽 목록에서 obCJK와 영문 패치보다 아래에 두세요.
+echo xOBSE와 obCJK는 별도로 설치해야 합니다.
+echo 기존 바이트 방식 한글 패치와 시험판 번역 모드는 꺼주세요.
+echo MO2에서 Oblivion을 선택해 실행하세요.
+echo 아무 키나 누르면 종료합니다.
+pause >nul
 exit /b 0
