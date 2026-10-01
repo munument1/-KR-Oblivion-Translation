@@ -355,30 +355,30 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00097C82,sMagicCostliestEffectSkillOf, Skill of, 스킬 ,20c688daa9042000,existing_378
 00098EAF,sMagicEffectItemAbsorb,Absorb,흡수:,cda806c6863a00,existing_378
 000987FB,sMagicEffectItemCreateLock,Create,제작,b88bd8a00100,recovered_323
-00099E6F,sMagicEffectItemDamage,Damage,손상:,c6a402d6a0083a00,existing_378
+00099E6F,sMagicEffectItemDamage,Damage,피해:,bc89bd8a3a00,existing_378
 00099ED6,sMagicEffectItemDrain,Drain,감소:,d0a005c6843a00,existing_378
 00099D81,sMagicEffectItemFeet,ft,피트,bc89cb8800,existing_378
-00097664,sMagicEffectItemFor,for,대상,b28ad6a00800,recovered_323
+00097664,sMagicEffectItemFor,for,지속:,b889c6a4013a00,recovered_323
 00099EDC,sMagicEffectItemFortify,Fortify,강화:,d0a008dd903a00,existing_378
-00099E71,sMagicEffectItemIn,in,동안,c2a408d7a00200,recovered_323
+00099E71,sMagicEffectItemIn,in,범위:,d5a205d7973a00,recovered_323
 00097A09,sMagicEffectItemLock,Lock,자물쇠,b880c4a604d69500,existing_378
-0009881A,sMagicEffectItemOn,on,에,b78b00,recovered_323
+0009881A,sMagicEffectItemOn,on,적용:,d8a201c7a5083a00,recovered_323
 01000957,sMagicEffectItemPointsPlural,pts,점,d8a20500,existing_378
 01000958,sMagicEffectItemPointsSingular,pt,점,d8a20500,existing_378
 00097E0A,sMagicEffectItemRestore,Restore,회복:,dd95c5a4013a00,existing_378
 0100095A,sMagicEffectItemSecondsPlural,secs,초,c98400,existing_378
 0100095B,sMagicEffectItemSecondsSingular,sec,초,c98400,existing_378
-00097A45,sMagicEffectItemUpToLevel,up to level,상승: 레벨,d6a008c6a8083a20b38bd5ab0400,existing_378
+00097A45,sMagicEffectItemUpToLevel,up to level,최대 레벨,d995b28a20b38bd5ab0400,existing_378
 00099E07,sMagicEffectResisted,effect resisted,효과가 저지되었습니다,cd85d090b08020b882b889d295d7a214c6a806b189b28000,existing_378
 000987FA,sMagicName,Magic,마법,b480d5a20600,recovered_323
 00099D74,sMagicProjectileTypeBall,Ball,구체,c086b98b00,recovered_323
 00099D93,sMagicProjectileTypeBolt,Bolt,화살,dd90d6a00400,recovered_323
 00099D96,sMagicProjectileTypeFog,Fog,안개,d7a002b08a00,recovered_323
 00099F1C,sMagicProjectileTypeSpray,Spray,분사,c5a602b68000,recovered_323
-00099166,sMagicRangeSelf,Self,셀프,d6ab04cc8800,existing_378
-00099E46,sMagicRangeStrike,Strike,타격,bb80d0a30100,recovered_323
+00099166,sMagicRangeSelf,Self,자신,b880d6a90200,existing_378
+00099E46,sMagicRangeStrike,Strike,공격 적중,c0a408d0a30120d8a201c8a60800,recovered_323
 00099DC1,sMagicRangeTarget,Target,대상,b28ad6a00800,recovered_323
-00098EAE,sMagicRangeTouch,Touch,터치,bb82b98900,existing_378
+00098EAE,sMagicRangeTouch,Touch,접촉,d8a206c9a40100,existing_378
 00099DC8,sMagicSchool,Magic School,마법 학교,b480d5a20620dda001c08500,existing_378
 00099EF1,sMagicSchoolAlteration,Alteration,변이마법,d5a302b789b480d5a20600,existing_378
 01000968,sMagicSchoolAlteration,"Alteration
@@ -743,7 +743,7 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099EE5,sTargetTypeVampire,Feed/Talk,흡혈/대화,cda806dda3042fb28add9000,new_223
 00097675,sTheElderScrolls,The Elder Scrolls,엘더스크롤,d7ab04b282c688ca88c3a40400,new_223
 00099EFD,sTitleText,You have ascended to level,레벨이 상승하였습니다. 레벨 : ,b38bd5ab04b78920d6a008c6a808bd80d7a314c6a806b189b2802e20b38bd5ab04203a2000,existing_378
-00097A41,sTo,to,~에게,7eb78bb08b00,new_223
+00097A41,sTo,to,->,2d3e00,new_223
 00099DC0,sTone,Tone,색,d6aa0100,existing_378
 00099F02,sTopicAddedText,New topic,새로운 화제,b68ac384c7a60220dd90b88b00,existing_378
 00099695,sTouchRange,Strike,타격,bb80d0a30100,recovered_323
