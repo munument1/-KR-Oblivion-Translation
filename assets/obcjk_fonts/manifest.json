@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "fonts": [
+    {
+      "id": "source_regular",
+      "file": "SourceHanSerifKR-Regular.otf",
+      "sha256": "b2b310255186ce92de2909f96522b9183a9f6c323dbe5663f205f02d6ece08b7",
+      "family": "Source Han Serif KR",
+      "full_name": "Source Han Serif KR",
+      "weight": 400,
+      "source_url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/SubsetOTF/KR/SourceHanSerifKR-Regular.otf",
+      "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0",
+      "hangul_total": 11172,
+      "hangul_missing": 0,
+      "ascii_missing": "",
+      "aliases": [
+        "Source Han Serif KR",
+        "본명조 KR"
+      ]
+    },
+    {
+      "id": "source_medium",
+      "file": "SourceHanSerifKR-Medium.otf",
+      "sha256": "2566ac21d17079d05d967eddc4130c9b39603c0b264eef61315daa6eda8c00b6",
+      "family": "Source Han Serif KR Medium",
+      "full_name": "Source Han Serif KR Medium",
+      "weight": 500,
+      "source_url": "https://raw.githubusercontent.com/adobe-fonts/source-han-serif/release/SubsetOTF/KR/SourceHanSerifKR-Medium.otf",
+      "version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0",
+      "hangul_total": 11172,
+      "hangul_missing": 0,
+      "ascii_missing": "",
+      "aliases": [
+        "Source Han Serif KR",
+        "Source Han Serif KR Medium",
+        "본명조 KR",
+        "본명조 KR Medium"
+      ]
+    },
+    {
+      "id": "iropke",
+      "file": "IropkeBatangM.ttf",
+      "sha256": "5910f97baed6c6e0b8538e40d326b169e0a510357e20dd9003ababce2ce1cc69",
+      "family": "Iropke Batang Medium",
+      "full_name": "Iropke Batang Medium",
+      "weight": 500,
+      "source_url": "https://github.com/iropke/font-iropke-batang/raw/master/IropkeBatangM.zip",
+      "version": "Version 1.001;PS 1;hotconv 1.0.79;makeotf.lib2.5.61930",
+      "hangul_total": 11172,
+      "hangul_missing": 0,
+      "ascii_missing": "",
+      "aliases": [
+        "Iropke Batang",
+        "Iropke Batang Medium",
+        "이롭게 바탕체",
+        "이롭게 바탕체 Medium"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "file": "licenses/EULA_iropke_batang.pdf",
+      "sha256": "1f3e2cbe711393947462da76305df5cc2f2bb91ef0fa93d53e8deea6cd058a12"
+    },
+    {
+      "file": "licenses/IropkeBatang-LICENSE.txt",
+      "sha256": "d065efb84ed5ae9d33c2a14aa36b4987f21b28bd72f6383b26dd0326fb68bb01"
+    },
+    {
+      "file": "licenses/IropkeBatang-README.md",
+      "sha256": "3252d9dce973a952890c3e3202e34f9025609492dd8c69d5ce3edd901fd3bb4a"
+    },
+    {
+      "file": "licenses/SourceHanSerif-font-copyright.txt",
+      "sha256": "77252868677246b8eda6240c9722104c579432b917a8ab6f05c360f46a7ed7d2"
+    },
+    {
+      "file": "licenses/SourceHanSerif-LICENSE.txt",
+      "sha256": "9ff5bb567e1b92c801fc1069e5fbf992ff8efccacb9db94e5959a5b3ba9bb903"
+    }
+  ]
+}

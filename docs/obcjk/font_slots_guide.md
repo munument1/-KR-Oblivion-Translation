@@ -6,11 +6,11 @@
 
 | 슬롯 | 게임에서 쓰이는 곳 | 현재 글꼴 | `[UTF8]` 설정 키 | 현재 크기(ASCII / 한글) |
 |---|---|---|---|---|
-| 1 | 제목, 대부분의 메뉴/UI, 일반 책 | Malgun Gothic(맑은 고딕), 굵기 400 | `FontParam1_1`, `FontParam1_2` | 38 / 39 |
-| 2 | NPC 대사 자막, HUD | **Noto Serif KR, 굵기 500** | `FontParam2_1`, `FontParam2_2` | 40 / 40 |
-| 3 | 지도 위치명, 팝업, 나머지 UI | Malgun Gothic, 굵기 400 | `FontParam3_1`, `FontParam3_2` | 26 / 26 |
+| 1 | 제목, 대부분의 메뉴/UI, 일반 책 | 본명조 KR Medium, 굵기 500 | `FontParam1_1`, `FontParam1_2` | 38 / 39 |
+| 2 | NPC 대사 자막, HUD | 본명조 KR Medium, 굵기 500 | `FontParam2_1`, `FontParam2_2` | 40 / 40 |
+| 3 | 지도 위치명, 팝업, 나머지 UI | 본명조 KR Medium, 굵기 500 | `FontParam3_1`, `FontParam3_2` | 26 / 26 |
 | 4 | 데이드릭 문자 | 원본 Daedric_Font | obCJK 치환 대상 아님 | 원본 자원 사용 |
-| 5 | 손글씨 스타일 책, 편지 | Malgun Gothic, 굵기 400 | `FontParam5_1`, `FontParam5_2` | 34 / 34 |
+| 5 | 손글씨 스타일 책, 편지 | 이롭게 바탕체 Medium, 굵기 500 | `FontParam5_1`, `FontParam5_2` | 34 / 34 |
 
 **대사만 고르면 슬롯 2부터 바꾸면 된다.** 같은 슬롯을 쓰는 HUD도 함께 바뀐다. 제목과 책도 슬롯 1을 공유하므로 서로 완전히 독립된 글꼴 설정은 아니다. 크기 값은 obCJK의 설정값이며 실제 화면의 최종 픽셀 크기는 게임 해상도/렌더링 배율에도 영향을 받는다.
 
@@ -27,6 +27,8 @@
 
 NorthernUI의 다섯 역할은 크기/스타일 역할 이름이다. 실제 어느 화면이 그 역할을 쓰는지는 NorthernUI XML 설정에 따라 달라진다.
 
+슬롯 7/8 및 33–37은 본명조 KR Regular, 굵기 400으로 설정했다.
+
 ## 눈누에서 고른 글꼴 넣기
 
 1. 원하는 글꼴의 TTF/OTF를 내려받아 Windows에 설치한다. MO2의 Fonts 폴더에 파일만 복사하는 것으로는 obCJK의 이름 기반 글꼴 선택이 충족되지 않는다.
@@ -41,8 +43,8 @@ D:\Oblivion MO2\mods\Oblivion_KR_obCJK_UTF8_Test\OBSE\plugins\obCJK\obCJK.ini
 
 ```ini
 [UTF8]
-FontParam2_1 = Noto Serif KR,0,40,0,0,34,500,0,0
-FontParam2_2 = Noto Serif KR,0,40,0,0,34,500,0,0
+FontParam2_1 = Source Han Serif KR Medium,0,40,0,0,34,500,0,0
+FontParam2_2 = Source Han Serif KR Medium,0,40,0,0,34,500,0,0
 FontParam2_1_Native = 0
 ```
 
@@ -61,6 +63,10 @@ FontParam2_1_Native = 0
 
 ## 이번 적용과 검증
 
-슬롯 2의 ASCII/CJK 두 줄만 Malgun Gothic 400에서 Noto Serif KR 500으로 변경했다. 크기·간격·위치·나머지 설정은 동일하다. Windows GDI가 Noto Serif KR을 실제 선택했고 완성형 한글 11,172자 누락 0개를 확인했다. 폰트 변경 후 실제 대사 화면의 줄바꿈/잘림 비교는 아직 하지 않았다. 게임은 변경 시점에 종료돼 있었으며 다음 실행에 적용된다.
+현재는 `AsciiRenderEnable = 0`이다. 표의 사용자 글꼴은 한글/CJK에 적용되며, 영문·숫자·제어문자는 원래 게임 글꼴을 사용한다. 크기·간격과 FontParam 자체는 유지했다. 사용자가 정상 표시를 확인했고 같은 설정을 v1.0.5 설치기에 반영한다. 자세한 근거와 백업 위치는 [제어문자 네모 진단](control_glyph_diagnosis.md)을 참고한다.
 
-변경 전 INI와 해시/적용 기록은 `_build/obcjk/font-preview/subtitle-serif/`에 보관했다. 원본 obCJK 모드 및 기본 빌더의 글꼴 기본값은 바꾸지 않았다.
+선택한 글꼴을 Windows 현재 사용자에게 설치하고, 별도 프로세스의 GDI에서 본명조 Regular/Medium과 이롭게바탕체가 실제 선택되며 완성형 한글 11,172자 누락이 없는 것을 확인했다. 이롭게바탕체는 `Iropke Batang Medium`으로 지정해야 선택된다.
+
+우아한세리프를 메인 메뉴에서 확인한 뒤 사용자 요청으로 슬롯 1의 ASCII/CJK 두 줄을 본명조 Medium으로 교체했다. 크기·간격·위치는 유지했다. 이후 제어문자 네모를 피하는 설정의 정상 표시를 사용자가 확인하고 배포를 요청했다. 모든 자막·책의 줄바꿈/잘림을 전수 확인한 것은 아니다.
+
+선택한 글꼴의 적용 기록은 `_build/obcjk/font-preview/selected-fonts/`, 슬롯 1 교체 전 INI와 해시 기록은 `_build/obcjk/font-preview/menu-source-medium/`에 보관했다. 원본 obCJK 모드 및 기본 빌더의 글꼴 기본값은 바꾸지 않았다.

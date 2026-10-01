@@ -60,6 +60,28 @@ def build(args):
             raise ValueError('Unresolved translation text; refusing UTF-8 output')
         # Additional caller-supplied CSVs are decoded strictly on actual use.
         reports = build_directory(source, legacy, tables, output)
+        location_reports = {}
+        if getattr(args, 'korean_locations', False):
+            from build_obcjk_locations import build as build_locations
+            locations = stage / 'locations'
+            location_reports = build_locations([output], tables, locations)
+            for name, report in location_reports.items():
+                if not report.get('changes'):
+                    continue
+                # Temp and output may be on different Windows volumes. Copy
+                # into the output volume before replacing its staged UTF-8 file.
+                target = output / name
+                copied = target.with_suffix(target.suffix + '.location-building')
+                shutil.copyfile(locations / name, copied)
+                if sha256_file(copied) != report['output_sha256']:
+                    raise ValueError('Location copy checksum mismatch')
+                copied.replace(target)
+                reports[name]['utf8_before_locations_sha256'] = reports[name]['output_sha256']
+                reports[name]['output_sha256'] = sha256_file(output / name)
+                reports[name]['location_validation'] = 'location_validation.json'
+            shutil.copyfile(locations / 'location_validation.json', output / 'location_validation.json')
+            (output / 'obcjk_validation.json').write_text(
+                json.dumps(reports, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         ui_report = build_ui(HERE / 'assets/menus/strings.xml', output / 'menus/strings.xml')
         for folder in ('Video',):
             if (legacy / folder).is_dir():
@@ -84,6 +106,9 @@ def build(args):
         legacy_audit['menu_xml'] = ui_report
         legacy_audit['obcjk_ini_sha256'] = sha256_file(ini_path)
         legacy_audit['runtime_verified'] = False
+        legacy_audit['korean_locations'] = bool(getattr(args, 'korean_locations', False))
+        if location_reports:
+            legacy_audit['location_validation'] = 'location_validation.json'
         (output / 'translation_audit.json').write_text(
             json.dumps(legacy_audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return 0

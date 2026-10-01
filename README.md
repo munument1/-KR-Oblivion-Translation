@@ -1,5 +1,11 @@
 # The Elder Scrolls IV: Oblivion Original 한국어 번역
 
+## v1.0.5 — obCJK UTF-8
+
+새 설치기는 본명조·이롭게바탕체 자동 설치와 한글 위치명을 지원합니다. MO2, xOBSE와 obCJK는 사용자가 별도로 설치합니다. [v1.0.5 설치 안내](README_obCJK.md)를 따라 설치하세요. 언오피셜 패치 UTF-8 번역은 별도 Nexus 배포용이며 GitHub 설치기에는 포함하지 않습니다.
+
+아래는 보존된 v1.0.4 이전 방식 안내입니다. v1.0.5 설치에는 위 새 안내를 사용하세요.
+
 오리지널 The Elder Scrolls IV: Oblivion (2006) 본편과 공식 확장팩/DLC를 대상으로 하는 한국어 번역 빌더입니다.
 
 이 저장소의 GitHub Release는 본편 + 공식 DLC 전용입니다. Unofficial Oblivion Patch / Unofficial Shivering Isles Patch / Unofficial Oblivion DLC Patches용 한국어 ESP는 이 저장소의 릴리즈에 포함하지 않습니다.

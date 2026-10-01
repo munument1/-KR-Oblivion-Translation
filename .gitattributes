@@ -1,7 +1,5 @@
-*.csv -text
-assets/menus/strings.xml -text
-*.fnt -text
-*.tex -text
-*.bat text eol=crlf
-*.py text eol=lf
-*.md text eol=lf
+# Preserve the exact upstream font/license bytes used by the SHA-256 manifest.
+assets/obcjk_fonts/** -text
+assets/obcjk_fonts/** whitespace=cr-at-eol
+# Upstream README spacing is retained verbatim.
+assets/obcjk_fonts/licenses/** whitespace=cr-at-eol,-blank-at-eol

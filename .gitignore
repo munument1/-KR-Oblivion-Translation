@@ -5,6 +5,7 @@ dist/
 __pycache__/
 *.spec
 !OblivionKRBuilder.spec
+!OblivionKRObCJKInstaller.spec
 *.building
 *.esm
 *.esp
