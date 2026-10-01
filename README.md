@@ -38,9 +38,9 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 
 기존 설치기처럼 원본 `OblivionIntro.bik`와 `OblivionOutro.bik`를 읽어 한국어 자막을 입힌 Bink 1 영상을 생성합니다. 원본 영상은 수정하지 않습니다. 자막 소스와 생성 기능은 EXE에 포함되어 있습니다.
 
-영상 생성에는 **FFmpeg·ffprobe와 RAD Video Tools**가 필요합니다. [FFmpeg Windows 빌드](https://www.gyan.dev/ffmpeg/builds/)의 `bin` 폴더를 PATH에 추가하고, [RAD Video Tools](https://www.radgametools.com/bnkdown.htm)를 기본 위치에 설치한 뒤 `install.bat`을 실행하세요. 설치기는 PATH의 FFmpeg·ffprobe와 `C:\Program Files (x86)\RADVideo` 또는 `C:\Program Files\RADVideo`의 `radvideo64.exe`를 자동으로 찾습니다.
+영상 생성에 필요한 **FFmpeg·ffprobe와 RAD Video Tools는 설치기가 자동으로 준비합니다.** 이미 PATH 또는 기본 설치 위치에 도구가 있으면 그대로 사용하고, 없으면 첫 실행 시 공식 배포처에서 내려받아 `%LOCALAPPDATA%\OblivionKRInstaller\video-tools`에 캐시합니다. 별도 설치나 관리자 권한은 필요하지 않습니다. FFmpeg는 Gyan Windows 빌드, RAD Video Tools는 RAD Game Tools 공식 배포본, 압축 해제용 `7zr.exe`는 7-Zip 공식 GitHub 릴리스를 사용하며 다운로드 파일의 고정 해시를 확인합니다.
 
-도구가 없으면 번역 모드만 생성하고 **동영상 자막이 생성되지 않았다는 경고**를 표시합니다. 도구를 설치한 후 설치기 ZIP을 새 폴더에 풀어 다시 실행하면 됩니다. 완료 로그에 `인트로·엔딩 한국어 자막 영상 2개 생성 완료`가 나오고 출력의 `Video` 폴더에 두 BIK가 있는지 확인하세요. 게임 영상과 외부 변환 도구는 설치기 ZIP에 포함하지 않습니다.
+첫 영상 생성 때는 인터넷 연결이 필요하고 FFmpeg 다운로드 용량 때문에 시간이 걸릴 수 있습니다. 자동 준비나 다운로드에 실패한 경우에만 번역 모드는 계속 생성하고 **동영상 자막이 생성되지 않았다는 경고**를 표시합니다. 완료 로그에 `인트로·엔딩 한국어 자막 영상 2개 생성 완료`가 나오고 출력의 `Video` 폴더에 두 BIK가 있는지 확인하세요. 원본 게임 영상은 설치기 ZIP에 포함하지 않습니다.
 
 ## 글꼴
 
