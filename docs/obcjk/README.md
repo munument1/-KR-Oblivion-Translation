@@ -2,6 +2,8 @@
 
 대상은 Oblivion Original의 본PC Windows 환경이다. Steam Deck 작업과 검증은 제외한다.
 
+후속 진행: [UTF-8 기본 메뉴 실행 결과](utf8_ui_test_results.md). 별도 프로필에서 한글 메뉴 표시를 검증했으며, 본문 ESP 변환과 한글 위치명 저장은 아직 남아 있다. 아래 조사 기록은 최초 조사 시점의 상태다.
+
 ## 결론
 
 - **obCJK backend의 우선 인코딩은 UTF-8**으로 권고한다. 실제 바이트 처리와 전역 설정은 [소스 분석](obcjk_source_analysis.md)에 근거한다.

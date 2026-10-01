@@ -1,4 +1,7 @@
-"""Encoder for the custom Korean byte scheme used by TheGreatestKorean fonts."""
+"""Text codec for the custom Korean byte scheme used by TheGreatestKorean fonts.
+
+This module handles text bytes only. It does not read or write game plugins.
+"""
 NORMAL={0:0,2:1,3:2,5:3,6:4,7:5,9:6,11:7,12:8,14:9,15:10,16:11,17:12,18:13}
 TENSE={1:14,4:15}; SPECIAL={8:0,10:1,13:2}
 GROUP="bbbbbbbbcdddccdddccdb"
@@ -18,3 +21,56 @@ def encode_hangul(ch):
         first=({"b":0xf0,"c":0xf3,"d":0xf6} if not T else {"b":0xf6,"c":0xf3,"d":0xf9})[g]+idx
     out=bytes([first,(FINAL_SECOND if T else NO_SECOND)[V]])
     return out+(bytes([FINAL_SUFFIX[T]]) if T else b"")
+
+
+def _decode_table():
+    table = {}
+    for codepoint in range(0xAC00, 0xD7A4):
+        character = chr(codepoint)
+        encoded = encode_hangul(character)
+        if encoded in table:
+            raise ValueError("Legacy Hangul encoding is not unique")
+        table[encoded] = character
+    return table
+
+
+_HANGUL_BY_BYTES = _decode_table()
+_HANGUL_STARTS = {encoded[0] for encoded in _HANGUL_BY_BYTES}
+
+
+def encode_legacy(text: str) -> bytes:
+    """Encode Hangul with the legacy font scheme and other text as cp1252."""
+    return b"".join(
+        encode_hangul(ch) if 0xAC00 <= ord(ch) <= 0xD7A3 else ch.encode("cp1252")
+        for ch in text
+    )
+
+
+def decode_legacy(data: bytes) -> str:
+    """Decode legacy text strictly, rejecting incomplete Hangul sequences.
+
+    A Hangul lead byte is reserved by the font scheme. Do not silently interpret
+    a malformed sequence as western text, which could corrupt a translation.
+    """
+    result = []
+    offset = 0
+    while offset < len(data):
+        if data[offset] in _HANGUL_STARTS:
+            for size in (3, 2):
+                character = _HANGUL_BY_BYTES.get(data[offset:offset + size])
+                if character is not None:
+                    result.append(character)
+                    offset += size
+                    break
+            else:
+                raise UnicodeDecodeError(
+                    "oblivion-legacy", data, offset, min(offset + 3, len(data)),
+                    "incomplete or invalid Hangul sequence",
+                )
+        else:
+            result.append(data[offset:offset + 1].decode("cp1252"))
+            offset += 1
+    text = "".join(result)
+    if encode_legacy(text) != data:
+        raise ValueError("Legacy text did not round-trip exactly")
+    return text
