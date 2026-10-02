@@ -20,7 +20,7 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 사용 중이므로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
 - `assets/Fonts`, `assets/menus`: 기존 인코딩 변환과 UI 입력 자료.
-- `build_video_subtitles.py`, `video_subtitles`: 사용자 원본 인트로·엔딩에 한국어 자막을 입혀 Bink 1 영상 2개를 생성합니다. PATH/기본 설치 위치의 FFmpeg·ffprobe·RAD를 먼저 사용하고, 없으면 검증된 공식 배포본을 `%LOCALAPPDATA%\\OblivionKRInstaller\\video-tools`에 자동 준비합니다. 다운로드는 고정 해시를 검증합니다. 필수 생성 검증에는 `--video-subtitles required`를 사용합니다.
+- `build_video_subtitles.py`, `video_subtitles`: Nexus 배포용 인트로·엔딩 Bink 1 영상 2개를 재생성하는 개발 도구와 자막 소스입니다. PATH/기본 설치 위치에 이미 설치된 FFmpeg·ffprobe·RAD만 사용하며 외부 도구를 자동 다운로드하지 않습니다. 일반 설치기는 `--video-subtitles off`를 사용하고, 개발자가 재생성할 때만 `auto` 또는 필수 검증용 `required`를 사용합니다.
 - `tests`: 문자열·바이너리 보존, 위치명, INI 및 글꼴 검증.
 - `docs/obcjk`: 조사 이력, 설정 설명과 실행 검증 기록.
 - `docs/v2_review`, `v2_tools`, 루트 audit/extract 도구: 번역 검수 이력과 보강 도구. 설치기에는 포함하지 않습니다.
