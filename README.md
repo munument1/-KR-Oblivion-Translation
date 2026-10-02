@@ -11,7 +11,7 @@
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
 6. MO2 실행 대상에서 **Oblivion**을 선택합니다. 필요한 경우 [MO2의 xOBSE 강제 로드 안내](https://github.com/ModOrganizer2/modorganizer/wiki/Running-Oblivion-OBSE-with-MO2)를 확인합니다.
 
-설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 아래 영상 도구가 있으면 한국어 자막을 입힌 인트로·엔딩 BIK도 `Video` 폴더에 생성합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
+설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 
@@ -36,11 +36,9 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 
 ## 인트로·엔딩 동영상 자막
 
-기존 설치기처럼 원본 `OblivionIntro.bik`와 `OblivionOutro.bik`를 읽어 한국어 자막을 입힌 Bink 1 영상을 생성합니다. 원본 영상은 수정하지 않습니다. 자막 소스와 생성 기능은 EXE에 포함되어 있습니다.
+한국어 자막을 입힌 `OblivionIntro.bik`와 `OblivionOutro.bik`는 GitHub 설치기와 분리해 **Nexus에서 별도 영상 파일로 배포**합니다. 일반 설치 과정에서는 FFmpeg나 RAD Video Tools를 설치하거나 내려받지 않으며, 원본 게임 영상도 GitHub 설치기 ZIP에 포함하지 않습니다.
 
-영상 생성에 필요한 **FFmpeg·ffprobe와 RAD Video Tools는 설치기가 자동으로 준비합니다.** 이미 PATH 또는 기본 설치 위치에 도구가 있으면 그대로 사용하고, 없으면 첫 실행 시 공식 배포처에서 내려받아 `%LOCALAPPDATA%\OblivionKRInstaller\video-tools`에 캐시합니다. 별도 설치나 관리자 권한은 필요하지 않습니다. FFmpeg는 Gyan Windows 빌드, RAD Video Tools는 RAD Game Tools 공식 배포본, 압축 해제용 `7zr.exe`는 7-Zip 공식 GitHub 릴리스를 사용하며 다운로드 파일의 고정 해시를 확인합니다.
-
-첫 영상 생성 때는 인터넷 연결이 필요하고 FFmpeg 다운로드 용량 때문에 시간이 걸릴 수 있습니다. 자동 준비나 다운로드에 실패한 경우에만 번역 모드는 계속 생성하고 **동영상 자막이 생성되지 않았다는 경고**를 표시합니다. 완료 로그에 `인트로·엔딩 한국어 자막 영상 2개 생성 완료`가 나오고 출력의 `Video` 폴더에 두 BIK가 있는지 확인하세요. 원본 게임 영상은 설치기 ZIP에 포함하지 않습니다.
+저장소의 `video_subtitles` 자막 소스와 `build_video_subtitles.py`는 유지합니다. 개발자가 영상을 다시 만들 때는 FFmpeg·ffprobe와 RAD Video Tools를 직접 준비한 뒤 `--video-subtitles auto` 또는 `required`를 사용할 수 있습니다. 빌더는 외부 영상 도구를 자동으로 내려받지 않습니다.
 
 ## 글꼴
 
