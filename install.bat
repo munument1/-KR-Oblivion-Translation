@@ -27,9 +27,9 @@ if not exist "%~dp0OblivionKRBuilder.exe" (
 )
 if exist "%INI_PATH%" (
   echo 기존 Oblivion.ini를 찾았습니다: "%INI_PATH%"
-  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles off --ini "%INI_PATH%" --video-subtitles off
+  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%" --video-subtitles off
 ) else (
-  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
+  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles off
 )
 if errorlevel 1 (
   echo 생성에 실패했습니다. 위 오류 내용을 확인하세요.
