@@ -14,7 +14,7 @@ if not exist "%DATA_DIR%\Oblivion.esm" (
   exit /b 1
 )
 set "OUT_DIR=%~dp0output\Oblivion_KR_Mod"
-echo 인트로와 엔딩 한국어 자막 영상도 자동 생성합니다. 필요한 영상 도구가 없으면 첫 실행 시 자동으로 준비합니다.
+echo 인트로와 엔딩 한국어 자막 영상은 Nexus에서 별도 배포합니다.
 set "INI_PATH=%~2"
 if not defined INI_PATH (
   for /f "delims=" %%I in ('powershell -NoProfile -Command "[Environment]::GetFolderPath('MyDocuments')"') do set "INI_PATH=%%I\My Games\Oblivion\Oblivion.ini"
@@ -27,7 +27,7 @@ if not exist "%~dp0OblivionKRBuilder.exe" (
 )
 if exist "%INI_PATH%" (
   echo 기존 Oblivion.ini를 찾았습니다: "%INI_PATH%"
-  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --ini "%INI_PATH%"
+  "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%" --video-subtitles off --ini "%INI_PATH%" --video-subtitles off
 ) else (
   "%~dp0OblivionKRBuilder.exe" --data-dir "%DATA_DIR%" --output "%OUT_DIR%"
 )
@@ -40,9 +40,7 @@ if errorlevel 1 (
 echo.
 echo 번역 데이터와 obCJK.ini 생성, 글꼴 설치가 완료되었습니다.
 echo 생성된 폴더: "%OUT_DIR%"
-if exist "%OUT_DIR%\Video\OblivionIntro.bik" if exist "%OUT_DIR%\Video\OblivionOutro.bik" echo 인트로와 엔딩 한국어 자막 영상이 Video 폴더에 포함되었습니다.
-if not exist "%OUT_DIR%\Video\OblivionIntro.bik" echo 주의: 동영상 자막이 포함되지 않았습니다. 인터넷 연결과 위 오류 내용을 확인하세요.
-if not exist "%OUT_DIR%\Video\OblivionOutro.bik" if exist "%OUT_DIR%\Video\OblivionIntro.bik" echo 주의: 엔딩 자막 영상이 없습니다. 위 오류 내용을 확인하세요.
+echo 인트로/엔딩 한국어 자막 영상은 Nexus의 별도 영상 파일을 설치하세요.
 echo 이 폴더를 MO2에 모드로 넣고 활성화하세요.
 echo MO2 왼쪽 목록에서 obCJK와 영문 패치보다 아래에 두세요.
 echo xOBSE와 obCJK는 별도로 설치해야 합니다.
