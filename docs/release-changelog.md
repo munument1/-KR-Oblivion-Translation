@@ -18,11 +18,11 @@ Player-facing release notes. Newest releases are listed first.
 - UOP / USIP / UODP 번역을 각 원본 모드에 대응하는 세 ZIP으로 배포합니다.
 - 설치기 인터페이스를 기존 `install.bat` / `OblivionKRBuilder.exe`로 통일하고 BAT 안내를 한국어로 표시합니다.
 - 문서 폴더의 기존 Oblivion.ini를 자동 검색합니다. 별도 프로필 주소를 묻거나 새 프로필·INI·세이브를 만들지 않습니다.
-- MO2에 넣는 모드 폴더에는 게임용 번역 데이터, 생성된 자막 영상과 obCJK.ini를 두고 검증 보고서는 폴더 옆에 저장합니다.
+- MO2에 넣는 GitHub 설치기 출력에는 게임용 번역 데이터와 obCJK.ini를 두고 검증 보고서는 폴더 옆에 저장합니다. 인트로·엔딩 자막 영상은 Nexus에서 별도 배포합니다.
 
 ### Fixed
 
-- 새 설치기에서 누락된 인트로·엔딩 한국어 자막 영상 자동 생성을 복구했습니다. FFmpeg·ffprobe 및 RAD Video Tools가 없으면 공식 배포본을 사용자 로컬 캐시에 자동 준비하며, 준비 실패 시에만 한국어로 누락을 안내합니다.
+- 인트로·엔딩 한국어 자막 영상은 GitHub 설치기와 분리해 Nexus 별도 파일로 배포하도록 정리했습니다. 설치기는 FFmpeg·ffprobe·RAD Video Tools를 자동 다운로드하지 않습니다.
 - 종족 설명의 줄바꿈과 이름 입력 커서 네모 표시를 피하도록 영문·숫자·제어문자에 원래 게임 렌더링을 사용합니다.
 
 ### Compatibility
