@@ -70,8 +70,8 @@ def main():
     parser.add_argument('--output', type=Path, help='MO2에 넣을 번역 모드 출력 폴더')
     parser.add_argument('--ini', type=Path, help='기존 Oblivion.ini; 생략하면 문서 폴더에서 자동 검색')
     parser.add_argument('--fonts-only', action='store_true', help='번역 데이터 생성 없이 글꼴만 설치')
-    parser.add_argument('--video-subtitles', choices=('auto', 'required', 'off'), default='auto',
-                        help='인트로·엔딩 자막 영상: 기본 자동 생성, required는 도구 누락 시 실패')
+    parser.add_argument('--video-subtitles', choices=('auto', 'required', 'off'), default='off',
+                        help='인트로·엔딩 자막 영상: 기본 off. auto/required는 이미 설치된 FFmpeg·ffprobe·RAD만 사용')
     args = parser.parse_args()
     bundle_manifest()
     if args.fonts_only:
@@ -121,7 +121,7 @@ def main():
         if videos:
             print('인트로·엔딩 한국어 자막 영상 2개 생성 완료: Video 폴더')
         elif args.video_subtitles != 'off':
-            print('주의: 동영상 자막은 생성되지 않았습니다. 영상 도구 자동 준비에 실패했습니다. 인터넷 연결을 확인한 뒤 새 출력 폴더로 다시 실행하세요.')
+            print('주의: 동영상 자막은 생성되지 않았습니다. 로컬 생성에는 FFmpeg·ffprobe·RAD Video Tools가 필요합니다. 배포용 영상은 Nexus 별도 파일을 사용하세요.')
         if not ini.is_file():
             print('기존 Oblivion.ini가 없어 INI 설정을 건너뛰었습니다. README의 글꼴 설정을 확인하세요.')
     print('글꼴 설치 완료. 생성된 모드 폴더를 MO2에 넣고 활성화하세요.')
