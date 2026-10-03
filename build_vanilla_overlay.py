@@ -148,7 +148,7 @@ class Translation:
     occurrence: int | None = None
 
 
-def load_translations(path: Path, extra_paths=()):
+def load_translations(path: Path, extra_paths=(), encoded_column="new_bytes_hex"):
     table = defaultdict(list)
     for source_path in (path, *extra_paths):
         with source_path.open(encoding="utf-8-sig", newline="") as stream:
@@ -170,7 +170,10 @@ def load_translations(path: Path, extra_paths=()):
                 # Official DLC records may also override base-game FormIDs.
                 if (formid >> 24) not in ((0,) if target == MASTER else (0, 1)):
                     continue
-                korean = bytes.fromhex(row["new_bytes_hex"])
+                encoded = row.get(encoded_column, "")
+                if not encoded:
+                    raise ValueError(f"{source_path.name} line {line}: missing {encoded_column}")
+                korean = bytes.fromhex(encoded)
                 if not korean.endswith(b"\0") or b"\0" in korean[:-1]:
                     raise ValueError(f"{source_path.name} line {line}: invalid encoded string")
                 editor_id = row.get("editor_id")

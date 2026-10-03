@@ -1,0 +1,21 @@
+{
+  "canonical_unofficial_rows": 8818,
+  "canonical_unofficial_sha256": "bcd682a173b9ee7d321810697f693cafdd2ecf829a717b25d5675ecbc6389567",
+  "rebuild_without_prior_kr_identical_plugins": "14/14",
+  "location_rebuild_identical_changed_plugins": "12/12",
+  "unit_tests_passed": 48,
+  "packages": {
+    "Unofficial_Oblivion_Patch_KR_v1.0.7.zip": {
+      "bytes": 4314959,
+      "sha256": "c573d1514db3dd9dcc3adce04c10197fb035339f499cacc9888864cf36c1e4b8"
+    },
+    "Unofficial_Shivering_Isles_Patch_KR_v1.0.7.zip": {
+      "bytes": 809508,
+      "sha256": "00916e106b7f66f73ae591de2611fea28f38f61b83c50743bf7857088207c5d1"
+    },
+    "Unofficial_Oblivion_DLC_Patches_KR_v1.0.7.zip": {
+      "bytes": 270037,
+      "sha256": "b9c3f15f775293b8320cde51cb251e59aae1ed816e006d30f4b0428d327ccff4"
+    }
+  }
+}

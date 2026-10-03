@@ -17,12 +17,35 @@ PATCHES = {
 }
 
 
+def load_validation(folder):
+    validation = folder / 'obcjk_validation.json'
+    if validation.is_file():
+        return json.loads(validation.read_text(encoding='utf-8'))
+    release = folder.parent / 'release_audit.json'
+    if not release.is_file():
+        raise FileNotFoundError(validation)
+    data = {}
+    for path in folder.glob('*.esp'):
+        source = json.loads(release.read_text(encoding='utf-8'))[path.name]
+        data[path.name] = {
+            'original_sha256': source['source_sha256'],
+            'output_sha256': source['output_sha256'],
+            'changes': source.get('translated_fields', 0),
+            'checks': {
+                'translated_fields': source.get('translated_fields', 0),
+                'structure': source.get('structure'),
+                'text_backend': source.get('text_backend'),
+            },
+        }
+    return data
+
+
 def package(inputs, locations, output, patch):
     expected = PATCHES[patch]
     sources, reports = {}, {}
     location_reports = json.loads((locations / 'location_validation.json').read_text(encoding='utf-8'))
     for folder in inputs:
-        data = json.loads((folder / 'obcjk_validation.json').read_text(encoding='utf-8'))
+        data = load_validation(folder)
         for name, report in data.items():
             path = folder / name
             if path.suffix.lower() != '.esp' or name in sources:

@@ -1,0 +1,19 @@
+{
+  "rows": 8818,
+  "plugins": {
+    "DLCBattlehornCastle - Unofficial Patch.esp": 57,
+    "DLCFrostcrag - Unofficial Patch.esp": 16,
+    "DLCHorseArmor - Unofficial Patch.esp": 21,
+    "DLCMehrunesRazor - Unofficial Patch.esp": 26,
+    "DLCOrrery - Unofficial Patch.esp": 31,
+    "DLCSpellTomes - Unofficial Patch.esp": 3,
+    "DLCThievesDen - Unofficial Patch - SSSB.esp": 13,
+    "DLCThievesDen - Unofficial Patch.esp": 36,
+    "DLCVileLair - Unofficial Patch.esp": 46,
+    "Knights - Unofficial Patch.esp": 367,
+    "Oblivion Citadel Door Fix.esp": 1,
+    "Unofficial Oblivion Patch.esp": 6710,
+    "Unofficial Shivering Isles Patch.esp": 1491
+  },
+  "sha256": "bcd682a173b9ee7d321810697f693cafdd2ecf829a717b25d5675ecbc6389567"
+}

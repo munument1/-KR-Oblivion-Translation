@@ -13,7 +13,7 @@
   "source_record_low24_ids": 1167017,
   "menu_source_formid_collisions": 0,
   "full_obcjk_build_passed": true,
-  "unit_tests_last_passed": 46,
+  "unit_tests_last_passed": 48,
   "unofficial_plugins_rebuilt": 14,
   "unofficial_release_audit": "docs/obcjk/unofficial_release_audit_v1.0.7.json",
   "pyinstaller_exe_sha256": "6511a68d3e9e4cbfef2a49fb5437ed9e6e5f98d03a56dd3eb2e418758956a7f8",

@@ -57,6 +57,23 @@ class UnofficialForwardingTests(unittest.TestCase):
         )
         self.assertTrue(has_localizable_text(visible))
 
+    def test_canonical_patch_table_rebuilds_without_prior_kr(self):
+        patch = {(self.original.name, b'QUST', self.key[1], b'CNAM'): [
+            Translation(self.original.name, b'QUST', self.key[1], b'CNAM',
+                        'Source', b'Patch canonical\0', 1, b'TestQuest', 0)
+        ]}
+        changes, counts = collect_changes(self.original, None, patch_table=patch)
+        self.assertEqual(changes[self.key][2][2], b'Patch canonical\0')
+        self.assertEqual(counts['canonical_patch_translation'], 1)
+
+    def test_official_canonical_outranks_patch_canonical(self):
+        patch = {(self.original.name, b'QUST', self.key[1], b'CNAM'): [
+            Translation(self.original.name, b'QUST', self.key[1], b'CNAM',
+                        'Source', b'Patch canonical\0', 1, b'TestQuest', 0)
+        ]}
+        changes, _ = collect_changes(self.original, None, self.audit(), self.table(), patch_table=patch)
+        self.assertEqual(changes[self.key][2][2], b'Reviewed\0')
+
     def test_master_slot_maps_to_source_identity(self):
         records = read_records(self.original)
         self.assertEqual(reviewed_identity(records, 0x02001234), (self.owner, 0x01001234))
