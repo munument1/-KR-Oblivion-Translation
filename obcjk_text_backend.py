@@ -3,9 +3,23 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 from oblivion_korean_codec import decode_legacy, encode_legacy
+
+
+def remove_english_name_glosses(text: str, original_english: str):
+    """Remove added English name glosses; retain original parentheses and syntax."""
+    removed = []
+    pattern = re.compile(r'(?<=[가-힣])\(([A-Za-z][A-Za-z0-9 .,\x27\x22:&/\-]*)\)')
+    def replace(match):
+        gloss = match.group(1)
+        if gloss not in original_english or match.group(0) in original_english:
+            return match.group(0)
+        removed.append(gloss)
+        return ''
+    return pattern.sub(replace, text), removed
 
 
 def encode_text(text: str, backend: str = 'legacy') -> bytes:

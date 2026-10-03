@@ -18,7 +18,7 @@ from pathlib import Path
 from build_unofficial_release import read_records
 from build_vanilla_overlay import HERE, encode_subrecord, parse_subrecords, sha256_file, structure_signature
 from oblivion_korean_codec import decode_legacy
-from obcjk_text_backend import load_exceptions, recover_legacy
+from obcjk_text_backend import load_exceptions, recover_legacy, remove_english_name_glosses
 
 EXCEPTIONS = load_exceptions(HERE / 'docs/obcjk/legacy_text_exceptions.json')
 
@@ -95,7 +95,7 @@ def is_text(kind, field, editor):
             field == b'DATA' and kind == b'GMST' and editor.startswith(b's'))
 
 
-def prepare(legacy, original, memory, smoke=False):
+def prepare(legacy, original, memory, smoke=False, remove_name_glosses=False):
     originals = read_records(original)
     menu_additions = {}
     if legacy.name == 'Oblivion.esm':
@@ -123,6 +123,7 @@ def prepare(legacy, original, memory, smoke=False):
             raise ValueError(f'Subrecord sequence changed: {key}')
         editor = next((value.rstrip(b'\0') for field, value, _ in parts if field == b'EDID'), b'')
         replacements = {}
+        removed_glosses = {}
         for index, (field, value, raw) in enumerate(parts):
             baseline = old_parts[index][1] if old_parts is not None else None
             translated = baseline is not None and baseline != value
@@ -154,6 +155,12 @@ def prepare(legacy, original, memory, smoke=False):
             else:
                 # Untranslated western text also needs UTF-8 in global UTF8 mode.
                 target = value[:-1].decode('cp1252').encode('utf-8') + b'\0'
+            if remove_name_glosses and translated:
+                english = baseline[:-1].decode('cp1252')
+                text, glosses = remove_english_name_glosses(target[:-1].decode('utf-8'), english)
+                if glosses:
+                    target = text.encode('utf-8') + b'\0'
+                    removed_glosses[index] = glosses
             if target != value:
                 replacements[index] = (field, value, target)
         if smoke and replacements:
@@ -174,6 +181,8 @@ def prepare(legacy, original, memory, smoke=False):
                                  'editor_id': editor.decode('ascii'), 'field': field.decode('ascii'),
                                  'index': index, 'source_sha256': hashlib.sha256(before).hexdigest(),
                                  'utf8_hex': after.hex(), 'text': after[:-1].decode('utf-8')})
+                if index in removed_glosses:
+                    manifest[-1]['removed_english_name_glosses'] = removed_glosses[index]
     if not smoke:
         expected = set(originals) | {(b'GMST', fid) for fid in menu_additions}
         if seen != expected:
@@ -376,7 +385,7 @@ def validate(legacy, destination, changes, chosen=None):
     return result
 
 
-def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=False):
+def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=False, remove_name_glosses=False):
     output = output_dir.resolve()
     for source in (original_dir.resolve(), legacy_dir.resolve(), tables_dir.resolve()):
         if output == source or source in output.parents or output in source.parents:
@@ -387,7 +396,7 @@ def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=Fals
         p for p in legacy_dir.iterdir() if p.suffix.lower() in {'.esp', '.esm'})
     for legacy in paths:
         original = original_dir / legacy.name
-        changes, manifest, chosen = prepare(legacy, original, memory, smoke)
+        changes, manifest, chosen = prepare(legacy, original, memory, smoke, remove_name_glosses)
         target = output / ('ObCJK_KR_Smoke.esp' if smoke else legacy.name)
         temporary = target.with_suffix(target.suffix + '.building')
         write(legacy, temporary, changes, chosen if smoke else None)
@@ -409,8 +418,9 @@ def main():
     parser.add_argument('--tables-dir', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--smoke', action='store_true')
+    parser.add_argument('--remove-name-glosses', action='store_true', help='Remove added English name parentheses from unofficial translations')
     args = parser.parse_args()
-    build_directory(args.original_dir, args.legacy_dir, args.tables_dir, args.output, args.smoke)
+    build_directory(args.original_dir, args.legacy_dir, args.tables_dir, args.output, args.smoke, args.remove_name_glosses)
 
 
 if __name__ == '__main__':

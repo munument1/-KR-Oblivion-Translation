@@ -1,0 +1,24 @@
+{
+  "source": "Official TES4Edit definitions and original marker audit; original map names also English in previous KR",
+  "manual_names": [
+    [
+      "000C50D6",
+      "ICPrisonSewerMapMarker",
+      "Imperial Prison Sewer",
+      "제국 감옥 하수도"
+    ],
+    [
+      "000C50D5",
+      "IMPSEWMapMarker",
+      "Imperial City Sewers - North Exit",
+      "임페리얼 시티 하수도 - 북쪽 출구"
+    ],
+    [
+      "000C50D3",
+      "IMPSEWSEMapMarker",
+      "Imperial Sewer - South East Exit",
+      "제국 하수도 - 남동쪽 출구"
+    ]
+  ],
+  "matching": "exact FormID, EditorID, English and occurrence; REF R XMRK map markers only"
+}

@@ -62,6 +62,34 @@ def read_records(path: Path):
     return result
 
 
+def reviewed_identity(records, formid):
+    """Resolve an override through its TES4 masters, never through the patch's own slot."""
+    masters = [value.rstrip(b"\0").decode("ascii")
+               for field, value in records[(b"TES4", 0)] if field == b"MAST"]
+    slot = formid >> 24
+    if slot >= len(masters):
+        return None
+    owner = masters[slot]
+    # Translation tables use the source plugin's file-relative identity.
+    canonical_slot = 0 if owner == "Oblivion.esm" else 1
+    return owner, (canonical_slot << 24) | (formid & 0xFFFFFF)
+
+
+def matching_translation(table, official, record_type, formid, field, old, editor, occurrence):
+    candidates = (table or {}).get((official, record_type, formid, field), ())
+    matches = [item for item in candidates if item.english == decode_english(old) and
+               (item.editor_id is None or item.editor_id == editor) and
+               (item.occurrence is None or item.occurrence == occurrence)]
+    if not matches:
+        return None
+    targets = {item.korean for item in matches}
+    if len(targets) == 1:
+        return targets.pop()
+    # Match the main builder's ordered direct-source refinement policy.
+    direct = [item for item in matches if item.source == official]
+    return direct[-1].korean if direct else None
+
+
 def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None):
     old_records = read_records(original)
@@ -70,13 +98,9 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
         raise ValueError(f"{original.name}: record identities differ from Korean reference")
     changes = {}
     counts = Counter()
-    if original.name in ("Unofficial Oblivion Patch.esp", "Unofficial Shivering Isles Patch.esp"):
-        official = "Oblivion.esm"
-    elif " - Unofficial Patch" in original.name:
-        official = original.name.split(" - Unofficial Patch")[0] + ".esp"
-    else:
-        official = "Oblivion.esm"
     for key, old_fields in old_records.items():
+        identity = reviewed_identity(old_records, key[1])
+        official, base_formid = identity if identity else (None, None)
         kr_fields = kr_records[key]
         if [field for field, _ in old_fields] != [field for field, _ in kr_fields]:
             raise ValueError(f"{original.name}: subrecord sequence differs at {key}")
@@ -127,34 +151,31 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
             replacement = new if old != new else None
             reviewed = None
             if vanilla_audit is not None:
-                audit_key = (official, key[0].decode("ascii"), f"{key[1]:08X}",
+                audit_key = (official, key[0].decode("ascii"), f"{base_formid:08X}" if identity else "",
                              field.decode("ascii"), hashlib.sha256(old).hexdigest())
                 if audit_key in vanilla_audit:
-                    candidates = vanilla_table.get((official, key[0], key[1], field), ())
-                    targets = {x.korean for x in candidates if x.english == decode_english(old) and
-                               (x.editor_id is None or x.editor_id == old_editor.rstrip(b"\0"))}
-                    if len(targets) == 1:
-                        reviewed = targets.pop()
+                    selected = matching_translation(vanilla_table, official, key[0], base_formid,
+                                                    field, old, old_editor.rstrip(b"\0"), field_occurrence)
+                    if selected is not None:
+                        reviewed = selected
                         replacement = reviewed
-            # Final reviewed override has priority over all legacy translation memories.
-            if final_table is not None:
-                candidates = final_table.get((official, key[0], key[1], field), ())
-                targets = {x.korean for x in candidates if x.english == decode_english(old) and
-                           (x.editor_id is None or x.editor_id == old_editor.rstrip(b"\0"))}
-                if len(targets) == 1:
-                    reviewed = targets.pop()
-                    replacement = reviewed
             if official == "Oblivion.esm" and quest_entries is not None:
                 special = None
                 if key[0] == b"QUST" and field == b"CNAM" and occurrence is not None:
-                    special = quest_entries.get((key[1], stage, occurrence))
+                    special = quest_entries.get((base_formid, stage, occurrence))
                 elif key[0] == b"LSCR" and field == b"DESC":
-                    special = loading_entries.get(key[1])
+                    special = (loading_entries or {}).get(base_formid)
                 if special and special[0] == old_editor.rstrip(b"\0") and special[1] == old:
                     reviewed = special[2]
                     replacement = reviewed
+            # Explicit final review outranks journal memories and completion fallbacks.
+            selected = matching_translation(final_table, official, key[0], base_formid,
+                                            field, old, old_editor.rstrip(b"\0"), field_occurrence)
+            if selected is not None:
+                reviewed = selected
+                replacement = selected
             completion = (completions or {}).get((original.name, key[0], key[1], field))
-            if completion:
+            if completion and reviewed is None:
                 if old != completion[0]:
                     raise ValueError(f"{original.name}: completion source mismatch at {key}")
                 replacement = completion[1]
@@ -162,7 +183,7 @@ def collect_changes(original: Path, prior: Path, vanilla_audit=None, vanilla_tab
             nx_occurrence = occurrence if (key[0] == b"QUST" and field == b"CNAM" and occurrence is not None) else field_occurrence
             nx_stage = stage if (key[0] == b"QUST" and field == b"CNAM") else None
             nx = (nexus_completions or {}).get((original.name, key[0], key[1], field, nx_occurrence, nx_stage))
-            if nx:
+            if nx and reviewed is None:
                 if old != nx[0]:
                     raise ValueError(f"{original.name}: nexus completion source mismatch at {key} {field!r} occ {nx_occurrence}")
                 replacement = nx[1]

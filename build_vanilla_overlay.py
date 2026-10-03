@@ -153,6 +153,12 @@ def load_translations(path: Path, extra_paths=()):
     for source_path in (path, *extra_paths):
         with source_path.open(encoding="utf-8-sig", newline="") as stream:
             for line, row in enumerate(csv.DictReader(stream), 2):
+                # Remaster LOC_FN_* keys are name-only resources. They may
+                # supply FULL names, but must never be reused as journal,
+                # description, book-body, or other non-name text.
+                if (row.get('locres_key', '').startswith('LOC_FN_')
+                        and row.get('field') != 'FULL'):
+                    continue
                 source = row["effective_source"]
                 target = source if source in OFFICIAL else PATCH_TO_OFFICIAL.get(source)
                 if target is None:
@@ -497,7 +503,7 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                                 (kind == b"LSCR" and loading_texts and formid in loading_texts)))
                 if not has_special and not translations.get((filename, kind, formid, b"FULL")) and not any(
                         translations.get((filename, kind, formid, field))
-                        for field in (b"DESC", b"NAM1", b"DATA")):
+                        for field in (b"DESC", b"NAM1", b"CNAM", b"DATA")):
                     dst.write(header)
                     remaining = size
                     while remaining:
@@ -537,7 +543,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True, help="Original game Data directory (read only)")
     parser.add_argument("--output", type=Path, required=True, help="Destination MO2 mod or staging folder")
-    parser.add_argument("--csv", type=Path, default=HERE / "applied_translations_v2.csv")
+    parser.add_argument("--csv", type=Path, default=HERE / "canonical_translation_v2.csv")
     parser.add_argument("--extra-csv", type=Path, action="append", default=[],
                         help="Additional verified translation-memory CSV (repeatable)")
     parser.add_argument("--ini", type=Path, help="Optional active Oblivion.ini to update with a backup")
@@ -555,46 +561,14 @@ def main() -> int:
     output_dir = args.output.resolve()
     if source_dir == output_dir or source_dir in output_dir.parents or output_dir in source_dir.parents:
         parser.error("output must be separate from the source Data directory")
-    table = load_translations(args.csv, (HERE / "vanilla_completion.csv",
-                                         HERE / "patch_translation_memory.csv",
-                                         HERE / "legacy_carrier_completion.csv",
-                                         HERE / "legacy_full_recovery.csv",
-                                         HERE / "remaster_exact_memory.csv",
-                                         HERE / "remaster_info_memory.csv",
-                                         HERE / "remaster_info_dlc_memory.csv",
-                                         HERE / "remaster_questlog_memory.csv",
-                                         HERE / "remaster_desc_memory.csv",
-                                         HERE / "remaster_book_safe_memory.csv",
-                                         HERE / "remaster_extended_memory.csv",
-                                         HERE / "source_memory_recovery.csv",
-                                         HERE / "quest_unique_stage_memory.csv",
-                                         HERE / "manual_visible_memory.csv",
-                                         HERE / "exe_gmst_existing.csv",
-                                         HERE / "final_review_override.csv",
-                                         *args.extra_csv))
+    # v2 canonical source-of-truth: the exact effective translation set
+    # reconstructed from the reviewed Original build. Legacy/remaster memories
+    # remain archival inputs only and are never consulted by release builds.
+    table = load_translations(args.csv, tuple(args.extra_csv))
     if not (source_dir / MASTER).is_file():
         parser.error(f"{MASTER} is missing from {source_dir}")
     menu_gmsts = load_menu_gmsts(HERE / "menu_gmst_existing_105.csv", HERE / "menu_gmst_new_821.csv", table)
-    # Final-review overrides for injected/menu GMST records (00Fxxxxx) do not
-    # exist in the original ESM, so normal record matching cannot reach them.
-    final_menu_overrides = {}
-    final_override_path = HERE / "final_review_override.csv"
-    if final_override_path.is_file():
-        with final_override_path.open(encoding="utf-8-sig", newline="") as stream:
-            for row in csv.DictReader(stream):
-                if (row.get("effective_source") == MASTER and row.get("record_type") == "GMST"
-                        and row.get("field") == "DATA"):
-                    fid = int(row["raw_formid"], 16)
-                    if (fid >> 16) == 0xF0:
-                        final_menu_overrides[fid] = bytes.fromhex(row["new_bytes_hex"])
-    if final_menu_overrides:
-        menu_gmsts = tuple((fid, key, eng, final_menu_overrides.get(fid, ko))
-                           for fid, key, eng, ko in menu_gmsts)
     menu_formids = frozenset(item[0] for item in menu_gmsts)
-    quest_entries, loading_entries = load_quest_loading_translations(
-        HERE / "quest_loading_translations.csv")
-    quest_texts = {"entries": quest_entries,
-                   "formids": frozenset(key[0] for key in quest_entries)}
     output_dir.mkdir(parents=True, exist_ok=True)
     audit = []
     report = {}
@@ -608,9 +582,7 @@ def main() -> int:
         temporary = output_dir / (name + ".building")
         try:
             patch_plugin(src, temporary, name, table, counts, audit,
-                         menu_gmsts if name == MASTER else (),
-                         quest_texts if name == MASTER else None,
-                         loading_entries if name == MASTER else None)
+                         menu_gmsts if name == MASTER else ())
             if name == MASTER and counts["applied"] < 9000:
                 raise ValueError("Oblivion.esm does not match the expected original English source")
             original_structure = structure_signature(src)
@@ -620,8 +592,6 @@ def main() -> int:
                 raise ValueError(f"{name}: record structure or compiled script changed")
             if name == MASTER and counts["new_menu_gmst"] != len(menu_gmsts):
                 raise ValueError("unexpected menu GMST count")
-            if name == MASTER and counts["journal_loading"] != len(quest_entries) + len(loading_entries):
-                raise ValueError("journal/loading translation coverage mismatch")
             if counts["applied"]:
                 temporary.replace(target)
             else:

@@ -2,7 +2,7 @@ from __future__ import annotations
 import csv, json, re
 from pathlib import Path
 
-REPO = Path(r"C:\오블리비언")
+REPO = Path(__file__).resolve().parents[1]
 ROOT = REPO/"v2_work"
 OUT = ROOT/"08_compare_review"/"00_inputs"
 OLD_CSV = REPO/"applied_translations_v2.csv"
@@ -104,16 +104,19 @@ for category, src_dir, cand_dir in categories:
     for rid, x in items.items():
         new = candidates.get(rid)
         old = old_for(x, exact, loose, cross_exact, cross_loose)
-        if not new or not old or old.strip() == new.strip():
+        # New v2 work must not be dropped merely because the frozen v1 table
+        # has no baseline row (QUST/CNAM is the major case).  v1 is only a
+        # comparison aid, never a prerequisite for accepting new translation.
+        if not new or (old is not None and old.strip() == new.strip()):
             continue
         prior = prior_review.get(rid, "")
         hits = x.get("glossary_hits", [])
         master[rid] = {
             "category": category, "id": rid, "record_type": x.get("record_type",""),
             "field": x.get("field",""), "editor_id": x.get("editor_id",""),
-            "source_english": x.get("source_english",""), "old_1_0_2": old,
+            "source_english": x.get("source_english",""), "old_1_0_2": old or "",
             "new_gemini": new, "prior_sol_candidate": prior,
-            "glossary_hint": glossary_hint(old, prior or new, hits),
+            "glossary_hint": glossary_hint(old or "", prior or new, hits),
             "context_json": json.dumps(x.get("context",{}), ensure_ascii=False, separators=(",",":")),
             "glossary_json": json.dumps(hits, ensure_ascii=False, separators=(",",":")),
             "status": "PENDING", "sol_decision": "", "sol_final": "", "notes": "",
@@ -153,11 +156,12 @@ book_rows = []
 for rid, x in book_sources.items():
     new = book_new.get(rid)
     old = old_for(x, exact, loose, cross_exact, cross_loose)
-    if not new or not old or old.strip() == new.strip():
+    # BOOK/DESC may also have no v1 baseline; keep new v2 work for review.
+    if not new or (old is not None and old.strip() == new.strip()):
         continue
     book_rows.append({
         "id": rid, "editor_id": x["editor_id"], "source_english": x["source_english"],
-        "old_1_0_2": old, "new_gemini": new,
+        "old_1_0_2": old or "", "new_gemini": new,
         "prior_sol_candidate": book_prior.get(rid, ""),
         "status": "PENDING", "sol_decision": "", "sol_final": "", "notes": "",
     })

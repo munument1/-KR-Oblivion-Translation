@@ -61,9 +61,13 @@ def build(args):
             command += ['--extra-csv', str(path.resolve())]
         subprocess.run(command, check=True)
         tables = stage / 'tables'
-        csv_report = audit(HERE / 'docs/obcjk/csv_inventory.json', tables)
+        csv_report = audit(HERE / 'docs/obcjk/release_csv_inventory.json', tables)
         if csv_report['failed']:
             raise ValueError('Unresolved translation text; refusing UTF-8 output')
+        # Release translation and location tables are already canonicalized and
+        # carry their verified UTF-8 targets. Legacy/remaster CSVs stay archival.
+        for name in ('canonical_translation_v2.csv', 'canonical_locations_v2.csv'):
+            shutil.copyfile(HERE / name, tables / name)
         # Additional caller-supplied CSVs are decoded strictly on actual use.
         reports = build_directory(source, legacy, tables, output)
         location_reports = {}

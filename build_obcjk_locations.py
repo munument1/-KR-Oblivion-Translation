@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add audited Korean CELL/WRLD names to separate UTF-8 test variants."""
+"""Add audited location and map-marker names to separate UTF-8 variants."""
 from __future__ import annotations
 
 import argparse
@@ -11,6 +11,8 @@ from pathlib import Path
 from build_obcjk_overlay import records, validate
 from build_unofficial_release import rewrite
 from build_vanilla_overlay import PATCH_TO_OFFICIAL, decode_english, sha256_file
+
+NAME_FIELDS = {'CELL': 'FULL', 'WRLD': 'FULL', 'REFR': 'FULL', 'REGN': 'RDMP'}
 
 
 def build(inputs, tables, output):
@@ -33,7 +35,7 @@ def build(inputs, tables, output):
     for path in sorted(tables.glob('*.csv')):
         with path.open(encoding='utf-8-sig', newline='') as stream:
             for line, row in enumerate(csv.DictReader(stream), 2):
-                if row.get('record_type') not in {'CELL', 'WRLD'} or row.get('field') != 'FULL':
+                if NAME_FIELDS.get(row.get('record_type')) != row.get('field'):
                     continue
                 if row.get('obcjk_conversion_status') != 'verified':
                     raise ValueError(f'Unverified location text: {path.name}:{line}')
@@ -55,7 +57,10 @@ def build(inputs, tables, output):
         changes, manifest, unmatched, counts = {}, [], [], Counter()
         for key, header, parts, groups in records(source):
             kind, fid = key
-            if kind not in {b'CELL', b'WRLD'}:
+            name_field = NAME_FIELDS.get(kind.decode('ascii'))
+            if not name_field:
+                continue
+            if kind == b'REFR' and not any(field == b'XMRK' for field, _, _ in parts):
                 continue
             editor = next((value.rstrip(b'\0').decode('ascii') for field, value, _ in parts if field == b'EDID'), '')
             candidates = memory.get((name, kind, fid), ())
@@ -63,7 +68,7 @@ def build(inputs, tables, output):
                 official = PATCH_TO_OFFICIAL.get(name)
                 candidates = memory.get((official, kind, fid), ()) if official else ()
             for index, (field, value, raw) in enumerate(parts):
-                if field != b'FULL':
+                if field != name_field.encode('ascii'):
                     continue
                 english = decode_english(value)
                 matches = [x for x in candidates if x[1] == english and (not x[3] or x[3] == editor)]
@@ -86,7 +91,7 @@ def build(inputs, tables, output):
                     continue
                 changes.setdefault(key, {})[index] = (field, value, target)
                 counts[kind.decode()] += 1
-                manifest.append({'type': kind.decode(), 'formid': f'{fid:08X}', 'field': 'FULL',
+                manifest.append({'type': kind.decode(), 'formid': f'{fid:08X}', 'field': name_field,
                                  'editor_id': editor, 'index': index, 'english': english,
                                  'text': target[:-1].decode('utf-8'), 'utf8_hex': target.hex(),
                                  'match_kind': match_kind,
