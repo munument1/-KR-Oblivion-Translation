@@ -4,6 +4,25 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## v1.0.8 (2026-10-03)
+
+### Changed
+
+- obCJK 20261003의 Outline/Shadow 설정 구조를 한국어 프리셋에 반영했습니다.
+- 기존 본명조 KR Medium / 본명조 KR / 이롭게바탕체의 크기·굵기·배치는 유지합니다.
+- NPC 대사 자막과 HUD가 사용하는 슬롯 2에만 검은색 Outline 2px / 100%를 적용합니다.
+- 나머지 슬롯은 Outline을 끄고, NorthernUI Shadowed 역할(FontParam36)에도 별도 Shadow를 추가하지 않습니다.
+
+### Fixed
+
+- 최신 obCJK INI의 [BIG5]와 새 Outline 설정을 기존 프리셋 생성 코드가 폰트 행으로 오인할 수 있던 문제를 수정했습니다. 한국어 폰트 덮어쓰기는 [UTF8]의 실제 FontParam<N>_1/_2 행에만 적용됩니다.
+
+### Compatibility
+
+- 이 표시 설정을 사용하려면 obCJK 20261003 이상이 필요합니다.
+- 번역 데이터와 FormID/지형 수정은 v1.0.7 기준을 그대로 유지합니다.
+
+
 ## v1.0.7 (2026-10-03)
 
 ### Changed

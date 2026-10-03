@@ -22,15 +22,8 @@ ORIGINAL_FONT_SETTINGS = ('[Fonts]\nSFontFile_1=Data\\Fonts\\Kingthings_Regular.
 
 
 def default_ini():
-    lines = ['[obCJK]', 'ActiveCodePage = UTF8', 'UILang = ko',
-             'AsciiRenderEnable = 1', 'DebugLogEnable = 0', '', '[UTF8]']
-    sizes = {1: 38, 2: 40, 3: 26, 5: 34, 7: 24, 8: 24,
-             33: 32, 34: 32, 35: 32, 36: 32, 37: 32}
-    for slot, size in sizes.items():
-        for language in (1, 2):
-            lines.append(f'FontParam{slot}_{language} = Malgun Gothic,0,{size},0,0,34,400,0,0')
-        lines.append(f'FontParam{slot}_1_Native = 0')
-    return ('\n'.join(lines) + '\n').encode('utf-8')
+    """Return the validated obCJK 20261003 Korean preset bundled with the installer."""
+    return (HERE / 'assets/obcjk_fonts/obCJK.ini').read_bytes()
 
 
 def build(args):

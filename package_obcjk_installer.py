@@ -9,7 +9,7 @@ from obcjk_fonts import BUNDLE, bundle_manifest
 ROOT = Path(__file__).resolve().parent
 
 
-def package(exe, output, version='1.0.7'):
+def package(exe, output, version='1.0.8'):
     bundle_manifest()
     exe, output = Path(exe), Path(output)
     if not exe.is_file() or exe.read_bytes()[:2] != b'MZ':
@@ -41,6 +41,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', default='1.0.7')
+    parser.add_argument('--version', default='1.0.8')
     args = parser.parse_args()
     package(args.exe, args.output, args.version)

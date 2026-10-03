@@ -1,6 +1,6 @@
 # obCJK 글꼴 사용 위치와 교체 방법
 
-2026-10-01 현재 `obcjk-save-test`의 기본 게임 UI 기준이다. 설치본 obCJK의 `obcjk_iniedit_readme(EN).md`에 명시된 SLOT 역할과 실제 시험판 INI를 대조했다. UI 모드가 다른 슬롯을 지정하면 화면별 대응도 달라질 수 있다.
+2026-10-03 현재 `obcjk-save-test`의 기본 게임 UI 기준이다. 설치본 obCJK의 `obcjk_iniedit_readme(EN).md`에 명시된 SLOT 역할과 실제 시험판 INI를 대조했다. UI 모드가 다른 슬롯을 지정하면 화면별 대응도 달라질 수 있다.
 
 ## 현재 글꼴과 사용 위치
 
@@ -63,7 +63,7 @@ FontParam2_1_Native = 0
 
 ## 이번 적용과 검증
 
-현재는 `AsciiRenderEnable = 0`이다. 표의 사용자 글꼴은 한글/CJK에 적용되며, 영문·숫자·제어문자는 원래 게임 글꼴을 사용한다. 크기·간격과 FontParam 자체는 유지했다. 사용자가 정상 표시를 확인했고 같은 설정을 v1.0.5 설치기에 반영한다. 자세한 근거와 백업 위치는 [제어문자 네모 진단](control_glyph_diagnosis.md)을 참고한다.
+현재는 `AsciiRenderEnable = 0`이다. obCJK 20261003의 외곽선 기능을 사용해 **슬롯 2(NPC 대사 자막/HUD)에만 Outline 2px / 100%**를 적용한다. 슬롯 1/3/5/7/8/33/34/35/36/37은 OutlineMode 0이며, NorthernUI Shadowed 역할인 슬롯 36에도 추가 Shadow 효과를 강제로 적용하지 않는다. 표의 사용자 글꼴은 한글/CJK에 적용되며, 영문·숫자·제어문자는 원래 게임 글꼴을 사용한다. 크기·간격과 FontParam 자체는 유지했다. 사용자가 정상 표시를 확인했고 같은 설정을 v1.0.8 설치기에 반영한다. 자세한 근거와 백업 위치는 [제어문자 네모 진단](control_glyph_diagnosis.md)을 참고한다.
 
 선택한 글꼴을 Windows 현재 사용자에게 설치하고, 별도 프로세스의 GDI에서 본명조 Regular/Medium과 이롭게바탕체가 실제 선택되며 완성형 한글 11,172자 누락이 없는 것을 확인했다. 이롭게바탕체는 `Iropke Batang Medium`으로 지정해야 선택된다.
 

@@ -150,18 +150,26 @@ def preset_ini():
     """Keep the tested geometry and apply the user's chosen typefaces."""
     from build_obcjk_release import default_ini
     lines = default_ini().decode('utf-8').splitlines()
-    lines[lines.index('AsciiRenderEnable = 1')] = 'AsciiRenderEnable = 0'
+    ascii_index = next(i for i, line in enumerate(lines) if line.startswith('AsciiRenderEnable = '))
+    lines[ascii_index] = 'AsciiRenderEnable = 0'
     slots = {1: ('Source Han Serif KR Medium', 'Source Han Serif KR Medium', 500),
              2: ('Source Han Serif KR Medium', 'Source Han Serif KR Medium', 500),
              3: ('Source Han Serif KR Medium', 'Source Han Serif KR Medium', 500),
              5: ('Iropke Batang Medium', 'Iropke Batang Medium', 500)}
     for slot in (7, 8, 33, 34, 35, 36, 37):
         slots[slot] = ('Source Han Serif KR', 'Source Han Serif KR', 400)
+    section = None
     for index, line in enumerate(lines):
-        if not line.startswith('FontParam') or '_Native' in line:
+        if line.startswith('[') and line.endswith(']'):
+            section = line
+            continue
+        if section != '[UTF8]' or not line.startswith('FontParam') or '_Native' in line:
             continue
         key, value = line.split(' = ')
-        slot, region = key.removeprefix('FontParam').split('_')
+        parts = key.removeprefix('FontParam').split('_')
+        if len(parts) != 2 or parts[1] not in {'1', '2'}:
+            continue
+        slot, region = parts
         half, cjk, weight = slots[int(slot)]
         fields = value.split(',')
         fields[0] = half if region == '1' else cjk

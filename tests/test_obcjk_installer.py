@@ -28,10 +28,17 @@ class InstallerTests(unittest.TestCase):
         ini = configparser.ConfigParser(interpolation=None)
         ini.read_string(preset_ini().decode('utf-8'))
         self.assertEqual(ini['obCJK']['AsciiRenderEnable'], '0')
+        self.assertEqual(ini['obCJK']['UILang'], 'ko')
+        self.assertEqual(ini['obCJK']['BackgroundOpacity'], '0')
         for slot in (1, 2, 3):
             for half in (1, 2):
                 fields = ini['UTF8'][f'FontParam{slot}_{half}'].split(',')
                 self.assertEqual((fields[0], fields[6]), ('Source Han Serif KR Medium', '500'))
+        for slot in (1, 3, 5, 7, 8, 33, 34, 35, 36, 37):
+            self.assertEqual(ini['UTF8'][f'FontParam{slot}_OutlineMode'], '0')
+        self.assertEqual(ini['UTF8']['FontParam2_OutlineMode'], '2')
+        self.assertEqual(ini['UTF8']['FontParam2_OutlineSize'], '2')
+        self.assertEqual(ini['UTF8']['FontParam2_OutlineAlpha'], '100')
         self.assertEqual((BUNDLE / 'obCJK.ini').read_bytes(), preset_ini())
 
     def test_existing_ini_only_fonts_with_bom_and_crlf_and_original_backup(self):
