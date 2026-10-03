@@ -9,7 +9,7 @@ from obcjk_fonts import BUNDLE, bundle_manifest
 ROOT = Path(__file__).resolve().parent
 
 
-def package(exe, output):
+def package(exe, output, version='1.0.6'):
     bundle_manifest()
     exe, output = Path(exe), Path(output)
     if not exe.is_file() or exe.read_bytes()[:2] != b'MZ':
@@ -17,7 +17,7 @@ def package(exe, output):
     files = [(exe, 'OblivionKRBuilder.exe'),
              (ROOT / 'install.bat', 'install.bat'),
              (ROOT / 'README.md', 'README.md'),
-             (ROOT / 'release_notes_v1.0.5.md', 'CHANGELOG.md'),
+             (ROOT / f'release_notes_v{version}.md', 'CHANGELOG.md'),
              (BUNDLE / 'manifest.json', 'font_sources.json')]
     files += [(p, 'licenses/' + p.name) for p in sorted((BUNDLE / 'licenses').iterdir()) if p.is_file()]
     for p, _ in files:
@@ -41,5 +41,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version', default='1.0.6')
     args = parser.parse_args()
-    package(args.exe, args.output)
+    package(args.exe, args.output, args.version)

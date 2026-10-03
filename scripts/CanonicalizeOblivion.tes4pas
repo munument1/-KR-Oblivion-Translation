@@ -1,0 +1,104 @@
+unit CanonicalizeOblivion;
+
+// Canonical save of an already repaired, isolated original-Oblivion master.
+// Input: DataPath + Oblivion.esm; output: Oblivion.canonical.esm beside it.
+// Never run against a live game installation or the defective 1.0.5 master.
+// Required launch flags: -IKnowWhatImDoing -IKnowIllBreakMyGameWithThis
+// -nofixup -skipbsa -nobuildrefs -DontCache -cp-general:1252 -cp-trans:1252
+// Omit -DontRemoveOffsetData: native WRLD removal marks child groups for sorting.
+// Does not change translation strings, record IDs, or existing record values.
+
+procedure RequireCount(actual, expected: Integer; labelText: string);
+begin
+  if actual <> expected then
+    raise Exception.Create(labelText + ' expected ' + IntToStr(expected) +
+      ', got ' + IntToStr(actual) + '; no output was written');
+end;
+
+function Initialize: Integer;
+var
+  i, j, rawSlot: Integer;
+  nGMST, nWRLD, nCELL, nLAND, nREFR, nINFO, nSTAT, nTREE: Integer;
+  f, target, r, header, ofst: IInterface;
+  outputName: string;
+  rawId: Cardinal;
+  fs: TFileStream;
+begin
+  Result := 1; // Skip whole-selection Process traversal after Initialize.
+  target := nil;
+  for i := 0 to FileCount - 1 do begin
+    f := FileByIndex(i);
+    if SameText(GetFileName(f), 'Oblivion.esm') then target := f;
+  end;
+  if not Assigned(target) then
+    raise Exception.Create('Oblivion.esm is not loaded; no output was written');
+  if MasterCount(target) <> 0 then
+    raise Exception.Create('Unexpected masters; no output was written');
+
+  outputName := DataPath + 'Oblivion.canonical.esm';
+  if FileExists(outputName) then
+    raise Exception.Create('Output already exists: ' + outputName);
+
+  nGMST := 0; nWRLD := 0; nCELL := 0; nLAND := 0;
+  nREFR := 0; nINFO := 0; nSTAT := 0; nTREE := 0;
+  RequireCount(RecordCount(target), 1167837, 'Indexed record count');
+  for j := 0 to RecordCount(target) - 1 do begin
+    r := RecordByIndex(target, j);
+    if Signature(r) = 'GMST' then begin
+      Inc(nGMST);
+      rawId := GetElementNativeValues(r, 'Record Header\FormID');
+      rawSlot := rawId shr 24;
+      if rawSlot <> 0 then
+        raise Exception.Create('GMST has nonzero file slot: ' + EditorID(r) +
+          ' ' + IntToHex(rawId, 8) + '; no output was written');
+    end;
+    if Signature(r) = 'WRLD' then begin
+      Inc(nWRLD);
+      // Native initialization removes OFST and remembers that child groups
+      // must be marked modified and sorted during PrepareSave.
+      ElementCount(r);
+      if Assigned(ElementBySignature(r, 'OFST')) then
+        raise Exception.Create('WRLD OFST remains; omit -DontRemoveOffsetData');
+    end;
+    if Signature(r) = 'CELL' then Inc(nCELL);
+    if Signature(r) = 'LAND' then Inc(nLAND);
+    if Signature(r) = 'REFR' then Inc(nREFR);
+    if Signature(r) = 'INFO' then Inc(nINFO);
+    if Signature(r) = 'STAT' then Inc(nSTAT);
+    if Signature(r) = 'TREE' then Inc(nTREE);
+  end;
+  RequireCount(nGMST, 1203, 'GMST');
+  RequireCount(nWRLD, 84, 'WRLD');
+  RequireCount(nCELL, 35494, 'CELL');
+  RequireCount(nLAND, 31823, 'LAND');
+  RequireCount(nREFR, 1025617, 'REFR');
+  RequireCount(nINFO, 19278, 'INFO');
+  RequireCount(nSTAT, 6014, 'STAT');
+  RequireCount(nTREE, 142, 'TREE');
+
+  header := ElementByIndex(target, 0);
+  ofst := ElementBySignature(header, 'OFST');
+  if Assigned(ofst) then RemoveElement(header, ofst);
+  if Assigned(ElementBySignature(header, 'OFST')) then
+    raise Exception.Create('TES4 header OFST removal failed; no output was written');
+  // Automatic internal OFST removal can leave the header marked clean.
+  // Force this header alone to serialize its current fields, preventing
+  // unmodified raw-header copying from restoring the old OFST bytes.
+  MarkModifiedRecursive(header);
+
+  // Stock SaveAs uses this API. It synchronously invokes native PrepareSave:
+  // HEDR recount, top-level group validation/sort, and modified child sorting.
+  // Reset mode 0 keeps the loaded input marked modified; close without saving.
+  // Do not MarkModifiedRecursive(target): the native OFST path marks only
+  // the necessary world child groups, avoiding unrelated forced rewrites.
+  fs := TFileStream.Create(outputName, fmCreate);
+  try
+    FileWriteToStream(target, fs, 0);
+  finally
+    fs.Free;
+  end;
+  AddMessage('CANONICAL_SAVE_COMPLETE ' + outputName);
+  AddMessage('Close without saving the loaded input. Validate the new output in a fresh xEdit process.');
+end;
+
+end.

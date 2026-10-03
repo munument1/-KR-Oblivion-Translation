@@ -110,6 +110,27 @@ def build(args):
         legacy_audit['korean_locations'] = bool(getattr(args, 'korean_locations', False))
         if location_reports:
             legacy_audit['location_validation'] = 'location_validation.json'
+        # Record ordering comes from the canonical TES4Edit save, while this
+        # builder retains the user's original record data and translated text.
+        from master_layout import apply_layout
+        master = output / 'Oblivion.esm'
+        native_report = apply_layout(
+            master, stage / 'Oblivion.ordered.esm',
+            HERE / 'assets/oblivion_native_layout.json.gz',
+            source_sha256=sha256_file(source / 'Oblivion.esm'))
+        ordered = master.with_suffix('.esm.native-building')
+        shutil.copyfile(stage / 'Oblivion.ordered.esm', ordered)
+        if sha256_file(ordered) != native_report['output_sha256']:
+            raise ValueError('Native layout copy checksum mismatch')
+        ordered.replace(master)
+        legacy_audit['files']['Oblivion.esm']['before_native_layout_sha256'] = legacy_audit['files']['Oblivion.esm']['output_sha256']
+        legacy_audit['files']['Oblivion.esm']['output_sha256'] = native_report['output_sha256']
+        legacy_audit['native_master_layout'] = native_report
+        reports['Oblivion.esm']['before_native_layout_sha256'] = reports['Oblivion.esm']['output_sha256']
+        reports['Oblivion.esm']['output_sha256'] = native_report['output_sha256']
+        reports['Oblivion.esm']['native_master_layout'] = native_report
+        (output / 'obcjk_validation.json').write_text(
+            json.dumps(reports, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         (output / 'translation_audit.json').write_text(
             json.dumps(legacy_audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return 0

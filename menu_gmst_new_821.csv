@@ -5,7 +5,7 @@
 00099DB2,sAddAnEffect,You must add at least one effect in order to create a spell.,주문을 만들려면 효과를 하나 이상 추가해야 합니다.,c886c4a602c7a80420d4a002c2a804b383d4a30220cd85d090c3a80420bd80b18020b789d6a00820c986b080bd8ab78120dda006b189b2802e00,recovered_323
 00099E81,sAddIngredient,Add Ingredient,재료추가,b88ac385c986b08000,existing_378
 00097676,sAddedEffects,Added Effects,추가된 효과,c986b080e29a0220cd85d09000,recovered_323
-01000809,sAge,Age,나이,b180b78900,new_223
+00F10001,sAge,Age,나이,b180b78900,new_223
 00099E57,sAll,All,전체,d8a202b98b00,recovered_323
 0009765C,sAnimationCanNotEquipArmor,You cannot change armor while attacking.,공격 중엔 장비를 변경할 수 없습니다.,c0a408d0a30120c8a608d7ab0220d8a008b589c3a80420d5a302d0a308dda00420c68620d7a21fc6a806b189b2802e00,existing_378
 00099DA7,sAreaText,Area,범위,d5a205d79700,recovered_323
@@ -15,8 +15,8 @@
 00099F41,sAttributeDamaged,has been damaged,는(은) 데미지를 받았습니다.,c1a80228c7a8022920b28bb489b889c3a80420d5a003d7a014c6a806b189b2802e00,existing_378
 00099DA5,sAttributeDrained,is being drained,이(가) 감소되고 있습니다.,b78928b0802920d0a005c684d295c08420d7a914c6a806b189b2802e00,existing_378
 00099EC8,sAttributeNameAgility,Agility,민첩성,d4a902d9a206d6a20800,recovered_323
-0100081E,sAttributeNameEndurance,Endurance,지구력,b889c086d3a30100,recovered_323
-0100081F,sAttributeNameIntelligence,Intelligence,지능,b889c1a80800,recovered_323
+00F10002,sAttributeNameEndurance,Endurance,지구력,b889c086d3a30100,recovered_323
+00F10003,sAttributeNameIntelligence,Intelligence,지능,b889c1a80800,recovered_323
 00099694,sAttributeNameLuck,Luck,행운,ddaa08c7a60200,recovered_323
 00099B99,sAttributeNamePersonality,Personality,매력,b48ad3a30100,recovered_323
 00099B91,sAttributeNameSpeed,Speed,속도,c6a401c28400,recovered_323
@@ -82,7 +82,7 @@
 00099DEC,sClassSpecialization,Specialization:,전문분야: ,d8a202c4a602c5a602b7813a2000,existing_378
 0009914F,sCloseButton,Close,닫기,d2a003b08900,new_223
 00098E27,sColor,Hair Color,모발 색상,c484d5a00420d6aa01d6a00800,existing_378
-01000869,sCombatName,Combat,전투,d8a202cb8600,recovered_323
+00F10004,sCombatName,Combat,전투,d8a202cb8600,recovered_323
 00099EF6,sComplexion,Complexion,안색,d7a002d6aa0100,existing_378
 00099E84,sConfirmBirthsign1,Are you sure you want to be born under the sign of,별자리가 맞습니까? 별자리 : ,d5a304b880b389b08020d4a00cc6a806b189be803f20d5a304b880b389203a2000,existing_378
 000976AA,sConfirmBuySpell,Are you sure you want to buy,구입하시겠습니까,c086d7a906bd80b689d0ab14c6a806b189be8000,existing_378
@@ -110,22 +110,22 @@
 00099DA6,sCurrentSoul,Current Soul Level,현재 소울 레벨 ,dda302b88a20c684c7a60420b38bd5ab042000,existing_378
 00099DB7,sCustomClassDefaultName,Adventurer,모험가,c484dda205b08000,recovered_323
 00099D76,sCustomColor,Custom color,사용자 지정 색상,b680c7a508b88020b889d8a20820d6aa01d6a00800,new_223
-01000886,sDayFredas,Fredas,금요일,c0a805c785d7a90400,existing_378
-01000887,sDayLoredas,Loredas,토요일,cb84c785d7a90400,existing_378
-01000888,sDayMiddas,Middas,수요일,c686c785d7a90400,existing_378
-01000889,sDayMorndas,Morndas,월요일,e79b04c785d7a90400,existing_378
-0100088A,sDaySundas,Sundas,일요일,d7a904c785d7a90400,existing_378
-0100088B,sDayTirdas,Tirdas,화요일,dd90c785d7a90400,existing_378
-0100088C,sDayTurdas,Turdas,목요일,c4a401c785d7a90400,existing_378
+00F10005,sDayFredas,Fredas,금요일,c0a805c785d7a90400,existing_378
+00F10006,sDayLoredas,Loredas,토요일,cb84c785d7a90400,existing_378
+00F10007,sDayMiddas,Middas,수요일,c686c785d7a90400,existing_378
+00F10008,sDayMorndas,Morndas,월요일,e79b04c785d7a90400,existing_378
+00F10009,sDaySundas,Sundas,일요일,d7a904c785d7a90400,existing_378
+00F1000A,sDayTirdas,Tirdas,화요일,dd90c785d7a90400,existing_378
+00F1000B,sDayTurdas,Turdas,목요일,c4a401c785d7a90400,existing_378
 00099F0F,sDefaultCellName,Wilderness,야외,b781d79500,new_223
 00099D85,sDefaultMessage,DEFAULT MESSAGE TEXT,기본 메시지,b089c5a40220b48bb689b88900,new_223
 000987F2,sDeleteSaveGame,Are you sure you want to delete this save game?,선택하신 저장내용을 지우시겠습니까?,d6a202dbaa01bd80d6a90220b882d8a008b18ac7a508c7a80420b889c786b689d0ab14c6a806b189be803f00,existing_378
 00097655,sDeleteSuccessful,Save game deleted.,저장 파일을 삭제했습니다.,b882d8a00820bc80d7a904c7a80420d6a001b88bddaa14c6a806b189b2802e00,existing_378
 00099E28,sDerivedAttributeNameEncumbrance,Encumbrance,소지 중량,c684b88920c8a608d3a10800,new_223
-01000896,sDerivedAttributeNameFatigue,Fatigue,피로,bc89c38400,new_223
+00F1000C,sDerivedAttributeNameFatigue,Fatigue,피로,bc89c38400,new_223
 00099DD2,sDerivedAttributeNameHealth,Health,체력,b98bd3a30100,new_223
 00099ECC,sDerivedAttributeNameMagicka,Magicka,매지카,b48ab889ba8000,new_223
-01000899,sDeviceJoystick,Joystick,조이스틱,c884b789c688dba90100,existing_378
+00F1000D,sDeviceJoystick,Joystick,조이스틱,c884b789c688dba90100,existing_378
 000996AB,sDeviceKeyboard,Keyboard,키보드,ba89c584c28800,existing_378
 0009885E,sDeviceMouse,Mouse,마우스,b480c786c68800,existing_378
 0009880F,sDeviceRemoved,"The save device you selected is no longer available.  You will need to select a new device the next time you save.  Until then, Autosave is disabled.",선택한 저장 장치를 더 이상 사용할 수 없습니다. 다음에 저장할 때 새 장치를 선택해야 합니다. 그때까지 자동 저장은 비활성화됩니다.,d6a202dbaa01dda00220b882d8a00820d8a008b989c3a80420b28220b789d6a00820b680c7a508dda00420c68620d7a21fc6a806b189b2802e20b280c7a805b78b20b882d8a008dda00420bf8a20b68a20d8a008b989c3a80420d6a202dbaa01bd8ab78120dda006b189b2802e20c088bf8abe80b88920b880c2a40820b882d8a008c7a80220b589ed9904d6a208dd90e29a06b189b2802e00,new_223
@@ -363,11 +363,11 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099E71,sMagicEffectItemIn,in,범위:,d5a205d7973a00,recovered_323
 00097A09,sMagicEffectItemLock,Lock,자물쇠,b880c4a604d69500,existing_378
 0009881A,sMagicEffectItemOn,on,적용:,d8a201c7a5083a00,recovered_323
-01000957,sMagicEffectItemPointsPlural,pts,점,d8a20500,existing_378
-01000958,sMagicEffectItemPointsSingular,pt,점,d8a20500,existing_378
+00F1000E,sMagicEffectItemPointsPlural,pts,점,d8a20500,existing_378
+00F1000F,sMagicEffectItemPointsSingular,pt,점,d8a20500,existing_378
 00097E0A,sMagicEffectItemRestore,Restore,회복:,dd95c5a4013a00,existing_378
-0100095A,sMagicEffectItemSecondsPlural,secs,초,c98400,existing_378
-0100095B,sMagicEffectItemSecondsSingular,sec,초,c98400,existing_378
+00F10010,sMagicEffectItemSecondsPlural,secs,초,c98400,existing_378
+00F10011,sMagicEffectItemSecondsSingular,sec,초,c98400,existing_378
 00097A45,sMagicEffectItemUpToLevel,up to level,최대 레벨,d995b28a20b38bd5ab0400,existing_378
 00099E07,sMagicEffectResisted,effect resisted,효과가 저지되었습니다,cd85d090b08020b882b889d295d7a214c6a806b189b28000,existing_378
 000987FA,sMagicName,Magic,마법,b480d5a20600,recovered_323
@@ -381,27 +381,27 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00098EAE,sMagicRangeTouch,Touch,접촉,d8a206c9a40100,existing_378
 00099DC8,sMagicSchool,Magic School,마법 학교,b480d5a20620dda001c08500,existing_378
 00099EF1,sMagicSchoolAlteration,Alteration,변이마법,d5a302b789b480d5a20600,existing_378
-01000968,sMagicSchoolAlteration,"Alteration
+00F10012,sMagicSchoolAlteration,"Alteration
 ","변이마법
 ",d5a302b789b480d5a2060a00,existing_378
 00099DAD,sMagicSchoolConjuration,Conjuration,소환마법,c684ed9902b480d5a20600,existing_378
-01000969,sMagicSchoolConjuration,"Conjuration
+00F10013,sMagicSchoolConjuration,"Conjuration
 ","소환마법
 ",c684ed9902b480d5a2060a00,existing_378
-0100096A,sMagicSchoolDestruction,Destruction,파괴마법,bc80d095b480d5a20600,existing_378
-0100096B,sMagicSchoolIllusion,Illusion,환영마법,ed9902d7a308b480d5a20600,existing_378
+00F10014,sMagicSchoolDestruction,Destruction,파괴마법,bc80d095b480d5a20600,existing_378
+00F10015,sMagicSchoolIllusion,Illusion,환영마법,ed9902d7a308b480d5a20600,existing_378
 00098874,sMagicSchoolMysticism,Mysticism,신비마법,d6a902b589b480d5a20600,existing_378
 00099386,sMagicSchoolRestoration,Restoration,회복마법,dd95c5a401b480d5a20600,existing_378
 00099D9B,sMagicTypeAbility,Ability,효과,cd85d09000,existing_378
 000999CA,sMagicTypeDisease,Disease,질병,d8a904d5a30800,existing_378
 000979F2,sMagicTypeEnchantment,Enchantment,마법부여,b480d5a206c586b78300,recovered_323
 00099DF5,sMagicTypeLesserPower,Lesser Power,하급 능력,bd80c0a80620c1a808d3a30100,recovered_323
-01000972,sMagicTypePoison,Poison,독,c2a40100,recovered_323
+00F10016,sMagicTypePoison,Poison,독,c2a40100,recovered_323
 00099F06,sMagicTypePower,Power,능력,c1a808d3a30100,recovered_323
 00099D94,sMagicTypeSpell,Spell,주문,c886c4a60200,recovered_323
 00099E2E,sMagicTypeWortcraft,Wortcraft,약초술,d7a101c984c6a60400,recovered_323
 00099EDA,sMagnitudeIsLevelText,Target Level,대상 레벨,b28ad6a00820b38bd5ab0400,recovered_323
-01000978,sMagnitudeText,Magnitude,강도,d0a008c28400,recovered_323
+00F10017,sMagnitudeText,Magnitude,강도,d0a008c28400,recovered_323
 00099E91,sMain,Main,메인,b48bd7a90200,new_223
 00099ED5,sMainMenu,Main Menu,메인 메뉴,b48bd7a90220b48bc18700,recovered_323
 00099E1D,sMakeDefaults,Make these your default settings?,이 설정을 기본값으로 지정하시겠습니까?,b78920d6a204d8a208c7a80420b089c5a402d0a01fc788c38420b889d8a208bd80b689d0ab14c6a806b189be803f00,recovered_323
@@ -557,9 +557,9 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 000987F8,sNotEnoughGold,You do not have enough gold.,골드가 부족합니다.,c0a404c288b08020c586c8a401dda006b189b2802e00,new_223
 000984B5,sNotEnoughRoomWarning,You do not have enough room to drop this object.,이 물건을 떨어뜨릴 공간이 부족합니다.,b78920c4a604d0a202c7a80420dfa204b782cf88d3a90420c0a408d0a002b78920c586c8a401dda006b189b2802e00,recovered_323
 00097EB4,sNoviceSkillLevelText,You have a basic understanding of this skill.,이 기술의 기초를 습득하였습니다.,b78920b089c6a604d79820b089c984c3a80420c6a806c2a801bd80d7a314c6a806b189b2802e00,existing_378
-01000A30,sOKText,Ok,확인,ed9901d7a90200,new_223
-01000A2B,sOblivionCaps,OBLIVION,OBLIVION,4f424c4956494f4e00,new_223
-01000A2C,sOff,Off,끄기,ce88b08900,recovered_323
+00F10018,sOKText,Ok,확인,ed9901d7a90200,new_223
+00F10019,sOblivionCaps,OBLIVION,OBLIVION,4f424c4956494f4e00,new_223
+00F1001A,sOff,Off,끄기,ce88b08900,recovered_323
 00097A5D,sOffButtonText,Off,끄기,ce88b08900,recovered_323
 00099F26,sOfferRefused,Offer refused,거래 거절,b082b38a20b082d8a20400,existing_378
 00099E5C,sOk,Ok,확인,ed9901d7a90200,new_223
@@ -569,18 +569,18 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00098813,sOutOfLockpicks,You have run out of lockpicks.,락픽을 다 소모했습니다.,d3a001dca901c7a80420b28020c684c484ddaa14c6a806b189b2802e00,existing_378
 00099B97,sPCControlsTextNone,assign a button in the Controls menu,조작 설정에서 버튼을 지정하십시오,c884d8a00120d6a204d8a208b78bb68220b582cba802c7a80420b889d8a208bd80d6a906b689c78400,recovered_323
 00098318,sPCControlsTextPrefix,push,누르기,c186c388b08900,new_223
-01000A37,sPauseText,"Pause
+00F1001B,sPauseText,"Pause
 ","일시 정지
 ",d7a904b68920d8a208b8890a00,new_223
 00099EB9,sPickpocket,Pickpocket,소매치기,c684b48ab989b08900,recovered_323
 00099F37,sPlayer,player,플레이어,cca804b38bb789b78200,recovered_323
-01000A3E,sPlural,(s),,00,new_223
+00F1001C,sPlural,(s),,00,new_223
 00099EFC,sPoisonAlreadyPoisonedMessage,The current weapon is already poisoned.,현재 무기는 이미 독이 발려져 있습니다.,dda302b88a20c486b089c1a80220b789b48920c2a401b78920d5a004b383b88320d7a914c6a806b189b2802e00,existing_378
 00099699,sPoisonBowConfirmMessage,Do you want to poison your next shot with the,독화살공격을 위해 다음 활에 독을 바르시겠습니까? ,c2a401dd90d6a004c0a408d0a301c7a80420d797bd8a20b280c7a80520ed9904b78b20c2a401c7a80420b580c388b689d0ab14c6a806b189be803f2000,existing_378
 00099DAC,sPoisonConfirmMessage,Do you want to poison the,다음 무기에 독을 바르시겠습니까? ,b280c7a80520c486b089b78b20c2a401c7a80420b580c388b689d0ab14c6a806b189be803f2000,existing_378
 00099E83,sPoisonNoWeaponMessage,You must first equip a weapon to poison it.,무기에 독을 바르려면 먼저 무기를 장착해야 합니다.,c486b089b78b20c2a401c7a80420b580c388b383d4a30220d4a202b88220c486b089c3a80420d8a008d9a001bd8ab78120dda006b189b2802e00,existing_378
 0009766A,sPoisonStaffsNotAllowedMessage,Staffs cannot be poisoned.,지팡이에는 독을 바를 수 없습니다.,b889dca008b789b78bc1a80220c2a401c7a80420b580c3a80420c68620d7a21fc6a806b189b2802e00,recovered_323
-01000A44,sPotion,potion,물약,c4a604d7a10100,recovered_323
+00F1001D,sPotion,potion,물약,c4a604d7a10100,recovered_323
 00099E5F,sPotionFailed,Your potion failed and your ingredients were lost,물약 제조에 실패하여 재료를 잃었습니다,c4a604d7a10120b88bc884b78b20d6a904bc8abd80b78320b88ac385c3a80420d7a91ed7a214c6a806b189b28000,recovered_323
 00098806,sPotionSucceded,You have created a new potion,새로운 포션을 창조하였습니다.,b68ac384c7a60220cc84d6a302c7a80420d9a008c884bd80d7a314c6a806b189b2802e00,existing_378
 00099B9B,sQuestAddedText,Quest added,새로운 퀘스트가 추가되었습니다.,b68ac384c7a60220da8fc688cb88b08020c986b080d295d7a214c6a806b189b2802e00,existing_378
@@ -595,7 +595,7 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099DBB,sQuickLoading,Quickloading...,로딩 중...,c384d2a90820c8a6082e2e2e00,existing_378
 00099F31,sQuickSaving,Quicksaving...,저장 중...,b882d8a00820c8a6082e2e2e00,existing_378
 000999C6,sQuitPastMainMenu,Are you sure you want to exit the game?  All unsaved progress will be lost.,게임을 종료하시겠습니까? 저장하지 않은 진행 상황은 모두 사라집니다.,b08bd7a905c7a80420c8a408c385bd80b689d0ab14c6a806b189be803f20b882d8a008bd80b88920d7a017c7a80220d8a902ddaa0820d6a008ed9908c7a80220c484c28620b680b380d8a906b189b2802e00,new_223
-01000A53,sRace,Race,종족,c8a408c8a40100,new_223
+00F1001E,sRace,Race,종족,c8a408c8a40100,new_223
 00099DD3,sRaceDescription,Race Description,종족 설명,c8a408c8a40120d6a204d4a30800,recovered_323
 00099164,sRandom,Random,랜덤,d3aa02d2a20500,existing_378
 00099B47,sRandomDoorTeleportFailureMessage,This door leads nowhere.,이 문은 어디로도 이어지지 않습니다.,b78920c4a602c7a80220b782b289c384c28420b789b782b889b88920d7a017c6a806b189b2802e00,recovered_323
@@ -660,10 +660,10 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00097C46,sSkillIncreased,skill increased,스킬이 향상되었습니다.,c688daa904b78920dda108d6a008d295d7a214c6a806b189b2802e00,existing_378
 00099F27,sSkillLevel,Level:,레벨: ,b38bd5ab043a2000,existing_378
 00099EBB,sSkillLevelApprentice,Apprentice,초급자,c984c0a806b88000,existing_378
-01000A94,sSkillLevelExpert,Expert,전문가,d8a202c4a602b08000,existing_378
+00F1001F,sSkillLevelExpert,Expert,전문가,d8a202c4a602b08000,existing_378
 00099F07,sSkillLevelJourneyman,Journeyman,숙련자,c6a601d3a302b88000,existing_378
 00099E2C,sSkillLevelMaster,Master,마스터,b480c688bb8200,existing_378
-01000A97,sSkillLevelNovice,Novice,초보자,c984c584b88000,existing_378
+00F10020,sSkillLevelNovice,Novice,초보자,c984c584b88000,existing_378
 00099DB3,sSkillLevelTooLow,Your skill level is not high enough to create this spell,이 주문을 시전하기엔 레벨이 낮습니다.,b78920c886c4a602c7a80420b689d8a202bd80b089d7ab0220b38bd5ab04b78920d1a00cc6a806b189b2802e00,existing_378
 00098343,sSkillNameAcrobatics,Acrobatics,곡예,c0a401b78d00,recovered_323
 00098587,sSkillNameAlchemy,Alchemy,연금술,d7a302c0a805c6a60400,recovered_323
@@ -674,10 +674,10 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099F38,sSkillNameBlock,Block,방어,d5a008b78200,recovered_323
 000987FF,sSkillNameBlunt,Blunt,둔기,c2a602b08900,recovered_323
 00099F17,sSkillNameConjuration,Conjuration,소환마법,c684ed9902b480d5a20600,recovered_323
-01000AA2,sSkillNameDestruction,Destruction,파괴마법,bc80d095b480d5a20600,recovered_323
+00F10021,sSkillNameDestruction,Destruction,파괴마법,bc80d095b480d5a20600,recovered_323
 00099DFA,sSkillNameHandToHand,Hand To Hand,격투,d0a301cb8600,recovered_323
 00099DED,sSkillNameHeavyArmor,Heavy Armor,중갑옷,c8a608d0a006c7a40700,existing_378
-01000AA5,sSkillNameIllusion,Illusion,환영마법,ed9902d7a308b480d5a20600,recovered_323
+00F10022,sSkillNameIllusion,Illusion,환영마법,ed9902d7a308b480d5a20600,recovered_323
 00099E05,sSkillNameLightArmor,Light Armor,경갑옷,d0a308d0a006c7a40700,existing_378
 00097A4B,sSkillNameMarksman,Marksman,궁술,c0a608c6a60400,recovered_323
 00098811,sSkillNameMercantile,Mercantile,상술,d6a008c6a60400,recovered_323
@@ -694,7 +694,7 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00097668,sSkintintpurple,Skin tint purple/yellow,자주빛/노란빛의 비율,b880c886d5a90e2fc184d3a002d5a90ed79820b589c7a70400,existing_378
 00099EDB,sSlotsFull,You have already made the maximum number of selections.,이미 선택할 수 있는 수량을 모두 선택했습니다.,b789b48920d6a202dbaa01dda00420c68620d7a914c1a80220c686d3a108c7a80420c484c28620d6a202dbaa01ddaa14c6a806b189b2802e00,existing_378
 00099D95,sSmall,Small,작음,d8a001c7a80500,recovered_323
-01000AB6,sSort,"Sort
+00F10023,sSort,"Sort
 ","정렬
 ",d8a208d3a3040a00,new_223
 00099ED4,sSoulCaptured,You have captured a soul!,영혼을 포획하였습니다!,d7a308cda402c7a80420cc84ed9a01bd80d7a314c6a806b189b2802100,existing_378
@@ -703,7 +703,7 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099F03,sSoulLevelNameGreater,Greater,전문,d8a202c4a60200,existing_378
 00099EF0,sSoulLevelNameLesser,Lesser,초급,c984c0a80600,existing_378
 00099EA8,sSoulLevelNamePetty,Petty,입문,d7a906c4a60200,existing_378
-01000ABF,sSpecNameCombat,Combat,전투,d8a202cb8600,existing_378
+00F10024,sSpecNameCombat,Combat,전투,d8a202cb8600,existing_378
 00099389,sSpecNameMagic,Magic,마법,b480d5a20600,recovered_323
 00099E44,sSpecNameStealth,Stealth,은신,c7a802d6a90200,recovered_323
 00099E85,sSpeedDescription,Need a gamesetting description.,이동 속도와 전반적인 기동성에 영향을 줍니다.,b789c2a40820c6a401c284d79020d8a202d5a002d8a201d7a90220b089c2a408d6a208b78b20d7a308dda108c7a80420c8a606b189b2802e00,new_223
@@ -717,7 +717,7 @@ sKBF6	F6",눈 아래 색,c1a60220b780b38a20d6aa0100,existing_378
 00099E75,sSteal,Steal,도둑질,c284c2a601d8a90400,recovered_323
 00099EF2,sStealHorse,Do you want to steal this horse?,말을 훔치겠습니까?,d4a004c7a80420cda605b989d0ab14c6a806b189be803f00,existing_378
 000976A5,sStealthName,Stealth,은신,c7a802d6a90200,recovered_323
-01000ACF,sStyle,Style,모양,c484d7a10800,existing_378
+00F10025,sStyle,Style,모양,c484d7a10800,existing_378
 0009885A,sSuccessfulSneakAttackMain,Sneak attack for,스닉 공격으로 ,c688d1a90120c0a408d0a301c788c3842000,existing_378
 00099D84,sSummonedCreatureFit,The Summoned Creature is not able to fit in summoned area.,소환할 공간이 부족합니다.,c684ed9902dda00420c0a408d0a002b78920c586c8a401dda006b189b2802e00,recovered_323
 00097E69,sSwitch,Make this my active quest,진행중인 퀘스트 바꾸기,d8a902ddaa08c8a608d7a90220da8fc688cb8820b580ce86b08900,existing_378

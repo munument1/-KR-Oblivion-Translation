@@ -198,27 +198,80 @@ def prepare(legacy, original, memory, smoke=False):
     return changes, manifest, chosen
 
 
-def write(legacy, destination, changes, chosen=None):
+def write(legacy, destination, changes, chosen=None, record_overrides=None,
+          layout_events=None, captured_events=None, strip_ofst=False):
+    """Write existing group order, optionally replacing complete record content.
+
+    Overrides map input (signature, FormID) to (20-byte header, plain body).
+    Replacement headers supply flags, identity and VCS; size is recalculated.
+    """
+    record_overrides = record_overrides or {}
+    used_overrides = set()
+    layout_records = {}
+    special_layout = layout_events is not None or captured_events is not None
+    if special_layout and chosen is not None:
+        raise ValueError('Layout mode cannot select a subset')
+
+    def emit_record(header, body, output):
+        kind = header[:4]
+        fid = struct.unpack_from('<I', header, 12)[0]
+        if captured_events is not None:
+            captured_events.append(['r', kind.decode('ascii'), fid])
+        if layout_events is not None:
+            key = (kind, fid)
+            if key in layout_records:
+                raise ValueError('Duplicate layout source record')
+            layout_records[key] = header + body
+        if not special_layout:
+            output.append(header + body)
     with legacy.open('rb') as src:
         def walk(end):
             output = []
             while src.tell() < end:
                 start = src.tell()
                 header = src.read(20)
+                if len(header) != 20:
+                    raise ValueError('Truncated writer input header')
                 kind, size, flags, fid, _ = struct.unpack('<4sIIII', header)
                 if kind == b'GRUP':
+                    if size < 20 or start + size > end:
+                        raise ValueError('Invalid writer input group bounds')
+                    if captured_events is not None:
+                        captured_events.append(['g', header.hex()])
                     children = walk(start + size)
-                    if children or chosen is None:
+                    if captured_events is not None:
+                        captured_events.append(['e'])
+                    if not special_layout and (children or chosen is None):
                         output.append(header[:4] + struct.pack('<I', len(children) + 20) + header[8:] + children)
                     continue
+                if start + 20 + size > end:
+                    raise ValueError('Writer input record crosses group bounds')
                 body = src.read(size)
                 if chosen is not None and (kind, fid) not in chosen:
                     continue
+                override = record_overrides.get((kind, fid))
+                if override is not None:
+                    if changes.get((kind, fid)):
+                        raise ValueError('Record override conflicts with field changes')
+                    replacement_header, plain = override
+                    if len(replacement_header) != 20 or replacement_header[:4] != kind:
+                        raise ValueError('Invalid replacement record header')
+                    replacement_flags = struct.unpack_from('<I', replacement_header, 8)[0]
+                    body = (struct.pack('<I', len(plain)) + zlib.compress(plain)
+                            if replacement_flags & 0x40000 else plain)
+                    header = replacement_header[:4] + struct.pack('<I', len(body)) + replacement_header[8:]
+                    used_overrides.add((kind, fid))
+                    emit_record(header, body, output)
+                    continue
                 replacements = changes.get((kind, fid), {})
-                if replacements:
+                if replacements or (strip_ofst and kind in {b'TES4', b'WRLD'}):
                     plain = zlib.decompress(body[4:]) if flags & 0x40000 else body
                     updated = []
+                    changed_body = bool(replacements)
                     for index, (field, value, raw) in enumerate(parse_subrecords(plain)):
+                        if strip_ofst and kind in {b'TES4', b'WRLD'} and field == b'OFST':
+                            changed_body = True
+                            continue
                         replacement = replacements.get(index)
                         if replacement:
                             if replacement[:2] != (field, value):
@@ -227,11 +280,42 @@ def write(legacy, destination, changes, chosen=None):
                         else:
                             updated.append(raw)
                     plain = b''.join(updated)
-                    body = struct.pack('<I', len(plain)) + zlib.compress(plain) if flags & 0x40000 else plain
-                    header = header[:4] + struct.pack('<I', len(body)) + header[8:]
-                output.append(header + body)
+                    if changed_body:
+                        body = struct.pack('<I', len(plain)) + zlib.compress(plain) if flags & 0x40000 else plain
+                        header = header[:4] + struct.pack('<I', len(body)) + header[8:]
+                emit_record(header, body, output)
             return b''.join(output)
         payload = walk(legacy.stat().st_size)
+    if used_overrides != record_overrides.keys():
+        raise ValueError('Record override source is missing or excluded')
+    if layout_events is not None:
+        stack = [(None, [])]
+        for event in layout_events:
+            if event[0] == 'g':
+                group_header = bytes.fromhex(event[1])
+                if len(group_header) != 20 or group_header[:4] != b'GRUP':
+                    raise ValueError('Invalid layout group header')
+                stack.append((group_header, []))
+            elif event[0] == 'e':
+                if len(stack) == 1:
+                    raise ValueError('Unbalanced layout group end')
+                group_header, chunks = stack.pop()
+                children = b''.join(chunks)
+                stack[-1][1].append(group_header[:4] + struct.pack('<I', len(children) + 20) + group_header[8:] + children)
+            elif event[0] == 'r':
+                key = (event[1].encode('ascii'), event[2])
+                if key not in layout_records:
+                    raise ValueError('Layout record missing or repeated')
+                stack[-1][1].append(layout_records.pop(key))
+            else:
+                raise ValueError('Unknown layout event')
+        if len(stack) != 1 or layout_records:
+            raise ValueError('Unbalanced layout or unused source records')
+        payload = b''.join(stack[0][1])
+    if destination is None:
+        if captured_events is None:
+            raise ValueError('Missing writer destination')
+        return
     if chosen is not None:
         body = (encode_subrecord(b'HEDR', struct.pack('<fII', 1.0, len(chosen), 0x800)) +
                 encode_subrecord(b'CNAM', b'obCJK Korean encoding smoke test\0') +

@@ -254,6 +254,11 @@ def load_menu_gmsts(existing_csv: Path, new_csv: Path, translations):
     with new_csv.open(encoding="utf-8-sig", newline="") as stream:
         for line, row in enumerate(csv.DictReader(stream), 2):
             fid=int(row["formid"],16); key=row["edid"].encode("ascii"); english=row["english"].encode("cp1252"); korean=bytes.fromhex(row["encoded_hex"])
+            # Oblivion.esm has no masters: only file slot 00 is legal. xEdit
+            # normalizes out-of-range slots to 00, hiding collisions if we
+            # compare raw IDs alone.
+            if not 0 < fid <= 0x00FFFFFF:
+                raise ValueError(f"invalid Oblivion.esm menu GMST file slot at line {line}: {fid:08X}")
             if fid in seen or not re.fullmatch(rb"s[A-Z][A-Za-z0-9_]*", key): raise ValueError(f"duplicate or invalid menu GMST at line {line}")
             if not korean.endswith(b"\0") or b"\0" in korean[:-1]: raise ValueError(f"invalid menu GMST bytes at line {line}")
             if PRINTF_PATTERN.findall(row["english"]) != PRINTF_PATTERN.findall(row["korean"]): raise ValueError(f"menu GMST placeholder mismatch at line {line}")
@@ -437,6 +442,8 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                  quest_texts=None, loading_texts=None):
     destination.parent.mkdir(parents=True, exist_ok=True)
     menu_formids = frozenset(item[0] for item in menu_gmsts)
+    if filename == MASTER and any(not 0 < fid <= 0x00FFFFFF for fid in menu_formids):
+        raise ValueError("invalid Oblivion.esm menu GMST file slot")
     with source.open("rb") as src, destination.open("w+b") as dst:
         limit = source.stat().st_size
 
@@ -474,7 +481,7 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                 if start + 20 + size > end:
                     raise ValueError(f"{filename}: invalid record at {start}")
                 flags, formid = struct.unpack_from("<II", header, 8)
-                if filename == MASTER and formid in menu_formids:
+                if filename == MASTER and (formid & 0x00FFFFFF) in menu_formids:
                     raise ValueError("menu GMST FormID collides with source record")
                 if filename == MASTER and kind == b"TES4":
                     body = bytearray(src.read(size))
@@ -634,6 +641,8 @@ def main() -> int:
         print(f"{name}: {counts['applied']} strings in {counts['changed_records']} records")
     for asset in (HERE / "assets").rglob("*"):
         if asset.is_file():
+            if asset.name == 'oblivion_native_layout.json.gz':
+                continue  # Builder metadata; never a game Data asset.
             target = output_dir / asset.relative_to(HERE / "assets")
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(asset, target)
