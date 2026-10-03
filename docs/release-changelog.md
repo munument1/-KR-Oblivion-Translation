@@ -4,6 +4,28 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## v1.0.7 (2026-10-03)
+
+### Changed
+
+- 본편·공식 DLC 최종 번역 47,227건을 오리지널 기준 canonical 데이터로 고정하고 Remastered 번역 메모리와 `LOC_FN_*` 빌드 의존성을 제거했습니다.
+- 언오피셜 패치 번역 8,818건을 별도 canonical UTF-8 데이터로 고정해 기존 KR 폴더 없이 UOP / USIP / UODP를 재현할 수 있게 했습니다.
+- 검증된 CELL/WRLD 위치명과 지도 마커 REFR, REGN 지도명을 새 빌드 경로에 반영했습니다.
+
+### Fixed
+
+- 퀘스트 일지 본문에 이름 키가 잘못 들어가던 사례를 원문 기준으로 교정했습니다.
+- v1.0.6에서 수정한 메뉴 GMST 37개 FormID(`00F10001~00F10025`)를 유지하고 원본 FormID 충돌 회귀 검사를 추가했습니다.
+- PyInstaller 배포 EXE에서 동적 모듈이 빠질 수 있던 패키징 구성을 보완했습니다.
+
+### Validation
+
+- 전체 자동 테스트 48개 통과.
+- 메뉴 GMST 821개 중 잘못된 slot 01 ID 0개, 원본 Oblivion.esm FormID 충돌 0개.
+- 언오피셜 패치 14개 ESP를 기존 KR 폴더 없이 재빌드했을 때 14/14 SHA-256 동일성을 확인했습니다.
+- 위치명 변경 ESP 12개도 독립 재빌드에서 12/12 SHA-256 동일성을 확인했습니다.
+
+
 ## v1.0.6 (2026-10-03)
 
 ### Fixed
