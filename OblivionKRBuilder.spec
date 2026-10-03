@@ -1,18 +1,14 @@
 # UTF-8 installer built from the existing translation backend.
 tables = [
-    'applied_translations_v2.csv', 'vanilla_completion.csv', 'patch_translation_memory.csv',
-    'legacy_carrier_completion.csv', 'legacy_full_recovery.csv', 'remaster_exact_memory.csv',
-    'remaster_info_memory.csv', 'remaster_info_dlc_memory.csv', 'remaster_questlog_memory.csv',
-    'remaster_desc_memory.csv', 'remaster_book_safe_memory.csv', 'remaster_extended_memory.csv',
-    'source_memory_recovery.csv', 'quest_unique_stage_memory.csv', 'manual_visible_memory.csv',
-    'exe_gmst_existing.csv', 'final_review_override.csv', 'menu_gmst_existing_105.csv',
-    'menu_gmst_new_821.csv', 'exe_gmst_translations.csv', 'exe_gmst_extra.csv',
-    'quest_loading_translations.csv', 'patch_completion.csv',
+    'canonical_translation_v2.csv',
+    'canonical_locations_v2.csv',
+    'menu_gmst_existing_105.csv',
+    'menu_gmst_new_821.csv',
 ]
 a = Analysis(['install_obcjk.py'], pathex=[], binaries=[],
     datas=[(name, '.') for name in tables] + [
         ('assets', 'assets'), ('video_subtitles', 'video_subtitles'),
-        ('docs/obcjk/csv_inventory.json', 'docs/obcjk'),
+        ('docs/obcjk/release_csv_inventory.json', 'docs/obcjk'),
         ('docs/obcjk/legacy_text_exceptions.json', 'docs/obcjk')],
     hiddenimports=['build_vanilla_overlay', 'build_obcjk_release', 'winreg'],
     hookspath=[], hooksconfig={}, runtime_hooks=[], excludes=[], noarchive=False, optimize=0)

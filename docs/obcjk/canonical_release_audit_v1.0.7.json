@@ -1,0 +1,17 @@
+{
+  "canonical_rows": 47227,
+  "canonical_sha256": "128ec61bab1bcd6a8dede83be1e4057599198dd7802a6c3aa6eb1faf44f7e55e",
+  "loc_fn_rows": 0,
+  "remaster_labeled_rows": 0,
+  "menu_rows": 821,
+  "repaired_gmst_ids": 37,
+  "repaired_range": [
+    "00F10001",
+    "00F10025"
+  ],
+  "illegal_slot01_menu_ids": 0,
+  "source_record_low24_ids": 1167017,
+  "menu_source_formid_collisions": 0,
+  "full_obcjk_build_passed": true,
+  "unit_tests_last_passed": 44
+}

@@ -27,6 +27,11 @@ class LocationOverlayTests(unittest.TestCase):
             with (tables/'memory.csv').open('w', encoding='utf-8', newline='') as stream:
                 writer = csv.writer(stream); writer.writerow(fields)
                 writer.writerow(['Oblivion.esm','CELL','00000009','FULL','Matched Hall','verified','일치하는 전당',('일치하는 전당'.encode()+b'\0').hex()])
+            # Release table folders can also contain unrelated CSV schemas
+            # such as the injected menu GMST table; those are not locations.
+            with (tables/'menu.csv').open('w', encoding='utf-8', newline='') as stream:
+                writer = csv.writer(stream); writer.writerow(['formid','edid','english','korean'])
+                writer.writerow(['00000010','sExample','Example','예시'])
             report = build([source], tables, output)['Oblivion.esm']
             self.assertEqual(report['location_counts'], {'REFR':1,'REGN':1})
             actual = {key:parts for key,_,parts,_ in records(output/'Oblivion.esm')}

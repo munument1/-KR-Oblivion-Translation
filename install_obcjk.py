@@ -96,7 +96,7 @@ def main():
         if preset.read_bytes() != preset_ini():
             raise ValueError('포함된 obCJK 글꼴 설정이 검증본과 다릅니다.')
         build(SimpleNamespace(data_dir=args.data_dir, output=output, ini=None, obcjk_ini=preset,
-                              csv=ROOT / 'applied_translations_v2.csv', extra_csv=[],
+                              csv=ROOT / 'canonical_translation_v2.csv', extra_csv=[],
                               video_subtitles=args.video_subtitles, korean_locations=True))
         reports = {}
         for name in ('translation_audit.json', 'obcjk_validation.json', 'location_validation.json'):

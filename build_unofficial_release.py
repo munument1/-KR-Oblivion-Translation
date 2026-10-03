@@ -261,24 +261,11 @@ def main():
         vanilla_audit = {(a["file"], a["type"], a["formid"], a["field"], a["source_sha256"])
                          for a in data["applied"]}
         root = Path(__file__).resolve().parent
-        vanilla_table = load_translations(root / "applied_translations_v2.csv",
-                                          (root / "vanilla_completion.csv",
-                                           root / "patch_translation_memory.csv",
-                                           root / "legacy_carrier_completion.csv",
-                                           root / "legacy_full_recovery.csv",
-                                           root / "remaster_exact_memory.csv",
-                                           root / "remaster_info_memory.csv",
-                                           root / "remaster_info_dlc_memory.csv",
-                                           root / "remaster_questlog_memory.csv",
-                                           root / "remaster_desc_memory.csv",
-                                           root / "remaster_book_safe_memory.csv",
-                                           root / "remaster_extended_memory.csv",
-                                           root / "source_memory_recovery.csv",
-                                           root / "quest_unique_stage_memory.csv",
-                                           root / "manual_visible_memory.csv",
-                                           root / "exe_gmst_existing.csv"))
-        final_table = load_translations(root / "final_review_override.csv")
-        quest_entries, loading_entries = load_quest_loading_translations(root / "quest_loading_translations.csv")
+        # Official-record forwarding uses the same canonical v2 table as the
+        # vanilla release. Legacy/remaster memories are archival only.
+        vanilla_table = load_translations(root / "canonical_translation_v2.csv")
+        final_table = None
+        quest_entries = loading_entries = None
     else:
         vanilla_audit = vanilla_table = final_table = quest_entries = loading_entries = None
     completions = {}

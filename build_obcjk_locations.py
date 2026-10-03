@@ -32,9 +32,15 @@ def build(inputs, tables, output):
                 if path.name in paths:
                     raise ValueError(f'Duplicate input filename: {path.name}')
                 paths[path.name] = path
+    required_columns = {'effective_source', 'record_type', 'raw_formid', 'field',
+                        'old_english', 'obcjk_unicode_text', 'obcjk_utf8_hex',
+                        'obcjk_conversion_status'}
     for path in sorted(tables.glob('*.csv')):
         with path.open(encoding='utf-8-sig', newline='') as stream:
-            for line, row in enumerate(csv.DictReader(stream), 2):
+            reader = csv.DictReader(stream)
+            if not required_columns <= set(reader.fieldnames or ()):
+                continue
+            for line, row in enumerate(reader, 2):
                 if NAME_FIELDS.get(row.get('record_type')) != row.get('field'):
                     continue
                 if row.get('obcjk_conversion_status') != 'verified':

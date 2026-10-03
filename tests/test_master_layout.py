@@ -45,14 +45,27 @@ class MasterLayoutTests(unittest.TestCase):
             apply_layout(self.generated, self.output, self.asset)
         self.assertFalse(self.output.exists())
 
-    def test_source_and_generated_hash_guards(self):
+    def test_source_hash_and_record_identity_guards(self):
         capture_layout(self.reference, self.generated, self.asset)
         with self.assertRaisesRegex(ValueError, 'source hash mismatch'):
             apply_layout(self.generated, self.output, self.asset, source_sha256='wrong')
-        self.generated.write_bytes(self.generated.read_bytes()+b'X')
-        with self.assertRaisesRegex(ValueError, 'differs from'):
+        self.generated.write_bytes(
+            self.generated.read_bytes() +
+            record(b'REFR', 0x0100110B, [(b'DATA', bytes(range(24)))], flags=0x40000, vcs=99)
+        )
+        with self.assertRaisesRegex(ValueError, 'unused source records'):
             apply_layout(self.generated, self.output, self.asset)
         self.assertFalse(self.output.exists())
+
+    def test_text_update_reuses_pinned_native_layout(self):
+        capture_layout(self.reference, self.generated, self.asset)
+        self.generated.write_bytes(self.generated.read_bytes().replace(b'Author\0', b'Editor\0'))
+        result = apply_layout(self.generated, self.output, self.asset)
+        self.assertTrue(result['passed'])
+        self.assertFalse(result['matches_captured_translation_bytes'])
+        self.assertFalse(result['byte_identical_to_native_reference'])
+        self.assertIn(b'Editor\0', self.output.read_bytes())
+        self.assertNotIn(b'Author\0', self.output.read_bytes())
 
     def test_capture_refuses_modified_gameplay_fields(self):
         self.reference.write_bytes(self.reference.read_bytes().replace(b'Author\0', b'EDITOR\0'))
