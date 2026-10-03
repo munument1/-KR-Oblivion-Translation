@@ -1,0 +1,16 @@
+{
+  "input_items": 47397,
+  "outputs_found": 42111,
+  "missing_outputs": 5286,
+  "flagged_rows": 6012,
+  "reason_counts": {
+    "ENGLISH_RESIDUE": 376,
+    "UNCHANGED_FROM_ENGLISH": 584,
+    "NO_HANGUL": 586,
+    "SOURCE_WORDS_SURVIVE_3PLUS": 54,
+    "BAD_LITERAL": 1,
+    "MISSING_OUTPUT": 5286
+  },
+  "note": "ENGLISH_RESIDUE is a review candidate, not automatically an error; names/acronyms may be intentional.",
+  "output": "C:\\오블리비언\\v2_work\\05_sol_review\\TRANSLATION_COVERAGE_REVIEW.csv"
+}

@@ -1,0 +1,10 @@
+{
+  "rows": 926,
+  "unique_editor_ids": 924,
+  "unique_formids": 926,
+  "blank_korean": 1,
+  "intentional_blank_korean": 1,
+  "unexpected_blank_korean": 0,
+  "intentional_blank_note": "sPlural=(s) is intentionally empty in Korean; Korean does not use the English plural suffix.",
+  "policy": "Reuse frozen v1.0.2 GMST Korean translations; do not send GMST to Gemini."
+}

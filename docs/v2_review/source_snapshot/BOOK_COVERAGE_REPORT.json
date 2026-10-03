@@ -1,0 +1,12 @@
+{
+  "total_segments": 11859,
+  "outputs_found": 11859,
+  "missing_outputs": 0,
+  "flagged_rows": 719,
+  "reason_counts": {
+    "UNCHANGED_FROM_ENGLISH": 591,
+    "ENGLISH_RESIDUE": 186,
+    "NO_HANGUL": 506
+  },
+  "output": "C:\\오블리비언\\v2_work\\05_sol_review\\BOOK_COVERAGE_REVIEW.csv"
+}

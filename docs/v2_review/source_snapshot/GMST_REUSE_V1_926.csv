@@ -1,0 +1,936 @@
+﻿formid,editor_id,source_english,korean,reuse_source
+00099DE6,sAbortText,Abort,중단,v1.0.2_exe_only_gmst
+00099E62,sActivateCreatureCalmed,The creature is calmed and cannot respond.,진정된 생물은 반응하지 않습니다.,v1.0.2_exe_only_gmst
+00098819,sActivateNPCCalmed,is calmed and cannot respond.,은(는) 진정되어 반응하지 않습니다.,v1.0.2_exe_only_gmst
+00099DB2,sAddAnEffect,You must add at least one effect in order to create a spell.,주문을 만들려면 효과를 하나 이상 추가해야 합니다.,v1.0.2_exe_only_gmst
+00099E81,sAddIngredient,Add Ingredient,재료추가,v1.0.2_exe_only_gmst
+0006C160,sAddItemtoInventory,added.,추가되었습니다.,v1.0.2_existing_gmst
+0006C161,sAddItemtoInventoryText,removed.,제거되었습니다.,v1.0.2_existing_gmst
+000086C9,sAddItemtoSpellList,added.,추가되었습니다.,v1.0.2_existing_gmst
+00097676,sAddedEffects,Added Effects,추가된 효과,v1.0.2_exe_only_gmst
+01000809,sAge,Age,나이,v1.0.2_exe_only_gmst
+0004F65C,sAgilityDescription,YOU ARE USING WRONG GAMESETTING,"민첩성은 균형과 기동성, 피로도, 활 사용 능력에 영향을 줍니다.",v1.0.2_existing_gmst
+00099E57,sAll,All,전체,v1.0.2_exe_only_gmst
+0009765C,sAnimationCanNotEquipArmor,You cannot change armor while attacking.,공격 중엔 장비를 변경할 수 없습니다.,v1.0.2_exe_only_gmst
+0004F65B,sAnimationCanNotEquipWeapon,You cannot change weapons while attacking.,공격 중에는 무기를 변경할 수 없습니다.,v1.0.2_existing_gmst
+000624DF,sAnimationCanNotUnequip,You cannot change weapons while attacking.,공격 중에는 무기를 변경할 수 없습니다.,v1.0.2_existing_gmst
+00099DA7,sAreaText,Area,범위,v1.0.2_exe_only_gmst
+00097670,sArmor,Armor,방어구,v1.0.2_exe_only_gmst
+00099E31,sArmorWeightHeavy,Heavy,중갑,v1.0.2_exe_only_gmst
+00099EF3,sArmorWeightLight,Light,불빛,v1.0.2_exe_only_gmst
+00099F41,sAttributeDamaged,has been damaged,는(은) 데미지를 받았습니다.,v1.0.2_exe_only_gmst
+0004F653,sAttributeDescAgility,"Affects your ability to maneuver and balance, your total Fatigue, and damage done by bows. Governs the skills of Security, Sneak, and Marksman.","기동성과 균형, 총 피로도, 활 피해량에 영향을 줍니다. 자물쇠 따기, 은신, 궁술을 관장합니다.",v1.0.2_existing_gmst
+0004F654,sAttributeDescEndurance,"Affects how much Fatigue you have, your Health, and how much your Health will increase when you sleep and raise levels. Governs the skills of Block, Armorer, and Heavy Armor.","피로도와 체력, 레벨 상승 시 증가하는 체력에 영향을 줍니다. 방어, 방어구 수리, 중갑을 관장합니다.",v1.0.2_existing_gmst
+0004F655,sAttributeDescIntelligence,"Affects your total Magicka and magic use. Governs the skills of Alchemy, Conjuration, and Mysticism.","총 매지카와 마법 사용에 영향을 줍니다. 연금술, 소환마법, 신비마법을 관장합니다.",v1.0.2_existing_gmst
+0004F656,sAttributeDescLuck,"Luck has an effect on everything you do, but governs no skills.",행운은 모든 행동에 영향을 주지만 특정 기술을 관장하지는 않습니다.,v1.0.2_existing_gmst
+0004F657,sAttributeDescPersonality,"Affects how much people like you, which leads to better information-gathering. Governs the skills of Speechcraft, Mercantile, and Illusion.","다른 사람이 당신을 얼마나 좋아하는지에 영향을 주며, 정보 수집에도 도움이 됩니다. 화술, 상술, 환영마법을 관장합니다.",v1.0.2_existing_gmst
+0004F658,sAttributeDescSpeed,"Determines how fast you move. Governs the skills of Athletics, Light Armor, and Acrobatics.","이동 속도를 결정합니다. 운동, 경갑, 곡예를 관장합니다.",v1.0.2_existing_gmst
+0004F659,sAttributeDescStrength,"Affects how much you can carry, how much Fatigue you have, and how much damage you can do with melee weapons such as swords and axes. Governs the skills of Blunt, Blade, and Hand to Hand.","소지 한도, 피로도, 검이나 도끼 같은 근접 무기의 피해량에 영향을 줍니다. 둔기, 검술, 격투를 관장합니다.",v1.0.2_existing_gmst
+0004F65A,sAttributeDescWillpower,"Affects how quickly you regenerate Magicka, and how much Fatigue you have. Governs the skills of Destruction, Alteration, and Restoration.","매지카 회복 속도와 피로도에 영향을 줍니다. 파괴마법, 변화마법, 회복마법을 관장합니다.",v1.0.2_existing_gmst
+00099DA5,sAttributeDrained,is being drained,이(가) 감소되고 있습니다.,v1.0.2_exe_only_gmst
+00099EC8,sAttributeNameAgility,Agility,민첩성,v1.0.2_exe_only_gmst
+0100081E,sAttributeNameEndurance,Endurance,지구력,v1.0.2_exe_only_gmst
+0100081F,sAttributeNameIntelligence,Intelligence,지능,v1.0.2_exe_only_gmst
+00099694,sAttributeNameLuck,Luck,행운,v1.0.2_exe_only_gmst
+00099B99,sAttributeNamePersonality,Personality,매력,v1.0.2_exe_only_gmst
+00099B91,sAttributeNameSpeed,Speed,속도,v1.0.2_exe_only_gmst
+00099E1C,sAttributeNameStrength,Strength,힘,v1.0.2_exe_only_gmst
+00099F08,sAttributeNameWillpower,Willpower,의지력,v1.0.2_exe_only_gmst
+00098800,sAttributeText,Attribute,능력치,v1.0.2_exe_only_gmst
+00098E17,sAutoAttempt,Auto Attempt,자동 시도,v1.0.2_exe_only_gmst
+00099F1F,sAutoLoading,Autoloading...,자동 로딩...,v1.0.2_exe_only_gmst
+00099F42,sAutoSaveDisabledDueToLackOfSpace,Save location full. Disabling Autosave.,저장 공간이 없어 자동 저장을 중지합니다.,v1.0.2_exe_only_gmst
+00099DCA,sAutoSaving,Autosaving...,자동 저장...,v1.0.2_exe_only_gmst
+00099DA2,sBack,Back,뒤로,v1.0.2_exe_only_gmst
+000987F4,sBald,Bald,대머리,v1.0.2_exe_only_gmst
+00097665,sBeard,Beard,수염,v1.0.2_exe_only_gmst
+00099B30,sBeardcheeks,Beard cheeks light/dark,볼쪽 수염의 진하기,v1.0.2_exe_only_gmst
+00099D6F,sBeardcircle,Beard circle light/dark,턱수염 궤도의 진하기,v1.0.2_exe_only_gmst
+00099E63,sBeardflushed,Beard flushed/pale,턱수염의 창백함,v1.0.2_exe_only_gmst
+00098EB0,sBeardgoatee,Beard goatee light/dark,턱밑 수염의 진하기,v1.0.2_exe_only_gmst
+00099B3D,sBeardlight,Beard light/dark,턱수염의 진하기,v1.0.2_exe_only_gmst
+00099F11,sBeardmoustache,Beard moustache light/dark,콧수염의 진하기,v1.0.2_exe_only_gmst
+00099EBC,sBladeOneHand,Blade - One Hand,한손 검,v1.0.2_exe_only_gmst
+00099E10,sBladeTwoHand,Blade - Two Hand,양손 검,v1.0.2_exe_only_gmst
+00099EB3,sBlue,Blue,청색,v1.0.2_exe_only_gmst
+00099D6C,sBluntOneHand,Blunt - One Hand,한손 둔기,v1.0.2_exe_only_gmst
+000987FD,sBluntTwoHand,Blunt - Two Hand,양손 둔기,v1.0.2_exe_only_gmst
+00099E4B,sBow,Bow,활,v1.0.2_exe_only_gmst
+00099E2D,sBrow,Brow,눈살,v1.0.2_exe_only_gmst
+00099DA8,sBrowRidge,Brow Ridge high/low,눈살 높/낮이,v1.0.2_exe_only_gmst
+00099EC2,sBrowRidgeInner,Brow Ridge Inner up/down,눈살 안쪽의 높/낮이,v1.0.2_exe_only_gmst
+00099EF5,sBrowRidgeOuter,Brow Ridge Outer up/down,눈살 바깥쪽의 높/낮이,v1.0.2_exe_only_gmst
+00099E56,sButton,Button,버튼,v1.0.2_exe_only_gmst
+00099E36,sButtonLocked,That button cannot be remapped,이 버튼은 다시 설정할 수 없습니다.,v1.0.2_exe_only_gmst
+000987EB,sBuy,Buy,구매,v1.0.2_exe_only_gmst
+0006C162,sCanNotEquipAlchemy,You cannot create potions when enemies are nearby.,주변에 적이 있어 물약을 만들 수 없습니다.,v1.0.2_existing_gmst
+00004848,sCanNotEquipQuestArrows,You can not fire this quest arrow.,이 퀘스트 화살은 발사할 수 없습니다.,v1.0.2_existing_gmst
+0006C163,sCanNotEquipRepairHammer,You cannot repair items when enemies are nearby.,주변에 적이 있어 장비를 수리할 수 없습니다.,v1.0.2_existing_gmst
+0006C164,sCanNotEquipSoulGem,You cannot recharge enchanted items during combat.,전투 중에는 마법 장비를 충전할 수 없습니다.,v1.0.2_existing_gmst
+00099DD7,sCanNotEquipWornEnchantment,You cannot equip this enchanted item right now.,지금은 이 마법 장비를 착용할 수 없습니다.,v1.0.2_exe_only_gmst
+0006C165,sCanNotReadBood,You cannot read when enemies are nearby.,근처에 적이 있어 읽을 수 없습니다.,v1.0.2_existing_gmst
+00099EE7,sCanNotSummonInWater,Can't summon while in water,물속에서는 소환할 수 없습니다.,v1.0.2_exe_only_gmst
+00037E86,sCanNotTrainAnymore,You have reached your training limit for your current level.,현재 레벨에서 받을 수 있는 훈련 한도에 도달했습니다.,v1.0.2_existing_gmst
+0006C166,sCanNotTrainHigher,This character cannot help you train any higher.,이 인물에게서는 더 이상 훈련받을 수 없습니다.,v1.0.2_existing_gmst
+00099384,sCancel,Cancel,취소,v1.0.2_exe_only_gmst
+00099D75,sCantChangeResolution,You must close your current game to change resolutions.,게임 종료 후 해상도 변경이 가능합니다.,v1.0.2_exe_only_gmst
+00099B44,sCantEquipBrokenItem,Broken items cannot be equipped until they have been repaired.,파손된 아이템은 수리한 후 장비할 수 있습니다.,v1.0.2_exe_only_gmst
+00099EF8,sCantEquipGeneric,You cannot equip this item.,이 아이템은 장비할 수 없습니다.,v1.0.2_exe_only_gmst
+0009787E,sCantQuickLoad,You can't Quickload while the game is paused.,게임이 일시 정지된 상태에서 빠른 로드 할 수 없습니다.,v1.0.2_exe_only_gmst
+00097AA1,sCantQuickSave,You can't Quicksave while the game is paused.,게임이 일시 정지된 상태에서 빠른 저장 할 수 없습니다.,v1.0.2_exe_only_gmst
+00099DBC,sCantRaiseAnyAttributes,Perfection cannot be improved upon. Your attributes are as high as they can go.,더 이상 향상시킬 수 없습니다. 모든 능력치가 최고치입니다.,v1.0.2_exe_only_gmst
+00099D87,sCantRemoveWornItem,Unable to remove the worn item.,낡은 아이템을 제거할 수 없습니다.,v1.0.2_exe_only_gmst
+00099EAF,sCantSaveNow,You cannot save right now.,지금은 저장할 수 없습니다.,v1.0.2_exe_only_gmst
+00099D99,sCantUnequipGeneric,You cannot unequip this item.,이 아이템은 해제할 수 없습니다.,v1.0.2_exe_only_gmst
+00099EED,sCheekblush,Cheek blush light/red,홍조의 밝기,v1.0.2_exe_only_gmst
+00099EA9,sCheekboneslow,Cheekbones low/high,광대뼈의 높/낮이,v1.0.2_exe_only_gmst
+00099EDE,sCheekbonesshallow,Cheekbones shallow/pronounced,광대뼈의 튀어나온 정도,v1.0.2_exe_only_gmst
+00097653,sCheekbonesthin,Cheekbones thin/wide,광대뼈의 가늘기,v1.0.2_exe_only_gmst
+00099DDA,sCheeks,Cheeks,뺨,v1.0.2_exe_only_gmst
+00099EFB,sCheeksconcave,Cheeks concave/convex,뺨의 볼록한 정도,v1.0.2_exe_only_gmst
+00099B33,sCheeksround,Cheeks round/gaunt,뺨의 둥근 정도,v1.0.2_exe_only_gmst
+00099DFE,sChin,Chin,턱끝,v1.0.2_exe_only_gmst
+00099DE1,sChinforward,Chin forward/backward,턱끝의 앞으로 나온 정도,v1.0.2_exe_only_gmst
+00099E26,sChinpronounced,Chin pronounced/recessed,턱끝의 돌출 정도,v1.0.2_exe_only_gmst
+000976F9,sChinretracted,Chin retracted/jutting,턱끝 전체적인 돌출 정도,v1.0.2_exe_only_gmst
+00099B90,sChinshallow,Chin shallow/deep,턱끝의 깊은 정도,v1.0.2_exe_only_gmst
+00097659,sChinsmall,Chin small/large,턱끝의 크기,v1.0.2_exe_only_gmst
+00099EBD,sChintall,Chin tall/short,턱끝의 길이,v1.0.2_exe_only_gmst
+00099E6B,sChinwide,Chin wide/thin,턱끝의 가는 정도,v1.0.2_exe_only_gmst
+00099DBF,sChoose,Choose,선택,v1.0.2_exe_only_gmst
+00099EEA,sClass,Class,직업을 생성하시겠습니까?,v1.0.2_exe_only_gmst
+0009885F,sClassMenuPrompt,Enter a name for your custom class:,생성한 직업의 이름을 입력하세요:,v1.0.2_exe_only_gmst
+00099DEC,sClassSpecialization,Specialization:,전문분야: ,v1.0.2_exe_only_gmst
+0009914F,sCloseButton,Close,닫기,v1.0.2_exe_only_gmst
+00098E27,sColor,Hair Color,모발 색상,v1.0.2_exe_only_gmst
+00067C4D,sCombatDescription,"Allows you to progress more quickly in these skills as you use them: Armorer, Athletics, Blade, Block, Blunt, Hand to Hand, Heavy Armor.","사용할수록 더 빠르게 향상되는 기술: 방어구 수리, 운동, 검술, 방어, 둔기, 격투, 중갑.",v1.0.2_existing_gmst
+01000869,sCombatName,Combat,전투,v1.0.2_exe_only_gmst
+00099EF6,sComplexion,Complexion,안색,v1.0.2_exe_only_gmst
+00099E84,sConfirmBirthsign1,Are you sure you want to be born under the sign of,별자리가 맞습니까? 별자리 : ,v1.0.2_exe_only_gmst
+000976AA,sConfirmBuySpell,Are you sure you want to buy,구입하시겠습니까,v1.0.2_exe_only_gmst
+000992B8,sConfirmChoice1,Are you sure you want to be a,이 선택을 확정하시겠습니까? 선택 항목: ,v1.0.2_exe_only_gmst
+00099382,sConfirmChoice2,Are you sure you want to be an,이 선택을 확정하시겠습니까? 선택 항목: ,v1.0.2_exe_only_gmst
+00097A43,sConfirmRecharge,Recharge this item for,이 아이템을 충전하는데 ,v1.0.2_exe_only_gmst
+000976C2,sConfirmRepair,Repair this item for,선택한 아이템의 수리비용 : ,v1.0.2_exe_only_gmst
+0009834A,sConfirmRepairAll,Repair all items for,모든 아이템의 수리비용 : ,v1.0.2_exe_only_gmst
+00099E61,sContinue,Continue,계속,v1.0.2_exe_only_gmst
+000976C6,sContinueLastSave,Continue from your last saved game?,마지막으로 저장된 게임을 이어서 하시겠습니까?,v1.0.2_exe_only_gmst
+0006C167,sContinueText,Continue Playing?,계속 플레이하시겠습니까?,v1.0.2_existing_gmst
+00097678,sContractedDisease,You have contracted,내가 감염된 것은,v1.0.2_exe_only_gmst
+00099167,sControlsMenuConfirmReset1,Reset all,모든,v1.0.2_exe_only_gmst
+000992B5,sControlsMenuConfirmReset2,mappings to their default values,키 설정을 기본값으로 초기화합니다,v1.0.2_exe_only_gmst
+00097A62,sControlsMenuInstructions1,Press the,이 동작에 지정할,v1.0.2_exe_only_gmst
+00097A63,sControlsMenuInstructions2,button you want mapped to this action.,버튼을 누르십시오.,v1.0.2_exe_only_gmst
+00099DC3,sCorruptContentMessage,Some of your downloaded content is corrupt and could not be loaded.,다운로드한 콘텐츠 일부가 손상되어 불러올 수 없습니다.,v1.0.2_exe_only_gmst
+00099DAA,sCreate,Create,제작,v1.0.2_exe_only_gmst
+00098835,sCreaturesDontYield,Creatures never accept a yield!,생물은 항복을 받아들이지 않습니다!,v1.0.2_exe_only_gmst
+00099B93,sCrimeTypeAttack,Attack,공격,v1.0.2_exe_only_gmst
+00099EBF,sCrimeTypeMurder,Murder,살인,v1.0.2_exe_only_gmst
+0009914E,sCrimeTypePickpocket,Pickpocket,소매치기,v1.0.2_exe_only_gmst
+000977E6,sCrimeTypeSteal,Steal,도둑질,v1.0.2_exe_only_gmst
+00099E6D,sCrimeTypeStealHorse,Steal Horse,말 훔치기,v1.0.2_exe_only_gmst
+00099EB1,sCrimeTypeTrespass,Trespass,무단 침입,v1.0.2_exe_only_gmst
+00099DA6,sCurrentSoul,Current Soul Level,현재 소울 레벨 ,v1.0.2_exe_only_gmst
+00099DB7,sCustomClassDefaultName,Adventurer,모험가,v1.0.2_exe_only_gmst
+00099D76,sCustomColor,Custom color,사용자 지정 색상,v1.0.2_exe_only_gmst
+01000886,sDayFredas,Fredas,금요일,v1.0.2_exe_only_gmst
+01000887,sDayLoredas,Loredas,토요일,v1.0.2_exe_only_gmst
+01000888,sDayMiddas,Middas,수요일,v1.0.2_exe_only_gmst
+01000889,sDayMorndas,Morndas,월요일,v1.0.2_exe_only_gmst
+0100088A,sDaySundas,Sundas,일요일,v1.0.2_exe_only_gmst
+0100088B,sDayTirdas,Tirdas,화요일,v1.0.2_exe_only_gmst
+0100088C,sDayTurdas,Turdas,목요일,v1.0.2_exe_only_gmst
+00099F0F,sDefaultCellName,Wilderness,야외,v1.0.2_exe_only_gmst
+00099D85,sDefaultMessage,DEFAULT MESSAGE TEXT,기본 메시지,v1.0.2_exe_only_gmst
+000987F2,sDeleteSaveGame,Are you sure you want to delete this save game?,선택하신 저장내용을 지우시겠습니까?,v1.0.2_exe_only_gmst
+00097655,sDeleteSuccessful,Save game deleted.,저장 파일을 삭제했습니다.,v1.0.2_exe_only_gmst
+0004B6D8,sDerivedAttributeDescEncumbrance,"Represents the total weight you can carry. When full, you cannot move until you drop some items.",휴대할 수 있는 총 무게입니다. 한도를 넘으면 물건을 버릴 때까지 움직일 수 없습니다.,v1.0.2_existing_gmst
+0004B6D9,sDerivedAttributeDescFatigue,"Fatigue is how tired you are. Low Fatigue hurts your effectiveness, especially when doing melee attacks. Fatigue returns faster if you are walking. ",피로는 얼마나 지쳤는지를 나타냅니다. 피로가 낮으면 특히 근접 공격 시 효율이 떨어집니다. 걸어 다니면 피로가 더 빨리 회복됩니다.,v1.0.2_existing_gmst
+0004B6DA,sDerivedAttributeDescHealth,"The amount of damage you can take. Sleeping, potions or spells can restore your Health.","견딜 수 있는 피해량입니다. 수면, 물약, 주문으로 체력을 회복할 수 있습니다.",v1.0.2_existing_gmst
+0004B6DB,sDerivedAttributeDescMagicka,"Casting spells uses Magicka. Magicka regenerates based on your Willpower. Sleeping, potions or spells can restore your Magicka.","주문 시전에 매지카를 사용합니다. 매지카는 의지력에 따라 회복되며 수면, 물약, 주문으로 회복할 수 있습니다.",v1.0.2_existing_gmst
+00099E28,sDerivedAttributeNameEncumbrance,Encumbrance,소지 중량,v1.0.2_exe_only_gmst
+01000896,sDerivedAttributeNameFatigue,Fatigue,피로,v1.0.2_exe_only_gmst
+00099DD2,sDerivedAttributeNameHealth,Health,체력,v1.0.2_exe_only_gmst
+00099ECC,sDerivedAttributeNameMagicka,Magicka,매지카,v1.0.2_exe_only_gmst
+01000899,sDeviceJoystick,Joystick,조이스틱,v1.0.2_exe_only_gmst
+000996AB,sDeviceKeyboard,Keyboard,키보드,v1.0.2_exe_only_gmst
+0009885E,sDeviceMouse,Mouse,마우스,v1.0.2_exe_only_gmst
+0009880F,sDeviceRemoved,"The save device you selected is no longer available.  You will need to select a new device the next time you save.  Until then, Autosave is disabled.",선택한 저장 장치를 더 이상 사용할 수 없습니다. 다음에 저장할 때 새 장치를 선택해야 합니다. 그때까지 자동 저장은 비활성화됩니다.,v1.0.2_exe_only_gmst
+0006C168,sDiscoveredText,You found,발견:,v1.0.2_existing_gmst
+00099E0B,sDone,Done,확인,v1.0.2_exe_only_gmst
+000976A9,sDownloads,Downloads,다운로드,v1.0.2_exe_only_gmst
+00098822,sDownloadsAvailable,New Content Available,새 콘텐츠 사용 가능,v1.0.2_exe_only_gmst
+00099B42,sDownloadsNotAvail,No New Content Available,새 콘텐츠 없음,v1.0.2_exe_only_gmst
+000624E0,sDropEquippedItemWarning,You cannot drop an equiped item until you complete your current action.,현재 행동을 마칠 때까지 장착한 아이템을 버릴 수 없습니다.,v1.0.2_existing_gmst
+000987F3,sDropQuestItemWarning,You cannot remove Quest Items from your Inventory.,인벤토리에서 퀘스트 아이템을 제거할 수 없습니다.,v1.0.2_exe_only_gmst
+00099DF3,sDuplicateName,A spell with this name already exists.,같은 이름의 스펠이 존재하고 있습니다.,v1.0.2_exe_only_gmst
+00099F1E,sDurationText,Duration,지속 시간,v1.0.2_exe_only_gmst
+00099692,sEffectAlreadyAdded,Effect has already been added.  Edit the effect instead.,이미 추가된 효과입니다. 대신 해당 효과를 편집하세요.,v1.0.2_exe_only_gmst
+0009766E,sEnchantedItem,enchanted item,마법부여 아이템,v1.0.2_exe_only_gmst
+00099F2C,sEnchantmentSuccess,Congratulations!  You have created a new enchanted item.,축하합니다! 새로운 마법부여 아이템을 만들었습니다.,v1.0.2_exe_only_gmst
+0005C447,sEnduranceDescription,MESSAGE,지구력은 최대 체력과 피로도에 영향을 줍니다.,v1.0.2_existing_gmst
+000976C7,sEnterName,Enter character name.,당신의 이름을 입력하세요.,v1.0.2_exe_only_gmst
+00099DC2,sEntryInstructions1,Enter a name for the,만들려는,v1.0.2_exe_only_gmst
+00099DC4,sEntryInstructions2,you are trying to create.,의 이름을 입력하십시오.,v1.0.2_exe_only_gmst
+00099F16,sEquipItemOnPlayer,was equipped on the player,이 플레이어에게 착용되었습니다,v1.0.2_exe_only_gmst
+00014D3A,sEssentialCharacterDown,is unconscious.,의식을 잃었습니다.,v1.0.2_existing_gmst
+00099E12,sExitGameAffirm,Exit Game,게임 종료,v1.0.2_exe_only_gmst
+000987F9,sExitGameQuestion,Exit the game?,게임을 종료하시겠습니까?,v1.0.2_exe_only_gmst
+00099F40,sEyebrows,Eyebrows,눈썹,v1.0.2_exe_only_gmst
+00099150,sEyebrowsdark,Eyebrows dark/light,눈썹의 밝기,v1.0.2_exe_only_gmst
+00099F09,sEyebrowslow,Eyebrows low/high,눈썹의 높낮이,v1.0.2_exe_only_gmst
+00099E23,sEyebrowslower,Eyebrows lower light/dark,눈썹 아래 밝기,v1.0.2_exe_only_gmst
+00099D83,sEyebrowsouter,Eyebrows outer light/dark,눈썹 바깥쪽 밝기,v1.0.2_exe_only_gmst
+00099B9C,sEyebrowsthick,Eyebrows thick/thin,눈썹 두께1,v1.0.2_exe_only_gmst
+00097673,sEyebrowsuppert,Eyebrows upper dark/light,눈썹 위 밝기,v1.0.2_exe_only_gmst
+00099691,sEyebrowsvery,Eyebrows very thin/thick,눈썹 두께2,v1.0.2_exe_only_gmst
+000992B9,sEyelidslight,Eyelids light/dark,눈꺼풀의 밝기,v1.0.2_exe_only_gmst
+00099E21,sEyelidspale,Eyelids pale/red,눈꺼풀의 붉은 정도,v1.0.2_exe_only_gmst
+00099544,sEyeliner,Eyeliner light/dark,아이라인의 밝기,v1.0.2_exe_only_gmst
+00099E4E,sEyes,Eyes,눈,v1.0.2_exe_only_gmst
+00099EEC,sEyesTex,Eye shades,눈 음영,v1.0.2_exe_only_gmst
+00099EC6,sEyesdark,Eyes dark brown/light blue,눈 색상 짙은 갈색/밝은 파랑,v1.0.2_exe_only_gmst
+000988C3,sEyesdown,Eyes down/up,눈의 높/낮이,v1.0.2_exe_only_gmst
+00098345,sEyeshadow,Eyeshadow light/dark,눈 그늘의 밝기,v1.0.2_exe_only_gmst
+00099EE0,sEyesocketsbruised,"Eye sockets bruised/bright
+sKBF6	F6",눈 아래 색,v1.0.2_exe_only_gmst
+00097A06,sEyesocketsdark,Eye sockets dark/light,눈 주위 색,v1.0.2_exe_only_gmst
+00099E32,sEyessmall,Eyes small/large,눈 크기,v1.0.2_exe_only_gmst
+00099F3A,sEyestilt,Eyes tilt inward/outward,눈 경사 정도,v1.0.2_exe_only_gmst
+00099E6C,sEyestogether,Eyes together/apart,눈의 모여짐 정도,v1.0.2_exe_only_gmst
+00099F0B,sEyeswhites,Eyes whites dim/bright,흰자 밝기,v1.0.2_exe_only_gmst
+00099F0C,sFace,Face,얼굴,v1.0.2_exe_only_gmst
+00099387,sFacebrow,Face brow/nose/chin ratio,얼굴과 눈썹/코/턱끝 비율,v1.0.2_exe_only_gmst
+00099E11,sFaceforehead,Face forehead/sellion/nose ratio,얼굴과 이마/셀리온/코 비율,v1.0.2_exe_only_gmst
+00099E02,sFaceheavy,Face heavy/light,얼굴 무게,v1.0.2_exe_only_gmst
+00099DB1,sFaceround,Face round/gaunt,얼굴 둥근정도,v1.0.2_exe_only_gmst
+00099E8C,sFacethin,Face thin/wide,얼굴 가는정도,v1.0.2_exe_only_gmst
+00099EE8,sFastTravelHorseatGate,Your horse is stabled outside the city gate.,당신의 말은 마을입구 밖에 있습니다. ,v1.0.2_exe_only_gmst
+000976C5,sFastTravelNoTravelHealthDamage,You can't fast travel while taking health damage,건강에 이상이 있을 때에는 패스트 트레블을 할 수 없습니다.,v1.0.2_exe_only_gmst
+000CD59A,sFavoredAttributes,Choose your 2 favored attributes. You will gain +5 to each one.,선호 능력치 2개를 선택하십시오. 각각 +5 증가합니다.,v1.0.2_existing_gmst
+00099F13,sFemale,Female,여성,v1.0.2_exe_only_gmst
+0009769B,sFileNotFound,File does not exist,파일이 없습니다,v1.0.2_exe_only_gmst
+0009765D,sFilter,Filter,걸러 보기,v1.0.2_exe_only_gmst
+00099547,sFindingContentMessage,Looking for content.  Please wait.,콘텐츠를 찾는 중입니다. 잠시 기다려 주십시오.,v1.0.2_exe_only_gmst
+00098E10,sFloraFailureMessage,You find nothing of use.,소득 없음.,v1.0.2_exe_only_gmst
+00099EA6,sFloraSuccessMessage,You successfully harvest %s.,수확: %s.,v1.0.2_exe_only_gmst
+00099DCF,sFor,for,대상,v1.0.2_exe_only_gmst
+00099E4D,sForehead,Forehead,이마,v1.0.2_exe_only_gmst
+00097859,sForeheadsmall,Forehead small/large,이마의 크기,v1.0.2_exe_only_gmst
+00099E76,sForeheadtall,Forehead tall/short,이마의 길이,v1.0.2_exe_only_gmst
+00099DAE,sForeheadtilt,Forehead tilt forward/back,이마 기울기,v1.0.2_exe_only_gmst
+00099E2F,sGender,Gender,성별,v1.0.2_exe_only_gmst
+00099D7F,sGeneralFace,General(Face),전체(얼굴),v1.0.2_exe_only_gmst
+00097E45,sGeneralSkin,General(Skin),전체(피부),v1.0.2_exe_only_gmst
+0009886C,sGetAllConfiscatedItems,You get all the items that were confiscated by the Guards.,간수들에게 몰수당한 아이템을 모두 얻었습니다.,v1.0.2_exe_only_gmst
+00099E6A,sGiveAway,Give away,주기,v1.0.2_exe_only_gmst
+00099383,sGold,gold,골드,v1.0.2_exe_only_gmst
+00099DD5,sGotAwayWithStealing,got away with stealing,도둑질에 성공했습니다,v1.0.2_exe_only_gmst
+00099F15,sGoverningAttribute,Governing Attribute:,관련 능력: ,v1.0.2_exe_only_gmst
+00099F0A,sGreen,Green,녹색,v1.0.2_exe_only_gmst
+00099E54,sHair,Hair,머리,v1.0.2_exe_only_gmst
+000CD3D1,sHairColor0,Bright Grey,밝은 회색,v1.0.2_existing_gmst
+000CD3D2,sHairColor1,Charcoal,차콜,v1.0.2_existing_gmst
+000CD3DB,sHairColor10,Bright Copper,밝은 구릿빛,v1.0.2_existing_gmst
+000CD3DC,sHairColor11,Mahogany,마호가니,v1.0.2_existing_gmst
+000CD3DD,sHairColor12,Blue Black,청흑색,v1.0.2_existing_gmst
+000CD3DE,sHairColor13,Dark Brown,짙은 갈색,v1.0.2_existing_gmst
+000CD3DF,sHairColor14,Grey,회색,v1.0.2_existing_gmst
+000CD3E0,sHairColor15,Satin Blonde,은은한 금발,v1.0.2_existing_gmst
+000CD3D3,sHairColor2,Black,검정,v1.0.2_existing_gmst
+000CD3D4,sHairColor3,Bright Blonde,밝은 금발,v1.0.2_existing_gmst
+000CD3D5,sHairColor4,Rose Blonde,장밋빛 금발,v1.0.2_existing_gmst
+000CD3D6,sHairColor5,Light Brown,연갈색,v1.0.2_existing_gmst
+000CD3D7,sHairColor6,Cool Brown,회갈색,v1.0.2_existing_gmst
+000CD3D8,sHairColor7,Auburn,적갈색,v1.0.2_existing_gmst
+000CD3D9,sHairColor8,Copper,구릿빛,v1.0.2_existing_gmst
+000CD3DA,sHairColor9,Golden Blonde,황금빛 금발,v1.0.2_existing_gmst
+00099EAD,sHeavyArmorNoJump,Your heavy armor prevents you from jumping.,중갑 때문에 점프할 수 없습니다.,v1.0.2_exe_only_gmst
+00099E7B,sHeavyArmorSink,Your heavy armor is causing you to sink.,중갑의 무게 때문에 가라앉고 있습니다.,v1.0.2_exe_only_gmst
+0009881B,sHigh,Large,큼,v1.0.2_exe_only_gmst
+000987EE,sHolidayEmperorsBirthday,Emperor's Birthday,황제의 생일,v1.0.2_exe_only_gmst
+00099E3C,sHolidayFirstPlanting,First Planting,첫 파종일,v1.0.2_exe_only_gmst
+00099D6A,sHolidayHarvestsEnd,Harvest's End,수확의 끝,v1.0.2_exe_only_gmst
+00098E11,sHolidayJestersDay,Jester's Day,광대의 날,v1.0.2_exe_only_gmst
+00099EE2,sHolidayMerchantsFestival,Merchant's Festival,상인의 축제,v1.0.2_exe_only_gmst
+00098817,sHolidayMidYearCelebration,Mid Year Celebration,한여름 축제,v1.0.2_exe_only_gmst
+00099B96,sHolidayNewLifeFestival,New Life Festival,새 생명 축제,v1.0.2_exe_only_gmst
+00099E47,sHolidayNorthWindsPrayer,North Wind's Prayer,북풍의 기도,v1.0.2_exe_only_gmst
+000987FC,sHolidayOldLifeFestival,Old Life Festival,옛 생명 축제,v1.0.2_exe_only_gmst
+0009882D,sHolidaySecondPlanting,Second Planting,두 번째 파종일,v1.0.2_exe_only_gmst
+00099E4A,sHolidaySouthWindsPrayer,South Wind's Prayer,남풍의 기도,v1.0.2_exe_only_gmst
+00099D97,sHolidaySunsRest,Sun's Rest,태양의 휴식,v1.0.2_exe_only_gmst
+00099F21,sHolidayTalesAndTallows,Tales and Tallows,이야기와 양초의 날,v1.0.2_exe_only_gmst
+00099E8F,sHolidayWarriorsFestival,Warrior's Festival,전사의 축제,v1.0.2_exe_only_gmst
+000996AA,sHolidayWitchesFestival,Witches' Festival,마녀의 축제,v1.0.2_exe_only_gmst
+00099F1D,sIgnoreText,Ignore,무시,v1.0.2_exe_only_gmst
+00037E87,sImpossibleLock,This lock cannot be picked. You need a key.,이 자물쇠는 열 수 없습니다. 열쇠가 필요합니다.,v1.0.2_existing_gmst
+00097661,sIngredientFail,Ingredient had no effect.,재료에 아무 효과도 없었습니다.,v1.0.2_exe_only_gmst
+0005C448,sIntellegenceDescription,YOU ARE USING WRONG GAMESETTING,지능은 최대 매지카에 영향을 줍니다.,v1.0.2_existing_gmst
+00099DE8,sInvalidPickpocket,You cannot place items in a container while pickpocketing.,소매치기 중에는 상대 인벤토리에 아이템을 넣을 수 없습니다.,v1.0.2_exe_only_gmst
+00098843,sJaw,Jaw,턱,v1.0.2_exe_only_gmst
+00099DE0,sJawNeck,Jaw-Neck slope high/low,턱과 목사이 경사 높/낮이,v1.0.2_exe_only_gmst
+000976C3,sJawline,Jawline concave/convex,턱선의 오목한 정도,v1.0.2_exe_only_gmst
+00099DEF,sJawretracted,Jaw retracted/jutting,턱의 돌출 정도,v1.0.2_exe_only_gmst
+0009767A,sJawwide,Jaw wide/thin,턱의 가는 정도,v1.0.2_exe_only_gmst
+00099E52,sJournalTitleActive,Active Quest,진행중인 퀘스트 ,v1.0.2_exe_only_gmst
+00098804,sJournalTitleCompleted,Completed Quests,완료한 퀘스트,v1.0.2_exe_only_gmst
+00099D9C,sJournalTitleCompletedDetails,Completed Quest Detail,완료한 퀘스트의 내용,v1.0.2_exe_only_gmst
+00099B3F,sJournalTitleCurrent,Current Quests,현재 진행중인 퀘스트,v1.0.2_exe_only_gmst
+00099546,sJoyDown,Down,아래,v1.0.2_exe_only_gmst
+000984B2,sJoyDownLeft,Dn-Left,왼쪽 아래,v1.0.2_exe_only_gmst
+0009882E,sJoyDownRight,Dn-Rt,오른쪽 아래,v1.0.2_exe_only_gmst
+00099E69,sJoyLeft,Left,왼쪽,v1.0.2_exe_only_gmst
+00099D77,sJoyRight,Right,오른쪽,v1.0.2_exe_only_gmst
+00099F10,sJoyUp,Up,위,v1.0.2_exe_only_gmst
+00099F39,sJoyUpLeft,Up-Left,왼쪽 위,v1.0.2_exe_only_gmst
+00099EB6,sJoyUpRight,Up-Rt,오른쪽 위,v1.0.2_exe_only_gmst
+00097654,sKBA,A,A,v1.0.2_exe_only_gmst
+00099DBA,sKBABNTC2,"Pad ,","Pad ,",v1.0.2_exe_only_gmst
+00099E59,sKBAdd,Pad +,Pad +,v1.0.2_exe_only_gmst
+00099DD1,sKBApostrophe,',',v1.0.2_exe_only_gmst
+00099E3B,sKBBack,Backspace,Backspace,v1.0.2_exe_only_gmst
+00099EB7,sKBBackslash,\,\,v1.0.2_exe_only_gmst
+00099E2B,sKBCapital,Caps,Caps,v1.0.2_exe_only_gmst
+00099E82,sKBComma,",",",",v1.0.2_exe_only_gmst
+00099E50,sKBDecimal,"Pad ,","Pad ,",v1.0.2_exe_only_gmst
+00099E8A,sKBDelete,Delete,Delete,v1.0.2_exe_only_gmst
+00097A5B,sKBDivide,Pad /,Pad /,v1.0.2_exe_only_gmst
+00099DF1,sKBDown,Down,Down,v1.0.2_exe_only_gmst
+00099D1D,sKBEnd,End,End,v1.0.2_exe_only_gmst
+00099EA3,sKBEsc,Esc,Esc,v1.0.2_exe_only_gmst
+00098803,sKBHome,Home,Home,v1.0.2_exe_only_gmst
+00097A51,sKBInsert,Insert,Insert,v1.0.2_exe_only_gmst
+00097D46,sKBLBracket,[,[,v1.0.2_exe_only_gmst
+00099E42,sKBLControl,L-Ctrl,L-Ctrl,v1.0.2_exe_only_gmst
+00099E04,sKBLMenu,L-Alt,L-Alt,v1.0.2_exe_only_gmst
+00099E72,sKBLShift,L-Shift,L-Shift,v1.0.2_exe_only_gmst
+0009787B,sKBLWin,LWin,LWin,v1.0.2_exe_only_gmst
+00099F3C,sKBLeft,Left,Left,v1.0.2_exe_only_gmst
+0009766F,sKBM,M,M,v1.0.2_exe_only_gmst
+00099F2B,sKBMail,Mail,Mail,v1.0.2_exe_only_gmst
+00099D9E,sKBMediaSelect,Select,Select,v1.0.2_exe_only_gmst
+00099F2F,sKBMediaStop,Stop,Stop,v1.0.2_exe_only_gmst
+00099EDD,sKBMultiply,Pad *,Pad *,v1.0.2_exe_only_gmst
+000984A2,sKBMute,Mute,음소거,v1.0.2_exe_only_gmst
+00099EAB,sKBMyComputer,My Comp,My Comp,v1.0.2_exe_only_gmst
+00099E5B,sKBNext,PgDn,PgDn,v1.0.2_exe_only_gmst
+00099EC5,sKBNextTrack,Next,Next,v1.0.2_exe_only_gmst
+00099F20,sKBNumPadComma,"Pad ,","Pad ,",v1.0.2_exe_only_gmst
+00099DD4,sKBNumPadEnter,Pad Enter,Pad Enter,v1.0.2_exe_only_gmst
+00099E03,sKBNumPadEquals,Pad =,Pad =,v1.0.2_exe_only_gmst
+00099E95,sKBNumpad0,Pad 0,Pad 0,v1.0.2_exe_only_gmst
+00099E97,sKBNumpad1,Pad 1,Pad 1,v1.0.2_exe_only_gmst
+00099E99,sKBNumpad2,Pad 2,Pad 2,v1.0.2_exe_only_gmst
+00099E9C,sKBNumpad3,Pad 3,Pad 3,v1.0.2_exe_only_gmst
+00099E9E,sKBNumpad4,Pad 4,Pad 4,v1.0.2_exe_only_gmst
+00099EA0,sKBNumpad5,Pad 5,Pad 5,v1.0.2_exe_only_gmst
+00099EA2,sKBNumpad6,Pad 6,Pad 6,v1.0.2_exe_only_gmst
+00099EA5,sKBNumpad7,Pad 7,Pad 7,v1.0.2_exe_only_gmst
+00099EA7,sKBNumpad8,Pad 8,Pad 8,v1.0.2_exe_only_gmst
+00099EAA,sKBNumpad9,Pad 9,Pad 9,v1.0.2_exe_only_gmst
+00099EE6,sKBPeriod,.,.,v1.0.2_exe_only_gmst
+00099E34,sKBPlayPause,Play,Play,v1.0.2_exe_only_gmst
+00099E09,sKBPower,Power,능력,v1.0.2_exe_only_gmst
+00099E06,sKBPrevtrack,Prev,Prev,v1.0.2_exe_only_gmst
+00098E12,sKBPrior,PgUp,PgUp,v1.0.2_exe_only_gmst
+00097674,sKBQ,Q,Q,v1.0.2_exe_only_gmst
+000987E9,sKBRBracket,],],v1.0.2_exe_only_gmst
+000976C4,sKBRControl,R-Ctrl,R-Ctrl,v1.0.2_exe_only_gmst
+00097681,sKBRMenu,R-Alt,R-Alt,v1.0.2_exe_only_gmst
+00099E64,sKBRShift,R-Shift,R-Shift,v1.0.2_exe_only_gmst
+00099EB2,sKBRWin,RWin,RWin,v1.0.2_exe_only_gmst
+00099F30,sKBReturn,Enter,Enter,v1.0.2_exe_only_gmst
+00099DC9,sKBRight,Right,Right,v1.0.2_exe_only_gmst
+00099E0A,sKBScroll,Scroll,두루마리,v1.0.2_exe_only_gmst
+00099DEB,sKBSemicolon,;,;,v1.0.2_exe_only_gmst
+0009795C,sKBSleep,Wake,Wake,v1.0.2_exe_only_gmst
+00099DC5,sKBSpace,Space,Space,v1.0.2_exe_only_gmst
+00099E94,sKBStop,Stop,Stop,v1.0.2_exe_only_gmst
+00099B95,sKBSubtract,Pad -,Pad -,v1.0.2_exe_only_gmst
+00098821,sKBSysRq,PrntScrn,PrntScrn,v1.0.2_exe_only_gmst
+00099DDF,sKBTilde,~,~,v1.0.2_exe_only_gmst
+00099E29,sKBUnlabeled,Unlabeled,Unlabeled,v1.0.2_exe_only_gmst
+0009882F,sKBUp,Up,Up,v1.0.2_exe_only_gmst
+0009767C,sKBW,W,W,v1.0.2_exe_only_gmst
+00099168,sKBWake,Wake,Wake,v1.0.2_exe_only_gmst
+0009882B,sKBWebRefresh,Refresh,Refresh,v1.0.2_exe_only_gmst
+0009764E,sKBWebSearch,Search,Search,v1.0.2_exe_only_gmst
+00099F34,sKBWebStop,Web Stop,Web Stop,v1.0.2_exe_only_gmst
+00097682,sKBZ,Z,Z,v1.0.2_exe_only_gmst
+000624E1,sKeyLocked,That key cannot be remapped.,그 키는 재매핑할 수 없습니다.,v1.0.2_existing_gmst
+00099E1E,sKnownEffects,Known Effects,알려진 효과,v1.0.2_exe_only_gmst
+00099EF7,sLarge,Large,큼,v1.0.2_exe_only_gmst
+00099DC6,sLeaveMarker,Leave It,그대로 두기,v1.0.2_exe_only_gmst
+00099DB9,sLength,Length,길이,v1.0.2_exe_only_gmst
+0006C169,sLevelDefault,The results of hard work and dedication always look like luck. But you know you've earned every ounce of your success.,집념과 노력의 결과조차 항상 행운처럼 여겨집니다. 하지만 당신은 모든 결과를 스스로의 힘으로 만들어 냈음을 알고 있습니다.,v1.0.2_existing_gmst
+0006C16A,sLevelDoneWarning,You need to finish distributing attribute points before leaving.,나가기 전에 능력치 포인트를 모두 분배해야 합니다.,v1.0.2_existing_gmst
+00099F12,sLevelPopUpText,"To increase your level, make progress learning your class's major skills.",레벨을 올리려면 직업의 주요 기술을 익혀 진행도를 높이세요.,v1.0.2_exe_only_gmst
+00097A5E,sLevelUp10,You woke today with a new sense of purpose. You're no longer afraid of failure. Failure is just an opportunity to learn something new.,오늘 새로운 결의로 깨어났습니다. 더 이상 실패를 두려워 마십시오. 실패란 단지 새로운 것을 배울 좋은 기회일 뿐입니다.,v1.0.2_exe_only_gmst
+0006C16B,sLevelUp11,Being smart doesn't hurt. And a little luck now and then is nice. But the key is patience and hard work.,"영리한 것도 나쁘지 않고, 가끔은 운도 필요하다. 하지만 핵심은 인내와 노력이다.",v1.0.2_existing_gmst
+0001E69F,sLevelUp12,"You can't believe how easy it is. You just have to go... a little crazy. And then, suddenly, it all makes sense, and everything you do turns to gold.","믿기지 않을 만큼 쉬워졌다. 조금만... 미쳐 버리면 된다. 그러면 갑자기 모든 것이 이해되고, 손대는 것마다 황금으로 변한다.",v1.0.2_existing_gmst
+00097C62,sLevelUp13,"It's the most amazing thing. Yesterday it was hard, and today it is easy. Just a good night's sleep, and yesterday's mysteries are today's masteries.",참 신기한 일이다. 어제는 어려웠던 일이 오늘은 쉬워졌다. 하룻밤 푹 자고 나니 어제의 수수께끼가 오늘은 익숙한 기술이 되었다.,v1.0.2_exe_only_gmst
+00097D4B,sLevelUp14,"Today you wake up, full of energy and ideas, and you know, somehow, that overnight everything has changed. What a difference a day makes.","오늘 아침, 에너지와 생각이 넘치는 채 눈을 뜬다. 어떻게인지 밤사이 모든 것이 달라졌음을 안다. 하루가 이렇게 큰 차이를 만들어내다니.",v1.0.2_exe_only_gmst
+0001E69A,sLevelUp15,"Now you just stay at your peak as long as you can. There's no one stronger in Tamriel, but there's always someone younger... a new challenger.","이제 가능한 한 오래 정점에 머무르면 된다. 탐리엘에 더 강한 자는 없지만, 언제나 더 젊은 도전자는 나타나는 법이다.",v1.0.2_existing_gmst
+00098137,sLevelUp16,"You've been trying too hard, thinking too much. Relax. Trust your instincts. Just be yourself. Do the little things, and the big things take care of themselves.","너무 애쓰고, 너무 많이 생각해 왔다. 긴장을 풀어라. 본능을 믿어라. 그저 자기 자신답게 행동하라. 작은 일에 충실하면 큰 일은 저절로 풀릴 것이다.",v1.0.2_exe_only_gmst
+0001E6A0,sLevelUp17,"Life isn't over. You can still get smarter, or cleverer, or more experienced, or meaner... but your body and soul just aren't going to get any younger.","인생은 아직 끝나지 않았습니다. 당신은 여전히 더 똑똑해지거나, 더 영리해지거나, 더 노련해지거나, 더 비열해질 수 있습니다. 하지만 당신의 육체와 영혼은 더 이상 젊어지지 않을 겁니다.",v1.0.2_existing_gmst
+0001E69B,sLevelUp18,"With the life you've been living, the punishment your body has taken... there are limits, and maybe you've reached them. Is this what it's like to grow old?","오늘 당신은 갑자기 인생의 고난과 육신의 고통을 깨달았습니다. 몸이 할 수 있는 일에는 한계가 있고, 어쩌면 그 끝에 다다른 것일지도 모릅니다. 늙는 게 어떤 느낌인지 궁금하셨나요? 자, 이제 알게 됐네요.",v1.0.2_existing_gmst
+0001E69C,sLevelUp19,"You're really good. Maybe the best. And that's why it's so hard to get better. But you just keep trying, because that's the way you are.",정말 잘하고 있다. 어쩌면 최고일지도 모른다. 그래서 더 나아지기가 그만큼 어렵다. 그래도 계속 시도한다. 원래 그런 사람이니까.,v1.0.2_existing_gmst
+00098834,sLevelUp2,"You realize that all your life you have been coasting along as if you were in a dream. Suddenly, facing the trials of the last few days, you have come alive.","지금까지의 인생은 꿈속에서 살아 온 것 같다. 지난 몇 일간의 테스트에서 생생하게 살아왔고, 나는 살아있다. ",v1.0.2_exe_only_gmst
+0001E6A1,sLevelUp20,"By superhuman effort, you can avoid slipping backwards for a while. But one day, you'll lose a step, or drop a beat, or miss a detail... and you'll be gone forever.","초인적인 노력으로 한동안은 퇴보하지 않을 수 있다. 하지만 언젠가는 한 걸음 뒤처지거나, 박자를 놓치거나, 작은 세부 하나를 놓칠 것이다... 그리고 영원히 사라질 것이다.",v1.0.2_existing_gmst
+00098837,sLevelUp3,You realize that you are catching on to the secret of success. It's just a matter of concentration.,성공의 비결을 조금씩 깨닫고 있다. 결국 중요한 건 집중이다.,v1.0.2_exe_only_gmst
+0001E69E,sLevelUp4,"You've done things the hard way. But without taking risks, taking responsibility for failure... how could you have understood?",힘든 길을 걸어왔다. 하지만 위험을 감수하고 실패의 책임을 받아들이지 않았다면... 어떻게 깨달을 수 있었겠는가?,v1.0.2_existing_gmst
+0009885C,sLevelUp5,"Everything you do is just a bit easier, more instinctive, more satisfying. It is as though you had suddenly developed keen senses and instincts.","하는 모든 일이 조금씩 쉬워지고, 더 본능적이며, 더 만족스럽다. 마치 갑자기 감각과 본능이 날카로워진 것 같다.",v1.0.2_exe_only_gmst
+0001E69D,sLevelUp6,"You've learned a lot about Cyrodiil... and about yourself. It's hard to believe how ignorant you were, but now you have so much more to learn.","당신은 점점 더 자각하게 되고, 새로운 아이디어를 열린 마음으로 받아들이게 됩니다. 당신은 그동안 시로딜에 대해 많은 것을 배웠습니다. 무지했던 예전은 잘 기억나지도 않지만, 아직도 배울 것이 많습니다.",v1.0.2_existing_gmst
+0009886E,sLevelUp7,You resolve to continue pushing yourself. Perhaps there's more to you than you thought.,자신의 한계에 도전하고 있습니다. 당신은 자신이 생각했던 이상의 힘이 있는지도 모릅니다. ,v1.0.2_exe_only_gmst
+00098881,sLevelUp8,"The secret does seem to be hard work, yes, but it's also a kind of blind passion, an inspiration.","비결은 역시 노력인 듯하다. 하지만 맹목적인 열정, 일종의 영감도 필요하다.",v1.0.2_exe_only_gmst
+00098E0F,sLevelUp9,"So that's how it works. You plod along, putting one foot before the other, look up, and suddenly, there you are. Right where you wanted to be all along.",이렇게 된 것입니다. 단계적으로 진행하고 정상을 보고 한걸음씩 계속 걸어... 마침내 갑자기 희망하고 있던 위치에 서 있는 것입니다. ,v1.0.2_exe_only_gmst
+00099DA1,sLips,Lips,입술,v1.0.2_exe_only_gmst
+00098883,sLipsflushed,Lips flushed/pale,입술의 붉은정도,v1.0.2_exe_only_gmst
+00099F14,sLipstickdarkblue,Lipstick dark blue/light red,립스틱 어두운 청색/밝은 적색,v1.0.2_exe_only_gmst
+00099DD9,sLipstickdarkred,Lipstick dark red/light blue,립스틱 밝은 청색/어두운 적색,v1.0.2_exe_only_gmst
+0009766C,sLoadFromMainMenu,Are you sure you want to load this game?,선택한 게임을 불러오시겠습니까?,v1.0.2_exe_only_gmst
+0006C16C,sLoadWhilePlaying,Are you sure you want to load this game? All unsaved progress will be lost.,게임을 불러오시겠습니까? 저장하지 않은 진행 상황은 모두 사라집니다.,v1.0.2_existing_gmst
+00099E66,sLoadingArea,Loading area...,지역 불러오는 중...,v1.0.2_exe_only_gmst
+00099F1A,sLoadingContentMessage,Loading extra content. Please wait.,추가 자료를 불러오는 중입니다. 잠시 기다려 주세요.,v1.0.2_exe_only_gmst
+00099F25,sLoadingLOD,Loading distant LOD...,먼 거리 화면을 불러오는 중...,v1.0.2_exe_only_gmst
+00099548,sLockLevelNameAverage,Average,보통,v1.0.2_exe_only_gmst
+0009767F,sLockLevelNameEasy,Easy,쉬운,v1.0.2_exe_only_gmst
+00099E98,sLockLevelNameHard,Hard,어려운,v1.0.2_exe_only_gmst
+0000517E,sLockLevelNameImpossible,Needs a key,열쇠가 필요합니다,v1.0.2_existing_gmst
+000987FE,sLockLevelNameVeryEasy,Very Easy,매우 쉬운,v1.0.2_exe_only_gmst
+00099F04,sLockLevelNameVeryHard,Very Hard,매우 어려운,v1.0.2_exe_only_gmst
+00099E0C,sLockLevelText,Lock Level,자물쇠 난이도,v1.0.2_exe_only_gmst
+00099A7D,sLockedContainer,Container is locked.  You need the key or a lockpick.,잠김. 열쇠나 락픽이 필요함.,v1.0.2_exe_only_gmst
+00099E37,sLook,Look,시점,v1.0.2_exe_only_gmst
+00099ED0,sLow,Low,낮음,v1.0.2_exe_only_gmst
+000624E2,sLowSoul,Enchantment is too strong for this soul gem.,이 소울젬의 최대 마법부여 레벨을 초과했습니다.,v1.0.2_existing_gmst
+0005C449,sLuckDescription,YOU ARE USING WRONG GAMESETTING,운은 거의 모든 행동에 조금씩 영향을 줍니다.,v1.0.2_existing_gmst
+0009820E,sMagicAlreadyFull,"Because your Magicka is at maximum, the Welkynd Stone remains charged.",매지카가 최대치라 웰킨드 스톤의 힘이 소모되지 않았습니다.,v1.0.2_exe_only_gmst
+00099E0F,sMagicCastConstant,Apparel,의복,v1.0.2_exe_only_gmst
+00099E65,sMagicCastInsufficientMagicka,You don't have enough Magicka,매지카가 부족합니다.,v1.0.2_exe_only_gmst
+00099D8A,sMagicCastInsufficientSkill,Your Skill level is too low,스킬 수준이 낮습니다.,v1.0.2_exe_only_gmst
+00099E67,sMagicCastMultipleBoundEffects,You already have that kind of Bound Item,현재 바운드 아이템 사용 중입니다.,v1.0.2_exe_only_gmst
+00097671,sMagicCastOnce,Scroll,두루마리,v1.0.2_exe_only_gmst
+00099DE4,sMagicCastPowerUsed,You can only cast Powers once per day,하루에 한번만 시전할 수 있습니다.,v1.0.2_exe_only_gmst
+00099E8D,sMagicCastRangedUnderwater,You cannot cast ranged spells underwater,물속에서는 시전할 수 없습니다.,v1.0.2_exe_only_gmst
+00099DEA,sMagicCastSilenced,You are currently Silenced,지금은 마법을 사용할 수 없습니다.,v1.0.2_exe_only_gmst
+0009764F,sMagicCastWhenStrikes,Weapon,무기,v1.0.2_exe_only_gmst
+000977E5,sMagicCastWhenUsed,Staff,지팡이,v1.0.2_exe_only_gmst
+00098816,sMagicCostliestEffectRequires,Requires ,요구사항: ,v1.0.2_exe_only_gmst
+00097C82,sMagicCostliestEffectSkillOf, Skill of, 스킬 ,v1.0.2_exe_only_gmst
+00067C4F,sMagicDescription,"Allows you to progress more quickly in these skills as you use them: Alchemy, Alteration, Conjuration, Destruction, Illusion, Mysticism, Restoration.","사용할수록 더 빠르게 향상되는 기술: 연금술, 변화마법, 소환마법, 파괴마법, 환영마법, 신비마법, 회복마법.",v1.0.2_existing_gmst
+00098EAF,sMagicEffectItemAbsorb,Absorb,흡수:,v1.0.2_exe_only_gmst
+000987FB,sMagicEffectItemCreateLock,Create,제작,v1.0.2_exe_only_gmst
+00099E6F,sMagicEffectItemDamage,Damage,손상:,v1.0.2_exe_only_gmst
+00099ED6,sMagicEffectItemDrain,Drain,감소:,v1.0.2_exe_only_gmst
+00099D81,sMagicEffectItemFeet,ft,피트,v1.0.2_exe_only_gmst
+00097664,sMagicEffectItemFor,for,대상,v1.0.2_exe_only_gmst
+00099EDC,sMagicEffectItemFortify,Fortify,강화:,v1.0.2_exe_only_gmst
+00099E71,sMagicEffectItemIn,in,동안,v1.0.2_exe_only_gmst
+00097A09,sMagicEffectItemLock,Lock,자물쇠,v1.0.2_exe_only_gmst
+0009881A,sMagicEffectItemOn,on,에,v1.0.2_exe_only_gmst
+01000957,sMagicEffectItemPointsPlural,pts,점,v1.0.2_exe_only_gmst
+01000958,sMagicEffectItemPointsSingular,pt,점,v1.0.2_exe_only_gmst
+00097E0A,sMagicEffectItemRestore,Restore,회복:,v1.0.2_exe_only_gmst
+0100095A,sMagicEffectItemSecondsPlural,secs,초,v1.0.2_exe_only_gmst
+0100095B,sMagicEffectItemSecondsSingular,sec,초,v1.0.2_exe_only_gmst
+00097A45,sMagicEffectItemUpToLevel,up to level,상승: 레벨,v1.0.2_exe_only_gmst
+00099E07,sMagicEffectResisted,effect resisted,효과가 저지되었습니다,v1.0.2_exe_only_gmst
+000987FA,sMagicName,Magic,마법,v1.0.2_exe_only_gmst
+00099D74,sMagicProjectileTypeBall,Ball,구체,v1.0.2_exe_only_gmst
+00099D93,sMagicProjectileTypeBolt,Bolt,화살,v1.0.2_exe_only_gmst
+00099D96,sMagicProjectileTypeFog,Fog,안개,v1.0.2_exe_only_gmst
+00099F1C,sMagicProjectileTypeSpray,Spray,분사,v1.0.2_exe_only_gmst
+00099166,sMagicRangeSelf,Self,셀프,v1.0.2_exe_only_gmst
+00099E46,sMagicRangeStrike,Strike,타격,v1.0.2_exe_only_gmst
+00099DC1,sMagicRangeTarget,Target,대상,v1.0.2_exe_only_gmst
+00098EAE,sMagicRangeTouch,Touch,터치,v1.0.2_exe_only_gmst
+00099DC8,sMagicSchool,Magic School,마법 학교,v1.0.2_exe_only_gmst
+00099EF1,sMagicSchoolAlteration,Alteration,변이마법,v1.0.2_exe_only_gmst
+01000968,sMagicSchoolAlteration,"Alteration
+","변이마법
+",v1.0.2_exe_only_gmst
+00099DAD,sMagicSchoolConjuration,Conjuration,소환마법,v1.0.2_exe_only_gmst
+01000969,sMagicSchoolConjuration,"Conjuration
+","소환마법
+",v1.0.2_exe_only_gmst
+0100096A,sMagicSchoolDestruction,Destruction,파괴마법,v1.0.2_exe_only_gmst
+0100096B,sMagicSchoolIllusion,Illusion,환영마법,v1.0.2_exe_only_gmst
+00098874,sMagicSchoolMysticism,Mysticism,신비마법,v1.0.2_exe_only_gmst
+00099386,sMagicSchoolRestoration,Restoration,회복마법,v1.0.2_exe_only_gmst
+00099D9B,sMagicTypeAbility,Ability,효과,v1.0.2_exe_only_gmst
+000999CA,sMagicTypeDisease,Disease,질병,v1.0.2_exe_only_gmst
+000979F2,sMagicTypeEnchantment,Enchantment,마법부여,v1.0.2_exe_only_gmst
+00099DF5,sMagicTypeLesserPower,Lesser Power,하급 능력,v1.0.2_exe_only_gmst
+01000972,sMagicTypePoison,Poison,독,v1.0.2_exe_only_gmst
+00099F06,sMagicTypePower,Power,능력,v1.0.2_exe_only_gmst
+00099D94,sMagicTypeSpell,Spell,주문,v1.0.2_exe_only_gmst
+00099E2E,sMagicTypeWortcraft,Wortcraft,약초술,v1.0.2_exe_only_gmst
+00099EDA,sMagnitudeIsLevelText,Target Level,대상 레벨,v1.0.2_exe_only_gmst
+01000978,sMagnitudeText,Magnitude,강도,v1.0.2_exe_only_gmst
+00099E91,sMain,Main,메인,v1.0.2_exe_only_gmst
+00099ED5,sMainMenu,Main Menu,메인 메뉴,v1.0.2_exe_only_gmst
+000CD599,sMajorSkills,Choose your 7 major skills. You will start at 25 (Apprentice Level) in each one.,주요 기술 7개를 선택하십시오. 각각 25(수습생)로 시작합니다.,v1.0.2_existing_gmst
+00099E1D,sMakeDefaults,Make these your default settings?,이 설정을 기본값으로 지정하시겠습니까?,v1.0.2_exe_only_gmst
+00097651,sMale,Male,남성,v1.0.2_exe_only_gmst
+00099EFA,sMapMarkerAdded,Map marker added.,지도 표시가 추가되었습니다.,v1.0.2_exe_only_gmst
+00099160,sMapMarkerNotFound,You have not found this location yet.,이 장소는 아직 찾지 못 했습니다.,v1.0.2_exe_only_gmst
+00099EDF,sMaxPotionsExceeded,You cannot drink any more potions right now.,지금은 더 이상의 약물을 먹지 못합니다.,v1.0.2_exe_only_gmst
+00097A1B,sMeditate,You should rest and meditate on what you've learned.,휴식과 명상을 통해 배운 것을 습득합니다.,v1.0.2_exe_only_gmst
+000999CB,sMedium,Medium,중간,v1.0.2_exe_only_gmst
+0009881F,sMenuDisplayAutosaveName,Autosave,자동 저장,v1.0.2_exe_only_gmst
+00099E79,sMenuDisplayDayString,Day,날짜,v1.0.2_exe_only_gmst
+00099D72,sMenuDisplayLevelString,Level,레벨,v1.0.2_exe_only_gmst
+00099D7A,sMenuDisplayNewSave,New Save,새로운 저장내용,v1.0.2_exe_only_gmst
+00098EB2,sMenuDisplayNoSaves,No saved games.,저장된 게임이 없습니다.,v1.0.2_exe_only_gmst
+00099EB0,sMenuDisplayPlayTime,Play Time,플레이 시간,v1.0.2_exe_only_gmst
+00097658,sMenuDisplayQuicksaveName,QuickSave,빠른 저장,v1.0.2_exe_only_gmst
+00099EFE,sMenuDisplaySave,Save,저장,v1.0.2_exe_only_gmst
+00099F1B,sMenuDisplayShortXBoxSaveMessage,Saving...,저장 중...,v1.0.2_exe_only_gmst
+00098EB1,sMenuDisplayUnknownLocationString,Unknown Location,알 수 없는 장소,v1.0.2_exe_only_gmst
+00099E8B,sMenuDisplayXBoxSaveMessage,Saving content. Please don't turn off your console.,저장 중입니다. 전원을 종료하지 마세요.,v1.0.2_exe_only_gmst
+00099EB8,sMerchantNoGold,Merchant does not have enough gold.,상인이 충분한 골드를 가지고 있지 않습니다.,v1.0.2_exe_only_gmst
+00098849,sMiscActiveQuests,Active Quests:,진행중인 퀘스트: ,v1.0.2_exe_only_gmst
+00099E22,sMiscApprenticeSkills,Apprentice Skills:,초급자 스킬: ,v1.0.2_exe_only_gmst
+00097A19,sMiscArtifactsFound,Artifacts Found:,발견한 유물:,v1.0.2_exe_only_gmst
+00099E9B,sMiscBounty,Bounty:,현상금:,v1.0.2_exe_only_gmst
+00099EA1,sMiscCharge,Charge,용량,v1.0.2_exe_only_gmst
+000987F0,sMiscConstantEffect,Constant Effect,지속적인 효과,v1.0.2_exe_only_gmst
+00098818,sMiscDaysAsAVampire,Days as a Vampire:,뱀파이어로 지낸 기간: ,v1.0.2_exe_only_gmst
+00098833,sMiscDaysJailed,Days Jailed:,수감 일수: ,v1.0.2_exe_only_gmst
+00099EEE,sMiscDiseasesContracted,Diseases Contracted:,감염: ,v1.0.2_exe_only_gmst
+00099E0D,sMiscExpertSkills,Expert Skills:,전문가 스킬: ,v1.0.2_exe_only_gmst
+00099E77,sMiscFame,Fame:,명성:,v1.0.2_exe_only_gmst
+00099B40,sMiscGameDaysPlayed,Days Passed:,진행한 일수:,v1.0.2_exe_only_gmst
+00099E48,sMiscHighLockLevel,Highest Lock Level Picked:,열었던 최고수준의 잠김 상태: ,v1.0.2_exe_only_gmst
+00099E92,sMiscHorsesOwned,Horses Owned:,소유한 말: ,v1.0.2_exe_only_gmst
+00099DDD,sMiscHoursSlept,Hours Slept:,잠잔 시간: ,v1.0.2_exe_only_gmst
+000976FC,sMiscHoursWaited,Hours Waited:,대기한 시간: ,v1.0.2_exe_only_gmst
+00099DCC,sMiscHousesOwned,Houses Owned:,소유한 집: ,v1.0.2_exe_only_gmst
+00099E53,sMiscInfamy,Infamy:,악명:,v1.0.2_exe_only_gmst
+000976A6,sMiscIngredientsEaten,Ingredients Eaten:,섭취한 재료: ,v1.0.2_exe_only_gmst
+000999E9,sMiscJokesTold,Jokes Told:,농담한 횟수:,v1.0.2_exe_only_gmst
+00099385,sMiscJourneymanSkills,Journeyman Skills:,숙련자 스킬: ,v1.0.2_exe_only_gmst
+00099E73,sMiscLargestBounty,Largest Bounty:,최대 현상금: ,v1.0.2_exe_only_gmst
+00099DFC,sMiscMasterSkills,Master Skills:,마스터 스킬: ,v1.0.2_exe_only_gmst
+00099ECD,sMiscNirnrootsFound,Nirnroots Found:,발견된 넌루트: ,v1.0.2_exe_only_gmst
+00099F0D,sMiscNoviceSkills,Novice Skills:,초보자 스킬: ,v1.0.2_exe_only_gmst
+00099B3C,sMiscNumAssaults,Assaults:,습격: ,v1.0.2_exe_only_gmst
+00098815,sMiscNumBooksRead,Books Read:,읽은 책: ,v1.0.2_exe_only_gmst
+00099E00,sMiscNumHorsesStolen,Horses Stolen:,훔친 말: ,v1.0.2_exe_only_gmst
+00099DE3,sMiscNumKills,Creatures Killed:,죽인 크리쳐: ,v1.0.2_exe_only_gmst
+0009831F,sMiscNumLocksPicked,Locks Picked:,열린 자물쇠: ,v1.0.2_exe_only_gmst
+00099EE4,sMiscNumMurders,Murders:,살인: ,v1.0.2_exe_only_gmst
+00099EF9,sMiscNumPersonKills,People Killed:,죽인 인간: ,v1.0.2_exe_only_gmst
+00099D34,sMiscNumPicksBroken,Lockpicks Broken:,부순 락픽: ,v1.0.2_exe_only_gmst
+000CD2D5,sMiscNumPlacesDiscovered,Places Found: ,발견한 장소:,v1.0.2_existing_gmst
+00099B32,sMiscNumPocketsPicked,Items Pickpocketed:,소매치기한 아이템: ,v1.0.2_exe_only_gmst
+00099E96,sMiscNumSkillBooksRead,Skill Books Read:,읽은 스킬 책: ,v1.0.2_exe_only_gmst
+00099E35,sMiscNumThefts,Items Stolen:,훔친 아이템: ,v1.0.2_exe_only_gmst
+00099D9F,sMiscNumTrespasses,Trespasses:,침입: ,v1.0.2_exe_only_gmst
+0009820D,sMiscOblivionGatesShut,Oblivion Gates Shut:,닫은 오블리비언 게이트: ,v1.0.2_exe_only_gmst
+00099E58,sMiscPeopleFedOn,Necks Bitten:,흡혈 횟수:,v1.0.2_exe_only_gmst
+00097672,sMiscPlayerDeadLoadOption,Reload,다시 불러오기,v1.0.2_exe_only_gmst
+00099D6B,sMiscPlayerDeadMenuOption,Main Menu,메인 메뉴,v1.0.2_exe_only_gmst
+00097A42,sMiscPlayerDeadMessage,Reload the current save game?,현재 저장된 게임을 리로드 하시겠습니까?,v1.0.2_exe_only_gmst
+00099DC7,sMiscPotionsMade,Potions Made:,포션 제조: ,v1.0.2_exe_only_gmst
+00099F33,sMiscQuestsCompleted,Quests Completed:,완료한 퀘스트: ,v1.0.2_exe_only_gmst
+00045D2F,sMiscSEBounty,Shivering Isles Bounty:,쉬버링 아일즈 현상금:,v1.0.2_existing_gmst
+00098E29,sMiscSkillAdvances,Skill Increases:,스킬 증가치: ,v1.0.2_exe_only_gmst
+00098858,sMiscSoulsTrapped,Souls Trapped:,포획한 영혼:,v1.0.2_exe_only_gmst
+00099E7E,sMiscStoresInvestedIn,Stores Invested In:,투자한 상점: ,v1.0.2_exe_only_gmst
+00099D7B,sMiscTimesCured,Times Cured:,치료 횟수:,v1.0.2_exe_only_gmst
+00099EFF,sMiscTrainingSessions,Training Sessions:,훈련 세션: ,v1.0.2_exe_only_gmst
+000984B4,sMiscUnknownEffect,(Unknown Effect),(알 수 없는 효과),v1.0.2_exe_only_gmst
+00098E13,sMiscUses,Uses,사용 횟수,v1.0.2_exe_only_gmst
+0009820C,sMissingName,<Missing Name>,<이름 없음>,v1.0.2_exe_only_gmst
+00099D86,sMissingSpellName,You must first enter a valid name for this spell.,이 주문에 특수한 이름을 주어야 합니다.,v1.0.2_exe_only_gmst
+00099F43,sMonthEveningStar,Evening Star,12월,v1.0.2_exe_only_gmst
+00097650,sMonthFirstSeed,First Seed,3월,v1.0.2_exe_only_gmst
+00099EAE,sMonthFrostFall,Frost Fall,10월,v1.0.2_exe_only_gmst
+000C4260,sMonthHeartFire,Heartfire,하트파이어,v1.0.2_existing_gmst
+00099DF0,sMonthLastSeed,Last Seed,8월,v1.0.2_exe_only_gmst
+000C4262,sMonthMidYear,Mid-Year,한여름,v1.0.2_existing_gmst
+00099E38,sMonthMorningStar,Morning Star,1월,v1.0.2_exe_only_gmst
+000C4261,sMonthRainsHand,Rain's Hand,비의 손,v1.0.2_existing_gmst
+00097656,sMonthSecondSeed,Second Seed,5월,v1.0.2_exe_only_gmst
+00099EE3,sMonthSunsDawn,Sun's Dawn,2월,v1.0.2_exe_only_gmst
+00099ED7,sMonthSunsDusk,Sun's Dusk,11월,v1.0.2_exe_only_gmst
+00098802,sMonthSunsHeight,Sun's Height,7월,v1.0.2_exe_only_gmst
+00099DF6,sMouseLeftButton,L-Button,왼쪽 버튼,v1.0.2_exe_only_gmst
+00099DE2,sMouseMiddleButton,Wheel,휠,v1.0.2_exe_only_gmst
+00099E7A,sMouseRightButton,R-Button,오른쪽 버튼,v1.0.2_exe_only_gmst
+000987F7,sMouth,Mouth,입,v1.0.2_exe_only_gmst
+00098884,sMouthChin,Mouth-Chin distance short/long,턱끝과 입사이 거리,v1.0.2_exe_only_gmst
+00097D3F,sMouthLips,Mouth(Lips),입(입술),v1.0.2_exe_only_gmst
+000987EA,sMouthdrawn,Mouth drawn/pursed,입의 오무려진 정도,v1.0.2_exe_only_gmst
+00099DB8,sMouthhappy,Mouth happy/sad,입모양의 미소 정도,v1.0.2_exe_only_gmst
+00099EF4,sMouthhigh,Mouth high/low,입의 높/낮이,v1.0.2_exe_only_gmst
+0009766D,sMouthlipsdeflated,Mouth lips deflated/inflated,입술의 부푼 정도,v1.0.2_exe_only_gmst
+00099ECA,sMouthlipslarge,Mouth lips large/small,입술 크기,v1.0.2_exe_only_gmst
+00099D9D,sMouthlipspuckered,Mouth lips puckered/retracted,입술의 오므린 정도,v1.0.2_exe_only_gmst
+00099DD6,sMouthprotruding,Mouth protruding/retracted,입술의 나온 정도,v1.0.2_exe_only_gmst
+00099E87,sMouthtilt,Mouth tilt up/down,입의 기울기,v1.0.2_exe_only_gmst
+00099DEE,sMouthunderbite,Mouth underbite/overbite,앞니의 돌출 정도,v1.0.2_exe_only_gmst
+00099ECF,sMove,Move,이동,v1.0.2_exe_only_gmst
+000977ED,sMoveMarker,Move It,옮기기,v1.0.2_exe_only_gmst
+00099D79,sMoveMarkerQuestion,Do you want to move your marker or remove it?,당신의 마커를 옮기거나 제거하기를 원하십니까?,v1.0.2_exe_only_gmst
+000987ED,sMustRestart,You must exit and restart Oblivion for changes in this setting to take effect.,이 설정을 적용하려면 오블리비언을 종료한 뒤 다시 시작해야 합니다.,v1.0.2_exe_only_gmst
+00097679,sNamePotion,Name Potion,포션 이름,v1.0.2_exe_only_gmst
+00099DFB,sNares,Nares small/large,콧구멍 범위,v1.0.2_exe_only_gmst
+00098403,sNasolabiallines,Naso labial lines light/dark,코 주위의 밝기,v1.0.2_exe_only_gmst
+00099D6E,sNewGame,New Game,새 게임,v1.0.2_exe_only_gmst
+00099E13,sNo,No,아니요,v1.0.2_exe_only_gmst
+00099DAB,sNoCharge,The enchanted item does not have enough charge.,마법이 부여된 장비의 충전량이 없습니다.,v1.0.2_exe_only_gmst
+00099F2D,sNoDevice,No active devices were detected,활성화된 장치를 찾지 못했습니다,v1.0.2_exe_only_gmst
+00099EEF,sNoDeviceSelected,"You have not selected a storage device.  You will need to select one before you can save.  Until then, Autosave is disabled.",저장 장치를 선택하지 않았습니다. 저장하려면 먼저 장치를 선택해야 합니다. 그때까지 자동 저장은 비활성화됩니다.,v1.0.2_exe_only_gmst
+000987F5,sNoEatQuestItem,You can not eat quest items.,퀘스트 아이템은 먹을 수 없습니다.,v1.0.2_exe_only_gmst
+000987F1,sNoFX,You need to add at least one effect in order to create an enchantment.,마법부여를 만들려면 효과를 하나 이상 추가해야 합니다.,v1.0.2_exe_only_gmst
+00099E60,sNoFastTravelAlarm,You cannot fast travel while guards are pursuing you.,가드가 추격 중일 경우에는 빠른 여행을 할 수 없습니다.,v1.0.2_exe_only_gmst
+00097867,sNoFastTravelCell,You cannot fast travel from this location.,이 지역에서는 빠른 여행을 할 수 없습니다.,v1.0.2_exe_only_gmst
+000CA0F6,sNoFastTravelCombat,You cannot fast travel with enemies nearby.,주변에 적이 있어 빠른 이동을 할 수 없습니다.,v1.0.2_existing_gmst
+000624E3,sNoFastTravelScriptBlock,Fast travel is currently unavailable from this location.,현재 위치에서는 빠른 이동을 시도할 수 없습니다.,v1.0.2_existing_gmst
+00037E88,sNoHammer,You need more hammers.,수리 망치가 더 필요합니다.,v1.0.2_existing_gmst
+00099DE9,sNoItem,You must first select an item to enchant.,먼저 마법부여할 아이템을 선택해야 합니다.,v1.0.2_exe_only_gmst
+00097951,sNoItemsToRecharge,You have no items that need to be recharged.,충전이 필요한 아이템이 없습니다.,v1.0.2_exe_only_gmst
+00099EC1,sNoJumpWarning,You can not drop objects while in the air.,공중에 있을 때에는 물건들을 내려놓을 수 없습니다.,v1.0.2_exe_only_gmst
+00037E89,sNoLockPick,You have no lockpicks.,문이 잠겨 있고 열쇠나 자물쇠 따개가 없습니다.,v1.0.2_existing_gmst
+00099EC7,sNoLockPickIfCrimeAlert,You can't pick a lock while being pursued by guards.,가드가 추격 중일 경우에는 자물쇠를 딸 수 없습니다.,v1.0.2_exe_only_gmst
+00037E8A,sNoLockPickKey,You need a lockpick or the key.,문이 잠겨 있고 열쇠나 자물쇠 따개가 없습니다.,v1.0.2_existing_gmst
+000987EF,sNoMoreFollowers,You have too many followers.,동료가 너무 많습니다.,v1.0.2_exe_only_gmst
+00037E8B,sNoMortor,You need a Mortar and Pestle to make potions.,포션을 만들려면 막자사발과 막자가 필요합니다.,v1.0.2_existing_gmst
+00099E5D,sNoName,ou must first enter a valid name for this enchantment.,이 인챈트물에는 특수한 이름을 주어야 합니다.,v1.0.2_exe_only_gmst
+00099E9F,sNoNameCharacter,You must first enter a valid name.,사용할 이름을 입력해야 합니다.,v1.0.2_exe_only_gmst
+00098E28,sNoPickPocketAgain, has already caught you., 은(는) 이미 당신을 파악하고 있습니다.,v1.0.2_exe_only_gmst
+00099DD8,sNoProfileSelected,"You have not signed in to a Gamer Profile.  You will need to sign in to a Gamer Profile and then select a storage device before you can save.  Until then, Autosave is disabled.",게이머 프로필에 로그인하지 않았습니다. 저장하려면 프로필에 로그인한 뒤 저장 장치를 선택해야 합니다. 그때까지 자동 저장은 비활성화됩니다.,v1.0.2_exe_only_gmst
+00099B43,sNoRace,NO RACE,종족 없음,v1.0.2_exe_only_gmst
+00098801,sNoRepairMagic,Only a journeyman armorer or higher may repair magic items.,오로지 숙련된 제련술사 이상만이 마법아이템을 수리할 수 있습니다.,v1.0.2_exe_only_gmst
+00098814,sNoRestart,"No, keep playing.","아니요, 계속 플레이합니다.",v1.0.2_exe_only_gmst
+00099F0E,sNoSitOnOwnedFurniture,You cannot sit on owned furniture.,소유하지 않은 의자에 앉을 수 없습니다.,v1.0.2_exe_only_gmst
+0006C16D,sNoSleepCombat,You cannot sleep with enemies nearby.,주변에 적이 있어 잠을 잘 수 없습니다.,v1.0.2_existing_gmst
+0006C16E,sNoSleepHostilActorsNear,You cannot sleep with enemies nearby.,주변에 적이 있어 잠을 잘 수 없습니다.,v1.0.2_existing_gmst
+000CD598,sNoSleepInOwnedBed,You cannot sleep in an owned bed.,다른 사람의 침대에서는 잘 수 없습니다.,v1.0.2_existing_gmst
+00098808,sNoSleepTrespass,You cannot sleep while trespassing.,타인의 집을 침입하는 동안은 잘 수 없습니다.,v1.0.2_exe_only_gmst
+000624E4,sNoSoul,You need to select a Soul Gem filled with a soul to enchant an object.,물건에 마법부여를 하려면 영혼이 담긴 소울젬을 선택해야 합니다.,v1.0.2_existing_gmst
+00037E8C,sNoSoulGem,You need a Soul Gem.,재충전하려면 소울젬이 필요합니다.,v1.0.2_existing_gmst
+000624E5,sNoSoulInGem,This Soul Gem is empty. You can only equip a Soul Gem that has a soul in it.,이 소울 젬은 비어 있습니다. 영혼이 담긴 소울 젬만 장착할 수 있습니다.,v1.0.2_existing_gmst
+000CD593,sNoTalkFleeing,is fleeing.,도망치는 중입니다.,v1.0.2_existing_gmst
+00099EBA,sNoTalkUnConscious, is unconscious.,가(이) 기절하였습니다. ,v1.0.2_exe_only_gmst
+00098810,sNoText,No,아니요,v1.0.2_exe_only_gmst
+0006C16F,sNoWaitHostilActorsNear,You cannot wait when enemies are nearby.,주변에 적이 있어 대기할 수 없습니다.,v1.0.2_existing_gmst
+000992B6,sNoWaitInAir,You cannot wait while in the air.,공중에 떠있는 상태로 대기할 수 없습니다.,v1.0.2_exe_only_gmst
+00099DDC,sNoWaitInCell,You cannot wait in this location.,현재 위치에선 대기할 수 없습니다.,v1.0.2_exe_only_gmst
+000C01AB,sNoWaitInCombat,You cannot wait when enemies are nearby.,주변에 적이 있어 대기할 수 없습니다.,v1.0.2_existing_gmst
+00099E8E,sNoWaitInJail,You must sleep in a jail bed in order to serve your sentence.,형기를 치르려면 감옥 침대에서 잠을 자야 합니다.,v1.0.2_exe_only_gmst
+00099E4C,sNoWaitTrespass,You cannot wait while trespassing.,타인의 집을 침입하는 동안은 대기할 수 없습니다.,v1.0.2_exe_only_gmst
+0006C170,sNoWaitUnderWater,You cannot wait while underwater.,물속에서는 대기할 수 없습니다.,v1.0.2_existing_gmst
+000624E6,sNoWaitWhileAlarmSounding,You cannot wait while guards are coming.,여기서 기다릴 수 없습니다. 당신의 이름이 들리는 경보가 울리고 있습니다.,v1.0.2_existing_gmst
+00099EAC,sNone,None,없음,v1.0.2_exe_only_gmst
+00099D80,sNormalWeaponsResisted,Your attack has no effect.,공격의 효과가 없습니다.,v1.0.2_exe_only_gmst
+0009880A,sNose,Nose,코,v1.0.2_exe_only_gmst
+00099DA3,sNoseTex,Nose shades,코 음영,v1.0.2_exe_only_gmst
+00099E74,sNosebridgeshallow,Nose sellion lower shallow/deep,콧날의 깊이,v1.0.2_exe_only_gmst
+0009872E,sNosebridgeshort,Nose bridge short/long,콧날의 길이,v1.0.2_exe_only_gmst
+00098826,sNosedown,Nose down/up,코의 높/낮이,v1.0.2_exe_only_gmst
+00099DCE,sNoseflat,Nose flat/pointed,코의 평평한 정도,v1.0.2_exe_only_gmst
+00099DCB,sNosenostrilssmall,Nose nostrils small/large,콧구멍의 크기,v1.0.2_exe_only_gmst
+00099EC9,sNosenostrilswide,Nose nostrils wide/thin,콧구멍의 넓이,v1.0.2_exe_only_gmst
+0009883B,sNosenostriltilt,Nose nostril tilt down/up,콧구멍의 기울기,v1.0.2_exe_only_gmst
+00099693,sNoseregion,Nose region concave/convex,코 부위의 오목한 정도,v1.0.2_exe_only_gmst
+0009880D,sNoseselliondown,Nose sellion down/up,미간의 높/낮이,v1.0.2_exe_only_gmst
+00099E86,sNosesellionlower,Nose sellion lower shallow/deep,미간 아랫쪽의 깊이,v1.0.2_exe_only_gmst
+00099DB5,sNosesellionshallow,Nose sellion shallow/deep,미간의 깊이,v1.0.2_exe_only_gmst
+00099F23,sNosesellionthin,Nose sellion thin/wide,미간의 넓이,v1.0.2_exe_only_gmst
+000987F6,sNoseshort,Nose short/long,코의 길이,v1.0.2_exe_only_gmst
+00099F24,sNosetilt,Nose tilt down/up,코의 기울기,v1.0.2_exe_only_gmst
+000987F8,sNotEnoughGold,You do not have enough gold.,골드가 부족합니다.,v1.0.2_exe_only_gmst
+000984B5,sNotEnoughRoomWarning,You do not have enough room to drop this object.,이 물건을 떨어뜨릴 공간이 부족합니다.,v1.0.2_exe_only_gmst
+00097EB4,sNoviceSkillLevelText,You have a basic understanding of this skill.,이 기술의 기초를 습득하였습니다.,v1.0.2_exe_only_gmst
+01000A30,sOKText,Ok,확인,v1.0.2_exe_only_gmst
+01000A2B,sOblivionCaps,OBLIVION,OBLIVION,v1.0.2_exe_only_gmst
+01000A2C,sOff,Off,끄기,v1.0.2_exe_only_gmst
+00097A5D,sOffButtonText,Off,끄기,v1.0.2_exe_only_gmst
+00099F26,sOfferRefused,Offer refused,거래 거절,v1.0.2_exe_only_gmst
+00099E5C,sOk,Ok,확인,v1.0.2_exe_only_gmst
+00097680,sOldDownloadsAvailable,View Available Content,사용 가능한 콘텐츠 보기,v1.0.2_exe_only_gmst
+00099E55,sOnButtonText,On,켜기,v1.0.2_exe_only_gmst
+0006C171,sOpenWithKey,Door opened with ,문을 연 열쇠:,v1.0.2_existing_gmst
+00099E49,sOpenedContainer,Opened the container with a key.,열쇠로 보관함을 열었습니다.,v1.0.2_exe_only_gmst
+00098813,sOutOfLockpicks,You have run out of lockpicks.,락픽을 다 소모했습니다.,v1.0.2_exe_only_gmst
+00185E30,sOverEncumbered,You are over-encumbered.,소지 한도를 초과했습니다.,v1.0.2_existing_gmst
+00099B97,sPCControlsTextNone,assign a button in the Controls menu,조작 설정에서 버튼을 지정하십시오,v1.0.2_exe_only_gmst
+00098318,sPCControlsTextPrefix,push,누르기,v1.0.2_exe_only_gmst
+01000A37,sPauseText,"Pause
+","일시 정지
+",v1.0.2_exe_only_gmst
+0005C44A,sPersonalityDescription,YOU ARE USING WRONG GAMESETTING,매력은 다른 이들이 당신을 대하는 태도에 영향을 줍니다.,v1.0.2_existing_gmst
+00099EB9,sPickpocket,Pickpocket,소매치기,v1.0.2_exe_only_gmst
+00099F37,sPlayer,player,플레이어,v1.0.2_exe_only_gmst
+0006C172,sPlayerLeavingBorderRegion,You cannot go that way. Turn back.,그쪽으로 갈 수 없습니다. 돌아가십시오.,v1.0.2_existing_gmst
+01000A3E,sPlural,(s),,v1.0.2_exe_only_gmst
+00099EFC,sPoisonAlreadyPoisonedMessage,The current weapon is already poisoned.,현재 무기는 이미 독이 발려져 있습니다.,v1.0.2_exe_only_gmst
+00099699,sPoisonBowConfirmMessage,Do you want to poison your next shot with the,독화살공격을 위해 다음 활에 독을 바르시겠습니까? ,v1.0.2_exe_only_gmst
+00099DAC,sPoisonConfirmMessage,Do you want to poison the,다음 무기에 독을 바르시겠습니까? ,v1.0.2_exe_only_gmst
+00099E83,sPoisonNoWeaponMessage,You must first equip a weapon to poison it.,무기에 독을 바르려면 먼저 무기를 장착해야 합니다.,v1.0.2_exe_only_gmst
+0009766A,sPoisonStaffsNotAllowedMessage,Staffs cannot be poisoned.,지팡이에는 독을 바를 수 없습니다.,v1.0.2_exe_only_gmst
+01000A44,sPotion,potion,물약,v1.0.2_exe_only_gmst
+00099E5F,sPotionFailed,Your potion failed and your ingredients were lost,물약 제조에 실패하여 재료를 잃었습니다,v1.0.2_exe_only_gmst
+00098806,sPotionSucceded,You have created a new potion,새로운 포션을 창조하였습니다.,v1.0.2_exe_only_gmst
+00099B9B,sQuestAddedText,Quest added,새로운 퀘스트가 추가되었습니다.,v1.0.2_exe_only_gmst
+00099DBE,sQuestCompletedText,Quest completed,현재 진행중인 퀘스트가 완료되었습니다.,v1.0.2_exe_only_gmst
+0009794B,sQuestUpdatedText,Quest updated,퀘스트가 갱신되었습니다.,v1.0.2_exe_only_gmst
+00099EBE,sQuickKeyCantEquipBound,Cannot quick key bound item.,소환된 아이템은 단축키에 지정할 수 없습니다.,v1.0.2_exe_only_gmst
+00099D73,sQuickKeyConsumed,consumed.,사용되었습니다.,v1.0.2_exe_only_gmst
+00099F2E,sQuickKeySelectedString,equipped.,을(를) 장착했습니다.,v1.0.2_exe_only_gmst
+000992B7,sQuickKeyString,Hotkey,단축키,v1.0.2_exe_only_gmst
+00099EC3,sQuickKeyUnSelectedString,unequipped.,착용 해제.,v1.0.2_exe_only_gmst
+00099ED2,sQuickKeyUsedString,used.,을(를) 사용했습니다.,v1.0.2_exe_only_gmst
+00099DBB,sQuickLoading,Quickloading...,로딩 중...,v1.0.2_exe_only_gmst
+00099F31,sQuickSaving,Quicksaving...,저장 중...,v1.0.2_exe_only_gmst
+000999C6,sQuitPastMainMenu,Are you sure you want to exit the game?  All unsaved progress will be lost.,게임을 종료하시겠습니까? 저장하지 않은 진행 상황은 모두 사라집니다.,v1.0.2_exe_only_gmst
+01000A53,sRace,Race,종족,v1.0.2_exe_only_gmst
+00099DD3,sRaceDescription,Race Description,종족 설명,v1.0.2_exe_only_gmst
+00099164,sRandom,Random,랜덤,v1.0.2_exe_only_gmst
+00099B47,sRandomDoorTeleportFailureMessage,This door leads nowhere.,이 문은 어디로도 이어지지 않습니다.,v1.0.2_exe_only_gmst
+00099D98,sRandomizeFace,Randomize face?,얼굴모양을 랜덤하게 하시겠습니까?,v1.0.2_exe_only_gmst
+00099E25,sRangeText,Range,사거리,v1.0.2_exe_only_gmst
+00098861,sRed,Red,적색,v1.0.2_exe_only_gmst
+00097662,sRemoveMarker,Remove It,제거,v1.0.2_exe_only_gmst
+0009880E,sRepairAll,Repair all,모두 수리,v1.0.2_exe_only_gmst
+00099E43,sReplace,Replace,교체,v1.0.2_exe_only_gmst
+00099D78,sReset,Reset,초기화,v1.0.2_exe_only_gmst
+0009765F,sResetFace,Reset face?,얼굴모양을 초기화 하시겠습니까?,v1.0.2_exe_only_gmst
+00097663,sRestartBecauseContentRemoved,The game must restart now because downloaded content has been removed.,다운로드 한 컨텐츠가 제거되었기 때문에 지금 게임을 재 시작해야 합니다.,v1.0.2_exe_only_gmst
+00099DB4,sRestartToUseNewContent,New content has been added.  You will need to restart to use this content.  All unsaved progress will be lost.,새 콘텐츠가 추가되었습니다. 사용하려면 게임을 다시 시작해야 합니다. 저장하지 않은 진행 상황은 모두 사라집니다.,v1.0.2_exe_only_gmst
+000979EE,sRestartToUseProfileContent,"In order to use the downloaded content associated with this profile, you will need to restart.",이 프로필과 연결된 다운로드 콘텐츠를 사용하려면 게임을 다시 시작해야 합니다.,v1.0.2_exe_only_gmst
+00098583,sRetryText,Retry,재시도,v1.0.2_exe_only_gmst
+000C7959,sReturnToMainMenu,Return to the main menu?  Unsaved data will be lost.,메인 메뉴로 돌아가시겠습니까? 저장하지 않은 내용은 사라집니다.,v1.0.2_existing_gmst
+000984B6,sSaveFailed,Save failed.,저장 실패.,v1.0.2_exe_only_gmst
+00099D89,sSaveGameContentIsMissing,This save relies on content that is no longer present. Some objects may no longer be available. Continue Loading?,이 저장 파일이 사용하는 콘텐츠 일부가 더 이상 존재하지 않습니다. 일부 오브젝트를 사용할 수 없을 수 있습니다. 계속 불러오시겠습니까?,v1.0.2_exe_only_gmst
+0009767D,sSaveGameCorruptMenuMessage,The save game is corrupt and cannot be loaded.,저장된 게임이 손상되어서 로드 될 수 없습니다.,v1.0.2_exe_only_gmst
+00099E7C,sSaveGameDeviceError,There was an error accessing the device.  Please try again.,저장 장치를 사용할 수 없습니다. 다시 시도하세요.,v1.0.2_exe_only_gmst
+00099F05,sSaveGameIsCorrupt,The save game is corrupt.  Returning to game.,저장된 게임이 손상되었습니다. 게임으로 돌아갑니다.,v1.0.2_exe_only_gmst
+00099B98,sSaveGameNoLongerAvailable,The save game is no longer available.  Returning to game.,저장된 게임을 더 이상 이용할 수 없습니다. 게임으로 돌아갑니다.,v1.0.2_exe_only_gmst
+00099B35,sSaveGameNoMasterFilesFound,None of the master files used in this save game are loaded.  Returning to game.,이 저장 파일이 사용한 마스터 파일을 하나도 불러오지 못했습니다. 게임으로 돌아갑니다.,v1.0.2_exe_only_gmst
+00099DF9,sSaveGameOutOfDiskSpace,%s does not have sufficent disk space available.  Please select another device or delete some of your existing data.,%s에 사용 가능한 디스크 공간이 부족합니다. 다른 장치를 선택하거나 기존 데이터를 일부 삭제하세요.,v1.0.2_exe_only_gmst
+00099E51,sSaveNotAvailable,That save is no longer available.,그 세이브 파일은 더 이상 이용할 수 없습니다..,v1.0.2_exe_only_gmst
+00099D9A,sSaveOverSaveGame,Are you sure you want to overwrite this save game?,선택하신 게임을 덮어씌우시겠습니까?,v1.0.2_exe_only_gmst
+00099ED1,sSaveSuccessful,Save successful.,저장 성공.,v1.0.2_exe_only_gmst
+000983EF,sScrollEquipped,equipped, 을(를) 장착했습니다.,v1.0.2_exe_only_gmst
+00099D70,sSearch,Search,검색,v1.0.2_exe_only_gmst
+00099E7D,sSeasonFall,Fall,가을,v1.0.2_exe_only_gmst
+00099DD0,sSeasonSpring,Spring,봄,v1.0.2_exe_only_gmst
+00099E1F,sSeasonSummer,Summer,여름,v1.0.2_exe_only_gmst
+00099B3E,sSeasonWinter,Winter,겨울,v1.0.2_exe_only_gmst
+00097652,sSelfRange,Self,셀프,v1.0.2_exe_only_gmst
+00099DF7,sSell,Sell,판매 :,v1.0.2_exe_only_gmst
+00098805,sServeTimeQuestion,Do you just want to serve your time?,징역살이를 하겠습니까?,v1.0.2_exe_only_gmst
+000979E1,sSetMarkerQuestion,Do you want to set your marker?,표식을 설정하시겠습니까?,v1.0.2_exe_only_gmst
+00099E3D,sShape,Shape,모양,v1.0.2_exe_only_gmst
+00099F00,sSigilStoneCharge,Charge:,용량:,v1.0.2_exe_only_gmst
+00099DDE,sSigilStoneConstantEffect,Constant effect.,상시 효과.,v1.0.2_exe_only_gmst
+00098344,sSkillDecreased,skill decreased,스킬이 감소하였습니다.,v1.0.2_exe_only_gmst
+0009765A,sSkillDescAcrobatics,Acrobatics Description,곡예 설명,v1.0.2_exe_only_gmst
+00099E20,sSkillDescAlchemy,Alchemy Description,연금술 설명,v1.0.2_exe_only_gmst
+00099EC4,sSkillDescAlteration,Alteration Description,변이마법 설명,v1.0.2_exe_only_gmst
+00099E39,sSkillDescArmorer,Armorer Description,제련술 설명,v1.0.2_exe_only_gmst
+00099D7C,sSkillDescAthletics,Athletics Description,운동능력 설명,v1.0.2_exe_only_gmst
+000984B7,sSkillDescBlade,Blade Description,검술 설명,v1.0.2_exe_only_gmst
+00097A47,sSkillDescBlock,Block Description,방어 설명,v1.0.2_exe_only_gmst
+00099B41,sSkillDescBlunt,Blunt Description,둔기 설명,v1.0.2_exe_only_gmst
+00099DCD,sSkillDescConjuration,Conjuration Description,소환마법 설명,v1.0.2_exe_only_gmst
+00099D7E,sSkillDescDestruction,Destruction Description,파괴마법 설명,v1.0.2_exe_only_gmst
+00099D8B,sSkillDescHandToHand,Hand To Hand Description,격투 설명,v1.0.2_exe_only_gmst
+00099D7D,sSkillDescHeavyArmor,Heavy Armor Description,중무장 설명,v1.0.2_exe_only_gmst
+00099EEB,sSkillDescIllusion,Illusion Description,환영마법 설명,v1.0.2_exe_only_gmst
+00099DA0,sSkillDescLightArmor,Light Armor Description,경무장 설명,v1.0.2_exe_only_gmst
+00098321,sSkillDescMarksman,Marksman Description,궁술 설명,v1.0.2_exe_only_gmst
+000976AB,sSkillDescMercantile,Mercantile Description,상술 설명,v1.0.2_exe_only_gmst
+00097A54,sSkillDescMysticism,Mysticism Description,신비마법 설명,v1.0.2_exe_only_gmst
+00099E68,sSkillDescRestoration,Restoration Description,회복마법 설명,v1.0.2_exe_only_gmst
+000987EC,sSkillDescSecurity,Security Description,잠금해제 설명,v1.0.2_exe_only_gmst
+0009764D,sSkillDescSneak,Sneak Description,잠입술 설명,v1.0.2_exe_only_gmst
+00098812,sSkillDescSpeechcraft,Speechcraft Description,화술 설명,v1.0.2_exe_only_gmst
+00097C46,sSkillIncreased,skill increased,스킬이 향상되었습니다.,v1.0.2_exe_only_gmst
+00099F27,sSkillLevel,Level:,레벨: ,v1.0.2_exe_only_gmst
+00099EBB,sSkillLevelApprentice,Apprentice,초급자,v1.0.2_exe_only_gmst
+01000A94,sSkillLevelExpert,Expert,전문가,v1.0.2_exe_only_gmst
+00099F07,sSkillLevelJourneyman,Journeyman,숙련자,v1.0.2_exe_only_gmst
+00099E2C,sSkillLevelMaster,Master,마스터,v1.0.2_exe_only_gmst
+01000A97,sSkillLevelNovice,Novice,초보자,v1.0.2_exe_only_gmst
+00099DB3,sSkillLevelTooLow,Your skill level is not high enough to create this spell,이 주문을 시전하기엔 레벨이 낮습니다.,v1.0.2_exe_only_gmst
+00098343,sSkillNameAcrobatics,Acrobatics,곡예,v1.0.2_exe_only_gmst
+00098587,sSkillNameAlchemy,Alchemy,연금술,v1.0.2_exe_only_gmst
+00099F32,sSkillNameAlteration,Alteration,변이마법,v1.0.2_exe_only_gmst
+00099DE7,sSkillNameArmorer,Armorer,제련술,v1.0.2_exe_only_gmst
+00099D82,sSkillNameAthletics,Athletics,운동능력,v1.0.2_exe_only_gmst
+00097666,sSkillNameBlade,Blade,검술,v1.0.2_exe_only_gmst
+00099F38,sSkillNameBlock,Block,방어,v1.0.2_exe_only_gmst
+000987FF,sSkillNameBlunt,Blunt,둔기,v1.0.2_exe_only_gmst
+00099F17,sSkillNameConjuration,Conjuration,소환마법,v1.0.2_exe_only_gmst
+01000AA2,sSkillNameDestruction,Destruction,파괴마법,v1.0.2_exe_only_gmst
+00099DFA,sSkillNameHandToHand,Hand To Hand,격투,v1.0.2_exe_only_gmst
+00099DED,sSkillNameHeavyArmor,Heavy Armor,중갑옷,v1.0.2_exe_only_gmst
+01000AA5,sSkillNameIllusion,Illusion,환영마법,v1.0.2_exe_only_gmst
+00099E05,sSkillNameLightArmor,Light Armor,경갑옷,v1.0.2_exe_only_gmst
+00097A4B,sSkillNameMarksman,Marksman,궁술,v1.0.2_exe_only_gmst
+00098811,sSkillNameMercantile,Mercantile,상술,v1.0.2_exe_only_gmst
+00099E90,sSkillNameMysticism,Mysticism,신비마법,v1.0.2_exe_only_gmst
+00097A55,sSkillNameRestoration,Restoration,회복마법,v1.0.2_exe_only_gmst
+00098323,sSkillNameSecurity,Security,잠금해제,v1.0.2_exe_only_gmst
+00099ED3,sSkillNameSneak,Sneak,잠입술,v1.0.2_exe_only_gmst
+00099E14,sSkillNameSpeechcraft,Speechcraft,화술,v1.0.2_exe_only_gmst
+000987E8,sSkillText,skill of,필요 기술,v1.0.2_exe_only_gmst
+00099E24,sSkin,Skin,피부,v1.0.2_exe_only_gmst
+00099F2A,sSkinflushed,Skin flushed/pale,피부색의 창백함,v1.0.2_exe_only_gmst
+00097686,sSkinshade,Skin shade dark/light,그림자의 짙은 정도,v1.0.2_exe_only_gmst
+00099F22,sSkintintorange,Skin tint orange/blue,오랜지/푸른빛의 비율,v1.0.2_exe_only_gmst
+00097668,sSkintintpurple,Skin tint purple/yellow,자주빛/노란빛의 비율,v1.0.2_exe_only_gmst
+00099EDB,sSlotsFull,You have already made the maximum number of selections.,이미 선택할 수 있는 수량을 모두 선택했습니다.,v1.0.2_exe_only_gmst
+00099D95,sSmall,Small,작음,v1.0.2_exe_only_gmst
+01000AB6,sSort,"Sort
+","정렬
+",v1.0.2_exe_only_gmst
+00099ED4,sSoulCaptured,You have captured a soul!,영혼을 포획하였습니다!,v1.0.2_exe_only_gmst
+000C58CF,sSoulGemTooSmall,There is no Soul Gem in your inventory large enough to capture the soul.,이 영혼을 담을 만큼 큰 소울 젬이 없습니다.,v1.0.2_existing_gmst
+000996A9,sSoulLevelNameCommon,Common,숙련,v1.0.2_exe_only_gmst
+0009765E,sSoulLevelNameGrand,Grand,달인,v1.0.2_exe_only_gmst
+00099F03,sSoulLevelNameGreater,Greater,전문,v1.0.2_exe_only_gmst
+00099EF0,sSoulLevelNameLesser,Lesser,초급,v1.0.2_exe_only_gmst
+00099EA8,sSoulLevelNamePetty,Petty,입문,v1.0.2_exe_only_gmst
+01000ABF,sSpecNameCombat,Combat,전투,v1.0.2_exe_only_gmst
+00099389,sSpecNameMagic,Magic,마법,v1.0.2_exe_only_gmst
+00099E44,sSpecNameStealth,Stealth,은신,v1.0.2_exe_only_gmst
+000CD591,sSpecialization,Choose your Specialization. Specialized skills get +10 and increase faster.,전문 분야를 선택하십시오. 전문 기술은 +10을 받고 더 빨리 향상됩니다.,v1.0.2_existing_gmst
+00099E85,sSpeedDescription,Need a gamesetting description.,이동 속도와 전반적인 기동성에 영향을 줍니다.,v1.0.2_exe_only_gmst
+000984B0,sSpell,Spell,주문,v1.0.2_exe_only_gmst
+00099E5A,sSpellEffectiveness,Spell effectiveness,마법 효용,v1.0.2_exe_only_gmst
+00098880,sSpellmakingRequire,Requires,필요 조건,v1.0.2_exe_only_gmst
+00099F3F,sSpellmakingRequire2,skill of,필요 기술,v1.0.2_exe_only_gmst
+00099F3D,sSpellmakingSuccess,Congratulations!  You have created a new spell.,축하합니다! 당신은 새로운 주문(마법)을 만들었습니다.,v1.0.2_exe_only_gmst
+00098882,sStaff,Staff,지팡이,v1.0.2_exe_only_gmst
+00098809,sStartNewGame,Start new game?,게임을 새로 시작하시겠습니까?,v1.0.2_exe_only_gmst
+00099E75,sSteal,Steal,도둑질,v1.0.2_exe_only_gmst
+00099EF2,sStealHorse,Do you want to steal this horse?,말을 훔치겠습니까?,v1.0.2_exe_only_gmst
+00067C4E,sStealthDescription,"Allows you to progress more quickly in these skills as you use them: Acrobatics, Light Armor, Marksman, Mercantile, Security, Sneak, Speechcraft.","사용할수록 더 빠르게 향상되는 기술: 곡예, 경갑, 궁술, 상술, 자물쇠 따기, 은신, 화술.",v1.0.2_existing_gmst
+000976A5,sStealthName,Stealth,은신,v1.0.2_exe_only_gmst
+0005C44C,sStrengthDescription,YOU ARE USING WRONG GAMESETTING,"힘은 근접 공격력, 소지 한도, 피로도에 영향을 줍니다.",v1.0.2_existing_gmst
+01000ACF,sStyle,Style,모양,v1.0.2_exe_only_gmst
+000CD3F3,sSuccessfulSneakAttackEnd,x damage!,배 피해!,v1.0.2_existing_gmst
+0009885A,sSuccessfulSneakAttackMain,Sneak attack for,스닉 공격으로 ,v1.0.2_exe_only_gmst
+00099D84,sSummonedCreatureFit,The Summoned Creature is not able to fit in summoned area.,소환할 공간이 부족합니다.,v1.0.2_exe_only_gmst
+00097E69,sSwitch,Make this my active quest,진행중인 퀘스트 바꾸기,v1.0.2_exe_only_gmst
+00098807,sTargetRange,Target,대상,v1.0.2_exe_only_gmst
+00097677,sTargetTypeActivate,Activate,사용,v1.0.2_exe_only_gmst
+00099B9A,sTargetTypeApply,Apply,적용,v1.0.2_exe_only_gmst
+00099DE5,sTargetTypeBrew,Brew,제조,v1.0.2_exe_only_gmst
+00099DFD,sTargetTypeCrown,Talk,대화하기,v1.0.2_exe_only_gmst
+00099F29,sTargetTypeDrink,Drink,마시기,v1.0.2_exe_only_gmst
+00099DB0,sTargetTypeEat,Eat,먹기,v1.0.2_exe_only_gmst
+00099F18,sTargetTypeEquip,Equip,장착,v1.0.2_exe_only_gmst
+00099DF4,sTargetTypeHorse,Ride,타기,v1.0.2_exe_only_gmst
+00098157,sTargetTypeOpen,Open,열기:,v1.0.2_exe_only_gmst
+00097869,sTargetTypeOpenDoor,Open,열기:,v1.0.2_exe_only_gmst
+00099E93,sTargetTypeRead,Read,읽기,v1.0.2_exe_only_gmst
+00099ED8,sTargetTypeRecharge,Recharge,재충전,v1.0.2_exe_only_gmst
+00099E01,sTargetTypeRepair,Repair,수리,v1.0.2_exe_only_gmst
+00098402,sTargetTypeSit,Sit,앉기,v1.0.2_exe_only_gmst
+00099EA4,sTargetTypeSleep,Sleep,잠자기,v1.0.2_exe_only_gmst
+00099F36,sTargetTypeTake,Take,가져가기,v1.0.2_exe_only_gmst
+000976B1,sTargetTypeTalk,Talk,대화하기,v1.0.2_exe_only_gmst
+00099EB4,sTargetTypeUnequip,Unequip,해제,v1.0.2_exe_only_gmst
+00099EE5,sTargetTypeVampire,Feed/Talk,흡혈/대화,v1.0.2_exe_only_gmst
+00097675,sTheElderScrolls,The Elder Scrolls,엘더스크롤,v1.0.2_exe_only_gmst
+00099EFD,sTitleText,You have ascended to level,레벨이 상승하였습니다. 레벨 : ,v1.0.2_exe_only_gmst
+00097A41,sTo,to,~에게,v1.0.2_exe_only_gmst
+00099DC0,sTone,Tone,색,v1.0.2_exe_only_gmst
+00099F02,sTopicAddedText,New topic,새로운 화제,v1.0.2_exe_only_gmst
+00099695,sTouchRange,Strike,타격,v1.0.2_exe_only_gmst
+00099ECB,sTraitNameAggression,Aggression,공격성,v1.0.2_exe_only_gmst
+00099E5E,sTraitNameConfidence,Confidence,자신감,v1.0.2_exe_only_gmst
+00099E78,sTraitNameEnergy,Energy,활동성,v1.0.2_exe_only_gmst
+00099EC0,sTraitNameResponsibility,Responsibility,책임감,v1.0.2_exe_only_gmst
+0006C173,sTravelQuestion,Travel to,이동:,v1.0.2_existing_gmst
+00099D69,sUActnActivate,Activate,사용,v1.0.2_exe_only_gmst
+0009767B,sUActnAutomove,Auto Move,자동 이동,v1.0.2_exe_only_gmst
+00099DDB,sUActnBack,Back,뒤로,v1.0.2_exe_only_gmst
+00099D88,sUActnBlock,Block,방어,v1.0.2_exe_only_gmst
+00099DBD,sUActnCast,Cast,마법 사용,v1.0.2_exe_only_gmst
+0009767E,sUActnCrouch,Sneak,잠입술,v1.0.2_exe_only_gmst
+00098829,sUActnForward,Forward,앞으로,v1.0.2_exe_only_gmst
+00099E0E,sUActnGrab,Grab,잡기,v1.0.2_exe_only_gmst
+00099E27,sUActnJump,Jump,점프,v1.0.2_exe_only_gmst
+00099E2A,sUActnMenumode,Journal,일지,v1.0.2_exe_only_gmst
+00098346,sUActnQuick1,Quick1,단축키 1,v1.0.2_exe_only_gmst
+000983C9,sUActnQuick2,Quick2,단축키 2,v1.0.2_exe_only_gmst
+000984A1,sUActnQuick3,Quick3,단축키 3,v1.0.2_exe_only_gmst
+000984B1,sUActnQuick4,Quick4,단축키 4,v1.0.2_exe_only_gmst
+000984B3,sUActnQuick5,Quick5,단축키 5,v1.0.2_exe_only_gmst
+00098549,sUActnQuick6,Quick6,단축키 6,v1.0.2_exe_only_gmst
+000986FE,sUActnQuick7,Quick7,단축키 7,v1.0.2_exe_only_gmst
+00098795,sUActnQuick8,Quick8,단축키 8,v1.0.2_exe_only_gmst
+00099EB5,sUActnQuickload,Quickload,빠른 불러오기,v1.0.2_exe_only_gmst
+00099D4D,sUActnQuickmenu,Quick Menu,빠른 메뉴,v1.0.2_exe_only_gmst
+00099ED9,sUActnQuicksave,QuickSave,빠른 저장,v1.0.2_exe_only_gmst
+000981C3,sUActnRdyitem,Ready Weapon,무기 준비,v1.0.2_exe_only_gmst
+00099E89,sUActnRestmenu,Wait,대기,v1.0.2_exe_only_gmst
+00099F3B,sUActnRun,Run,달리기,v1.0.2_exe_only_gmst
+00099DB6,sUActnSldleft,Slide Left,왼쪽으로 이동,v1.0.2_exe_only_gmst
+00099D6D,sUActnSldright,Slide Right,오른쪽으로 이동,v1.0.2_exe_only_gmst
+00099D68,sUActnTogglepov,Change View,시점 변경,v1.0.2_exe_only_gmst
+00099165,sUActnTogglerun,Always Run,항상 달리기,v1.0.2_exe_only_gmst
+00099F19,sUActnUse,Attack,공격,v1.0.2_exe_only_gmst
+0006C174,sUnequipItemOnPlayer,was unequipped on you,의 장착이 해제되었습니다,v1.0.2_existing_gmst
+00099B94,sVampireFeed,Feed,피 빨기,v1.0.2_exe_only_gmst
+000086B7,sVampireFeedQuestion,What would you like to do with this person?,이 사람에게 무엇을 하시겠습니까?,v1.0.2_existing_gmst
+00099E80,sVampireTalk,Talk,대화하기,v1.0.2_exe_only_gmst
+0000A9EE,sVarlaStoneMessage,"You have used a Varla Stone's power to restore your enchanted items' charge, and now it is gone.",발라 스톤의 힘을 사용하여 마법 아이템을 충전했습니다. 스톤이 사라집니다.,v1.0.2_existing_gmst
+00099E9A,sVideo,Video,비디오,v1.0.2_exe_only_gmst
+00099DF2,sVideoChange,You must exit and restart Oblivion for the new resolution to take effect.,새 해상도를 적용하기 위해서는 게임을 나갔다가 다시 오블리비언을 시작하시기 바랍니다.,v1.0.2_exe_only_gmst
+00099DF8,sViewAll,View All,모두 보기,v1.0.2_exe_only_gmst
+00099F28,sVirtueNameBounty,Bounty,현상금,v1.0.2_exe_only_gmst
+00099EE9,sVirtueNameFame,Fame,명성,v1.0.2_exe_only_gmst
+00099EE1,sVirtueNameInfamy,Infamy,악명,v1.0.2_exe_only_gmst
+00099F35,sWait,Wait,대기,v1.0.2_exe_only_gmst
+00099B34,sWelkyndStoneMessage,"You have used a Welkynd Stone's power to restore your magicka, and now it is gone.",매지카를 충전하기 위해서 웬킨드 스톤을 사용하였습니다. 이제 사라집니다.,v1.0.2_exe_only_gmst
+0005C44B,sWillPowerDescription,YOU ARE USING WRONG GAMESETTING,의지력은 피로도와 매지카 회복 속도에 영향을 줍니다.,v1.0.2_existing_gmst
+00098823,sXBox360Controller,Xbox 360 Controller,Xbox 360 컨트롤러,v1.0.2_exe_only_gmst
+00099E41,sXboxA,press the A button,A 버튼을 누르세요,v1.0.2_exe_only_gmst
+00099E45,sXboxB,press the B button,B 버튼을 누르세요,v1.0.2_exe_only_gmst
+000976C1,sXboxBack,press the Back button,Back 버튼을 누르세요,v1.0.2_exe_only_gmst
+00099E3A,sXboxDPadDown,tilt the D-Pad down,방향 패드를 아래로 누르세요,v1.0.2_exe_only_gmst
+000976A8,sXboxDPadLeft,tilt the D-Pad up,방향 패드를 왼쪽으로 누르세요,v1.0.2_exe_only_gmst
+00097A4C,sXboxDPadRight,tilt the D-Pad right,방향 패드를 오른쪽으로 누르세요,v1.0.2_exe_only_gmst
+00099E4F,sXboxDPadUp,tilt the D-Pad up,방향 패드를 위로 누르세요,v1.0.2_exe_only_gmst
+0009765B,sXboxDPadX,tilt the D-Pad left or right,방향 패드를 좌우로 누르세요,v1.0.2_exe_only_gmst
+00097660,sXboxDPadY,tilt the D-Pad up or down,방향 패드를 위아래로 누르세요,v1.0.2_exe_only_gmst
+00099DAF,sXboxLBumper,press the Left Bumper,왼쪽 범퍼를 누르세요,v1.0.2_exe_only_gmst
+0009786A,sXboxLThumb,click the Left Stick,왼쪽 스틱을 누르세요,v1.0.2_exe_only_gmst
+0009885D,sXboxLThumbDown,move the Left Stick down,왼쪽 스틱을 아래로 움직이세요,v1.0.2_exe_only_gmst
+00099E3E,sXboxLThumbLeft,move the Left Stick left,왼쪽 스틱을 왼쪽으로 움직이세요,v1.0.2_exe_only_gmst
+0009882C,sXboxLThumbRight,move the Left Stick right,왼쪽 스틱을 오른쪽으로 움직이세요,v1.0.2_exe_only_gmst
+00099DFF,sXboxLThumbUp,move the Left Stick up,왼쪽 스틱을 위로 움직이세요,v1.0.2_exe_only_gmst
+00099E3F,sXboxLThumbX,move the Left Stick left or right,왼쪽 스틱을 좌우로 움직이세요,v1.0.2_exe_only_gmst
+00099E40,sXboxLThumbY,move the Left Stick up or down,왼쪽 스틱을 위아래로 움직이세요,v1.0.2_exe_only_gmst
+0009880B,sXboxLTrigger,pull the Left Trigger,왼쪽 트리거를 당기세요,v1.0.2_exe_only_gmst
+00099D71,sXboxNone,assign a button in the Controls menu,조작 설정에서 버튼을 지정하십시오,v1.0.2_exe_only_gmst
+00099DA4,sXboxRBumper,press the Right Bumper,오른쪽 범퍼를 누르세요,v1.0.2_exe_only_gmst
+000976B2,sXboxRThumb,click the Right Stick,오른쪽 스틱을 누르세요,v1.0.2_exe_only_gmst
+000976A7,sXboxRThumbDown,move the Right Stick down,오른쪽 스틱을 아래로 움직이세요,v1.0.2_exe_only_gmst
+00099DA9,sXboxRThumbLeft,move the Right Stick left,오른쪽 스틱을 왼쪽으로 움직이세요,v1.0.2_exe_only_gmst
+00099F3E,sXboxRThumbRight,move the Right Stick right,오른쪽 스틱을 오른쪽으로 움직이세요,v1.0.2_exe_only_gmst
+00097657,sXboxRThumbUp,move the Right Stick up,오른쪽 스틱을 위로 움직이세요,v1.0.2_exe_only_gmst
+00099E30,sXboxRThumbX,move the Right Stick left or right,오른쪽 스틱을 좌우로 움직이세요,v1.0.2_exe_only_gmst
+00099E33,sXboxRThumbY,move the Right Stick up or down,오른쪽 스틱을 위아래로 움직이세요,v1.0.2_exe_only_gmst
+00099E08,sXboxRTrigger,pull the Right Trigger,오른쪽 트리거를 당기세요,v1.0.2_exe_only_gmst
+00099E88,sXboxStart,press the Start button,Start 버튼을 누르세요,v1.0.2_exe_only_gmst
+00099E6E,sXboxX,press the X button,X 버튼을 누르세요,v1.0.2_exe_only_gmst
+00099E70,sXboxY,press the Y button,Y 버튼을 누르세요,v1.0.2_exe_only_gmst
+00099545,sYes,Yes,예,v1.0.2_exe_only_gmst
+00099F01,sYesRestart,"Yes, restart the game.","예, 게임을 다시 시작합니다.",v1.0.2_exe_only_gmst
+00099ECE,sYesText,Yes,예,v1.0.2_exe_only_gmst
+00097667,sYesToAllText,Yes to all,모두 예,v1.0.2_exe_only_gmst
+00099E9D,sYieldAccepted,accepts your yield.,가(이) 화해를 받아들입니다.,v1.0.2_exe_only_gmst
+00099E7F,sYieldRejected,rejects your yield!,은(는) 화해를 거부합니다!,v1.0.2_exe_only_gmst
+0009880C,sYour,Your,당신의,v1.0.2_exe_only_gmst

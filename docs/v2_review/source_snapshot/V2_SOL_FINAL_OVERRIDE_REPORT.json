@@ -1,0 +1,12 @@
+{
+  "baseline_encoder_checked": 14725,
+  "baseline_encoder_mismatch": 0,
+  "baseline_encoder_errors": 0,
+  "master_rows": 8553,
+  "book_rows": 496,
+  "override_rows": 9049,
+  "unique_ids": 9049,
+  "source_text_mismatch_master": 0,
+  "source_text_mismatch_book": 493,
+  "output": "C:\\오블리비언\\v2_work\\06_build_inputs\\V2_SOL_FINAL_OVERRIDE.csv"
+}
