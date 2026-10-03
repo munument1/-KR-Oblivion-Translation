@@ -1,0 +1,236 @@
+{
+  "Oblivion Citadel Door Fix.esp": {
+    "source_sha256": "7c40dcb58a9716155a40b63c92450c36696e76cd36cb431504ac67bb68c0cc2f",
+    "output_sha256": "9f4e4c927173188badad46fc6acc3304012d7c00d86a86cb21893d7c5020e392",
+    "translated_fields": 1,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 1,
+    "reviewed_base_overrode_prior_kr": 1,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 14,
+    "structure": {
+      "records": 55,
+      "groups": 58,
+      "identity_sha256": "976aaeb8c5940f3410981f2015e2e37d87dc208e408427adee30d11aee768dd2",
+      "scripts_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "Unofficial Oblivion Patch.esp": {
+    "source_sha256": "2a71820bd290f25eee0b839d133d5df4b60e71398ed692654cbc49333536e044",
+    "output_sha256": "e35b98e0bc4d7ba10f9769511a46e4b53f363ce51406dc979ffacf6ee5705c63",
+    "translated_fields": 6710,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 5160,
+    "reviewed_base_overrode_prior_kr": 5160,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 1115,
+    "structure": {
+      "records": 86426,
+      "groups": 17908,
+      "identity_sha256": "1d31f1f9e5618ffceed26000a4abc8b52d4f941cd65cf99a1dbd848661bfd583",
+      "scripts_sha256": "d8632e4b4e0edf0928acd864bce0b3bea4eaef774487603363f9545777855137"
+    }
+  },
+  "UOP Vampire Aging & Face Fix.esp": {
+    "source_sha256": "fb7f71d333a6aac885be7065a8f5557f63d9b9f24a6a2181932defaf938a9e23",
+    "output_sha256": "fb7f71d333a6aac885be7065a8f5557f63d9b9f24a6a2181932defaf938a9e23",
+    "translated_fields": 0,
+    "passthrough_without_kr_reference": true,
+    "location_fields_preserved_english": 0,
+    "structure": {
+      "records": 2,
+      "groups": 1,
+      "identity_sha256": "0875e3f45aaba48b57a76cd90fe99c538c0a9596e9801b3062176a31b5f29ae5",
+      "scripts_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "Unofficial Shivering Isles Patch.esp": {
+    "source_sha256": "a68d3ea9aa7ee40e9a95575263e72f90549cebe02919e75488257d060d3fbbce",
+    "output_sha256": "73a1efb6a366c793b4d8a5f3bb9d05a8226c40b0e2223453a5937fa880c1288d",
+    "translated_fields": 1491,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 1133,
+    "reviewed_base_overrode_prior_kr": 1133,
+    "manual_completion": 1,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 130,
+    "structure": {
+      "records": 12901,
+      "groups": 3403,
+      "identity_sha256": "af0fe4a75e6477ac95aa608aed25d326e10b22e89afcacd04cced5e874f593b7",
+      "scripts_sha256": "7994521fad67dde196fa24e64a7de3347fb637083711c92ed8a3a01478925a61"
+    }
+  },
+  "DLCBattlehornCastle - Unofficial Patch.esp": {
+    "source_sha256": "8bb80ee95b93c0458f98c17304d661482e107fd61e0a081eee7ef5bcd2684a17",
+    "output_sha256": "1b8d0bab7a0eb0b26f4a1b1b4137e0799041f3c425a5a022bbb88fd55e7eb2a8",
+    "translated_fields": 57,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 46,
+    "reviewed_base_overrode_prior_kr": 46,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 12,
+    "structure": {
+      "records": 323,
+      "groups": 83,
+      "identity_sha256": "71799b0353e0ba5dd6bc97ff76398d9dc1086a3d41c5641e58c42784da932939",
+      "scripts_sha256": "2f06369acb190ad7722cf836acb780db51b15a0d942614b61a6477f43d53b218"
+    }
+  },
+  "DLCFrostcrag - Unofficial Patch.esp": {
+    "source_sha256": "043e423124adfb1a30f4a5210b18490be1676fd07f5bd80da45fd8620e941665",
+    "output_sha256": "833127f01863b2db7a59b088f907cc107e5840e56e952fcdebc4cbf4831108fc",
+    "translated_fields": 16,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 14,
+    "reviewed_base_overrode_prior_kr": 14,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 14,
+    "structure": {
+      "records": 52,
+      "groups": 59,
+      "identity_sha256": "4973976754aaa05a32dac8220c19e60291996920e1aa9fd0ee2de189219a97bb",
+      "scripts_sha256": "732d50e946eb62e29a8b43c2caefa1dac793936d2a1ac56657549e320743e507"
+    }
+  },
+  "DLCHorseArmor - Unofficial Patch.esp": {
+    "source_sha256": "9b1436669264173f40a5045081aa239b0a11a95859c1af7d4432c8f1b089ceee",
+    "output_sha256": "d655760b3c9e80a779db9af380f457c94de16218ba1c076b8b1d931758c21c83",
+    "translated_fields": 21,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 20,
+    "reviewed_base_overrode_prior_kr": 20,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 2,
+    "structure": {
+      "records": 40,
+      "groups": 12,
+      "identity_sha256": "6371faef48c58cc6fbd646dec2079cb196f4e089729099ba3f73cf710bb2567f",
+      "scripts_sha256": "a9d193715457c734c1fa07643b15ff3bc6ee7fee43fae705880de45f8262b920"
+    }
+  },
+  "DLCMehrunesRazor - Unofficial Patch.esp": {
+    "source_sha256": "dcb552e4c82474f3f193700534f289fab0173aafb3356da53b7d81130b086b0a",
+    "output_sha256": "8d012a32da48acbe08858722ea334bc0a873fe1a58dd10037469f116ce2ef749",
+    "translated_fields": 26,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 22,
+    "reviewed_base_overrode_prior_kr": 22,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 24,
+    "structure": {
+      "records": 249,
+      "groups": 100,
+      "identity_sha256": "cd2fd921e9f570b2fad8ec50ecb9fff9c59cb0f20517c0a2978cd7e39fbaf24a",
+      "scripts_sha256": "7711ff6b78ae8c2042be62ca962833d4b9c48a67423d370395822bd33ae1a976"
+    }
+  },
+  "DLCOrrery - Unofficial Patch.esp": {
+    "source_sha256": "63528afc444bdb02ccfe416403aa5120b30ebf9153e021392f03d65023eb8608",
+    "output_sha256": "315b688993e84b6a87fd7c34e937cea245c9843aeabc78ac225d1e12d97dc2a5",
+    "translated_fields": 31,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 24,
+    "reviewed_base_overrode_prior_kr": 24,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 2,
+    "structure": {
+      "records": 38,
+      "groups": 17,
+      "identity_sha256": "6ebf8f40d9ef3c3ee79403b3414f2b848689a552ac6dcc3a606c544ad285614c",
+      "scripts_sha256": "1a789961b026a50bed94c603629c6f3f34e15a2f201d5458a2f8ca17d6d2d06b"
+    }
+  },
+  "DLCSpellTomes - Unofficial Patch.esp": {
+    "source_sha256": "f5fd611e1ea32c8a011c7b193efd4f6e9b7dd1663265046c082a0daa3a037e8b",
+    "output_sha256": "93de0300f298c9b1f2d2c45c6dc5245a56e7ea4f430791f1b86eecef20dab2f9",
+    "translated_fields": 3,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 2,
+    "reviewed_base_overrode_prior_kr": 2,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 0,
+    "structure": {
+      "records": 317,
+      "groups": 3,
+      "identity_sha256": "bc8212e8a1af98230f4542dae63353e0dc6791d7466c9081c6578cf9e8d8db6c",
+      "scripts_sha256": "e413d1a04eaefb7b94c65918af39cdbf2eaaf32a865bca56d543389db0474937"
+    }
+  },
+  "DLCThievesDen - Unofficial Patch - SSSB.esp": {
+    "source_sha256": "4bb4ff5fcc9824e8b75110af5a1e774ccf41c55215edc78dce3c3fa5b45cce8e",
+    "output_sha256": "4c92f84847b1d509e6d897e40781d09e7581742402b89377497c91f5b73a0737",
+    "translated_fields": 13,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 12,
+    "reviewed_base_overrode_prior_kr": 12,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 1,
+    "structure": {
+      "records": 120,
+      "groups": 8,
+      "identity_sha256": "f02f1bd688906cd8393014ea283872b9166564a298728173d71304023dc7f870",
+      "scripts_sha256": "07caa94a21d5ae66c6d65142af602a7d36615013eabcff59c72475e9adddc4f8"
+    }
+  },
+  "DLCThievesDen - Unofficial Patch.esp": {
+    "source_sha256": "39b695bf9fdf7db56d79fd6d2ffba5be4a14a24096016b799d29fdf89faa0cdc",
+    "output_sha256": "7fd2908f593e512a95e467e7704533c9c1fbd389d91f928fc39aac3254b68ae3",
+    "translated_fields": 36,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 31,
+    "reviewed_base_overrode_prior_kr": 31,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 7,
+    "structure": {
+      "records": 61,
+      "groups": 43,
+      "identity_sha256": "707c87c75bf85c3d8542c8cd4f939454e58abb3457c3d1c552cad4cfd3939b58",
+      "scripts_sha256": "fa1a6d13d68639232290b21d169462bb189ea2c3a8acc7e4a558b9f7e3d8393f"
+    }
+  },
+  "DLCVileLair - Unofficial Patch.esp": {
+    "source_sha256": "61c2b62a59216a10be1e82520c44392a9e3d1794ca789d1053fdc34480b3148d",
+    "output_sha256": "ed57f7d79047c293a7d5d86f1c1c1951515e94bc0f25b9a2203c9ded3a7d5de1",
+    "translated_fields": 46,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 35,
+    "reviewed_base_overrode_prior_kr": 35,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 6,
+    "structure": {
+      "records": 120,
+      "groups": 52,
+      "identity_sha256": "f668c9aa6a2e6bc40ae4df399752a938e32a619d4c41e54660e49cb6741024a6",
+      "scripts_sha256": "e8a7ca63ea61c232e5542379b78ec0b8598bd2b82abca0ba3f3d8096d177f40d"
+    }
+  },
+  "Knights - Unofficial Patch.esp": {
+    "source_sha256": "e88b26e972d736b22926cef9178f70268da038cb44feb8c5e9208569db9ba25e",
+    "output_sha256": "4833973b8460c710cdbb47dfac479b19d76a6421bca28598a3415fde0f0575bd",
+    "translated_fields": 367,
+    "restored_base_translation": 0,
+    "reviewed_base_translation": 319,
+    "reviewed_base_overrode_prior_kr": 319,
+    "manual_completion": 0,
+    "nexus_completion": 0,
+    "location_fields_preserved_english": 34,
+    "structure": {
+      "records": 628,
+      "groups": 180,
+      "identity_sha256": "5efcbc4ed81e7bd844117d60e8c75b2ed582b5b3b633386729b86286467e494e",
+      "scripts_sha256": "f1bb324faa5358b1ff8cccf2236a2a02da4e1039050c56a461716dac83443c9b"
+    }
+  }
+}

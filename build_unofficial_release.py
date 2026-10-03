@@ -12,6 +12,7 @@ import argparse
 import csv
 import hashlib
 import json
+import shutil
 import struct
 import zlib
 from collections import Counter
@@ -60,6 +61,23 @@ def read_records(path: Path):
                 raise ValueError(f"{path.name}: group boundary mismatch")
         walk(path.stat().st_size)
     return result
+
+
+def has_localizable_text(path: Path):
+    """Return true only for player-visible string-like fields outside TES4 metadata."""
+    for (kind, _), fields in read_records(path).items():
+        if kind == b"TES4":
+            continue
+        for field, value in fields:
+            if field not in TEXT_FIELDS or not value.endswith(b"\0") or b"\0" in value[:-1]:
+                continue
+            try:
+                text = value[:-1].decode("cp1252")
+            except UnicodeDecodeError:
+                continue
+            if text.strip():
+                return True
+    return False
 
 
 def reviewed_identity(records, formid):
@@ -294,8 +312,25 @@ def main():
             raise ValueError(f"No original ESPs in {args.source / source_folder}")
         for original in originals:
             prior = args.prior_kr / kr_folder / original.name
+            destination = args.output / kr_folder / original.name
             if not prior.is_file():
-                raise FileNotFoundError(prior)
+                if has_localizable_text(original):
+                    raise FileNotFoundError(prior)
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(original, destination)
+                before = structure_signature(original)
+                if before != structure_signature(destination):
+                    raise ValueError(f"{original.name}: passthrough structure differs")
+                report[original.name] = {
+                    "source_sha256": sha256_file(original),
+                    "output_sha256": sha256_file(destination),
+                    "translated_fields": 0,
+                    "passthrough_without_kr_reference": True,
+                    "location_fields_preserved_english": 0,
+                    "structure": before,
+                }
+                print(f"{original.name}: unchanged passthrough; no player-visible text and no KR reference")
+                continue
             changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table, final_table,
                                               quest_entries, loading_entries, completions, nexus_completions)
             destination = args.output / kr_folder / original.name

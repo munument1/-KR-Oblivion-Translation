@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from build_unofficial_release import collect_changes, read_records, reviewed_identity
+from build_unofficial_release import collect_changes, has_localizable_text, read_records, reviewed_identity
 from build_vanilla_overlay import Translation, encode_subrecord
 
 
@@ -42,6 +42,20 @@ class UnofficialForwardingTests(unittest.TestCase):
 
     def audit(self):
         return {(self.owner, 'QUST', '01001234', 'CNAM', hashlib.sha256(b'Source\0').hexdigest())}
+
+    def test_missing_kr_reference_is_safe_only_without_visible_text(self):
+        metadata_only = self.root / 'metadata-only.esp'
+        metadata_only.write_bytes(
+            record(b'TES4', 0, [(b'CNAM', b'Author\0')]) +
+            record(b'GMST', 0x02000CE6, [(b'DATA', b'\0\0\0')])
+        )
+        self.assertFalse(has_localizable_text(metadata_only))
+        visible = self.root / 'visible.esp'
+        visible.write_bytes(
+            record(b'TES4', 0, [(b'CNAM', b'Author\0')]) +
+            record(b'QUST', 0x02000001, [(b'CNAM', b'Visible quest text\0')])
+        )
+        self.assertTrue(has_localizable_text(visible))
 
     def test_master_slot_maps_to_source_identity(self):
         records = read_records(self.original)

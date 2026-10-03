@@ -16,6 +16,12 @@ SETTINGS = '[Fonts]\n' + '\n'.join(f'SFontFile_{i}=Data\\Fonts\\Original{i}.fnt'
 
 
 class InstallerTests(unittest.TestCase):
+    def test_pyinstaller_spec_includes_runtime_dynamic_imports(self):
+        spec = (Path(__file__).resolve().parents[1] / 'OblivionKRBuilder.spec').read_text(encoding='utf-8')
+        for module in ('build_vanilla_overlay', 'build_obcjk_release', 'build_obcjk_locations',
+                       'master_layout', 'build_video_subtitles'):
+            self.assertIn(repr(module), spec)
+
     def test_packaged_fonts_and_verified_control_setting(self):
         manifest = bundle_manifest()
         self.assertEqual({f['id'] for f in manifest['fonts']}, {'source_regular', 'source_medium', 'iropke'})
