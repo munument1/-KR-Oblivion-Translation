@@ -12,10 +12,10 @@ class UISupplementTests(unittest.TestCase):
         with TABLE.open(encoding="utf-8-sig", newline="") as stream:
             rows = list(csv.DictReader(stream))
 
-        self.assertEqual(len(rows), 202)
+        self.assertEqual(len(rows), 215)
         self.assertEqual(
             Counter(row["record_type"] for row in rows),
-            Counter({"FACT": 116, "SKIL": 84, "QUST": 2}),
+            Counter({"FACT": 116, "SKIL": 84, "INFO": 13, "QUST": 2}),
         )
 
         identities = {
@@ -72,6 +72,7 @@ class UISupplementTests(unittest.TestCase):
         self.assertEqual(keys[("FACT", "0002F872", "MNAM", "5")]["obcjk_unicode_text"], "사일렌서")
         self.assertEqual(keys[("FACT", "0006A7FC", "MNAM", "7")]["obcjk_unicode_text"], "광기의 신")
         self.assertIn(("QUST", "00081DD5", "CNAM", "0"), keys)
+        self.assertEqual(keys[("INFO", "0003E452", "NAM1", "0")]["obcjk_unicode_text"], "그쪽 전리품을 살펴보고 싶구만.")
 
 
 if __name__ == "__main__":
