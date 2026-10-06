@@ -2,10 +2,22 @@ import gzip
 import json
 import tempfile
 import unittest
+import struct
+import zlib
 from pathlib import Path
 
 from master_layout import apply_layout, capture_layout
-from tests.test_finalize_oblivion_master import group, record
+from build_vanilla_overlay import encode_subrecord
+
+
+def record(sig, fid, fields, flags=0, vcs=7):
+    plain = b''.join(encode_subrecord(f, v) for f, v in fields)
+    body = struct.pack('<I', len(plain)) + zlib.compress(plain) if flags & 0x40000 else plain
+    return struct.pack('<4sIIII', sig, len(body), flags, fid, vcs) + body
+
+
+def group(sig, body):
+    return struct.pack('<4sI4sII', b'GRUP', 20 + len(body), sig, 0, 12) + body
 
 
 class MasterLayoutTests(unittest.TestCase):
