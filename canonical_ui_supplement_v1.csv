@@ -214,3 +214,5 @@ Oblivion.esm,INFO,000091E8,NAM1,Thank you. Come again.,고맙습니다. 또 오�
 Oblivion.esm,INFO,000091E9,NAM1,Tell your friends about me!,친구들한테 홍보 좀 해주세요!,ecb99ceab5aceb93a4ed959ced858c20ed998debb3b420eca28020ed95b4eca3bcec84b8ec9a942100,,0
 Oblivion.esm,INFO,000091EA,NAM1,A pleasure to serve you.,도움이 되어 기쁩니다.,eb8f84ec9b80ec9db420eb9098ec96b420eab8b0ec81a9eb8b88eb8ba42e00,,0
 Oblivion.esm,INFO,0000921D,NAM1,Thank you for your business.,이용해 주셔서 감사합니다.,ec9db4ec9aa9ed95b420eca3bcec8594ec849c20eab090ec82aced95a9eb8b88eb8ba42e00,,0
+Oblivion.esm,NPC_,000908B2,FULL,Black Bow Bandit,검은 활 도적,eab280ec9d8020ed999c20eb8f84eca08100,BanditBlackBowMale1,0
+Oblivion.esm,DOOR,000282AF,FULL,Wooden Gate,나무 문,eb8298ebacb420ebacb800,RF1xDoorLeft,0
