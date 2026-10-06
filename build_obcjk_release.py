@@ -75,8 +75,10 @@ def build(args):
     if not (source / MASTER).is_file():
         raise FileNotFoundError(source / MASTER)
 
+    supplement = HERE / 'canonical_ui_supplement_v1.csv'
+    extra_tables = (supplement, *(path.resolve() for path in args.extra_csv))
     translations = load_translations(
-        args.csv.resolve(), tuple(path.resolve() for path in args.extra_csv),
+        args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
