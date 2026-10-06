@@ -14,17 +14,19 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 
 ## 코드와 자료
 
-- `install_obcjk.py`: 기존 INI 자동 검색·글꼴 경로 복원, 기존 번역 빌더 호출, 글꼴 등록.
-- `build_vanilla_overlay.py`, `build_obcjk_release.py`: canonical UTF-8 데이터를 원본 ESM/ESP에 직접 적용하는 본편·공식 DLC 빌드 경로입니다. legacy 한국어 중간 플러그인을 만들지 않습니다.
+- `install_obcjk.py`: 기존 INI 자동 검색·글꼴 경로 복원, 번역 빌더 호출, 글꼴 등록.
+- `build_vanilla_overlay.py`, `build_obcjk_release.py`: canonical UTF-8 데이터를 원본 ESM/ESP에 직접 적용하는 본편·공식 DLC 빌드 경로입니다.
 - `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.
-- `build_obcjk_*.py`, `obcjk_text_backend.py`, `oblivion_korean_codec.py`: UTF-8 변환, UI와 한글 위치명 적용·검증.
-- 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 사용 중이므로 삭제하지 않습니다.
+- `build_obcjk_locations.py`: 지도 마커·현재 위치·발견 위치용 이름을 적용합니다. 현재 레코드 순회·검증 공용 함수 때문에 `build_obcjk_overlay.py`, `obcjk_text_backend.py`, `oblivion_korean_codec.py`를 간접 사용하므로 이 세 파일은 삭제하지 않습니다.
+- `build_obcjk_ui.py`, `master_layout.py`, `obcjk_fonts.py`: 메뉴 UI, 원본 레코드 배열 보존, 글꼴 설치·검증.
+- 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 현재 canonical 및 언오피셜 빌드 입력에 사용되므로 임의로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
-- `assets/Fonts`, `assets/menus`: 기존 인코딩 변환과 UI 입력 자료.
-- `build_video_subtitles.py`, `video_subtitles`: Nexus 배포용 인트로·엔딩 Bink 1 영상 2개를 재생성하는 개발 도구와 자막 소스입니다. PATH/기본 설치 위치에 이미 설치된 FFmpeg·ffprobe·RAD만 사용하며 외부 도구를 자동 다운로드하지 않습니다. 일반 설치기는 `--video-subtitles off`를 사용하고, 개발자가 재생성할 때만 `auto` 또는 필수 검증용 `required`를 사용합니다.
-- `tests`: 문자열·바이너리 보존, 위치명, INI 및 글꼴 검증.
-- `docs/obcjk`: 조사 이력, 설정 설명과 실행 검증 기록.
-- `docs/v2_review`, `v2_tools`, 루트 audit/extract 도구: 번역 검수 이력과 보강 도구. 설치기에는 포함하지 않습니다.
+- `assets/Fonts`, `assets/menus`: 인코딩 변환 및 UI 입력 자료.
+- `build_video_subtitles.py`, `video_subtitles`: Nexus 별도 배포용 인트로·엔딩 Bink 1 영상 2개를 재생성하는 개발 도구와 자막 소스입니다. 일반 설치기는 `--video-subtitles off`를 사용합니다.
+- `package_obcjk_installer.py`, `package_obcjk_unofficial.py`: GitHub 설치기와 Nexus 언오피셜 ZIP 패키징.
+- `tests`: 현재 빌드에서 사용하는 문자열·바이너리 보존, 위치명, INI, 글꼴, 언오피셜 및 영상 검증.
+- `docs/obcjk`: 설정 설명과 실행 검증 기록.
+- `docs/v2_review`: 과거 번역 검수 결과 보관 자료. 실행 코드가 아니며 현재 빌드에는 포함되지 않습니다.
 - `docs/legacy`: 과거 사용자 안내. 과거 배포의 재현은 해당 버전 태그를 사용합니다.
 - `_build`, `build`, `dist`, `output`, `release`, `v2_work`: 로컬 작업·출력이며 Git에서 제외합니다.
 
@@ -40,4 +42,4 @@ python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --
 
 ## main 정리
 
-중복 설치 BAT/README/spec, 구형 통합 언오피셜 패키저와 사용이 끝난 v1.0.4 전용 자동 배포 워크플로를 제거했습니다. 과거 릴리스·태그와 검수 원자료는 유지합니다. 코드 정리만으로 새 프로필을 만들거나 실사용 세이브를 변경하지 않습니다.
+main에는 현재 v1.1.0 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.
