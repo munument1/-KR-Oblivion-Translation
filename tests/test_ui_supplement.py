@@ -41,6 +41,25 @@ class UISupplementTests(unittest.TestCase):
                 row["obcjk_unicode_text"],
             )
 
+    def test_official_chapel_locations_present(self):
+        location_table = HERE / "canonical_locations_v2.csv"
+        with location_table.open(encoding="utf-8-sig", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+
+        expected = {
+            ("000308CD", "AnvilChapelofDibella"): "디벨라 예배당",
+            ("00030427", "CheydinhalChapelOfArkay"): "아케이의 대성당",
+            ("00030537", "LeyawiinChapelOfZenithar"): "제니타르의 대성당",
+            ("0000080A", "ChorrolChapelOfStendarr"): "스텐다르 예배당",
+        }
+        actual = {
+            (r["raw_formid"], r["editor_id"]): r["obcjk_unicode_text"]
+            for r in rows
+            if r["effective_source"] == "Oblivion.esm"
+            and (r["raw_formid"], r["editor_id"]) in expected
+        }
+        self.assertEqual(actual, expected)
+
     def test_key_user_visible_rows_present(self):
         with TABLE.open(encoding="utf-8-sig", newline="") as stream:
             rows = list(csv.DictReader(stream))
