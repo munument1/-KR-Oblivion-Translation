@@ -4,6 +4,31 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## v1.1.1 (2026-10-06)
+
+### Added
+
+- 21개 스킬의 Apprentice / Journeyman / Expert / Master 승급 안내 84건을 OBCJK UTF-8 번역에 추가했습니다.
+- 플레이어에게 표시되는 세력 계급명 116건을 보강했습니다.
+- 기존 복구 메모리에만 남아 있던 상점 대사 13건과 실제 플레이용 퀘스트 저널 2건을 회수했습니다.
+- Anvil / Cheydinhal / Leyawiin / Chorrol의 성당 위치명 4건을 공식 위치 canonical에 추가했습니다.
+
+### Fixed
+
+- 저장소 정리 과정에서 master_layout.py의 검증 의존 파일이 빠져 자동 테스트가 실패하던 문제를 복구했습니다.
+- tests/test_master_layout.py가 삭제된 일회성 테스트 모듈에 의존하지 않도록 자체 테스트 헬퍼를 사용하게 수정했습니다.
+
+### Validation
+
+- 자동 테스트 47개 통과.
+- PyInstaller Windows EXE 빌드 성공 및 --help 실행 확인.
+- v1.1.1 설치기 ZIP 패키징 완료.
+
+### Distribution
+
+- GitHub v1.1.1 릴리즈: 본편 + 공식 확장팩/DLC용 설치기.
+- UOP / USIP / UODP 한국어 번역은 기존처럼 Nexus 별도 ZIP으로 배포합니다.
+
 ## v1.1.0 (2026-10-06)
 
 ### Changed
