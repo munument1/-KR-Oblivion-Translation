@@ -3931,3 +3931,7 @@ Unofficial Shivering Isles Patch.esp,WRLD,000122E5,FULL,Palace Grounds,SENSPalac
 Unofficial Shivering Isles Patch.esp,WRLD,00014D44,FULL,Vitharn Bailey,SEVitharnWorld,바이탄 베일리,ebb094ec9db4ed838420ebb2a0ec9dbceba6ac00,verified
 Unofficial Shivering Isles Patch.esp,WRLD,0004FE12,FULL,Mania Garden,SEManiaGarden,매니아 정원,eba7a4eb8b88ec958420eca095ec9b9000,verified
 Unofficial Shivering Isles Patch.esp,WRLD,0004FE13,FULL,Dementia Garden,SEDementiaGarden,디멘시아 정원,eb9494eba998ec8b9cec958420eca095ec9b9000,verified
+Oblivion.esm,CELL,000308CD,FULL,Chapel of Dibella,AnvilChapelofDibella,디벨라 예배당,eb9494ebb2a8eb9dbc20ec9888ebb0b0eb8bb900,verified
+Oblivion.esm,CELL,00030427,FULL,The Great Chapel of Arkay,CheydinhalChapelOfArkay,아케이의 대성당,ec9584ecbc80ec9db4ec9d9820eb8c80ec84b1eb8bb900,verified
+Oblivion.esm,CELL,00030537,FULL,The Great Chapel of Zenithar,LeyawiinChapelOfZenithar,제니타르의 대성당,eca09ceb8b88ed8380eba5b4ec9d9820eb8c80ec84b1eb8bb900,verified
+Oblivion.esm,CELL,0000080A,FULL,Chapel of Stendarr,ChorrolChapelOfStendarr,스텐다르 예배당,ec8aa4ed8590eb8ba4eba5b420ec9888ebb0b0eb8bb900,verified
