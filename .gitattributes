@@ -1,4 +1,5 @@
 *.csv -text
+*.csv whitespace=cr-at-eol
 assets/menus/strings.xml -text
 *.fnt -text
 *.tex -text

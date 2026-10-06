@@ -9,7 +9,7 @@ from obcjk_fonts import BUNDLE, bundle_manifest
 ROOT = Path(__file__).resolve().parent
 
 
-def package(exe, output, version='1.0.8'):
+def package(exe, output, version='1.1.0'):
     bundle_manifest()
     exe, output = Path(exe), Path(output)
     if not exe.is_file() or exe.read_bytes()[:2] != b'MZ':
@@ -33,7 +33,8 @@ def package(exe, output, version='1.0.8'):
         if archive.testzip() or any(Path(n).suffix.lower() in {'.esm', '.esp', '.dll'} for n in archive.namelist()):
             raise ValueError('Installer package validation failed')
     sha = hashlib.sha256(output.read_bytes()).hexdigest()
-    output.with_suffix(output.suffix + '.sha256').write_text(f'{sha}  {output.name}\n', encoding='ascii')
+    output.with_suffix(output.suffix + '.sha256').write_text(
+        f'{sha}  {output.name}\n', encoding='ascii')
     print(output.resolve(), output.stat().st_size, sha)
 
 
@@ -41,6 +42,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', default='1.0.8')
+    parser.add_argument('--version', default='1.1.0')
     args = parser.parse_args()
     package(args.exe, args.output, args.version)

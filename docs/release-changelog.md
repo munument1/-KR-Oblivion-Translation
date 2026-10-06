@@ -4,6 +4,29 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## v1.1.0 (2026-10-06)
+
+### Changed
+
+- INFO 대사를 후보 검수와 KEEP 표적 감사로 다시 검수하고 의미·화자/대상·고유명사·영어 잔존·한국어 형태 오류를 교정했습니다.
+- CELL/WRLD/REFR/REGN 위치 canonical을 보강해 지도 마커, 현재 위치와 발견 위치의 영어 잔존을 줄였습니다.
+- 본편·공식 DLC 릴리즈 빌드를 OBCJK UTF-8 직접 생성 방식으로 전환해 legacy 한국어 중간 플러그인 의존성을 제거했습니다.
+- UOP / USIP / UODP OBCJK 빌드도 CELL/WRLD/REFR/REGN 위치명을 한 번에 전달하도록 통합했습니다.
+
+### Validation
+
+- canonical 47,227행 / INFO 25,119행 유지.
+- INFO FIX 판정 7,874건 통합, 실제 문자열 변경 7,873건.
+- 자동 테스트 50개 통과.
+- Python 직접 UTF-8 빌드와 기존 검증 OBCJK 플러그인 10/10 SHA-256 동일.
+- PyInstaller EXE 출력과 Python 직접 빌드 플러그인 10/10 SHA-256 동일.
+- 임페리얼 시티 주요 지도 마커 8개를 실제 출력 Oblivion.esm에서 확인했습니다.
+
+### Distribution
+
+- GitHub v1.1.0 릴리즈: 본편 + 공식 확장팩/DLC용 설치기만 배포합니다.
+- UOP / USIP / UODP 한국어 번역: Nexus에서 각각 별도 ZIP으로 배포합니다.
+
 ## v1.0.8 (2026-10-03)
 
 ### Changed

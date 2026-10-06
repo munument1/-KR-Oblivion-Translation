@@ -26,6 +26,7 @@ DLCBattlehornCastle.esp,CELL,0100B0AD,FULL,Dummy cell,BattlehornCastle,배틀혼
 DLCBattlehornCastle.esp,CELL,01012E16,FULL,Battlehorn Castle North Tower,BattlehornCastleTowerN,배틀혼 성 북쪽 탑,ebb0b0ed8b80ed98bc20ec84b120ebb681ecaabd20ed839100,verified
 DLCBattlehornCastle.esp,CELL,01012EC7,FULL,Battlehorn Castle South Tower,BattlehornCastleTowerS,배틀혼 성 남쪽 탑,ebb0b0ed8b80ed98bc20ec84b120eb82a8ecaabd20ed839100,verified
 DLCBattlehornCastle.esp,CELL,010133CA,FULL,Battlehorn Castle Gatehouse,BattlehornCastleGatehouse,배틀혼 성 문지기실,ebb0b0ed8b80ed98bc20ec84b120ebacb8eca780eab8b0ec8ba400,verified
+DLCBattlehornCastle.esp,REFR,0100B08B,FULL,Battlehorn Castle,BattlehornCastleMapMarker,배틀혼 성,ebb0b0ed8b80ed98bc20ec84b100,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,00000885,FULL,Chorrol Mages Guild,ChorrolMagesGuild,코롤 메이지 길드,ecbd94eba1a420eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,00009C80,FULL,Bruma Mages Guild,BrumaMagesGuildDestroyed,브루마 메이지 길드,ebb88ceba3a8eba78820eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,0001540D,FULL,Frostcrag Spire Main Level,FrostcragSpire01,서리바위 첨탑 1층,ec849ceba6acebb094ec9c8420ecb2a8ed83912031ecb8b500,verified
@@ -54,6 +55,8 @@ DLCFrostcrag.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,
 DLCFrostcrag.esp,CELL,00030534,FULL,Leyawiin Mages Guild,LeyawiinMagesGuild,레이야윈 메이지 길드,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag.esp,CELL,00049E29,FULL,Mystic Emporium Basement,ICMarketDistrictMysticEmporiumBasement,신비한 대상점 지하실,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eca780ed9598ec8ba400,verified
 DLCFrostcrag.esp,CELL,0004B953,FULL,Mystic Emporium Private Quarters,ICMarketDistrictMysticEmporiumUpstairs,신비한 대상점 개인 숙소,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eab09cec9db820ec8899ec868c00,verified
+DLCFrostcrag.esp,REFR,01000D51,FULL,Frostcrag Spire,FrostcragSpireMapMarker,서리바위 첨탑,ec849ceba6acebb094ec9c8420ecb2a8ed839100,verified
+DLCFrostcrag.esp,REGN,01014E9F,RDMP,Frostcrag Spire,DLCFrostCragRegion,서리바위 첨탑,ec849ceba6acebb094ec9c8420ecb2a8ed839100,verified
 DLCFrostcrag.esp,WRLD,0001C31D,FULL,Skingrad,SkingradWorld,스킨그라드,ec8aa4ed82a8eab7b8eb9dbceb939c00,verified
 DLCFrostcrag.esp,WRLD,0002C107,FULL,"Imperial City, The Arcane University",ICTheArcaneUniversity,"임페리얼 시티, 아케인 대학",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec9584ecbc80ec9db820eb8c80ed959900,verified
 DLCFrostcrag.esp,WRLD,0002C108,FULL,"Imperial City, Market District",ICMarketDistrict,"임페리얼 시티, 시장 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec8b9cec9ea520eab5acec97ad00,verified
@@ -112,10 +115,15 @@ DLCMehrunesRazor.esp,CELL,01002DB4,FULL,Varlas Baalim,DL9jbrowneAyleid,발라스
 DLCMehrunesRazor.esp,CELL,01003438,FULL,Cava Arpenia,DL9c08house1,카바 알페니아,ecb9b4ebb09420ec958ced8e98eb8b88ec958400,verified
 DLCMehrunesRazor.esp,CELL,0100364B,FULL,Cava Beldameld,DL9c08house2,카바 벨다멜드,ecb9b4ebb09420ebb2a8eb8ba4eba99ceb939c00,verified
 DLCMehrunesRazor.esp,CELL,0100385C,FULL,Cava Marspanga,DL9c08house3,카바 말스판가,ecb9b4ebb09420eba790ec8aa4ed8c90eab08000,verified
+DLCMehrunesRazor.esp,REFR,0100206B,FULL,Sundercliff Watch,DL09MapMarker,선더클리프 감시대,ec84a0eb8d94ed81b4eba6aced948420eab090ec8b9ceb8c8000,verified
 DLCOrrery - Unofficial Patch.esp,CELL,0002C173,FULL,Imperial Orrery,ICArcaneUniversityImperialOrrery,제국 천체관측기,eca09ceab5ad20ecb29cecb2b4eab480ecb8a1eab8b000,verified
 DLCOrrery - Unofficial Patch.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
 DLCOrrery.esp,CELL,0002C173,FULL,Imperial Orrery,ICArcaneUniversityImperialOrrery,제국 천체관측기,eca09ceab5ad20ecb29cecb2b4eab480ecb8a1eab8b000,verified
 DLCOrrery.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
+DLCOrrery.esp,REFR,000175E1,FULL,Brotch Camp,BrotchCampMapMarker,브로치 캠프,ebb88ceba19cecb99820ecbaa0ed948400,verified
+DLCOrrery.esp,REFR,000175F3,FULL,Camp Ales,CampAlesMapMarker,알스 캠프,ec958cec8aa420ecbaa0ed948400,verified
+DLCOrrery.esp,REFR,000175F5,FULL,Bodean Camp,BodeanCampMapMarker,보딘 캠프,ebb3b4eb949820ecbaa0ed948400,verified
+DLCOrrery.esp,REFR,000175F9,FULL,Dagny's Camp,DagnysCampMapMarker,대그니 캠프,eb8c80eab7b8eb8b8820ecbaa0ed948400,verified
 DLCThievesDen - Unofficial Patch - SSSB.esp,CELL,000C46F0,FULL,The Black Flag,DLDunbarrowHaven03,해적 깃발,ed95b4eca08120eab983ebb09c00,verified
 DLCThievesDen - Unofficial Patch.esp,CELL,00007947,FULL,Castle Anvil Dining Hall,AnvilCastleDiningHallandServantQuarters,식당,ec8b9deb8bb900,verified
 DLCThievesDen - Unofficial Patch.esp,CELL,0002C37E,FULL,Smuggler's Cave,AnvilCastleSmugglersCave,밀수꾼의 동굴,ebb080ec8898eabebcec9d9820eb8f99eab5b400,verified
@@ -134,6 +142,7 @@ DLCThievesDen.esp,CELL,000C46F0,FULL,The Black Flag,DLDunbarrowHaven03,해적 �
 DLCThievesDen.esp,CELL,01000CE6,FULL,Dunbarrow Haven,xDL06DunBarrowHaven,던배로우 헤이븐,eb8d98ebb0b0eba19cec9ab020ed97a4ec9db4ebb89000,verified
 DLCThievesDen.esp,CELL,01000D94,FULL,Dunbarrow Cove,xDL06DunBarrowHaven02,던배로우 만,eb8d98ebb0b0eba19cec9ab020eba78c00,verified
 DLCThievesDen.esp,CELL,010019A9,FULL,The Red Sabre,xDL06ShipInterior,붉은 사브르,ebb689ec9d8020ec82acebb88ceba5b400,verified
+DLCThievesDen.esp,REFR,0101A4F3,FULL,Dunbarrow Cove,DLCDunbarrowMapMarker,던배로우 만,eb8d98ebb0b0eba19cec9ab020eba78c00,verified
 DLCVileLair - Unofficial Patch.esp,CELL,000149AD,FULL,Pothole Caverns,PotholeCaverns,돌개구멍 동굴,eb8f8ceab09ceab5aceba98d20eb8f99eab5b400,verified
 DLCVileLair - Unofficial Patch.esp,CELL,00031349,FULL,Wawnet Inn,WawnetInnTavern,와우넷 여관,ec9980ec9ab0eb84b720ec97aceab48000,verified
 DLCVileLair - Unofficial Patch.esp,CELL,02000CE6,FULL,Deepscorn Hollow,LairVile01,딥스콘 공동,eb94a5ec8aa4ecbd9820eab3b5eb8f9900,verified
@@ -146,6 +155,9 @@ DLCVileLair.esp,CELL,01000CE6,FULL,Deepscorn Hollow,LairVile01,딥스콘 공동,
 DLCVileLair.esp,CELL,010013C8,FULL,Deepscorn Cloister,LairVile02,딥스콘 회랑,eb94a5ec8aa4ecbd9820ed9a8ceb9e9100,verified
 DLCVileLair.esp,CELL,0100208F,FULL,Deepscorn Bastion,LairVile03,딥스콘 요새,eb94a5ec8aa4ecbd9820ec9a94ec838800,verified
 DLCVileLair.esp,CELL,01005A65,FULL,Deepscorn Shrine,LairVile04,딥스콘 성소,eb94a5ec8aa4ecbd9820ec84b1ec868c00,verified
+DLCVileLair.esp,REFR,000174F1,FULL,Fort Doublecross,FortDoublecrossMapMarker,더블크로스 요새,eb8d94ebb894ed81aceba19cec8aa420ec9a94ec838800,verified
+DLCVileLair.esp,REFR,00093480,FULL,Bogwater,BogwaterMarker,보그워터,ebb3b4eab7b8ec9b8ced84b000,verified
+DLCVileLair.esp,REFR,01001342,FULL,Deepscorn Hollow,DeepscornHollowMapMarker,딥스콘 공동,eb94a5ec8aa4ecbd9820eab3b5eb8f9900,verified
 DLCVileLair.esp,WRLD,00017C71,FULL,Camoran's Paradise,CamoranParadise,캐모런의 천국,ecba90ebaaa8eb9fb0ec9d9820ecb29ceab5ad00,verified
 DLCVileLair.esp,WRLD,0002C10B,FULL,"Imperial City, Elven Gardens District",ICElvenGardensDistrict,"임페리얼 시티, 엘프 정원 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec9798ed948420eca095ec9b9020eab5acec97ad00,verified
 Knights - Unofficial Patch.esp,CELL,0000080A,FULL,Great Chapel of Stendarr,ChorrolChapelOfStendarr,스텐다르 예배당,ec8aa4ed8590eb8ba4eba5b420ec9888ebb0b0eb8bb900,verified
@@ -221,6 +233,12 @@ Knights.esp,CELL,01002214,FULL,Kynareth's Grotto,NDKynarethCave,키나레스의 
 Knights.esp,CELL,01002277,FULL,Priory of the Nine,NDPrioryoftheNineHouse,나인 디바인 수도원,eb8298ec9db820eb9494ebb094ec9db820ec8898eb8f84ec9b9000,verified
 Knights.esp,CELL,010023C0,FULL,"Garlas Malatar, Carac Abaran",NDGarlasMalatar03,"가르라스 말라타르, 카라크 아바란",eab080eba5b4eb9dbcec8aa420eba790eb9dbced8380eba5b42c20ecb9b4eb9dbced81ac20ec9584ebb094eb9e8000,verified
 Knights.esp,CELL,010024BE,FULL,The Lost Catacombs,NDVanua01,잃어버린 지하 묘지,ec9e83ec96b4ebb284eba6b020eca780ed959820ebac98eca78000,verified
+Knights.esp,REFR,0100269D,FULL,Fort Bulwark,NDFortBulwarkMapMarker,불워크 요새,ebb688ec9b8ced81ac20ec9a94ec838800,verified
+Knights.esp,REFR,0100269E,FULL,Garlas Malatar,NDGarlasMalatarMapMarker,가르라스 말라타르,eab080eba5b4eb9dbcec8aa420eba790eb9dbced8380eba5b400,verified
+Knights.esp,REFR,010026A3,FULL,Priory of the Nine,PrioryoftheNineMapMarker,나인 디바인 수도원,eb8298ec9db820eb9494ebb094ec9db820ec8898eb8f84ec9b9000,verified
+Knights.esp,REGN,00094161,RDMP,Waterfront,WaterfrontRegion,부두 구역,ebb680eb919020eab5acec97ad00,verified
+Knights.esp,REGN,00094162,RDMP,City Isle,CityIsleRegion,시티 아일,ec8b9ced8bb020ec9584ec9dbc00,verified
+Knights.esp,REGN,001194AF,RDMP,The Heartlands,Heartlands01,하트랜즈,ed9598ed8ab8eb9e9ceca68800,verified
 Knights.esp,WRLD,0001C31A,FULL,Anvil,AnvilWorld,앤빌,ec95a4ebb98c00,verified
 Knights.esp,WRLD,010028DA,FULL,TestAyleid,TestAyleid,테스트 에일리드,ed858cec8aa4ed8ab820ec9790ec9dbceba6aceb939c00,verified
 Oblivion Citadel Door Fix.esp,CELL,0001659E,FULL,Vaults of End Times,MQ14OblivionCitadelHall01,종말의 금고,eca285eba790ec9d9820eab888eab3a000,verified
@@ -1978,6 +1996,632 @@ Oblivion.esm,CELL,0011939E,FULL,Cave Exterior entrances,WarehouseCaveEntrance,�
 Oblivion.esm,CELL,00185368,FULL,Dummy cell,ImperialSewer,더미 셀,eb8d94ebafb820ec858000,verified
 Oblivion.esm,CELL,001886EB,FULL,Elder Scrolls Library,ICPalaceLibraryBackup,엘더 스크롤 도서관,ec9798eb8d9420ec8aa4ed81aceba1a420eb8f84ec849ceab48000,verified
 Oblivion.esm,CELL,00189258,FULL,Dummy cell for GetInCell,ChorrolCastle,코롤 성,ecbd94eba1a420ec84b100,verified
+Oblivion.esm,REFR,0000145A,FULL,Skingrad - West Gate,SkingradWestGateMapMarker,스킨그라드 - 서문,ec8aa4ed82a8eab7b8eb9dbceb939c202d20ec849cebacb800,verified
+Oblivion.esm,REFR,000038A9,FULL,A Gate to Oblivion,OBgateRandBW001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038AC,FULL,A Gate to Oblivion,OBGateRandBW002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038AE,FULL,A Gate to Oblivion,OBGateRandBW0003,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038AF,FULL,A Gate to Oblivion,OBGateRandBW004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B0,FULL,A Gate to Oblivion,OBGateRandBW005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B1,FULL,A Gate to Oblivion,OBGateRandBW006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B2,FULL,A Gate to Oblivion,OBGateRandBW007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B4,FULL,A Gate to Oblivion,OBGateRandBW008MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B6,FULL,A Gate to Oblivion,OBGateRandBW009MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038B8,FULL,A Gate to Oblivion,OBGateRandBW010AMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038BB,FULL,A Gate to Oblivion,OBGateRandBW011MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038BE,FULL,A Gate to Oblivion,OBGateRandBW012MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038C5,FULL,A Gate to Oblivion,OBGateRandBW0013MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038C6,FULL,A Gate to Oblivion,OBGateRandCH001Mapmarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038CC,FULL,A Gate to Oblivion,OBGateRandCH002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038CD,FULL,A Gate to Oblivion,OBGateRandCH003MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038CE,FULL,A Gate to Oblivion,OBGateRandCH004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038D9,FULL,A Gate to Oblivion,OBGateRandCH005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038DA,FULL,A Gate to Oblivion,OBGateRandCH006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038DB,FULL,A Gate to Oblivion,OBGateRandCH007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038E6,FULL,A Gate to Oblivion,OBGateRandCH008MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038E8,FULL,A Gate to Oblivion,OBGateRandCH009MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038EB,FULL,A Gate to Oblivion,OBGareRandCH010MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038EF,FULL,A Gate to Oblivion,OBGateRandCH011MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038F0,FULL,A Gate to Oblivion,OBGateRandCH012MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038F6,FULL,A Gate to Oblivion,OBGateRandGF001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038FE,FULL,A Gate to Oblivion,OBGateRandGF002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000038FF,FULL,A Gate to Oblivion,OBGateRandGF003MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003905,FULL,A Gate to Oblivion,OBGateRandGF004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003906,FULL,A Gate to Oblivion,OBGateRandGF005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003907,FULL,A Gate to Oblivion,OBGateRandGF006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003909,FULL,A Gate to Oblivion,OBGateRandGF007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000390D,FULL,A Gate to Oblivion,OBGateRandGF008MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003910,FULL,A Gate to Oblivion,OBGateRandGF009MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003915,FULL,A Gate to Oblivion,OBGateRandGF010MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000392D,FULL,A Gate to Oblivion,OBGateRandGF011MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003930,FULL,A Gate to Oblivion,OBGateRandGF012MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003937,FULL,A Gate to Oblivion,OBGateRandHL001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003940,FULL,A Gate to Oblivion,OBGateRandHL002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000394B,FULL,A Gate to Oblivion,OBGateRandHL003MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003957,FULL,A Gate to Oblivion,OBGateRandHL004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003959,FULL,A Gate to Oblivion,OBGateRandHL005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000395A,FULL,A Gate to Oblivion,OBGateRandHL006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003963,FULL,A Gate to Oblivion,OBGateRandHL007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003967,FULL,A Gate to Oblivion,OBGateRandNV001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003986,FULL,A Gate to Oblivion,OBGateRandVM001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000398C,FULL,A Gate to Oblivion,OBGateRandVM002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000398D,FULL,A Gate to Oblivion,OBGateRandVM004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000398E,FULL,A Gate to Oblivion,OBGateRandVM005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039B5,FULL,A Gate to Oblivion,OBGateRandVM006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039C7,FULL,A Gate to Oblivion,OBGateRandVM009MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039C8,FULL,A Gate to Oblivion,OBGateRandVM010MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039C9,FULL,A Gate to Oblivion,OBGateRandVM011MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CA,FULL,A Gate to Oblivion,OBGateRandWW001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CB,FULL,A Gate to Oblivion,OBGateRandWW002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CC,FULL,A Gate to Oblivion,OBGateRandWW003MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CD,FULL,A Gate to Oblivion,OBGateRandWW004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CE,FULL,A Gate to Oblivion,OBGateRandWW005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039CF,FULL,A Gate to Oblivion,OBGateRandWW006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039D0,FULL,A Gate to Oblivion,OBGateRandWW007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039D1,FULL,A Gate to Oblivion,OBGateRandWW008MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039D2,FULL,A Gate to Oblivion,OBGateRandWW009MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039D3,FULL,A Gate to Oblivion,OBGateRandWW010MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039E8,FULL,A Gate to Oblivion,OBGateRandWW011MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039EA,FULL,A Gate to Oblivion,OBGateRandWW012MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039EB,FULL,A Gate to Oblivion,OBGateRandWW013MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039EC,FULL,A Gate to Oblivion,OBGateRandWW015MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039EE,FULL,A Gate to Oblivion,OBGateRandNB02MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F1,FULL,A Gate to Oblivion,OBGateRandNB03MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F5,FULL,A Gate to Oblivion,OBGateRandNB04MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F6,FULL,A Gate to Oblivion,OBGateRandNB05MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F7,FULL,A Gate to Oblivion,OBGateRandNB06MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F8,FULL,A Gate to Oblivion,OBGateRandNB07MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039F9,FULL,A Gate to Oblivion,OBGateRandNB08MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FA,FULL,A Gate to Oblivion,OBGateRandNB09MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FB,FULL,A Gate to Oblivion,OBGateRandNB10MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FC,FULL,A Gate to Oblivion,OBGateRandNB11MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FD,FULL,A Gate to Oblivion,OBGateRandNB12MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FE,FULL,A Gate to Oblivion,OBGateRandNB13MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000039FF,FULL,A Gate to Oblivion,OBGateRandNB14MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003A00,FULL,A Gate to Oblivion,OBGateRandNB15MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00003A02,FULL,A Gate to Oblivion,OBGateRandNB16MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00008B65,FULL,Imperial City Arena,,임페리얼 시티 아레나,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020ec9584eba088eb829800,verified
+Oblivion.esm,REFR,00008B66,FULL,Imperial City Arboretum,,임페리얼 시티 수목원,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020ec8898ebaaa9ec9b9000,verified
+Oblivion.esm,REFR,00008B67,FULL,Imperial City Elven Gardens District,,"임페리얼 시티, 엘프 정원 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec9798ed948420eca095ec9b9020eab5acec97ad00,verified
+Oblivion.esm,REFR,00008B6B,FULL,Imperial City Palace,ICPalaceMapMarker,임페리얼 시티 황궁,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020ed99a9eab68100,verified
+Oblivion.esm,REFR,00008B6C,FULL,Imperial City Prison,,임페리얼 시티 감옥,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020eab090ec98a500,verified
+Oblivion.esm,REFR,00008B6D,FULL,Imperial City Market District,,"임페리얼 시티, 시장 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec8b9cec9ea520eab5acec97ad00,verified
+Oblivion.esm,REFR,00008B6E,FULL,Imperial City Talos Plaza District,ICTalosPlazaMainGateMarker,"임페리얼 시티, 탈로스 광장 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ed8388eba19cec8aa420eab491ec9ea520eab5acec97ad00,verified
+Oblivion.esm,REFR,00008B6F,FULL,Imperial City Temple District,,"임페리얼 시티, 신전 구역",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec8ba0eca08420eab5acec97ad00,verified
+Oblivion.esm,REFR,00008B70,FULL,"Imperial City, The Arcane University",,"임페리얼 시티, 아케인 대학",ec9e84ed8e98eba6acec96bc20ec8b9ced8bb02c20ec9584ecbc80ec9db820eb8c80ed959900,verified
+Oblivion.esm,REFR,0000A3B6,FULL,Harcane Grove,HarcaneGroveMapMarker,하케인 숲,ed9598ecbc80ec9db820ec88b200,verified
+Oblivion.esm,REFR,0000AB52,FULL,Cropsford,CropsfordMapMarker,크롭스포드,ed81aceba1adec8aa4ed8faceb939c00,verified
+Oblivion.esm,REFR,0000AB53,FULL,Timberscar Hollow,TimberscarHollowMapMarker,수목흉터 공동,ec8898ebaaa9ed9d89ed84b020eab3b5eb8f9900,verified
+Oblivion.esm,REFR,0000AB54,FULL,Cracked Wood Cave,CrackedWoodCaveMapMarker,금간 나무 동굴,eab888eab08420eb8298ebacb420eb8f99eab5b400,verified
+Oblivion.esm,REFR,0000C1F0,FULL,Serpent's Trail,SerpentsTrailMapMarker,뱀의 흔적,ebb180ec9d9820ed9d94eca08100,verified
+Oblivion.esm,REFR,0000CD09,FULL,A Gate to Oblivion,,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEF7,FULL,A Gate to Oblivion,KvatchOblivionGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEF8,FULL,A Gate to Oblivion,CheydinhalOblivionGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEF9,FULL,A Gate to Oblivion,BravilOBGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEFA,FULL,A Gate to Oblivion,BrumaOBGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEFB,FULL,A Gate to Oblivion,ChorrolOBGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEFC,FULL,A Gate to Oblivion,LeyawiinOBGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000CEFD,FULL,A Gate to Oblivion,SkingradOBGateMapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,0000DA1E,FULL,Gates of Madness,SEGatesOfMadnessMapMarker,광기의 관문,eab491eab8b0ec9d9820eab480ebacb800,verified
+Oblivion.esm,REFR,0000DA23,FULL,Aichan,,아이찬,ec9584ec9db4ecb0ac00,verified
+Oblivion.esm,REFR,0000DA29,FULL,Cylarne,XPCylarneMapMarker,사이란,ec82acec9db4eb9e8000,verified
+Oblivion.esm,REFR,0000DA2E,FULL,Milchar,SEMilcharMapMarker,밀카르,ebb080ecb9b4eba5b400,verified
+Oblivion.esm,REFR,0000DA38,FULL,The Howling Halls,XPHowlingHallsExteriorMARKER,울부짖는 홀,ec9ab8ebb680eca796eb8a9420ed998000,verified
+Oblivion.esm,REFR,0000DA3D,FULL,Cann,,칸,ecb9b800,verified
+Oblivion.esm,REFR,0000DA42,FULL,Brellach,XPBrellachMapMarker,브렐라흐,ebb88ceba090eb9dbced9d9000,verified
+Oblivion.esm,REFR,0000DA47,FULL,Ebrocca,,에브로카,ec9790ebb88ceba19cecb9b400,verified
+Oblivion.esm,REFR,0000DA4C,FULL,Xirethard,,시레타드,ec8b9ceba088ed8380eb939c00,verified
+Oblivion.esm,REFR,0000DA56,FULL,Xaselm,XPXaselmMapMarker,자셀름,ec9e90ec8580eba68400,verified
+Oblivion.esm,REFR,0000DA60,FULL,Xedilian,XedilianMapMarker,제딜리안,eca09ceb949ceba6acec958800,verified
+Oblivion.esm,REFR,0000DA65,FULL,Xiditte,,시디테,ec8b9ceb9494ed858c00,verified
+Oblivion.esm,REFR,0000DA6C,FULL,Corpserot Passage,,코어세로트 통로,ecbd94ec96b4ec84b8eba19ced8ab820ed86b5eba19c00,verified
+Oblivion.esm,REFR,0000DA6E,FULL,Rotten Den,,썩은 굴,ec8da9ec9d8020eab5b400,verified
+Oblivion.esm,REFR,0000DA70,FULL,Knotty Bramble,XPKnottyBrambleMapMarker,매듭진 검은딸기나무,eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb400,verified
+Oblivion.esm,REFR,0000DA72,FULL,Blackroot Lair,,블랙루트 은신처,ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb29800,verified
+Oblivion.esm,REFR,0000DA74,FULL,Knotbone Chamber,,매듭뼈 방,eba7a4eb93adebbc8820ebb0a900,verified
+Oblivion.esm,REFR,0000DA76,FULL,Fetid Grove,FetidGroveMapMarker,악취의 숲,ec9585ecb7a8ec9d9820ec88b200,verified
+Oblivion.esm,REFR,0000DA78,FULL,Dunroot Burrow,XPDunrootBurrowMapMarker,던루트 동굴,eb8d98eba3a8ed8ab820eb8f99eab5b400,verified
+Oblivion.esm,REFR,0000DA7E,FULL,Knifepoint Hollow,XPKnifepointHollowMARKER,나이프포인트 공동,eb8298ec9db4ed9484ed8facec9db8ed8ab820eab3b5eb8f9900,verified
+Oblivion.esm,REFR,0000DA80,FULL,Swampgas Hole,,늪가스 구멍,eb8aaaeab080ec8aa420eab5aceba98d00,verified
+Oblivion.esm,REFR,0000DA82,FULL,Pinnacle Rock,XPPinnacleRockMapMarker,피나클 록,ed94bceb8298ed81b420eba19d00,verified
+Oblivion.esm,REFR,0000DA85,FULL,Vitharn,SE32VitharnMapMarker,비탄,ebb984ed838400,verified
+Oblivion.esm,REFR,0000DA87,FULL,Hill of Suicides,,자살자의 언덕,ec9e90ec82b4ec9e90ec9d9820ec96b8eb8d9500,verified
+Oblivion.esm,REFR,00013171,FULL,Gardens of Flesh and Bone,XPGardensMapMarker,살점과 뼈의 정원,ec82b4eca090eab3bc20ebbc88ec9d9820eca095ec9b9000,verified
+Oblivion.esm,REFR,00013179,FULL,Xeddefen,XPXeddefenMapMarker,제데펜,eca09ceb8db0ed8e9c00,verified
+Oblivion.esm,REFR,00014D15,FULL,A Gate to Oblivion,OBGateRandGC007MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D17,FULL,A Gate to Oblivion,OBGateRandGC006MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D18,FULL,A Gate to Oblivion,OBGateRandGC005MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D19,FULL,A Gate to Oblivion,OBGateRandGC004MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D1A,FULL,A Gate to Oblivion,OBGateRandGC003MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D1B,FULL,A Gate to Oblivion,OBGateRandGC002MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00014D1C,FULL,A Gate to Oblivion,OBGateRandGC001MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,00015244,FULL,Greenmead Cave,GreenmeadCaveMapMarker,녹색 벌꿀술 동굴,eb85b9ec838920ebb28ceabf80ec88a020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015245,FULL,Leafrot Cave,LeafRotCaveMarker,부패한 잎사귀 동굴,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015246,FULL,Muck Valley Cavern,MuckValleyCavernMapMarker,배설물 골짜기 동굴,ebb0b0ec84a4ebacbc20eab3a8eca79ceab8b020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015247,FULL,Echo Cave,EchoCaveMapMarker,메아리 동굴,eba994ec9584eba6ac20eb8f99eab5b400,verified
+Oblivion.esm,REFR,000156FC,FULL,Charcoal Cave,CharcoalCaveMapMarker,숯 동굴,ec88af20eb8f99eab5b400,verified
+Oblivion.esm,REFR,000156FD,FULL,Silver Tooth Cave,SilverToothCaveMapMarker,은 이빨 동굴,ec9d8020ec9db4ebb9a820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000156FE,FULL,Fatback Cave,FatbackCaveMapMarker,비계살 동굴,ebb984eab384ec82b420eb8f99eab5b400,verified
+Oblivion.esm,REFR,000156FF,FULL,Shinbone Cave,ShinboneCaveMapMarker,정강이 동굴,eca095eab095ec9db420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015700,FULL,Lost Boy Cavern,LostBoyCavernsMapMarker,길 잃은 소년의 동굴,eab8b820ec9e83ec9d8020ec868ceb8584ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015701,FULL,Grayrock Cave,GrayRockCaveMapMarker,그레이록 동굴,eab7b8eba088ec9db4eba19d20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015702,FULL,Crayfish Cave,CrayfishCaveMapMarker,가재 동굴,eab080ec9eac20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015703,FULL,Unmarked Cave,UnmarkedCave01MapMarker,미확인 동굴,ebafb8ed9995ec9db820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015704,FULL,Memorial Cave,MemorialCaveMapMarker,추모의 동굴,ecb694ebaaa8ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015706,FULL,Barren Cave,BarrenCaveMapMarker,불모의 동굴,ebb688ebaaa8ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015707,FULL,Toadstool Hollow,ToadstoolHollowMapMarker,독버섯 공동,eb8f85ebb284ec84af20eab3b5eb8f9900,verified
+Oblivion.esm,REFR,00015708,FULL,Bloodcrust Cavern,BloodCrustMapMarker,피딱지 동굴,ed94bceb94b1eca78020eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001570B,FULL,Hrota Cave,HrotaCaveMapMarker,호로타 동굴,ed98b8eba19ced838020eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001570F,FULL,Wenderbek Cave,WenderbekCaveMapMarker,웬더베크 동굴,ec9baceb8d94ebb2a0ed81ac20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015895,FULL,Rockmilk Cave,RockmilkCaveMapMarker,바위젖 동굴,ebb094ec9c84eca09620eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015898,FULL,Howling Cave,HowlingCaveMapMarker,울부짖는 동굴,ec9ab8ebb680eca796eb8a9420eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001589A,FULL,Brittlerock Cave,BrittleRockCaveMapMarker,취약한 바위 동굴,ecb7a8ec95bded959c20ebb094ec9c8420eb8f99eab5b400,verified
+Oblivion.esm,REFR,000158BC,FULL,Amelion Tomb,AmelionTombMapMarker,아멜리온 무덤,ec9584eba99ceba6acec98a820ebacb4eb8da400,verified
+Oblivion.esm,REFR,000158BD,FULL,Bloodmayne Cave,BloodmayneCaveMapMarker,블러드메인 동굴,ebb894eb9faceb939ceba994ec9db820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000158BE,FULL,Fyrelight Cave,FyrelightCaveMapMarker,불빛 동굴,ebb688ebb99b20eb8f99eab5b400,verified
+Oblivion.esm,REFR,000158BF,FULL,Fallen Rock Cave,FallenRockCaveMapMarker,무너진 바위 동굴,ebacb4eb8488eca78420ebb094ec9c8420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015902,FULL,Nonwyll Cavern,NonwyllCavernMapMarker,논윌 동굴,eb85bcec9c8c20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015924,FULL,Robber's Glen Cave,RobbersGlenCaveMapMarker,강도의 협곡 동굴,eab095eb8f84ec9d9820ed9891eab3a120eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001598A,FULL,Sandstone Cavern,SandstoneCavernMapMarker,사암 동굴,ec82acec959420eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001598B,FULL,Moss Rock Cavern,MossRockCavernMapMarker,이끼 바위 동굴,ec9db4eb81bc20ebb094ec9c8420eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001598C,FULL,Dzonot Cave,DzonotCaveMapMarker,조노트 동굴,eca1b0eb85b8ed8ab820eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001598E,FULL,Black Rock Caverns,BlackRockCavernsMapMarker,검은 바위 동굴,eab280ec9d8020ebb094ec9c8420eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001598F,FULL,Outlaw Endre's Cave,OutlawEndresCaveMapMarker,무법자 엔드레의 동굴,ebacb4ebb295ec9e9020ec9794eb939ceba088ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159B1,FULL,Sinkhole Cave,SinkholeCaveMapMarker,싱크홀 동굴,ec8bb1ed81aced998020eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159B3,FULL,Capstone Cave,CapstoneCaveMapMarker,캡스톤 동굴,ecbaa1ec8aa4ed86a420eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159D5,FULL,Felgageldt Cave,FelgageldtCaveMapMarker,펠가겔트 동굴,ed8ea0eab080eab294ed8ab820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159F7,FULL,Undertow Cavern,UndertowCavernMapMarker,저층류 동굴,eca080ecb8b5eba59820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159F9,FULL,Serpent Hollow Cave,SerpentHollowCaveMapMarker,뱀의 동굴,ebb180ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159FA,FULL,Mingo Cave,MingoCaveMapMarker,밍고 동굴,ebb08deab3a020eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159FB,FULL,Nisin Cave,NisinCaveMapMarker,니신 동굴,eb8b88ec8ba020eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159FD,FULL,Quickwater Cave,QuickwaterCaveMapMarker,급류 동굴,eab889eba59820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159FE,FULL,Shattered Scales Cave,ShatteredScalesCaveMapMarker,부서진 비늘 동굴,ebb680ec849ceca78420ebb984eb8a9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000159FF,FULL,The Beast's Maw,TheBeastsMawMapMarker,야수의 아가리,ec95bcec8898ec9d9820ec9584eab080eba6ac00,verified
+Oblivion.esm,REFR,00015A00,FULL,Fieldhouse Cave,FieldhouseCaveMapMarker,현장가옥 동굴,ed9884ec9ea5eab080ec98a520eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A01,FULL,Yellow Tick Cave,YellowTickCaveMapMarker,노란 진드기 동굴,eb85b8eb9e8020eca784eb939ceab8b020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A02,FULL,Sage Glen Hollow,SageGlenHollowMapMarker,세이지 글렌의 동굴,ec84b8ec9db4eca78020eab880eba08cec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A03,FULL,Newt Cave,NewtCaveMapMarker,영원 동굴,ec9881ec9b9020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A27,FULL,Goblin Jim's Cave,GoblinJimsCaveMapMarker,고블린 짐의 동굴,eab3a0ebb894eba6b020eca790ec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A28,FULL,Breakneck Cave,BreakneckCaveMapMarker,브레이크넥 동굴,ebb88ceba088ec9db4ed81aceb84a520eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A29,FULL,Reedstand Cave,ReedstandCaveMapMarker,갈대초목 동굴,eab088eb8c80ecb488ebaaa920eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A2A,FULL,Red Ruby Cave ,RedRubyCaveMapMarker,붉은 루비 동굴,ebb689ec9d8020eba3a8ebb98420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A2B,FULL,Haynote Cave,HaynoteCaveMapMarker,건초쪽지 동굴,eab1b4ecb488ecaabdeca78020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A2E,FULL,Bramblepoint Cave,BramblepointCaveMapMarker,검은딸기나무 동굴,eab280ec9d80eb94b8eab8b0eb8298ebacb420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A2F,FULL,Arrowshaft Cavern,ArrowshaftCavernMapMarker,화살촉 동굴,ed9994ec82b4ecb48920eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A31,FULL,Shadow's Rest Cavern,ShadowsRestCavernMapMarker,그림자의 안식처 동굴,eab7b8eba6bcec9e90ec9d9820ec9588ec8b9decb29820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A32,FULL,Bedrock Break,BedrockBreakMapMarker,베드락 브레이크 동굴,ebb2a0eb939ceb9dbd20ebb88ceba088ec9db4ed81ac20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A33,FULL,Mongrel's Tooth Cave,MongrelsToothCaveMapMarker,잡종 개의 이빨 동굴,ec9ea1eca28520eab09cec9d9820ec9db4ebb9a820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A34,FULL,Veyond Cave,VeryondsCaveMapMarker,베이욘드 동굴,ebb2a0ec9db4ec9a98eb939c20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A35,FULL,Kingscrest Cavern,KingscrestCavernMapMarker,킹스크레스트 동굴,ed82b9ec8aa4ed81aceba088ec8aa4ed8ab820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A36,FULL,Horn Cave,HornCaveMapMarker,뿔 동굴,ebbf9420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A37,FULL,Dark Fissure,DarkFissureMapMarker,어두운 틈새,ec96b4eb9190ec9ab420ed8b88ec838800,verified
+Oblivion.esm,REFR,00015A38,FULL,Smoke Hole Cave,SmokeHoleCaveMapMarker,연기 구멍 동굴,ec97b0eab8b020eab5aceba98d20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00015A39,FULL,Underpall Cave,UnderpallCaveMapMarker,언더펄 동굴,ec96b8eb8d94ed8e8420eb8f99eab5b400,verified
+Oblivion.esm,REFR,00017209,FULL,Sardavar Leed,SardavarLeedMapMarker,사르다바르 리드,ec82aceba5b4eb8ba4ebb094eba5b420eba6aceb939c00,verified
+Oblivion.esm,REFR,0001720A,FULL,Wenyandawik,WenyandawikMapMarker,웬얀다윅,ec9bacec9680eb8ba4ec9c8500,verified
+Oblivion.esm,REFR,00017351,FULL,Welke,WelkeMapMarker,웰케,ec9bb0ecbc8000,verified
+Oblivion.esm,REFR,00017353,FULL,Moranda,MorandaMapMarker,모란다,ebaaa8eb9e80eb8ba400,verified
+Oblivion.esm,REFR,00017355,FULL,Mackamentain,MackamentainMapMarker,맥카멘테인,eba7a5ecb9b4eba998ed858cec9db800,verified
+Oblivion.esm,REFR,00017357,FULL,Culotte,CulotteMapMarker,숏 팬츠,ec888f20ed8cacecb8a000,verified
+Oblivion.esm,REFR,00017359,FULL,Wendir,WendirMapMarker,웬디르,ec9baceb9494eba5b400,verified
+Oblivion.esm,REFR,0001735B,FULL,Ninendava,NinendavaMapMarker,니넨다바,eb8b88eb84a8eb8ba4ebb09400,verified
+Oblivion.esm,REFR,0001735D,FULL,Fanacas,FanacasMapMarker,파나카스,ed8c8ceb8298ecb9b4ec8aa400,verified
+Oblivion.esm,REFR,0001735F,FULL,Anga,AngaMapMarker,앙가,ec9599eab08000,verified
+Oblivion.esm,REFR,000174BD,FULL,Fort Coldcorn,FortColdcornMapMarker,콜드콘 요새,ecbd9ceb939cecbd9820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C0,FULL,Fort Redwater,FortRedwaterMapMarker,레드워터 요새,eba088eb939cec9b8ced84b020ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C1,FULL,Fort Naso,FortNasoMapMarker,나소 요새,eb8298ec868c20ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C4,FULL,Fort Vlastarus,FortVlastarusMapMarker,블라스타루스 요새,ebb894eb9dbcec8aa4ed8380eba3a8ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C5,FULL,Fort Hastrel,FortHastrelMapMarker,하스트렐 요새,ed9598ec8aa4ed8ab8eba09020ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C8,FULL,Fort Magia,FortMagiaMapMarker,마기아 요새,eba788eab8b0ec958420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174C9,FULL,Fort Facian,FortFacianMapMarker,파시안 요새,ed8c8cec8b9cec958820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174CC,FULL,Fort Virtue,FortVirtueMapMarker,버츄 요새,ebb284ecb88420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D0,FULL,Fort Istirus,FortIstirusMapMarker,이스티루스 요새,ec9db4ec8aa4ed8bb0eba3a8ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D1,FULL,Fort Cuptor,FortCuptorMapMarker,쿱터 요새,ecbfb1ed84b020ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D4,FULL,Fort Linchal,FortLinchalMapMarker,린찰 요새,eba6b0ecb0b020ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D5,FULL,Fort Variela,FortVarielaMapMarker,바리에라 요새,ebb094eba6acec9790eb9dbc20ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D8,FULL,Fort Empire,FortEmpireMapMarker,엠파이어 요새,ec97a0ed8c8cec9db4ec96b420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174D9,FULL,Fort Nomore,FortNomoreMapMarker,노모어 요새,eb85b8ebaaa8ec96b420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174DC,FULL,Dragonclaw Rock,DragonClawRockMapMarker,드래곤 발톱 바위,eb939ceb9e98eab3a420ebb09ced86b120ebb094ec9c8400,verified
+Oblivion.esm,REFR,000174DD,FULL,Fort Horunn,FortHorunnMapMarker,호룬 요새,ed98b8eba3ac20ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E0,FULL,Fort Flecia,FortFleciaMapMarker,플레시아 요새,ed948ceba088ec8b9cec958420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E1,FULL,Fort Irony,FortIronyMapMarker,아이러니 요새,ec9584ec9db4eb9faceb8b8820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E4,FULL,Fort Sejanus,FortSejanusMapMarker,세야누스 요새,ec84b8ec95bceb8884ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E5,FULL,Fort Entius,FortEntiusMapMarker,엔티우스 요새,ec9794ed8bb0ec9ab0ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E8,FULL,Fort Roebeck,FortRoebeckMapMarker,로벡 요새,eba19cebb2a120ec9a94ec838800,verified
+Oblivion.esm,REFR,000174E9,FULL,Fort Aurus,FortAurusMapMarker,아우루스 요새,ec9584ec9ab0eba3a8ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174EC,FULL,Fort Rayles,FortRaylesMapMarker,레이레스 요새,eba088ec9db4eba088ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174ED,FULL,Fort Gold-Throat,FortGoldThroatMapMarker,황금의 목 요새,ed99a9eab888ec9d9820ebaaa920ec9a94ec838800,verified
+Oblivion.esm,REFR,000174F0,FULL,Fort Chalman,FortChalmanMapMarker,찰만 요새,ecb0b0eba78c20ec9a94ec838800,verified
+Oblivion.esm,REFR,000174F1,FULL,Fort Doublecross,FortDoublecrossMapMarker,더블크로스 요새,eb8d94ebb894ed81aceba19cec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174F4,FULL,Fort Sutch,FortSutchMapMarker,서치 요새,ec849cecb99820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174F6,FULL,Fort Farragut,FortFarragutMapMarker,패러거트 요새,ed8ca8eb9faceab1b0ed8ab820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174F9,FULL,Fort Teleman,FortTelemanMapMarker,텔레만 요새,ed8594eba088eba78c20ec9a94ec838800,verified
+Oblivion.esm,REFR,000174FA,FULL,Fort Redman,FortRedmanMapMarker,레드맨 요새,eba088eb939ceba7a820ec9a94ec838800,verified
+Oblivion.esm,REFR,000174FC,FULL,Fort Ontus,FortOntusMapMarker,온투스 요새,ec98a8ed88acec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,000174FD,FULL,Fort Blueblood,FortBluebloodMapMarker,블루블러드 요새,ebb894eba3a8ebb894eb9faceb939c20ec9a94ec838800,verified
+Oblivion.esm,REFR,00017501,FULL,Fort Dirich,FortDirichMapMarker,디리치 요새,eb9494eba6acecb99820ec9a94ec838800,verified
+Oblivion.esm,REFR,00017504,FULL,Fort Caractacus,FortCaractacusMapMarker,카락타쿠스 요새,ecb9b4eb9dbded8380ecbfa0ec8aa420ec9a94ec838800,verified
+Oblivion.esm,REFR,00017508,FULL,Fort Wooden Hand,FortWoodenHandMapMarker,나무 손 요새,eb8298ebacb420ec869020ec9a94ec838800,verified
+Oblivion.esm,REFR,0001750C,FULL,Fort Homestead,FortHomesteadMapMarker,홈스테드 요새,ed9988ec8aa4ed858ceb939c20ec9a94ec838800,verified
+Oblivion.esm,REFR,0001750D,FULL,Crowhaven,CrowHavenMapMarker,까마귀의 안식처,eab98ceba788eab780ec9d9820ec9588ec8b9decb29800,verified
+Oblivion.esm,REFR,00017510,FULL,Fort Nikel,FortNikelMapMarker,니켈 요새,eb8b88ecbc8820ec9a94ec838800,verified
+Oblivion.esm,REFR,00017511,FULL,Fort Strand,FortStrandMapMarker,스트랜드 요새,ec8aa4ed8ab8eb9e9ceb939c20ec9a94ec838800,verified
+Oblivion.esm,REFR,00017514,FULL,Dasek Moor,DasekMoorMapMarker,다섹 무어,eb8ba4ec84b920ebacb4ec96b400,verified
+Oblivion.esm,REFR,00017515,FULL,Fort Alessia,FortAlessiaMapMarker,알레시아 요새,ec958ceba088ec8b9cec958420ec9a94ec838800,verified
+Oblivion.esm,REFR,00017518,FULL,Fort Scinia,FortSciniaMapMarker,시니아 요새,ec8b9ceb8b88ec958420ec9a94ec838800,verified
+Oblivion.esm,REFR,00017519,FULL,Fort Wariel,FortWarielMapMarker,와리엘 요새,ec9980eba6acec979820ec9a94ec838800,verified
+Oblivion.esm,REFR,0001751C,FULL,Fort Cedrian,FortCedrianMapMarker,세드리안 요새,ec84b8eb939ceba6acec958820ec9a94ec838800,verified
+Oblivion.esm,REFR,0001751D,FULL,Fort Carmala,FortCarmalaMapMarker,카르말라 요새,ecb9b4eba5b4eba790eb9dbc20ec9a94ec838800,verified
+Oblivion.esm,REFR,00017520,FULL,Fort Black Boot,FortBlackBootMapMarker,블랙 부트 요새,ebb894eb9e9920ebb680ed8ab820ec9a94ec838800,verified
+Oblivion.esm,REFR,0001752A,FULL,Gutted Mine,GuttedMineMapMarker,처참한 광산,ecb298ecb0b8ed959c20eab491ec82b000,verified
+Oblivion.esm,REFR,0001752B,FULL,Bleak Mine,BleakMineMapMarker,암울한 광산,ec9594ec9ab8ed959c20eab491ec82b000,verified
+Oblivion.esm,REFR,0001752E,FULL,Flooded Mine,FloodedMineMapMarker,침수된 광산,ecb9a8ec8898eb909c20eab491ec82b000,verified
+Oblivion.esm,REFR,0001752F,FULL,Pillaged Mine,PillagedMineMapMarker,약탈당한 광산,ec95bded8388eb8bb9ed959c20eab491ec82b000,verified
+Oblivion.esm,REFR,00017533,FULL,Desolate Mine,DesolateMineMapMarker,버려진 광산,ebb284eba0a4eca78420eab491ec82b000,verified
+Oblivion.esm,REFR,00017536,FULL,Forsaken Mine,ForsakenMineMapMarker,버려진 광산,ebb284eba0a4eca78420eab491ec82b000,verified
+Oblivion.esm,REFR,00017537,FULL,Abandoned Mine,AbandonedMineMapMarker,버려진 광산,ebb284eba0a4eca78420eab491ec82b000,verified
+Oblivion.esm,REFR,0001753A,FULL,Collapsed Mine,CollapsedMineMapMarker,무너진 광산,ebacb4eb8488eca78420eab491ec82b000,verified
+Oblivion.esm,REFR,0001753B,FULL,Deserted Mine,DesertedMineMapMarker,버려진 광산,ebb284eba0a4eca78420eab491ec82b000,verified
+Oblivion.esm,REFR,0001753E,FULL,Squandered Mine,SquanderedMineMapMarker,낭비된 광산,eb82adebb984eb909c20eab491ec82b000,verified
+Oblivion.esm,REFR,0001753F,FULL,Rickety Mine,RicketyMineMapMarker,리키티 광산,eba6aced82a4ed8bb020eab491ec82b000,verified
+Oblivion.esm,REFR,00017542,FULL,Cursed Mine,CursedMineMapMarker,저주받은 광산,eca080eca3bcebb09bec9d8020eab491ec82b000,verified
+Oblivion.esm,REFR,00017543,FULL,Echo Mine,EchoMineMapMarker,메아리 광산,eba994ec9584eba6ac20eab491ec82b000,verified
+Oblivion.esm,REFR,00017546,FULL,Infested Mine,InfestedMineMapMarker,감염된 광산,eab090ec97bceb909c20eab491ec82b000,verified
+Oblivion.esm,REFR,00017547,FULL,Belletor's Folly,BelletorsFollyMapMarker,벨레토르의 어리석음,ebb2a8eba088ed86a0eba5b4ec9d9820ec96b4eba6acec849dec9d8c00,verified
+Oblivion.esm,REFR,0001754A,FULL,Haunted Mine,HauntedMineMapMarker,유령의 광산,ec9ca0eba0b9ec9d9820eab491ec82b000,verified
+Oblivion.esm,REFR,0001754B,FULL,Empty Mine,EmptyMineMapMarker,빈 광산,ebb98820eab491ec82b000,verified
+Oblivion.esm,REFR,0001754E,FULL,Exhausted Mine,ExhaustedMineMapMarker,고갈된 광산,eab3a0eab088eb909c20eab491ec82b000,verified
+Oblivion.esm,REFR,0001754F,FULL,Shattered Mine,ShatteredMineMapMarker,부서진 광산,ebb680ec849ceca78420eab491ec82b000,verified
+Oblivion.esm,REFR,00017552,FULL,Barren Mine,BarrenMineMapMarker,불모의 광산,ebb688ebaaa8ec9d9820eab491ec82b000,verified
+Oblivion.esm,REFR,00017553,FULL,Plundered Mine,PlunderedMineMapMarker,약탈당한 광산,ec95bded8388eb8bb9ed959c20eab491ec82b000,verified
+Oblivion.esm,REFR,00017556,FULL,Derelict Mine,DerelictMineMapMarker,폐기된 광산,ed8f90eab8b0eb909c20eab491ec82b000,verified
+Oblivion.esm,REFR,00017557,FULL,Doomed Mine,DoomedMineMapMarker,파멸의 광산,ed8c8ceba9b8ec9d9820eab491ec82b000,verified
+Oblivion.esm,REFR,0001755A,FULL,Crumbling Mine,CrumblingMineMapMarker,무너져가는 광산,ebacb4eb8488eca0b8eab080eb8a9420eab491ec82b000,verified
+Oblivion.esm,REFR,0001755F,FULL,Nornalhorst,NornalhorstMapMarker,노르날호르스트,eb85b8eba5b4eb82a0ed98b8eba5b4ec8aa4ed8ab800,verified
+Oblivion.esm,REFR,00017560,FULL,Kemen,KemenMapMarker,케멘,ecbc80eba99800,verified
+Oblivion.esm,REFR,00017563,FULL,Trumbe,TrumbeMapMarker,트럼베,ed8ab8eb9fbcebb2a000,verified
+Oblivion.esm,REFR,00017564,FULL,Bawn,BawnMapMarker,바운,ebb094ec9ab400,verified
+Oblivion.esm,REFR,00017567,FULL,Hrotanda Vale,HrotandaValeMapMarker,호로탄다 계곡,ed98b8eba19ced8384eb8ba420eab384eab3a100,verified
+Oblivion.esm,REFR,00017568,FULL,Niryastare,NiryastareMapMarker,니리아스타레,eb8b88eba6acec9584ec8aa4ed8380eba08800,verified
+Oblivion.esm,REFR,0001756B,FULL,Hame,HameMapMarker,하메,ed9598eba99400,verified
+Oblivion.esm,REFR,0001756C,FULL,Wendelbek,WendelbekMapMarker,웬델베크,ec9baceb8db8ebb2a0ed81ac00,verified
+Oblivion.esm,REFR,0001756F,FULL,Silorn,SilornMapMarker,사일론,ec82acec9dbceba1a000,verified
+Oblivion.esm,REFR,00017570,FULL,Anutwyll,AnutwyllMapMarker,아누트윌,ec9584eb8884ed8ab8ec9c8c00,verified
+Oblivion.esm,REFR,00017573,FULL,Morahame,MorahameMapMarker,모라하메,ebaaa8eb9dbced9598eba99400,verified
+Oblivion.esm,REFR,00017574,FULL,Ceyatatar,CeyatatarMapMarker,세야타타르,ec84b8ec95bced8380ed8380eba5b400,verified
+Oblivion.esm,REFR,00017577,FULL,Belda,BeldaMapMarker,벨다,ebb2a8eb8ba400,verified
+Oblivion.esm,REFR,00017578,FULL,Beldaburo,BeldaburoMapMarker,벨다부로,ebb2a8eb8ba4ebb680eba19c00,verified
+Oblivion.esm,REFR,0001757B,FULL,Varondo,VarondoMapMarker,바론도,ebb094eba1a0eb8f8400,verified
+Oblivion.esm,REFR,0001757C,FULL,Ondo,OndoMapMarker,온도,ec98a8eb8f8400,verified
+Oblivion.esm,REFR,0001757F,FULL,Elenglynn,ElenglynnMapMarker,엘렌글린,ec9798eba08ceab880eba6b000,verified
+Oblivion.esm,REFR,00017580,FULL,Nenyond Twyll,NenyondTwyllMapMarker,네니언드 트윌,eb84a4eb8b88ec96b8eb939c20ed8ab8ec9c8c00,verified
+Oblivion.esm,REFR,00017583,FULL,Talwinque,TalwinqueMapMarker,탈윈크,ed8388ec9c88ed81ac00,verified
+Oblivion.esm,REFR,00017584,FULL,Telepe,TelepeMapMarker,텔레페,ed8594eba088ed8e9800,verified
+Oblivion.esm,REFR,00017587,FULL,Sercen,SercenMapMarker,세르센,ec84b8eba5b4ec84bc00,verified
+Oblivion.esm,REFR,00017588,FULL,Rielle,RielleMapMarker,리엘,eba6acec979800,verified
+Oblivion.esm,REFR,0001758C,FULL,Narfinsel,NarfinselMapMarker,나르핀셀,eb8298eba5b4ed9580ec858000,verified
+Oblivion.esm,REFR,0001758F,FULL,Fanacasecul,FanacaseculMapMarker,파나카세쿨,ed8c8ceb8298ecb9b4ec84b8ecbfa800,verified
+Oblivion.esm,REFR,00017593,FULL,Atatar,AtatarMapMarker,아타타르,ec9584ed8380ed8380eba5b400,verified
+Oblivion.esm,REFR,00017594,FULL,Piukanda,PiukandaMapMarker,피우칸다,ed94bcec9ab0ecb9b8eb8ba400,verified
+Oblivion.esm,REFR,00017597,FULL,Nenalata,NenalataMapMarker,네날라타,eb84a4eb82a0eb9dbced838000,verified
+Oblivion.esm,REFR,00017598,FULL,Lindai,LindaiMapMarker,린다이,eba6b0eb8ba4ec9db400,verified
+Oblivion.esm,REFR,000175A6,FULL,Vindasel,VindaselMapMarker,빈다셀,ebb988eb8ba4ec858000,verified
+Oblivion.esm,REFR,000175A9,FULL,Nornal,NornalMapMarker,노르날,eb85b8eba5b4eb82a000,verified
+Oblivion.esm,REFR,000175AA,FULL,Arpenia,ArpeniaMapMarker,알페니아,ec958ced8e98eb8b88ec958400,verified
+Oblivion.esm,REFR,000175AD,FULL,Veyond,VeyondMapMarker,베이욘드,ebb2a0ec9db4ec9a98eb939c00,verified
+Oblivion.esm,REFR,000175AE,FULL,Vahtacen,VahtacenMapMarker,바타켄,ebb094ed8380ecbc8400,verified
+Oblivion.esm,REFR,000175AF,FULL,Miscarcand,MiscarcandMapMarker,미스카컨드,ebafb8ec8aa4ecb9b4ecbba8eb939c00,verified
+Oblivion.esm,REFR,000175CD,FULL,Mortal Camp,MortalCampMapMarker,필멸자 캠프,ed9584eba9b8ec9e9020ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175D1,FULL,Wind Range Camp ,WindRangeCampMapMarker,윈드 레인지 캠프,ec9c88eb939c20eba088ec9db8eca78020ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175D3,FULL,Hidden Camp ,HiddenCampMapMarker,숨겨진 캠프,ec88a8eab2a8eca78420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175D7,FULL,Carbo's Camp,CarbosCampMapMarker,카르보의 캠프,ecb9b4eba5b4ebb3b4ec9d9820ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175DB,FULL,Trossan Camp,TrossanCampMapMarker,트로산 캠프,ed8ab8eba19cec82b020ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175DD,FULL,Nayon Camp,NayonCampMapMarker,나욘 캠프,eb8298ec9a9820ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175DF,FULL,Sweetwater Camp,SweetwaterCampMapMarker,스위트워터 캠프,ec8aa4ec9c84ed8ab8ec9b8ced84b020ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175E1,FULL,Brotch Camp,BrotchCampMapMarker,브로치 캠프,ebb88ceba19cecb99820ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175E3,FULL,Varus Camp,VarusCampMapMarker,바루스 캠프,ebb094eba3a8ec8aa420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175E5,FULL,Black Dog Camp,BlackDogCampMapMarker,블랙 독 캠프,ebb894eb9e9920eb8f8520ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175E7,FULL,Garnet Camp,GarnetCampMapMarker,가넷 캠프,eab080eb84b720ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175E9,FULL,Walker Camp,WalkerCampMapMarker,워커 캠프,ec9b8cecbba420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175EB,FULL,Valley View Camp,ValleyViewCampMapMarker,계곡 전망 캠프,eab384eab3a120eca084eba79d20ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175ED,FULL,Marsh-Punk Camp,MarshPunkCampMapMarker,마쉬 펑크 캠프,eba788ec89ac20ed8e91ed81ac20ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175EF,FULL,gro-Bak Camp,groBakCampMapMarker,그로-박 캠프,eab7b8eba19c2debb09520ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175F1,FULL,Ra'sava Camp,RasavaCampMapMarker,라'사바 캠프,eb9dbc27ec82acebb09420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175F3,FULL,Camp Ales,CampAlesMapMarker,알스 캠프,ec958cec8aa420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175F5,FULL,Bodean Camp,BodeanCampMapMarker,보딘 캠프,ebb3b4eb949820ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175F7,FULL,Troll Candle Camp,TrollCandleCampMapMarker,트롤 캔들 캠프,ed8ab8eba1a420ecba94eb93a420ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175F9,FULL,Dagny's Camp,DagnysCampMapMarker,대그니 캠프,eb8c80eab7b8eb8b8820ecbaa0ed948400,verified
+Oblivion.esm,REFR,000175FB,FULL,Atrene Camp,AtreneCampMapMarker,아트렌 캠프,ec9584ed8ab8eba08c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,00017798,FULL,Faregyl Inn,FaregylMapMarker,페어길 여관,ed8e98ec96b4eab8b820ec97aceab48000,verified
+Oblivion.esm,REFR,00017799,FULL,Bleaker's Way,BleakersWayMapMarker,블리커 웨이,ebb894eba6acecbba420ec9ba8ec9db400,verified
+Oblivion.esm,REFR,0001779A,FULL,Inn of Ill Omen,InnofIllOmenMapMarker,흉조의 여관,ed9d89eca1b0ec9d9820ec97aceab48000,verified
+Oblivion.esm,REFR,0001779C,FULL,Gottlesfont Priory,GottlesfontPrioryMapMarker,고틀스폰트 수도원,eab3a0ed8b80ec8aa4ed8fb0ed8ab820ec8898eb8f84ec9b9000,verified
+Oblivion.esm,REFR,0001779D,FULL,Brindle Home,BrindleHomeMapMarker,브린들 홈,ebb88ceba6b0eb93a420ed998800,verified
+Oblivion.esm,REFR,0001779F,FULL,Border Watch,BorderWatchMapMarker,국경 경비대,eab5adeab2bd20eab2bdebb984eb8c8000,verified
+Oblivion.esm,REFR,000177A0,FULL,Harm's Folly,HarmsFollyMapMarker,함의 어리석음,ed95a8ec9d9820ec96b4eba6acec849dec9d8c00,verified
+Oblivion.esm,REFR,000177A1,FULL,Water's Edge,WatersEdgeMapMarker,워터스 엣지,ec9b8ced84b0ec8aa420ec97a3eca78000,verified
+Oblivion.esm,REFR,000177A2,FULL,Greyland,GreylandMapMarker,그레이랜드,eab7b8eba088ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REFR,000177A3,FULL,Applewatch,ApplewatchMapMarker,애플워치,ec95a0ed948cec9b8cecb99800,verified
+Oblivion.esm,REFR,000177A4,FULL,Blankenmarch,BlankenmarchMapMarker,블랑켄마치,ebb894eb9e91ecbc84eba788ecb99800,verified
+Oblivion.esm,REFR,000177A5,FULL,Shardrock,ShardrockMapMarker,샤드록,ec83a4eb939ceba19d00,verified
+Oblivion.esm,REFR,000177A6,FULL,Harlun's Watch,HarlunsWatchMapMarker,할룬의 감시대,ed95a0eba3acec9d9820eab090ec8b9ceb8c8000,verified
+Oblivion.esm,REFR,000177A7,FULL,Lord Rugdumph's Estate,LordRugdumphsEstateMapMarker,러그덤프 경의 저택,eb9faceab7b8eb8da4ed948420eab2bdec9d9820eca080ed839d00,verified
+Oblivion.esm,REFR,000177A8,FULL,Temple of the Ancestor Moths,TempleoftheAncestorMothMapMarker,선조 나방 사원,ec84a0eca1b020eb8298ebb0a920ec82acec9b9000,verified
+Oblivion.esm,REFR,000177A9,FULL,The Drunken Dragon Inn,TheDrunkenDragonInnMapMarker,술취한 드래곤 여관,ec88a0ecb7a8ed959c20eb939ceb9e98eab3a420ec97aceab48000,verified
+Oblivion.esm,REFR,000177AA,FULL,Imperial Bridge Inn,ImperialBridgeInnMapMarker,제국 가교 여관,eca09ceab5ad20eab080eab59020ec97aceab48000,verified
+Oblivion.esm,REFR,000177AB,FULL,Cloud Ruler Temple,CloudRulerTempleMapMarker,클라우드 룰러 사원,ed81b4eb9dbcec9ab0eb939c20eba3b0eb9fac20ec82acec9b9000,verified
+Oblivion.esm,REFR,000177AD,FULL,Shetcombe Farm,ShetcombeFarmMapMarker,셰트콤 농장,ec85b0ed8ab8ecbda420eb868dec9ea500,verified
+Oblivion.esm,REFR,000177AE,FULL,Pell's Gate,PellsGateMapMarker,펠스 게이트,ed8ea0ec8aa420eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000177AF,FULL,Brina Cross Inn,BrinaCrossInnMapMarker,브리나 교차로 여관,ebb88ceba6aceb829820eab590ecb0a8eba19c20ec97aceab48000,verified
+Oblivion.esm,REFR,000177B0,FULL,Whitmond Farm,WhitmondMapMarker,위트먼드 농장,ec9c84ed8ab8eba8bceb939c20eb868dec9ea500,verified
+Oblivion.esm,REFR,000177B1,FULL,Drakelowe,DrakeloweMapMarker,드레이클로,eb939ceba088ec9db4ed81b4eba19c00,verified
+Oblivion.esm,REFR,000177B2,FULL,Crestbridge Camp,CrestbridgeCampMapMarker,크레스트브리지 캠프,ed81aceba088ec8aa4ed8ab8ebb88ceba6aceca78020ecbaa0ed948400,verified
+Oblivion.esm,REFR,00019AAC,FULL,Split,SESplitMapMarker,스플릿,ec8aa4ed948ceba6bf00,verified
+Oblivion.esm,REFR,00019AAD,FULL,Deepwallow,SEDeepwallowMapMarker,딥월로우,eb94a5ec9b94eba19cec9ab000,verified
+Oblivion.esm,REFR,00019AAE,FULL,Fellmoor,SEFellmoorMapMarker,펠무어,ed8ea0ebacb4ec96b400,verified
+Oblivion.esm,REFR,00019AAF,FULL,Hale,SEHaleMapMarker,헤일,ed97a4ec9dbc00,verified
+Oblivion.esm,REFR,00019AB0,FULL,Highcross,SEHighCrossTownCenter,하이크로스,ed9598ec9db4ed81aceba19cec8aa400,verified
+Oblivion.esm,REFR,00019AB1,FULL,New Sheoth Palace,SENSPalaceMarker,뉴 쉐오스 궁전,eb89b420ec8990ec98a4ec8aa420eab681eca08400,verified
+Oblivion.esm,REFR,00019AB2,FULL,Bliss,SENSBlissMarker,블리스,ebb894eba6acec8aa400,verified
+Oblivion.esm,REFR,00019AB3,FULL,Crucible,SENSCrucibleMarker,크루시블,ed81aceba3a8ec8b9cebb89400,verified
+Oblivion.esm,REFR,0001E6ED,FULL,Weynon Priory,WeynonPrioryMapMarker,웨이넌 수도원,ec9ba8ec9db4eb848c20ec8898eb8f84ec9b9000,verified
+Oblivion.esm,REFR,0001E8A2,FULL,Kvatch,KvatchMapMarker,크바치,ed81acebb094ecb99800,verified
+Oblivion.esm,REFR,0001E903,FULL,Lake Arrius Caverns,LakeArriusMapMarker,아리우스 호수 동굴,ec9584eba6acec9ab0ec8aa420ed98b8ec889820eb8f99eab5b400,verified
+Oblivion.esm,REFR,0001FE0D,FULL,Fort Grief,FortGriefMapMarker,슬픔의 요새,ec8aaced9494ec9d9820ec9a94ec838800,verified
+Oblivion.esm,REFR,00020096,FULL,Castle Chorrol,ChorrolMasterMapMarker,코롤 성,ecbd94eba1a420ec84b100,verified
+Oblivion.esm,REFR,00020097,FULL,Anvil Main Gate,AnvilMapMarkerNEW,앤빌 정문,ec95a4ebb98c20eca095ebacb800,verified
+Oblivion.esm,REFR,00020098,FULL,Bravil,BravilMapMarker,브라빌,ebb88ceb9dbcebb98c00,verified
+Oblivion.esm,REFR,00020099,FULL,Bruma East Gate,BrumaMapMarkerNEW,브루마 동문,ebb88ceba3a8eba78820eb8f99ebacb800,verified
+Oblivion.esm,REFR,0002009A,FULL,Cheydinhal - West Gate,CheydinhalWestGateMapMarker,셰이딘홀 - 서문,ec85b0ec9db4eb9498ed9980202d20ec849cebacb800,verified
+Oblivion.esm,REFR,0002009B,FULL,Leyawiin - North East Gate,LeyawiinMapMarker,레이야윈 - 북동문,eba088ec9db4ec95bcec9c88202d20ebb681eb8f99ebacb800,verified
+Oblivion.esm,REFR,00024B3D,FULL,Frostfire Glade,FrostfireGladeMapMarker,타는 듯한 서리 공터,ed8380eb8a9420eb93afed959c20ec849ceba6ac20eab3b5ed84b000,verified
+Oblivion.esm,REFR,00026EBD,FULL,Sancre Tor,SancreTorMapMarker,생커 토르,ec839decbba420ed86a0eba5b400,verified
+Oblivion.esm,REFR,00028552,FULL,Hackdirt,HackdirtMapMarker,핵더트,ed95b5eb8d94ed8ab800,verified
+Oblivion.esm,REFR,0002A829,FULL,Rock Bottom Caverns,RockBottomCavernsMapMarker,바위 바닥 동굴,ebb094ec9c8420ebb094eb8ba520eb8f99eab5b400,verified
+Oblivion.esm,REFR,0002AA16,FULL,Redguard Valley Cave,RedguardValleyCaveMapMarker,레드가드 계곡 동굴,eba088eb939ceab080eb939c20eab384eab3a120eb8f99eab5b400,verified
+Oblivion.esm,REFR,0002AF0B,FULL,Malada,MaladaMapMarker,말라다,eba790eb9dbceb8ba400,verified
+Oblivion.esm,REFR,00030027,FULL,Aleswell,AleswellMapMarker,에일즈웰,ec9790ec9dbceca688ec9bb000,verified
+Oblivion.esm,REFR,00035A97,FULL,Darkfathom Cave,DarkfathomCaveMapMarker,어두운 측연 동굴,ec96b4eb9190ec9ab420ecb8a1ec97b020eb8f99eab5b400,verified
+Oblivion.esm,REFR,0003756B,FULL,Lord Drad's Estate,LordDradsEstateMapMarker,드라드 경의 저택,eb939ceb9dbceb939c20eab2bdec9d9820eca080ed839d00,verified
+Oblivion.esm,REFR,00038F40,FULL,Boreal Stone Cave,BorealStoneCaveMarker,북부 석굴,ebb681ebb68020ec849deab5b400,verified
+Oblivion.esm,REFR,0003B363,FULL,Azura's Shrine,AzuraShrineMarker,아주라의 성소,ec9584eca3bceb9dbcec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B364,FULL,Boethia's Shrine,BoethiaShrineMarker,보에시아의 성소,ebb3b4ec9790ec8b9cec9584ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B365,FULL,Clavicus Vile's Shrine,ClavicusVileShrineMarker,클라비쿠스 바일의 성소,ed81b4eb9dbcebb984ecbfa0ec8aa420ebb094ec9dbcec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B366,FULL,Hermaeus Mora's Shrine,HermaeusMoraShrineMarker,헤르메우스 모라의 성소,ed97a4eba5b4eba994ec9ab0ec8aa420ebaaa8eb9dbcec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B367,FULL,Hircine's Shrine,HircineShrineMarker,허씬의 성소,ed9788ec94acec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B368,FULL,Molag Bal's Shrine,MolagBalShrineMarker,몰락 발의 성소,ebaab0eb9dbd20ebb09cec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B369,FULL,Malacath's Shrine,MalacathShrineMarker,말라카스의 성소,eba790eb9dbcecb9b4ec8aa4ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B36A,FULL,Mephala's Shrine,MephalaShrineMarker,메팔라의 성소,eba994ed8c94eb9dbcec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B36B,FULL,Meridia's Shrine,MeridiaShrineMarker,메리디아의 성소,eba994eba6aceb9494ec9584ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B36C,FULL,Namira's Shrine,NamiraShrineMarker,나미라의 성소,eb8298ebafb8eb9dbcec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B36D,FULL,Nocturnal Shrine,NocturnalShrineMarker,녹터널의 성소,eb85b9ed84b0eb8490ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B36E,FULL,Peryite's Shrine,PeryiteShrineMarker,페리아이트의 성소,ed8e98eba6acec9584ec9db4ed8ab8ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B370,FULL,Sheogorath's Shrine,SheogorathShrineMarker,쉐오고라스의 성소,ec8990ec98a4eab3a0eb9dbcec8aa4ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003B371,FULL,Vaermina's Shrine,VaerminaShrineMarker,베르미나의 성소,ebb2a0eba5b4ebafb8eb8298ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,0003F27F,FULL,Weatherleah,WeatherleahMapMarker,웨더리아,ec9ba8eb8d94eba6acec958400,verified
+Oblivion.esm,REFR,00043FAF,FULL,Gardens of Flesh and Bone,XPGardensOrderedMapMarker,살점과 뼈의 정원,ec82b4eca090eab3bc20ebbc88ec9d9820eca095ec9b9000,verified
+Oblivion.esm,REFR,00043FB1,FULL,Passwall,SEPasswallOrderedMapMarker,패스월,ed8ca8ec8aa4ec9b9400,verified
+Oblivion.esm,REFR,00043FB2,FULL,Passwall,SEPasswallMapMarker,패스월,ed8ca8ec8aa4ec9b9400,verified
+Oblivion.esm,REFR,00047388,FULL,Imperial City Waterfront,ICWaterfrontMapMarker,임페리얼 시티 부두 구역,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020ebb680eb919020eab5acec97ad00,verified
+Oblivion.esm,REFR,00047545,FULL,Swampy Cave,SwampyCaveMapMarker,늪지 동굴,eb8aaaeca78020eb8f99eab5b400,verified
+Oblivion.esm,REFR,00048996,FULL,Bleak Flats Cave,BleakFlatsCaveMapMarker,황량한 평원 동굴,ed99a9eb9f89ed959c20ed8f89ec9b9020eb8f99eab5b400,verified
+Oblivion.esm,REFR,0004DD0A,FULL,Runoff Camp,,런오프 캠프,eb9fb0ec98a4ed948420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD0F,FULL,Puddlejump Camp,,퍼들점프 캠프,ed8dbceb93a4eca090ed948420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD10,FULL,Lost Time Camp,,잃어버린 시간 캠프,ec9e83ec96b4ebb284eba6b020ec8b9ceab08420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD12,FULL,Longtooth Camp,,롱투스 캠프,eba1b1ed88acec8aa420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD13,FULL,Frenzied Camp,,광란의 캠프,eab491eb9e80ec9d9820ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD15,FULL,Flooded Camp,,침수된 캠프,ecb9a8ec8898eb909c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD17,FULL,Dreamwalk Camp,,드림워크 캠프,eb939ceba6bcec9b8ced81ac20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD25,FULL,Camp Hopeful,,희망 캠프,ed9daceba79d20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD26,FULL,Breakneck Camp,,브레이크넥 캠프,ebb88ceba088ec9db4ed81aceb84a520ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD51,FULL,Blood Island Camp,,블러드 아일랜드 캠프,ebb894eb9faceb939c20ec9584ec9dbceb9e9ceb939c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD52,FULL,Backwash Camp,,백워시 캠프,ebb0b1ec9b8cec8b9c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD53,FULL,Inlet Camp,,인렛 캠프,ec9db8eba09b20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD57,FULL,Camp Talltrees,,큰 나무 캠프,ed81b020eb8298ebacb420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004DD58,FULL,Hardscrabble Camp,,하드스크래블 캠프,ed9598eb939cec8aa4ed81aceb9e98ebb89420ecbaa0ed948400,verified
+Oblivion.esm,REFR,0004FAE1,FULL,Tidewater Cave,TidewaterCaveMapMarker0001,밀물 동굴,ebb080ebacbc20eb8f99eab5b400,verified
+Oblivion.esm,REFR,00050E4E,FULL,Wretched Camp,,비참한 캠프,ebb984ecb0b8ed959c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,00051443,FULL,Hero Hill,HeroHillMapMarker,영웅의 언덕,ec9881ec9b85ec9d9820ec96b8eb8d9500,verified
+Oblivion.esm,REFR,00051F87,FULL,Old Bridge,OldBridgeMarker,오래된 다리,ec98a4eb9e98eb909c20eb8ba4eba6ac00,verified
+Oblivion.esm,REFR,00053FE2,FULL,Wellspring Cave,WellspringCaveMapMarker,웰스프링 동굴,ec9bb0ec8aa4ed9484eba78120eb8f99eab5b400,verified
+Oblivion.esm,REFR,0005402D,FULL,Anvil Lighthouse,AnvilLighthouseMapMarker,앤빌 등대,ec95a4ebb98c20eb93b1eb8c8000,verified
+Oblivion.esm,REFR,00055BD4,FULL,Fain,,페인,ed8e98ec9db800,verified
+Oblivion.esm,REFR,0005B00D,FULL,Roxey Inn,,록시 여관,eba19dec8b9c20ec97aceab48000,verified
+Oblivion.esm,REFR,000644FD,FULL,Wind Cave,WindCaveMapMarker,바람의 동굴,ebb094eb9e8cec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,0006A80F,FULL,Chorrol North Gate,,코롤 북문,ecbd94eba1a420ebb681ebacb800,verified
+Oblivion.esm,REFR,0006A88D,FULL,A Strange Door,SEGateMapMarker,이상한 문,ec9db4ec8381ed959c20ebacb800,verified
+Oblivion.esm,REFR,0006A88E,FULL,Door to Cyrodiil,SETamrielDoorMapMarker,시로딜로 가는 문,ec8b9ceba19ceb949ceba19c20eab080eb8a9420ebacb800,verified
+Oblivion.esm,REFR,0006ADD2,FULL,Chestnut Handy Stables,ICStablesMapMarker,편한 밤색 말 마구간,ed8eb8ed959c20ebb0a4ec838920eba79020eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0006B588,FULL,Vilverin,VilverinMapMarker01,빌베린,ebb98cebb2a0eba6b000,verified
+Oblivion.esm,REFR,0006C602,FULL,Sideways Cave,SidewaysCaveMapMarker,사이드웨이즈 동굴,ec82acec9db4eb939cec9ba8ec9db4eca68820eb8f99eab5b400,verified
+Oblivion.esm,REFR,0006D76C,FULL,Fort Urasek,FortUrasekMapMarker,우라섹 요새,ec9ab0eb9dbcec84b920ec9a94ec838800,verified
+Oblivion.esm,REFR,00071310,FULL,Bawnwatch Camp,BawnwatchCampMapMarker,본워치 캠프,ebb3b8ec9b8cecb99820ecbaa0ed948400,verified
+Oblivion.esm,REFR,00071318,FULL,Mouth of the Panther,MotPantherMapMarker,표범의 아가리,ed919cebb294ec9d9820ec9584eab080eba6ac00,verified
+Oblivion.esm,REFR,0007812D,FULL,Fort Ash,FortAshMapMarker,애쉬 요새,ec95a0ec89ac20ec9a94ec838800,verified
+Oblivion.esm,REFR,0007CC47,FULL,Xaselm Secret Entrance,XPXaselmSecretEntranceMapMarker,자셀름 비밀 입구,ec9e90ec8580eba68420ebb984ebb08020ec9e85eab5ac00,verified
+Oblivion.esm,REFR,0007CFDD,FULL,Xavara,XPXavaraMapMarker,자바라,ec9e90ebb094eb9dbc00,verified
+Oblivion.esm,REFR,0007CFDE,FULL,Dire Warren,XPDireWarrenMapMarker,끔찍한 워렌,eb8194ecb08ded959c20ec9b8ceba08c00,verified
+Oblivion.esm,REFR,0007D042,FULL,New Sheoth Graveyard,,뉴 쉐오스 묘지,eb89b420ec8990ec98a4ec8aa420ebac98eca78000,verified
+Oblivion.esm,REFR,00080699,FULL,Xeddefen,XPXeddefenOrderedMapMarker,제데펜,eca09ceb8db0ed8e9c00,verified
+Oblivion.esm,REFR,0008069A,FULL,Door to Cyrodiil,SETamrielDoorOrderedMapMarker,시로딜로 가는 문,ec8b9ceba19ceb949ceba19c20eab080eb8a9420ebacb800,verified
+Oblivion.esm,REFR,00086076,FULL,Fisherman's Rock,FishermansRockMapMarker,낚시꾼의 바위,eb829aec8b9ceabebcec9d9820ebb094ec9c8400,verified
+Oblivion.esm,REFR,0008DC45,FULL,Arkved's Tower,ArkvedsTowerMapMarker01,아크베드의 탑,ec9584ed81acebb2a0eb939cec9d9820ed839100,verified
+Oblivion.esm,REFR,000908C2,FULL,White Stallion Lodge,WhiteStallionLodgeMapMarker,백마 기사단 집회소,ebb0b1eba78820eab8b0ec82aceb8ba820eca791ed9a8cec868c00,verified
+Oblivion.esm,REFR,00090C8D,FULL,Gweden Farm,GwedenFarmMapMarker,그웨덴 농장,eab7b8ec9ba8eb8db420eb868dec9ea500,verified
+Oblivion.esm,REFR,00091CFF,FULL,Gottshaw Inn,GottshawInnMapMarker,가트쇼 여관,eab080ed8ab8ec87bc20ec97aceab48000,verified
+Oblivion.esm,REFR,00093480,FULL,Bogwater,BogwaterMarker,보그워터,ebb3b4eab7b8ec9b8ced84b000,verified
+Oblivion.esm,REFR,00094040,FULL,Shadeleaf Copse,ShadeleafCopseMapMarker,셰이드리프 숲,ec85b0ec9db4eb939ceba6aced948420ec88b200,verified
+Oblivion.esm,REFR,00097008,FULL,Shrine of Sanguine,SanguineShrineMapMarker,생귄의 성소,ec839deab784ec9d9820ec84b1ec868c00,verified
+Oblivion.esm,REFR,00097F8B,FULL,Kvatch,E3KvatchMapMarker,크바치,ed81acebb094ecb99800,verified
+Oblivion.esm,REFR,00098352,FULL,Castle Skingrad,SkingradCastleMapMarker,스킨그라드 성,ec8aa4ed82a8eab7b8eb9dbceb939c20ec84b100,verified
+Oblivion.esm,REFR,0009DA06,FULL,Black Waterside Stables,CheydinhalStablesMapMarker,검은 물가 마구간,eab280ec9d8020ebacbceab08020eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE84,FULL,Horse Whisperer Stables,AnvilStablesMapMarker,말 조련사 마구간,eba79020eca1b0eba0a8ec82ac20eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE85,FULL,Five Riders Stables,LeyawiinStablesMapMarker,다섯 기수의 마구간,eb8ba4ec84af20eab8b0ec8898ec9d9820eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE86,FULL,Wildeye Stables,BrumaStablesMapMarker,와일드 아이 마구간,ec9980ec9dbceb939c20ec9584ec9db420eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE87,FULL,North Country Stables,ChorrolStablesMapMarker,노스 컨트리 마구간,eb85b8ec8aa420ecbba8ed8ab8eba6ac20eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE88,FULL,Grateful Pass Stables,SkingradStablesMapMarker,상쾌한 길목 마구간,ec8381ecbe8ced959c20eab8b8ebaaa920eba788eab5aceab08400,verified
+Oblivion.esm,REFR,0009DE89,FULL,Bay Roan Stables,BravilStablesMapMarker,갈백색 말 마구간,eab088ebb0b1ec838920eba79020eba788eab5aceab08400,verified
+Oblivion.esm,REFR,000A0D17,FULL,Nonungalo,NonungaloMapMarker,노누가로,eb85b8eb8884eab080eba19c00,verified
+Oblivion.esm,REFR,000A3520,FULL,Sedor,SedorMapMarker,세도르,ec84b8eb8f84eba5b400,verified
+Oblivion.esm,REFR,000AC544,FULL,Weye,WeyeMapMarker,웨이,ec9ba8ec9db400,verified
+Oblivion.esm,REFR,000AC546,FULL,Wawnet Inn,WawnetInnMapMarker,와우넷 여관,ec9980ec9ab0eb84b720ec97aceab48000,verified
+Oblivion.esm,REFR,000AC548,FULL,Roland Jenseric's Cabin,RolandJensericsCabinMapMarker,롤랑 젠세릭의 오두막,eba1a4eb9e9120eca0a0ec84b8eba6adec9d9820ec98a4eb9190eba78900,verified
+Oblivion.esm,REFR,000AC549,FULL,Odiil Farm,OdiilFarmMapMarker,오딜 농장,ec98a4eb949c20eb868dec9ea500,verified
+Oblivion.esm,REFR,000AD373,FULL,Onyx Caverns,OnyxCavernsMapMarker,흑요석 동굴,ed9d91ec9a94ec849d20eb8f99eab5b400,verified
+Oblivion.esm,REFR,000AD393,FULL,Broken Promises Cave,BrokenPromisesCaveMapMarker,부서진 약속 동굴,ebb680ec849ceca78420ec95bdec868d20eb8f99eab5b400,verified
+Oblivion.esm,REFR,000AD3E5,FULL,Nagastani,NagastaniMapMaker,나가스타니,eb8298eab080ec8aa4ed8380eb8b8800,verified
+Oblivion.esm,REFR,000AD44E,FULL,Garlas Agea,GarlasAgeaMapMaker,가르라스 아게아,eab080eba5b4eb9dbcec8aa420ec9584eab28cec958400,verified
+Oblivion.esm,REFR,000C431A,FULL,Fathis Aren's Tower,TempleoftheEmperorZeroMapMarker,파시스 아렌의 탑,ed8c8cec8b9cec8aa420ec9584eba08cec9d9820ed839100,verified
+Oblivion.esm,REFR,000C431B,FULL,Knights of the Thorn Lodge,KnightsoftheThornExterior,가시 기사단 집회소,eab080ec8b9c20eab8b0ec82aceb8ba820eca791ed9a8cec868c00,verified
+Oblivion.esm,REFR,000C50D3,FULL,Imperial Sewer - South East Exit,IMPSEWSEMapMarker,제국 하수도 - 남동쪽 출구,eca09ceab5ad20ed9598ec8898eb8f84202d20eb82a8eb8f99ecaabd20ecb69ceab5ac00,verified
+Oblivion.esm,REFR,000C50D5,FULL,Imperial City Sewers - North Exit,IMPSEWMapMarker,임페리얼 시티 하수도 - 북쪽 출구,ec9e84ed8e98eba6acec96bc20ec8b9ced8bb020ed9598ec8898eb8f84202d20ebb681ecaabd20ecb69ceab5ac00,verified
+Oblivion.esm,REFR,000C50D6,FULL,Imperial Prison Sewer,ICPrisonSewerMapMarker,제국 감옥 하수도,eca09ceab5ad20eab090ec98a520ed9598ec8898eb8f8400,verified
+Oblivion.esm,REFR,000C55ED,FULL,Dive Rock,,다이브 록,eb8ba4ec9db4ebb88c20eba19d00,verified
+Oblivion.esm,REFR,000CA3F5,FULL,Bruma Caverns,BrumaCavernMapMarker,브루마 동굴,ebb88ceba3a8eba78820eb8f99eab5b400,verified
+Oblivion.esm,REFR,000CD31F,FULL,Cloud Top,CloudTopMapMarker,구름의 정상,eab5aceba684ec9d9820eca095ec838100,verified
+Oblivion.esm,REFR,000CD413,FULL,A Gate to Oblivion,OBGateRandGC008MapMarker,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000CD414,FULL,A Gate to Oblivion,,오블리비언 게이트,ec98a4ebb894eba6acebb984ec96b820eab28cec9db4ed8ab800,verified
+Oblivion.esm,REFR,000CD529,FULL,Cadlew Chapel,,캐드류 예배당,ecba90eb939ceba59820ec9888ebb0b0eb8bb900,verified
+Oblivion.esm,REFR,000E78DF,FULL,Leyawiin - West Gate,LeyawiinWestGateMapMarker,레이야윈 - 서문,eba088ec9db4ec95bcec9c88202d20ec849cebacb800,verified
+Oblivion.esm,REFR,000E9C98,FULL,Anvil Dock Gate,AnvilCityDockGate,앤빌 부두 성문,ec95a4ebb98c20ebb680eb919020ec84b1ebacb800,verified
+Oblivion.esm,REFR,000E9C9D,FULL,Anvil Castle Gate,AnvilCityCastleGateMarker,앤빌 성문,ec95a4ebb98c20ec84b1ebacb800,verified
+Oblivion.esm,REFR,000FF19A,FULL,Castle Cheydinhal,CheydinhalCastleMapMarker,셰이딘홀 성,ec85b0ec9db4eb9498ed998020ec84b100,verified
+Oblivion.esm,REFR,000FF19B,FULL,Cheydinhal - East Gate,CheydinhalEastGateMapMarker,셰이딘홀 - 동문,ec85b0ec9db4eb9498ed9980202d20eb8f99ebacb800,verified
+Oblivion.esm,REFR,000FF19C,FULL,Chorrol South Gate,ChorrolCharGenMapMarker,코롤 남문,ecbd94eba1a420eb82a8ebacb800,verified
+Oblivion.esm,REFR,00103637,FULL,Leyawiin - Castle,LeyawiinCastleMapMarkerNEW,레이야윈 - 성,eba088ec9db4ec95bcec9c88202d20ec84b100,verified
+Oblivion.esm,REFR,0010D74E,FULL,Castle Bruma,,브루마 성,ebb88ceba3a8eba78820ec84b100,verified
+Oblivion.esm,REFR,0010D74F,FULL,Castle Bravil,BravilCastleMapMarker,브라빌 성,ebb88ceb9dbcebb98c20ec84b100,verified
+Oblivion.esm,REFR,0010D752,FULL,Skingrad - East Gate,SkingradEastGateMapMarker,스킨그라드 - 동문,ec8aa4ed82a8eab7b8eb9dbceb939c202d20eb8f99ebacb800,verified
+Oblivion.esm,REFR,0011949A,FULL,Castle Anvil,AnvilCastleMapMarker,앤빌 성,ec95a4ebb98c20ec84b100,verified
+Oblivion.esm,REFR,0011C8A2,FULL,Lipsand Tarn,LipsandTarnMapMarker,립산드 타른,eba6bdec82b0eb939c20ed8380eba5b800,verified
+Oblivion.esm,REFR,0017C44A,FULL,Redwater Slough,RedwaterSloughMapMarkerREF,레드워터 진창,eba088eb939cec9b8ced84b020eca784ecb0bd00,verified
+Oblivion.esm,REFR,0017CF9C,FULL,Aerin's Camp,,에린의 캠프,ec9790eba6b0ec9d9820ecbaa0ed948400,verified
+Oblivion.esm,REFR,0017CF9D,FULL,Seran Camp,SeranCampMapMarker,세란 캠프,ec84b8eb9e8020ecbaa0ed948400,verified
+Oblivion.esm,REFR,0017CF9E,FULL,Last Chance Camp,,마지막 기회 캠프,eba788eca780eba78920eab8b0ed9a8c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,0017CF9F,FULL,Sercen Camp,,세르센 캠프,ec84b8eba5b4ec84bc20ecbaa0ed948400,verified
+Oblivion.esm,REFR,00181C2F,FULL,Collarbone Camp,,쇄골 캠프,ec8784eab3a820ecbaa0ed948400,verified
+Oblivion.esm,REFR,00181C31,FULL,Fat Ramp Camp,,팻 램프 캠프,ed8cbb20eb9ea8ed948420ecbaa0ed948400,verified
+Oblivion.esm,REFR,00181C32,FULL,Gnoll's Meeting Camp,,그놀 집회 캠프,eab7b8eb868020eca791ed9a8c20ecbaa0ed948400,verified
+Oblivion.esm,REFR,001883A0,FULL,Glademist Cave,GlademistCaveMapMarker,공터안개 동굴,eab3b5ed84b0ec9588eab09c20eb8f99eab5b400,verified
+Oblivion.esm,REFR,0018843C,FULL,Pothole Caverns,PotholeCavernsMapMarker,돌개구멍 동굴,eb8f8ceab09ceab5aceba98d20eb8f99eab5b400,verified
+Oblivion.esm,REFR,0018857C,FULL,Bloodrun Cave,BloodRunCaveMapMarker,피의 동굴,ed94bcec9d9820eb8f99eab5b400,verified
+Oblivion.esm,REFR,00188F45,FULL,Gnoll Mountain,GnollMountainMarkerNew,그놀 산,eab7b8eb868020ec82b000,verified
+Oblivion.esm,REFR,00189790,FULL,Fingerbowl Cave,FingerbowlCaveMapMarker,세숫그릇 동굴,ec84b8ec88abeab7b8eba68720eb8f99eab5b400,verified
+Oblivion.esm,REFR,00189850,FULL,Kindred Cave,KindredCaveMapMarker,친족의 큰 동굴,ecb99ceca1b1ec9d9820ed81b020eb8f99eab5b400,verified
+Oblivion.esm,REFR,0018D896,FULL,Skingrad Castle,SkingradCastleMapMaker,스킨그라드 성,ec8aa4ed82a8eab7b8eb9dbceb939c20ec84b100,verified
+Oblivion.esm,REFR,0018D897,FULL,Bruma North Gate,BrumaNorthGateMapMarker,브루마 북문,ebb88ceba3a8eba78820ebb681ebacb800,verified
+Oblivion.esm,REGN,0000AA10,RDMP,Paradise,ParadiseBorder,천국,ecb29ceab5ad00,verified
+Oblivion.esm,REGN,0001C409,RDMP,The Great Forest,GreatForestSubRegion06,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001C40A,RDMP,The Great Forest,GreatForestSubRegion05,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001C40B,RDMP,The Great Forest,GreatForestSubRegion04,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001C40C,RDMP,The Great Forest,GreatForestSubRegion03,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001C40D,RDMP,The Great Forest,GreatForestSubRegion02,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001C40E,RDMP,The Great Forest,GreatForestSubRegion01,대삼림,eb8c80ec82bceba6bc00,verified
+Oblivion.esm,REGN,0001CB63,RDMP,Rat Grove,RatRegion,쥐의 숲,eca590ec9d9820ec88b200,verified
+Oblivion.esm,REGN,0001CB64,RDMP,Goblin Grove,GoblinRegion,고블린 숲,eab3a0ebb894eba6b020ec88b200,verified
+Oblivion.esm,REGN,0001DC6F,RDMP,Hawkhaven,HawkhavenRegion,호크헤이븐,ed98b8ed81aced97a4ec9db4ebb89000,verified
+Oblivion.esm,REGN,00028807,RDMP,Creature Grove,CreatureDomain,생물의 숲,ec839debacbcec9d9820ec88b200,verified
+Oblivion.esm,REGN,0002CC50,RDMP,The Deer Path,TheDeerPath,사슴길,ec82acec8ab4eab8b800,verified
+Oblivion.esm,REGN,000479AB,RDMP,Paradise,ParadiseRegion01,천국,ecb29ceab5ad00,verified
+Oblivion.esm,REGN,00053728,RDMP,The Gold Coast,GoldCoastSubRegion01,골드 코스트,eab3a8eb939c20ecbd94ec8aa4ed8ab800,verified
+Oblivion.esm,REGN,00062165,RDMP,Breakneck Camp,BreakneckCampRegion,브레이크넥 캠프,ebb88ceba088ec9db4ed81aceb84a520ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062169,RDMP,Highcross,HighcrossRegion,하이크로스,ed9598ec9db4ed81aceba19cec8aa400,verified
+Oblivion.esm,REGN,0006216B,RDMP,Frenzied Camp,FrenziedCampRegion,광란의 캠프,eab491eb9e80ec9d9820ecbaa0ed948400,verified
+Oblivion.esm,REGN,0006216F,RDMP,Hale,HaleRegion,헤일,ed97a4ec9dbc00,verified
+Oblivion.esm,REGN,00062175,RDMP,Camp Hopeful,CampHopefulRegion,희망 캠프,ed9daceba79d20ecbaa0ed948400,verified
+Oblivion.esm,REGN,0006218B,RDMP,Camp Tall Trees,CampTallTreesRegion,큰 나무 캠프,ed81b020eb8298ebacb420ecbaa0ed948400,verified
+Oblivion.esm,REGN,0006218D,RDMP,Split,SplitRegion,스플릿,ec8aa4ed948ceba6bf00,verified
+Oblivion.esm,REGN,000621A7,RDMP,Wretched Camp,WretchedCampRegion,비참한 캠프,ebb984ecb0b8ed959c20ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062205,RDMP,Puddlejump Camp,PuddlejumpCampRegion,퍼들점프 캠프,ed8dbceb93a4eca090ed948420ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062206,RDMP,Runoff Camp,RunoffCampRegion,런오프 캠프,eb9fb0ec98a4ed948420ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062209,RDMP,Longtooth Camp,LongtoothCampRegion,롱투스 캠프,eba1b1ed88acec8aa420ecbaa0ed948400,verified
+Oblivion.esm,REGN,0006220E,RDMP,Flooded Camp,FloodedCampRegion,침수된 캠프,ecb9a8ec8898eb909c20ecbaa0ed948400,verified
+Oblivion.esm,REGN,0006220F,RDMP,Hill of Suicides,HillofSuicidesRegion,자살자의 언덕,ec9e90ec82b4ec9e90ec9d9820ec96b8eb8d9500,verified
+Oblivion.esm,REGN,00062211,RDMP,New Sheoth,NewSheothRegion,뉴 쉐오스,eb89b420ec8990ec98a4ec8aa400,verified
+Oblivion.esm,REGN,00062212,RDMP,Gates of Madness,GatesofMadnessRegion,광기의 관문,eab491eab8b0ec9d9820eab480ebacb800,verified
+Oblivion.esm,REGN,00062215,RDMP,Hardscrabble Camp,HardscrabbleCampRegion,하드스크래블 캠프,ed9598eb939cec8aa4ed81aceb9e98ebb89420ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062216,RDMP,Deepwallow,DeepwallowRegion,딥월로우,eb94a5ec9b94eba19cec9ab000,verified
+Oblivion.esm,REGN,00062222,RDMP,Fellmoor,FellmoorRegion,펠무어,ed8ea0ebacb4ec96b400,verified
+Oblivion.esm,REGN,00062223,RDMP,Blood Bay Camp,BloodBayCampRegion,블러드 베이 캠프,ebb894eb9faceb939c20ebb2a0ec9db420ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062225,RDMP,Inlet Camp,InletCampRegion,인렛 캠프,ec9db8eba09b20ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062228,RDMP,Backwash Camp,BackwashCampRegion,백워시 캠프,ebb0b1ec9b8cec8b9c20ecbaa0ed948400,verified
+Oblivion.esm,REGN,00062230,RDMP,Lost Time Camp,LostTimeCampRegion,잃어버린 시간 캠프,ec9e83ec96b4ebb284eba6b020ec8b9ceab08420ecbaa0ed948400,verified
+Oblivion.esm,REGN,00067C50,RDMP,Aleswell,AleswellRegion,에일즈웰,ec9790ec9dbceca688ec9bb000,verified
+Oblivion.esm,REGN,00067C51,RDMP,Applewatch,ApplewatchRegion,애플워치,ec95a0ed948cec9b8cecb99800,verified
+Oblivion.esm,REGN,00067C52,RDMP,Blankenmarch,BlankenmarchRegion,블랑켄마치,ebb894eb9e91ecbc84eba788ecb99800,verified
+Oblivion.esm,REGN,00067C53,RDMP,Bleaker's Way,BleakersWayRegion,블리커 웨이,ebb894eba6acecbba420ec9ba8ec9db400,verified
+Oblivion.esm,REGN,00067C54,RDMP,Border Watch,BorderWatchRegion,보더 워치,ebb3b4eb8d9420ec9b8cecb99800,verified
+Oblivion.esm,REGN,00067C55,RDMP,Brina Cross Inn,BrinaCrossInnRegion,브리나 교차로 여관,ebb88ceba6aceb829820eab590ecb0a8eba19c20ec97aceab48000,verified
+Oblivion.esm,REGN,00067C56,RDMP,Brindle Home,BrindleHomeRegion,브린들 홈,ebb88ceba6b0eb93a420ed998800,verified
+Oblivion.esm,REGN,00067C57,RDMP,Cloud Ruler Temple,CloudRulerTempleRegion,클라우드 룰러 사원,ed81b4eb9dbcec9ab0eb939c20eba3b0eb9fac20ec82acec9b9000,verified
+Oblivion.esm,REGN,00067C58,RDMP,Crestbridge Camp,CrestbridgeCampRegion,크레스트브리지 캠프,ed81aceba088ec8aa4ed8ab8ebb88ceba6aceca78020ecbaa0ed948400,verified
+Oblivion.esm,REGN,00067C59,RDMP,Cropsford,CropsfordRegion,크롭스포드,ed81aceba1adec8aa4ed8faceb939c00,verified
+Oblivion.esm,REGN,00067C5A,RDMP,Drakelowe,DrakeloweRegion,드레이클로,eb939ceba088ec9db4ed81b4eba19c00,verified
+Oblivion.esm,REGN,00067C5B,RDMP,Faregyl,FaregylRegion,페어길,ed8e98ec96b4eab8b800,verified
+Oblivion.esm,REGN,00067C5C,RDMP,Gweden Farm,GwedenRegion,그웨덴 농장,eab7b8ec9ba8eb8db420eb868dec9ea500,verified
+Oblivion.esm,REGN,00067C5D,RDMP,Gottlesfont Priory,GottlesfontPrioryRegion,고틀스폰트 수도원,eab3a0ed8b80ec8aa4ed8fb0ed8ab820ec8898eb8f84ec9b9000,verified
+Oblivion.esm,REGN,00067C5E,RDMP,Gottshaw Inn,GottshawInnRegion,가트쇼 여관,eab080ed8ab8ec87bc20ec97aceab48000,verified
+Oblivion.esm,REGN,00067C60,RDMP,Greyland,GreylandRegion,그레이랜드,eab7b8eba088ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REGN,00067C61,RDMP,Hackdirt,HackdirtRegion,핵더트,ed95b5eb8d94ed8ab800,verified
+Oblivion.esm,REGN,00067C62,RDMP,Harlun's Watch,HarlunsWatchRegion,할룬의 감시대,ed95a0eba3acec9d9820eab090ec8b9ceb8c8000,verified
+Oblivion.esm,REGN,00067C63,RDMP,Harm's Folly,HarmsFollyRegion,함스 폴리,ed95a8ec8aa420ed8fb4eba6ac00,verified
+Oblivion.esm,REGN,00067C64,RDMP,Imperial Bridge Inn,ImperialBridgeInnRegion,제국 가교 여관,eca09ceab5ad20eab080eab59020ec97aceab48000,verified
+Oblivion.esm,REGN,00067C65,RDMP,Inn of Ill Omen,InnofIllOmenRegion,흉조의 여관,ed9d89eca1b0ec9d9820ec97aceab48000,verified
+Oblivion.esm,REGN,00067C66,RDMP,Lord Drad's Estate,LordDradsEstateRegion,드라드 경의 저택,eb939ceb9dbceb939c20eab2bdec9d9820eca080ed839d00,verified
+Oblivion.esm,REGN,00067C67,RDMP,Lord Rugdumph's Estate,LordRugdumphsEstateRegion,러그덤프 경의 저택,eb9faceab7b8eb8da4ed948420eab2bdec9d9820eca080ed839d00,verified
+Oblivion.esm,REGN,00067C68,RDMP,Odiil Farm,OdiilFarmRegion,오딜 농장,ec98a4eb949c20eb868dec9ea500,verified
+Oblivion.esm,REGN,00067C69,RDMP,Pell's Gate,PellsGateRegion,펠스 게이트,ed8ea0ec8aa420eab28cec9db4ed8ab800,verified
+Oblivion.esm,REGN,00067C6A,RDMP,Roland Jenseric's Cabin,RolandJensericsCabinRegion,롤랑 젠세릭의 오두막,eba1a4eb9e9120eca0a0ec84b8eba6adec9d9820ec98a4eb9190eba78900,verified
+Oblivion.esm,REGN,00067C6C,RDMP,Roxey Inn,RoxeyInnRegion,록시 여관,eba19dec8b9c20ec97aceab48000,verified
+Oblivion.esm,REGN,00067C6D,RDMP,Shardrock,ShardrockRegion,샤드록,ec83a4eb939ceba19d00,verified
+Oblivion.esm,REGN,00067C6E,RDMP,Shetcombe Farm,ShetcombeFarmRegion,셰트콤 농장,ec85b0ed8ab8ecbda420eb868dec9ea500,verified
+Oblivion.esm,REGN,00067C6F,RDMP,Temple of the Ancestor Moth,TempleoftheAncestorMothRegion,선조 나방 사원,ec84a0eca1b020eb8298ebb0a920ec82acec9b9000,verified
+Oblivion.esm,REGN,00067C70,RDMP,The Drunken Dragon Inn,TheDrunkenDragonInnRegion,술취한 드래곤 여관,ec88a0ecb7a8ed959c20eb939ceb9e98eab3a420ec97aceab48000,verified
+Oblivion.esm,REGN,00067C71,RDMP,Water's Edge,WatersEdgeRegion,워터스 엣지,ec9b8ced84b0ec8aa420ec97a3eca78000,verified
+Oblivion.esm,REGN,00067C72,RDMP,Wawnet Inn,WawnetInnRegion,와우넷 여관,ec9980ec9ab0eb84b720ec97aceab48000,verified
+Oblivion.esm,REGN,00067C73,RDMP,Weatherleah,WeatherleahRegion,웨더리아,ec9ba8eb8d94eba6acec958400,verified
+Oblivion.esm,REGN,00067C74,RDMP,Weye,WeyeRegion,웨이,ec9ba8ec9db400,verified
+Oblivion.esm,REGN,00067C75,RDMP,White Stallion Lodge,WhiteStallionLodgeRegion,백마 기사단 집회소,ebb0b1eba78820eab8b0ec82aceb8ba820eca791ed9a8cec868c00,verified
+Oblivion.esm,REGN,00067C76,RDMP,Whitmond,WhitmondRegion,위트먼드,ec9c84ed8ab8eba8bceb939c00,verified
+Oblivion.esm,REGN,000688E1,RDMP,Gnoll Mountain,GnollMountainRegion,그놀 산,eab7b8eb868020ec82b000,verified
+Oblivion.esm,REGN,0006C93F,RDMP,Anvil Castle Courtyard,AnvilCastleCourtyard,앤빌 성 안뜰,ec95a4ebb98c20ec84b120ec9588eb9cb000,verified
+Oblivion.esm,REGN,0006E57F,RDMP,Garden of Dareloth,ICWaterfrontDarelothGarden,다렐로스의 정원,eb8ba4eba090eba19cec8aa4ec9d9820eca095ec9b9000,verified
+Oblivion.esm,REGN,0006EF2F,RDMP,Cyrodiil,CyrodiilBorderRegion,시로딜,ec8b9ceba19ceb949c00,verified
+Oblivion.esm,REGN,0007157C,RDMP,Shadeleaf Copse,ShadeleafCopse,셰이드리프 숲,ec85b0ec9db4eb939ceba6aced948420ec88b200,verified
+Oblivion.esm,REGN,0007887A,RDMP,Private Gardens,SEDementiaGardens,개인 정원,eab09cec9db820eca095ec9b9000,verified
+Oblivion.esm,REGN,00078880,RDMP,Halcyon Conservatory,SEManiaGardenWeather,할시온 온실,ed95a0ec8b9cec98a820ec98a8ec8ba400,verified
+Oblivion.esm,REGN,0007B8CE,RDMP,Tower of Fathis Aren,TowerofFathisArenRegion,파시스 아렌의 탑,ed8c8cec8b9cec8aa420ec9584eba08cec9d9820ed839100,verified
+Oblivion.esm,REGN,0008596F,RDMP,Fisherman's Rock,FishermansRockRegion,낚시꾼의 바위,eb829aec8b9ceabebcec9d9820ebb094ec9c8400,verified
+Oblivion.esm,REGN,000872E1,RDMP,The Gold Coast,GoldCoastSubRegion02,골드 코스트,eab3a8eb939c20ecbd94ec8aa4ed8ab800,verified
+Oblivion.esm,REGN,000872E2,RDMP,The Gold Coast,GoldCoastSubRegion03,골드 코스트,eab3a8eb939c20ecbd94ec8aa4ed8ab800,verified
+Oblivion.esm,REGN,000878AB,RDMP,The Colovian Highlands,ColovianHighlandsSubRegion02,콜로비안 하이랜드,ecbd9ceba19cebb984ec958820ed9598ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REGN,000878AC,RDMP,The Colovian Highlands,ColovianHighlandsSubRegion04,콜로비안 하이랜드,ecbd9ceba19cebb984ec958820ed9598ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REGN,0008D750,RDMP,The Colovian Highlands,ColovianHighlandsSubRegion03,콜로비안 하이랜드,ecbd9ceba19cebb984ec958820ed9598ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REGN,0008D751,RDMP,The Colovian Highlands,ColovianHighlandsSubRegion01,콜로비안 하이랜드,ecbd9ceba19cebb984ec958820ed9598ec9db4eb9e9ceb939c00,verified
+Oblivion.esm,REGN,0008D752,RDMP,The Jerall Mountains,JerallValusMountainsSubRegion01,제랄 산맥,eca09ceb9e8420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008D753,RDMP,The Jerall Mountains,JerallValusMountainsSubRegion02,제랄 산맥,eca09ceb9e8420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008D754,RDMP,The Jerall Mountains,JerallValusMountainsSubRegion03,제랄 산맥,eca09ceb9e8420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008DC40,RDMP,The Valus Mountains,JerallValusMountainsSubRegion04,발루스 산맥,ebb09ceba3a8ec8aa420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008DC41,RDMP,The Valus Mountains,JerallValusMountainsSubRegion05,발루스 산맥,ebb09ceba3a8ec8aa420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008DC42,RDMP,The Valus Mountains,JerallValusMountainsSubRegion06,발루스 산맥,ebb09ceba3a8ec8aa420ec82b0eba7a500,verified
+Oblivion.esm,REGN,0008DD44,RDMP,The Nibenay Basin,NibenayBasinValleySubRegion01,니베나이 분지,eb8b88ebb2a0eb8298ec9db420ebb684eca78000,verified
+Oblivion.esm,REGN,0008DD80,RDMP,The Nibenay Basin,NibenayBasinValleySubRegion02,니베나이 분지,eb8b88ebb2a0eb8298ec9db420ebb684eca78000,verified
+Oblivion.esm,REGN,0008DD81,RDMP,The Nibenay Basin,NibenayBasinValleySubRegion03,니베나이 분지,eb8b88ebb2a0eb8298ec9db420ebb684eca78000,verified
+Oblivion.esm,REGN,0008DD83,RDMP,The Nibenay Basin,NibenayBasinValleySubRegion04,니베나이 분지,eb8b88ebb2a0eb8298ec9db420ebb684eca78000,verified
+Oblivion.esm,REGN,0008DD94,RDMP,The Nibenay Valley,NibenayBasinValleySubRegion05,니베나이 계곡,eb8b88ebb2a0eb8298ec9db420eab384eab3a100,verified
+Oblivion.esm,REGN,0008DFD0,RDMP,The Nibenay Valley,NibenayBasinValleySubRegion06,니베나이 계곡,eb8b88ebb2a0eb8298ec9db420eab384eab3a100,verified
+Oblivion.esm,REGN,0008DFD1,RDMP,Blackwood,BlackwoodSubRegion01,블랙우드,ebb894eb9e99ec9ab0eb939c00,verified
+Oblivion.esm,REGN,0008DFD2,RDMP,Blackwood,BlackwoodSubRegion02,블랙우드,ebb894eb9e99ec9ab0eb939c00,verified
+Oblivion.esm,REGN,0008E0A3,RDMP,Blackwood,BlackwoodSubRegion03,블랙우드,ebb894eb9e99ec9ab0eb939c00,verified
+Oblivion.esm,REGN,0008E0A4,RDMP,Blackwood,BlackwoodSubRegion04,블랙우드,ebb894eb9e99ec9ab0eb939c00,verified
+Oblivion.esm,REGN,0008E115,RDMP,The West Weald,WestWealdSubRegion01,웨스트 윌드,ec9ba8ec8aa4ed8ab820ec9c8ceb939c00,verified
+Oblivion.esm,REGN,0008E116,RDMP,The West Weald,WestWealdSubRegion02,웨스트 윌드,ec9ba8ec8aa4ed8ab820ec9c8ceb939c00,verified
+Oblivion.esm,REGN,0008E117,RDMP,The West Weald,WestWealdSubRegion03,웨스트 윌드,ec9ba8ec8aa4ed8ab820ec9c8ceb939c00,verified
+Oblivion.esm,REGN,00094161,RDMP,Waterfront,WaterfrontRegion,부두 구역,ebb680eb919020eab5acec97ad00,verified
+Oblivion.esm,REGN,00094162,RDMP,City Isle,CityIsleRegion,시티 아일,ec8b9ced8bb020ec9584ec9dbc00,verified
+Oblivion.esm,REGN,000CA588,RDMP,Fathis Aren's Tower,TGTempleOfTheEmperorZeroWeatherRegion,파시스 아렌의 탑,ed8c8cec8b9cec8aa420ec9584eba08cec9d9820ed839100,verified
+Oblivion.esm,REGN,001194AF,RDMP,The Heartlands,Heartlands01,하트랜즈,ed9598ed8ab8eb9e9ceca68800,verified
+Oblivion.esm,REGN,0014C7DC,RDMP,Abecean Sea,AnvilCoastline,아베시안 해,ec9584ebb2a0ec8b9cec958820ed95b400,verified
+Oblivion.esm,REGN,00184E21,RDMP,Topal Bay,BlackwoodCoastline,토팔 만,ed86a0ed8c9420eba78c00,verified
 Oblivion.esm,WRLD,00009F18,FULL,Realm of Sheogorath,SEWorld,셰오고라스의 영역,ec85b0ec98a4eab3a0eb9dbcec8aa4ec9d9820ec9881ec97ad00,verified
 Oblivion.esm,WRLD,00011F7B,FULL,The Fringe,SETheFringe,프린지,ed9484eba6b0eca78000,verified
 Oblivion.esm,WRLD,00011F7C,FULL,The Fringe,SETheFringeOrdered,프린지,ed9484eba6b0eca78000,verified

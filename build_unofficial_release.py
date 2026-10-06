@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Rebuild the permitted Korean UOP/USIP/UODP ESP overlay from latest originals.
+"""Rebuild the Korean UOP/USIP/UODP OBCJK UTF-8 overlay from latest originals.
 
 The existing Korean ESPs are translation memory only. This tool copies the
 latest original records and changes verified text subrecords, preserving every
-other field and compiled script. CELL/WRLD names stay English for manual saves.
+other field and compiled script. Audited CELL/WRLD, REFR map-marker, and REGN
+location names are forwarded in the same UTF-8 build. Legacy output and the old
+save-era English location-name guard are no longer part of the release policy.
 """
 
 from __future__ import annotations
@@ -27,7 +29,7 @@ PAIRS = (
     ("USIP", "Unofficial Shivering Isles Patch-KR"),
     ("UODP", "Unofficial Oblivion DLC Patches-KR"),
 )
-TEXT_FIELDS = {b"FULL", b"DESC", b"NAM1", b"CNAM", b"DATA"}
+TEXT_FIELDS = {b"FULL", b"DESC", b"NAM1", b"CNAM", b"DATA", b"RDMP"}
 
 
 def read_records(path: Path):
@@ -140,7 +142,7 @@ def matching_translation(table, official, record_type, formid, field, old, edito
 
 def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None,
-                    patch_table=None):
+                    patch_table=None, location_table=None, patch_location_table=None):
     old_records = read_records(original)
     kr_records = read_records(prior) if prior is not None else old_records
     if old_records.keys() != kr_records.keys():
@@ -173,10 +175,6 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                 if old != new:
                     raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
                 continue
-            if key[0] in (b"CELL", b"WRLD") and field == b"FULL":
-                if old != new:
-                    counts["save_unsafe_location_skipped"] += 1
-                continue
             # Oblivion resolves voice folders from the visible RACE name.
             # Keep race FULL names in English so Sound\\Voice\\...\\Imperial, Argonian, etc. still resolve.
             if key[0] == b"RACE" and field == b"FULL":
@@ -205,6 +203,28 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
             if patch_selected is not None:
                 replacement = patch_selected
                 counts["canonical_patch_translation"] += 1
+            is_location = ((key[0] in (b"CELL", b"WRLD", b"REFR") and field == b"FULL") or
+                           (key[0] == b"REGN" and field == b"RDMP"))
+            if is_location:
+                patch_location = matching_patch_translation(
+                    patch_location_table, original.name, key[0], key[1], field, old,
+                    old_editor.rstrip(b"\0"), field_occurrence)
+                direct_location = matching_patch_translation(
+                    location_table, original.name, key[0], key[1], field, old,
+                    old_editor.rstrip(b"\0"), field_occurrence)
+                if patch_location is not None:
+                    replacement = patch_location
+                    counts["canonical_patch_location"] += 1
+                elif direct_location is not None:
+                    replacement = direct_location
+                    counts["canonical_direct_location"] += 1
+                elif identity is not None:
+                    official_location = matching_translation(
+                        location_table, official, key[0], base_formid, field, old,
+                        old_editor.rstrip(b"\0"), field_occurrence)
+                    if official_location is not None:
+                        replacement = official_location
+                        counts["canonical_base_location"] += 1
             reviewed = None
             if vanilla_audit is not None:
                 audit_key = (official, key[0].decode("ascii"), f"{base_formid:08X}" if identity else "",
@@ -252,7 +272,7 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                     if old != new and replacement != new:
                         counts["reviewed_base_overrode_prior_kr"] += 1
                 elif old == new:
-                    counts["restored_base_translation"] += 1
+                    counts["forwarded_base_translation"] += 1
     return changes, counts
 
 def rewrite(original: Path, destination: Path, changes):
@@ -308,16 +328,16 @@ def rewrite(original: Path, destination: Path, changes):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True, help="Folder with UOP/USIP/UODP original subfolders")
-    parser.add_argument("--prior-kr", type=Path, help="Folder containing existing three *-KR MO2 mods (legacy fallback)")
+    parser.add_argument("--prior-kr", type=Path, help="Optional older KR overlays used only as translation-memory input")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--vanilla-audit", type=Path, help="Final vanilla build translation_audit.json")
-    parser.add_argument("--text-backend", choices=("legacy", "obcjk"), default="legacy",
-                        help="Output encoding. obcjk forwards canonical UTF-8 and reuses existing UTF-8 KR for patch-owned text.")
+    parser.add_argument("--text-backend", choices=("obcjk",), default="obcjk",
+                        help="OBCJK UTF-8 output. Legacy output is no longer supported.")
     args = parser.parse_args()
-    if args.text_backend == "legacy" and args.prior_kr is None:
-        parser.error("--prior-kr is required for legacy output")
     root = Path(__file__).resolve().parent
-    patch_table = load_patch_canonical(root / "canonical_unofficial_translation_v2.csv") if args.text_backend == "obcjk" else None
+    patch_table = load_patch_canonical(root / "canonical_unofficial_translation_v2.csv")
+    location_table = load_patch_canonical(root / "canonical_locations_v2.csv")
+    patch_location_table = load_patch_canonical(root / "canonical_unofficial_locations_v2.csv")
     if args.vanilla_audit:
         data = json.loads(args.vanilla_audit.read_text(encoding="utf-8"))
         vanilla_audit = {(a["file"], a["type"], a["formid"], a["field"], a["source_sha256"])
@@ -381,7 +401,7 @@ def main():
                 continue
             changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table, final_table,
                                               quest_entries, loading_entries, completions, nexus_completions,
-                                              patch_table)
+                                              patch_table, location_table, patch_location_table)
             destination = args.output / kr_folder / original.name
             applied = rewrite(original, destination, changes)
             if applied != counts["translated_fields"]:
@@ -394,17 +414,19 @@ def main():
                 "source_sha256": sha256_file(original),
                 "output_sha256": sha256_file(destination),
                 "translated_fields": applied,
-                "restored_base_translation": counts["restored_base_translation"],
+                "forwarded_base_translation": counts["forwarded_base_translation"],
                 "reviewed_base_translation": counts["reviewed_base_translation"],
                 "reviewed_base_overrode_prior_kr": counts["reviewed_base_overrode_prior_kr"],
                 "manual_completion": counts["manual_completion"],
                 "nexus_completion": counts["nexus_completion"],
-                "location_fields_preserved_english": counts["save_unsafe_location_skipped"],
+                "canonical_base_location": counts["canonical_base_location"],
+                "canonical_direct_location": counts["canonical_direct_location"],
+                "canonical_patch_location": counts["canonical_patch_location"],
                 "canonical_patch_translation": counts["canonical_patch_translation"],
                 "text_backend": args.text_backend,
                 "structure": before,
             }
-            print(f"{original.name}: {applied} Korean fields; reviewed-base {counts['reviewed_base_translation']} (overrode prior KR {counts['reviewed_base_overrode_prior_kr']}), restored legacy-base {counts['restored_base_translation']}; {counts['save_unsafe_location_skipped']} location names kept English")
+            print(f"{original.name}: {applied} Korean fields; reviewed-base {counts['reviewed_base_translation']} (overrode prior KR {counts['reviewed_base_overrode_prior_kr']}), forwarded-base {counts['forwarded_base_translation']}; locations base {counts['canonical_base_location']} + direct {counts['canonical_direct_location']} + patch {counts['canonical_patch_location']}")
     (args.output / "release_audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

@@ -1,13 +1,13 @@
 # 빌드와 저장소 구성
 
-현재 main은 v1.0.5 UTF-8 설치기를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
+현재 main은 v1.1.0 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
 
 ## Windows 설치기 빌드
 
 ```powershell
 python -m unittest discover -s tests -v
 pyinstaller --noconfirm --clean OblivionKRBuilder.spec
-python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.0.5.zip
+python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.0.zip
 ```
 
 설치기 ZIP에는 EXE, 한국어 BAT, 사용자 안내, 글꼴 출처와 OFL 라이선스만 넣습니다. 게임의 원본 ESM/ESP, 외부 DLL, MO2 프로필, 세이브는 포함하지 않습니다. 설치기를 MO2에서 실행할 필요는 없습니다.
@@ -15,7 +15,8 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 ## 코드와 자료
 
 - `install_obcjk.py`: 기존 INI 자동 검색·글꼴 경로 복원, 기존 번역 빌더 호출, 글꼴 등록.
-- `build_vanilla_overlay.py`, `build_unofficial_release.py`: 기존 번역과 원본을 대조하는 변환 기반. UTF-8 생성 과정에서 필요하므로 유지합니다.
+- `build_vanilla_overlay.py`, `build_obcjk_release.py`: canonical UTF-8 데이터를 원본 ESM/ESP에 직접 적용하는 본편·공식 DLC 빌드 경로입니다. legacy 한국어 중간 플러그인을 만들지 않습니다.
+- `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.
 - `build_obcjk_*.py`, `obcjk_text_backend.py`, `oblivion_korean_codec.py`: UTF-8 변환, UI와 한글 위치명 적용·검증.
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 사용 중이므로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
@@ -30,12 +31,12 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 ## Nexus ZIP 분리
 
 ```powershell
-python package_obcjk_unofficial.py --patch UOP --input-dir _build/obcjk/full-uop --locations _build/obcjk/korean-locations-final --output dist/UOP_KR_UTF8_obCJK_v1.0.5.zip
-python package_obcjk_unofficial.py --patch USIP --input-dir _build/obcjk/full-usip --locations _build/obcjk/korean-locations-final --output dist/USIP_KR_UTF8_obCJK_v1.0.5.zip
-python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/full-uodp --locations _build/obcjk/korean-locations-final --output dist/UODP_KR_UTF8_obCJK_v1.0.5.zip
+python package_obcjk_unofficial.py --patch UOP --input-dir _build/obcjk/UOP --output dist/UOP_KR_UTF8_obCJK_v1.1.0.zip
+python package_obcjk_unofficial.py --patch USIP --input-dir _build/obcjk/USIP --output dist/USIP_KR_UTF8_obCJK_v1.1.0.zip
+python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --output dist/UODP_KR_UTF8_obCJK_v1.1.0.zip
 ```
 
-선택 ESP는 해당 ZIP의 Optional에 둡니다. 패키징은 UTF-8 변환 보고서와 한글 위치명 보고서의 전후 SHA-256을 확인하며, 각 ZIP에 해당 모드의 ESP만 포함합니다.
+선택 ESP는 해당 ZIP의 Optional에 둡니다. 패키징은 통합 OBCJK 빌드의 release_audit.json과 ESP SHA-256을 확인하며, 각 ZIP에 해당 모드의 ESP만 포함합니다. 이 세 ZIP은 GitHub 본편 설치기에 넣지 않고 Nexus에서 별도 배포합니다.
 
 ## main 정리
 

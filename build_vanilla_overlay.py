@@ -252,17 +252,20 @@ def existing_gmst_keys(path: Path) -> set[bytes]:
     return keys
 
 
-def load_menu_gmsts(existing_csv: Path, new_csv: Path, translations):
+def load_menu_gmsts(existing_csv: Path, new_csv: Path, translations, text_backend="legacy"):
     with existing_csv.open(encoding="utf-8-sig", newline="") as stream:
         for line, row in enumerate(csv.DictReader(stream), 2):
             fid = int(row["raw_formid"], 16); key = row["editor_id"].encode("ascii")
-            korean = bytes.fromhex(row["new_bytes_hex"])
+            korean = ((row["new_korean"].encode("utf-8") + b"\0")
+                      if text_backend == "obcjk" else bytes.fromhex(row["new_bytes_hex"]))
             item = Translation("menu_gmst_master", b"GMST", fid, b"DATA", row["old_english"], korean, line, key, 0)
             translations[(MASTER, b"GMST", fid, b"DATA")] = [item]
     result=[]; seen=set()
     with new_csv.open(encoding="utf-8-sig", newline="") as stream:
         for line, row in enumerate(csv.DictReader(stream), 2):
-            fid=int(row["formid"],16); key=row["edid"].encode("ascii"); english=row["english"].encode("cp1252"); korean=bytes.fromhex(row["encoded_hex"])
+            fid=int(row["formid"],16); key=row["edid"].encode("ascii"); english=row["english"].encode("cp1252")
+            korean = ((row["korean"].encode("utf-8") + b"\0")
+                      if text_backend == "obcjk" else bytes.fromhex(row["encoded_hex"]))
             # Oblivion.esm has no masters: only file slot 00 is legal. xEdit
             # normalizes out-of-range slots to 00, hiding collisions if we
             # compare raw IDs alone.
@@ -370,7 +373,7 @@ def structure_signature(path: Path, skip_formids=frozenset()):
 
 def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
                  translations, counts: Counter, audit: list[dict],
-                 quest_texts=None, loading_texts=None) -> bytes:
+                 quest_texts=None, loading_texts=None, utf8_untranslated=False) -> bytes:
     parts = list(parse_subrecords(data))
     editor_id = next((value.rstrip(b"\0") for field, value, _ in parts if field == b"EDID"), b"")
     changed = False
@@ -406,6 +409,21 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
             continue
         candidates = translations.get((filename, record_type, formid, field), ())
         if not candidates:
+            is_display_text = (field == b"FULL" or field == b"DESC" or
+                               (field == b"NAM1" and record_type == b"INFO") or
+                               (field == b"CNAM" and record_type == b"QUST") or
+                               (field == b"DATA" and record_type == b"GMST" and editor_id.startswith(b"s")))
+            protected_name = record_type in {b"CELL", b"WRLD", b"RACE"} and field == b"FULL"
+            if utf8_untranslated and is_display_text and not protected_name and value.endswith(b"\0") and b"\0" not in value[:-1]:
+                try:
+                    target = value[:-1].decode("cp1252").encode("utf-8") + b"\0"
+                except UnicodeDecodeError:
+                    target = value
+                if target != value:
+                    output.append(encode_subrecord(field, target))
+                    changed = True
+                    counts["utf8_untranslated"] += 1
+                    continue
             output.append(original)
             continue
         english = decode_english(value)
@@ -448,7 +466,7 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
 
 def patch_plugin(source: Path, destination: Path, filename: str, translations,
                  counts: Counter, audit: list[dict], menu_gmsts=(),
-                 quest_texts=None, loading_texts=None):
+                 quest_texts=None, loading_texts=None, utf8_untranslated=False):
     destination.parent.mkdir(parents=True, exist_ok=True)
     menu_formids = frozenset(item[0] for item in menu_gmsts)
     if filename == MASTER and any(not 0 < fid <= 0x00FFFFFF for fid in menu_formids):
@@ -504,7 +522,7 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                 has_special = (filename == MASTER and
                                ((kind == b"QUST" and quest_texts and formid in quest_texts["formids"]) or
                                 (kind == b"LSCR" and loading_texts and formid in loading_texts)))
-                if not has_special and not translations.get((filename, kind, formid, b"FULL")) and not any(
+                if not utf8_untranslated and not has_special and not translations.get((filename, kind, formid, b"FULL")) and not any(
                         translations.get((filename, kind, formid, field))
                         for field in (b"DESC", b"NAM1", b"CNAM", b"DATA")):
                     dst.write(header)
@@ -529,7 +547,8 @@ def patch_plugin(source: Path, destination: Path, filename: str, translations,
                     plain = body
                 updated = patch_record(plain, filename, kind, formid, translations, counts, audit,
                                        quest_texts["entries"] if has_special and kind == b"QUST" else None,
-                                       loading_texts if has_special and kind == b"LSCR" else None)
+                                       loading_texts if has_special and kind == b"LSCR" else None,
+                                       utf8_untranslated=utf8_untranslated)
                 if updated != plain:
                     body = struct.pack("<I", len(updated)) + zlib.compress(updated) if compressed else updated
                     header = header[:4] + struct.pack("<I", len(body)) + header[8:]
@@ -550,16 +569,15 @@ def main() -> int:
     parser.add_argument("--extra-csv", type=Path, action="append", default=[],
                         help="Additional verified translation-memory CSV (repeatable)")
     parser.add_argument("--ini", type=Path, help="Optional active Oblivion.ini to update with a backup")
-    parser.add_argument("--text-backend", choices=("legacy", "obcjk"), default="legacy",
-                        help="Preserve legacy font encoding or build a separate obCJK UTF-8 overlay")
+    parser.add_argument("--text-backend", choices=("obcjk",), default="obcjk",
+                        help="Build the OBCJK UTF-8 overlay. Legacy release output is no longer supported.")
     parser.add_argument("--obcjk-ini", type=Path,
                         help="Optional UTF-8 obCJK INI for the obcjk backend; DLL is never bundled")
     parser.add_argument("--video-subtitles", choices=("off", "auto", "required"), default="off",
                         help="Burn Korean subtitles into original intro/outro videos using FFmpeg and RAD Video Tools")
     args = parser.parse_args()
-    if args.text_backend == "obcjk":
-        from build_obcjk_release import build
-        return build(args)
+    from build_obcjk_release import build
+    return build(args)
     source_dir = args.data_dir.resolve()
     output_dir = args.output.resolve()
     if source_dir == output_dir or source_dir in output_dir.parents or output_dir in source_dir.parents:

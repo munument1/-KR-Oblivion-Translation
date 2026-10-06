@@ -1,0 +1,140 @@
+﻿effective_source,record_type,raw_formid,field,old_english,editor_id,obcjk_unicode_text,obcjk_utf8_hex,obcjk_conversion_status
+DLCFrostcrag - Unofficial Patch.esp,REFR,02000D51,FULL,Frostcrag Spire,FrostcragSpireMapMarker,서리바위 첨탑,ec849ceba6acebb094ec9c8420ecb2a8ed839100,verified
+DLCFrostcrag - Unofficial Patch.esp,REGN,02014E9F,RDMP,Frostcrag Spire,DLCFrostCragRegion,서리바위 첨탑,ec849ceba6acebb094ec9c8420ecb2a8ed839100,verified
+DLCThievesDen - Unofficial Patch.esp,REFR,030042CC,FULL,Dunbarrow Cove,UOMPDunbarrowMapMarker,던배로우 만,eb8d98ebb0b0eba19cec9ab020eba78c00,verified
+Knights - Unofficial Patch.esp,REFR,030074D1,FULL,Vanua,UOMPVanuaMapMarker,바누아,ebb094eb8884ec958400,verified
+Oblivion Citadel Door Fix.esp,CELL,0004F07F,FULL,Desolation's End,OblivionRD004CitadelMainHall02,황폐의 끝,ed99a9ed8f90ec9d9820eb819d00,verified
+Unofficial Oblivion Patch.esp,CELL,00000ADE,FULL,Chorrol Mages Guild Basement,ChorrolMagesGuildBasement,코롤 메이지 길드 지하실,ecbd94eba1a420eba994ec9db4eca78020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00000D9A,FULL,Chorrol Mages Guild Library,ChorrolMagesGuildLibrary,코롤 메이지 길드 도서관,ecbd94eba1a420eba994ec9db4eca78020eab8b8eb939c20eb8f84ec849ceab48000,verified
+Unofficial Oblivion Patch.esp,CELL,0000365E,FULL,Southeast Guard Tower,ChorrolCastleWallTowerSE,남동쪽 경비탑,eb82a8eb8f99ecaabd20eab2bdebb984ed839100,verified
+Unofficial Oblivion Patch.esp,CELL,0000365F,FULL,Northeast Guard Tower,ChorrolCastleWallTowerNE,북동쪽 경비탑,ebb681eb8f99ecaabd20eab2bdebb984ed839100,verified
+Unofficial Oblivion Patch.esp,CELL,00003660,FULL,Southwest Guard Tower,ChorrolCastleWallTowerSW,남서쪽 경비탑,eb82a8ec849cecaabd20eab2bdebb984ed839100,verified
+Unofficial Oblivion Patch.esp,CELL,00003661,FULL,Northwest Guard Tower,ChorrolCastleWallTowerNW,북서쪽 경비탑,ebb681ec849cecaabd20eab2bdebb984ed839100,verified
+Unofficial Oblivion Patch.esp,CELL,00003AAC,FULL,Bruma Mages Guild Living Quarters,BrumaMagesGuildBasement,브루마 메이지 길드 생활 공간,ebb88ceba3a8eba78820eba994ec9db4eca78020eab8b8eb939c20ec839ded999c20eab3b5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,00003AAF,FULL,Bruma Fighters Guild Basement,BrumaFightersGuildBasement,브루마 파이터 길드 지하실,ebb88ceba3a8eba78820ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00006917,FULL,Cheydinhal Mages Guild Basement,CheydinhalMagesGuildBasement,셰이딘홀 메이지 길드 지하실,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00007945,FULL,Castle Anvil Dungeon,AnvilCastleDungeon,앤빌 성 지하감옥,ec95a4ebb98c20ec84b120eca780ed9598eab090ec98a500,verified
+Unofficial Oblivion Patch.esp,CELL,00007946,FULL,Castle Anvil Barracks,AnvilCastleBarracks,앤빌 성 막사,ec95a4ebb98c20ec84b120eba789ec82ac00,verified
+Unofficial Oblivion Patch.esp,CELL,00007966,FULL,Castle Anvil Private Quarters,AnvilCastlePrivateQuarters,앤빌 성 개인 방,ec95a4ebb98c20ec84b120eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,000097B4,FULL,Anvil Fighters Guild Dining Hall,AnvilFightersGuildDinningHall,앤빌 파이터 길드 식당,ec95a4ebb98c20ed8c8cec9db4ed84b020eab8b8eb939c20ec8b9deb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,000097B5,FULL,Anvil Mages Guild Living Quarters,AnvilMagesGuildLivingQuarters,앤빌 메이지 길드 생활 공간,ec95a4ebb98c20eba994ec9db4eca78020eab8b8eb939c20ec839ded999c20eab3b5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,000097B6,FULL,Anvil Mages Guild Library,AnvilMagesGuildLibrary,앤빌 메이지 길드 도서관,ec95a4ebb98c20eba994ec9db4eca78020eab8b8eb939c20eb8f84ec849ceab48000,verified
+Unofficial Oblivion Patch.esp,CELL,00009C7F,FULL,Bruma Mages Guild Living Quarters,BrumaMagesGuildBasementDestroyed,브루마 메이지 길드 생활 공간,ebb88ceba3a8eba78820eba994ec9db4eca78020eab8b8eb939c20ec839ded999c20eab3b5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,0000C0F1,FULL,Castle Anvil Caverns,AnvilCastleNecromancerLair,앤빌 성 동굴,ec95a4ebb98c20ec84b120eb8f99eab5b400,verified
+Unofficial Oblivion Patch.esp,CELL,0001552C,FULL,Rythe Lythandas' Basement,CheydinhalRythesBasement,라이스 리탄다스의 지하실,eb9dbcec9db4ec8aa420eba6aced8384eb8ba4ec8aa4ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0001634B,FULL,Northwest Watch Tower,ICImperialLegionWatchTowerNW,북서쪽 감시탑,ebb681ec849cecaabd20eab090ec8b9ced839100,verified
+Unofficial Oblivion Patch.esp,CELL,0001C62C,FULL,Castle Leyawiin Lord's Manor Private Quarters,LeyawiinCastlePrivateQuarters,레이야윈 성 영주의 저택 개인 방,eba088ec9db4ec95bcec9c8820ec84b120ec9881eca3bcec9d9820eca080ed839d20eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0001C7EA,FULL,Istirus Brolus' Basement,BrumaIstriusBrolusBasement,이스티루스 브롤루스의 지하실,ec9db4ec8aa4ed8bb0eba3a8ec8aa420ebb88ceba1a4eba3a8ec8aa4ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0001C92A,FULL,Chorrol Mages Guild Living Quarters,ChorrolMagesGuildLivingQuarters,코롤 메이지 길드 생활 공간,ecbd94eba1a420eba994ec9db4eca78020eab8b8eb939c20ec839ded999c20eab3b5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,0001EC36,FULL,Castle Cheydinhal Lord's Private Quarters,CheydinhalCastleLordsQuarters,셰이딘홀 성 영주의 개인 방,ec85b0ec9db4eb9498ed998020ec84b120ec9881eca3bcec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,000235DE,FULL,Chorrol Fighters Guild,ChorrolFightersGuild,코롤 파이터 길드,ecbd94eba1a420ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,00027D50,FULL,Salmo The Baker's House,SkingradSalmoTheBakersHouse,제빵사 살모의 집,eca09cebb9b5ec82ac20ec82b4ebaaa8ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00027D5A,FULL,Great Chapel of Julianos,SkingradChapelofJulianos,줄리아노스의 대성당,eca484eba6acec9584eb85b8ec8aa4ec9d9820eb8c80ec84b1eb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,00027F61,FULL,Rockmilk - Bandit Lair,RockmilkCave02,바위젖 - 도적 소굴,ebb094ec9c84eca096202d20eb8f84eca08120ec868ceab5b400,verified
+Unofficial Oblivion Patch.esp,CELL,00028156,FULL,Chorrol South Gate Tower,ChorrolGateBRandBL,코롤 남문 탑,ecbd94eba1a420eb82a8ebacb820ed839100,verified
+Unofficial Oblivion Patch.esp,CELL,0002A24B,FULL,Great Chapel of Akatosh,KvatchChapelofAkatosh,아카토쉬 대성당,ec9584ecb9b4ed86a0ec89ac20eb8c80ec84b1eb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,0002A5C5,FULL,Savlian Matius' Tent,KvatchTentSavlianMatius,사블리안 마티우스의 텐트,ec82acebb894eba6acec958820eba788ed8bb0ec9ab0ec8aa4ec9d9820ed8590ed8ab800,verified
+Unofficial Oblivion Patch.esp,CELL,0002B53B,FULL,Castle Kvatch Great Hall,KvatchCastle,크바치 성 대연회장,ed81acebb094ecb99820ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Unofficial Oblivion Patch.esp,CELL,0002C1B7,FULL,Ra'Jhan's House,ICElvenGardensRajhansHouse,라'잔의 집,eb9dbc27ec9e94ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,0002C37D,FULL,Castle Anvil Royal Quarters,AnvilCastleRoyalQuarters,앤빌 성 왕실 거처,ec95a4ebb98c20ec84b120ec9995ec8ba420eab1b0ecb29800,verified
+Unofficial Oblivion Patch.esp,CELL,0002C52F,FULL,Castle Kvatch Great Hall,KvatchCastleRooms,크바치 성 대연회장,ed81acebb094ecb99820ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Unofficial Oblivion Patch.esp,CELL,0002CDBD,FULL,Skingrad Mages Guild Living Quarters,SkingradMagesGuildLivingQuarters,스킨그라드 메이지 길드 생활 공간,ec8aa4ed82a8eab7b8eb9dbceb939c20eba994ec9db4eca78020eab8b8eb939c20ec839ded999c20eab3b5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,0002CDCA,FULL,Castle Kvatch Sleeping Quarters,KvatchCastleSleepingQuarters,크바치 성 침실,ed81acebb094ecb99820ec84b120ecb9a8ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0002CDCB,FULL,Castle Kvatch Dining Hall,KvatchCastleDiningHall,크바치 성 식당,ed81acebb094ecb99820ec84b120ec8b9deb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,0002CDCC,FULL,Castle Kvatch Count's Quarters,KvatchCastleKingsQuarters,크바치 성 백작의 방,ed81acebb094ecb99820ec84b120ebb0b1ec9e91ec9d9820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0002CFD7,FULL,Skingrad Fighters Guild Upstairs,SkingradFightersGuildUpstairs,스킨그라드 파이터 길드 위층,ec8aa4ed82a8eab7b8eb9dbceb939c20ed8c8cec9db4ed84b020eab8b8eb939c20ec9c84ecb8b500,verified
+Unofficial Oblivion Patch.esp,CELL,0002D155,FULL,Skingrad Fighters Guild Basement,SkingradFightersGuildBasement,스킨그라드 파이터 길드 지하실,ec8aa4ed82a8eab7b8eb9dbceb939c20ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0002D626,FULL,Skingrad Mages Guild Basement,SkingradMagesGuildBasement,스킨그라드 메이지 길드 지하실,ec8aa4ed82a8eab7b8eb9dbceb939c20eba994ec9db4eca78020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0002DB98,FULL,Castle Bruma Service Hall,BrumaCastleServiceHall,브루마 성 시종 홀,ebb88ceba3a8eba78820ec84b120ec8b9ceca28520ed998000,verified
+Unofficial Oblivion Patch.esp,CELL,0002DB99,FULL,Castle Bruma Lord's Manor,BrumaCastleLordsManor,브루마 성 영주의 저택,ebb88ceba3a8eba78820ec84b120ec9881eca3bcec9d9820eca080ed839d00,verified
+Unofficial Oblivion Patch.esp,CELL,0002E544,FULL,Cheydinhal Mages Guild Well,CheydinhalMagesGuildWell,셰이딘홀 메이지 길드 우물,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c20ec9ab0ebacbc00,verified
+Unofficial Oblivion Patch.esp,CELL,0002FE35,FULL,Timberscar Cave,TimberscarHollow,수목흉터 동굴,ec8898ebaaa9ed9d89ed84b020eb8f99eab5b400,verified
+Unofficial Oblivion Patch.esp,CELL,0002FF4B,FULL,City-Swimmer's House,BravilCitySwimmerHouse,시티-스위머의 집,ec8b9ced8bb02dec8aa4ec9c84eba8b8ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,0002FF4F,FULL,Bravil Fighters Guild,BravilFightersGuild,브라빌 파이터 길드,ebb88ceb9dbcebb98c20ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,0002FF54,FULL,The Fair Deal,BravilTheFairDeal,공정한 거래,eab3b5eca095ed959c20eab1b0eb9e9800,verified
+Unofficial Oblivion Patch.esp,CELL,000302E7,FULL,Istirus Brolus' House,BrumaIstirusBrolusHouse,이스티루스 브롤루스의 집,ec9db4ec8aa4ed8bb0eba3a8ec8aa420ebb88ceba1a4eba3a8ec8aa4ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,0003041A,FULL,Bazur gro-Gharz's House,CheydinhalGharzHouse,바주르 그로-가르즈의 집,ebb094eca3bceba5b420eab7b8eba19c2deab080eba5b4eca688ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,0003041B,FULL,Oghash gra-Magul's House,CheydinhalMagulHouse,오가쉬 그라-마굴의 집,ec98a4eab080ec89ac20eab7b8eb9dbc2deba788eab5b4ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00030420,FULL,Magub gro-Orum's House,CheydinhalOrumHouse,마구브 그로-오룸의 집,eba788eab5acebb88c20eab7b8eba19c2dec98a4eba3b8ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00030421,FULL,Rythe Lythandas' House,CheydinhalRythesHouse,라이스 리탄다스의 집,eb9dbcec9db4ec8aa420eba6aced8384eb8ba4ec8aa4ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00030425,FULL,Cheydinhal Fighters Guild,CheydinhalFightersGuild,셰이딘홀 파이터 길드,ec85b0ec9db4eb9498ed998020ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,00030426,FULL,Castle Cheydinhal Dungeon,CheydinhalCastleDungeon,셰이딘홀 성 지하감옥,ec85b0ec9db4eb9498ed998020ec84b120eca780ed9598eab090ec98a500,verified
+Unofficial Oblivion Patch.esp,CELL,0003052E,FULL,Rosentia Gallenus' House,LeyawiinRosentiaGallenusHouse,로젠티아 갈레누스의 집,eba19ceca0a0ed8bb0ec958420eab088eba088eb8884ec8aa4ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00030531,FULL,J'bari's House,LeyawiinJBarisHouse,즈'바리의 집,eca68827ebb094eba6acec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00030535,FULL,Leyawiin Fighters Guild,LeyawiinFightersGuild,레이야윈 파이터 길드,eba088ec9db4ec95bcec9c8820ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,0003053B,FULL,Three Sisters Inn,LeyawiinThreeSistersInn,세 자매의 여관,ec84b820ec9e90eba7a4ec9d9820ec97aceab48000,verified
+Unofficial Oblivion Patch.esp,CELL,000308CB,FULL,Anvil Fighters Guild,AnvilFightersGuild,앤빌 파이터 길드,ec95a4ebb98c20ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,000308CC,FULL,Castle Anvil Great Hall,AnvilCastleGreatHall,앤빌 성 대연회장,ec95a4ebb98c20ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Unofficial Oblivion Patch.esp,CELL,000313B1,FULL,Gottlesfont Priory,GottlefontPrioryMonastery,고틀스폰트 수도원,eab3a0ed8b80ec8aa4ed8fb0ed8ab820ec8898eb8f84ec9b9000,verified
+Unofficial Oblivion Patch.esp,CELL,000313B2,FULL,Aelwin Merowald's House,Weye,엘윈 메로왈드의 집,ec9798ec9c8820eba994eba19cec9988eb939cec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00031563,FULL,Lord Rugdumph's Estate,LordRugdumphEstate,러그덤프 경의 저택,eb9faceab7b8eb8da4ed948420eab2bdec9d9820eca080ed839d00,verified
+Unofficial Oblivion Patch.esp,CELL,00031569,FULL,Ri'Bassa's House,BorderWatchRibassasHouse,리'바사의 집,eba6ac27ebb094ec82acec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,0003156C,FULL,Faregyl Inn,FaregylInterior,페어길 여관,ed8e98ec96b4eab8b820ec97aceab48000,verified
+Unofficial Oblivion Patch.esp,CELL,00031A50,FULL,Castle Bravil Lord's Manor North Wing,BravilCastlePrivateQuartersNorthWing,브라빌 성 영주의 저택 북쪽 날개,ebb88ceb9dbcebb98c20ec84b120ec9881eca3bcec9d9820eca080ed839d20ebb681ecaabd20eb82a0eab09c00,verified
+Unofficial Oblivion Patch.esp,CELL,00031B55,FULL,Castle Cheydinhal Great Hall,CheydinhalCastleGreatHall,셰이딘홀 성 대연회장,ec85b0ec9db4eb9498ed998020ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Unofficial Oblivion Patch.esp,CELL,00031B56,FULL,Castle Cheydinhal Private Quarters,CheydinhalCastlePrivateQuarters,셰이딘홀 성 개인 방,ec85b0ec9db4eb9498ed998020ec84b120eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00031B58,FULL,Castle Cheydinhal Guard Barracks,CheydinhalCastleGuardBarracks,셰이딘홀 성 경비대 막사,ec85b0ec9db4eb9498ed998020ec84b120eab2bdebb984eb8c8020eba789ec82ac00,verified
+Unofficial Oblivion Patch.esp,CELL,00031B59,FULL,Castle Cheydinhal County Hall,CheydinhalCastleCountyHall,셰이딘홀 성 주회당,ec85b0ec9db4eb9498ed998020ec84b120eca3bced9a8ceb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,00032483,FULL,Umbacano's Attic,ICTalosPlazaUmbacanoManorTop,움바카노의 다락방,ec9b80ebb094ecb9b4eb85b8ec9d9820eb8ba4eb9dbdebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00032687,FULL,Damian Magius' Quarters,ICWaterfrontImpTradingCoOfficeUpstairs,데미안 마기우스의 방,eb8db0ebafb8ec958820eba788eab8b0ec9ab0ec8aa4ec9d9820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00032F02,FULL,Leyawiin Fighters Guild Basement,LeyawiinFightersGuildBasement,레이야윈 파이터 길드 지하실,eba088ec9db4ec95bcec9c8820ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00033370,FULL,Leyawiin Mages Guild 2nd Floor South,LeyawiinMagesGuildLaboratory,레이야윈 메이지 길드 2층 남쪽,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c2032ecb8b520eb82a8ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,00035FC5,FULL,Castle Bruma Great Hall,BrumaCastleGreatHall,브루마 성 대연회장,ebb88ceba3a8eba78820ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Unofficial Oblivion Patch.esp,CELL,00037D0A,FULL,Sevarius Atius' Private Quarters,ICTalosPlazaSevariusAtiusHouseUpstairs,세베리우스 아티우스의 개인 방,ec84b8ebb2a0eba6acec9ab0ec8aa420ec9584ed8bb0ec9ab0ec8aa4ec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00037D0B,FULL,Matthias Draconis' Private Quarters,ICTalosPlazaMatthiasDraconisHouseUpstairs,마티아스 드라코니스의 개인 방,eba788ed8bb0ec9584ec8aa420eb939ceb9dbcecbd94eb8b88ec8aa4ec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,000384F1,FULL,Three Sisters Inn 2nd Floor South,LeyawiinThreeSistersInnRoom02,세 자매의 여관 2층 남쪽,ec84b820ec9e90eba7a4ec9d9820ec97aceab4802032ecb8b520eb82a8ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,000384F2,FULL,Three Sisters Inn 2nd Floor North,LeyawiinThreeSistersInnRoom01,세 자매의 여관 2층 북쪽,ec84b820ec9e90eba7a4ec9d9820ec97aceab4802032ecb8b520ebb681ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,00038FCF,FULL,Three Sisters Inn 3rd Floor South,LeyawiinThreesistersInnRoom04,세 자매의 여관 3층 남쪽,ec84b820ec9e90eba7a4ec9d9820ec97aceab4802033ecb8b520eb82a8ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,00038FD0,FULL,Three Sisters Inn 3rd Floor North,LeyawiinThreesistersInnRoom03,세 자매의 여관 3층 북쪽,ec84b820ec9e90eba7a4ec9d9820ec97aceab4802033ecb8b520ebb681ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003A870,FULL,Bradon Lirrian's Basement,BrumaBradonLirriansBasement,브래던 리리안의 지하실,ebb88ceb9e98eb8d9820eba6aceba6acec9588ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0003ABDD,FULL,Leyawiin Mages Guild 3rd Floor North,LeyawiinMagesGuildPrivateQuarter,레이야윈 메이지 길드 3층 북쪽,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c2033ecb8b520ebb681ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003ABDE,FULL,Leyawiin Mages Guild 2nd Floor North,LeyawiinMagesGuildLibrary,레이야윈 메이지 길드 2층 북쪽,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c2032ecb8b520ebb681ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003AD1A,FULL,Usheeja's Private Quarters,ICTalosPlazaUsheejasHouseUpstairs,우쉬쟈의 개인실,ec9ab0ec89acec9f88ec9d9820eab09cec9db8ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0003CEDF,FULL,Dynari Amnis' Basement,ICTalosPlazaDynariAmnisHouseBasement,디나리 암니스의 지하실,eb9494eb8298eba6ac20ec9594eb8b88ec8aa4ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0003D312,FULL,Castle Anvil Smithy,AnvilCastleBlacksmithQuarters,앤빌 성 대장간,ec95a4ebb98c20ec84b120eb8c80ec9ea5eab08400,verified
+Unofficial Oblivion Patch.esp,CELL,0003D867,FULL,Jakben Imbel's Study,ICTalosPlazaJakbenImbelHouseTop,잭벤 임벨의 서재,ec9eadebb2a420ec9e84ebb2a8ec9d9820ec849cec9eac00,verified
+Unofficial Oblivion Patch.esp,CELL,0003DB42,FULL,Jeetum-Ze's Room,LeyawiinBlackwoodRoom01,지툼-제의 방,eca780ed88bc2deca09cec9d9820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0E3,FULL,Leyawiin Fighters Guild 3rd Floor West,LeyawiinFightersGuildRoom02,레이야윈 파이터 길드 3층 서쪽,eba088ec9db4ec95bcec9c8820ed8c8cec9db4ed84b020eab8b8eb939c2033ecb8b520ec849cecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0E4,FULL,Fighters Guild 2nd Floor West,LeyawiinFightersGuildRoom01,파이터 길드 2층 서쪽,ed8c8cec9db4ed84b020eab8b8eb939c2032ecb8b520ec849cecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0E5,FULL,Leyawiin Fighters Guild 2nd Floor East,LeyawiinFightersGuildTraining,레이야윈 파이터 길드 2층 동쪽,eba088ec9db4ec95bcec9c8820ed8c8cec9db4ed84b020eab8b8eb939c2032ecb8b520eb8f99ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0EB,FULL,J'bari's House 2nd Floor South,LeyawiinJBarisHouse2ndFloorEast,즈'바리의 집 2층 남쪽,eca68827ebb094eba6acec9d9820eca7912032ecb8b520eb82a8ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0EC,FULL,J'bari's House 2nd Floor North,LeyawiinJBarisHouse2ndFloorWest,즈'바리의 집 2층 북쪽,eca68827ebb094eba6acec9d9820eca7912032ecb8b520ebb681ecaabd00,verified
+Unofficial Oblivion Patch.esp,CELL,0003E0ED,FULL,Rosentia Gallenus' House 2nd Floor,LeyawiinRosentiaGallenusHouse2ndFloor,로젠티아 갈레누스의 집 2층,eba19ceca0a0ed8bb0ec958420eab088eba088eb8884ec8aa4ec9d9820eca7912032ecb8b500,verified
+Unofficial Oblivion Patch.esp,CELL,0003ED42,FULL,Marie Elena Captain's Cabin,ICWaterfrontMarieElenaCaptainsCabin,마리 엘레나 선장실,eba788eba6ac20ec9798eba088eb829820ec84a0ec9ea5ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00047C99,FULL,Ra'Jhan's Private Quarters,ICElvenGardensRajhansHouseUpstairs,라'잔의 개인 방,eb9dbc27ec9e94ec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00047C9F,FULL,Ra'Jhan's Basement,ICElvenGardensRajhansHouseBasement,라'잔의 지하실,eb9dbc27ec9e94ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00048BD4,FULL,Castle Leyawiin Secret Room,LeyawiinCastleSecretRoom,레이야윈 성 비밀 방,eba088ec9db4ec95bcec9c8820ec84b120ebb984ebb08020ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00048BD8,FULL,Castle Leyawiin Steward's & Healer's Quarters,LeyawiinCastleStewardsHealersPrivateQuarters,레이야윈 성 청지기 및 치유사의 방,eba088ec9db4ec95bcec9c8820ec84b120ecb2adeca780eab8b020ebb08f20ecb998ec9ca0ec82acec9d9820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0004CB0B,FULL,Castle Bravil Private Quarters East Wing,BravilCastlePrivateQuartersEastWing,브라빌 성 개인 방 동쪽 날개,ebb88ceb9dbcebb98c20ec84b120eab09cec9db820ebb0a920eb8f99ecaabd20eb82a0eab09c00,verified
+Unofficial Oblivion Patch.esp,CELL,0004EA57,FULL,Five Riders Stables,LeyawiinFiveRidersStable,다섯 기수의 마구간,eb8ba4ec84af20eab8b0ec8898ec9d9820eba788eab5aceab08400,verified
+Unofficial Oblivion Patch.esp,CELL,0004EA5A,FULL,Leyawiin Mages Guild Basement,LeyawiinMagesGuildBasement,레이야윈 메이지 길드 지하실,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0004EA5C,FULL,Three Sisters Inn Basement,LeyawiinThreeSistersInnBasement,세 자매의 여관 지하실,ec84b820ec9e90eba7a4ec9d9820ec97aceab48020eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0004EBF6,FULL,Trenus Duronius' Private Quarters,ICTempleDistrictTrenusDuroniusHouseUpstairs,트레누스 두로니우스의 개인 방,ed8ab8eba088eb8884ec8aa420eb9190eba19ceb8b88ec9ab0ec8aa4ec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0004EDA7,FULL,Surius Afranius' Private Quarters,ICTempleDistrictSuriusAfraniusHouseUpstairs,수리우스 아프라니우스의 개인 방,ec8898eba6acec9ab0ec8aa420ec9584ed9484eb9dbceb8b88ec9ab0ec8aa4ec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,0004F07F,FULL,Desolation's End,OblivionRD004CitadelMainHall02,황폐의 끝,ed99a9ed8f90ec9d9820eb819d00,verified
+Unofficial Oblivion Patch.esp,CELL,0004F8C8,FULL,Anvil Fighters Guild Company Offices,AnvilFightersGuildCompanyOffices,앤빌 파이터 길드 회사 사무실,ec95a4ebb98c20ed8c8cec9db4ed84b020eab8b8eb939c20ed9a8cec82ac20ec82acebacb4ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00051B8E,FULL,Bravil Fighters Guild 3rd Floor,BravilFightersGuild3rdFloor,브라빌 파이터 길드 3층,ebb88ceb9dbcebb98c20ed8c8cec9db4ed84b020eab8b8eb939c2033ecb8b500,verified
+Unofficial Oblivion Patch.esp,CELL,00051B90,FULL,Bravil Fighters Guild 2nd Floor,BravilFightersGuild2ndFloor,브라빌 파이터 길드 2층,ebb88ceb9dbcebb98c20ed8c8cec9db4ed84b020eab8b8eb939c2032ecb8b500,verified
+Unofficial Oblivion Patch.esp,CELL,00053F3E,FULL,Reaper's Sprawl,OblivionRD006TowerRight,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
+Unofficial Oblivion Patch.esp,CELL,000560A4,FULL,The Count's Arms Private Rooms,AnvilTheCountsArmsPrivateRooms,카운츠 암스 개인실,ecb9b4ec9ab4ecb8a020ec9594ec8aa420eab09cec9db8ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,000579E4,FULL,Derelict Mine Lair,DerelictMine03,폐기된 광산 소굴,ed8f90eab8b0eb909c20eab491ec82b020ec868ceab5b400,verified
+Unofficial Oblivion Patch.esp,CELL,0005F25E,FULL,Dasek Moor Malebolge,DasekMoor03,다섹 무어 말레볼제,eb8ba4ec84b920ebacb4ec96b420eba790eba088ebb3bceca09c00,verified
+Unofficial Oblivion Patch.esp,CELL,0008341D,FULL,Jerall View Inn Basement,BrumaJerallViewBasement,제랄 전망대 여관 지하실,eca09ceb9e8420eca084eba79deb8c8020ec97aceab48020eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00091722,FULL,Magub gro-Orum's Basement,CheydinhalOrumHouseBasement,마구브 그로-오룸의 지하실,eba788eab5acebb88c20eab7b8eba19c2dec98a4eba3b8ec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0009228A,FULL,Llevana Nedaren's Basement,CheydinhalLlevanaNedarensBasement,레바나 네다렌의 지하실,eba088ebb094eb829820eb84a4eb8ba4eba08cec9d9820eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00093CDC,FULL,J'riska's House,BorderWatchJriskasHouse,즈'리스카의 집,eca68827eba6acec8aa4ecb9b4ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00094932,FULL,Serpent's Wake Cargo Hold,AnvilTheSerpentsWakeLowerDeck,서펀츠 웨이크호 화물창,ec849ced8e80ecb8a020ec9ba8ec9db4ed81aced98b820ed9994ebacbcecb0bd00,verified
+Unofficial Oblivion Patch.esp,CELL,00094933,FULL,Serpent's Wake Mid Deck,AnvilTheSerpentsWakeMidDeck,서펀츠 웨이크호 중간 갑판,ec849ced8e80ecb8a020ec9ba8ec9db4ed81aced98b820eca491eab08420eab091ed8c9000,verified
+Unofficial Oblivion Patch.esp,CELL,00094C45,FULL,Floyd Nathans' House,BlankenMarchHouse01,플로이드 네이선의 집,ed948ceba19cec9db4eb939c20eb84a4ec9db4ec84a0ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00094ECE,FULL,Irroke the Wide's House,PellGateIrrokitheWidesHouse,넓은 이로케의 집,eb8493ec9d8020ec9db4eba19cecbc80ec9d9820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,00099D90,FULL,Reaper's Sprawl,OblivionRD007SmallTower02,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
+Unofficial Oblivion Patch.esp,CELL,0009C5E8,FULL,Gottlesfont House,GottlefontHouse,고틀스폰트 집,eab3a0ed8b80ec8aa4ed8fb0ed8ab820eca79100,verified
+Unofficial Oblivion Patch.esp,CELL,000A7946,FULL,Arrowshaft Cavern Subterrane,ArrowshaftCavern03,화살촉 동굴 지하,ed9994ec82b4ecb48920eb8f99eab5b420eca780ed959800,verified
+Unofficial Oblivion Patch.esp,CELL,00115F5F,FULL,Castle Chorrol Lord's Private Quarters,ChorrolCastlePrivateQuarters02,코롤 성 영주의 개인 방,ecbd94eba1a420ec84b120ec9881eca3bcec9d9820eab09cec9db820ebb0a900,verified
+Unofficial Oblivion Patch.esp,REFR,0000AB53,FULL,Timberscar Cave,TimberscarHollowMapMarker,수목흉터 동굴,ec8898ebaaa9ed9d89ed84b020eb8f99eab5b400,verified
+Unofficial Oblivion Patch.esp,REFR,00015A2A,FULL,Red Ruby Cave,RedRubyCaveMapMarker,붉은 루비 동굴,ebb689ec9d8020eba3a8ebb98420eb8f99eab5b400,verified
+Unofficial Oblivion Patch.esp,REFR,000175D1,FULL,Wind Range Camp,WindRangeCampMapMarker,윈드 레인지 캠프,ec9c88eb939c20eba088ec9db8eca78020ecbaa0ed948400,verified
+Unofficial Oblivion Patch.esp,REFR,000175D3,FULL,Hidden Camp,HiddenCampMapMarker,숨겨진 캠프,ec88a8eab2a8eca78420ecbaa0ed948400,verified
+Unofficial Oblivion Patch.esp,REFR,0003B36D,FULL,Nocturnal's Shrine,NocturnalShrineMarker,녹터널의 성소,eb85b9ed84b0eb8490ec9d9820ec84b1ec868c00,verified
+Unofficial Oblivion Patch.esp,REFR,00097008,FULL,Sanguine's Shrine,SanguineShrineMapMarker,생귄의 성소,ec839deab784ec9d9820ec84b1ec868c00,verified
+Unofficial Shivering Isles Patch.esp,CELL,0001230D,FULL,Ushnar gro-Shadborgob's House,SENSUshnargraShadborgobHouse,우쉬나르 그로-샤드보르고브의 집,ec9ab0ec89aceb8298eba5b420eab7b8eba19c2dec83a4eb939cebb3b4eba5b4eab3a0ebb88cec9d9820eca79100,verified

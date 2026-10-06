@@ -1,4 +1,4 @@
-# UTF-8 installer built from the existing translation backend.
+# OBCJK UTF-8 installer. Release builds do not include legacy translation inventories.
 tables = [
     'canonical_translation_v2.csv',
     'canonical_locations_v2.csv',
@@ -7,9 +7,7 @@ tables = [
 ]
 a = Analysis(['install_obcjk.py'], pathex=[], binaries=[],
     datas=[(name, '.') for name in tables] + [
-        ('assets', 'assets'), ('video_subtitles', 'video_subtitles'),
-        ('docs/obcjk/release_csv_inventory.json', 'docs/obcjk'),
-        ('docs/obcjk/legacy_text_exceptions.json', 'docs/obcjk')],
+        ('assets', 'assets'), ('video_subtitles', 'video_subtitles')],
     hiddenimports=['build_vanilla_overlay', 'build_obcjk_release', 'build_obcjk_locations',
                    'master_layout', 'build_video_subtitles', 'winreg'],
     hookspath=[], hooksconfig={}, runtime_hooks=[], excludes=[], noarchive=False, optimize=0)

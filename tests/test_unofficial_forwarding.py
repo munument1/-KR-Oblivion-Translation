@@ -124,6 +124,37 @@ class UnofficialForwardingTests(unittest.TestCase):
         changes, _ = collect_changes(self.original, self.prior, self.audit(), table)
         self.assertEqual(changes[self.key][2][2], b'Latest\0')
 
+    def test_obcjk_direct_patch_location_is_forwarded(self):
+        original = self.root / 'Unofficial Oblivion Patch.esp'
+        header = record(b'TES4', 0, [(b'MAST', b'Oblivion.esm\0')])
+        original.write_bytes(header + record(b'CELL', 0x00001234,
+                                             [(b'EDID', b'TestCell\0'), (b'FULL', b'Patch Place\0')]))
+        location_table = {(original.name, b'CELL', 0x00001234, b'FULL'): [
+            Translation(original.name, b'CELL', 0x00001234, b'FULL',
+                        'Patch Place', '패치 장소'.encode('utf-8') + b'\0', 1, b'TestCell', 0)
+        ]}
+        changes, counts = collect_changes(original, None, location_table=location_table)
+        self.assertEqual(changes[(b'CELL', 0x00001234)][1][2],
+                         '패치 장소'.encode('utf-8') + b'\0')
+        self.assertEqual(counts['canonical_direct_location'], 1)
+
+    def test_obcjk_official_location_normalizes_master_slot(self):
+        original = self.root / 'Knights - Unofficial Patch.esp'
+        header = record(b'TES4', 0, [(b'MAST', b'Oblivion.esm\0'),
+                                     (b'MAST', b'OtherMaster.esm\0'),
+                                     (b'MAST', b'Knights.esp\0')])
+        original.write_bytes(header + record(b'CELL', 0x020024BE,
+                                             [(b'EDID', b'NDVanua01\0'), (b'FULL', b'The Lost Catacombs\0')]))
+        location_table = {('Knights.esp', b'CELL', 0x010024BE, b'FULL'): [
+            Translation('Knights.esp', b'CELL', 0x010024BE, b'FULL',
+                        'The Lost Catacombs', '잃어버린 지하 묘지'.encode('utf-8') + b'\0',
+                        1, b'NDVanua01', 0)
+        ]}
+        changes, counts = collect_changes(original, None, location_table=location_table)
+        self.assertEqual(changes[(b'CELL', 0x020024BE)][1][2],
+                         '잃어버린 지하 묘지'.encode('utf-8') + b'\0')
+        self.assertEqual(counts['canonical_base_location'], 1)
+
 
 if __name__ == '__main__':
     unittest.main()

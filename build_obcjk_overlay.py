@@ -20,7 +20,14 @@ from build_vanilla_overlay import HERE, encode_subrecord, parse_subrecords, sha2
 from oblivion_korean_codec import decode_legacy
 from obcjk_text_backend import load_exceptions, recover_legacy, remove_english_name_glosses
 
-EXCEPTIONS = load_exceptions(HERE / 'docs/obcjk/legacy_text_exceptions.json')
+_EXCEPTIONS = None
+
+def legacy_exceptions():
+    """Load archived legacy recovery exceptions only when the old converter is explicitly used."""
+    global _EXCEPTIONS
+    if _EXCEPTIONS is None:
+        _EXCEPTIONS = load_exceptions(HERE / 'docs/obcjk/legacy_text_exceptions.json')
+    return _EXCEPTIONS
 
 
 def records(path):
@@ -80,7 +87,7 @@ def convert_text(raw, memory):
     if len(candidates) == 1:
         result = next(iter(candidates))
     else:
-        result = recover_legacy(raw[:-1], EXCEPTIONS).encode('utf-8') + b'\0'
+        result = recover_legacy(raw[:-1], legacy_exceptions()).encode('utf-8') + b'\0'
     result[:-1].decode('utf-8', errors='strict')
     if b'\0' in result[:-1] or not result.endswith(b'\0'):
         raise ValueError('Invalid UTF-8 target termination')
@@ -95,7 +102,7 @@ def is_text(kind, field, editor):
             field == b'DATA' and kind == b'GMST' and editor.startswith(b's'))
 
 
-def prepare(legacy, original, memory, smoke=False, remove_name_glosses=False):
+def prepare(legacy, original, memory, smoke=False, remove_name_glosses=False, translated_backend="legacy"):
     originals = read_records(original)
     menu_additions = {}
     if legacy.name == 'Oblivion.esm':
@@ -149,7 +156,11 @@ def prepare(legacy, original, memory, smoke=False, remove_name_glosses=False):
                 if smoke and (kind not in smoke_kinds or kind in found):
                     continue
                 try:
-                    target = convert_text(value, memory)
+                    if translated_backend == "utf8":
+                        value[:-1].decode("utf-8", errors="strict")
+                        target = value
+                    else:
+                        target = convert_text(value, memory)
                 except (UnicodeError, ValueError) as error:
                     raise ValueError(f'{legacy.name} {kind.decode()} {fid:08X} {field.decode()} index {index}: {error}') from error
             else:
@@ -385,7 +396,7 @@ def validate(legacy, destination, changes, chosen=None):
     return result
 
 
-def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=False, remove_name_glosses=False):
+def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=False, remove_name_glosses=False, translated_backend="legacy"):
     output = output_dir.resolve()
     for source in (original_dir.resolve(), legacy_dir.resolve(), tables_dir.resolve()):
         if output == source or source in output.parents or output in source.parents:
@@ -396,7 +407,7 @@ def build_directory(original_dir, legacy_dir, tables_dir, output_dir, smoke=Fals
         p for p in legacy_dir.iterdir() if p.suffix.lower() in {'.esp', '.esm'})
     for legacy in paths:
         original = original_dir / legacy.name
-        changes, manifest, chosen = prepare(legacy, original, memory, smoke, remove_name_glosses)
+        changes, manifest, chosen = prepare(legacy, original, memory, smoke, remove_name_glosses, translated_backend)
         target = output / ('ObCJK_KR_Smoke.esp' if smoke else legacy.name)
         temporary = target.with_suffix(target.suffix + '.building')
         write(legacy, temporary, changes, chosen if smoke else None)

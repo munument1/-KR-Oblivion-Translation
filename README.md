@@ -1,11 +1,11 @@
-# Oblivion Original 한국어 번역 v1.0.8
+# Oblivion Original 한국어 번역 v1.1.0
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. [v1.0.8 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.8)을 내려받아 전체 압축을 풉니다.
+2. [v1.1.0 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.0)을 내려받아 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -34,7 +34,7 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 
 출력 폴더가 이미 사용 중이면 덮어쓰지 않습니다. 업데이트할 때는 새 폴더에 설치기 ZIP을 풀어 실행하세요.
 
-v1.0.8은 obCJK 20261003의 Outline/Shadow 기능을 반영한 표시 개선 버전입니다. NPC 대사 자막과 HUD가 사용하는 슬롯 2에만 검은색 2px Outline을 적용하며, 다른 슬롯과 NorthernUI Shadowed 역할의 추가 Outline/Shadow는 끕니다. 기존 본명조·이롭게바탕체 설정은 유지합니다.
+v1.1.0은 대사 재검수와 위치명 보강을 반영한 번역 품질 업데이트입니다. 지도 마커·현재 위치·발견 위치에 사용되는 CELL/WRLD/REFR/REGN 이름을 OBCJK UTF-8 기준으로 통합했고, v1.0.8의 슬롯 2 검은색 2px Outline 설정과 기존 본명조·이롭게바탕체 설정은 유지합니다.
 
 ## 인트로·엔딩 동영상 자막
 
@@ -69,4 +69,4 @@ GitHub 설치기는 본편·공식 DLC용입니다. Nexus용 언오피셜 번역
 
 MO2에서 한국어 메뉴 표시, 한글 위치명이 들어간 세이브 생성, 본명조 및 줄바꿈·입력 커서 표시를 확인했습니다. 모든 기존 세이브 재로딩과 장시간 플레이의 전수 검증을 완료한 것은 아닙니다.
 
-[빌드와 저장소 구성](docs/development.md), [v1.0.8 표시 설정 검증 기록](docs/obcjk/release_validation_v1.0.8.md), [변경 이력](docs/release-changelog.md)을 참고하세요. [v1.0.7](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.7)은 이전 버전으로 기존 릴리스에서 받을 수 있습니다.
+[빌드와 저장소 구성](docs/development.md), [v1.0.8 표시 설정 검증 기록](docs/obcjk/release_validation_v1.0.8.md), [변경 이력](docs/release-changelog.md)을 참고하세요. [v1.0.8](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.8)은 이전 버전으로 기존 릴리스에서 받을 수 있습니다.
