@@ -1,6 +1,7 @@
 # OBCJK UTF-8 installer. Release builds do not include legacy translation inventories.
 tables = [
     'canonical_translation_v2.csv',
+    'canonical_ui_supplement_v1.csv',
     'canonical_locations_v2.csv',
     'menu_gmst_existing_105.csv',
     'menu_gmst_new_821.csv',
