@@ -1,11 +1,11 @@
-# Oblivion Original 한국어 번역 v1.1.1
+# Oblivion Original 한국어 번역 v1.1.2
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. [v1.1.1 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.1)을 내려받아 전체 압축을 풉니다.
+2. [v1.1.2 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.2)을 내려받아 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -34,7 +34,7 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 
 출력 폴더가 이미 사용 중이면 덮어쓰지 않습니다. 업데이트할 때는 새 폴더에 설치기 ZIP을 풀어 실행하세요.
 
-v1.1.1은 v1.1.0 이후 확인된 표시 문자열 누락을 보강한 번역 업데이트입니다. 21개 스킬의 Apprentice/Journeyman/Expert/Master 승급 안내, 플레이어에게 표시되는 세력 계급명, 누락된 상점 대사와 퀘스트 저널, 일부 성당 위치명을 추가했습니다. v1.1.0의 대사 재검수·위치명 통합과 v1.0.8의 슬롯 2 검은색 2px Outline 설정 및 기존 본명조·이롭게바탕체 설정은 그대로 유지합니다.
+v1.1.2는 하수도 탈출 직전 캐릭터를 최종 수정하는 창의 안내문과 네 개 버튼을 한국어로 바꿉니다. v1.1.1의 스킬 승급 안내·세력 계급·대사·저널·성당 위치명 보강과 기존 글꼴 설정도 포함합니다.
 
 ## 인트로·엔딩 동영상 자막
 
@@ -65,7 +65,7 @@ GitHub 설치기는 본편·공식 DLC용입니다. Nexus용 언오피셜 번역
 
 ## 검증과 개발
 
-원본 게임 파일, FormID, 레코드 구조와 컴파일된 스크립트를 보존합니다. 종족 이름은 음성 경로를 위해 영어로 유지합니다. 검증 보고서는 모드 폴더 옆 `Oblivion_KR_Mod.validation.json`에 저장합니다.
+게임 원본은 읽기 전용으로 사용하며 FormID와 레코드 구조를 보존합니다. 컴파일된 스크립트는 하수도 출구의 검증된 표시 문구만 원래 바이트 길이로 번역하며, 명령·참조·분기 위치는 보존합니다. 종족 이름은 음성 경로를 위해 영어로 유지합니다. 검증 보고서는 모드 폴더 옆 `Oblivion_KR_Mod.validation.json`에 저장합니다.
 
 MO2에서 한국어 메뉴 표시, 한글 위치명이 들어간 세이브 생성, 본명조 및 줄바꿈·입력 커서 표시를 확인했습니다. 모든 기존 세이브 재로딩과 장시간 플레이의 전수 검증을 완료한 것은 아닙니다.
 

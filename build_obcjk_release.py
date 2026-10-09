@@ -20,6 +20,7 @@ from build_vanilla_overlay import (
 )
 from build_video_subtitles import build_videos
 from master_layout import apply_layout
+from build_script_messages import build as build_script_messages
 
 ORIGINAL_FONT_SETTINGS = (
     '[Fonts]\n'
@@ -154,6 +155,18 @@ def build(args):
         reports[MASTER]['output_sha256'] = native_report['output_sha256']
         reports[MASTER]['native_master_layout'] = native_report
 
+        # Apply the five in-game-verified sewer-exit labels after the strict
+        # native layout check. The pinned script and byte-for-byte readback
+        # allow only fixed-length literal payload changes, preserving offsets.
+        script_output = temp / 'Oblivion.script-messages.esm'
+        script_report = build_script_messages(master, script_output)
+        shutil.copyfile(script_output, copied)
+        if sha256_file(copied) != script_report['output_sha256']:
+            raise ValueError('Script-message copy checksum mismatch')
+        copied.replace(master)
+        reports[MASTER]['script_messages'] = script_report
+        reports[MASTER]['output_sha256'] = script_report['output_sha256']
+
         shutil.copyfile(locations / 'location_validation.json', output / 'location_validation.json')
 
     ui_report = build_ui(HERE / 'assets/menus/strings.xml', output / 'menus/strings.xml')
@@ -176,6 +189,7 @@ def build(args):
             'structure': report['structure'],
             'location_changes': report['location_changes'],
             **({'native_master_layout': report['native_master_layout']} if 'native_master_layout' in report else {}),
+            **({'script_messages': report['script_messages']} if 'script_messages' in report else {}),
         }
         for name, report in reports.items()
     }

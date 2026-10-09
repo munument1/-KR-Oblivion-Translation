@@ -1,13 +1,13 @@
 # 빌드와 저장소 구성
 
-현재 main은 v1.1.1 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
+현재 main은 v1.1.2 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
 
 ## Windows 설치기 빌드
 
 ```powershell
 python -m unittest discover -s tests -v
 pyinstaller --noconfirm --clean OblivionKRBuilder.spec
-python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.1.zip
+python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.2.zip --version 1.1.2
 ```
 
 설치기 ZIP에는 EXE, 한국어 BAT, 사용자 안내, 글꼴 출처와 OFL 라이선스만 넣습니다. 게임의 원본 ESM/ESP, 외부 DLL, MO2 프로필, 세이브는 포함하지 않습니다. 설치기를 MO2에서 실행할 필요는 없습니다.
@@ -19,6 +19,7 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 - `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.
 - `build_obcjk_locations.py`: 지도 마커·현재 위치·발견 위치용 이름을 적용합니다. 현재 레코드 순회·검증 공용 함수 때문에 `build_obcjk_overlay.py`, `obcjk_text_backend.py`, `oblivion_korean_codec.py`를 간접 사용하므로 이 세 파일은 삭제하지 않습니다.
 - `build_obcjk_ui.py`, `master_layout.py`, `obcjk_fonts.py`: 메뉴 UI, 원본 레코드 배열 보존, 글꼴 설치·검증.
+- `build_script_messages.py`: 원본 전체 스크립트 SHA-256을 확인한 뒤 하수도 출구의 SCDA/SCTX 표시 문구 다섯 건만 같은 바이트 길이로 번역합니다. 기존 구조·스크립트 검증과 native layout 검증이 끝난 후 적용하며, 최종 파일의 모든 바이트를 입력과 허용한 문구 변경에 대조합니다. 검증 보고서의 `structure`와 `native_master_layout`은 이 단계 이전 값이며, 최종 파일 해시와 문구 변경 내역은 `script_messages`에 기록합니다.
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 현재 canonical 및 언오피셜 빌드 입력에 사용되므로 임의로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
 - `assets/Fonts`, `assets/menus`: 인코딩 변환 및 UI 입력 자료.
@@ -42,4 +43,4 @@ python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --
 
 ## main 정리
 
-main에는 현재 v1.1.1 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.
+main에는 현재 v1.1.2 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.
