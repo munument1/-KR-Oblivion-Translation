@@ -1,11 +1,11 @@
-# Oblivion Original 한국어 번역 v1.1.2
+# Oblivion Original 한국어 번역 v1.1.3
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. [v1.1.2 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.2)을 내려받아 전체 압축을 풉니다.
+2. [v1.1.3 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.3)을 내려받아 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -34,7 +34,7 @@ install.bat "C:\Games\Steam\steamapps\common\Oblivion\Data"
 
 출력 폴더가 이미 사용 중이면 덮어쓰지 않습니다. 업데이트할 때는 새 폴더에 설치기 ZIP을 풀어 실행하세요.
 
-v1.1.2는 하수도 탈출 직전 캐릭터를 최종 수정하는 창의 안내문과 네 개 버튼을 한국어로 바꿉니다. v1.1.1의 스킬 승급 안내·세력 계급·대사·저널·성당 위치명 보강과 기존 글꼴 설정도 포함합니다.
+v1.1.3는 방어구 종류에서 경갑이 “불빛”으로 표시되던 오역을 수정합니다. 다른 문맥의 “불빛” 번역은 유지합니다. v1.1.2의 하수도 출구 캐릭터 수정 창 번역과 이전 버전의 번역·글꼴 설정도 포함합니다. 새 설치기로 번역 모드를 다시 생성해 교체하세요. UOP / USIP / UODP는 이번 수정으로 업데이트할 필요가 없습니다.
 
 ## 인트로·엔딩 동영상 자막
 

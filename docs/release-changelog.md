@@ -4,6 +4,18 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## v1.1.3 (2026-10-13)
+
+### Fixed
+
+- 방어구 종류 설정 `sArmorWeightLight`의 오역을 “불빛”에서 “경갑”으로 수정했습니다. 다른 문맥의 “불빛” 번역은 유지합니다.
+- 본편 설치기로 번역 모드를 다시 생성하면 적용됩니다. UOP / USIP / UODP는 이 설정을 덮어쓰지 않으므로 이번 수정으로 업데이트할 필요가 없습니다.
+
+### Validation
+
+- 자동 테스트 53개 통과. 경갑·중갑 분류의 UTF-8 빌더 출력과 기존 인코딩 데이터의 일치 여부를 검사합니다.
+- Windows 설치기로 본편·공식 DLC 파일 10개를 생성했습니다. v1.1.2 대비 본편의 경갑 표시 외 모든 바이트와 공식 DLC 9개 파일이 동일함을 확인했습니다.
+
 ## v1.1.2 (2026-10-09)
 
 ### Fixed

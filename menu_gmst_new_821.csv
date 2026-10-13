@@ -11,7 +11,7 @@
 00099DA7,sAreaText,Area,범위,d5a205d79700,recovered_323
 00097670,sArmor,Armor,방어구,d5a008b782c08600,new_223
 00099E31,sArmorWeightHeavy,Heavy,중갑,c8a608d0a00600,new_223
-00099EF3,sArmorWeightLight,Light,불빛,c5a604d5a90e00,recovered_323
+00099EF3,sArmorWeightLight,Light,경갑,d0a308d0a00600,recovered_323
 00099F41,sAttributeDamaged,has been damaged,는(은) 데미지를 받았습니다.,c1a80228c7a8022920b28bb489b889c3a80420d5a003d7a014c6a806b189b2802e00,existing_378
 00099DA5,sAttributeDrained,is being drained,이(가) 감소되고 있습니다.,b78928b0802920d0a005c684d295c08420d7a914c6a806b189b2802e00,existing_378
 00099EC8,sAttributeNameAgility,Agility,민첩성,d4a902d9a206d6a20800,recovered_323
