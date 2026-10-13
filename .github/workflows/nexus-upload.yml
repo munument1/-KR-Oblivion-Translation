@@ -1,0 +1,70 @@
+name: Upload installer to Nexus Mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Published GitHub release tag
+        required: true
+        default: v1.1.3
+        type: string
+      changelog:
+        description: Nexus changelog for this version
+        required: true
+        default: '방어구 종류의 Light 오역을 불빛에서 경갑으로 수정했습니다. 다른 문맥의 불빛 번역은 유지합니다. 새 설치기로 본편 번역 모드를 다시 생성해 교체하세요. UOP / USIP / UODP 업데이트는 필요하지 않습니다.'
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nexus-installer-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Download and verify published installer
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'Expected vMAJOR.MINOR.PATCH'; exit 1; }
+          version="${RELEASE_TAG#v}"
+          filename="Oblivion_Original_KR_Installer_v${version}.zip"
+          gh release download "$RELEASE_TAG" --pattern "$filename" --pattern "$filename.sha256"
+          sha256sum --check "$filename.sha256"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "filename=$filename" >> "$GITHUB_OUTPUT"
+
+      - name: Update existing Nexus installer and mod version
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: '8110293'
+          mod_id: '433791753584'
+          filename: ${{ steps.release.outputs.filename }}
+          version: ${{ steps.release.outputs.version }}
+          display_name: Oblivion Original KR Installer
+          description: ${{ inputs.changelog }}
+          changelog: ${{ inputs.changelog }}
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+
+      - name: Record result
+        env:
+          VERSION: ${{ steps.release.outputs.version }}
+          NEXUS_VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+        shell: bash
+        run: |
+          printf 'Uploaded installer %s to Nexus Mods.\n\nVersion ID: %s\n\nhttps://www.nexusmods.com/oblivion/mods/56688?tab=files\n' "$VERSION" "$NEXUS_VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
