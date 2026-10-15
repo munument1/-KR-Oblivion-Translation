@@ -1,0 +1,41 @@
+name: UOP Book Restoration QA
+
+on:
+  push:
+    paths:
+      - 'build_unofficial_release.py'
+      - 'uop_book_restoration.py'
+      - 'uop_book_body_restore_v1.csv'
+      - 'canonical_translation_v2.csv'
+      - 'canonical_unofficial_translation_v2.csv'
+      - 'tests/test_uop_book_restoration.py'
+      - 'tests/test_unofficial_forwarding.py'
+      - '.github/workflows/uop-book-qa.yml'
+  pull_request:
+    paths:
+      - 'build_unofficial_release.py'
+      - 'uop_book_restoration.py'
+      - 'uop_book_body_restore_v1.csv'
+      - 'canonical_translation_v2.csv'
+      - 'canonical_unofficial_translation_v2.csv'
+      - 'tests/test_uop_book_restoration.py'
+      - 'tests/test_unofficial_forwarding.py'
+      - '.github/workflows/uop-book-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  uop-book-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify all 112 UOP restored books and source fingerprints
+        run: python -m unittest discover -s tests -p 'test_uop_book_restoration.py' -v
+      - name: Verify existing unofficial-patch forwarding behavior
+        run: python -m unittest discover -s tests -p 'test_unofficial_forwarding.py' -v
