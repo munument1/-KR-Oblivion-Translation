@@ -1,4 +1,13 @@
-# Unofficial Oblivion Patch 한국어 UTF-8 번역 v1.1.0
+# Unofficial Oblivion Patch 한국어 UTF-8 번역 (UOP 3.5.9a)
+
+## 2026-10-15 BOOK 본문 복구
+
+이전 한국어 UOP ESP에서 본문 대신 제목 한 줄만 표시되던 **112개 BOOK/DESC** 레코드를 복구했습니다. 책 본문은 본편 Oblivion.esm의 검증된 한국어 텍스트를 사용하며, 영문 UOP가 수정한 두 책(`00024594`, `00072296`)의 오탈자·서식 차이도 반영합니다. **진정한 바렌지아 5권**의 제목을 다른 권과 통일했습니다.
+
+해당 수정본의 넥서스 업로드용 파일명: `Unofficial_Oblivion_Patch_KR_3.5.9a_BOOKFIX_20261015.zip`. 기존 UOP 한국어판의 `Unofficial Oblivion Patch.esp`를 교체하는 패키지이며, UOP 영문 원본 3.5.9a가 필요합니다. **Dunbarrow Cove / UODP / SSSB는 이번 파일에 포함되지 않습니다.**
+
+재발 방지를 위해 GitHub 빌더는 `uop_book_body_restore_v1.csv`의 112개 FormID 및 원문 SHA-256을 검사해 본편 canonical에서 본문을 복원합니다. BOOK 본문이 제목 수준으로 잘리면 빌드를 중단합니다. 실제 게임 내 최종 표시 확인은 별개입니다.
+
 
 대상 원본: **UOP 3.5.9a**. 다른 버전의 ESP에 적용하지 마세요.
 
