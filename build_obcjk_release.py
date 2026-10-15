@@ -14,6 +14,7 @@ from collections import Counter
 from pathlib import Path
 
 from build_obcjk_ui import build as build_ui
+from book_title_overrides import apply_book_title_overrides
 from build_vanilla_overlay import (
     HERE, MASTER, OFFICIAL, PRINTF_PATTERN, load_translations, patch_plugin,
     sha256_file, structure_signature,
@@ -81,6 +82,7 @@ def build(args):
     translations = load_translations(
         args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')
+    apply_book_title_overrides(translations, HERE / 'canonical_book_title_overrides_v1.csv')
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
 
