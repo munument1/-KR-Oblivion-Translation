@@ -78,7 +78,8 @@ def build(args):
         raise FileNotFoundError(source / MASTER)
 
     supplement = HERE / 'canonical_ui_supplement_v1.csv'
-    extra_tables = (supplement, *(path.resolve() for path in args.extra_csv))
+    dialogue_fixes = HERE / 'canonical_dialogue_fixes_v1.csv'
+    extra_tables = (supplement, dialogue_fixes, *(path.resolve() for path in args.extra_csv))
     translations = load_translations(
         args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')
