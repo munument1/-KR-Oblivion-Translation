@@ -23,6 +23,9 @@ from pathlib import Path
 from build_vanilla_overlay import (Translation, decode_english, encode_subrecord, load_quest_loading_translations,
                                    load_translations, parse_subrecords, sha256_file,
                                    structure_signature)
+from uop_book_restoration import (BARZ_FIVE, UOP_PLUGIN, load_restorations,
+                                  normalize_volume_five_title, restore_book_body,
+                                  suspicious_book_body)
 
 PAIRS = (
     ("UOP", "Unofficial Oblivion Patch-KR"),
@@ -142,7 +145,8 @@ def matching_translation(table, official, record_type, formid, field, old, edito
 
 def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None,
-                    patch_table=None, location_table=None, patch_location_table=None):
+                    patch_table=None, location_table=None, patch_location_table=None,
+                    book_restorations=None):
     old_records = read_records(original)
     kr_records = read_records(prior) if prior is not None else old_records
     if old_records.keys() != kr_records.keys():
@@ -264,6 +268,28 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                     raise ValueError(f"{original.name}: nexus completion source mismatch at {key} {field!r} occ {nx_occurrence}")
                 replacement = nx[1]
                 counts["nexus_completion"] += 1
+            # Late, FormID- and source-hash-scoped BOOK repair outranks stale
+            # canonical UOP title-only DESC translations and prior KR memories.
+            if original.name == UOP_PLUGIN and key[0] == b"BOOK":
+                if field == b"DESC":
+                    restored = restore_book_body(key[1], old, book_restorations or {})
+                    if restored is not None:
+                        replacement = restored
+                        counts["uop_book_desc_restored"] += 1
+                elif field == b"FULL" and key[1] == BARZ_FIVE:
+                    replacement = normalize_volume_five_title(
+                        replacement if replacement is not None else old)
+                    counts["uop_book_title_fixed"] += 1
+
+            # Reject catastrophic future truncation: BOOK/DESC cannot silently
+            # become just the title, even when it is non-empty valid UTF-8.
+            if key[0] == b"BOOK" and field == b"DESC" and replacement is not None:
+                new_body = replacement.rstrip(b"\0").decode("utf-8", errors="strict")
+                if suspicious_book_body(decode_english(old), new_body):
+                    raise ValueError(
+                        f"{original.name}: BOOK/DESC reduced to title-only body "
+                        f"at FormID {key[1]:08X}")
+
             if replacement is not None and replacement != old:
                 changes.setdefault(key, {})[index] = (field, old, replacement)
                 counts["translated_fields"] += 1
@@ -336,6 +362,9 @@ def main():
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     patch_table = load_patch_canonical(root / "canonical_unofficial_translation_v2.csv")
+    book_restorations = load_restorations(
+        root / "uop_book_body_restore_v1.csv",
+        root / "canonical_translation_v2.csv")
     location_table = load_patch_canonical(root / "canonical_locations_v2.csv")
     patch_location_table = load_patch_canonical(root / "canonical_unofficial_locations_v2.csv")
     if args.vanilla_audit:
@@ -401,7 +430,12 @@ def main():
                 continue
             changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table, final_table,
                                               quest_entries, loading_entries, completions, nexus_completions,
-                                              patch_table, location_table, patch_location_table)
+                                              patch_table, location_table, patch_location_table,
+                                              book_restorations=book_restorations)
+            if original.name == UOP_PLUGIN and counts["uop_book_desc_restored"] != len(book_restorations):
+                raise ValueError(
+                    f"UOP BOOK/DESC restoration incomplete: "
+                    f"{counts['uop_book_desc_restored']}/{len(book_restorations)}")
             destination = args.output / kr_folder / original.name
             applied = rewrite(original, destination, changes)
             if applied != counts["translated_fields"]:
@@ -423,6 +457,8 @@ def main():
                 "canonical_direct_location": counts["canonical_direct_location"],
                 "canonical_patch_location": counts["canonical_patch_location"],
                 "canonical_patch_translation": counts["canonical_patch_translation"],
+                "uop_book_desc_restored": counts["uop_book_desc_restored"],
+                "uop_book_title_fixed": counts["uop_book_title_fixed"],
                 "text_backend": args.text_backend,
                 "structure": before,
             }
