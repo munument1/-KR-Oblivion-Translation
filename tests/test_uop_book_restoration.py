@@ -32,7 +32,7 @@ class UOPBookRestorationTests(unittest.TestCase):
             self.assertTrue(target.endswith(b"\0"), f"{fid:08X}")
             text = target[:-1].decode("utf-8")
             self.assertGreater(len(text), 80, f"{fid:08X}")
-            self.assertIn("<", text, f"{fid:08X}")
+            self.assertRegex(text, "[가-힣]", f"{fid:08X}")
 
     def test_known_uop_source_rows_match_exactly_manifest(self):
         damaged = {}
