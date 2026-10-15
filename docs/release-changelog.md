@@ -4,6 +4,15 @@ Player-facing release notes. Newest releases are listed first.
 
 ## Releases
 
+## UOP 책 본문 복구 (2026-10-15, Nexus 배포용)
+
+- 이전 UOP UTF-8 번역의 BOOK/DESC 112개에서 긴 본문이 제목 한 줄로 치환된 문제를 확인하고 복구했습니다.
+- UOP의 두 원문 변경(`00024594`, `00072296`)을 별도 확인해 연대표기와 책 서식을 보존했습니다.
+- `The Real Barenziah, v 5`의 표시 제목을 **진정한 바렌지아 5권**으로 통일했습니다.
+- 번역 빌더에 `uop_book_body_restore_v1.csv`(112개 FormID/원문 해시)와 본문 축소 방지 검사를 추가했습니다.
+- 2026-10-15 복구 ESP의 263개 BOOK 레코드 및 BOOK 이외 86,426개 전체 레코드 구조를 검증했고, BOOK 외의 기존 내용과 스크립트 데이터가 동일함을 확인했습니다.
+- UOP 단독 수정입니다. 본편 GitHub v1.1.3 설치기와 USIP/UODP 및 Dunbarrow Cove는 변경하지 않습니다.
+
 ## v1.1.3 (2026-10-13)
 
 ### Fixed
