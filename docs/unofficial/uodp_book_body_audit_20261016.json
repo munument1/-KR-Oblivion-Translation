@@ -1,0 +1,285 @@
+{
+  "date": "2026-10-16",
+  "source_version": "UODP v27",
+  "canonical_csv": "canonical_unofficial_translation_v2.csv",
+  "scope": "Every BOOK and DESC in all 9 default ESPs and the optional SSSB ESP",
+  "source_plugins": [
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "original_sha256": "8bb80ee95b93c0458f98c17304d661482e107fd61e0a081eee7ef5bcd2684a17",
+      "output_sha256": "9ffeb4d10f85b1a95d4b7343759bd707a23349069dfeec578ce8ca9b50564463",
+      "books": 5,
+      "desc_fields": 5
+    },
+    {
+      "plugin": "DLCFrostcrag - Unofficial Patch.esp",
+      "original_sha256": "043e423124adfb1a30f4a5210b18490be1676fd07f5bd80da45fd8620e941665",
+      "output_sha256": "00ab3c9da93a25afab7a59547af5b3324355fe4bc4c42edb2387014df86b8139",
+      "books": 0,
+      "desc_fields": 0
+    },
+    {
+      "plugin": "DLCHorseArmor - Unofficial Patch.esp",
+      "original_sha256": "9b1436669264173f40a5045081aa239b0a11a95859c1af7d4432c8f1b089ceee",
+      "output_sha256": "2b2681ad03d6e4949991477b559745762d1592669444e6b02e81ef7a5deba8bf",
+      "books": 0,
+      "desc_fields": 0
+    },
+    {
+      "plugin": "DLCMehrunesRazor - Unofficial Patch.esp",
+      "original_sha256": "dcb552e4c82474f3f193700534f289fab0173aafb3356da53b7d81130b086b0a",
+      "output_sha256": "6fc8f545a0c04537bf6bbf5e76936918c3b971a9e357ddde22ff555a38411b2d",
+      "books": 2,
+      "desc_fields": 2
+    },
+    {
+      "plugin": "DLCOrrery - Unofficial Patch.esp",
+      "original_sha256": "63528afc444bdb02ccfe416403aa5120b30ebf9153e021392f03d65023eb8608",
+      "output_sha256": "52921a0b192624aef9bf875e5d102af82a16a1a3e5dbcbfae103dbf6940c61f1",
+      "books": 0,
+      "desc_fields": 0
+    },
+    {
+      "plugin": "DLCSpellTomes - Unofficial Patch.esp",
+      "original_sha256": "f5fd611e1ea32c8a011c7b193efd4f6e9b7dd1663265046c082a0daa3a037e8b",
+      "output_sha256": "4d51ae0dccd4bef9ed727d7db30dbdb05f3c3a691be9af22258b6da0b1de1eb2",
+      "books": 1,
+      "desc_fields": 1
+    },
+    {
+      "plugin": "DLCThievesDen - Unofficial Patch - SSSB.esp",
+      "original_sha256": "4bb4ff5fcc9824e8b75110af5a1e774ccf41c55215edc78dce3c3fa5b45cce8e",
+      "output_sha256": "37788c6d8e95b1bd2d588c56d2993d2c197b427740820ceca6ed1ecf07783395",
+      "books": 0,
+      "desc_fields": 0
+    },
+    {
+      "plugin": "DLCThievesDen - Unofficial Patch.esp",
+      "original_sha256": "39b695bf9fdf7db56d79fd6d2ffba5be4a14a24096016b799d29fdf89faa0cdc",
+      "output_sha256": "5cd71df0b1bd63a86932151398b763afe644605d4c58c8b94a8cda4f7a31430f",
+      "books": 2,
+      "desc_fields": 2
+    },
+    {
+      "plugin": "DLCVileLair - Unofficial Patch.esp",
+      "original_sha256": "61c2b62a59216a10be1e82520c44392a9e3d1794ca789d1053fdc34480b3148d",
+      "output_sha256": "8e824c647905364e2ccffb87081ab18b8717f72f26c2c08cf47a72275b0772a8",
+      "books": 2,
+      "desc_fields": 2
+    },
+    {
+      "plugin": "Knights - Unofficial Patch.esp",
+      "original_sha256": "e88b26e972d736b22926cef9178f70268da038cb44feb8c5e9208569db9ba25e",
+      "output_sha256": "9135d9f3b0f8d63634147089325054c68181a71d652d1b8cb77c21e95927d085",
+      "books": 3,
+      "desc_fields": 3
+    }
+  ],
+  "books": [
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "formid": "0200B08C",
+      "editor_id": "DLCBattlehornChronicle",
+      "source_sha256": "91a3c4cbb17eddb3e2d477e6a34feabdd05edc3a9501655b784f0518a63bbc18",
+      "source_chars": 2716,
+      "previous_chars": 4119,
+      "restored_chars": 4119,
+      "restored": false,
+      "target_utf8_sha256": "b1f558fe2402adabb0ba827ae4598397d0005c5fb0eb6cf6c9743bcaa0002fdc",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "formid": "0200B0A1",
+      "editor_id": "DLCBattlehornTrophyHallReceipt",
+      "source_sha256": "5a166c88caa4a4a3066855818d3ae98cf270eb3177c1f3ce7e391dbbd664b600",
+      "source_chars": 484,
+      "previous_chars": 286,
+      "restored_chars": 286,
+      "restored": false,
+      "target_utf8_sha256": "38444defdc6fd2b28b1166659069c92b60a7cb999602b2e7dda251030ddac410",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "formid": "0200D433",
+      "editor_id": "DLCBattlehornForgeMessage",
+      "source_sha256": "fc41ae1e0f0cfc0faea464294ceb985d9eafc9d7ee527d1764aaadd80dafb248",
+      "source_chars": 588,
+      "previous_chars": 356,
+      "restored_chars": 356,
+      "restored": false,
+      "target_utf8_sha256": "8fc3f91d8c29979dc87b58adbbff538fffda5a4c37a27c4e4b4c717568def921",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "formid": "02011F12",
+      "editor_id": "DLCBattlehornBookTaxIngreds",
+      "source_sha256": "519cef7c06e2e87bcb11f1af06fcd3d431764e5d2c7b8b27174fca0ae0b2143a",
+      "source_chars": 646,
+      "previous_chars": 1062,
+      "restored_chars": 1062,
+      "restored": false,
+      "target_utf8_sha256": "3e40785dbe3d2b6646aa73bf4e9a23bfde560f872a0a9e4a8819d4ec3b5d4c1c",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "formid": "020142EF",
+      "editor_id": "DLCBattlehornJournal",
+      "source_sha256": "00b377d59113f9932bcdcfb19850ff3c7466a82bc6d79e9945c04877ba1bf16e",
+      "source_chars": 3537,
+      "previous_chars": 5653,
+      "restored_chars": 5653,
+      "restored": false,
+      "target_utf8_sha256": "dbf8c88988ab58641f20339f989a8a0507578124fd29ae54e7c171d37bd34ce7",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCMehrunesRazor - Unofficial Patch.esp",
+      "formid": "02001A60",
+      "editor_id": "DL9ApprenticeLetter",
+      "source_sha256": "388a9401a151dbe251afe5e1c6aca20e74170f9c12d593b09fcebc3351715f8c",
+      "source_chars": 2359,
+      "previous_chars": 3729,
+      "restored_chars": 3729,
+      "restored": false,
+      "target_utf8_sha256": "f0ce4839f8fb7771f7b60b12070f7d00eab66710c2a7dc56fde96b4026aa3399",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCMehrunesRazor - Unofficial Patch.esp",
+      "formid": "02005FAE",
+      "editor_id": "DL9StewardNote",
+      "source_sha256": "82426fe749529aa85c700ed13df59fb8dee45ebbe9f4d1993096ad8c3c61414e",
+      "source_chars": 964,
+      "previous_chars": 1407,
+      "restored_chars": 1407,
+      "restored": false,
+      "target_utf8_sha256": "fe9ea5bf2963fe2598b8c50e688d0b101350bd8418c425b55c276e77acc4962d",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCSpellTomes - Unofficial Patch.esp",
+      "formid": "02001281",
+      "editor_id": "DLCTomeFenriksEscape3Journeyman",
+      "source_sha256": "8861f6b785f3905ff3df1381800ced42eacfdc9377090db4baac2cd218196e52",
+      "source_chars": 524,
+      "previous_chars": 21,
+      "restored_chars": 502,
+      "restored": true,
+      "target_utf8_sha256": "4d0e2281716d32f4ef7768d1f50a9569f87f323e3c581a63a5db8164985be31c",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCThievesDen - Unofficial Patch.esp",
+      "formid": "02013DC4",
+      "editor_id": "DLC06ThievesDenBook2",
+      "source_sha256": "222c0ca8a8063264b5133f6a95fd39158578e7dfda25cadcc6fefb36727412d6",
+      "source_chars": 3224,
+      "previous_chars": 1534,
+      "restored_chars": 1534,
+      "restored": false,
+      "target_utf8_sha256": "2da4e039ff7796140e8a3f5e2e16cef0f2b3d072b39f332cbd0ceebf837c22fa",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCThievesDen - Unofficial Patch.esp",
+      "formid": "02013DC5",
+      "editor_id": "DLC06ThievesDenBook3",
+      "source_sha256": "47cac37b60e2b963e5e037cc5b0b89c644e161f1ec479b67d5fc55c494863456",
+      "source_chars": 3908,
+      "previous_chars": 2221,
+      "restored_chars": 2221,
+      "restored": false,
+      "target_utf8_sha256": "50b891a14c69e9c21e65537675aca0cea3ffcb19b7588dca64803de5cdbd486f",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCVileLair - Unofficial Patch.esp",
+      "formid": "02005093",
+      "editor_id": "LairVileVampireManifesto",
+      "source_sha256": "f89810e7a493e9036fe80dd71e59db3b81ace2c7b4529ff54b51869e1b417ad0",
+      "source_chars": 2987,
+      "previous_chars": 4390,
+      "restored_chars": 4390,
+      "restored": false,
+      "target_utf8_sha256": "424cca6bdecf75ad4a41036fddef9a7997227c062a62bc5e819e6b513c6406d0",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "DLCVileLair - Unofficial Patch.esp",
+      "formid": "02005095",
+      "editor_id": "LairVileOpusculusLamae",
+      "source_sha256": "9c12a29b81de924c2527db1ed7444d7f0d48b8895a5be984d0a3b70a95850ffc",
+      "source_chars": 2010,
+      "previous_chars": 2849,
+      "restored_chars": 2849,
+      "restored": false,
+      "target_utf8_sha256": "cfde8b06f6c380facb5f1a8ef822e2ae77e6dcb6ffb394ac9aa55afcdbb71c3b",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "Knights - Unofficial Patch.esp",
+      "formid": "02000ED2",
+      "editor_id": "NDBook3ValuableKnightsoftheNine",
+      "source_sha256": "52bf267c27d6b38d6ef6bbbe583c8d029fb2632ec46c89658428535bc4323b4b",
+      "source_chars": 3654,
+      "previous_chars": 10,
+      "restored_chars": 1987,
+      "restored": true,
+      "target_utf8_sha256": "ddd90642905ec886a86d411582045bf73f56ebcdbd540eaff18dbd4cc566a7fa",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "Knights - Unofficial Patch.esp",
+      "formid": "02000ED4",
+      "editor_id": "NDBook3ValuableShezarr",
+      "source_sha256": "4a7e49e50380b84cea823b85195590c224ac06e3a600ed9a781b6f1c0a945bf5",
+      "source_chars": 3146,
+      "previous_chars": 9,
+      "restored_chars": 1901,
+      "restored": true,
+      "target_utf8_sha256": "a8586c7235689d49d687fa099c94ffce4913e2c987b1fad74763db716f9c0709",
+      "output_readback_matches_csv": true
+    },
+    {
+      "plugin": "Knights - Unofficial Patch.esp",
+      "formid": "02000ED8",
+      "editor_id": "NDBook2ReligiousSongofPelinalV5",
+      "source_sha256": "2af7ab85a1b816da4362f6ad30e2aa233696e60288921539b6662fd0b54a441d",
+      "source_chars": 1857,
+      "previous_chars": 13,
+      "restored_chars": 1236,
+      "restored": true,
+      "target_utf8_sha256": "c1805ab30d7b4011cf29ba3e044c4ae131e3f26a4a55a4aeb32c4586fc156205",
+      "output_readback_matches_csv": true
+    }
+  ],
+  "unchanged_plugins": [
+    "DLCBattlehornCastle - Unofficial Patch.esp",
+    "DLCFrostcrag - Unofficial Patch.esp",
+    "DLCHorseArmor - Unofficial Patch.esp",
+    "DLCMehrunesRazor - Unofficial Patch.esp",
+    "DLCOrrery - Unofficial Patch.esp",
+    "DLCThievesDen - Unofficial Patch - SSSB.esp",
+    "DLCThievesDen - Unofficial Patch.esp",
+    "DLCVileLair - Unofficial Patch.esp",
+    "Oblivion Citadel Door Fix.esp",
+    "Unofficial Oblivion Patch.esp",
+    "UOP Vampire Aging & Face Fix.esp",
+    "Unofficial Shivering Isles Patch.esp"
+  ],
+  "game_runtime_verified": false,
+  "summary": {
+    "scanned_plugins": 10,
+    "scanned_books": 15,
+    "restored_bodies": 4,
+    "preserved_bodies": 11,
+    "unofficial_build_plugins": 14,
+    "unchanged_plugin_outputs": 12,
+    "uop_restorations_preserved": 112,
+    "unit_tests_passed": 74
+  }
+}

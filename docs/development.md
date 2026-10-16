@@ -22,6 +22,8 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 
 통합 검증에서 단위 테스트 67개가 통과했고, 본편·공식 DLC 출력 10개의 SHA-256 및 빌드 감사 보고서가 변경 전과 일치했습니다. 언오피셜 원본 14개를 개별 확인한 결과 12개 출력도 변경 전과 일치했습니다. 나머지 `DLCSpellTomes - Unofficial Patch.esp`의 `02001281`과 `Knights - Unofficial Patch.esp`의 `02000ED2`는 변경 전후 모두 기존 BOOK/DESC 제목 축약 보호 검사에 걸립니다. 따라서 언오피셜 전체 CLI 빌드 성공은 확인하지 못했으며, 이 별도 번역 데이터 문제와 게임 내 실플레이 검증은 이번 통합 범위에 포함하지 않았습니다.
 
+이후 같은 날짜에 [UODP 책 전수 검증·본문 복구](unofficial/UODP.md)를 수행해 위 빌드 중단 원인을 해결했습니다. 기존 언오피셜 CSV의 BOOK/DESC 4행만 수정했고, UOP·USIP·UODP 전체 14개 ESP 빌드와 테스트 74개가 통과했습니다. 위 문단은 대사 CSV 통합 당시의 검증 기록입니다.
+
 - `install_obcjk.py`: 기존 INI 자동 검색·글꼴 경로 복원, 번역 빌더 호출, 글꼴 등록.
 - `build_vanilla_overlay.py`, `build_obcjk_release.py`: canonical UTF-8 데이터를 원본 ESM/ESP에 직접 적용하는 본편·공식 DLC 빌드 경로입니다.
 - `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.
