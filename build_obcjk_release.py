@@ -22,6 +22,7 @@ from build_vanilla_overlay import (
 from build_video_subtitles import build_videos
 from master_layout import apply_layout
 from build_script_messages import build as build_script_messages
+from obcjk_runtime import bundle_manifest as runtime_manifest, install_runtime
 
 ORIGINAL_FONT_SETTINGS = (
     '[Fonts]\n'
@@ -34,7 +35,7 @@ ORIGINAL_FONT_SETTINGS = (
 
 
 def default_ini():
-    """Return the validated obCJK 20261003 Korean preset bundled with the installer."""
+    """Return the Korean preset with the verified xOBSE UTF-8 correction enabled."""
     return (HERE / 'assets/obcjk_fonts/obCJK.ini').read_bytes()
 
 
@@ -76,6 +77,8 @@ def build(args):
         raise ValueError('obCJK INI must explicitly select ActiveCodePage = UTF8')
     if not (source / MASTER).is_file():
         raise FileNotFoundError(source / MASTER)
+
+    runtime_manifest()
 
     supplement = HERE / 'canonical_ui_supplement_v1.csv'
     extra_tables = (supplement, *(path.resolve() for path in args.extra_csv))
@@ -183,6 +186,7 @@ def build(args):
     ini_path = output / 'OBSE/plugins/obCJK/obCJK.ini'
     ini_path.parent.mkdir(parents=True, exist_ok=True)
     ini_path.write_bytes(ini_bytes)
+    runtime_report = install_runtime(output)
 
     validation = {
         name: {
@@ -204,6 +208,7 @@ def build(args):
         'videos': videos,
         'text_backend': 'obcjk-direct-utf8',
         'legacy_intermediate': False,
+        'obcjk_runtime': runtime_report,
         'utf8_validation': 'obcjk_validation.json',
         'location_validation': 'location_validation.json',
         'menu_xml': ui_report,

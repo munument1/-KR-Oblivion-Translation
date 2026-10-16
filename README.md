@@ -1,17 +1,21 @@
-# Oblivion Original 한국어 번역 v1.1.3
+# Oblivion Original 한국어 번역 v1.1.4 (배포 준비)
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
+
+v1.1.4는 현재 빌드 준비본이며 GitHub 릴리즈는 아직 게시하지 않았습니다. 기존 공개 설치기는 [v1.1.3](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.3)입니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. [v1.1.3 설치기 ZIP](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.1.3)을 내려받아 전체 압축을 풉니다.
+2. 제공받거나 직접 빌드한 v1.1.4 설치기 ZIP의 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
 6. MO2 실행 대상에서 **Oblivion**을 선택합니다. 필요한 경우 [MO2의 xOBSE 강제 로드 안내](https://github.com/ModOrganizer2/modorganizer/wiki/Running-Oblivion-OBSE-with-MO2)를 확인합니다.
 
-설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
+설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열, 수정된 `OBSE\plugins\obCJK.dll`과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
+
+v1.1.4 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 

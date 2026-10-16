@@ -1,0 +1,14 @@
+{
+  "fix": "Test1 CP_ACP conversion fix plus UTF8-safe UI tokenizer at two verified xOBSE22.13 call sites",
+  "sha256": "ac215af221e680e03e3bbab03e890c34f7dcdfae422d7b82b21256f261b73d06",
+  "tests": "12 x86 conversion roundtrips and 11 CP949 UI tokenizer cases passed",
+  "game_verified": true,
+  "release": "temporary-fix-2",
+  "verification_basis": "User confirmed notifications and stat labels display correctly",
+  "save_reload_verified": false,
+  "original_xobse_modified": false,
+  "schema": 1,
+  "upstream_author": "AophMiSaki",
+  "upstream_url": "https://github.com/AophMiSaki/obCJK",
+  "upstream_commit": "0718caf4764d23b3f141e6ae2e7edb89b2edb385"
+}

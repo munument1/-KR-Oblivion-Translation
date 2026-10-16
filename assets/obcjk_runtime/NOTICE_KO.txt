@@ -1,0 +1,55 @@
+﻿설치기 v1.1.4는 아래 임시 해결본 2의 DLL을 생성한 번역 모드에 자동 배치합니다.
+현재 설치 절차는 설치기 ZIP의 README.md를 따르세요.
+아래 내용은 기존 별도 해결본의 출처·검증·복원 기록입니다.
+
+obCJK 한국어 UTF-8 임시 해결본 2 (2026-10-15)
+
+obCJK 원제작자: AophMiSaki. 이 파일은 비공식 시험 수정본이며 공식 업데이트가 아닙니다.
+임시 해결본 1을 대체합니다.
+
+해결 내용
+1. xOBSE 문자열 변수의 CP_ACP 변환으로 일부 한글이 물음표로 바뀌는 문제.
+2. xOBSE UI 문자열 분리 함수(_mbstok_s)가 UTF-8 끝 바이트를 잘라 '힘'은 빈칸, '지능'은 '지', '의지력'은 '의지'로 표시되던 문제.
+Ultimate Leveling 알림 및 스탯 이름의 정상 표시를 사용자가 게임에서 확인했습니다.
+이전 매지카 제보의 스크린샷은 실제로 지능 항목의 끝 글자 잘림이었습니다.
+
+선행 조건
+오리지널 Oblivion 1.2.0416, obCJK 20261003, 우리 obCJK UTF-8 한국어 패치와 한글 글꼴, 확인된 xOBSE 22.13 배포 바이너리.
+xOBSE 지원 빌드: PE timestamp 684B4FE5, SizeOfImage 125000.
+버전/호출 지점/변환 API 확인에 실패하면 보정을 적용하지 않고 로그에 skipped를 기록합니다.
+
+MO2 설치
+1. 게임을 종료합니다.
+2. 임시 해결본 1 모드가 있다면 끄고, 이 ZIP을 새 모드로 설치합니다.
+3. MO2 왼쪽 목록에서 기존 ObCJK와 Oblivion_KR_Mod보다 아래에 둡니다.
+4. 이 모드의 OBSE/plugins/obCJK.dll 및 OBSE/plugins/obCJK/obCJK.ini가 충돌에서 우선하도록 합니다.
+5. 게임을 재실행해 알림과 능력치 이름을 확인합니다.
+
+동봉 INI는 우리 한글패치용 본명조/이롭게바탕체 설정입니다.
+개인 설정을 유지하려면 DLL만 적용하고 실제 우선 적용되는 기존 INI의 [obCJK] 구역에 아래 값을 지정하세요.
+ActiveCodePage = UTF8
+XOBSEStringUtf8Enable = 1
+
+복원
+이 모드를 비활성화하면 기존 모드의 파일로 돌아갑니다.
+DLL을 직접 덮어썼다면 원본 obCJK 배포 DLL로 복원하고 XOBSEStringUtf8Enable 줄을 제거합니다.
+
+기술적 범위
+- UTF8 모드 및 선택 옵션에서만 적용.
+- 확인된 xOBSE의 16개 입력/6개 출력 변환 호출에 CP_UTF8 적용.
+- SetMenuStringValue의 확인된 2개 호출에서 ASCII 구분자를 UTF-8 바이트를 보존하며 분리.
+- 명시적 코드페이지와 다른 호출은 기존 동작 유지.
+- xOBSE 원본 DLL 및 번역 ESP는 수정하지 않음.
+- 기본 진단 로그 비활성화.
+
+검증과 한계
+실제 32비트 래퍼의 문자열 왕복 12개, CP949 환경 UI 문자열 분리 11개 시험 통과.
+사용자 게임 내 알림/스탯 정상 표시 확인.
+저장/재로드, 장시간 플레이, 다른 xOBSE 빌드와 모든 모드 조합은 미검증.
+이미 물음표로 저장된 문구를 원래 문구로 자동 복구하는 기능은 아닙니다.
+
+소스
+https://github.com/AophMiSaki/obCJK
+https://github.com/llde/xOBSE/blob/22.13/obse/obse/StringVar.cpp
+https://github.com/llde/xOBSE/blob/22.13/obse/obse/Commands_Menu.cpp
+수정 소스 및 시험 코드는 docs/source_changes에 포함했습니다.

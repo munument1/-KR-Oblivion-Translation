@@ -1,16 +1,18 @@
-"""Package only the official UTF-8 installer, font licenses and player instructions."""
+"""Package the UTF-8 installer, licenses, runtime provenance and instructions."""
 import argparse
 import hashlib
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
 from obcjk_fonts import BUNDLE, bundle_manifest
+from obcjk_runtime import BUNDLE as RUNTIME_BUNDLE, bundle_manifest as runtime_manifest
 
 ROOT = Path(__file__).resolve().parent
 
 
-def package(exe, output, version='1.1.3'):
+def package(exe, output, version='1.1.4'):
     bundle_manifest()
+    runtime_manifest()
     exe, output = Path(exe), Path(output)
     if not exe.is_file() or exe.read_bytes()[:2] != b'MZ':
         raise ValueError('Built Windows installer EXE required')
@@ -19,6 +21,10 @@ def package(exe, output, version='1.1.3'):
              (ROOT / 'README.md', 'README.md'),
              (ROOT / f'release_notes_v{version}.md', 'CHANGELOG.md'),
              (BUNDLE / 'manifest.json', 'font_sources.json')]
+    files += [(RUNTIME_BUNDLE / 'manifest.json', 'obcjk_runtime/manifest.json'),
+              (RUNTIME_BUNDLE / 'NOTICE_KO.txt', 'obcjk_runtime/NOTICE_KO.txt')]
+    files += [(p, 'obcjk_runtime/source_changes/' + p.name)
+              for p in sorted((RUNTIME_BUNDLE / 'source_changes').iterdir()) if p.is_file()]
     files += [(p, 'licenses/' + p.name) for p in sorted((BUNDLE / 'licenses').iterdir()) if p.is_file()]
     for p, _ in files:
         if not p.is_file():
@@ -42,6 +48,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', default='1.1.3')
+    parser.add_argument('--version', default='1.1.4')
     args = parser.parse_args()
     package(args.exe, args.output, args.version)

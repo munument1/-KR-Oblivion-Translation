@@ -1,16 +1,16 @@
 # 빌드와 저장소 구성
 
-현재 main은 v1.1.3 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
+현재 main은 v1.1.4 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
 
 ## Windows 설치기 빌드
 
 ```powershell
 python -m unittest discover -s tests -v
 pyinstaller --noconfirm --clean OblivionKRBuilder.spec
-python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.3.zip --version 1.1.3
+python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.4.zip --version 1.1.4
 ```
 
-설치기 ZIP에는 EXE, 한국어 BAT, 사용자 안내, 글꼴 출처와 OFL 라이선스만 넣습니다. 게임의 원본 ESM/ESP, 외부 DLL, MO2 프로필, 세이브는 포함하지 않습니다. 설치기를 MO2에서 실행할 필요는 없습니다.
+설치기 ZIP에는 EXE, 한국어 BAT, 사용자 안내, 글꼴 출처와 OFL 라이선스, obCJK 수정본의 출처·수정 소스를 넣습니다. EXE 내부의 `assets/obcjk_runtime`에 게임에서 확인한 임시 해결본 2 DLL을 포함하고, 빌더가 수정 DLL의 SHA-256을 확인한 뒤 번역 모드에 복사합니다. 게임의 원본 ESM/ESP, xOBSE DLL, MO2 프로필, 세이브는 포함하지 않습니다. 설치기를 MO2에서 실행할 필요는 없습니다.
 
 ## 코드와 자료
 
@@ -30,6 +30,7 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 - `build_script_messages.py`: 원본 전체 스크립트 SHA-256을 확인한 뒤 하수도 출구의 SCDA/SCTX 표시 문구 다섯 건만 같은 바이트 길이로 번역합니다. 기존 구조·스크립트 검증과 native layout 검증이 끝난 후 적용하며, 최종 파일의 모든 바이트를 입력과 허용한 문구 변경에 대조합니다. 검증 보고서의 `structure`와 `native_master_layout`은 이 단계 이전 값이며, 최종 파일 해시와 문구 변경 내역은 `script_messages`에 기록합니다.
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 현재 canonical 및 언오피셜 빌드 입력에 사용되므로 임의로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
+- `obcjk_runtime.py`, `assets/obcjk_runtime`: 고정된 SHA-256의 비공식 obCJK 수정 DLL, 검증 정보, 원제작자 출처와 수정 소스. UTF-8 보정을 기본 활성화하고 출력 검증 보고서에 적용 DLL 해시를 기록합니다.
 - `assets/Fonts`, `assets/menus`: 인코딩 변환 및 UI 입력 자료.
 - `build_video_subtitles.py`, `video_subtitles`: Nexus 별도 배포용 인트로·엔딩 Bink 1 영상 2개를 재생성하는 개발 도구와 자막 소스입니다. 일반 설치기는 `--video-subtitles off`를 사용합니다.
 - `package_obcjk_installer.py`, `package_obcjk_unofficial.py`: GitHub 설치기와 Nexus 언오피셜 ZIP 패키징.
@@ -51,4 +52,4 @@ python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --
 
 ## main 정리
 
-main에는 현재 v1.1.3 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.
+main에는 현재 v1.1.4 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.

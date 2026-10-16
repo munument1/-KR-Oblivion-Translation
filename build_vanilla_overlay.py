@@ -572,7 +572,7 @@ def main() -> int:
     parser.add_argument("--text-backend", choices=("obcjk",), default="obcjk",
                         help="Build the OBCJK UTF-8 overlay. Legacy release output is no longer supported.")
     parser.add_argument("--obcjk-ini", type=Path,
-                        help="Optional UTF-8 obCJK INI for the obcjk backend; DLL is never bundled")
+                        help="Optional UTF-8 obCJK INI for the obcjk backend")
     parser.add_argument("--video-subtitles", choices=("off", "auto", "required"), default="off",
                         help="Burn Korean subtitles into original intro/outro videos using FFmpeg and RAD Video Tools")
     args = parser.parse_args()

@@ -1,0 +1,22 @@
+diff --git a/obse_plugin_example/main.cpp b/obse_plugin_example/main.cpp
+index 3c3d1e0..db56f1c 100644
+--- a/obse_plugin_example/main.cpp
++++ b/obse_plugin_example/main.cpp
+@@ -28,6 +28,8 @@
+ #include "include/obCJK_SaveReturnFixHook.h"  // manual-save "false success" fix (sub_465130 no longer unconditionally returns 1), see its top comment
+ #include "include/obCJK_DeleteFileWShim.h"  // delete-save CJK-name false-success fix, patched at sub_453480's own DeleteFileA call site, see its top comment
+ 
++#include "include/obCJK_XOBSEStringUtf8.h"
++
+ #define OBTCADD_VERSION 1
+ 
+ IDebugLog    gLog("obCJK.log");
+@@ -461,6 +463,8 @@ bool OBSEPlugin_Load(const OBSEInterface* obse)
+     g_activeCodePage = ObCJKCodePageFromString(cpBuf);
+     _MESSAGE("obCJK:main:Load: ActiveCodePage=%s", ObCJKCodePageName(g_activeCodePage));
+ 
++    ObCJKInstallXOBSEStringUtf8();
++
+     // Pure file I/O (datastore.xml parse), no dependency on other plugins —
+     // safe to run immediately, unlike the listener registration below.
+     ObCJKNorthernUICompat_Init();
