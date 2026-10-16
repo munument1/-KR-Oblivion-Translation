@@ -375,7 +375,6 @@ def main():
         # vanilla release. Legacy/remaster memories are archival only.
         vanilla_table = load_translations(
             root / "canonical_translation_v2.csv",
-            extra_paths=(root / "canonical_dialogue_fixes_v1.csv",),
             encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
         final_table = None
         quest_entries = loading_entries = None

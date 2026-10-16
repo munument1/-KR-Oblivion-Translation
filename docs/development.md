@@ -14,6 +14,14 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 
 ## 코드와 자료
 
+일반 게임 텍스트와 대사의 신규 번역·수정은 `canonical_translation_v2.csv`를 단일 원본으로 관리합니다. 같은 성격의 보정 CSV를 새로 만들지 않고, 기존 원문·FormID·필드·occurrence를 확인해 해당 행을 수정합니다. Unicode와 UTF-8 hex 및 기존 바이트 인코딩 열은 같은 번역을 유지하고, 다른 행과 파일 형식은 보존합니다.
+
+장소·지도 마커는 `canonical_locations_v2.csv`, 언오피셜 패치 전용 텍스트는 `canonical_unofficial_translation_v2.csv`, 언오피셜 장소는 `canonical_unofficial_locations_v2.csv`에서 관리합니다. 특수 UI, 책 제목·본문 복구, 스크립트 표시 문구처럼 구조상 별도 처리가 필요한 기존 전용 자료는 유지합니다.
+
+2026-10-16 Crowhaven 대사 통합은 `Oblivion.esm / INFO / 00038ED7 / NAM1 / occurrence 1`의 기존 행 한 개를 수정했습니다. UI 보충 테이블에서 같은 응답을 덮어쓰던 중복 행도 제거했습니다. 메인 CSV 47,227행의 UTF-8과 원본 ESM의 네 응답을 확인했으며, 대상 행 외의 메인 CSV 바이트와 다른 응답은 보존했습니다.
+
+통합 검증에서 단위 테스트 67개가 통과했고, 본편·공식 DLC 출력 10개의 SHA-256 및 빌드 감사 보고서가 변경 전과 일치했습니다. 언오피셜 원본 14개를 개별 확인한 결과 12개 출력도 변경 전과 일치했습니다. 나머지 `DLCSpellTomes - Unofficial Patch.esp`의 `02001281`과 `Knights - Unofficial Patch.esp`의 `02000ED2`는 변경 전후 모두 기존 BOOK/DESC 제목 축약 보호 검사에 걸립니다. 따라서 언오피셜 전체 CLI 빌드 성공은 확인하지 못했으며, 이 별도 번역 데이터 문제와 게임 내 실플레이 검증은 이번 통합 범위에 포함하지 않았습니다.
+
 - `install_obcjk.py`: 기존 INI 자동 검색·글꼴 경로 복원, 번역 빌더 호출, 글꼴 등록.
 - `build_vanilla_overlay.py`, `build_obcjk_release.py`: canonical UTF-8 데이터를 원본 ESM/ESP에 직접 적용하는 본편·공식 DLC 빌드 경로입니다.
 - `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.

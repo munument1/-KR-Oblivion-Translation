@@ -12,10 +12,10 @@ class UISupplementTests(unittest.TestCase):
         with TABLE.open(encoding="utf-8-sig", newline="") as stream:
             rows = list(csv.DictReader(stream))
 
-        self.assertEqual(len(rows), 217)
+        self.assertEqual(len(rows), 218)
         self.assertEqual(
             Counter(row["record_type"] for row in rows),
-            Counter({"FACT": 116, "SKIL": 84, "INFO": 13, "QUST": 2, "NPC_": 1, "DOOR": 1}),
+            Counter({"FACT": 116, "SKIL": 84, "INFO": 14, "QUST": 2, "NPC_": 1, "DOOR": 1}),
         )
 
         identities = {
